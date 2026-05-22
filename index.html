@@ -7,146 +7,149 @@
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #f5f5f5; --card: #ffffff; --text: #1a1a1a; --text2: #666;
-      --border: #e0e0e0; --radius: 10px;
-      --blue: #1e40af; --blue-bg: #dbeafe;
-      --green: #166534; --green-bg: #dcfce7;
-      --red: #991b1b; --red-bg: #fee2e2;
-      --yellow: #92400e; --yellow-bg: #fef3c7;
-      --purple: #5b21b6; --purple-bg: #ede9fe;
+      --bg:#f5f5f5; --card:#fff; --text:#1a1a1a; --text2:#666; --border:#e0e0e0; --radius:10px;
+      --blue:#1e40af; --blue-bg:#dbeafe;
+      --green:#166534; --green-bg:#dcfce7;
+      --red:#991b1b; --red-bg:#fee2e2;
+      --yellow:#92400e; --yellow-bg:#fef3c7;
+      --purple:#5b21b6; --purple-bg:#ede9fe;
+      --orange:#9a3412; --orange-bg:#ffedd5;
     }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg:#1a1a1a; --card:#2d2d2d; --text:#fff; --text2:#a0a0a0; --border:#404040;
-        --blue:#93c5fd; --blue-bg:#1e3a8a;
-        --green:#bbf7d0; --green-bg:#14532d;
-        --red:#fecaca; --red-bg:#7f1d1d;
-        --yellow:#fde047; --yellow-bg:#78350f;
-        --purple:#c4b5fd; --purple-bg:#3b0764;
-      }
-    }
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+    @media(prefers-color-scheme:dark){:root{
+      --bg:#1a1a1a;--card:#2d2d2d;--text:#fff;--text2:#a0a0a0;--border:#404040;
+      --blue:#93c5fd;--blue-bg:#1e3a8a;--green:#bbf7d0;--green-bg:#14532d;
+      --red:#fecaca;--red-bg:#7f1d1d;--yellow:#fde047;--yellow-bg:#78350f;
+      --purple:#c4b5fd;--purple-bg:#3b0764;--orange:#fdba74;--orange-bg:#7c2d12;
+    }}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
 
     /* LOGO */
-    .logo { font-family:'Syne',sans-serif; font-weight:800; letter-spacing:-1px; color:var(--text); }
-    .logo-lg { font-size:42px; }
-    .logo-sm { font-size:22px; }
-    .logo-img-lg { height:52px; display:block; }
-    .logo-img-sm { height:28px; display:block; }
-
-    /* WHATSAPP */
-    .btn-whatsapp { background:#25D366; color:#fff; border-color:transparent; }
-    .btn-whatsapp:hover { background:#1ebe5d; }
+    .logo{font-family:'Syne',sans-serif;font-weight:800;letter-spacing:-1px;color:var(--text);}
+    .logo-lg{font-size:42px;} .logo-sm{font-size:22px;}
+    .logo-img-lg{height:52px;display:block;margin:0 auto 4px;}
+    .logo-img-sm{height:28px;display:block;}
 
     /* LOGIN */
-    #login-screen { display:flex; justify-content:center; align-items:center; min-height:100vh; padding:1rem; }
-    .login-box { background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:2rem; width:100%; max-width:400px; }
-    .login-header { text-align:center; margin-bottom:2rem; }
-    .login-header p { font-size:13px; color:var(--text2); margin-top:4px; }
-    .form-group { margin-bottom:1.2rem; }
-    .form-group label { display:block; font-weight:500; font-size:14px; margin-bottom:6px; }
-    .form-group input, .form-group select, .form-group textarea { width:100%; padding:10px 12px; border:1px solid var(--border); border-radius:8px; font-size:14px; background:var(--card); color:var(--text); font-family:inherit; }
-    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline:2px solid var(--blue-bg); }
-    .btn-login { width:100%; padding:12px; background:var(--text); color:var(--card); border:none; border-radius:8px; font-size:15px; font-weight:600; cursor:pointer; margin-top:0.5rem; }
-    .btn-login:hover { opacity:0.85; }
-    .demo-box { background:var(--bg); border-radius:8px; padding:1rem; margin-top:1.5rem; font-size:13px; }
-    .demo-box p { color:var(--text2); margin-bottom:4px; }
-    .code { background:var(--card); padding:1px 6px; border-radius:4px; font-family:monospace; border:1px solid var(--border); }
-    .error-msg { background:var(--red-bg); color:var(--red); padding:10px 12px; border-radius:8px; font-size:13px; margin-bottom:1rem; display:none; }
+    #login-screen{display:flex;justify-content:center;align-items:center;min-height:100vh;padding:1rem;}
+    .login-box{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;width:100%;max-width:400px;}
+    .login-header{text-align:center;margin-bottom:2rem;}
+    .login-header p{font-size:13px;color:var(--text2);margin-top:4px;}
+    .form-group{margin-bottom:1.2rem;}
+    .form-group label{display:block;font-weight:500;font-size:14px;margin-bottom:6px;}
+    .form-group input,.form-group select,.form-group textarea{width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:8px;font-size:14px;background:var(--card);color:var(--text);font-family:inherit;}
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:2px solid var(--blue-bg);}
+    .btn-login{width:100%;padding:12px;background:var(--text);color:var(--card);border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;margin-top:.5rem;}
+    .btn-login:hover{opacity:.85;}
+    .demo-box{background:var(--bg);border-radius:8px;padding:1rem;margin-top:1.5rem;font-size:13px;}
+    .demo-box p{color:var(--text2);margin-bottom:4px;}
+    .code{background:var(--card);padding:1px 6px;border-radius:4px;font-family:monospace;border:1px solid var(--border);}
+    .error-msg{background:var(--red-bg);color:var(--red);padding:10px 12px;border-radius:8px;font-size:13px;margin-bottom:1rem;display:none;}
 
     /* APP */
-    #app-screen { display:none; min-height:100vh; }
-    .topbar { background:var(--card); border-bottom:1px solid var(--border); padding:0.9rem 1.5rem; display:flex; justify-content:space-between; align-items:center; }
-    .topbar-right { display:flex; align-items:center; gap:1rem; }
-    .user-badge { font-size:13px; color:var(--text2); }
-    .btn { padding:8px 14px; border:1px solid var(--border); border-radius:8px; background:transparent; color:var(--text); font-size:13px; cursor:pointer; font-family:inherit; }
-    .btn:hover { background:var(--bg); }
-    .btn-primary { background:var(--text); color:var(--card); border-color:transparent; font-weight:600; }
-    .btn-green { background:var(--green-bg); color:var(--green); border-color:transparent; }
-    .btn-red { background:var(--red-bg); color:var(--red); border-color:transparent; }
-    .btn-blue { background:var(--blue-bg); color:var(--blue); border-color:transparent; }
-    .btn-small { padding:4px 10px; font-size:12px; }
+    #app-screen{display:none;min-height:100vh;}
+    .topbar{background:var(--card);border-bottom:1px solid var(--border);padding:.9rem 1.5rem;display:flex;justify-content:space-between;align-items:center;}
+    .topbar-right{display:flex;align-items:center;gap:1rem;}
+    .user-badge{font-size:13px;color:var(--text2);}
+    .btn{padding:8px 14px;border:1px solid var(--border);border-radius:8px;background:transparent;color:var(--text);font-size:13px;cursor:pointer;font-family:inherit;}
+    .btn:hover{background:var(--bg);}
+    .btn-primary{background:var(--text);color:var(--card);border-color:transparent;font-weight:600;}
+    .btn-green{background:var(--green-bg);color:var(--green);border-color:transparent;}
+    .btn-red{background:var(--red-bg);color:var(--red);border-color:transparent;}
+    .btn-blue{background:var(--blue-bg);color:var(--blue);border-color:transparent;}
+    .btn-orange{background:var(--orange-bg);color:var(--orange);border-color:transparent;}
+    .btn-whatsapp{background:#25D366;color:#fff;border-color:transparent;}
+    .btn-whatsapp:hover{background:#1ebe5d;}
+    .btn-small{padding:4px 10px;font-size:12px;}
 
-    .content { padding:1.5rem; max-width:1100px; margin:0 auto; }
-    .metrics { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:12px; margin-bottom:1.5rem; }
-    .metric { background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:1rem; text-align:center; }
-    .metric-label { font-size:11px; color:var(--text2); margin-bottom:6px; text-transform:uppercase; letter-spacing:.5px; }
-    .metric-value { font-size:30px; font-weight:700; }
-    .metric-value.red { color:var(--red); }
-    .metric-value.yellow { color:var(--yellow); }
-    .metric-value.green { color:var(--green); }
-    .metric-value.blue { color:var(--blue); }
-    .metric-value.purple { color:var(--purple); }
+    .content{padding:1.5rem;max-width:1200px;margin:0 auto;}
+    .metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:1.5rem;}
+    .metric{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:.9rem;text-align:center;}
+    .metric-label{font-size:11px;color:var(--text2);margin-bottom:4px;text-transform:uppercase;letter-spacing:.5px;}
+    .metric-value{font-size:28px;font-weight:700;}
+    .metric-value.red{color:var(--red);} .metric-value.yellow{color:var(--yellow);}
+    .metric-value.green{color:var(--green);} .metric-value.blue{color:var(--blue);}
+    .metric-value.purple{color:var(--purple);} .metric-value.orange{color:var(--orange);}
 
-    .card { background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem; margin-bottom:1.5rem; }
-    .card-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:1.2rem; }
-    .card-header h2 { font-size:15px; font-weight:600; }
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.5rem;}
+    .card-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.2rem;flex-wrap:wrap;gap:.5rem;}
+    .card-header h2{font-size:15px;font-weight:600;}
 
-    .tabs { display:flex; gap:8px; margin-bottom:1.5rem; flex-wrap:wrap; }
-    .tab { padding:8px 16px; border:1px solid var(--border); border-radius:8px; background:transparent; color:var(--text2); font-size:14px; cursor:pointer; font-family:inherit; }
-    .tab.active { background:var(--text); color:var(--card); border-color:transparent; font-weight:600; }
+    .tabs{display:flex;gap:8px;margin-bottom:1.5rem;flex-wrap:wrap;}
+    .tab{padding:8px 16px;border:1px solid var(--border);border-radius:8px;background:transparent;color:var(--text2);font-size:14px;cursor:pointer;font-family:inherit;}
+    .tab.active{background:var(--text);color:var(--card);border-color:transparent;font-weight:600;}
+
+    /* FILTER BAR */
+    .filter-bar{display:flex;gap:8px;margin-bottom:1rem;flex-wrap:wrap;align-items:center;}
+    .filter-bar select{padding:6px 10px;border:1px solid var(--border);border-radius:8px;font-size:13px;background:var(--card);color:var(--text);font-family:inherit;}
+    .filter-bar label{font-size:13px;color:var(--text2);}
 
     /* TABLE */
-    .table-wrap { overflow-x:auto; }
-    table { width:100%; border-collapse:collapse; font-size:13px; }
-    th { text-align:left; padding:8px 12px; border-bottom:1px solid var(--border); font-size:11px; color:var(--text2); font-weight:600; text-transform:uppercase; letter-spacing:.5px; white-space:nowrap; }
-    td { padding:10px 12px; border-bottom:1px solid var(--border); vertical-align:middle; }
-    tr:last-child td { border-bottom:none; }
-    tr:hover td { background:var(--bg); }
+    .table-wrap{overflow-x:auto;}
+    table{width:100%;border-collapse:collapse;font-size:13px;}
+    th{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border);font-size:11px;color:var(--text2);font-weight:600;text-transform:uppercase;letter-spacing:.5px;white-space:nowrap;}
+    td{padding:9px 10px;border-bottom:1px solid var(--border);vertical-align:middle;}
+    tr:last-child td{border-bottom:none;}
+    tr:hover td{background:var(--bg);}
 
     /* BADGES */
-    .badge { display:inline-block; padding:3px 9px; border-radius:999px; font-size:12px; font-weight:500; white-space:nowrap; }
-    .badge-red    { background:var(--red-bg);    color:var(--red); }
-    .badge-yellow { background:var(--yellow-bg); color:var(--yellow); }
-    .badge-green  { background:var(--green-bg);  color:var(--green); }
-    .badge-blue   { background:var(--blue-bg);   color:var(--blue); }
-    .badge-purple { background:var(--purple-bg); color:var(--purple); }
+    .badge{display:inline-block;padding:3px 9px;border-radius:999px;font-size:12px;font-weight:500;white-space:nowrap;}
+    .badge-red{background:var(--red-bg);color:var(--red);}
+    .badge-yellow{background:var(--yellow-bg);color:var(--yellow);}
+    .badge-green{background:var(--green-bg);color:var(--green);}
+    .badge-blue{background:var(--blue-bg);color:var(--blue);}
+    .badge-purple{background:var(--purple-bg);color:var(--purple);}
+    .badge-orange{background:var(--orange-bg);color:var(--orange);}
+    .badge-unit{background:var(--bg);color:var(--text2);border:1px solid var(--border);font-size:11px;padding:2px 7px;}
 
-    .no-data { text-align:center; padding:2rem; color:var(--text2); }
-    .actions { display:flex; gap:4px; flex-wrap:wrap; }
+    /* CLICKABLE STATUS BADGE */
+    .badge-clickable{cursor:pointer;user-select:none;transition:opacity .15s;}
+    .badge-clickable:hover{opacity:.8;}
+    .badge-clickable::after{content:' ▾';font-size:10px;opacity:.7;}
+
+    /* STATUS DROPDOWN MENU */
+    .status-menu{position:fixed;background:var(--card);border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.15);z-index:5000;min-width:200px;overflow:hidden;}
+    .status-menu-item{display:flex;align-items:center;gap:8px;padding:10px 14px;font-size:13px;cursor:pointer;color:var(--text);transition:background .1s;}
+    .status-menu-item:hover{background:var(--bg);}
+    .status-menu-item.danger{color:var(--red);}
+    .status-menu-item.warn{color:var(--orange);}
+    .status-menu-divider{height:1px;background:var(--border);margin:2px 0;}
+
+    .no-data{text-align:center;padding:2rem;color:var(--text2);}
+    .actions{display:flex;gap:4px;flex-wrap:wrap;}
 
     /* MODAL */
-    .modal-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.45); display:flex; align-items:center; justify-content:center; z-index:1000; padding:1rem; }
-    .modal { background:var(--card); border-radius:var(--radius); padding:1.5rem; width:100%; max-width:460px; max-height:90vh; overflow-y:auto; }
-    .modal h3 { font-size:16px; margin-bottom:1.2rem; }
-    .modal-footer { display:flex; gap:8px; justify-content:flex-end; margin-top:1.2rem; }
+    .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;z-index:1000;padding:1rem;}
+    .modal{background:var(--card);border-radius:var(--radius);padding:1.5rem;width:100%;max-width:460px;max-height:90vh;overflow-y:auto;}
+    .modal h3{font-size:16px;margin-bottom:1.2rem;}
+    .modal-footer{display:flex;gap:8px;justify-content:flex-end;margin-top:1.2rem;}
 
     /* NOTIFICATION */
-    .notification { position:fixed; top:20px; right:20px; background:var(--green-bg); color:var(--green); padding:14px 20px; border-radius:8px; box-shadow:0 4px 16px rgba(0,0,0,0.15); z-index:9999; font-size:14px; font-weight:500; transform:translateX(420px); transition:transform .3s ease; max-width:300px; }
-    .notification.show { transform:translateX(0); }
+    .notification{position:fixed;top:20px;right:20px;background:var(--green-bg);color:var(--green);padding:14px 20px;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.15);z-index:9999;font-size:14px;font-weight:500;transform:translateX(420px);transition:transform .3s ease;max-width:300px;}
+    .notification.show{transform:translateX(0);}
 
-    /* HISTORICO */
-    .hist-item { padding:8px 0; border-bottom:1px solid var(--border); font-size:13px; }
-    .hist-item:last-child { border-bottom:none; }
-
-    @media(max-width:600px) {
-      .topbar { flex-direction:column; gap:.5rem; align-items:flex-start; }
-      .content { padding:1rem; }
-      .actions { flex-direction:column; }
+    @media(max-width:600px){
+      .topbar{flex-direction:column;gap:.5rem;align-items:flex-start;}
+      .content{padding:1rem;}
+      .actions{flex-direction:column;}
+      .metrics{grid-template-columns:repeat(2,1fr);}
     }
   </style>
 </head>
 <body>
 
-<!-- ===================== LOGIN ===================== -->
+<!-- LOGIN -->
 <div id="login-screen">
   <div class="login-box">
     <div class="login-header">
-      <img src="logo.png" class="logo-img-lg" alt="illic" style="margin:0 auto 4px"
+      <img src="logo.png" class="logo-img-lg" alt="illic"
            onerror="this.style.display='none';document.getElementById('logo-fb-login').style.display='block'">
       <div class="logo logo-lg" id="logo-fb-login" style="display:none">illic</div>
       <p>Sistema de Reavaliações</p>
     </div>
     <div class="error-msg" id="login-error">Usuário ou senha incorretos.</div>
-    <div class="form-group">
-      <label>Usuário</label>
-      <input type="text" id="username" placeholder="Digite seu usuário" autofocus>
-    </div>
-    <div class="form-group">
-      <label>Senha</label>
-      <input type="password" id="password" placeholder="Digite sua senha">
-    </div>
+    <div class="form-group"><label>Usuário</label><input type="text" id="username" placeholder="Digite seu usuário" autofocus></div>
+    <div class="form-group"><label>Senha</label><input type="password" id="password" placeholder="Digite sua senha"></div>
     <button class="btn-login" onclick="login()">Entrar</button>
     <div class="demo-box">
       <p><strong>Credenciais:</strong></p>
@@ -157,7 +160,7 @@
   </div>
 </div>
 
-<!-- ===================== APP ===================== -->
+<!-- APP -->
 <div id="app-screen">
   <div class="topbar">
     <div>
@@ -182,10 +185,19 @@
     <div id="tab-dashboard">
       <div class="metrics" id="metrics-grid"></div>
       <div class="card">
-        <div class="card-header"><h2>Pacientes por prioridade</h2></div>
+        <div class="card-header">
+          <h2>Pacientes por prioridade</h2>
+          <div class="filter-bar" style="margin:0">
+            <select id="dash-unidade" onchange="renderAll()">
+              <option value="">Todas as unidades</option>
+              <option>Jardim Ricetti</option><option>Damha</option>
+              <option>Faber</option><option>Descalvado</option><option>Mogi Guaçu</option>
+            </select>
+          </div>
+        </div>
         <div class="table-wrap">
           <table>
-            <thead><tr><th>Paciente</th><th>Última Reavaliação</th><th>Próxima</th><th>Agendamento</th><th>Status</th><th>Secretária</th></tr></thead>
+            <thead><tr><th>Paciente</th><th>Unidade</th><th>Última Reav.</th><th>Próxima</th><th>Agendamento</th><th>Status</th></tr></thead>
             <tbody id="dashboard-table"></tbody>
           </table>
         </div>
@@ -199,9 +211,22 @@
           <h2>Pacientes</h2>
           <button class="btn btn-primary" onclick="abrirModalPaciente()">+ Novo Paciente</button>
         </div>
+        <div class="filter-bar">
+          <label>Unidade:</label>
+          <select id="filtro-unidade" onchange="renderPacientes()">
+            <option value="">Todas</option>
+            <option>Jardim Ricetti</option><option>Damha</option>
+            <option>Faber</option><option>Descalvado</option><option>Mogi Guaçu</option>
+          </select>
+          <label style="margin-left:.5rem">Secretária:</label>
+          <select id="filtro-sec" onchange="renderPacientes()">
+            <option value="">Todas</option>
+            <option>maria</option><option>ana</option>
+          </select>
+        </div>
         <div class="table-wrap">
           <table>
-            <thead><tr><th>Nome</th><th>Secretária</th><th>Última Reav.</th><th>Próxima Reav.</th><th>Agendamento</th><th>Status</th><th>Ações</th></tr></thead>
+            <thead><tr><th>Nome</th><th>Unidade</th><th>Secretária</th><th>Última Reav.</th><th>Próxima Reav.</th><th>Agendamento</th><th>Status ▾</th><th>Ações</th></tr></thead>
             <tbody id="pacientes-table"></tbody>
           </table>
         </div>
@@ -210,33 +235,37 @@
 
     <!-- ALERTAS -->
     <div id="tab-alertas" style="display:none">
-      <div class="card">
-        <div class="card-header"><h2>🔴 Reavaliações Vencidas</h2></div>
-        <div id="lista-vencidos"></div>
+      <div class="filter-bar">
+        <label>Unidade:</label>
+        <select id="filtro-alerta-unidade" onchange="renderAlertas()">
+          <option value="">Todas</option>
+          <option>Jardim Ricetti</option><option>Damha</option>
+          <option>Faber</option><option>Descalvado</option><option>Mogi Guaçu</option>
+        </select>
       </div>
-      <div class="card">
-        <div class="card-header"><h2>❌ Agendamentos Cancelados</h2></div>
-        <div id="lista-cancelados"></div>
-      </div>
-      <div class="card">
-        <div class="card-header"><h2>🟡 Próximas (7 dias)</h2></div>
-        <div id="lista-proximos"></div>
-      </div>
-      <div class="card">
-        <div class="card-header"><h2>📅 Agendamentos Confirmados</h2></div>
-        <div id="lista-agendados"></div>
-      </div>
+      <div class="card"><div class="card-header"><h2>🔴 Reavaliações Vencidas</h2></div><div id="lista-vencidos"></div></div>
+      <div class="card"><div class="card-header"><h2>❌ Cancelamentos com Aviso</h2></div><div id="lista-cancelados"></div></div>
+      <div class="card"><div class="card-header"><h2>🚫 No-shows</h2></div><div id="lista-noshows"></div></div>
+      <div class="card"><div class="card-header"><h2>🟡 Próximas (7 dias)</h2></div><div id="lista-proximos"></div></div>
+      <div class="card"><div class="card-header"><h2>📅 Agendadas</h2></div><div id="lista-agendados"></div></div>
     </div>
   </div>
 </div>
 
-<!-- ===================== MODAL: PACIENTE ===================== -->
+<!-- MODAL: PACIENTE -->
 <div class="modal-overlay" id="modal-paciente" style="display:none" onclick="fecharModal(event)">
   <div class="modal">
     <h3 id="modal-titulo">Novo Paciente</h3>
     <div class="form-group"><label>Nome completo</label><input type="text" id="p-nome" placeholder="Nome do paciente"></div>
     <div class="form-group"><label>Telefone</label><input type="tel" id="p-tel" placeholder="(11) 99999-9999"></div>
     <div class="form-group"><label>Email</label><input type="email" id="p-email" placeholder="email@exemplo.com"></div>
+    <div class="form-group"><label>Unidade</label>
+      <select id="p-unidade">
+        <option value="">Selecione a unidade</option>
+        <option>Jardim Ricetti</option><option>Damha</option>
+        <option>Faber</option><option>Descalvado</option><option>Mogi Guaçu</option>
+      </select>
+    </div>
     <div class="form-group"><label>Secretária responsável</label>
       <select id="p-sec"><option value="maria">Maria</option><option value="ana">Ana</option></select>
     </div>
@@ -254,15 +283,13 @@
   </div>
 </div>
 
-<!-- ===================== MODAL: AGENDAR ===================== -->
+<!-- MODAL: AGENDAR -->
 <div class="modal-overlay" id="modal-agendar" style="display:none" onclick="fecharModal(event)">
   <div class="modal">
     <h3>📅 Agendar Reavaliação</h3>
     <p style="color:var(--text2);font-size:13px;margin-bottom:1.2rem">Paciente: <strong id="ag-nome"></strong></p>
     <div class="form-group"><label>Data do agendamento</label><input type="date" id="ag-data"></div>
-    <div class="form-group"><label>Observações (opcional)</label>
-      <textarea id="ag-obs" rows="2" placeholder="Ex: Confirmado por WhatsApp..."></textarea>
-    </div>
+    <div class="form-group"><label>Observações (opcional)</label><textarea id="ag-obs" rows="2" placeholder="Ex: Confirmado por WhatsApp..."></textarea></div>
     <div class="modal-footer">
       <button class="btn" onclick="document.getElementById('modal-agendar').style.display='none'">Cancelar</button>
       <button class="btn btn-blue" onclick="confirmarAgendamento()">Agendar</button>
@@ -270,15 +297,13 @@
   </div>
 </div>
 
-<!-- ===================== MODAL: CONFIRMAR REALIZAÇÃO ===================== -->
+<!-- MODAL: REALIZAR -->
 <div class="modal-overlay" id="modal-realizar" style="display:none" onclick="fecharModal(event)">
   <div class="modal">
     <h3>✅ Confirmar Reavaliação Realizada</h3>
     <p style="color:var(--text2);font-size:13px;margin-bottom:1.2rem">Paciente: <strong id="re-nome"></strong></p>
-    <div class="form-group"><label>Data em que a reavaliação aconteceu</label><input type="date" id="re-data"></div>
-    <div class="form-group"><label>Observações (opcional)</label>
-      <textarea id="re-obs" rows="2" placeholder="Anotações sobre a reavaliação..."></textarea>
-    </div>
+    <div class="form-group"><label>Data em que aconteceu</label><input type="date" id="re-data"></div>
+    <div class="form-group"><label>Observações (opcional)</label><textarea id="re-obs" rows="2" placeholder="Anotações sobre a reavaliação..."></textarea></div>
     <div class="modal-footer">
       <button class="btn" onclick="document.getElementById('modal-realizar').style.display='none'">Voltar</button>
       <button class="btn btn-green" onclick="marcarRealizada()">Confirmar como Realizada</button>
@@ -286,116 +311,147 @@
   </div>
 </div>
 
+<!-- MODAL: CANCELAR COM MOTIVO -->
+<div class="modal-overlay" id="modal-cancelar" style="display:none" onclick="fecharModal(event)">
+  <div class="modal">
+    <h3>❌ Cancelamento com Aviso Prévio</h3>
+    <p style="color:var(--text2);font-size:13px;margin-bottom:1.2rem">Paciente: <strong id="ca-nome"></strong></p>
+    <div class="form-group"><label>Motivo do cancelamento <span style="color:var(--red)">*</span></label>
+      <textarea id="ca-motivo" rows="3" placeholder="Ex: Paciente ligou avisando que não pode comparecer..."></textarea>
+    </div>
+    <div class="form-group"><label>Deseja reagendar?</label>
+      <select id="ca-reagendar">
+        <option value="nao">Não por agora</option>
+        <option value="sim">Sim, já tenho nova data</option>
+      </select>
+    </div>
+    <div id="ca-nova-data-group" style="display:none">
+      <div class="form-group"><label>Nova data</label><input type="date" id="ca-nova-data"></div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" onclick="document.getElementById('modal-cancelar').style.display='none'">Voltar</button>
+      <button class="btn btn-red" onclick="confirmarCancelamento()">Registrar Cancelamento</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: NO-SHOW -->
+<div class="modal-overlay" id="modal-noshow" style="display:none" onclick="fecharModal(event)">
+  <div class="modal">
+    <h3>🚫 Registrar No-show</h3>
+    <p style="color:var(--text2);font-size:13px;margin-bottom:1.2rem">Paciente: <strong id="ns-nome"></strong></p>
+    <p style="font-size:13px;margin-bottom:1.2rem;color:var(--orange)">O paciente não compareceu e não avisou previamente.</p>
+    <div class="form-group"><label>Observações (opcional)</label><textarea id="ns-obs" rows="2" placeholder="Tentativas de contato, etc..."></textarea></div>
+    <div class="modal-footer">
+      <button class="btn" onclick="document.getElementById('modal-noshow').style.display='none'">Voltar</button>
+      <button class="btn btn-orange" onclick="confirmarNoShow()">Registrar No-show</button>
+    </div>
+  </div>
+</div>
+
+<!-- STATUS DROPDOWN MENU (criado dinamicamente) -->
+<div id="status-menu" class="status-menu" style="display:none"></div>
+
 <div class="notification" id="notification"></div>
 
 <script>
 // ===================== DADOS =====================
 const USERS = { gerenciador:'1234', maria:'1234', ana:'1234' };
+const UNIDADES = ['Jardim Ricetti','Damha','Faber','Descalvado','Mogi Guaçu'];
+
 let pacientes = JSON.parse(localStorage.getItem('illic_pacientes') || '[]');
 let currentUser = '';
-let editIndex = -1;
-let agendarIndex = -1;
-let realizarIndex = -1;
+let editIndex = -1, agendarIndex = -1, realizarIndex = -1, cancelarIndex = -1, noshowIndex = -1;
 
 // Dados de exemplo
 if (!pacientes.length) {
-  const sub = (m) => { const d=new Date(); d.setMonth(d.getMonth()-m); return d.toISOString().split('T')[0]; };
-  const add = (m) => { const d=new Date(); d.setMonth(d.getMonth()+m); d.setDate(d.getDate()+5); return d.toISOString().split('T')[0]; };
+  const sub = m => { const d=new Date(); d.setMonth(d.getMonth()-m); return d.toISOString().split('T')[0]; };
+  const add = m => { const d=new Date(); d.setMonth(d.getMonth()+m); d.setDate(d.getDate()+5); return d.toISOString().split('T')[0]; };
   pacientes = [
-    { nome:'João Silva',     tel:'(11) 98765-4321', email:'joao@email.com',   sec:'maria', ultimaReav:sub(4), intervalo:3, agendamento:null, historico:[] },
-    { nome:'Maria Oliveira', tel:'(11) 91234-5678', email:'maria@email.com',  sec:'ana',   ultimaReav:sub(1), intervalo:3, agendamento:{data:add(1),status:'agendada',obs:'Confirmada'}, historico:[] },
-    { nome:'Carlos Santos',  tel:'(11) 99887-6543', email:'carlos@email.com', sec:'maria', ultimaReav:sub(3), intervalo:3, agendamento:{data:add(0),status:'cancelada',obs:'Paciente cancelou'}, historico:[] },
-    { nome:'Ana Costa',      tel:'(11) 97654-3210', email:'ana@email.com',    sec:'ana',   ultimaReav:sub(0), intervalo:6, agendamento:null, historico:[] },
+    { nome:'João Silva',     tel:'(11) 98765-4321', email:'joao@email.com',   sec:'maria', unidade:'Jardim Ricetti', ultimaReav:sub(4), intervalo:3, agendamento:null, historico:[] },
+    { nome:'Maria Oliveira', tel:'(11) 91234-5678', email:'maria@email.com',  sec:'ana',   unidade:'Damha',          ultimaReav:sub(1), intervalo:3, agendamento:{data:add(1),status:'agendada',obs:'Confirmada'}, historico:[] },
+    { nome:'Carlos Santos',  tel:'(11) 99887-6543', email:'carlos@email.com', sec:'maria', unidade:'Faber',          ultimaReav:sub(3), intervalo:3, agendamento:{data:add(0),status:'cancelada',motivo:'Viagem marcada'}, historico:[] },
+    { nome:'Ana Costa',      tel:'(11) 97654-3210', email:'ana@email.com',    sec:'ana',   unidade:'Descalvado',     ultimaReav:sub(0), intervalo:6, agendamento:{data:sub(0),status:'noshow',obs:'Não atendeu ligação'}, historico:[] },
+    { nome:'Pedro Lima',     tel:'(11) 96543-2109', email:'pedro@email.com',  sec:'maria', unidade:'Mogi Guaçu',    ultimaReav:sub(2), intervalo:3, agendamento:null, historico:[] },
   ];
   salvarDados();
 }
 
 function salvarDados() { localStorage.setItem('illic_pacientes', JSON.stringify(pacientes)); }
 
-// ===================== STATUS =====================
+// ===================== STATUS / CÁLCULOS =====================
 function calcProxima(p) {
-  const ultima = new Date(p.ultimaReav + 'T12:00:00');
-  const proxima = new Date(ultima);
-  proxima.setMonth(proxima.getMonth() + parseInt(p.intervalo));
-  return proxima;
+  const d = new Date(p.ultimaReav+'T12:00:00');
+  d.setMonth(d.getMonth()+parseInt(p.intervalo));
+  return d;
 }
-
 function calcDias(p) {
-  const proxima = calcProxima(p);
   const hoje = new Date(); hoje.setHours(0,0,0,0);
-  return Math.ceil((proxima - hoje) / 86400000);
+  return Math.ceil((calcProxima(p)-hoje)/86400000);
 }
-
 function sortKey(p) {
-  const ag = p.agendamento;
-  const dias = calcDias(p);
-  if (ag && ag.status === 'cancelada') return dias - 10000; // mais urgente
-  if (ag && ag.status === 'agendada')  return 10000 + dias; // menos urgente
+  const ag=p.agendamento, dias=calcDias(p);
+  if (ag?.status==='noshow')    return dias-20000;
+  if (ag?.status==='cancelada') return dias-10000;
+  if (ag?.status==='agendada')  return 10000+dias;
   return dias;
 }
-
-function getStatusBadge(p) {
-  const ag = p.agendamento;
-  const dias = calcDias(p);
-  if (ag && ag.status === 'agendada')  return `<span class="badge badge-blue">📅 Agendada ${formatDate(ag.data)}</span>`;
-  if (ag && ag.status === 'cancelada') return `<span class="badge badge-purple">❌ Cancelada</span>`;
-  if (dias < 0)   return `<span class="badge badge-red">Vencida (${Math.abs(dias)}d)</span>`;
-  if (dias <= 7)  return `<span class="badge badge-yellow">Em ${dias}d</span>`;
-  return `<span class="badge badge-green">Em dia</span>`;
+function getStatusBadge(p, ri, clickable=false) {
+  const ag=p.agendamento, dias=calcDias(p);
+  const cl = clickable ? `class="badge badge-{CL} badge-clickable" onclick="abrirStatusMenu(event,${ri})"` : `class="badge badge-{CL}"`;
+  let label='', color='';
+  if (ag?.status==='agendada')  { label=`📅 Agendada ${formatDate(ag.data)}`; color='blue'; }
+  else if (ag?.status==='cancelada') { label='❌ Cancelado'; color='purple'; }
+  else if (ag?.status==='noshow')    { label='🚫 No-show'; color='orange'; }
+  else if (dias<0)  { label=`Vencida (${Math.abs(dias)}d)`; color='red'; }
+  else if (dias<=7) { label=`Em ${dias}d`; color='yellow'; }
+  else              { label='Em dia'; color='green'; }
+  return `<span ${cl.replace('{CL}',color)}>${label}</span>`;
 }
-
 function getAgBadge(p) {
-  const ag = p.agendamento;
+  const ag=p.agendamento;
   if (!ag) return '<span style="color:var(--text2);font-size:12px">—</span>';
-  if (ag.status === 'agendada')  return `<span class="badge badge-blue">📅 ${formatDate(ag.data)}</span>`;
-  if (ag.status === 'cancelada') return `<span class="badge badge-purple">❌ Cancelado</span>`;
+  if (ag.status==='agendada')  return `<span class="badge badge-blue">📅 ${formatDate(ag.data)}</span>`;
+  if (ag.status==='cancelada') return `<span class="badge badge-purple">❌ ${ag.motivo||'Cancelado'}</span>`;
+  if (ag.status==='noshow')    return `<span class="badge badge-orange">🚫 No-show</span>`;
   return '—';
 }
-
 function formatDate(d) {
   if (!d) return '—';
-  return new Date(d + 'T12:00:00').toLocaleDateString('pt-BR');
+  return new Date(d+'T12:00:00').toLocaleDateString('pt-BR');
 }
-
-function sorted(lista) {
-  return [...lista].sort((a,b) => sortKey(a) - sortKey(b));
+function sorted(lista) { return [...lista].sort((a,b)=>sortKey(a)-sortKey(b)); }
+function filtrarUnidade(lista, selectId) {
+  const u=document.getElementById(selectId)?.value||'';
+  return u ? lista.filter(p=>p.unidade===u) : lista;
 }
 
 // ===================== LOGIN =====================
 function login() {
-  const u = document.getElementById('username').value.trim().toLowerCase();
-  const p = document.getElementById('password').value;
-  if (USERS[u] && USERS[u] === p) {
-    currentUser = u;
-    document.getElementById('login-screen').style.display = 'none';
-    document.getElementById('app-screen').style.display = 'block';
-    document.getElementById('user-label').textContent = '👤 ' + cap(u);
-    renderAll();
-    notify('Bem-vindo, ' + cap(u) + '! 👋');
-  } else {
-    document.getElementById('login-error').style.display = 'block';
-  }
+  const u=document.getElementById('username').value.trim().toLowerCase();
+  const p=document.getElementById('password').value;
+  if (USERS[u] && USERS[u]===p) {
+    currentUser=u;
+    document.getElementById('login-screen').style.display='none';
+    document.getElementById('app-screen').style.display='block';
+    document.getElementById('user-label').textContent='👤 '+cap(u);
+    renderAll(); notify('Bem-vindo, '+cap(u)+'! 👋');
+  } else { document.getElementById('login-error').style.display='block'; }
 }
-
 function logout() {
-  document.getElementById('login-screen').style.display = 'flex';
-  document.getElementById('app-screen').style.display = 'none';
-  ['username','password'].forEach(id => document.getElementById(id).value = '');
-  document.getElementById('login-error').style.display = 'none';
-  currentUser = '';
+  document.getElementById('login-screen').style.display='flex';
+  document.getElementById('app-screen').style.display='none';
+  ['username','password'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('login-error').style.display='none';
+  currentUser='';
 }
-
-document.getElementById('password').addEventListener('keydown', e => { if (e.key==='Enter') login(); });
-document.getElementById('username').addEventListener('keydown', e => { if (e.key==='Enter') document.getElementById('password').focus(); });
+document.getElementById('password').addEventListener('keydown',e=>{if(e.key==='Enter')login();});
+document.getElementById('username').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('password').focus();});
 
 // ===================== TABS =====================
 function showTab(tab) {
-  ['dashboard','pacientes','alertas'].forEach(t =>
-    document.getElementById('tab-'+t).style.display = t===tab ? 'block' : 'none'
-  );
-  document.querySelectorAll('.tab').forEach((el,i) =>
-    el.classList.toggle('active', ['dashboard','pacientes','alertas'][i]===tab)
-  );
+  ['dashboard','pacientes','alertas'].forEach(t=>document.getElementById('tab-'+t).style.display=t===tab?'block':'none');
+  document.querySelectorAll('.tab').forEach((el,i)=>el.classList.toggle('active',['dashboard','pacientes','alertas'][i]===tab));
   renderAll();
 }
 
@@ -404,19 +460,21 @@ function renderAll() { renderMetrics(); renderDashboard(); renderPacientes(); re
 function cap(s) { return s.charAt(0).toUpperCase()+s.slice(1); }
 
 function renderMetrics() {
-  let total=pacientes.length, vencidas=0, proximas=0, agendadas=0, canceladas=0, emDia=0;
-  pacientes.forEach(p => {
+  const unidadeFiltro = document.getElementById('dash-unidade')?.value||'';
+  const lista = unidadeFiltro ? pacientes.filter(p=>p.unidade===unidadeFiltro) : pacientes;
+  let total=lista.length, vencidas=0, proximas=0, agendadas=0, canceladas=0, noshows=0, emDia=0;
+  lista.forEach(p=>{
     const ag=p.agendamento, dias=calcDias(p);
     if (ag?.status==='agendada')  { agendadas++; return; }
     if (ag?.status==='cancelada') { canceladas++; return; }
-    if (dias<0) vencidas++;
-    else if (dias<=7) proximas++;
-    else emDia++;
+    if (ag?.status==='noshow')    { noshows++; return; }
+    if (dias<0) vencidas++; else if (dias<=7) proximas++; else emDia++;
   });
   document.getElementById('metrics-grid').innerHTML = `
     <div class="metric"><div class="metric-label">Total</div><div class="metric-value">${total}</div></div>
     <div class="metric"><div class="metric-label">Vencidas</div><div class="metric-value red">${vencidas}</div></div>
-    <div class="metric"><div class="metric-label">Canceladas</div><div class="metric-value purple">${canceladas}</div></div>
+    <div class="metric"><div class="metric-label">Cancelamentos</div><div class="metric-value purple">${canceladas}</div></div>
+    <div class="metric"><div class="metric-label">No-shows</div><div class="metric-value orange">${noshows}</div></div>
     <div class="metric"><div class="metric-label">Próximas (7d)</div><div class="metric-value yellow">${proximas}</div></div>
     <div class="metric"><div class="metric-label">Agendadas</div><div class="metric-value blue">${agendadas}</div></div>
     <div class="metric"><div class="metric-label">Em dia</div><div class="metric-value green">${emDia}</div></div>
@@ -424,217 +482,276 @@ function renderMetrics() {
 }
 
 function renderDashboard() {
-  const lista = sorted(pacientes).slice(0,15);
-  const tb = document.getElementById('dashboard-table');
-  if (!lista.length) { tb.innerHTML='<tr><td colspan="6" class="no-data">Nenhum paciente cadastrado.</td></tr>'; return; }
-  tb.innerHTML = lista.map(p => {
-    const proxima = calcProxima(p);
+  const lista = sorted(filtrarUnidade(pacientes,'dash-unidade')).slice(0,20);
+  const tb=document.getElementById('dashboard-table');
+  if (!lista.length) { tb.innerHTML='<tr><td colspan="6" class="no-data">Nenhum paciente encontrado.</td></tr>'; return; }
+  tb.innerHTML=lista.map((p,i)=>{
+    const ri=pacientes.indexOf(p);
     return `<tr>
-      <td><strong>${p.nome}</strong></td>
+      <td><strong>${p.nome}</strong><br><small style="color:var(--text2)">${p.tel}</small></td>
+      <td><span class="badge badge-unit">${p.unidade||'—'}</span></td>
       <td>${formatDate(p.ultimaReav)}</td>
-      <td>${formatDate(proxima.toISOString().split('T')[0])}</td>
+      <td>${formatDate(calcProxima(p).toISOString().split('T')[0])}</td>
       <td>${getAgBadge(p)}</td>
-      <td>${getStatusBadge(p)}</td>
-      <td>${cap(p.sec)}</td>
+      <td>${getStatusBadge(p,ri,true)}</td>
     </tr>`;
   }).join('');
 }
 
 function renderPacientes() {
-  const lista = sorted(currentUser==='gerenciador' ? pacientes : pacientes.filter(p=>p.sec===currentUser));
-  const tb = document.getElementById('pacientes-table');
-  if (!lista.length) { tb.innerHTML='<tr><td colspan="7" class="no-data">Nenhum paciente encontrado.</td></tr>'; return; }
-  tb.innerHTML = lista.map(p => {
-    const ri = pacientes.indexOf(p);
-    const proxima = calcProxima(p);
-    const ag = p.agendamento;
-    const acoes = `
-      ${p.tel ? `<button class="btn btn-small btn-whatsapp" onclick="abrirWhatsApp('${p.tel}')" title="Abrir WhatsApp de ${p.nome}">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:3px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp
-      </button>` : ''}
-      ${(!ag || ag.status==='cancelada') ? `<button class="btn btn-small btn-blue" onclick="abrirAgendar(${ri})">📅 Agendar</button>` : ''}
-      ${ag?.status==='agendada' ? `<button class="btn btn-small btn-green" onclick="abrirRealizar(${ri})">✅ Realizada</button>` : ''}
-      ${ag?.status==='agendada' ? `<button class="btn btn-small btn-red" onclick="cancelarAgendamento(${ri})">✕ Cancelar</button>` : ''}
+  const unidade=document.getElementById('filtro-unidade')?.value||'';
+  const sec=document.getElementById('filtro-sec')?.value||'';
+  let lista=pacientes;
+  if (currentUser!=='gerenciador') lista=lista.filter(p=>p.sec===currentUser);
+  if (unidade) lista=lista.filter(p=>p.unidade===unidade);
+  if (sec) lista=lista.filter(p=>p.sec===sec);
+  lista=sorted(lista);
+  const tb=document.getElementById('pacientes-table');
+  if (!lista.length) { tb.innerHTML='<tr><td colspan="8" class="no-data">Nenhum paciente encontrado.</td></tr>'; return; }
+  tb.innerHTML=lista.map(p=>{
+    const ri=pacientes.indexOf(p), ag=p.agendamento;
+    const acoes=`
+      ${p.tel?`<button class="btn btn-small btn-whatsapp" onclick="abrirWhatsApp('${p.tel}')" title="WhatsApp">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:2px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      </button>`:''}
       <button class="btn btn-small" onclick="editarPaciente(${ri})">✏️</button>
       <button class="btn btn-small btn-red" onclick="excluirPaciente(${ri})">🗑</button>
     `;
     return `<tr>
       <td><strong>${p.nome}</strong><br><small style="color:var(--text2)">${p.tel}</small></td>
+      <td><span class="badge badge-unit">${p.unidade||'—'}</span></td>
       <td>${cap(p.sec)}</td>
       <td>${formatDate(p.ultimaReav)}</td>
-      <td>${formatDate(proxima.toISOString().split('T')[0])}</td>
+      <td>${formatDate(calcProxima(p).toISOString().split('T')[0])}</td>
       <td>${getAgBadge(p)}</td>
-      <td>${getStatusBadge(p)}</td>
+      <td>${getStatusBadge(p,ri,true)}</td>
       <td><div class="actions">${acoes}</div></td>
     </tr>`;
   }).join('');
 }
 
 function renderAlertas() {
-  const vencidos   = pacientes.filter(p => !p.agendamento && calcDias(p)<0);
-  const cancelados = pacientes.filter(p => p.agendamento?.status==='cancelada');
-  const proximos   = pacientes.filter(p => !p.agendamento && calcDias(p)>=0 && calcDias(p)<=7);
-  const agendados  = pacientes.filter(p => p.agendamento?.status==='agendada');
+  const filt=p=>{const u=document.getElementById('filtro-alerta-unidade')?.value||'';return !u||p.unidade===u;};
+  const vencidos   = sorted(pacientes.filter(p=>filt(p)&&!p.agendamento&&calcDias(p)<0));
+  const cancelados = sorted(pacientes.filter(p=>filt(p)&&p.agendamento?.status==='cancelada'));
+  const noshows    = sorted(pacientes.filter(p=>filt(p)&&p.agendamento?.status==='noshow'));
+  const proximos   = sorted(pacientes.filter(p=>filt(p)&&!p.agendamento&&calcDias(p)>=0&&calcDias(p)<=7));
+  const agendados  = sorted(pacientes.filter(p=>filt(p)&&p.agendamento?.status==='agendada'));
 
-  renderListaAlerta(sorted(vencidos),   'lista-vencidos',   ri => `<button class="btn btn-small btn-blue" onclick="abrirAgendar(${ri})">📅 Agendar</button>`);
-  renderListaAlerta(sorted(cancelados), 'lista-cancelados', ri => `<button class="btn btn-small btn-blue" onclick="abrirAgendar(${ri})">📅 Reagendar</button>`);
-  renderListaAlerta(sorted(proximos),   'lista-proximos',   ri => `<button class="btn btn-small btn-blue" onclick="abrirAgendar(${ri})">📅 Agendar</button>`);
-  renderListaAlerta(sorted(agendados),  'lista-agendados',  ri => `
-    <button class="btn btn-small btn-green" onclick="abrirRealizar(${ri})">✅ Realizada</button>
-    <button class="btn btn-small btn-red"   onclick="cancelarAgendamento(${ri})">✕ Cancelar</button>
-  `);
+  const mkBtns = (ri,tipo) => {
+    const p=pacientes[ri];
+    let btns=`${p.tel?`<button class="btn btn-small btn-whatsapp" onclick="abrirWhatsApp('${p.tel}')">💬 WhatsApp</button>`:''}`;
+    if (tipo==='agendada') btns+=`<button class="btn btn-small btn-green" onclick="abrirRealizar(${ri})">✅ Realizada</button>
+      <button class="btn btn-small btn-red" onclick="abrirCancelar(${ri})">❌ Cancelar</button>
+      <button class="btn btn-small btn-orange" onclick="abrirNoShow(${ri})">🚫 No-show</button>`;
+    else btns+=`<button class="btn btn-small btn-blue" onclick="abrirAgendar(${ri})">📅 ${tipo==='cancelada'||tipo==='noshow'?'Reagendar':'Agendar'}</button>`;
+    return btns;
+  };
+  const renderLista=(lista,id,tipo)=>{
+    const el=document.getElementById(id);
+    if (!lista.length){el.innerHTML='<p class="no-data">Nenhum paciente.</p>';return;}
+    el.innerHTML=lista.map(p=>{
+      const ri=pacientes.indexOf(p), ag=p.agendamento, dias=calcDias(p);
+      let info='';
+      if (ag?.status==='agendada')  info=`Agendada: ${formatDate(ag.data)}${ag.obs?' · '+ag.obs:''}`;
+      else if (ag?.status==='cancelada') info=`Motivo: ${ag.motivo||'—'} · Próxima: ${formatDate(calcProxima(p).toISOString().split('T')[0])}`;
+      else if (ag?.status==='noshow')    info=`No-show · ${ag.obs||''} · Próxima: ${formatDate(calcProxima(p).toISOString().split('T')[0])}`;
+      else info=`Próxima: ${formatDate(calcProxima(p).toISOString().split('T')[0])} · ${dias<0?Math.abs(dias)+'d vencida':'vence em '+dias+'d'}`;
+      return `<div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);gap:8px;flex-wrap:wrap">
+        <div>
+          <strong>${p.nome}</strong> <span class="badge badge-unit">${p.unidade||'—'}</span> — ${cap(p.sec)}<br>
+          <small style="color:var(--text2)">${p.tel} · ${info}</small>
+        </div>
+        <div class="actions">${mkBtns(ri,tipo)}</div>
+      </div>`;
+    }).join('');
+  };
+  renderLista(vencidos,  'lista-vencidos',  'vencida');
+  renderLista(cancelados,'lista-cancelados','cancelada');
+  renderLista(noshows,   'lista-noshows',   'noshow');
+  renderLista(proximos,  'lista-proximos',  'proxima');
+  renderLista(agendados, 'lista-agendados', 'agendada');
 }
 
-function renderListaAlerta(lista, containerId, botoesHtml) {
-  const el = document.getElementById(containerId);
-  if (!lista.length) { el.innerHTML='<p class="no-data">Nenhum paciente nesta categoria.</p>'; return; }
-  el.innerHTML = lista.map(p => {
-    const ri = pacientes.indexOf(p);
-    const ag = p.agendamento;
-    const dias = calcDias(p);
-    let info = '';
-    if (ag?.status==='agendada')  info = `Agendada para ${formatDate(ag.data)}${ag.obs ? ' · '+ag.obs : ''}`;
-    else if (ag?.status==='cancelada') info = `Cancelada${ag.obs ? ' · '+ag.obs : ''} · Próxima: ${formatDate(calcProxima(p).toISOString().split('T')[0])}`;
-    else info = `Próxima: ${formatDate(calcProxima(p).toISOString().split('T')[0])} · ${dias<0 ? Math.abs(dias)+'d vencida' : 'vence em '+dias+'d'}`;
-    const btnWpp = p.tel ? `<button class="btn btn-small btn-whatsapp" onclick="abrirWhatsApp('${p.tel}')">💬 WhatsApp</button>` : '';
-    return `<div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);gap:8px;flex-wrap:wrap">
-      <div>
-        <strong>${p.nome}</strong> — ${cap(p.sec)}<br>
-        <small style="color:var(--text2)">${p.tel} · ${info}</small>
-      </div>
-      <div class="actions">${btnWpp}${botoesHtml(ri)}</div>
-    </div>`;
-  }).join('');
+// ===================== STATUS MENU (INLINE) =====================
+function abrirStatusMenu(event, ri) {
+  event.stopPropagation();
+  fecharStatusMenu();
+  const p=pacientes[ri], ag=p.agendamento;
+  const menu=document.getElementById('status-menu');
+  const items=[];
+
+  if (!ag || ag.status==='cancelada' || ag.status==='noshow') {
+    items.push({icon:'📅',label:'Agendar reavaliação',fn:`abrirAgendar(${ri})`,cls:''});
+  }
+  if (ag?.status==='agendada') {
+    items.push({icon:'✅',label:'Confirmar como Realizada',fn:`abrirRealizar(${ri})`,cls:''});
+    items.push({icon:'❌',label:'Cancelar com aviso prévio',fn:`abrirCancelar(${ri})`,cls:'danger'});
+    items.push({icon:'🚫',label:'Registrar No-show',fn:`abrirNoShow(${ri})`,cls:'warn'});
+  }
+  if (ag) {
+    if (items.length) items.push({divider:true});
+    if (ag.status==='agendada') {
+      items.push({icon:'📅',label:'Alterar data do agendamento',fn:`abrirAgendar(${ri})`,cls:''});
+    }
+  }
+
+  menu.innerHTML=items.map(it=>it.divider?'<div class="status-menu-divider"></div>':
+    `<div class="status-menu-item ${it.cls}" onclick="${it.fn};fecharStatusMenu()">${it.icon} ${it.label}</div>`
+  ).join('');
+
+  const rect=event.target.getBoundingClientRect();
+  const menuW=210, menuH=items.length*42;
+  let top=rect.bottom+window.scrollY+4;
+  let left=rect.left+window.scrollX;
+  if (left+menuW>window.innerWidth) left=window.innerWidth-menuW-8;
+  if (top+menuH>window.scrollY+window.innerHeight) top=rect.top+window.scrollY-menuH-4;
+  menu.style.cssText=`display:block;top:${top}px;left:${left}px;`;
 }
+function fecharStatusMenu() { document.getElementById('status-menu').style.display='none'; }
+document.addEventListener('click', fecharStatusMenu);
 
 // ===================== PACIENTES =====================
 function abrirModalPaciente() {
   editIndex=-1;
   document.getElementById('modal-titulo').textContent='Novo Paciente';
-  ['p-nome','p-tel','p-email','p-obs'].forEach(id=>{const el=document.getElementById(id);if(el)el.value='';});
+  ['p-nome','p-tel','p-email'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('p-unidade').value='';
   document.getElementById('p-sec').value='maria';
   document.getElementById('p-data').value=new Date().toISOString().split('T')[0];
   document.getElementById('p-intervalo').value='3';
   document.getElementById('modal-paciente').style.display='flex';
 }
-
 function editarPaciente(i) {
   editIndex=i; const p=pacientes[i];
   document.getElementById('modal-titulo').textContent='Editar Paciente';
   document.getElementById('p-nome').value=p.nome;
   document.getElementById('p-tel').value=p.tel;
   document.getElementById('p-email').value=p.email||'';
+  document.getElementById('p-unidade').value=p.unidade||'';
   document.getElementById('p-sec').value=p.sec;
   document.getElementById('p-data').value=p.ultimaReav;
   document.getElementById('p-intervalo').value=p.intervalo;
   document.getElementById('modal-paciente').style.display='flex';
 }
-
 function salvarPaciente() {
   const nome=document.getElementById('p-nome').value.trim();
-  if (!nome) { alert('Digite o nome do paciente.'); return; }
-  const p = {
+  if (!nome){alert('Digite o nome do paciente.');return;}
+  const p={
     nome, tel:document.getElementById('p-tel').value.trim(),
     email:document.getElementById('p-email').value.trim(),
+    unidade:document.getElementById('p-unidade').value,
     sec:document.getElementById('p-sec').value,
     ultimaReav:document.getElementById('p-data').value,
     intervalo:document.getElementById('p-intervalo').value,
-    agendamento: editIndex>=0 ? pacientes[editIndex].agendamento : null,
-    historico:   editIndex>=0 ? pacientes[editIndex].historico   : [],
+    agendamento:editIndex>=0?pacientes[editIndex].agendamento:null,
+    historico:editIndex>=0?pacientes[editIndex].historico:[],
   };
-  if (editIndex>=0) { pacientes[editIndex]=p; notify('Paciente atualizado! ✅'); }
-  else { pacientes.push(p); notify('Paciente cadastrado! ✅'); }
-  salvarDados();
-  document.getElementById('modal-paciente').style.display='none';
-  renderAll();
+  if (editIndex>=0){pacientes[editIndex]=p;notify('Paciente atualizado! ✅');}
+  else{pacientes.push(p);notify('Paciente cadastrado! ✅');}
+  salvarDados(); document.getElementById('modal-paciente').style.display='none'; renderAll();
 }
-
 function excluirPaciente(i) {
-  if (!confirm('Excluir '+pacientes[i].nome+'?')) return;
+  if (!confirm('Excluir '+pacientes[i].nome+'?'))return;
   pacientes.splice(i,1); salvarDados(); renderAll(); notify('Paciente removido.');
 }
 
-// ===================== AGENDAMENTO =====================
+// ===================== AGENDAR =====================
 function abrirAgendar(i) {
   agendarIndex=i;
   document.getElementById('ag-nome').textContent=pacientes[i].nome;
-  // Sugere a data da próxima reavaliação
-  const proxima = calcProxima(pacientes[i]);
-  const hoje = new Date().toISOString().split('T')[0];
-  const sugestao = proxima.toISOString().split('T')[0];
-  document.getElementById('ag-data').value = sugestao > hoje ? sugestao : hoje;
+  const proxima=calcProxima(pacientes[i]), hoje=new Date().toISOString().split('T')[0];
+  const sugestao=proxima.toISOString().split('T')[0];
+  document.getElementById('ag-data').value=sugestao>hoje?sugestao:hoje;
   document.getElementById('ag-obs').value='';
   document.getElementById('modal-agendar').style.display='flex';
 }
-
 function confirmarAgendamento() {
   const data=document.getElementById('ag-data').value;
-  if (!data) { alert('Selecione a data.'); return; }
-  pacientes[agendarIndex].agendamento = {
-    data, status:'agendada',
-    obs:document.getElementById('ag-obs').value.trim()
-  };
-  salvarDados();
-  document.getElementById('modal-agendar').style.display='none';
-  renderAll();
-  notify('Reavaliação agendada! 📅');
+  if (!data){alert('Selecione a data.');return;}
+  pacientes[agendarIndex].agendamento={data,status:'agendada',obs:document.getElementById('ag-obs').value.trim()};
+  salvarDados(); document.getElementById('modal-agendar').style.display='none'; renderAll(); notify('Reavaliação agendada! 📅');
 }
 
-function cancelarAgendamento(i) {
-  const p=pacientes[i];
-  const motivo=prompt('Motivo do cancelamento (opcional):','');
-  if (motivo===null) return; // clicou Cancelar no prompt
-  p.agendamento.status='cancelada';
-  if (motivo) p.agendamento.obs=motivo;
-  salvarDados(); renderAll();
-  notify('Agendamento cancelado. ❌');
-}
-
-// ===================== REALIZAÇÃO =====================
+// ===================== REALIZAR =====================
 function abrirRealizar(i) {
   realizarIndex=i;
   document.getElementById('re-nome').textContent=pacientes[i].nome;
-  // Sugere a data do agendamento se existir, senão hoje
   const ag=pacientes[i].agendamento;
-  document.getElementById('re-data').value = ag?.data || new Date().toISOString().split('T')[0];
+  document.getElementById('re-data').value=ag?.data||new Date().toISOString().split('T')[0];
   document.getElementById('re-obs').value='';
   document.getElementById('modal-realizar').style.display='flex';
 }
-
 function marcarRealizada() {
   const data=document.getElementById('re-data').value;
-  if (!data) { alert('Selecione a data.'); return; }
+  if (!data){alert('Selecione a data.');return;}
   const p=pacientes[realizarIndex];
-  // Salva no histórico
-  p.historico = p.historico||[];
-  p.historico.unshift({
-    data, obs:document.getElementById('re-obs').value.trim(),
-    realizadaEm:new Date().toISOString()
-  });
-  // Atualiza última reavaliação e limpa agendamento
-  p.ultimaReav=data;
-  p.agendamento=null;
-  salvarDados();
-  document.getElementById('modal-realizar').style.display='none';
-  renderAll();
-  notify('Reavaliação confirmada! ✅');
+  p.historico=p.historico||[];
+  p.historico.unshift({data,tipo:'realizada',obs:document.getElementById('re-obs').value.trim()});
+  p.ultimaReav=data; p.agendamento=null;
+  salvarDados(); document.getElementById('modal-realizar').style.display='none'; renderAll(); notify('Reavaliação confirmada! ✅');
+}
+
+// ===================== CANCELAR COM MOTIVO =====================
+function abrirCancelar(i) {
+  cancelarIndex=i;
+  document.getElementById('ca-nome').textContent=pacientes[i].nome;
+  document.getElementById('ca-motivo').value='';
+  document.getElementById('ca-reagendar').value='nao';
+  document.getElementById('ca-nova-data-group').style.display='none';
+  document.getElementById('modal-cancelar').style.display='flex';
+}
+document.getElementById('ca-reagendar').addEventListener('change',function(){
+  document.getElementById('ca-nova-data-group').style.display=this.value==='sim'?'block':'none';
+});
+function confirmarCancelamento() {
+  const motivo=document.getElementById('ca-motivo').value.trim();
+  if (!motivo){alert('Por favor, informe o motivo do cancelamento.');return;}
+  const p=pacientes[cancelarIndex];
+  const reagendar=document.getElementById('ca-reagendar').value;
+  const novaData=document.getElementById('ca-nova-data').value;
+  p.historico=p.historico||[];
+  p.historico.unshift({data:new Date().toISOString().split('T')[0],tipo:'cancelada',obs:motivo});
+  if (reagendar==='sim'&&novaData) {
+    p.agendamento={data:novaData,status:'agendada',obs:'Reagendado após cancelamento'};
+    notify('Cancelamento registrado e reagendado! 📅');
+  } else {
+    p.agendamento={data:p.agendamento?.data||'',status:'cancelada',motivo};
+    notify('Cancelamento registrado. ❌');
+  }
+  salvarDados(); document.getElementById('modal-cancelar').style.display='none'; renderAll();
+}
+
+// ===================== NO-SHOW =====================
+function abrirNoShow(i) {
+  noshowIndex=i;
+  document.getElementById('ns-nome').textContent=pacientes[i].nome;
+  document.getElementById('ns-obs').value='';
+  document.getElementById('modal-noshow').style.display='flex';
+}
+function confirmarNoShow() {
+  const p=pacientes[noshowIndex];
+  const obs=document.getElementById('ns-obs').value.trim();
+  p.historico=p.historico||[];
+  p.historico.unshift({data:new Date().toISOString().split('T')[0],tipo:'noshow',obs});
+  p.agendamento={data:p.agendamento?.data||'',status:'noshow',obs};
+  salvarDados(); document.getElementById('modal-noshow').style.display='none'; renderAll(); notify('No-show registrado. 🚫');
 }
 
 // ===================== WHATSAPP =====================
 function abrirWhatsApp(tel) {
-  let num = tel.replace(/\D/g, ''); // remove tudo que não é dígito
-  if (num.startsWith('0')) num = num.substring(1); // remove 0 inicial
-  if (!num.startsWith('55')) num = '55' + num;     // adiciona DDI Brasil
-  window.open('https://wa.me/' + num, '_blank');
+  let num=tel.replace(/\D/g,'');
+  if (num.startsWith('0')) num=num.substring(1);
+  if (!num.startsWith('55')) num='55'+num;
+  window.open('https://wa.me/'+num,'_blank');
 }
 
 // ===================== UTILS =====================
-function fecharModal(e) { if (e.target===e.currentTarget) e.currentTarget.style.display='none'; }
-
-function notify(msg) {
+function fecharModal(e){if(e.target===e.currentTarget)e.currentTarget.style.display='none';}
+function notify(msg){
   const el=document.getElementById('notification');
   el.textContent=msg; el.classList.add('show');
-  setTimeout(()=>el.classList.remove('show'),3000);
+  setTimeout(()=>el.classList.remove('show'),3500);
 }
 </script>
 </body>
