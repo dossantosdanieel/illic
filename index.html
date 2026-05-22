@@ -3,260 +3,520 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🏥 Sistema de Reavaliações - Clínica Fisioterapia</title>
+  <title>🏥 Sistema de Reavaliações - ILLIC</title>
   <style>
     :root {
-      --color-background-primary: #ffffff;
-      --color-background-secondary: #f5f5f5;
-      --color-text-primary: #1a1a1a;
-      --color-text-secondary: #666666;
-      --color-border-tertiary: #e0e0e0;
-      --color-border-secondary: #d0d0d0;
-      --color-background-danger: #fee2e2;
-      --color-text-danger: #991b1b;
-      --color-background-warning: #fef3c7;
-      --color-text-warning: #92400e;
-      --color-background-success: #dcfce7;
-      --color-text-success: #166534;
-      --color-background-info: #dbeafe;
-      --color-text-info: #1e40af;
-      --border-radius-md: 8px;
-      --border-radius-lg: 12px;
-      --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --bg: #f5f5f5;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --text2: #666666;
+      --border: #e0e0e0;
+      --blue: #1e40af;
+      --blue-bg: #dbeafe;
+      --green: #166534;
+      --green-bg: #dcfce7;
+      --red: #991b1b;
+      --red-bg: #fee2e2;
+      --yellow: #92400e;
+      --yellow-bg: #fef3c7;
+      --radius: 10px;
     }
-
     @media (prefers-color-scheme: dark) {
       :root {
-        --color-background-primary: #1a1a1a;
-        --color-background-secondary: #2d2d2d;
-        --color-text-primary: #ffffff;
-        --color-text-secondary: #a0a0a0;
-        --color-border-tertiary: #404040;
-        --color-border-secondary: #505050;
-        --color-background-danger: #7f1d1d;
-        --color-text-danger: #fecaca;
-        --color-background-warning: #78350f;
-        --color-text-warning: #fde047;
-        --color-background-success: #166534;
-        --color-text-success: #bbf7d0;
-        --color-background-info: #1e40af;
-        --color-text-info: #bfdbfe;
+        --bg: #1a1a1a; --card: #2d2d2d; --text: #ffffff;
+        --text2: #a0a0a0; --border: #404040;
+        --blue: #93c5fd; --blue-bg: #1e3a8a;
+        --green: #bbf7d0; --green-bg: #14532d;
+        --red: #fecaca; --red-bg: #7f1d1d;
+        --yellow: #fde047; --yellow-bg: #78350f;
       }
     }
-
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { 
-      font-family: var(--font-sans); 
-      color: var(--color-text-primary); 
-      background: var(--color-background-secondary);
-      line-height: 1.6;
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+
+    /* LOGIN */
+    #login-screen { display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 1rem; }
+    .login-box { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; width: 100%; max-width: 400px; }
+    .login-box h1 { text-align: center; font-size: 22px; margin-bottom: 0.5rem; }
+    .login-box h2 { text-align: center; font-size: 14px; color: var(--text2); font-weight: normal; margin-bottom: 2rem; }
+    .form-group { margin-bottom: 1.2rem; }
+    .form-group label { display: block; font-weight: 500; font-size: 14px; margin-bottom: 6px; }
+    .form-group input { width: 100%; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; background: var(--card); color: var(--text); }
+    .form-group input:focus { outline: 2px solid var(--blue-bg); }
+    .btn-login { width: 100%; padding: 12px; background: var(--blue-bg); color: var(--blue); border: none; border-radius: 8px; font-size: 15px; font-weight: 600; cursor: pointer; margin-top: 0.5rem; }
+    .btn-login:hover { opacity: 0.85; }
+    .demo-box { background: var(--bg); border-radius: 8px; padding: 1rem; margin-top: 1.5rem; font-size: 13px; }
+    .demo-box p { color: var(--text2); margin-bottom: 4px; }
+    .code { background: var(--card); padding: 1px 6px; border-radius: 4px; font-family: monospace; border: 1px solid var(--border); }
+    .error-msg { background: var(--red-bg); color: var(--red); padding: 10px 12px; border-radius: 8px; font-size: 13px; margin-bottom: 1rem; display: none; }
+
+    /* APP */
+    #app-screen { display: none; min-height: 100vh; }
+    .topbar { background: var(--card); border-bottom: 1px solid var(--border); padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; }
+    .topbar h1 { font-size: 18px; }
+    .topbar-right { display: flex; align-items: center; gap: 1rem; }
+    .user-badge { font-size: 13px; color: var(--text2); }
+    .btn { padding: 8px 14px; border: 1px solid var(--border); border-radius: 8px; background: transparent; color: var(--text); font-size: 14px; cursor: pointer; }
+    .btn:hover { background: var(--bg); }
+    .btn-primary { background: var(--blue-bg); color: var(--blue); border-color: transparent; font-weight: 600; }
+    .btn-danger { background: var(--red-bg); color: var(--red); border-color: transparent; }
+    .btn-small { padding: 5px 10px; font-size: 12px; }
+
+    .content { padding: 1.5rem; max-width: 1100px; margin: 0 auto; }
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 1.5rem; }
+    .metric { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; text-align: center; }
+    .metric-label { font-size: 12px; color: var(--text2); margin-bottom: 6px; }
+    .metric-value { font-size: 28px; font-weight: 600; }
+    .metric-value.red { color: var(--red); }
+    .metric-value.yellow { color: var(--yellow); }
+    .metric-value.green { color: var(--green); }
+
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; margin-bottom: 1.5rem; }
+    .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem; }
+    .card-header h2 { font-size: 16px; }
+
+    .tabs { display: flex; gap: 8px; margin-bottom: 1.5rem; flex-wrap: wrap; }
+    .tab { padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: transparent; color: var(--text2); font-size: 14px; cursor: pointer; }
+    .tab.active { background: var(--blue-bg); color: var(--blue); border-color: transparent; font-weight: 600; }
+
+    /* TABLE */
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--border); font-size: 12px; color: var(--text2); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+    td { padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: var(--bg); }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 500; }
+    .badge-red { background: var(--red-bg); color: var(--red); }
+    .badge-yellow { background: var(--yellow-bg); color: var(--yellow); }
+    .badge-green { background: var(--green-bg); color: var(--green); }
+    .no-data { text-align: center; padding: 2rem; color: var(--text2); }
+
+    /* MODAL */
+    .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 1rem; }
+    .modal { background: var(--card); border-radius: var(--radius); padding: 1.5rem; width: 100%; max-width: 480px; max-height: 90vh; overflow-y: auto; }
+    .modal h3 { font-size: 16px; margin-bottom: 1.2rem; }
+    .modal-footer { display: flex; gap: 8px; justify-content: flex-end; margin-top: 1.2rem; }
+
+    /* NOTIFICATION */
+    .notification { position: fixed; top: 20px; right: 20px; background: var(--green-bg); color: var(--green); padding: 14px 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 9999; font-size: 14px; font-weight: 500; transform: translateX(400px); transition: transform 0.3s ease; }
+    .notification.show { transform: translateX(0); }
+
+    @media (max-width: 600px) {
+      .topbar { flex-direction: column; gap: 0.5rem; align-items: flex-start; }
+      .content { padding: 1rem; }
     }
-
-    button { 
-      cursor: pointer; 
-      padding: 8px 16px; 
-      border: 0.5px solid var(--color-border-secondary); 
-      border-radius: var(--border-radius-md); 
-      background: transparent; 
-      color: var(--color-text-primary); 
-      font-size: 14px; 
-      transition: all 0.2s;
-      font-family: inherit;
-    }
-    button:hover { background: var(--color-background-secondary); }
-    button:active { transform: scale(0.98); }
-
-    input, select, textarea { 
-      padding: 8px 12px; 
-      border: 0.5px solid var(--color-border-secondary); 
-      border-radius: var(--border-radius-md); 
-      font-size: 14px; 
-      background: var(--color-background-primary); 
-      color: var(--color-text-primary); 
-      font-family: inherit;
-    }
-    input:focus, select:focus, textarea:focus { 
-      outline: 2px solid var(--color-background-info); 
-      outline-offset: 1px; 
-    }
-
-    .container { max-width: 1100px; margin: 0 auto; padding: 0; }
-    .card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.5rem; }
-    .header { padding: 1.5rem; border-bottom: 0.5px solid var(--color-border-tertiary); display: flex; justify-content: space-between; align-items: center; }
-    .main-content { padding: 1.5rem; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 1.5rem; }
-    .metric-card { background: var(--color-background-secondary); padding: 1rem; border-radius: var(--border-radius-md); text-align: center; }
-    .metric-label { font-size: 12px; color: var(--color-text-secondary); margin-bottom: 8px; }
-    .metric-value { font-size: 28px; font-weight: 500; }
-    
-    .login-container { max-width: 400px; margin: 100px auto; background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 2rem; }
-    .form-group { margin-bottom: 1.5rem; }
-    .form-group label { display: block; font-weight: 500; margin-bottom: 8px; font-size: 14px; }
-    .form-group input, .form-group select { width: 100%; }
-    .login-button { width: 100%; padding: 12px; font-weight: 500; }
-    .login-demo { background: var(--color-background-secondary); padding: 1rem; border-radius: var(--border-radius-md); margin-top: 1.5rem; text-align: center; }
-    .login-demo p { font-size: 12px; color: var(--color-text-secondary); margin-bottom: 8px; }
-    .code { background: var(--color-background-primary); padding: 2px 6px; border-radius: 4px; font-family: monospace; }
-
-    .alert { padding: 12px 16px; border-radius: var(--border-radius-md); margin-bottom: 1rem; }
-    .alert-success { background: var(--color-background-success); color: var(--color-text-success); }
-    .alert-info { background: var(--color-background-info); color: var(--color-text-info); }
-
-    .notification { 
-      position: fixed; 
-      top: 20px; 
-      right: 20px; 
-      background: var(--color-background-success); 
-      color: var(--color-text-success); 
-      padding: 16px 20px; 
-      border-radius: var(--border-radius-md); 
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
-      z-index: 2000; 
-      animation: slideIn 0.3s ease; 
-    }
-    @keyframes slideIn { 
-      from { transform: translateX(400px); opacity: 0; } 
-      to { transform: translateX(0); opacity: 1; } 
-    }
-
-    h1 { font-size: 24px; font-weight: 600; }
-    h2 { font-size: 18px; font-weight: 500; }
-    h3 { font-size: 16px; font-weight: 500; }
-
-    .no-data { text-align: center; padding: 2rem; color: var(--color-text-secondary); }
   </style>
 </head>
 <body>
-<div id="app"></div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/react.production.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/react-dom.production.min.js"></script>
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-<script type="text/babel">
-const { useState, useEffect } = React;
-
-function App() {
-  const [loggedIn, setLoggedIn] = useState(false);
-  const [userName, setUserName] = useState('');
-  const [password, setPassword] = useState('');
-  const [notification, setNotification] = useState(null);
-
-  useEffect(() => {
-    if (loggedIn) {
-      showNotification('Bem-vindo ao Sistema de Reavaliações! 👋');
-    }
-  }, [loggedIn]);
-
-  const showNotification = (message) => {
-    setNotification(message);
-    setTimeout(() => setNotification(null), 3000);
-  };
-
-  const handleLogin = (e) => {
-    e.preventDefault();
-    if (userName && password) {
-      setLoggedIn(true);
-      setPassword('');
-    }
-  };
-
-  if (!loggedIn) {
-    return (
-      <div className="login-container">
-        <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>🏥 Clínica Fisioterapia</h1>
-        <h2 style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '16px', color: 'var(--color-text-secondary)', fontWeight: 'normal' }}>Sistema de Reavaliações</h2>
-        <form onSubmit={handleLogin}>
-          <div className="form-group">
-            <label>Usuário</label>
-            <input 
-              type="text" 
-              value={userName} 
-              onChange={(e) => setUserName(e.target.value)} 
-              placeholder="Seu usuário"
-              autoFocus
-            />
-          </div>
-          <div className="form-group">
-            <label>Senha</label>
-            <input 
-              type="password" 
-              value={password} 
-              onChange={(e) => setPassword(e.target.value)} 
-              placeholder="Sua senha"
-            />
-          </div>
-          <button className="login-button" style={{ background: 'var(--color-background-info)', color: 'var(--color-text-info)', border: 'none', fontWeight: 600 }}>
-            Entrar
-          </button>
-        </form>
-        
-        <div className="login-demo">
-          <p style={{ marginBottom: '12px' }}><strong>📋 Dados de Demonstração:</strong></p>
-          <p><strong>Gerenciador:</strong> <span className="code">gerenciador / 1234</span></p>
-          <p style={{ marginTop: '8px' }}><strong>Secretárias:</strong></p>
-          <p><span className="code">maria / 1234</span></p>
-          <p><span className="code">ana / 1234</span></p>
-        </div>
-
-        <div className="alert alert-info" style={{ marginTop: '1.5rem' }}>
-          ✅ <strong>Sistema hospedado com sucesso no Vercel!</strong><br/>
-          <small>Versão 4.0 - Com todas as funcionalidades ativadas</small>
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <div className="container">
-      <div className="header">
-        <h1>📊 Sistema de Reavaliações</h1>
-        <button onClick={() => setLoggedIn(false)}>Sair</button>
-      </div>
-      
-      <div className="main-content">
-        <div className="card">
-          <h2 style={{ marginBottom: '1rem' }}>Bem-vindo! 👋</h2>
-          <p style={{ marginBottom: '1rem', color: 'var(--color-text-secondary)' }}>
-            Você está logado como: <strong>{userName}</strong>
-          </p>
-          
-          <div className="alert alert-success">
-            ✅ Aplicação está rodando com sucesso!<br/>
-            🚀 Hospedado no Vercel<br/>
-            📱 Responsivo para mobile<br/>
-            💾 Dados salvos localmente
-          </div>
-
-          <h3 style={{ marginTop: '2rem', marginBottom: '1rem' }}>🎯 Próximos Passos:</h3>
-          <ol style={{ marginLeft: '1.5rem', color: 'var(--color-text-secondary)' }}>
-            <li>Integrar com SendGrid para emails automáticos</li>
-            <li>Integrar com Twilio para SMS/WhatsApp</li>
-            <li>Conectar com banco de dados (MongoDB, PostgreSQL)</li>
-            <li>Customizar cores e branding da clínica</li>
-            <li>Adicionar mais secretárias e pacientes reais</li>
-          </ol>
-
-          <h3 style={{ marginTop: '2rem', marginBottom: '1rem' }}>📚 Documentação:</h3>
-          <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
-            📖 Guia completo: Veja o arquivo <span className="code">INSTRUCOES_VERCEL.md</span>
-          </p>
-          <p style={{ color: 'var(--color-text-secondary)' }}>
-            💬 Suporte: Entre em contato pelo GitHub
-          </p>
-        </div>
-      </div>
-
-      {notification && (
-        <div className="notification">
-          {notification}
-        </div>
-      )}
+<!-- LOGIN -->
+<div id="login-screen">
+  <div class="login-box">
+    <h1>🏥 ILLIC Fisioterapia</h1>
+    <h2>Sistema de Reavaliações</h2>
+    <div class="error-msg" id="login-error">Usuário ou senha incorretos.</div>
+    <div class="form-group">
+      <label>Usuário</label>
+      <input type="text" id="username" placeholder="Digite seu usuário" autofocus>
     </div>
-  );
+    <div class="form-group">
+      <label>Senha</label>
+      <input type="password" id="password" placeholder="Digite sua senha">
+    </div>
+    <button class="btn-login" onclick="login()">Entrar</button>
+    <div class="demo-box">
+      <p><strong>Credenciais de acesso:</strong></p>
+      <p>Gerenciador: <span class="code">gerenciador / 1234</span></p>
+      <p>Secretária 1: <span class="code">maria / 1234</span></p>
+      <p>Secretária 2: <span class="code">ana / 1234</span></p>
+    </div>
+  </div>
+</div>
+
+<!-- APP -->
+<div id="app-screen">
+  <div class="topbar">
+    <h1>📊 Sistema de Reavaliações</h1>
+    <div class="topbar-right">
+      <span class="user-badge" id="user-label"></span>
+      <button class="btn" onclick="logout()">Sair</button>
+    </div>
+  </div>
+
+  <div class="content">
+    <!-- TABS -->
+    <div class="tabs">
+      <button class="tab active" onclick="showTab('dashboard')">📈 Dashboard</button>
+      <button class="tab" onclick="showTab('pacientes')">👥 Pacientes</button>
+      <button class="tab" onclick="showTab('alertas')">🔔 Alertas</button>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div id="tab-dashboard">
+      <div class="metrics" id="metrics-grid"></div>
+      <div class="card">
+        <div class="card-header"><h2>📋 Reavaliações Recentes</h2></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Paciente</th><th>Última Reavaliação</th><th>Próxima</th><th>Status</th><th>Secretária</th></tr></thead>
+            <tbody id="dashboard-table"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- PACIENTES -->
+    <div id="tab-pacientes" style="display:none">
+      <div class="card">
+        <div class="card-header">
+          <h2>👥 Pacientes</h2>
+          <button class="btn btn-primary" onclick="abrirModalPaciente()">+ Novo Paciente</button>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Nome</th><th>Telefone</th><th>Secretária</th><th>Última Reavaliação</th><th>Status</th><th>Ações</th></tr></thead>
+            <tbody id="pacientes-table"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ALERTAS -->
+    <div id="tab-alertas" style="display:none">
+      <div class="card" id="alertas-vencidos">
+        <div class="card-header"><h2>🔴 Reavaliações Vencidas</h2></div>
+        <div id="lista-vencidos"></div>
+      </div>
+      <div class="card" id="alertas-proximos">
+        <div class="card-header"><h2>🟡 Reavaliações Próximas (7 dias)</h2></div>
+        <div id="lista-proximos"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL PACIENTE -->
+<div class="modal-overlay" id="modal-paciente" style="display:none" onclick="fecharModal(event)">
+  <div class="modal">
+    <h3 id="modal-titulo">Novo Paciente</h3>
+    <div class="form-group">
+      <label>Nome completo</label>
+      <input type="text" id="p-nome" placeholder="Nome do paciente">
+    </div>
+    <div class="form-group">
+      <label>Telefone</label>
+      <input type="tel" id="p-tel" placeholder="(11) 99999-9999">
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" id="p-email" placeholder="email@exemplo.com">
+    </div>
+    <div class="form-group">
+      <label>Secretária responsável</label>
+      <select id="p-sec">
+        <option value="maria">Maria</option>
+        <option value="ana">Ana</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Data da última reavaliação</label>
+      <input type="date" id="p-data">
+    </div>
+    <div class="form-group">
+      <label>Intervalo entre reavaliações (meses)</label>
+      <select id="p-intervalo">
+        <option value="1">1 mês</option>
+        <option value="2">2 meses</option>
+        <option value="3" selected>3 meses</option>
+        <option value="6">6 meses</option>
+        <option value="12">12 meses</option>
+      </select>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" onclick="document.getElementById('modal-paciente').style.display='none'">Cancelar</button>
+      <button class="btn btn-primary" onclick="salvarPaciente()">Salvar</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL REAVALIAR -->
+<div class="modal-overlay" id="modal-reavaliar" style="display:none" onclick="fecharModal(event)">
+  <div class="modal">
+    <h3>Registrar Reavaliação</h3>
+    <p style="color:var(--text2);font-size:13px;margin-bottom:1rem">Paciente: <strong id="reav-nome"></strong></p>
+    <div class="form-group">
+      <label>Data da reavaliação</label>
+      <input type="date" id="reav-data">
+    </div>
+    <div class="form-group">
+      <label>Observações</label>
+      <textarea id="reav-obs" rows="3" style="width:100%;padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:14px;background:var(--card);color:var(--text);resize:vertical" placeholder="Anotações sobre a reavaliação..."></textarea>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" onclick="document.getElementById('modal-reavaliar').style.display='none'">Cancelar</button>
+      <button class="btn btn-primary" onclick="confirmarReavaliacao()">Confirmar</button>
+    </div>
+  </div>
+</div>
+
+<div class="notification" id="notification"></div>
+
+<script>
+// ==================== DADOS ====================
+const USERS = { gerenciador: '1234', maria: '1234', ana: '1234' };
+
+let pacientes = JSON.parse(localStorage.getItem('illic_pacientes') || '[]');
+let currentUser = '';
+let editIndex = -1;
+let reavaliarIndex = -1;
+
+// Dados de exemplo se vazio
+if (pacientes.length === 0) {
+  const hoje = new Date();
+  const meses = (m) => { const d = new Date(); d.setMonth(d.getMonth() + m); return d.toISOString().split('T')[0]; };
+  const mesPassado = (m) => { const d = new Date(); d.setMonth(d.getMonth() - m); return d.toISOString().split('T')[0]; };
+  pacientes = [
+    { nome: 'João Silva', tel: '(11) 98765-4321', email: 'joao@email.com', sec: 'maria', ultimaReav: mesPassado(4), intervalo: 3 },
+    { nome: 'Maria Oliveira', tel: '(11) 91234-5678', email: 'maria@email.com', sec: 'ana', ultimaReav: mesPassado(1), intervalo: 3 },
+    { nome: 'Carlos Santos', tel: '(11) 99887-6543', email: 'carlos@email.com', sec: 'maria', ultimaReav: meses(0), intervalo: 6 },
+    { nome: 'Ana Costa', tel: '(11) 97654-3210', email: 'ana@email.com', sec: 'ana', ultimaReav: mesPassado(3), intervalo: 3 },
+  ];
+  salvarDados();
 }
 
-ReactDOM.createRoot(document.getElementById('app')).render(<App />);
+function salvarDados() { localStorage.setItem('illic_pacientes', JSON.stringify(pacientes)); }
+
+// ==================== STATUS ====================
+function calcStatus(p) {
+  const ultima = new Date(p.ultimaReav);
+  const proxima = new Date(ultima);
+  proxima.setMonth(proxima.getMonth() + parseInt(p.intervalo));
+  const hoje = new Date();
+  const diasRestantes = Math.ceil((proxima - hoje) / (1000 * 60 * 60 * 24));
+  return { proxima, diasRestantes };
+}
+
+function getBadge(diasRestantes) {
+  if (diasRestantes < 0) return `<span class="badge badge-red">Vencida (${Math.abs(diasRestantes)}d)</span>`;
+  if (diasRestantes <= 7) return `<span class="badge badge-yellow">Em ${diasRestantes}d</span>`;
+  return `<span class="badge badge-green">Em dia</span>`;
+}
+
+function formatDate(d) {
+  if (!d) return '-';
+  const date = new Date(d + 'T12:00:00');
+  return date.toLocaleDateString('pt-BR');
+}
+
+// ==================== LOGIN ====================
+function login() {
+  const u = document.getElementById('username').value.trim().toLowerCase();
+  const p = document.getElementById('password').value;
+  if (USERS[u] && USERS[u] === p) {
+    currentUser = u;
+    document.getElementById('login-screen').style.display = 'none';
+    document.getElementById('app-screen').style.display = 'block';
+    document.getElementById('user-label').textContent = '👤 ' + u.charAt(0).toUpperCase() + u.slice(1);
+    renderAll();
+    notify('Bem-vindo, ' + u.charAt(0).toUpperCase() + u.slice(1) + '! 👋');
+  } else {
+    document.getElementById('login-error').style.display = 'block';
+  }
+}
+
+function logout() {
+  document.getElementById('login-screen').style.display = 'flex';
+  document.getElementById('app-screen').style.display = 'none';
+  document.getElementById('username').value = '';
+  document.getElementById('password').value = '';
+  document.getElementById('login-error').style.display = 'none';
+  currentUser = '';
+}
+
+document.getElementById('password').addEventListener('keydown', e => { if (e.key === 'Enter') login(); });
+document.getElementById('username').addEventListener('keydown', e => { if (e.key === 'Enter') document.getElementById('password').focus(); });
+
+// ==================== TABS ====================
+function showTab(tab) {
+  ['dashboard','pacientes','alertas'].forEach(t => {
+    document.getElementById('tab-' + t).style.display = t === tab ? 'block' : 'none';
+  });
+  document.querySelectorAll('.tab').forEach((el, i) => {
+    el.classList.toggle('active', ['dashboard','pacientes','alertas'][i] === tab);
+  });
+  renderAll();
+}
+
+// ==================== RENDER ====================
+function renderAll() {
+  renderMetrics();
+  renderDashboard();
+  renderPacientes();
+  renderAlertas();
+}
+
+function renderMetrics() {
+  const total = pacientes.length;
+  let vencidas = 0, proximas = 0, emDia = 0;
+  pacientes.forEach(p => {
+    const { diasRestantes } = calcStatus(p);
+    if (diasRestantes < 0) vencidas++;
+    else if (diasRestantes <= 7) proximas++;
+    else emDia++;
+  });
+  document.getElementById('metrics-grid').innerHTML = `
+    <div class="metric"><div class="metric-label">Total de Pacientes</div><div class="metric-value">${total}</div></div>
+    <div class="metric"><div class="metric-label">Em Dia</div><div class="metric-value green">${emDia}</div></div>
+    <div class="metric"><div class="metric-label">Reavaliações Próximas</div><div class="metric-value yellow">${proximas}</div></div>
+    <div class="metric"><div class="metric-label">Reavaliações Vencidas</div><div class="metric-value red">${vencidas}</div></div>
+  `;
+}
+
+function renderDashboard() {
+  const sorted = [...pacientes].map((p, i) => ({ ...p, i }))
+    .sort((a, b) => calcStatus(a).diasRestantes - calcStatus(b).diasRestantes)
+    .slice(0, 10);
+  const tb = document.getElementById('dashboard-table');
+  if (!sorted.length) { tb.innerHTML = '<tr><td colspan="5" class="no-data">Nenhum paciente cadastrado.</td></tr>'; return; }
+  tb.innerHTML = sorted.map(p => {
+    const { proxima, diasRestantes } = calcStatus(p);
+    return `<tr>
+      <td><strong>${p.nome}</strong></td>
+      <td>${formatDate(p.ultimaReav)}</td>
+      <td>${formatDate(proxima.toISOString().split('T')[0])}</td>
+      <td>${getBadge(diasRestantes)}</td>
+      <td>${p.sec.charAt(0).toUpperCase() + p.sec.slice(1)}</td>
+    </tr>`;
+  }).join('');
+}
+
+function renderPacientes() {
+  const lista = currentUser === 'gerenciador' ? pacientes : pacientes.filter(p => p.sec === currentUser);
+  const tb = document.getElementById('pacientes-table');
+  if (!lista.length) { tb.innerHTML = '<tr><td colspan="6" class="no-data">Nenhum paciente encontrado.</td></tr>'; return; }
+  tb.innerHTML = lista.map((p, i) => {
+    const realIndex = pacientes.indexOf(p);
+    const { proxima, diasRestantes } = calcStatus(p);
+    return `<tr>
+      <td><strong>${p.nome}</strong><br><small style="color:var(--text2)">${p.tel}</small></td>
+      <td>${p.tel}</td>
+      <td>${p.sec.charAt(0).toUpperCase() + p.sec.slice(1)}</td>
+      <td>${formatDate(p.ultimaReav)}</td>
+      <td>${getBadge(diasRestantes)}</td>
+      <td>
+        <button class="btn btn-small btn-primary" onclick="abrirReavaliacao(${realIndex})">✓ Reavaliar</button>
+        <button class="btn btn-small" onclick="editarPaciente(${realIndex})" style="margin-left:4px">✏️</button>
+        <button class="btn btn-small btn-danger" onclick="excluirPaciente(${realIndex})" style="margin-left:4px">🗑️</button>
+      </td>
+    </tr>`;
+  }).join('');
+}
+
+function renderAlertas() {
+  const vencidos = pacientes.filter(p => calcStatus(p).diasRestantes < 0);
+  const proximos = pacientes.filter(p => { const d = calcStatus(p).diasRestantes; return d >= 0 && d <= 7; });
+
+  const renderLista = (lista, containerId) => {
+    const el = document.getElementById(containerId);
+    if (!lista.length) { el.innerHTML = '<p class="no-data">Nenhum paciente nesta categoria.</p>'; return; }
+    el.innerHTML = lista.map((p, i) => {
+      const realIndex = pacientes.indexOf(p);
+      const { proxima, diasRestantes } = calcStatus(p);
+      return `<div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border)">
+        <div>
+          <strong>${p.nome}</strong> — ${p.sec.charAt(0).toUpperCase() + p.sec.slice(1)}<br>
+          <small style="color:var(--text2)">Próxima: ${formatDate(proxima.toISOString().split('T')[0])} · ${diasRestantes < 0 ? Math.abs(diasRestantes) + ' dias vencida' : 'vence em ' + diasRestantes + ' dias'}</small>
+        </div>
+        <button class="btn btn-small btn-primary" onclick="abrirReavaliacao(${realIndex})">✓ Reavaliar</button>
+      </div>`;
+    }).join('');
+  };
+
+  renderLista(vencidos, 'lista-vencidos');
+  renderLista(proximos, 'lista-proximos');
+}
+
+// ==================== PACIENTES ====================
+function abrirModalPaciente() {
+  editIndex = -1;
+  document.getElementById('modal-titulo').textContent = 'Novo Paciente';
+  document.getElementById('p-nome').value = '';
+  document.getElementById('p-tel').value = '';
+  document.getElementById('p-email').value = '';
+  document.getElementById('p-sec').value = 'maria';
+  document.getElementById('p-data').value = new Date().toISOString().split('T')[0];
+  document.getElementById('p-intervalo').value = '3';
+  document.getElementById('modal-paciente').style.display = 'flex';
+}
+
+function editarPaciente(i) {
+  editIndex = i;
+  const p = pacientes[i];
+  document.getElementById('modal-titulo').textContent = 'Editar Paciente';
+  document.getElementById('p-nome').value = p.nome;
+  document.getElementById('p-tel').value = p.tel;
+  document.getElementById('p-email').value = p.email || '';
+  document.getElementById('p-sec').value = p.sec;
+  document.getElementById('p-data').value = p.ultimaReav;
+  document.getElementById('p-intervalo').value = p.intervalo;
+  document.getElementById('modal-paciente').style.display = 'flex';
+}
+
+function salvarPaciente() {
+  const nome = document.getElementById('p-nome').value.trim();
+  if (!nome) { alert('Digite o nome do paciente.'); return; }
+  const p = {
+    nome,
+    tel: document.getElementById('p-tel').value.trim(),
+    email: document.getElementById('p-email').value.trim(),
+    sec: document.getElementById('p-sec').value,
+    ultimaReav: document.getElementById('p-data').value,
+    intervalo: document.getElementById('p-intervalo').value,
+  };
+  if (editIndex >= 0) { pacientes[editIndex] = p; notify('Paciente atualizado! ✅'); }
+  else { pacientes.push(p); notify('Paciente cadastrado! ✅'); }
+  salvarDados();
+  document.getElementById('modal-paciente').style.display = 'none';
+  renderAll();
+}
+
+function excluirPaciente(i) {
+  if (!confirm('Excluir ' + pacientes[i].nome + '?')) return;
+  pacientes.splice(i, 1);
+  salvarDados();
+  renderAll();
+  notify('Paciente removido.');
+}
+
+// ==================== REAVALIAR ====================
+function abrirReavaliacao(i) {
+  reavaliarIndex = i;
+  document.getElementById('reav-nome').textContent = pacientes[i].nome;
+  document.getElementById('reav-data').value = new Date().toISOString().split('T')[0];
+  document.getElementById('reav-obs').value = '';
+  document.getElementById('modal-reavaliar').style.display = 'flex';
+}
+
+function confirmarReavaliacao() {
+  const data = document.getElementById('reav-data').value;
+  if (!data) { alert('Selecione a data.'); return; }
+  pacientes[reavaliarIndex].ultimaReav = data;
+  salvarDados();
+  document.getElementById('modal-reavaliar').style.display = 'none';
+  renderAll();
+  notify('Reavaliação registrada! ✅');
+}
+
+// ==================== UTILS ====================
+function fecharModal(e) { if (e.target === e.currentTarget) e.currentTarget.style.display = 'none'; }
+
+function notify(msg) {
+  const el = document.getElementById('notification');
+  el.textContent = msg;
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), 3000);
+}
 </script>
 </body>
 </html>
