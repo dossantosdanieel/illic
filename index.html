@@ -392,7 +392,8 @@ function renderDashboard() {
 }
 
 function renderPacientes() {
-  const lista = currentUser === 'gerenciador' ? pacientes : pacientes.filter(p => p.sec === currentUser);
+  const lista = (currentUser === 'gerenciador' ? [...pacientes] : pacientes.filter(p => p.sec === currentUser))
+    .sort((a, b) => calcStatus(a).diasRestantes - calcStatus(b).diasRestantes);
   const tb = document.getElementById('pacientes-table');
   if (!lista.length) { tb.innerHTML = '<tr><td colspan="6" class="no-data">Nenhum paciente encontrado.</td></tr>'; return; }
   tb.innerHTML = lista.map((p, i) => {
@@ -414,8 +415,10 @@ function renderPacientes() {
 }
 
 function renderAlertas() {
-  const vencidos = pacientes.filter(p => calcStatus(p).diasRestantes < 0);
-  const proximos = pacientes.filter(p => { const d = calcStatus(p).diasRestantes; return d >= 0 && d <= 7; });
+  const vencidos = pacientes.filter(p => calcStatus(p).diasRestantes < 0)
+    .sort((a, b) => calcStatus(a).diasRestantes - calcStatus(b).diasRestantes); // mais vencida primeiro
+  const proximos = pacientes.filter(p => { const d = calcStatus(p).diasRestantes; return d >= 0 && d <= 7; })
+    .sort((a, b) => calcStatus(a).diasRestantes - calcStatus(b).diasRestantes); // vence mais cedo primeiro
 
   const renderLista = (lista, containerId) => {
     const el = document.getElementById(containerId);
