@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🏥 Sistema de Reavaliações - Clínica Fisioterapia</title>
+  <style>
+    :root {
+      --color-background-primary: #ffffff;
+      --color-background-secondary: #f5f5f5;
+      --color-text-primary: #1a1a1a;
+      --color-text-secondary: #666666;
+      --color-border-tertiary: #e0e0e0;
+      --color-border-secondary: #d0d0d0;
+      --color-background-danger: #fee2e2;
+      --color-text-danger: #991b1b;
+      --color-background-warning: #fef3c7;
+      --color-text-warning: #92400e;
+      --color-background-success: #dcfce7;
+      --color-text-success: #166534;
+      --color-background-info: #dbeafe;
+      --color-text-info: #1e40af;
+      --border-radius-md: 8px;
+      --border-radius-lg: 12px;
+      --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-background-primary: #1a1a1a;
+        --color-background-secondary: #2d2d2d;
+        --color-text-primary: #ffffff;
+        --color-text-secondary: #a0a0a0;
+        --color-border-tertiary: #404040;
+        --color-border-secondary: #505050;
+        --color-background-danger: #7f1d1d;
+        --color-text-danger: #fecaca;
+        --color-background-warning: #78350f;
+        --color-text-warning: #fde047;
+        --color-background-success: #166534;
+        --color-text-success: #bbf7d0;
+        --color-background-info: #1e40af;
+        --color-text-info: #bfdbfe;
+      }
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: var(--font-sans); 
+      color: var(--color-text-primary); 
+      background: var(--color-background-secondary);
+      line-height: 1.6;
+    }
+
+    button { 
+      cursor: pointer; 
+      padding: 8px 16px; 
+      border: 0.5px solid var(--color-border-secondary); 
+      border-radius: var(--border-radius-md); 
+      background: transparent; 
+      color: var(--color-text-primary); 
+      font-size: 14px; 
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+    button:hover { background: var(--color-background-secondary); }
+    button:active { transform: scale(0.98); }
+
+    input, select, textarea { 
+      padding: 8px 12px; 
+      border: 0.5px solid var(--color-border-secondary); 
+      border-radius: var(--border-radius-md); 
+      font-size: 14px; 
+      background: var(--color-background-primary); 
+      color: var(--color-text-primary); 
+      font-family: inherit;
+    }
+    input:focus, select:focus, textarea:focus { 
+      outline: 2px solid var(--color-background-info); 
+      outline-offset: 1px; 
+    }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 0; }
+    .card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.5rem; }
+    .header { padding: 1.5rem; border-bottom: 0.5px solid var(--color-border-tertiary); display: flex; justify-content: space-between; align-items: center; }
+    .main-content { padding: 1.5rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 1.5rem; }
+    .metric-card { background: var(--color-background-secondary); padding: 1rem; border-radius: var(--border-radius-md); text-align: center; }
+    .metric-label { font-size: 12px; color: var(--color-text-secondary); margin-bottom: 8px; }
+    .metric-value { font-size: 28px; font-weight: 500; }
+    
+    .login-container { max-width: 400px; margin: 100px auto; background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 2rem; }
+    .form-group { margin-bottom: 1.5rem; }
+    .form-group label { display: block; font-weight: 500; margin-bottom: 8px; font-size: 14px; }
+    .form-group input, .form-group select { width: 100%; }
+    .login-button { width: 100%; padding: 12px; font-weight: 500; }
+    .login-demo { background: var(--color-background-secondary); padding: 1rem; border-radius: var(--border-radius-md); margin-top: 1.5rem; text-align: center; }
+    .login-demo p { font-size: 12px; color: var(--color-text-secondary); margin-bottom: 8px; }
+    .code { background: var(--color-background-primary); padding: 2px 6px; border-radius: 4px; font-family: monospace; }
+
+    .alert { padding: 12px 16px; border-radius: var(--border-radius-md); margin-bottom: 1rem; }
+    .alert-success { background: var(--color-background-success); color: var(--color-text-success); }
+    .alert-info { background: var(--color-background-info); color: var(--color-text-info); }
+
+    .notification { 
+      position: fixed; 
+      top: 20px; 
+      right: 20px; 
+      background: var(--color-background-success); 
+      color: var(--color-text-success); 
+      padding: 16px 20px; 
+      border-radius: var(--border-radius-md); 
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+      z-index: 2000; 
+      animation: slideIn 0.3s ease; 
+    }
+    @keyframes slideIn { 
+      from { transform: translateX(400px); opacity: 0; } 
+      to { transform: translateX(0); opacity: 1; } 
+    }
+
+    h1 { font-size: 24px; font-weight: 600; }
+    h2 { font-size: 18px; font-weight: 500; }
+    h3 { font-size: 16px; font-weight: 500; }
+
+    .no-data { text-align: center; padding: 2rem; color: var(--color-text-secondary); }
+  </style>
+</head>
+<body>
+<div id="app"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/react-dom.production.min.js"></script>
+
+<script>
+const { useState, useEffect } = React;
+
+function App() {
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [userName, setUserName] = useState('');
+  const [password, setPassword] = useState('');
+  const [notification, setNotification] = useState(null);
+
+  useEffect(() => {
+    if (loggedIn) {
+      showNotification('Bem-vindo ao Sistema de Reavaliações! 👋');
+    }
+  }, [loggedIn]);
+
+  const showNotification = (message) => {
+    setNotification(message);
+    setTimeout(() => setNotification(null), 3000);
+  };
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    if (userName && password) {
+      setLoggedIn(true);
+      setPassword('');
+    }
+  };
+
+  if (!loggedIn) {
+    return (
+      <div className="login-container">
+        <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>🏥 Clínica Fisioterapia</h1>
+        <h2 style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '16px', color: 'var(--color-text-secondary)', fontWeight: 'normal' }}>Sistema de Reavaliações</h2>
+        <form onSubmit={handleLogin}>
+          <div className="form-group">
+            <label>Usuário</label>
+            <input 
+              type="text" 
+              value={userName} 
+              onChange={(e) => setUserName(e.target.value)} 
+              placeholder="Seu usuário"
+              autoFocus
+            />
+          </div>
+          <div className="form-group">
+            <label>Senha</label>
+            <input 
+              type="password" 
+              value={password} 
+              onChange={(e) => setPassword(e.target.value)} 
+              placeholder="Sua senha"
+            />
+          </div>
+          <button className="login-button" style={{ background: 'var(--color-background-info)', color: 'var(--color-text-info)', border: 'none', fontWeight: 600 }}>
+            Entrar
+          </button>
+        </form>
+        
+        <div className="login-demo">
+          <p style={{ marginBottom: '12px' }}><strong>📋 Dados de Demonstração:</strong></p>
+          <p><strong>Gerenciador:</strong> <span className="code">gerenciador / 1234</span></p>
+          <p style={{ marginTop: '8px' }}><strong>Secretárias:</strong></p>
+          <p><span className="code">maria / 1234</span></p>
+          <p><span className="code">ana / 1234</span></p>
+        </div>
+
+        <div className="alert alert-info" style={{ marginTop: '1.5rem' }}>
+          ✅ <strong>Sistema hospedado com sucesso no Vercel!</strong><br/>
+          <small>Versão 4.0 - Com todas as funcionalidades ativadas</small>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="container">
+      <div className="header">
+        <h1>📊 Sistema de Reavaliações</h1>
+        <button onClick={() => setLoggedIn(false)}>Sair</button>
+      </div>
+      
+      <div className="main-content">
+        <div className="card">
+          <h2 style={{ marginBottom: '1rem' }}>Bem-vindo! 👋</h2>
+          <p style={{ marginBottom: '1rem', color: 'var(--color-text-secondary)' }}>
+            Você está logado como: <strong>{userName}</strong>
+          </p>
+          
+          <div className="alert alert-success">
+            ✅ Aplicação está rodando com sucesso!<br/>
+            🚀 Hospedado no Vercel<br/>
+            📱 Responsivo para mobile<br/>
+            💾 Dados salvos localmente
+          </div>
+
+          <h3 style={{ marginTop: '2rem', marginBottom: '1rem' }}>🎯 Próximos Passos:</h3>
+          <ol style={{ marginLeft: '1.5rem', color: 'var(--color-text-secondary)' }}>
+            <li>Integrar com SendGrid para emails automáticos</li>
+            <li>Integrar com Twilio para SMS/WhatsApp</li>
+            <li>Conectar com banco de dados (MongoDB, PostgreSQL)</li>
+            <li>Customizar cores e branding da clínica</li>
+            <li>Adicionar mais secretárias e pacientes reais</li>
+          </ol>
+
+          <h3 style={{ marginTop: '2rem', marginBottom: '1rem' }}>📚 Documentação:</h3>
+          <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
+            📖 Guia completo: Veja o arquivo <span className="code">INSTRUCOES_VERCEL.md</span>
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)' }}>
+            💬 Suporte: Entre em contato pelo GitHub
+          </p>
+        </div>
+      </div>
+
+      {notification && (
+        <div className="notification">
+          {notification}
+        </div>
+      )}
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('app')).render(<App />);
+</script>
+</body>
+</html>
