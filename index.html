@@ -6,14 +6,11 @@
   <title>illic — Sistema de Reavaliações</title>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --bg:#f5f5f5; --card:#fff; --text:#1a1a1a; --text2:#666; --border:#e0e0e0; --radius:10px;
-      --blue:#1e40af; --blue-bg:#dbeafe;
-      --green:#166534; --green-bg:#dcfce7;
-      --red:#991b1b; --red-bg:#fee2e2;
-      --yellow:#92400e; --yellow-bg:#fef3c7;
-      --purple:#5b21b6; --purple-bg:#ede9fe;
-      --orange:#9a3412; --orange-bg:#ffedd5;
+    :root{
+      --bg:#f5f5f5;--card:#fff;--text:#1a1a1a;--text2:#666;--border:#e0e0e0;--radius:10px;
+      --blue:#1e40af;--blue-bg:#dbeafe;--green:#166534;--green-bg:#dcfce7;
+      --red:#991b1b;--red-bg:#fee2e2;--yellow:#92400e;--yellow-bg:#fef3c7;
+      --purple:#5b21b6;--purple-bg:#ede9fe;--orange:#9a3412;--orange-bg:#ffedd5;
     }
     @media(prefers-color-scheme:dark){:root{
       --bg:#1a1a1a;--card:#2d2d2d;--text:#fff;--text2:#a0a0a0;--border:#404040;
@@ -24,9 +21,8 @@
     *{margin:0;padding:0;box-sizing:border-box;}
     body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
 
-    /* LOGO */
     .logo{font-family:'Syne',sans-serif;font-weight:800;letter-spacing:-1px;color:var(--text);}
-    .logo-lg{font-size:42px;} .logo-sm{font-size:22px;}
+    .logo-lg{font-size:42px;}.logo-sm{font-size:22px;}
     .logo-img-lg{height:52px;display:block;margin:0 auto 4px;}
     .logo-img-sm{height:28px;display:block;}
 
@@ -35,6 +31,7 @@
     .login-box{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;width:100%;max-width:400px;}
     .login-header{text-align:center;margin-bottom:2rem;}
     .login-header p{font-size:13px;color:var(--text2);margin-top:4px;}
+    .error-msg{background:var(--red-bg);color:var(--red);padding:10px 12px;border-radius:8px;font-size:13px;margin-bottom:1rem;display:none;}
     .form-group{margin-bottom:1.2rem;}
     .form-group label{display:block;font-weight:500;font-size:14px;margin-bottom:6px;}
     .form-group input,.form-group select,.form-group textarea{width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:8px;font-size:14px;background:var(--card);color:var(--text);font-family:inherit;}
@@ -44,7 +41,6 @@
     .demo-box{background:var(--bg);border-radius:8px;padding:1rem;margin-top:1.5rem;font-size:13px;}
     .demo-box p{color:var(--text2);margin-bottom:4px;}
     .code{background:var(--card);padding:1px 6px;border-radius:4px;font-family:monospace;border:1px solid var(--border);}
-    .error-msg{background:var(--red-bg);color:var(--red);padding:10px 12px;border-radius:8px;font-size:13px;margin-bottom:1rem;display:none;}
 
     /* APP */
     #app-screen{display:none;min-height:100vh;}
@@ -61,30 +57,30 @@
     .btn-whatsapp{background:#25D366;color:#fff;border-color:transparent;}
     .btn-whatsapp:hover{background:#1ebe5d;}
     .btn-small{padding:4px 10px;font-size:12px;}
+    .btn-icon{padding:4px 8px;font-size:13px;}
 
     .content{padding:1.5rem;max-width:1200px;margin:0 auto;}
     .metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:1.5rem;}
     .metric{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:.9rem;text-align:center;}
     .metric-label{font-size:11px;color:var(--text2);margin-bottom:4px;text-transform:uppercase;letter-spacing:.5px;}
     .metric-value{font-size:28px;font-weight:700;}
-    .metric-value.red{color:var(--red);} .metric-value.yellow{color:var(--yellow);}
-    .metric-value.green{color:var(--green);} .metric-value.blue{color:var(--blue);}
-    .metric-value.purple{color:var(--purple);} .metric-value.orange{color:var(--orange);}
+    .metric-value.red{color:var(--red);}.metric-value.yellow{color:var(--yellow);}
+    .metric-value.green{color:var(--green);}.metric-value.blue{color:var(--blue);}
+    .metric-value.purple{color:var(--purple);}.metric-value.orange{color:var(--orange);}
 
     .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.5rem;}
     .card-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.2rem;flex-wrap:wrap;gap:.5rem;}
     .card-header h2{font-size:15px;font-weight:600;}
+    .card h3{font-size:14px;font-weight:600;margin-bottom:1rem;color:var(--text2);}
 
     .tabs{display:flex;gap:8px;margin-bottom:1.5rem;flex-wrap:wrap;}
     .tab{padding:8px 16px;border:1px solid var(--border);border-radius:8px;background:transparent;color:var(--text2);font-size:14px;cursor:pointer;font-family:inherit;}
     .tab.active{background:var(--text);color:var(--card);border-color:transparent;font-weight:600;}
 
-    /* FILTER BAR */
     .filter-bar{display:flex;gap:8px;margin-bottom:1rem;flex-wrap:wrap;align-items:center;}
     .filter-bar select{padding:6px 10px;border:1px solid var(--border);border-radius:8px;font-size:13px;background:var(--card);color:var(--text);font-family:inherit;}
     .filter-bar label{font-size:13px;color:var(--text2);}
 
-    /* TABLE */
     .table-wrap{overflow-x:auto;}
     table{width:100%;border-collapse:collapse;font-size:13px;}
     th{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border);font-size:11px;color:var(--text2);font-weight:600;text-transform:uppercase;letter-spacing:.5px;white-space:nowrap;}
@@ -92,7 +88,6 @@
     tr:last-child td{border-bottom:none;}
     tr:hover td{background:var(--bg);}
 
-    /* BADGES */
     .badge{display:inline-block;padding:3px 9px;border-radius:999px;font-size:12px;font-weight:500;white-space:nowrap;}
     .badge-red{background:var(--red-bg);color:var(--red);}
     .badge-yellow{background:var(--yellow-bg);color:var(--yellow);}
@@ -101,30 +96,37 @@
     .badge-purple{background:var(--purple-bg);color:var(--purple);}
     .badge-orange{background:var(--orange-bg);color:var(--orange);}
     .badge-unit{background:var(--bg);color:var(--text2);border:1px solid var(--border);font-size:11px;padding:2px 7px;}
-
-    /* CLICKABLE STATUS BADGE */
     .badge-clickable{cursor:pointer;user-select:none;transition:opacity .15s;}
     .badge-clickable:hover{opacity:.8;}
     .badge-clickable::after{content:' ▾';font-size:10px;opacity:.7;}
 
-    /* STATUS DROPDOWN MENU */
-    .status-menu{position:fixed;background:var(--card);border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.15);z-index:5000;min-width:200px;overflow:hidden;}
+    /* STATUS MENU */
+    .status-menu{position:fixed;background:var(--card);border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.15);z-index:5000;min-width:210px;overflow:hidden;}
     .status-menu-item{display:flex;align-items:center;gap:8px;padding:10px 14px;font-size:13px;cursor:pointer;color:var(--text);transition:background .1s;}
     .status-menu-item:hover{background:var(--bg);}
     .status-menu-item.danger{color:var(--red);}
     .status-menu-item.warn{color:var(--orange);}
     .status-menu-divider{height:1px;background:var(--border);margin:2px 0;}
 
+    /* SETTINGS */
+    .config-list{display:flex;flex-direction:column;gap:8px;margin-bottom:1rem;}
+    .config-item{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:var(--bg);border:1px solid var(--border);border-radius:8px;font-size:14px;}
+    .config-item-info{display:flex;flex-direction:column;gap:2px;}
+    .config-item-info small{font-size:12px;color:var(--text2);}
+    .config-add{display:flex;gap:8px;flex-wrap:wrap;}
+    .config-add input{flex:1;min-width:120px;padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:14px;background:var(--card);color:var(--text);font-family:inherit;}
+    .config-add input:focus{outline:2px solid var(--blue-bg);}
+    .config-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+    @media(max-width:700px){.config-grid{grid-template-columns:1fr;}}
+
     .no-data{text-align:center;padding:2rem;color:var(--text2);}
     .actions{display:flex;gap:4px;flex-wrap:wrap;}
 
-    /* MODAL */
     .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;z-index:1000;padding:1rem;}
     .modal{background:var(--card);border-radius:var(--radius);padding:1.5rem;width:100%;max-width:460px;max-height:90vh;overflow-y:auto;}
     .modal h3{font-size:16px;margin-bottom:1.2rem;}
     .modal-footer{display:flex;gap:8px;justify-content:flex-end;margin-top:1.2rem;}
 
-    /* NOTIFICATION */
     .notification{position:fixed;top:20px;right:20px;background:var(--green-bg);color:var(--green);padding:14px 20px;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.15);z-index:9999;font-size:14px;font-weight:500;transform:translateX(420px);transition:transform .3s ease;max-width:300px;}
     .notification.show{transform:translateX(0);}
 
@@ -151,12 +153,7 @@
     <div class="form-group"><label>Usuário</label><input type="text" id="username" placeholder="Digite seu usuário" autofocus></div>
     <div class="form-group"><label>Senha</label><input type="password" id="password" placeholder="Digite sua senha"></div>
     <button class="btn-login" onclick="login()">Entrar</button>
-    <div class="demo-box">
-      <p><strong>Credenciais:</strong></p>
-      <p>Gerenciador: <span class="code">gerenciador / 1234</span></p>
-      <p>Secretária 1: <span class="code">maria / 1234</span></p>
-      <p>Secretária 2: <span class="code">ana / 1234</span></p>
-    </div>
+    <div class="demo-box" id="demo-box"></div>
   </div>
 </div>
 
@@ -175,10 +172,11 @@
   </div>
 
   <div class="content">
-    <div class="tabs">
+    <div class="tabs" id="main-tabs">
       <button class="tab active" onclick="showTab('dashboard')">📈 Dashboard</button>
       <button class="tab" onclick="showTab('pacientes')">👥 Pacientes</button>
       <button class="tab" onclick="showTab('alertas')">🔔 Alertas</button>
+      <button class="tab" id="tab-config-btn" style="display:none" onclick="showTab('config')">⚙️ Configurações</button>
     </div>
 
     <!-- DASHBOARD -->
@@ -188,11 +186,7 @@
         <div class="card-header">
           <h2>Pacientes por prioridade</h2>
           <div class="filter-bar" style="margin:0">
-            <select id="dash-unidade" onchange="renderAll()">
-              <option value="">Todas as unidades</option>
-              <option>Jardim Ricetti</option><option>Damha</option>
-              <option>Faber</option><option>Descalvado</option><option>Mogi Guaçu</option>
-            </select>
+            <select id="dash-unidade" onchange="renderAll()"><option value="">Todas as unidades</option></select>
           </div>
         </div>
         <div class="table-wrap">
@@ -213,20 +207,13 @@
         </div>
         <div class="filter-bar">
           <label>Unidade:</label>
-          <select id="filtro-unidade" onchange="renderPacientes()">
-            <option value="">Todas</option>
-            <option>Jardim Ricetti</option><option>Damha</option>
-            <option>Faber</option><option>Descalvado</option><option>Mogi Guaçu</option>
-          </select>
+          <select id="filtro-unidade" onchange="renderPacientes()"><option value="">Todas</option></select>
           <label style="margin-left:.5rem">Secretária:</label>
-          <select id="filtro-sec" onchange="renderPacientes()">
-            <option value="">Todas</option>
-            <option>maria</option><option>ana</option>
-          </select>
+          <select id="filtro-sec" onchange="renderPacientes()"><option value="">Todas</option></select>
         </div>
         <div class="table-wrap">
           <table>
-            <thead><tr><th>Nome</th><th>Unidade</th><th>Secretária</th><th>Última Reav.</th><th>Próxima Reav.</th><th>Agendamento</th><th>Status ▾</th><th>Ações</th></tr></thead>
+            <thead><tr><th>Nome</th><th>Unidade</th><th>Secretária</th><th>Última Reav.</th><th>Próxima</th><th>Agend.</th><th>Status ▾</th><th>Ações</th></tr></thead>
             <tbody id="pacientes-table"></tbody>
           </table>
         </div>
@@ -237,17 +224,53 @@
     <div id="tab-alertas" style="display:none">
       <div class="filter-bar">
         <label>Unidade:</label>
-        <select id="filtro-alerta-unidade" onchange="renderAlertas()">
-          <option value="">Todas</option>
-          <option>Jardim Ricetti</option><option>Damha</option>
-          <option>Faber</option><option>Descalvado</option><option>Mogi Guaçu</option>
-        </select>
+        <select id="filtro-alerta-unidade" onchange="renderAlertas()"><option value="">Todas</option></select>
       </div>
       <div class="card"><div class="card-header"><h2>🔴 Reavaliações Vencidas</h2></div><div id="lista-vencidos"></div></div>
       <div class="card"><div class="card-header"><h2>❌ Cancelamentos com Aviso</h2></div><div id="lista-cancelados"></div></div>
       <div class="card"><div class="card-header"><h2>🚫 No-shows</h2></div><div id="lista-noshows"></div></div>
       <div class="card"><div class="card-header"><h2>🟡 Próximas (7 dias)</h2></div><div id="lista-proximos"></div></div>
       <div class="card"><div class="card-header"><h2>📅 Agendadas</h2></div><div id="lista-agendados"></div></div>
+    </div>
+
+    <!-- CONFIGURAÇÕES (gerenciador only) -->
+    <div id="tab-config" style="display:none">
+      <div class="config-grid">
+
+        <!-- UNIDADES -->
+        <div class="card">
+          <h3>🏢 Unidades</h3>
+          <div class="config-list" id="config-unidades-list"></div>
+          <div class="config-add">
+            <input type="text" id="nova-unidade" placeholder="Nome da unidade..." onkeydown="if(event.key==='Enter')adicionarUnidade()">
+            <button class="btn btn-primary" onclick="adicionarUnidade()">+ Adicionar</button>
+          </div>
+        </div>
+
+        <!-- SECRETÁRIAS -->
+        <div class="card">
+          <h3>👤 Secretárias</h3>
+          <div class="config-list" id="config-secretarias-list"></div>
+          <div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:1rem;margin-top:.5rem">
+            <p style="font-size:13px;font-weight:500;margin-bottom:.8rem;color:var(--text2)">Nova secretária:</p>
+            <div class="config-add" style="flex-direction:column">
+              <input type="text" id="nova-sec-nome" placeholder="Nome (ex: Carla)">
+              <input type="text" id="nova-sec-usuario" placeholder="Usuário de login (ex: carla)" style="margin-top:6px">
+              <input type="password" id="nova-sec-senha" placeholder="Senha" style="margin-top:6px" onkeydown="if(event.key==='Enter')adicionarSecretaria()">
+              <button class="btn btn-primary" onclick="adicionarSecretaria()" style="margin-top:8px;width:100%">+ Adicionar Secretária</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ALTERAR SENHA DO GERENCIADOR -->
+      <div class="card" style="max-width:460px">
+        <h3>🔐 Alterar senha do gerenciador</h3>
+        <div class="form-group"><label>Nova senha</label><input type="password" id="nova-senha-ger" placeholder="Digite a nova senha"></div>
+        <div class="form-group"><label>Confirmar nova senha</label><input type="password" id="confirma-senha-ger" placeholder="Repita a senha"></div>
+        <button class="btn btn-primary" onclick="alterarSenhaGerenciador()">Salvar nova senha</button>
+      </div>
     </div>
   </div>
 </div>
@@ -259,15 +282,11 @@
     <div class="form-group"><label>Nome completo</label><input type="text" id="p-nome" placeholder="Nome do paciente"></div>
     <div class="form-group"><label>Telefone</label><input type="tel" id="p-tel" placeholder="(11) 99999-9999"></div>
     <div class="form-group"><label>Email</label><input type="email" id="p-email" placeholder="email@exemplo.com"></div>
-    <div class="form-group"><label>Unidade</label>
-      <select id="p-unidade">
-        <option value="">Selecione a unidade</option>
-        <option>Jardim Ricetti</option><option>Damha</option>
-        <option>Faber</option><option>Descalvado</option><option>Mogi Guaçu</option>
-      </select>
+    <div class="form-group"><label>Unidade <span style="color:var(--red)">*</span></label>
+      <select id="p-unidade"><option value="">Selecione a unidade</option></select>
     </div>
-    <div class="form-group"><label>Secretária responsável</label>
-      <select id="p-sec"><option value="maria">Maria</option><option value="ana">Ana</option></select>
+    <div class="form-group"><label>Secretária responsável <span style="color:var(--red)">*</span></label>
+      <select id="p-sec"><option value="">Selecione a secretária</option></select>
     </div>
     <div class="form-group"><label>Data da última reavaliação</label><input type="date" id="p-data"></div>
     <div class="form-group"><label>Intervalo entre reavaliações</label>
@@ -303,7 +322,7 @@
     <h3>✅ Confirmar Reavaliação Realizada</h3>
     <p style="color:var(--text2);font-size:13px;margin-bottom:1.2rem">Paciente: <strong id="re-nome"></strong></p>
     <div class="form-group"><label>Data em que aconteceu</label><input type="date" id="re-data"></div>
-    <div class="form-group"><label>Observações (opcional)</label><textarea id="re-obs" rows="2" placeholder="Anotações sobre a reavaliação..."></textarea></div>
+    <div class="form-group"><label>Observações (opcional)</label><textarea id="re-obs" rows="2"></textarea></div>
     <div class="modal-footer">
       <button class="btn" onclick="document.getElementById('modal-realizar').style.display='none'">Voltar</button>
       <button class="btn btn-green" onclick="marcarRealizada()">Confirmar como Realizada</button>
@@ -311,7 +330,7 @@
   </div>
 </div>
 
-<!-- MODAL: CANCELAR COM MOTIVO -->
+<!-- MODAL: CANCELAR -->
 <div class="modal-overlay" id="modal-cancelar" style="display:none" onclick="fecharModal(event)">
   <div class="modal">
     <h3>❌ Cancelamento com Aviso Prévio</h3>
@@ -349,96 +368,125 @@
   </div>
 </div>
 
-<!-- STATUS DROPDOWN MENU (criado dinamicamente) -->
 <div id="status-menu" class="status-menu" style="display:none"></div>
-
 <div class="notification" id="notification"></div>
 
 <script>
-// ===================== DADOS =====================
-const USERS = { gerenciador:'1234', maria:'1234', ana:'1234' };
-const UNIDADES = ['Jardim Ricetti','Damha','Faber','Descalvado','Mogi Guaçu'];
+// ===================== CONFIG =====================
+let config = JSON.parse(localStorage.getItem('illic_config') || 'null') || {
+  unidades: ['Jardim Ricetti','Damha','Faber','Descalvado','Mogi Guaçu'],
+  secretarias: [
+    {nome:'Maria', usuario:'maria', senha:'1234'},
+    {nome:'Ana',   usuario:'ana',   senha:'1234'}
+  ],
+  senhagerenciador: '1234'
+};
+function salvarConfig() { localStorage.setItem('illic_config', JSON.stringify(config)); }
 
+function getUsers() {
+  const u = { gerenciador: config.senhagerenciador };
+  config.secretarias.forEach(s => u[s.usuario] = s.senha);
+  return u;
+}
+
+// ===================== DADOS =====================
 let pacientes = JSON.parse(localStorage.getItem('illic_pacientes') || '[]');
 let currentUser = '';
-let editIndex = -1, agendarIndex = -1, realizarIndex = -1, cancelarIndex = -1, noshowIndex = -1;
+let editIndex=-1, agendarIndex=-1, realizarIndex=-1, cancelarIndex=-1, noshowIndex=-1;
 
-// Dados de exemplo
 if (!pacientes.length) {
-  const sub = m => { const d=new Date(); d.setMonth(d.getMonth()-m); return d.toISOString().split('T')[0]; };
-  const add = m => { const d=new Date(); d.setMonth(d.getMonth()+m); d.setDate(d.getDate()+5); return d.toISOString().split('T')[0]; };
-  pacientes = [
-    { nome:'João Silva',     tel:'(11) 98765-4321', email:'joao@email.com',   sec:'maria', unidade:'Jardim Ricetti', ultimaReav:sub(4), intervalo:3, agendamento:null, historico:[] },
-    { nome:'Maria Oliveira', tel:'(11) 91234-5678', email:'maria@email.com',  sec:'ana',   unidade:'Damha',          ultimaReav:sub(1), intervalo:3, agendamento:{data:add(1),status:'agendada',obs:'Confirmada'}, historico:[] },
-    { nome:'Carlos Santos',  tel:'(11) 99887-6543', email:'carlos@email.com', sec:'maria', unidade:'Faber',          ultimaReav:sub(3), intervalo:3, agendamento:{data:add(0),status:'cancelada',motivo:'Viagem marcada'}, historico:[] },
-    { nome:'Ana Costa',      tel:'(11) 97654-3210', email:'ana@email.com',    sec:'ana',   unidade:'Descalvado',     ultimaReav:sub(0), intervalo:6, agendamento:{data:sub(0),status:'noshow',obs:'Não atendeu ligação'}, historico:[] },
-    { nome:'Pedro Lima',     tel:'(11) 96543-2109', email:'pedro@email.com',  sec:'maria', unidade:'Mogi Guaçu',    ultimaReav:sub(2), intervalo:3, agendamento:null, historico:[] },
+  const sub=m=>{const d=new Date();d.setMonth(d.getMonth()-m);return d.toISOString().split('T')[0];};
+  const add=m=>{const d=new Date();d.setMonth(d.getMonth()+m);d.setDate(d.getDate()+5);return d.toISOString().split('T')[0];};
+  const u0=config.unidades[0]||'', u1=config.unidades[1]||u0;
+  const s0=config.secretarias[0]?.usuario||'', s1=config.secretarias[1]?.usuario||s0;
+  pacientes=[
+    {nome:'João Silva',     tel:'(11) 98765-4321',email:'joao@email.com',  sec:s0,unidade:u0,ultimaReav:sub(4),intervalo:3,agendamento:null,historico:[]},
+    {nome:'Maria Oliveira', tel:'(11) 91234-5678',email:'maria@email.com', sec:s1,unidade:u1,ultimaReav:sub(1),intervalo:3,agendamento:{data:add(1),status:'agendada',obs:'Confirmada'},historico:[]},
+    {nome:'Carlos Santos',  tel:'(11) 99887-6543',email:'carlos@email.com',sec:s0,unidade:config.unidades[2]||u0,ultimaReav:sub(3),intervalo:3,agendamento:{data:add(0),status:'cancelada',motivo:'Viagem'},historico:[]},
+    {nome:'Ana Costa',      tel:'(11) 97654-3210',email:'ana@email.com',   sec:s1,unidade:config.unidades[3]||u0,ultimaReav:sub(0),intervalo:6,agendamento:{data:sub(0),status:'noshow',obs:'Não atendeu'},historico:[]},
   ];
   salvarDados();
 }
-
 function salvarDados() { localStorage.setItem('illic_pacientes', JSON.stringify(pacientes)); }
 
-// ===================== STATUS / CÁLCULOS =====================
-function calcProxima(p) {
-  const d = new Date(p.ultimaReav+'T12:00:00');
-  d.setMonth(d.getMonth()+parseInt(p.intervalo));
-  return d;
-}
-function calcDias(p) {
-  const hoje = new Date(); hoje.setHours(0,0,0,0);
-  return Math.ceil((calcProxima(p)-hoje)/86400000);
-}
-function sortKey(p) {
-  const ag=p.agendamento, dias=calcDias(p);
-  if (ag?.status==='noshow')    return dias-20000;
-  if (ag?.status==='cancelada') return dias-10000;
-  if (ag?.status==='agendada')  return 10000+dias;
+// ===================== CÁLCULOS =====================
+function calcProxima(p){const d=new Date(p.ultimaReav+'T12:00:00');d.setMonth(d.getMonth()+parseInt(p.intervalo));return d;}
+function calcDias(p){const h=new Date();h.setHours(0,0,0,0);return Math.ceil((calcProxima(p)-h)/86400000);}
+function sortKey(p){
+  const ag=p.agendamento,dias=calcDias(p);
+  if(ag?.status==='noshow')    return dias-20000;
+  if(ag?.status==='cancelada') return dias-10000;
+  if(ag?.status==='agendada')  return 10000+dias;
   return dias;
 }
-function getStatusBadge(p, ri, clickable=false) {
-  const ag=p.agendamento, dias=calcDias(p);
-  const cl = clickable ? `class="badge badge-{CL} badge-clickable" onclick="abrirStatusMenu(event,${ri})"` : `class="badge badge-{CL}"`;
-  let label='', color='';
-  if (ag?.status==='agendada')  { label=`📅 Agendada ${formatDate(ag.data)}`; color='blue'; }
-  else if (ag?.status==='cancelada') { label='❌ Cancelado'; color='purple'; }
-  else if (ag?.status==='noshow')    { label='🚫 No-show'; color='orange'; }
-  else if (dias<0)  { label=`Vencida (${Math.abs(dias)}d)`; color='red'; }
-  else if (dias<=7) { label=`Em ${dias}d`; color='yellow'; }
-  else              { label='Em dia'; color='green'; }
-  return `<span ${cl.replace('{CL}',color)}>${label}</span>`;
+function sorted(l){return [...l].sort((a,b)=>sortKey(a)-sortKey(b));}
+function formatDate(d){if(!d)return'—';return new Date(d+'T12:00:00').toLocaleDateString('pt-BR');}
+function cap(s){return s?s.charAt(0).toUpperCase()+s.slice(1):'';}
+function secNome(usuario){const s=config.secretarias.find(x=>x.usuario===usuario);return s?s.nome:cap(usuario);}
+
+function getStatusBadge(p,ri,clickable=false){
+  const ag=p.agendamento,dias=calcDias(p);
+  let label='',color='';
+  if(ag?.status==='agendada')  {label=`📅 ${formatDate(ag.data)}`;color='blue';}
+  else if(ag?.status==='cancelada'){label='❌ Cancelado';color='purple';}
+  else if(ag?.status==='noshow')   {label='🚫 No-show';color='orange';}
+  else if(dias<0) {label=`Vencida (${Math.abs(dias)}d)`;color='red';}
+  else if(dias<=7){label=`Em ${dias}d`;color='yellow';}
+  else            {label='Em dia';color='green';}
+  const cl=clickable?`class="badge badge-${color} badge-clickable" onclick="abrirStatusMenu(event,${ri})"`:`class="badge badge-${color}"`;
+  return `<span ${cl}>${label}</span>`;
 }
-function getAgBadge(p) {
+function getAgBadge(p){
   const ag=p.agendamento;
-  if (!ag) return '<span style="color:var(--text2);font-size:12px">—</span>';
-  if (ag.status==='agendada')  return `<span class="badge badge-blue">📅 ${formatDate(ag.data)}</span>`;
-  if (ag.status==='cancelada') return `<span class="badge badge-purple">❌ ${ag.motivo||'Cancelado'}</span>`;
-  if (ag.status==='noshow')    return `<span class="badge badge-orange">🚫 No-show</span>`;
-  return '—';
+  if(!ag)return'<span style="color:var(--text2);font-size:12px">—</span>';
+  if(ag.status==='agendada')  return`<span class="badge badge-blue">📅 ${formatDate(ag.data)}</span>`;
+  if(ag.status==='cancelada') return`<span class="badge badge-purple">❌ ${ag.motivo||'—'}</span>`;
+  if(ag.status==='noshow')    return`<span class="badge badge-orange">🚫 No-show</span>`;
+  return'—';
 }
-function formatDate(d) {
-  if (!d) return '—';
-  return new Date(d+'T12:00:00').toLocaleDateString('pt-BR');
-}
-function sorted(lista) { return [...lista].sort((a,b)=>sortKey(a)-sortKey(b)); }
-function filtrarUnidade(lista, selectId) {
-  const u=document.getElementById(selectId)?.value||'';
-  return u ? lista.filter(p=>p.unidade===u) : lista;
+
+// ===================== DROPDOWNS DINÂMICOS =====================
+function populateSelects() {
+  const unidades = config.unidades;
+  const secs = config.secretarias;
+
+  // Filtros
+  ['filtro-unidade','filtro-alerta-unidade','dash-unidade'].forEach(id=>{
+    const el=document.getElementById(id); if(!el)return;
+    const val=el.value;
+    el.innerHTML='<option value="">Todas</option>'+unidades.map(u=>`<option ${val===u?'selected':''}>${u}</option>`).join('');
+    if(id==='dash-unidade')el.querySelector('option').textContent='Todas as unidades';
+  });
+  const sf=document.getElementById('filtro-sec');
+  if(sf){const v=sf.value;sf.innerHTML='<option value="">Todas</option>'+secs.map(s=>`<option value="${s.usuario}" ${v===s.usuario?'selected':''}>${s.nome}</option>`).join('');}
+
+  // Modal paciente
+  const pu=document.getElementById('p-unidade');
+  if(pu){const v=pu.value;pu.innerHTML='<option value="">Selecione a unidade</option>'+unidades.map(u=>`<option ${v===u?'selected':''}>${u}</option>`).join('');}
+  const ps=document.getElementById('p-sec');
+  if(ps){const v=ps.value;ps.innerHTML='<option value="">Selecione a secretária</option>'+secs.map(s=>`<option value="${s.usuario}" ${v===s.usuario?'selected':''}>${s.nome}</option>`).join('');}
+
+  // Demo box no login
+  const db=document.getElementById('demo-box');
+  if(db)db.innerHTML=`<p><strong>Credenciais:</strong></p><p>Gerenciador: <span class="code">gerenciador / ****</span></p>`+
+    secs.map(s=>`<p>${s.nome}: <span class="code">${s.usuario} / ****</span></p>`).join('');
 }
 
 // ===================== LOGIN =====================
-function login() {
+function login(){
   const u=document.getElementById('username').value.trim().toLowerCase();
   const p=document.getElementById('password').value;
-  if (USERS[u] && USERS[u]===p) {
+  const users=getUsers();
+  if(users[u]&&users[u]===p){
     currentUser=u;
     document.getElementById('login-screen').style.display='none';
     document.getElementById('app-screen').style.display='block';
-    document.getElementById('user-label').textContent='👤 '+cap(u);
-    renderAll(); notify('Bem-vindo, '+cap(u)+'! 👋');
-  } else { document.getElementById('login-error').style.display='block'; }
+    document.getElementById('user-label').textContent='👤 '+(u==='gerenciador'?'Gerenciador':secNome(u));
+    document.getElementById('tab-config-btn').style.display=u==='gerenciador'?'':'none';
+    populateSelects(); renderAll(); notify('Bem-vindo! 👋');
+  }else{document.getElementById('login-error').style.display='block';}
 }
-function logout() {
+function logout(){
   document.getElementById('login-screen').style.display='flex';
   document.getElementById('app-screen').style.display='none';
   ['username','password'].forEach(id=>document.getElementById(id).value='');
@@ -449,28 +497,31 @@ document.getElementById('password').addEventListener('keydown',e=>{if(e.key==='E
 document.getElementById('username').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('password').focus();});
 
 // ===================== TABS =====================
-function showTab(tab) {
-  ['dashboard','pacientes','alertas'].forEach(t=>document.getElementById('tab-'+t).style.display=t===tab?'block':'none');
-  document.querySelectorAll('.tab').forEach((el,i)=>el.classList.toggle('active',['dashboard','pacientes','alertas'][i]===tab));
-  renderAll();
+function showTab(tab){
+  ['dashboard','pacientes','alertas','config'].forEach(t=>document.getElementById('tab-'+t).style.display=t===tab?'block':'none');
+  document.querySelectorAll('.tab').forEach(el=>el.classList.remove('active'));
+  const idx={'dashboard':0,'pacientes':1,'alertas':2,'config':3};
+  document.querySelectorAll('.tab')[idx[tab]]?.classList.add('active');
+  if(tab==='config') renderConfig();
+  else renderAll();
 }
 
 // ===================== RENDER =====================
-function renderAll() { renderMetrics(); renderDashboard(); renderPacientes(); renderAlertas(); }
-function cap(s) { return s.charAt(0).toUpperCase()+s.slice(1); }
+function renderAll(){populateSelects();renderMetrics();renderDashboard();renderPacientes();renderAlertas();}
 
-function renderMetrics() {
-  const unidadeFiltro = document.getElementById('dash-unidade')?.value||'';
-  const lista = unidadeFiltro ? pacientes.filter(p=>p.unidade===unidadeFiltro) : pacientes;
-  let total=lista.length, vencidas=0, proximas=0, agendadas=0, canceladas=0, noshows=0, emDia=0;
+function filtU(lista,id){const u=document.getElementById(id)?.value||'';return u?lista.filter(p=>p.unidade===u):lista;}
+
+function renderMetrics(){
+  const lista=filtU(pacientes,'dash-unidade');
+  let total=lista.length,vencidas=0,proximas=0,agendadas=0,canceladas=0,noshows=0,emDia=0;
   lista.forEach(p=>{
-    const ag=p.agendamento, dias=calcDias(p);
-    if (ag?.status==='agendada')  { agendadas++; return; }
-    if (ag?.status==='cancelada') { canceladas++; return; }
-    if (ag?.status==='noshow')    { noshows++; return; }
-    if (dias<0) vencidas++; else if (dias<=7) proximas++; else emDia++;
+    const ag=p.agendamento,dias=calcDias(p);
+    if(ag?.status==='agendada'){agendadas++;return;}
+    if(ag?.status==='cancelada'){canceladas++;return;}
+    if(ag?.status==='noshow'){noshows++;return;}
+    if(dias<0)vencidas++;else if(dias<=7)proximas++;else emDia++;
   });
-  document.getElementById('metrics-grid').innerHTML = `
+  document.getElementById('metrics-grid').innerHTML=`
     <div class="metric"><div class="metric-label">Total</div><div class="metric-value">${total}</div></div>
     <div class="metric"><div class="metric-label">Vencidas</div><div class="metric-value red">${vencidas}</div></div>
     <div class="metric"><div class="metric-label">Cancelamentos</div><div class="metric-value purple">${canceladas}</div></div>
@@ -481,13 +532,13 @@ function renderMetrics() {
   `;
 }
 
-function renderDashboard() {
-  const lista = sorted(filtrarUnidade(pacientes,'dash-unidade')).slice(0,20);
+function renderDashboard(){
+  const lista=sorted(filtU(pacientes,'dash-unidade')).slice(0,20);
   const tb=document.getElementById('dashboard-table');
-  if (!lista.length) { tb.innerHTML='<tr><td colspan="6" class="no-data">Nenhum paciente encontrado.</td></tr>'; return; }
-  tb.innerHTML=lista.map((p,i)=>{
+  if(!lista.length){tb.innerHTML='<tr><td colspan="6" class="no-data">Nenhum paciente encontrado.</td></tr>';return;}
+  tb.innerHTML=lista.map(p=>{
     const ri=pacientes.indexOf(p);
-    return `<tr>
+    return`<tr>
       <td><strong>${p.nome}</strong><br><small style="color:var(--text2)">${p.tel}</small></td>
       <td><span class="badge badge-unit">${p.unidade||'—'}</span></td>
       <td>${formatDate(p.ultimaReav)}</td>
@@ -498,202 +549,273 @@ function renderDashboard() {
   }).join('');
 }
 
-function renderPacientes() {
+function renderPacientes(){
   const unidade=document.getElementById('filtro-unidade')?.value||'';
   const sec=document.getElementById('filtro-sec')?.value||'';
   let lista=pacientes;
-  if (currentUser!=='gerenciador') lista=lista.filter(p=>p.sec===currentUser);
-  if (unidade) lista=lista.filter(p=>p.unidade===unidade);
-  if (sec) lista=lista.filter(p=>p.sec===sec);
+  if(currentUser!=='gerenciador')lista=lista.filter(p=>p.sec===currentUser);
+  if(unidade)lista=lista.filter(p=>p.unidade===unidade);
+  if(sec)lista=lista.filter(p=>p.sec===sec);
   lista=sorted(lista);
   const tb=document.getElementById('pacientes-table');
-  if (!lista.length) { tb.innerHTML='<tr><td colspan="8" class="no-data">Nenhum paciente encontrado.</td></tr>'; return; }
+  if(!lista.length){tb.innerHTML='<tr><td colspan="8" class="no-data">Nenhum paciente encontrado.</td></tr>';return;}
   tb.innerHTML=lista.map(p=>{
-    const ri=pacientes.indexOf(p), ag=p.agendamento;
-    const acoes=`
-      ${p.tel?`<button class="btn btn-small btn-whatsapp" onclick="abrirWhatsApp('${p.tel}')" title="WhatsApp">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:2px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      </button>`:''}
-      <button class="btn btn-small" onclick="editarPaciente(${ri})">✏️</button>
-      <button class="btn btn-small btn-red" onclick="excluirPaciente(${ri})">🗑</button>
-    `;
-    return `<tr>
+    const ri=pacientes.indexOf(p);
+    const wpp=p.tel?`<button class="btn btn-small btn-whatsapp" onclick="abrirWhatsApp('${p.tel}')" title="WhatsApp">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </button>`:'';
+    return`<tr>
       <td><strong>${p.nome}</strong><br><small style="color:var(--text2)">${p.tel}</small></td>
       <td><span class="badge badge-unit">${p.unidade||'—'}</span></td>
-      <td>${cap(p.sec)}</td>
+      <td>${secNome(p.sec)}</td>
       <td>${formatDate(p.ultimaReav)}</td>
       <td>${formatDate(calcProxima(p).toISOString().split('T')[0])}</td>
       <td>${getAgBadge(p)}</td>
       <td>${getStatusBadge(p,ri,true)}</td>
-      <td><div class="actions">${acoes}</div></td>
+      <td><div class="actions">${wpp}
+        <button class="btn btn-small" onclick="editarPaciente(${ri})">✏️</button>
+        <button class="btn btn-small btn-red" onclick="excluirPaciente(${ri})">🗑</button>
+      </div></td>
     </tr>`;
   }).join('');
 }
 
-function renderAlertas() {
+function renderAlertas(){
   const filt=p=>{const u=document.getElementById('filtro-alerta-unidade')?.value||'';return !u||p.unidade===u;};
-  const vencidos   = sorted(pacientes.filter(p=>filt(p)&&!p.agendamento&&calcDias(p)<0));
-  const cancelados = sorted(pacientes.filter(p=>filt(p)&&p.agendamento?.status==='cancelada'));
-  const noshows    = sorted(pacientes.filter(p=>filt(p)&&p.agendamento?.status==='noshow'));
-  const proximos   = sorted(pacientes.filter(p=>filt(p)&&!p.agendamento&&calcDias(p)>=0&&calcDias(p)<=7));
-  const agendados  = sorted(pacientes.filter(p=>filt(p)&&p.agendamento?.status==='agendada'));
-
-  const mkBtns = (ri,tipo) => {
+  const vencidos   =sorted(pacientes.filter(p=>filt(p)&&!p.agendamento&&calcDias(p)<0));
+  const cancelados =sorted(pacientes.filter(p=>filt(p)&&p.agendamento?.status==='cancelada'));
+  const noshows    =sorted(pacientes.filter(p=>filt(p)&&p.agendamento?.status==='noshow'));
+  const proximos   =sorted(pacientes.filter(p=>filt(p)&&!p.agendamento&&calcDias(p)>=0&&calcDias(p)<=7));
+  const agendados  =sorted(pacientes.filter(p=>filt(p)&&p.agendamento?.status==='agendada'));
+  const mkBtns=(ri,tipo)=>{
     const p=pacientes[ri];
-    let btns=`${p.tel?`<button class="btn btn-small btn-whatsapp" onclick="abrirWhatsApp('${p.tel}')">💬 WhatsApp</button>`:''}`;
-    if (tipo==='agendada') btns+=`<button class="btn btn-small btn-green" onclick="abrirRealizar(${ri})">✅ Realizada</button>
+    let b=p.tel?`<button class="btn btn-small btn-whatsapp" onclick="abrirWhatsApp('${p.tel}')">💬 WhatsApp</button>`:'';
+    if(tipo==='agendada')b+=`<button class="btn btn-small btn-green" onclick="abrirRealizar(${ri})">✅ Realizada</button>
       <button class="btn btn-small btn-red" onclick="abrirCancelar(${ri})">❌ Cancelar</button>
       <button class="btn btn-small btn-orange" onclick="abrirNoShow(${ri})">🚫 No-show</button>`;
-    else btns+=`<button class="btn btn-small btn-blue" onclick="abrirAgendar(${ri})">📅 ${tipo==='cancelada'||tipo==='noshow'?'Reagendar':'Agendar'}</button>`;
-    return btns;
+    else b+=`<button class="btn btn-small btn-blue" onclick="abrirAgendar(${ri})">📅 ${tipo==='cancelada'||tipo==='noshow'?'Reagendar':'Agendar'}</button>`;
+    return b;
   };
-  const renderLista=(lista,id,tipo)=>{
+  const renderL=(lista,id,tipo)=>{
     const el=document.getElementById(id);
-    if (!lista.length){el.innerHTML='<p class="no-data">Nenhum paciente.</p>';return;}
+    if(!lista.length){el.innerHTML='<p class="no-data">Nenhum paciente.</p>';return;}
     el.innerHTML=lista.map(p=>{
-      const ri=pacientes.indexOf(p), ag=p.agendamento, dias=calcDias(p);
+      const ri=pacientes.indexOf(p),ag=p.agendamento,dias=calcDias(p);
       let info='';
-      if (ag?.status==='agendada')  info=`Agendada: ${formatDate(ag.data)}${ag.obs?' · '+ag.obs:''}`;
-      else if (ag?.status==='cancelada') info=`Motivo: ${ag.motivo||'—'} · Próxima: ${formatDate(calcProxima(p).toISOString().split('T')[0])}`;
-      else if (ag?.status==='noshow')    info=`No-show · ${ag.obs||''} · Próxima: ${formatDate(calcProxima(p).toISOString().split('T')[0])}`;
+      if(ag?.status==='agendada')  info=`Agendada: ${formatDate(ag.data)}${ag.obs?' · '+ag.obs:''}`;
+      else if(ag?.status==='cancelada')info=`Motivo: ${ag.motivo||'—'} · Próxima: ${formatDate(calcProxima(p).toISOString().split('T')[0])}`;
+      else if(ag?.status==='noshow')   info=`No-show${ag.obs?' · '+ag.obs:''} · Próxima: ${formatDate(calcProxima(p).toISOString().split('T')[0])}`;
       else info=`Próxima: ${formatDate(calcProxima(p).toISOString().split('T')[0])} · ${dias<0?Math.abs(dias)+'d vencida':'vence em '+dias+'d'}`;
-      return `<div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);gap:8px;flex-wrap:wrap">
-        <div>
-          <strong>${p.nome}</strong> <span class="badge badge-unit">${p.unidade||'—'}</span> — ${cap(p.sec)}<br>
-          <small style="color:var(--text2)">${p.tel} · ${info}</small>
-        </div>
+      return`<div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);gap:8px;flex-wrap:wrap">
+        <div><strong>${p.nome}</strong> <span class="badge badge-unit">${p.unidade||'—'}</span> — ${secNome(p.sec)}<br>
+          <small style="color:var(--text2)">${p.tel} · ${info}</small></div>
         <div class="actions">${mkBtns(ri,tipo)}</div>
       </div>`;
     }).join('');
   };
-  renderLista(vencidos,  'lista-vencidos',  'vencida');
-  renderLista(cancelados,'lista-cancelados','cancelada');
-  renderLista(noshows,   'lista-noshows',   'noshow');
-  renderLista(proximos,  'lista-proximos',  'proxima');
-  renderLista(agendados, 'lista-agendados', 'agendada');
+  renderL(vencidos,  'lista-vencidos',  'vencida');
+  renderL(cancelados,'lista-cancelados','cancelada');
+  renderL(noshows,   'lista-noshows',   'noshow');
+  renderL(proximos,  'lista-proximos',  'proxima');
+  renderL(agendados, 'lista-agendados', 'agendada');
 }
 
-// ===================== STATUS MENU (INLINE) =====================
-function abrirStatusMenu(event, ri) {
-  event.stopPropagation();
-  fecharStatusMenu();
-  const p=pacientes[ri], ag=p.agendamento;
+// ===================== CONFIGURAÇÕES =====================
+function renderConfig(){
+  // Unidades
+  const ul=document.getElementById('config-unidades-list');
+  ul.innerHTML=config.unidades.length?config.unidades.map((u,i)=>{
+    const count=pacientes.filter(p=>p.unidade===u).length;
+    return`<div class="config-item">
+      <div class="config-item-info"><span>${u}</span><small>${count} paciente${count!==1?'s':''}</small></div>
+      <button class="btn btn-small btn-red" onclick="removerUnidade(${i})" title="Remover">✕</button>
+    </div>`;
+  }).join(''):'<p class="no-data" style="padding:1rem">Nenhuma unidade cadastrada.</p>';
+
+  // Secretárias
+  const sl=document.getElementById('config-secretarias-list');
+  sl.innerHTML=config.secretarias.length?config.secretarias.map((s,i)=>{
+    const count=pacientes.filter(p=>p.sec===s.usuario).length;
+    return`<div class="config-item">
+      <div class="config-item-info">
+        <span><strong>${s.nome}</strong> <span style="color:var(--text2);font-size:12px">@${s.usuario}</span></span>
+        <small>${count} paciente${count!==1?'s':''}</small>
+      </div>
+      <button class="btn btn-small btn-red" onclick="removerSecretaria(${i})" title="Remover">✕</button>
+    </div>`;
+  }).join(''):'<p class="no-data" style="padding:1rem">Nenhuma secretária.</p>';
+}
+
+function adicionarUnidade(){
+  const input=document.getElementById('nova-unidade');
+  const nome=input.value.trim();
+  if(!nome){alert('Digite o nome da unidade.');return;}
+  if(config.unidades.includes(nome)){alert('Essa unidade já existe.');return;}
+  config.unidades.push(nome);
+  salvarConfig(); input.value=''; renderConfig(); populateSelects();
+  notify('Unidade adicionada! 🏢');
+}
+
+function removerUnidade(i){
+  const u=config.unidades[i];
+  const count=pacientes.filter(p=>p.unidade===u).length;
+  if(count>0){
+    if(!confirm(`A unidade "${u}" tem ${count} paciente(s) vinculado(s).\nAo remover, esses pacientes ficarão sem unidade.\nDeseja continuar?`))return;
+    pacientes.forEach(p=>{if(p.unidade===u)p.unidade='';});
+    salvarDados();
+  }
+  config.unidades.splice(i,1);
+  salvarConfig(); renderConfig(); populateSelects(); notify('Unidade removida.');
+}
+
+function adicionarSecretaria(){
+  const nome=document.getElementById('nova-sec-nome').value.trim();
+  const usuario=document.getElementById('nova-sec-usuario').value.trim().toLowerCase();
+  const senha=document.getElementById('nova-sec-senha').value;
+  if(!nome||!usuario||!senha){alert('Preencha todos os campos.');return;}
+  if(usuario==='gerenciador'){alert('Usuário reservado.');return;}
+  if(config.secretarias.find(s=>s.usuario===usuario)){alert('Esse usuário já existe.');return;}
+  config.secretarias.push({nome,usuario,senha});
+  salvarConfig();
+  ['nova-sec-nome','nova-sec-usuario','nova-sec-senha'].forEach(id=>document.getElementById(id).value='');
+  renderConfig(); populateSelects(); notify('Secretária adicionada! 👤');
+}
+
+function removerSecretaria(i){
+  const s=config.secretarias[i];
+  const count=pacientes.filter(p=>p.sec===s.usuario).length;
+  if(count>0){
+    if(!confirm(`A secretária "${s.nome}" tem ${count} paciente(s) vinculado(s).\nAo remover, esses pacientes ficarão sem secretária.\nDeseja continuar?`))return;
+    pacientes.forEach(p=>{if(p.sec===s.usuario)p.sec='';});
+    salvarDados();
+  }
+  config.secretarias.splice(i,1);
+  salvarConfig(); renderConfig(); populateSelects(); notify('Secretária removida.');
+}
+
+function alterarSenhaGerenciador(){
+  const nova=document.getElementById('nova-senha-ger').value;
+  const conf=document.getElementById('confirma-senha-ger').value;
+  if(!nova){alert('Digite a nova senha.');return;}
+  if(nova!==conf){alert('As senhas não coincidem.');return;}
+  if(nova.length<4){alert('A senha deve ter pelo menos 4 caracteres.');return;}
+  config.senhagerenciador=nova;
+  salvarConfig();
+  document.getElementById('nova-senha-ger').value='';
+  document.getElementById('confirma-senha-ger').value='';
+  notify('Senha do gerenciador alterada! 🔐');
+}
+
+// ===================== STATUS MENU =====================
+function abrirStatusMenu(event,ri){
+  event.stopPropagation(); fecharStatusMenu();
+  const p=pacientes[ri],ag=p.agendamento;
   const menu=document.getElementById('status-menu');
   const items=[];
-
-  if (!ag || ag.status==='cancelada' || ag.status==='noshow') {
+  if(!ag||ag.status==='cancelada'||ag.status==='noshow')
     items.push({icon:'📅',label:'Agendar reavaliação',fn:`abrirAgendar(${ri})`,cls:''});
-  }
-  if (ag?.status==='agendada') {
+  if(ag?.status==='agendada'){
     items.push({icon:'✅',label:'Confirmar como Realizada',fn:`abrirRealizar(${ri})`,cls:''});
     items.push({icon:'❌',label:'Cancelar com aviso prévio',fn:`abrirCancelar(${ri})`,cls:'danger'});
     items.push({icon:'🚫',label:'Registrar No-show',fn:`abrirNoShow(${ri})`,cls:'warn'});
+    items.push({divider:true});
+    items.push({icon:'📅',label:'Alterar data',fn:`abrirAgendar(${ri})`,cls:''});
   }
-  if (ag) {
-    if (items.length) items.push({divider:true});
-    if (ag.status==='agendada') {
-      items.push({icon:'📅',label:'Alterar data do agendamento',fn:`abrirAgendar(${ri})`,cls:''});
-    }
-  }
-
   menu.innerHTML=items.map(it=>it.divider?'<div class="status-menu-divider"></div>':
     `<div class="status-menu-item ${it.cls}" onclick="${it.fn};fecharStatusMenu()">${it.icon} ${it.label}</div>`
   ).join('');
-
   const rect=event.target.getBoundingClientRect();
-  const menuW=210, menuH=items.length*42;
-  let top=rect.bottom+window.scrollY+4;
-  let left=rect.left+window.scrollX;
-  if (left+menuW>window.innerWidth) left=window.innerWidth-menuW-8;
-  if (top+menuH>window.scrollY+window.innerHeight) top=rect.top+window.scrollY-menuH-4;
+  const mw=220,mh=items.length*44;
+  let top=rect.bottom+window.scrollY+4,left=rect.left+window.scrollX;
+  if(left+mw>window.innerWidth)left=window.innerWidth-mw-8;
+  if(top+mh>window.scrollY+window.innerHeight)top=rect.top+window.scrollY-mh-4;
   menu.style.cssText=`display:block;top:${top}px;left:${left}px;`;
 }
-function fecharStatusMenu() { document.getElementById('status-menu').style.display='none'; }
-document.addEventListener('click', fecharStatusMenu);
+function fecharStatusMenu(){document.getElementById('status-menu').style.display='none';}
+document.addEventListener('click',fecharStatusMenu);
 
-// ===================== PACIENTES =====================
-function abrirModalPaciente() {
+// ===================== PACIENTES CRUD =====================
+function abrirModalPaciente(){
   editIndex=-1;
   document.getElementById('modal-titulo').textContent='Novo Paciente';
   ['p-nome','p-tel','p-email'].forEach(id=>document.getElementById(id).value='');
   document.getElementById('p-unidade').value='';
-  document.getElementById('p-sec').value='maria';
+  document.getElementById('p-sec').value='';
   document.getElementById('p-data').value=new Date().toISOString().split('T')[0];
   document.getElementById('p-intervalo').value='3';
+  populateSelects();
   document.getElementById('modal-paciente').style.display='flex';
 }
-function editarPaciente(i) {
+function editarPaciente(i){
   editIndex=i; const p=pacientes[i];
   document.getElementById('modal-titulo').textContent='Editar Paciente';
   document.getElementById('p-nome').value=p.nome;
   document.getElementById('p-tel').value=p.tel;
   document.getElementById('p-email').value=p.email||'';
-  document.getElementById('p-unidade').value=p.unidade||'';
-  document.getElementById('p-sec').value=p.sec;
   document.getElementById('p-data').value=p.ultimaReav;
   document.getElementById('p-intervalo').value=p.intervalo;
+  populateSelects();
+  document.getElementById('p-unidade').value=p.unidade||'';
+  document.getElementById('p-sec').value=p.sec||'';
   document.getElementById('modal-paciente').style.display='flex';
 }
-function salvarPaciente() {
+function salvarPaciente(){
   const nome=document.getElementById('p-nome').value.trim();
-  if (!nome){alert('Digite o nome do paciente.');return;}
-  const p={
-    nome, tel:document.getElementById('p-tel').value.trim(),
-    email:document.getElementById('p-email').value.trim(),
-    unidade:document.getElementById('p-unidade').value,
-    sec:document.getElementById('p-sec').value,
-    ultimaReav:document.getElementById('p-data').value,
-    intervalo:document.getElementById('p-intervalo').value,
+  const unidade=document.getElementById('p-unidade').value;
+  const sec=document.getElementById('p-sec').value;
+  if(!nome){alert('Digite o nome do paciente.');return;}
+  if(!unidade){alert('Selecione a unidade.');return;}
+  if(!sec){alert('Selecione a secretária responsável.');return;}
+  const p={nome,tel:document.getElementById('p-tel').value.trim(),email:document.getElementById('p-email').value.trim(),
+    unidade,sec,ultimaReav:document.getElementById('p-data').value,intervalo:document.getElementById('p-intervalo').value,
     agendamento:editIndex>=0?pacientes[editIndex].agendamento:null,
     historico:editIndex>=0?pacientes[editIndex].historico:[],
   };
-  if (editIndex>=0){pacientes[editIndex]=p;notify('Paciente atualizado! ✅');}
+  if(editIndex>=0){pacientes[editIndex]=p;notify('Paciente atualizado! ✅');}
   else{pacientes.push(p);notify('Paciente cadastrado! ✅');}
-  salvarDados(); document.getElementById('modal-paciente').style.display='none'; renderAll();
+  salvarDados();document.getElementById('modal-paciente').style.display='none';renderAll();
 }
-function excluirPaciente(i) {
-  if (!confirm('Excluir '+pacientes[i].nome+'?'))return;
-  pacientes.splice(i,1); salvarDados(); renderAll(); notify('Paciente removido.');
+function excluirPaciente(i){
+  if(!confirm('Excluir '+pacientes[i].nome+'?'))return;
+  pacientes.splice(i,1);salvarDados();renderAll();notify('Paciente removido.');
 }
 
 // ===================== AGENDAR =====================
-function abrirAgendar(i) {
+function abrirAgendar(i){
   agendarIndex=i;
   document.getElementById('ag-nome').textContent=pacientes[i].nome;
-  const proxima=calcProxima(pacientes[i]), hoje=new Date().toISOString().split('T')[0];
-  const sugestao=proxima.toISOString().split('T')[0];
-  document.getElementById('ag-data').value=sugestao>hoje?sugestao:hoje;
+  const proxima=calcProxima(pacientes[i]),hoje=new Date().toISOString().split('T')[0];
+  document.getElementById('ag-data').value=proxima.toISOString().split('T')[0]>hoje?proxima.toISOString().split('T')[0]:hoje;
   document.getElementById('ag-obs').value='';
   document.getElementById('modal-agendar').style.display='flex';
 }
-function confirmarAgendamento() {
+function confirmarAgendamento(){
   const data=document.getElementById('ag-data').value;
-  if (!data){alert('Selecione a data.');return;}
+  if(!data){alert('Selecione a data.');return;}
   pacientes[agendarIndex].agendamento={data,status:'agendada',obs:document.getElementById('ag-obs').value.trim()};
-  salvarDados(); document.getElementById('modal-agendar').style.display='none'; renderAll(); notify('Reavaliação agendada! 📅');
+  salvarDados();document.getElementById('modal-agendar').style.display='none';renderAll();notify('Reavaliação agendada! 📅');
 }
 
 // ===================== REALIZAR =====================
-function abrirRealizar(i) {
+function abrirRealizar(i){
   realizarIndex=i;
   document.getElementById('re-nome').textContent=pacientes[i].nome;
-  const ag=pacientes[i].agendamento;
-  document.getElementById('re-data').value=ag?.data||new Date().toISOString().split('T')[0];
+  document.getElementById('re-data').value=pacientes[i].agendamento?.data||new Date().toISOString().split('T')[0];
   document.getElementById('re-obs').value='';
   document.getElementById('modal-realizar').style.display='flex';
 }
-function marcarRealizada() {
+function marcarRealizada(){
   const data=document.getElementById('re-data').value;
-  if (!data){alert('Selecione a data.');return;}
+  if(!data){alert('Selecione a data.');return;}
   const p=pacientes[realizarIndex];
   p.historico=p.historico||[];
   p.historico.unshift({data,tipo:'realizada',obs:document.getElementById('re-obs').value.trim()});
-  p.ultimaReav=data; p.agendamento=null;
-  salvarDados(); document.getElementById('modal-realizar').style.display='none'; renderAll(); notify('Reavaliação confirmada! ✅');
+  p.ultimaReav=data;p.agendamento=null;
+  salvarDados();document.getElementById('modal-realizar').style.display='none';renderAll();notify('Reavaliação confirmada! ✅');
 }
 
-// ===================== CANCELAR COM MOTIVO =====================
-function abrirCancelar(i) {
+// ===================== CANCELAR =====================
+function abrirCancelar(i){
   cancelarIndex=i;
   document.getElementById('ca-nome').textContent=pacientes[i].nome;
   document.getElementById('ca-motivo').value='';
@@ -704,55 +826,57 @@ function abrirCancelar(i) {
 document.getElementById('ca-reagendar').addEventListener('change',function(){
   document.getElementById('ca-nova-data-group').style.display=this.value==='sim'?'block':'none';
 });
-function confirmarCancelamento() {
+function confirmarCancelamento(){
   const motivo=document.getElementById('ca-motivo').value.trim();
-  if (!motivo){alert('Por favor, informe o motivo do cancelamento.');return;}
+  if(!motivo){alert('Informe o motivo do cancelamento.');return;}
   const p=pacientes[cancelarIndex];
-  const reagendar=document.getElementById('ca-reagendar').value;
-  const novaData=document.getElementById('ca-nova-data').value;
   p.historico=p.historico||[];
   p.historico.unshift({data:new Date().toISOString().split('T')[0],tipo:'cancelada',obs:motivo});
-  if (reagendar==='sim'&&novaData) {
+  const reagendar=document.getElementById('ca-reagendar').value;
+  const novaData=document.getElementById('ca-nova-data').value;
+  if(reagendar==='sim'&&novaData){
     p.agendamento={data:novaData,status:'agendada',obs:'Reagendado após cancelamento'};
     notify('Cancelamento registrado e reagendado! 📅');
-  } else {
-    p.agendamento={data:p.agendamento?.data||'',status:'cancelada',motivo};
+  }else{
+    p.agendamento={...p.agendamento,status:'cancelada',motivo};
     notify('Cancelamento registrado. ❌');
   }
-  salvarDados(); document.getElementById('modal-cancelar').style.display='none'; renderAll();
+  salvarDados();document.getElementById('modal-cancelar').style.display='none';renderAll();
 }
 
 // ===================== NO-SHOW =====================
-function abrirNoShow(i) {
+function abrirNoShow(i){
   noshowIndex=i;
   document.getElementById('ns-nome').textContent=pacientes[i].nome;
   document.getElementById('ns-obs').value='';
   document.getElementById('modal-noshow').style.display='flex';
 }
-function confirmarNoShow() {
-  const p=pacientes[noshowIndex];
-  const obs=document.getElementById('ns-obs').value.trim();
+function confirmarNoShow(){
+  const p=pacientes[noshowIndex],obs=document.getElementById('ns-obs').value.trim();
   p.historico=p.historico||[];
   p.historico.unshift({data:new Date().toISOString().split('T')[0],tipo:'noshow',obs});
-  p.agendamento={data:p.agendamento?.data||'',status:'noshow',obs};
-  salvarDados(); document.getElementById('modal-noshow').style.display='none'; renderAll(); notify('No-show registrado. 🚫');
+  p.agendamento={...p.agendamento,status:'noshow',obs};
+  salvarDados();document.getElementById('modal-noshow').style.display='none';renderAll();notify('No-show registrado. 🚫');
 }
 
 // ===================== WHATSAPP =====================
-function abrirWhatsApp(tel) {
-  let num=tel.replace(/\D/g,'');
-  if (num.startsWith('0')) num=num.substring(1);
-  if (!num.startsWith('55')) num='55'+num;
-  window.open('https://wa.me/'+num,'_blank');
+function abrirWhatsApp(tel){
+  let n=tel.replace(/\D/g,'');
+  if(n.startsWith('0'))n=n.substring(1);
+  if(!n.startsWith('55'))n='55'+n;
+  window.open('https://wa.me/'+n,'_blank');
 }
 
 // ===================== UTILS =====================
 function fecharModal(e){if(e.target===e.currentTarget)e.currentTarget.style.display='none';}
 function notify(msg){
   const el=document.getElementById('notification');
-  el.textContent=msg; el.classList.add('show');
+  el.textContent=msg;el.classList.add('show');
   setTimeout(()=>el.classList.remove('show'),3500);
 }
+
+// Inicializa demo box
+populateSelects();
 </script>
 </body>
 </html>
