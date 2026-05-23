@@ -80,6 +80,7 @@
     .filter-bar{display:flex;gap:8px;margin-bottom:1rem;flex-wrap:wrap;align-items:center;}
     .filter-bar select{padding:6px 10px;border:1px solid var(--border);border-radius:8px;font-size:13px;background:var(--card);color:var(--text);font-family:inherit;}
     .filter-bar label{font-size:13px;color:var(--text2);}
+    .unit-badge-info{font-size:13px;color:var(--text2);padding:6px 10px;background:var(--blue-bg);color:var(--blue);border-radius:8px;font-weight:500;}
 
     .table-wrap{overflow-x:auto;}
     table{width:100%;border-collapse:collapse;font-size:13px;}
@@ -114,8 +115,8 @@
     .config-item-info{display:flex;flex-direction:column;gap:2px;}
     .config-item-info small{font-size:12px;color:var(--text2);}
     .config-add{display:flex;gap:8px;flex-wrap:wrap;}
-    .config-add input{flex:1;min-width:120px;padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:14px;background:var(--card);color:var(--text);font-family:inherit;}
-    .config-add input:focus{outline:2px solid var(--blue-bg);}
+    .config-add input,.config-add select{flex:1;min-width:120px;padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:14px;background:var(--card);color:var(--text);font-family:inherit;}
+    .config-add input:focus,.config-add select:focus{outline:2px solid var(--blue-bg);}
     .config-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
     @media(max-width:700px){.config-grid{grid-template-columns:1fr;}}
 
@@ -185,10 +186,11 @@
       <div class="card">
         <div class="card-header">
           <h2>Pacientes por prioridade</h2>
-          <div class="filter-bar" style="margin:0">
+          <div id="dash-unidade-wrap" class="filter-bar" style="margin:0">
             <select id="dash-unidade" onchange="renderAll()"><option value="">Todas as unidades</option></select>
           </div>
         </div>
+        <div id="dash-unidade-info" style="display:none;margin-bottom:.8rem"></div>
         <div class="table-wrap">
           <table>
             <thead><tr><th>Paciente</th><th>Unidade</th><th>Última Reav.</th><th>Próxima</th><th>Agendamento</th><th>Status</th></tr></thead>
@@ -205,15 +207,18 @@
           <h2>Pacientes</h2>
           <button class="btn btn-primary" onclick="abrirModalPaciente()">+ Novo Paciente</button>
         </div>
-        <div class="filter-bar">
+        <!-- Filtros apenas para gerenciador -->
+        <div id="pac-filtros-ger" class="filter-bar">
           <label>Unidade:</label>
           <select id="filtro-unidade" onchange="renderPacientes()"><option value="">Todas</option></select>
-          <label style="margin-left:.5rem">Secretária:</label>
+          <label style="margin-left:.5rem">Secretaria:</label>
           <select id="filtro-sec" onchange="renderPacientes()"><option value="">Todas</option></select>
         </div>
+        <!-- Info de unidade para secretaria(o) -->
+        <div id="pac-unidade-info" style="display:none;margin-bottom:.8rem"></div>
         <div class="table-wrap">
           <table>
-            <thead><tr><th>Nome</th><th>Unidade</th><th>Secretária</th><th>Última Reav.</th><th>Próxima</th><th>Agend.</th><th>Status ▾</th><th>Ações</th></tr></thead>
+            <thead><tr><th>Nome</th><th>Unidade</th><th>Secretaria</th><th>Última Reav.</th><th>Próxima</th><th>Agend.</th><th>Status ▾</th><th>Ações</th></tr></thead>
             <tbody id="pacientes-table"></tbody>
           </table>
         </div>
@@ -222,10 +227,11 @@
 
     <!-- ALERTAS -->
     <div id="tab-alertas" style="display:none">
-      <div class="filter-bar">
+      <div id="alerta-filtros-ger" class="filter-bar">
         <label>Unidade:</label>
         <select id="filtro-alerta-unidade" onchange="renderAlertas()"><option value="">Todas</option></select>
       </div>
+      <div id="alerta-unidade-info" style="display:none;margin-bottom:.8rem"></div>
       <div class="card"><div class="card-header"><h2>🔴 Reavaliações Vencidas</h2></div><div id="lista-vencidos"></div></div>
       <div class="card"><div class="card-header"><h2>❌ Cancelamentos com Aviso</h2></div><div id="lista-cancelados"></div></div>
       <div class="card"><div class="card-header"><h2>🚫 No-shows</h2></div><div id="lista-noshows"></div></div>
@@ -247,17 +253,20 @@
           </div>
         </div>
 
-        <!-- SECRETÁRIAS -->
+        <!-- SECRETARIAS -->
         <div class="card">
-          <h3>👤 Secretárias</h3>
+          <h3>👤 Secretarias</h3>
           <div class="config-list" id="config-secretarias-list"></div>
           <div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:1rem;margin-top:.5rem">
-            <p style="font-size:13px;font-weight:500;margin-bottom:.8rem;color:var(--text2)">Nova secretária:</p>
+            <p style="font-size:13px;font-weight:500;margin-bottom:.8rem;color:var(--text2)">Nova secretaria:</p>
             <div class="config-add" style="flex-direction:column">
-              <input type="text" id="nova-sec-nome" placeholder="Nome (ex: Carla)">
-              <input type="text" id="nova-sec-usuario" placeholder="Usuário de login (ex: carla)" style="margin-top:6px">
-              <input type="password" id="nova-sec-senha" placeholder="Senha" style="margin-top:6px" onkeydown="if(event.key==='Enter')adicionarSecretaria()">
-              <button class="btn btn-primary" onclick="adicionarSecretaria()" style="margin-top:8px;width:100%">+ Adicionar Secretária</button>
+              <input type="text" id="nova-sec-nome" placeholder="Nome (ex: Carlos)">
+              <input type="text" id="nova-sec-usuario" placeholder="Usuário de login (ex: carlos)" style="margin-top:6px">
+              <input type="password" id="nova-sec-senha" placeholder="Senha" style="margin-top:6px">
+              <select id="nova-sec-unidade" style="margin-top:6px">
+                <option value="">Selecione a unidade responsável...</option>
+              </select>
+              <button class="btn btn-primary" onclick="adicionarSecretaria()" style="margin-top:8px;width:100%">+ Adicionar Secretaria</button>
             </div>
           </div>
         </div>
@@ -285,8 +294,8 @@
     <div class="form-group"><label>Unidade <span style="color:var(--red)">*</span></label>
       <select id="p-unidade"><option value="">Selecione a unidade</option></select>
     </div>
-    <div class="form-group"><label>Secretária responsável <span style="color:var(--red)">*</span></label>
-      <select id="p-sec"><option value="">Selecione a secretária</option></select>
+    <div class="form-group"><label>Secretaria responsável <span style="color:var(--red)">*</span></label>
+      <select id="p-sec"><option value="">Selecione a secretaria</option></select>
     </div>
     <div class="form-group"><label>Data da última reavaliação</label><input type="date" id="p-data"></div>
     <div class="form-group"><label>Intervalo entre reavaliações</label>
@@ -376,11 +385,15 @@
 let config = JSON.parse(localStorage.getItem('illic_config') || 'null') || {
   unidades: ['Jardim Ricetti','Damha','Faber','Descalvado','Mogi Guaçu'],
   secretarias: [
-    {nome:'Maria', usuario:'maria', senha:'1234'},
-    {nome:'Ana',   usuario:'ana',   senha:'1234'}
+    {nome:'Maria',  usuario:'maria', senha:'1234', unidade:'Jardim Ricetti'},
+    {nome:'Ana',    usuario:'ana',   senha:'1234', unidade:'Damha'}
   ],
   senhagerenciador: '1234'
 };
+
+// Migração: adiciona campo unidade se secretaria antiga não tiver
+config.secretarias.forEach(s=>{ if(!s.hasOwnProperty('unidade')) s.unidade=''; });
+
 function salvarConfig() { localStorage.setItem('illic_config', JSON.stringify(config)); }
 
 function getUsers() {
@@ -409,7 +422,7 @@ if (!pacientes.length) {
 }
 function salvarDados() { localStorage.setItem('illic_pacientes', JSON.stringify(pacientes)); }
 
-// ===================== CÁLCULOS =====================
+// ===================== HELPERS =====================
 function calcProxima(p){const d=new Date(p.ultimaReav+'T12:00:00');d.setMonth(d.getMonth()+parseInt(p.intervalo));return d;}
 function calcDias(p){const h=new Date();h.setHours(0,0,0,0);return Math.ceil((calcProxima(p)-h)/86400000);}
 function sortKey(p){
@@ -423,6 +436,15 @@ function sorted(l){return [...l].sort((a,b)=>sortKey(a)-sortKey(b));}
 function formatDate(d){if(!d)return'—';return new Date(d+'T12:00:00').toLocaleDateString('pt-BR');}
 function cap(s){return s?s.charAt(0).toUpperCase()+s.slice(1):'';}
 function secNome(usuario){const s=config.secretarias.find(x=>x.usuario===usuario);return s?s.nome:cap(usuario);}
+function secUnidade(usuario){const s=config.secretarias.find(x=>x.usuario===usuario);return s?.unidade||'';}
+
+// Filtra lista de pacientes conforme usuário logado
+// Gerenciador: vê tudo. Secretaria: vê apenas sua unidade.
+function filtrarPorUsuario(lista){
+  if(currentUser==='gerenciador') return lista;
+  const u=secUnidade(currentUser);
+  return u ? lista.filter(p=>p.unidade===u) : lista;
+}
 
 function getStatusBadge(p,ri,clickable=false){
   const ag=p.agendamento,dias=calcDias(p);
@@ -450,7 +472,7 @@ function populateSelects() {
   const unidades = config.unidades;
   const secs = config.secretarias;
 
-  // Filtros
+  // Filtros (só gerenciador os vê, mas repopula de qualquer forma)
   ['filtro-unidade','filtro-alerta-unidade','dash-unidade'].forEach(id=>{
     const el=document.getElementById(id); if(!el)return;
     const val=el.value;
@@ -464,12 +486,54 @@ function populateSelects() {
   const pu=document.getElementById('p-unidade');
   if(pu){const v=pu.value;pu.innerHTML='<option value="">Selecione a unidade</option>'+unidades.map(u=>`<option ${v===u?'selected':''}>${u}</option>`).join('');}
   const ps=document.getElementById('p-sec');
-  if(ps){const v=ps.value;ps.innerHTML='<option value="">Selecione a secretária</option>'+secs.map(s=>`<option value="${s.usuario}" ${v===s.usuario?'selected':''}>${s.nome}</option>`).join('');}
+  if(ps){const v=ps.value;ps.innerHTML='<option value="">Selecione a secretaria</option>'+secs.map(s=>`<option value="${s.usuario}" ${v===s.usuario?'selected':''}>${s.nome}</option>`).join('');}
+
+  // Select de unidade no form de nova secretaria (config)
+  const nsu=document.getElementById('nova-sec-unidade');
+  if(nsu){const v=nsu.value;nsu.innerHTML='<option value="">Selecione a unidade responsável...</option>'+unidades.map(u=>`<option ${v===u?'selected':''}>${u}</option>`).join('');}
 
   // Demo box no login
   const db=document.getElementById('demo-box');
   if(db)db.innerHTML=`<p><strong>Credenciais:</strong></p><p>Gerenciador: <span class="code">gerenciador / ****</span></p>`+
-    secs.map(s=>`<p>${s.nome}: <span class="code">${s.usuario} / ****</span></p>`).join('');
+    secs.map(s=>`<p>${s.nome} (${s.unidade||'sem unidade'}): <span class="code">${s.usuario} / ****</span></p>`).join('');
+}
+
+// Ajusta visibilidade dos filtros de unidade conforme papel do usuário
+function ajustarFiltros(){
+  const isGer = currentUser==='gerenciador';
+  // Dashboard
+  const duw=document.getElementById('dash-unidade-wrap');
+  const dui=document.getElementById('dash-unidade-info');
+  if(duw) duw.style.display=isGer?'':'none';
+  if(dui){
+    if(!isGer){
+      const u=secUnidade(currentUser);
+      dui.style.display='block';
+      dui.innerHTML=`<span class="unit-badge-info">🏢 Unidade: ${u||'—'}</span>`;
+    }else{dui.style.display='none';}
+  }
+  // Pacientes
+  const pfg=document.getElementById('pac-filtros-ger');
+  const pui=document.getElementById('pac-unidade-info');
+  if(pfg) pfg.style.display=isGer?'':'none';
+  if(pui){
+    if(!isGer){
+      const u=secUnidade(currentUser);
+      pui.style.display='block';
+      pui.innerHTML=`<span class="unit-badge-info">🏢 Exibindo pacientes da unidade: ${u||'—'}</span>`;
+    }else{pui.style.display='none';}
+  }
+  // Alertas
+  const afg=document.getElementById('alerta-filtros-ger');
+  const aui=document.getElementById('alerta-unidade-info');
+  if(afg) afg.style.display=isGer?'':'none';
+  if(aui){
+    if(!isGer){
+      const u=secUnidade(currentUser);
+      aui.style.display='block';
+      aui.innerHTML=`<span class="unit-badge-info">🏢 Exibindo alertas da unidade: ${u||'—'}</span>`;
+    }else{aui.style.display='none';}
+  }
 }
 
 // ===================== LOGIN =====================
@@ -483,7 +547,7 @@ function login(){
     document.getElementById('app-screen').style.display='block';
     document.getElementById('user-label').textContent='👤 '+(u==='gerenciador'?'Gerenciador':secNome(u));
     document.getElementById('tab-config-btn').style.display=u==='gerenciador'?'':'none';
-    populateSelects(); renderAll(); notify('Bem-vindo! 👋');
+    ajustarFiltros(); populateSelects(); renderAll(); notify('Bem-vindo! 👋');
   }else{document.getElementById('login-error').style.display='block';}
 }
 function logout(){
@@ -507,12 +571,12 @@ function showTab(tab){
 }
 
 // ===================== RENDER =====================
-function renderAll(){populateSelects();renderMetrics();renderDashboard();renderPacientes();renderAlertas();}
-
-function filtU(lista,id){const u=document.getElementById(id)?.value||'';return u?lista.filter(p=>p.unidade===u):lista;}
+function renderAll(){ajustarFiltros();populateSelects();renderMetrics();renderDashboard();renderPacientes();renderAlertas();}
 
 function renderMetrics(){
-  const lista=filtU(pacientes,'dash-unidade');
+  // Gerenciador: respeita filtro de unidade. Secretaria: usa sua unidade automaticamente.
+  let lista=filtrarPorUsuario(pacientes);
+  if(currentUser==='gerenciador'){const u=document.getElementById('dash-unidade')?.value||'';if(u)lista=lista.filter(p=>p.unidade===u);}
   let total=lista.length,vencidas=0,proximas=0,agendadas=0,canceladas=0,noshows=0,emDia=0;
   lista.forEach(p=>{
     const ag=p.agendamento,dias=calcDias(p);
@@ -533,7 +597,9 @@ function renderMetrics(){
 }
 
 function renderDashboard(){
-  const lista=sorted(filtU(pacientes,'dash-unidade')).slice(0,20);
+  let lista=filtrarPorUsuario(pacientes);
+  if(currentUser==='gerenciador'){const u=document.getElementById('dash-unidade')?.value||'';if(u)lista=lista.filter(p=>p.unidade===u);}
+  lista=sorted(lista).slice(0,20);
   const tb=document.getElementById('dashboard-table');
   if(!lista.length){tb.innerHTML='<tr><td colspan="6" class="no-data">Nenhum paciente encontrado.</td></tr>';return;}
   tb.innerHTML=lista.map(p=>{
@@ -550,12 +616,14 @@ function renderDashboard(){
 }
 
 function renderPacientes(){
-  const unidade=document.getElementById('filtro-unidade')?.value||'';
-  const sec=document.getElementById('filtro-sec')?.value||'';
-  let lista=pacientes;
-  if(currentUser!=='gerenciador')lista=lista.filter(p=>p.sec===currentUser);
-  if(unidade)lista=lista.filter(p=>p.unidade===unidade);
-  if(sec)lista=lista.filter(p=>p.sec===sec);
+  let lista=filtrarPorUsuario(pacientes);
+  // Filtros adicionais apenas para gerenciador
+  if(currentUser==='gerenciador'){
+    const unidade=document.getElementById('filtro-unidade')?.value||'';
+    const sec=document.getElementById('filtro-sec')?.value||'';
+    if(unidade)lista=lista.filter(p=>p.unidade===unidade);
+    if(sec)lista=lista.filter(p=>p.sec===sec);
+  }
   lista=sorted(lista);
   const tb=document.getElementById('pacientes-table');
   if(!lista.length){tb.innerHTML='<tr><td colspan="8" class="no-data">Nenhum paciente encontrado.</td></tr>';return;}
@@ -581,12 +649,15 @@ function renderPacientes(){
 }
 
 function renderAlertas(){
-  const filt=p=>{const u=document.getElementById('filtro-alerta-unidade')?.value||'';return !u||p.unidade===u;};
-  const vencidos   =sorted(pacientes.filter(p=>filt(p)&&!p.agendamento&&calcDias(p)<0));
-  const cancelados =sorted(pacientes.filter(p=>filt(p)&&p.agendamento?.status==='cancelada'));
-  const noshows    =sorted(pacientes.filter(p=>filt(p)&&p.agendamento?.status==='noshow'));
-  const proximos   =sorted(pacientes.filter(p=>filt(p)&&!p.agendamento&&calcDias(p)>=0&&calcDias(p)<=7));
-  const agendados  =sorted(pacientes.filter(p=>filt(p)&&p.agendamento?.status==='agendada'));
+  let base=filtrarPorUsuario(pacientes);
+  if(currentUser==='gerenciador'){const u=document.getElementById('filtro-alerta-unidade')?.value||'';if(u)base=base.filter(p=>p.unidade===u);}
+
+  const vencidos  =sorted(base.filter(p=>!p.agendamento&&calcDias(p)<0));
+  const cancelados=sorted(base.filter(p=>p.agendamento?.status==='cancelada'));
+  const noshows   =sorted(base.filter(p=>p.agendamento?.status==='noshow'));
+  const proximos  =sorted(base.filter(p=>!p.agendamento&&calcDias(p)>=0&&calcDias(p)<=7));
+  const agendados =sorted(base.filter(p=>p.agendamento?.status==='agendada'));
+
   const mkBtns=(ri,tipo)=>{
     const p=pacientes[ri];
     let b=p.tel?`<button class="btn btn-small btn-whatsapp" onclick="abrirWhatsApp('${p.tel}')">💬 WhatsApp</button>`:'';
@@ -626,24 +697,28 @@ function renderConfig(){
   const ul=document.getElementById('config-unidades-list');
   ul.innerHTML=config.unidades.length?config.unidades.map((u,i)=>{
     const count=pacientes.filter(p=>p.unidade===u).length;
+    const secCount=config.secretarias.filter(s=>s.unidade===u).length;
     return`<div class="config-item">
-      <div class="config-item-info"><span>${u}</span><small>${count} paciente${count!==1?'s':''}</small></div>
+      <div class="config-item-info">
+        <span>${u}</span>
+        <small>${count} paciente${count!==1?'s':''} · ${secCount} secretaria${secCount!==1?'s':''}</small>
+      </div>
       <button class="btn btn-small btn-red" onclick="removerUnidade(${i})" title="Remover">✕</button>
     </div>`;
   }).join(''):'<p class="no-data" style="padding:1rem">Nenhuma unidade cadastrada.</p>';
 
-  // Secretárias
+  // Secretarias
   const sl=document.getElementById('config-secretarias-list');
   sl.innerHTML=config.secretarias.length?config.secretarias.map((s,i)=>{
     const count=pacientes.filter(p=>p.sec===s.usuario).length;
     return`<div class="config-item">
       <div class="config-item-info">
         <span><strong>${s.nome}</strong> <span style="color:var(--text2);font-size:12px">@${s.usuario}</span></span>
-        <small>${count} paciente${count!==1?'s':''}</small>
+        <small>${s.unidade||'<em>sem unidade</em>'} · ${count} paciente${count!==1?'s':''}</small>
       </div>
       <button class="btn btn-small btn-red" onclick="removerSecretaria(${i})" title="Remover">✕</button>
     </div>`;
-  }).join(''):'<p class="no-data" style="padding:1rem">Nenhuma secretária.</p>';
+  }).join(''):'<p class="no-data" style="padding:1rem">Nenhuma secretaria cadastrada.</p>';
 }
 
 function adicionarUnidade(){
@@ -658,39 +733,47 @@ function adicionarUnidade(){
 
 function removerUnidade(i){
   const u=config.unidades[i];
-  const count=pacientes.filter(p=>p.unidade===u).length;
-  if(count>0){
-    if(!confirm(`A unidade "${u}" tem ${count} paciente(s) vinculado(s).\nAo remover, esses pacientes ficarão sem unidade.\nDeseja continuar?`))return;
-    pacientes.forEach(p=>{if(p.unidade===u)p.unidade='';});
-    salvarDados();
+  const countPac=pacientes.filter(p=>p.unidade===u).length;
+  const countSec=config.secretarias.filter(s=>s.unidade===u).length;
+  let msg=`Deseja remover a unidade "${u}"?`;
+  if(countPac>0||countSec>0){
+    msg=`A unidade "${u}" possui:\n• ${countPac} paciente(s) vinculado(s)\n• ${countSec} secretaria(s) vinculada(s)\n\nAo remover, esses registros ficarão sem unidade.\nDeseja continuar?`;
   }
-  config.unidades.splice(i,1);
+  if(!confirm(msg))return;
+  pacientes.forEach(p=>{if(p.unidade===u)p.unidade='';});
+  config.secretarias.forEach(s=>{if(s.unidade===u)s.unidade='';});
+  salvarDados(); config.unidades.splice(i,1);
   salvarConfig(); renderConfig(); populateSelects(); notify('Unidade removida.');
 }
 
 function adicionarSecretaria(){
-  const nome=document.getElementById('nova-sec-nome').value.trim();
+  const nome   =document.getElementById('nova-sec-nome').value.trim();
   const usuario=document.getElementById('nova-sec-usuario').value.trim().toLowerCase();
-  const senha=document.getElementById('nova-sec-senha').value;
-  if(!nome||!usuario||!senha){alert('Preencha todos os campos.');return;}
+  const senha  =document.getElementById('nova-sec-senha').value;
+  const unidade=document.getElementById('nova-sec-unidade').value;
+  if(!nome||!usuario||!senha){alert('Preencha nome, usuário e senha.');return;}
+  if(!unidade){alert('Selecione a unidade pela qual esta secretaria é responsável.');return;}
   if(usuario==='gerenciador'){alert('Usuário reservado.');return;}
   if(config.secretarias.find(s=>s.usuario===usuario)){alert('Esse usuário já existe.');return;}
-  config.secretarias.push({nome,usuario,senha});
+  config.secretarias.push({nome,usuario,senha,unidade});
   salvarConfig();
   ['nova-sec-nome','nova-sec-usuario','nova-sec-senha'].forEach(id=>document.getElementById(id).value='');
-  renderConfig(); populateSelects(); notify('Secretária adicionada! 👤');
+  document.getElementById('nova-sec-unidade').value='';
+  renderConfig(); populateSelects(); notify('Secretaria adicionada! 👤');
 }
 
 function removerSecretaria(i){
   const s=config.secretarias[i];
   const count=pacientes.filter(p=>p.sec===s.usuario).length;
   if(count>0){
-    if(!confirm(`A secretária "${s.nome}" tem ${count} paciente(s) vinculado(s).\nAo remover, esses pacientes ficarão sem secretária.\nDeseja continuar?`))return;
+    if(!confirm(`A secretaria "${s.nome}" tem ${count} paciente(s) vinculado(s).\nAo remover, esses pacientes ficarão sem secretaria.\nDeseja continuar?`))return;
     pacientes.forEach(p=>{if(p.sec===s.usuario)p.sec='';});
     salvarDados();
+  }else{
+    if(!confirm(`Remover a secretaria "${s.nome}"?`))return;
   }
   config.secretarias.splice(i,1);
-  salvarConfig(); renderConfig(); populateSelects(); notify('Secretária removida.');
+  salvarConfig(); renderConfig(); populateSelects(); notify('Secretaria removida.');
 }
 
 function alterarSenhaGerenciador(){
@@ -739,11 +822,18 @@ function abrirModalPaciente(){
   editIndex=-1;
   document.getElementById('modal-titulo').textContent='Novo Paciente';
   ['p-nome','p-tel','p-email'].forEach(id=>document.getElementById(id).value='');
-  document.getElementById('p-unidade').value='';
-  document.getElementById('p-sec').value='';
   document.getElementById('p-data').value=new Date().toISOString().split('T')[0];
   document.getElementById('p-intervalo').value='3';
   populateSelects();
+  // Se for secretaria, pré-seleciona a unidade dela
+  if(currentUser!=='gerenciador'){
+    const u=secUnidade(currentUser);
+    if(u)document.getElementById('p-unidade').value=u;
+    document.getElementById('p-sec').value=currentUser;
+  }else{
+    document.getElementById('p-unidade').value='';
+    document.getElementById('p-sec').value='';
+  }
   document.getElementById('modal-paciente').style.display='flex';
 }
 function editarPaciente(i){
@@ -765,7 +855,7 @@ function salvarPaciente(){
   const sec=document.getElementById('p-sec').value;
   if(!nome){alert('Digite o nome do paciente.');return;}
   if(!unidade){alert('Selecione a unidade.');return;}
-  if(!sec){alert('Selecione a secretária responsável.');return;}
+  if(!sec){alert('Selecione a secretaria responsável.');return;}
   const p={nome,tel:document.getElementById('p-tel').value.trim(),email:document.getElementById('p-email').value.trim(),
     unidade,sec,ultimaReav:document.getElementById('p-data').value,intervalo:document.getElementById('p-intervalo').value,
     agendamento:editIndex>=0?pacientes[editIndex].agendamento:null,
