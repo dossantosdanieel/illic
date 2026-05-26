@@ -11,6 +11,7 @@
       --blue:#1e40af;--blue-bg:#dbeafe;--green:#166534;--green-bg:#dcfce7;
       --red:#991b1b;--red-bg:#fee2e2;--yellow:#92400e;--yellow-bg:#fef3c7;
       --purple:#5b21b6;--purple-bg:#ede9fe;--orange:#9a3412;--orange-bg:#ffedd5;
+      --wapp:#128C7E;--wapp-bg:#dcfce7;
     }
     @media(prefers-color-scheme:dark){:root{
       --bg:#1a1a1a;--card:#2d2d2d;--text:#fff;--text2:#a0a0a0;--border:#404040;
@@ -80,7 +81,7 @@
     .filter-bar{display:flex;gap:8px;margin-bottom:1rem;flex-wrap:wrap;align-items:center;}
     .filter-bar select{padding:6px 10px;border:1px solid var(--border);border-radius:8px;font-size:13px;background:var(--card);color:var(--text);font-family:inherit;}
     .filter-bar label{font-size:13px;color:var(--text2);}
-    .unit-badge-info{font-size:13px;color:var(--text2);padding:6px 10px;background:var(--blue-bg);color:var(--blue);border-radius:8px;font-weight:500;}
+    .unit-badge-info{font-size:13px;padding:6px 10px;background:var(--blue-bg);color:var(--blue);border-radius:8px;font-weight:500;}
 
     .table-wrap{overflow-x:auto;}
     table{width:100%;border-collapse:collapse;font-size:13px;}
@@ -99,14 +100,19 @@
     .badge-unit{background:var(--bg);color:var(--text2);border:1px solid var(--border);font-size:11px;padding:2px 7px;}
     .badge-clickable{cursor:pointer;user-select:none;transition:opacity .15s;}
     .badge-clickable:hover{opacity:.8;}
-    .badge-clickable::after{content:' ▾';font-size:10px;opacity:.7;}
+    .badge-status-click::after{content:' ▾';font-size:10px;opacity:.7;}
+    .badge-date-click{cursor:pointer;}
+    .badge-date-click:hover{filter:brightness(.92);}
+    .badge-date-click::after{content:' ✎';font-size:10px;opacity:.6;}
 
     /* STATUS MENU */
-    .status-menu{position:fixed;background:var(--card);border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.15);z-index:5000;min-width:210px;overflow:hidden;}
+    .status-menu{position:fixed;background:var(--card);border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.15);z-index:5000;min-width:230px;overflow:hidden;}
+    .status-menu-header{padding:8px 14px 6px;font-size:11px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;}
     .status-menu-item{display:flex;align-items:center;gap:8px;padding:10px 14px;font-size:13px;cursor:pointer;color:var(--text);transition:background .1s;}
     .status-menu-item:hover{background:var(--bg);}
     .status-menu-item.danger{color:var(--red);}
     .status-menu-item.warn{color:var(--orange);}
+    .status-menu-item.wapp{color:var(--wapp);}
     .status-menu-divider{height:1px;background:var(--border);margin:2px 0;}
 
     /* SETTINGS */
@@ -117,8 +123,9 @@
     .config-add{display:flex;gap:8px;flex-wrap:wrap;}
     .config-add input,.config-add select{flex:1;min-width:120px;padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:14px;background:var(--card);color:var(--text);font-family:inherit;}
     .config-add input:focus,.config-add select:focus{outline:2px solid var(--blue-bg);}
-    .config-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
-    @media(max-width:700px){.config-grid{grid-template-columns:1fr;}}
+    .config-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+    @media(max-width:900px){.config-grid{grid-template-columns:1fr 1fr;}}
+    @media(max-width:600px){.config-grid{grid-template-columns:1fr;}}
 
     .no-data{text-align:center;padding:2rem;color:var(--text2);}
     .actions{display:flex;gap:4px;flex-wrap:wrap;}
@@ -127,6 +134,7 @@
     .modal{background:var(--card);border-radius:var(--radius);padding:1.5rem;width:100%;max-width:460px;max-height:90vh;overflow-y:auto;}
     .modal h3{font-size:16px;margin-bottom:1.2rem;}
     .modal-footer{display:flex;gap:8px;justify-content:flex-end;margin-top:1.2rem;}
+    .msg-preview{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:1rem;font-size:13px;line-height:1.7;white-space:pre-wrap;margin-bottom:1rem;max-height:220px;overflow-y:auto;}
 
     .notification{position:fixed;top:20px;right:20px;background:var(--green-bg);color:var(--green);padding:14px 20px;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.15);z-index:9999;font-size:14px;font-weight:500;transform:translateX(420px);transition:transform .3s ease;max-width:300px;}
     .notification.show{transform:translateX(0);}
@@ -193,7 +201,10 @@
         <div id="dash-unidade-info" style="display:none;margin-bottom:.8rem"></div>
         <div class="table-wrap">
           <table>
-            <thead><tr><th>Paciente</th><th>Unidade</th><th>Última Reav.</th><th>Próxima</th><th>Agendamento</th><th>Status</th></tr></thead>
+            <thead><tr>
+              <th>Paciente</th><th>Unidade</th><th>Última Reav.</th><th>Próxima</th>
+              <th>Agendamento ✎</th><th>Status ▾</th>
+            </tr></thead>
             <tbody id="dashboard-table"></tbody>
           </table>
         </div>
@@ -207,18 +218,19 @@
           <h2>Pacientes</h2>
           <button class="btn btn-primary" onclick="abrirModalPaciente()">+ Novo Paciente</button>
         </div>
-        <!-- Filtros apenas para gerenciador -->
         <div id="pac-filtros-ger" class="filter-bar">
           <label>Unidade:</label>
           <select id="filtro-unidade" onchange="renderPacientes()"><option value="">Todas</option></select>
           <label style="margin-left:.5rem">Secretaria:</label>
           <select id="filtro-sec" onchange="renderPacientes()"><option value="">Todas</option></select>
         </div>
-        <!-- Info de unidade para secretaria(o) -->
         <div id="pac-unidade-info" style="display:none;margin-bottom:.8rem"></div>
         <div class="table-wrap">
           <table>
-            <thead><tr><th>Nome</th><th>Unidade</th><th>Secretaria</th><th>Última Reav.</th><th>Próxima</th><th>Agend.</th><th>Status ▾</th><th>Ações</th></tr></thead>
+            <thead><tr>
+              <th>Nome</th><th>Unidade</th><th>Secretaria</th><th>Última Reav.</th><th>Próxima</th>
+              <th>Agendamento ✎</th><th>Status ▾</th><th>Ações</th>
+            </tr></thead>
             <tbody id="pacientes-table"></tbody>
           </table>
         </div>
@@ -271,6 +283,16 @@
           </div>
         </div>
 
+        <!-- PROFISSIONAIS -->
+        <div class="card">
+          <h3>🩺 Profissionais</h3>
+          <div class="config-list" id="config-profissionais-list"></div>
+          <div class="config-add">
+            <input type="text" id="novo-prof" placeholder="Nome do profissional..." onkeydown="if(event.key==='Enter')adicionarProfissional()">
+            <button class="btn btn-primary" onclick="adicionarProfissional()">+ Adicionar</button>
+          </div>
+        </div>
+
       </div>
 
       <!-- ALTERAR SENHA DO GERENCIADOR -->
@@ -320,7 +342,8 @@
     <div class="form-group"><label>Observações (opcional)</label><textarea id="ag-obs" rows="2" placeholder="Ex: Confirmado por WhatsApp..."></textarea></div>
     <div class="modal-footer">
       <button class="btn" onclick="document.getElementById('modal-agendar').style.display='none'">Cancelar</button>
-      <button class="btn btn-blue" onclick="confirmarAgendamento()">Agendar</button>
+      <button class="btn btn-whatsapp" onclick="confirmarAgendamentoEWhatsApp()" title="Agendar e já enviar mensagem ao paciente">💬 Agendar e Avisar</button>
+      <button class="btn btn-blue" onclick="confirmarAgendamento()">📅 Agendar</button>
     </div>
   </div>
 </div>
@@ -331,6 +354,12 @@
     <h3>✅ Confirmar Reavaliação Realizada</h3>
     <p style="color:var(--text2);font-size:13px;margin-bottom:1.2rem">Paciente: <strong id="re-nome"></strong></p>
     <div class="form-group"><label>Data em que aconteceu</label><input type="date" id="re-data"></div>
+    <div class="form-group">
+      <label>Profissional que realizou</label>
+      <select id="re-profissional">
+        <option value="">Selecione (opcional)</option>
+      </select>
+    </div>
     <div class="form-group"><label>Observações (opcional)</label><textarea id="re-obs" rows="2"></textarea></div>
     <div class="modal-footer">
       <button class="btn" onclick="document.getElementById('modal-realizar').style.display='none'">Voltar</button>
@@ -377,6 +406,23 @@
   </div>
 </div>
 
+<!-- MODAL: MENSAGEM WHATSAPP -->
+<div class="modal-overlay" id="modal-wamsg" style="display:none" onclick="fecharModal(event)">
+  <div class="modal">
+    <h3>💬 Mensagem de Agendamento</h3>
+    <p style="color:var(--text2);font-size:13px;margin-bottom:1rem">Para: <strong id="wam-nome"></strong> · <span id="wam-tel" style="font-family:monospace"></span></p>
+    <div class="msg-preview" id="wam-texto"></div>
+    <div class="modal-footer">
+      <button class="btn" onclick="document.getElementById('modal-wamsg').style.display='none'">Fechar</button>
+      <button class="btn btn-blue" onclick="copiarMsgWA()">📋 Copiar texto</button>
+      <button class="btn btn-whatsapp" onclick="abrirWhatsAppComMsg()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:4px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Abrir WhatsApp
+      </button>
+    </div>
+  </div>
+</div>
+
 <div id="status-menu" class="status-menu" style="display:none"></div>
 <div class="notification" id="notification"></div>
 
@@ -388,11 +434,12 @@ let config = JSON.parse(localStorage.getItem('illic_config') || 'null') || {
     {nome:'Maria',  usuario:'maria', senha:'1234', unidade:'Jardim Ricetti'},
     {nome:'Ana',    usuario:'ana',   senha:'1234', unidade:'Damha'}
   ],
+  profissionais: [],
   senhagerenciador: '1234'
 };
-
-// Migração: adiciona campo unidade se secretaria antiga não tiver
+// Migração: campos que podem estar ausentes em dados antigos
 config.secretarias.forEach(s=>{ if(!s.hasOwnProperty('unidade')) s.unidade=''; });
+if(!config.profissionais) config.profissionais = [];
 
 function salvarConfig() { localStorage.setItem('illic_config', JSON.stringify(config)); }
 
@@ -406,6 +453,7 @@ function getUsers() {
 let pacientes = JSON.parse(localStorage.getItem('illic_pacientes') || '[]');
 let currentUser = '';
 let editIndex=-1, agendarIndex=-1, realizarIndex=-1, cancelarIndex=-1, noshowIndex=-1;
+let _wamTel='', _wamMsg='';
 
 if (!pacientes.length) {
   const sub=m=>{const d=new Date();d.setMonth(d.getMonth()-m);return d.toISOString().split('T')[0];};
@@ -438,41 +486,45 @@ function cap(s){return s?s.charAt(0).toUpperCase()+s.slice(1):'';}
 function secNome(usuario){const s=config.secretarias.find(x=>x.usuario===usuario);return s?s.nome:cap(usuario);}
 function secUnidade(usuario){const s=config.secretarias.find(x=>x.usuario===usuario);return s?.unidade||'';}
 
-// Filtra lista de pacientes conforme usuário logado
-// Gerenciador: vê tudo. Secretaria: vê apenas sua unidade.
 function filtrarPorUsuario(lista){
   if(currentUser==='gerenciador') return lista;
   const u=secUnidade(currentUser);
   return u ? lista.filter(p=>p.unidade===u) : lista;
 }
 
-function getStatusBadge(p,ri,clickable=false){
-  const ag=p.agendamento,dias=calcDias(p);
-  let label='',color='';
-  if(ag?.status==='agendada')  {label=`📅 ${formatDate(ag.data)}`;color='blue';}
-  else if(ag?.status==='cancelada'){label='❌ Cancelado';color='purple';}
-  else if(ag?.status==='noshow')   {label='🚫 No-show';color='orange';}
-  else if(dias<0) {label=`Vencida (${Math.abs(dias)}d)`;color='red';}
-  else if(dias<=7){label=`Em ${dias}d`;color='yellow';}
-  else            {label='Em dia';color='green';}
-  const cl=clickable?`class="badge badge-${color} badge-clickable" onclick="abrirStatusMenu(event,${ri})"`:`class="badge badge-${color}"`;
-  return `<span ${cl}>${label}</span>`;
-}
-function getAgBadge(p){
+// Agendamento badge — data clicável para alterar
+function getAgBadge(p, ri=-1){
   const ag=p.agendamento;
   if(!ag)return'<span style="color:var(--text2);font-size:12px">—</span>';
-  if(ag.status==='agendada')  return`<span class="badge badge-blue">📅 ${formatDate(ag.data)}</span>`;
+  if(ag.status==='agendada'){
+    const click=ri>=0?`class="badge badge-blue badge-date-click" onclick="abrirAgendar(${ri})" title="Clique para alterar a data"`:`class="badge badge-blue"`;
+    return`<span ${click}>📅 ${formatDate(ag.data)}</span>`;
+  }
   if(ag.status==='cancelada') return`<span class="badge badge-purple">❌ ${ag.motivo||'—'}</span>`;
   if(ag.status==='noshow')    return`<span class="badge badge-orange">🚫 No-show</span>`;
   return'—';
 }
 
+// Status badge (estado calculado)
+function getStatusBadge(p,ri,clickable=false){
+  const ag=p.agendamento,dias=calcDias(p);
+  let label='',color='';
+  if(ag?.status==='agendada')  {label='📅 Agendado';color='blue';}
+  else if(ag?.status==='cancelada'){label='❌ Cancelado';color='purple';}
+  else if(ag?.status==='noshow')   {label='🚫 No-show';color='orange';}
+  else if(dias<0) {label=`Vencida (${Math.abs(dias)}d)`;color='red';}
+  else if(dias<=7){label=`⚠️ Em ${dias}d`;color='yellow';}
+  else            {label='✅ Em dia';color='green';}
+  const cl=clickable
+    ?`class="badge badge-${color} badge-clickable badge-status-click" onclick="abrirStatusMenu(event,${ri})"`
+    :`class="badge badge-${color}"`;
+  return `<span ${cl}>${label}</span>`;
+}
+
 // ===================== DROPDOWNS DINÂMICOS =====================
 function populateSelects() {
-  const unidades = config.unidades;
-  const secs = config.secretarias;
+  const unidades=config.unidades, secs=config.secretarias, profs=config.profissionais;
 
-  // Filtros (só gerenciador os vê, mas repopula de qualquer forma)
   ['filtro-unidade','filtro-alerta-unidade','dash-unidade'].forEach(id=>{
     const el=document.getElementById(id); if(!el)return;
     const val=el.value;
@@ -488,9 +540,13 @@ function populateSelects() {
   const ps=document.getElementById('p-sec');
   if(ps){const v=ps.value;ps.innerHTML='<option value="">Selecione a secretaria</option>'+secs.map(s=>`<option value="${s.usuario}" ${v===s.usuario?'selected':''}>${s.nome}</option>`).join('');}
 
-  // Select de unidade no form de nova secretaria (config)
+  // Nova secretaria (config)
   const nsu=document.getElementById('nova-sec-unidade');
   if(nsu){const v=nsu.value;nsu.innerHTML='<option value="">Selecione a unidade responsável...</option>'+unidades.map(u=>`<option ${v===u?'selected':''}>${u}</option>`).join('');}
+
+  // Profissional no modal Realizar
+  const rp=document.getElementById('re-profissional');
+  if(rp){const v=rp.value;rp.innerHTML='<option value="">Selecione (opcional)</option>'+profs.map(p=>`<option ${v===p?'selected':''}>${p}</option>`).join('');}
 
   // Demo box no login
   const db=document.getElementById('demo-box');
@@ -498,41 +554,28 @@ function populateSelects() {
     secs.map(s=>`<p>${s.nome} (${s.unidade||'sem unidade'}): <span class="code">${s.usuario} / ****</span></p>`).join('');
 }
 
-// Ajusta visibilidade dos filtros de unidade conforme papel do usuário
 function ajustarFiltros(){
-  const isGer = currentUser==='gerenciador';
-  // Dashboard
-  const duw=document.getElementById('dash-unidade-wrap');
-  const dui=document.getElementById('dash-unidade-info');
-  if(duw) duw.style.display=isGer?'':'none';
-  if(dui){
-    if(!isGer){
-      const u=secUnidade(currentUser);
-      dui.style.display='block';
-      dui.innerHTML=`<span class="unit-badge-info">🏢 Unidade: ${u||'—'}</span>`;
-    }else{dui.style.display='none';}
-  }
-  // Pacientes
-  const pfg=document.getElementById('pac-filtros-ger');
-  const pui=document.getElementById('pac-unidade-info');
-  if(pfg) pfg.style.display=isGer?'':'none';
-  if(pui){
-    if(!isGer){
-      const u=secUnidade(currentUser);
-      pui.style.display='block';
-      pui.innerHTML=`<span class="unit-badge-info">🏢 Exibindo pacientes da unidade: ${u||'—'}</span>`;
-    }else{pui.style.display='none';}
-  }
-  // Alertas
-  const afg=document.getElementById('alerta-filtros-ger');
-  const aui=document.getElementById('alerta-unidade-info');
-  if(afg) afg.style.display=isGer?'':'none';
-  if(aui){
-    if(!isGer){
-      const u=secUnidade(currentUser);
-      aui.style.display='block';
-      aui.innerHTML=`<span class="unit-badge-info">🏢 Exibindo alertas da unidade: ${u||'—'}</span>`;
-    }else{aui.style.display='none';}
+  const isGer=currentUser==='gerenciador';
+  const elems={
+    'dash-unidade-wrap':'block','dash-unidade-info':'none',
+    'pac-filtros-ger':'flex','pac-unidade-info':'none',
+    'alerta-filtros-ger':'flex','alerta-unidade-info':'none'
+  };
+  if(!isGer){
+    const u=secUnidade(currentUser);
+    const badge=`<span class="unit-badge-info">🏢 Unidade: ${u||'—'}</span>`;
+    ['dash-unidade-info','pac-unidade-info','alerta-unidade-info'].forEach(id=>{
+      const el=document.getElementById(id);if(el){el.style.display='block';el.innerHTML=badge;}
+    });
+    ['dash-unidade-wrap','pac-filtros-ger','alerta-filtros-ger'].forEach(id=>{
+      const el=document.getElementById(id);if(el)el.style.display='none';
+    });
+  }else{
+    ['dash-unidade-wrap'].forEach(id=>{const el=document.getElementById(id);if(el)el.style.display='';});
+    ['pac-filtros-ger','alerta-filtros-ger'].forEach(id=>{const el=document.getElementById(id);if(el)el.style.display='flex';});
+    ['dash-unidade-info','pac-unidade-info','alerta-unidade-info'].forEach(id=>{
+      const el=document.getElementById(id);if(el)el.style.display='none';
+    });
   }
 }
 
@@ -574,7 +617,6 @@ function showTab(tab){
 function renderAll(){ajustarFiltros();populateSelects();renderMetrics();renderDashboard();renderPacientes();renderAlertas();}
 
 function renderMetrics(){
-  // Gerenciador: respeita filtro de unidade. Secretaria: usa sua unidade automaticamente.
   let lista=filtrarPorUsuario(pacientes);
   if(currentUser==='gerenciador'){const u=document.getElementById('dash-unidade')?.value||'';if(u)lista=lista.filter(p=>p.unidade===u);}
   let total=lista.length,vencidas=0,proximas=0,agendadas=0,canceladas=0,noshows=0,emDia=0;
@@ -609,7 +651,7 @@ function renderDashboard(){
       <td><span class="badge badge-unit">${p.unidade||'—'}</span></td>
       <td>${formatDate(p.ultimaReav)}</td>
       <td>${formatDate(calcProxima(p).toISOString().split('T')[0])}</td>
-      <td>${getAgBadge(p)}</td>
+      <td>${getAgBadge(p,ri)}</td>
       <td>${getStatusBadge(p,ri,true)}</td>
     </tr>`;
   }).join('');
@@ -617,7 +659,6 @@ function renderDashboard(){
 
 function renderPacientes(){
   let lista=filtrarPorUsuario(pacientes);
-  // Filtros adicionais apenas para gerenciador
   if(currentUser==='gerenciador'){
     const unidade=document.getElementById('filtro-unidade')?.value||'';
     const sec=document.getElementById('filtro-sec')?.value||'';
@@ -629,7 +670,7 @@ function renderPacientes(){
   if(!lista.length){tb.innerHTML='<tr><td colspan="8" class="no-data">Nenhum paciente encontrado.</td></tr>';return;}
   tb.innerHTML=lista.map(p=>{
     const ri=pacientes.indexOf(p);
-    const wpp=p.tel?`<button class="btn btn-small btn-whatsapp" onclick="abrirWhatsApp('${p.tel}')" title="WhatsApp">
+    const wpp=p.tel?`<button class="btn btn-small btn-whatsapp" onclick="abrirWhatsApp('${p.tel}')" title="Abrir WhatsApp">
       <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </button>`:'';
     return`<tr>
@@ -638,7 +679,7 @@ function renderPacientes(){
       <td>${secNome(p.sec)}</td>
       <td>${formatDate(p.ultimaReav)}</td>
       <td>${formatDate(calcProxima(p).toISOString().split('T')[0])}</td>
-      <td>${getAgBadge(p)}</td>
+      <td>${getAgBadge(p,ri)}</td>
       <td>${getStatusBadge(p,ri,true)}</td>
       <td><div class="actions">${wpp}
         <button class="btn btn-small" onclick="editarPaciente(${ri})">✏️</button>
@@ -651,20 +692,23 @@ function renderPacientes(){
 function renderAlertas(){
   let base=filtrarPorUsuario(pacientes);
   if(currentUser==='gerenciador'){const u=document.getElementById('filtro-alerta-unidade')?.value||'';if(u)base=base.filter(p=>p.unidade===u);}
-
   const vencidos  =sorted(base.filter(p=>!p.agendamento&&calcDias(p)<0));
   const cancelados=sorted(base.filter(p=>p.agendamento?.status==='cancelada'));
   const noshows   =sorted(base.filter(p=>p.agendamento?.status==='noshow'));
   const proximos  =sorted(base.filter(p=>!p.agendamento&&calcDias(p)>=0&&calcDias(p)<=7));
   const agendados =sorted(base.filter(p=>p.agendamento?.status==='agendada'));
-
   const mkBtns=(ri,tipo)=>{
     const p=pacientes[ri];
-    let b=p.tel?`<button class="btn btn-small btn-whatsapp" onclick="abrirWhatsApp('${p.tel}')">💬 WhatsApp</button>`:'';
-    if(tipo==='agendada')b+=`<button class="btn btn-small btn-green" onclick="abrirRealizar(${ri})">✅ Realizada</button>
-      <button class="btn btn-small btn-red" onclick="abrirCancelar(${ri})">❌ Cancelar</button>
-      <button class="btn btn-small btn-orange" onclick="abrirNoShow(${ri})">🚫 No-show</button>`;
-    else b+=`<button class="btn btn-small btn-blue" onclick="abrirAgendar(${ri})">📅 ${tipo==='cancelada'||tipo==='noshow'?'Reagendar':'Agendar'}</button>`;
+    let b='';
+    if(p.tel)b+=`<button class="btn btn-small btn-whatsapp" onclick="abrirWhatsApp('${p.tel}')">💬</button>`;
+    if(tipo==='agendada'){
+      if(p.tel)b+=`<button class="btn btn-small" onclick="abrirMsgWA(${ri})" title="Enviar mensagem de agendamento">📨</button>`;
+      b+=`<button class="btn btn-small btn-green" onclick="abrirRealizar(${ri})">✅ Realizada</button>
+         <button class="btn btn-small btn-red" onclick="abrirCancelar(${ri})">❌ Cancelar</button>
+         <button class="btn btn-small btn-orange" onclick="abrirNoShow(${ri})">🚫 No-show</button>`;
+    }else{
+      b+=`<button class="btn btn-small btn-blue" onclick="abrirAgendar(${ri})">📅 ${tipo==='cancelada'||tipo==='noshow'?'Reagendar':'Agendar'}</button>`;
+    }
     return b;
   };
   const renderL=(lista,id,tipo)=>{
@@ -696,14 +740,11 @@ function renderConfig(){
   // Unidades
   const ul=document.getElementById('config-unidades-list');
   ul.innerHTML=config.unidades.length?config.unidades.map((u,i)=>{
-    const count=pacientes.filter(p=>p.unidade===u).length;
-    const secCount=config.secretarias.filter(s=>s.unidade===u).length;
+    const cp=pacientes.filter(p=>p.unidade===u).length;
+    const cs=config.secretarias.filter(s=>s.unidade===u).length;
     return`<div class="config-item">
-      <div class="config-item-info">
-        <span>${u}</span>
-        <small>${count} paciente${count!==1?'s':''} · ${secCount} secretaria${secCount!==1?'s':''}</small>
-      </div>
-      <button class="btn btn-small btn-red" onclick="removerUnidade(${i})" title="Remover">✕</button>
+      <div class="config-item-info"><span>${u}</span><small>${cp} paciente${cp!==1?'s':''} · ${cs} secretaria${cs!==1?'s':''}</small></div>
+      <button class="btn btn-small btn-red" onclick="removerUnidade(${i})">✕</button>
     </div>`;
   }).join(''):'<p class="no-data" style="padding:1rem">Nenhuma unidade cadastrada.</p>';
 
@@ -716,9 +757,19 @@ function renderConfig(){
         <span><strong>${s.nome}</strong> <span style="color:var(--text2);font-size:12px">@${s.usuario}</span></span>
         <small>${s.unidade||'<em>sem unidade</em>'} · ${count} paciente${count!==1?'s':''}</small>
       </div>
-      <button class="btn btn-small btn-red" onclick="removerSecretaria(${i})" title="Remover">✕</button>
+      <button class="btn btn-small btn-red" onclick="removerSecretaria(${i})">✕</button>
     </div>`;
   }).join(''):'<p class="no-data" style="padding:1rem">Nenhuma secretaria cadastrada.</p>';
+
+  // Profissionais
+  const pl=document.getElementById('config-profissionais-list');
+  pl.innerHTML=config.profissionais.length?config.profissionais.map((p,i)=>{
+    const count=(()=>{let c=0;pacientes.forEach(pac=>{(pac.historico||[]).forEach(h=>{if(h.profissional===p)c++;});});return c;})();
+    return`<div class="config-item">
+      <div class="config-item-info"><span>${p}</span><small>${count} reavaliação${count!==1?'s':''} registrada${count!==1?'s':''}</small></div>
+      <button class="btn btn-small btn-red" onclick="removerProfissional(${i})">✕</button>
+    </div>`;
+  }).join(''):'<p class="no-data" style="padding:1rem">Nenhum profissional cadastrado.</p>';
 }
 
 function adicionarUnidade(){
@@ -730,15 +781,12 @@ function adicionarUnidade(){
   salvarConfig(); input.value=''; renderConfig(); populateSelects();
   notify('Unidade adicionada! 🏢');
 }
-
 function removerUnidade(i){
   const u=config.unidades[i];
-  const countPac=pacientes.filter(p=>p.unidade===u).length;
-  const countSec=config.secretarias.filter(s=>s.unidade===u).length;
+  const cp=pacientes.filter(p=>p.unidade===u).length;
+  const cs=config.secretarias.filter(s=>s.unidade===u).length;
   let msg=`Deseja remover a unidade "${u}"?`;
-  if(countPac>0||countSec>0){
-    msg=`A unidade "${u}" possui:\n• ${countPac} paciente(s) vinculado(s)\n• ${countSec} secretaria(s) vinculada(s)\n\nAo remover, esses registros ficarão sem unidade.\nDeseja continuar?`;
-  }
+  if(cp>0||cs>0) msg=`A unidade "${u}" possui:\n• ${cp} paciente(s)\n• ${cs} secretaria(s)\n\nEsses registros ficarão sem unidade. Continuar?`;
   if(!confirm(msg))return;
   pacientes.forEach(p=>{if(p.unidade===u)p.unidade='';});
   config.secretarias.forEach(s=>{if(s.unidade===u)s.unidade='';});
@@ -752,7 +800,7 @@ function adicionarSecretaria(){
   const senha  =document.getElementById('nova-sec-senha').value;
   const unidade=document.getElementById('nova-sec-unidade').value;
   if(!nome||!usuario||!senha){alert('Preencha nome, usuário e senha.');return;}
-  if(!unidade){alert('Selecione a unidade pela qual esta secretaria é responsável.');return;}
+  if(!unidade){alert('Selecione a unidade responsável.');return;}
   if(usuario==='gerenciador'){alert('Usuário reservado.');return;}
   if(config.secretarias.find(s=>s.usuario===usuario)){alert('Esse usuário já existe.');return;}
   config.secretarias.push({nome,usuario,senha,unidade});
@@ -761,19 +809,32 @@ function adicionarSecretaria(){
   document.getElementById('nova-sec-unidade').value='';
   renderConfig(); populateSelects(); notify('Secretaria adicionada! 👤');
 }
-
 function removerSecretaria(i){
   const s=config.secretarias[i];
   const count=pacientes.filter(p=>p.sec===s.usuario).length;
-  if(count>0){
-    if(!confirm(`A secretaria "${s.nome}" tem ${count} paciente(s) vinculado(s).\nAo remover, esses pacientes ficarão sem secretaria.\nDeseja continuar?`))return;
-    pacientes.forEach(p=>{if(p.sec===s.usuario)p.sec='';});
-    salvarDados();
-  }else{
-    if(!confirm(`Remover a secretaria "${s.nome}"?`))return;
-  }
+  const msg=count>0
+    ?`"${s.nome}" tem ${count} paciente(s). Ao remover, ficarão sem secretaria. Continuar?`
+    :`Remover a secretaria "${s.nome}"?`;
+  if(!confirm(msg))return;
+  if(count>0){pacientes.forEach(p=>{if(p.sec===s.usuario)p.sec='';});salvarDados();}
   config.secretarias.splice(i,1);
   salvarConfig(); renderConfig(); populateSelects(); notify('Secretaria removida.');
+}
+
+function adicionarProfissional(){
+  const input=document.getElementById('novo-prof');
+  const nome=input.value.trim();
+  if(!nome){alert('Digite o nome do profissional.');return;}
+  if(config.profissionais.includes(nome)){alert('Esse profissional já está cadastrado.');return;}
+  config.profissionais.push(nome);
+  salvarConfig(); input.value=''; renderConfig(); populateSelects();
+  notify('Profissional adicionado! 🩺');
+}
+function removerProfissional(i){
+  const nome=config.profissionais[i];
+  if(!confirm(`Remover o profissional "${nome}"?`))return;
+  config.profissionais.splice(i,1);
+  salvarConfig(); renderConfig(); populateSelects(); notify('Profissional removido.');
 }
 
 function alterarSenhaGerenciador(){
@@ -789,26 +850,24 @@ function alterarSenhaGerenciador(){
   notify('Senha do gerenciador alterada! 🔐');
 }
 
-// ===================== STATUS MENU =====================
+// ===================== STATUS MENU (4 opções fixas) =====================
 function abrirStatusMenu(event,ri){
   event.stopPropagation(); fecharStatusMenu();
   const p=pacientes[ri],ag=p.agendamento;
   const menu=document.getElementById('status-menu');
-  const items=[];
-  if(!ag||ag.status==='cancelada'||ag.status==='noshow')
-    items.push({icon:'📅',label:'Agendar reavaliação',fn:`abrirAgendar(${ri})`,cls:''});
-  if(ag?.status==='agendada'){
-    items.push({icon:'✅',label:'Confirmar como Realizada',fn:`abrirRealizar(${ri})`,cls:''});
-    items.push({icon:'❌',label:'Cancelar com aviso prévio',fn:`abrirCancelar(${ri})`,cls:'danger'});
-    items.push({icon:'🚫',label:'Registrar No-show',fn:`abrirNoShow(${ri})`,cls:'warn'});
-    items.push({divider:true});
-    items.push({icon:'📅',label:'Alterar data',fn:`abrirAgendar(${ri})`,cls:''});
+  let html=`<div class="status-menu-header">Alterar status</div>`;
+  html+=`<div class="status-menu-item" onclick="abrirAgendar(${ri});fecharStatusMenu()">📅 Agendar / Reagendar</div>`;
+  html+=`<div class="status-menu-item" onclick="abrirRealizar(${ri});fecharStatusMenu()">✅ Marcar como Realizado</div>`;
+  html+=`<div class="status-menu-divider"></div>`;
+  html+=`<div class="status-menu-item danger" onclick="abrirCancelar(${ri});fecharStatusMenu()">❌ Cancelar com Aviso Prévio</div>`;
+  html+=`<div class="status-menu-item warn" onclick="abrirNoShow(${ri});fecharStatusMenu()">🚫 Registrar No-show</div>`;
+  if(ag?.status==='agendada'&&p.tel){
+    html+=`<div class="status-menu-divider"></div>`;
+    html+=`<div class="status-menu-item wapp" onclick="abrirMsgWA(${ri});fecharStatusMenu()">💬 Enviar confirmação por WhatsApp</div>`;
   }
-  menu.innerHTML=items.map(it=>it.divider?'<div class="status-menu-divider"></div>':
-    `<div class="status-menu-item ${it.cls}" onclick="${it.fn};fecharStatusMenu()">${it.icon} ${it.label}</div>`
-  ).join('');
+  menu.innerHTML=html;
   const rect=event.target.getBoundingClientRect();
-  const mw=220,mh=items.length*44;
+  const mw=240,mh=200;
   let top=rect.bottom+window.scrollY+4,left=rect.left+window.scrollX;
   if(left+mw>window.innerWidth)left=window.innerWidth-mw-8;
   if(top+mh>window.scrollY+window.innerHeight)top=rect.top+window.scrollY-mh-4;
@@ -825,7 +884,6 @@ function abrirModalPaciente(){
   document.getElementById('p-data').value=new Date().toISOString().split('T')[0];
   document.getElementById('p-intervalo').value='3';
   populateSelects();
-  // Se for secretaria, pré-seleciona a unidade dela
   if(currentUser!=='gerenciador'){
     const u=secUnidade(currentUser);
     if(u)document.getElementById('p-unidade').value=u;
@@ -874,9 +932,13 @@ function excluirPaciente(i){
 function abrirAgendar(i){
   agendarIndex=i;
   document.getElementById('ag-nome').textContent=pacientes[i].nome;
+  const ag=pacientes[i].agendamento;
   const proxima=calcProxima(pacientes[i]),hoje=new Date().toISOString().split('T')[0];
-  document.getElementById('ag-data').value=proxima.toISOString().split('T')[0]>hoje?proxima.toISOString().split('T')[0]:hoje;
-  document.getElementById('ag-obs').value='';
+  // Se já tem data agendada, pré-preenche com ela; caso contrário, usa a próxima prevista
+  const dataInicial=ag?.status==='agendada'&&ag.data ? ag.data
+    : (proxima.toISOString().split('T')[0]>hoje?proxima.toISOString().split('T')[0]:hoje);
+  document.getElementById('ag-data').value=dataInicial;
+  document.getElementById('ag-obs').value=ag?.obs||'';
   document.getElementById('modal-agendar').style.display='flex';
 }
 function confirmarAgendamento(){
@@ -885,6 +947,13 @@ function confirmarAgendamento(){
   pacientes[agendarIndex].agendamento={data,status:'agendada',obs:document.getElementById('ag-obs').value.trim()};
   salvarDados();document.getElementById('modal-agendar').style.display='none';renderAll();notify('Reavaliação agendada! 📅');
 }
+function confirmarAgendamentoEWhatsApp(){
+  const data=document.getElementById('ag-data').value;
+  if(!data){alert('Selecione a data.');return;}
+  pacientes[agendarIndex].agendamento={data,status:'agendada',obs:document.getElementById('ag-obs').value.trim()};
+  salvarDados();document.getElementById('modal-agendar').style.display='none';renderAll();notify('Reavaliação agendada! 📅');
+  abrirMsgWA(agendarIndex);
+}
 
 // ===================== REALIZAR =====================
 function abrirRealizar(i){
@@ -892,16 +961,21 @@ function abrirRealizar(i){
   document.getElementById('re-nome').textContent=pacientes[i].nome;
   document.getElementById('re-data').value=pacientes[i].agendamento?.data||new Date().toISOString().split('T')[0];
   document.getElementById('re-obs').value='';
+  populateSelects();
+  document.getElementById('re-profissional').value='';
   document.getElementById('modal-realizar').style.display='flex';
 }
 function marcarRealizada(){
   const data=document.getElementById('re-data').value;
   if(!data){alert('Selecione a data.');return;}
   const p=pacientes[realizarIndex];
+  const profissional=document.getElementById('re-profissional').value;
+  const obs=document.getElementById('re-obs').value.trim();
   p.historico=p.historico||[];
-  p.historico.unshift({data,tipo:'realizada',obs:document.getElementById('re-obs').value.trim()});
+  p.historico.unshift({data,tipo:'realizada',profissional,obs});
   p.ultimaReav=data;p.agendamento=null;
-  salvarDados();document.getElementById('modal-realizar').style.display='none';renderAll();notify('Reavaliação confirmada! ✅');
+  salvarDados();document.getElementById('modal-realizar').style.display='none';renderAll();
+  notify('Reavaliação confirmada! ✅'+(profissional?` · ${profissional}`:''));
 }
 
 // ===================== CANCELAR =====================
@@ -950,11 +1024,46 @@ function confirmarNoShow(){
 }
 
 // ===================== WHATSAPP =====================
-function abrirWhatsApp(tel){
+function numWA(tel){
   let n=tel.replace(/\D/g,'');
   if(n.startsWith('0'))n=n.substring(1);
   if(!n.startsWith('55'))n='55'+n;
-  window.open('https://wa.me/'+n,'_blank');
+  return n;
+}
+function abrirWhatsApp(tel){ window.open('https://wa.me/'+numWA(tel),'_blank'); }
+
+function abrirMsgWA(i){
+  const p=pacientes[i];
+  if(!p.tel){alert('Paciente sem telefone cadastrado.');return;}
+  const ag=p.agendamento;
+  const data=ag?.status==='agendada'&&ag.data?formatDate(ag.data):'(data não definida)';
+  const unidade=p.unidade||'ILLIC';
+  const msg=
+`Olá, ${p.nome}! 😊
+
+A Clínica ILLIC – ${unidade} está entrando em contato para confirmar sua reavaliação agendada para *${data}*.
+
+Por favor, confirme sua presença respondendo *"Confirmado"* ✅
+
+Caso precise remarcar, entre em contato conosco com antecedência.
+
+Até logo! 🏥 ILLIC Fisioterapia`;
+  _wamTel=numWA(p.tel);
+  _wamMsg=msg;
+  document.getElementById('wam-nome').textContent=p.nome;
+  document.getElementById('wam-tel').textContent=p.tel;
+  document.getElementById('wam-texto').textContent=msg;
+  document.getElementById('modal-wamsg').style.display='flex';
+}
+function copiarMsgWA(){
+  navigator.clipboard.writeText(_wamMsg).then(()=>notify('Texto copiado! 📋')).catch(()=>{
+    // Fallback
+    const ta=document.createElement('textarea');ta.value=_wamMsg;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);notify('Texto copiado! 📋');
+  });
+}
+function abrirWhatsAppComMsg(){
+  window.open(`https://wa.me/${_wamTel}?text=${encodeURIComponent(_wamMsg)}`,'_blank');
+  document.getElementById('modal-wamsg').style.display='none';
 }
 
 // ===================== UTILS =====================
