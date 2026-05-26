@@ -619,10 +619,17 @@ if(!pacientes.length){
   const u0=config.unidades[0]||'',u1=config.unidades[1]||u0;
   const s0=config.secretarias[0]?.usuario||'',s1=config.secretarias[1]?.usuario||s0;
   pacientes=[
-    {nome:'João Silva',     tel:'(11) 98765-4321',email:'joao@email.com',  convenio:'Particular', sec:s0,unidade:u0,ultimaReav:sub(4),intervalo:3,agendamento:null,historico:[]},
-    {nome:'Maria Oliveira', tel:'(11) 91234-5678',email:'maria@email.com', convenio:'Unimed',     sec:s1,unidade:u1,ultimaReav:sub(1),intervalo:3,agendamento:{data:add(1),status:'agendada',obs:'Confirmada',confirmacao:'confirmado'},historico:[]},
-    {nome:'Carlos Santos',  tel:'(11) 99887-6543',email:'carlos@email.com',convenio:'',           sec:s0,unidade:config.unidades[2]||u0,ultimaReav:sub(3),intervalo:3,agendamento:{data:add(0),status:'cancelada',motivo:'Viagem'},historico:[]},
-    {nome:'Ana Costa',      tel:'(11) 97654-3210',email:'ana@email.com',   convenio:'Bradesco',   sec:s1,unidade:config.unidades[3]||u0,ultimaReav:sub(0),intervalo:6,agendamento:{data:sub(0),status:'noshow',obs:'Não atendeu'},historico:[]},
+    {nome:'João Silva',     tel:'(11) 98765-4321',email:'joao@email.com',  convenio:'Particular', sec:s0,unidade:u0,ultimaReav:sub(4),intervalo:3,dataNascimento:'1985-03-12',responsavel:null,agendamento:null,
+      historico:[{data:sub(15),tipo:'realizada',profissional:'Dr. Carlos',obs:'Sem intercorrências'}]},
+    {nome:'Maria Oliveira', tel:'(11) 91234-5678',email:'maria@email.com', convenio:'Unimed',     sec:s1,unidade:u1,ultimaReav:sub(1),intervalo:3,dataNascimento:'1990-07-22',responsavel:null,
+      agendamento:{data:add(1),status:'agendada',obs:'Confirmada',confirmacao:'confirmado'},historico:[]},
+    {nome:'Carlos Santos',  tel:'(11) 99887-6543',email:'carlos@email.com',convenio:'',           sec:s0,unidade:config.unidades[2]||u0,ultimaReav:sub(3),intervalo:3,dataNascimento:'',responsavel:null,
+      agendamento:{data:add(0),status:'cancelada',motivo:'Viagem'},historico:[{data:sub(5),tipo:'cancelada',profissional:'',obs:'Paciente em viagem'}]},
+    {nome:'Ana Costa',      tel:'(11) 97654-3210',email:'ana@email.com',   convenio:'Bradesco',   sec:s1,unidade:config.unidades[3]||u0,ultimaReav:sub(0),intervalo:6,dataNascimento:'1978-11-05',responsavel:null,
+      agendamento:{data:sub(0),status:'noshow',obs:'Não atendeu'},historico:[]},
+    {nome:'Lucas Mendes',   tel:'(11) 96543-2109',email:'',               convenio:'Particular',  sec:s0,unidade:u0,ultimaReav:sub(2),intervalo:3,dataNascimento:'2012-06-18',
+      responsavel:{nome:'Roberto Mendes',tel:'(11) 98888-1234',parentesco:'pai'},
+      agendamento:null,historico:[{data:sub(9),tipo:'realizada',profissional:'Dra. Fernanda',obs:'Paciente colaborativo'}]},
   ];
   salvarDados();
 }
@@ -644,7 +651,12 @@ function filtrarPorUsuario(lista){
 }
 
 // ===================== HELPERS =====================
-function calcProxima(p){const d=new Date(p.ultimaReav+'T12:00:00');d.setMonth(d.getMonth()+parseInt(p.intervalo));return d;}
+function calcProxima(p){
+  const ref=p.ultimaReav||new Date().toISOString().split('T')[0];
+  const d=new Date(ref+'T12:00:00');
+  d.setMonth(d.getMonth()+parseInt(p.intervalo||3));
+  return d;
+}
 function calcDias(p){const h=new Date();h.setHours(0,0,0,0);return Math.ceil((calcProxima(p)-h)/86400000);}
 function sortKey(p){
   const ag=p.agendamento,dias=calcDias(p);
@@ -842,8 +854,9 @@ function renderPacientes(){
     const ri=pacientes.indexOf(p);
     const cv=p.convenio?`<span class="convenio-tag">${p.convenio}</span>`:'';
     const wpp=p.tel?`<button class="btn btn-small btn-whatsapp" onclick="abrirWhatsApp('${p.tel}')" title="WhatsApp">${wppSvg}</button>`:'';
+    const menorTag=p.responsavel||( p.dataNascimento&&calcIdade(p.dataNascimento)<18)?`<span class="menor-badge-inline" style="font-size:10px;padding:0 5px">👶</span>`:'';
     return`<tr>
-      <td><strong>${p.nome}</strong>${cv}<br><small style="color:var(--text2)">${p.tel}</small></td>
+      <td><strong>${p.nome}</strong>${menorTag}${cv}<br><small style="color:var(--text2)">${p.tel}</small></td>
       <td><span class="badge badge-unit">${p.unidade||'—'}</span></td>
       <td>${secNome(p.sec)}</td>
       <td>${formatDate(p.ultimaReav)}</td>
@@ -1131,7 +1144,9 @@ function salvarPaciente(){
   const unidade=document.getElementById('p-unidade').value;
   const sec=document.getElementById('p-sec').value;
   const nascimento=document.getElementById('p-nascimento').value;
+  const dataReav=document.getElementById('p-data').value;
   if(!nome){alert('Digite o nome do paciente.');return;}
+  if(!dataReav){alert('Informe a data da última reavaliação.');return;}
   if(!unidade){alert('Selecione a unidade.');return;}
   if(!sec){alert('Selecione a secretaria responsável.');return;}
   const menor=nascimento?calcIdade(nascimento)<18:false;
@@ -1279,7 +1294,9 @@ function abrirHistorico(ri){
   document.getElementById('hist-nome').textContent=p.nome;
   const conv=p.convenio?` · ${p.convenio}`:'';
   const total=(p.historico||[]).filter(h=>h.tipo==='realizada').length;
-  document.getElementById('hist-info').textContent=`${p.unidade||'—'}${conv} · ${total} reavaliação${total!==1?'s':''} registrada${total!==1?'s':''}`;
+  const parentescoLabel={mae:'Mãe',pai:'Pai',avo:'Avô/Avó',outro:'Responsável'};
+  const resp=p.responsavel&&p.responsavel.nome?` · 👪 ${parentescoLabel[p.responsavel.parentesco]||'Responsável'}: ${p.responsavel.nome}${p.responsavel.tel?' ('+p.responsavel.tel+')':''}`:'' ;
+  document.getElementById('hist-info').textContent=`${p.unidade||'—'}${conv}${resp} · ${total} reavaliação${total!==1?'s':''} registrada${total!==1?'s':''}`;
   const hist=p.historico||[];
   const lista=document.getElementById('hist-lista');
   if(!hist.length){
@@ -1367,7 +1384,7 @@ function renderCadastros(){
     const cv=p.convenio?`<span class="convenio-tag">${p.convenio}</span>`:'';
     const idade=p.dataNascimento!==''&&p.dataNascimento?calcIdade(p.dataNascimento):null;
     const menor=idade!==null?idade<18:(p.responsavel?true:false);
-    const minorBadge=menor?`<span class="menor-badge-inline">👶 Menor · ${idade!==null?idade+' anos':''}</span>`:'';
+    const minorBadge=menor?`<span class="menor-badge-inline">👶 Menor${idade!==null?' · '+idade+' anos':''}</span>`:'';
     const idadeStr=idade!==null?`🎂 ${idade} anos`:'';
     const hist=p.historico||[];
     const realizadas=hist.filter(h=>h.tipo==='realizada').length;
