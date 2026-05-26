@@ -11,17 +11,17 @@
       --blue:#1e40af;--blue-bg:#dbeafe;--green:#166534;--green-bg:#dcfce7;
       --red:#991b1b;--red-bg:#fee2e2;--yellow:#92400e;--yellow-bg:#fef3c7;
       --purple:#5b21b6;--purple-bg:#ede9fe;--orange:#9a3412;--orange-bg:#ffedd5;
-      --wapp:#128C7E;--wapp-bg:#dcfce7;
+      --teal:#0f766e;--teal-bg:#ccfbf1;--wapp:#128C7E;
     }
     @media(prefers-color-scheme:dark){:root{
       --bg:#1a1a1a;--card:#2d2d2d;--text:#fff;--text2:#a0a0a0;--border:#404040;
       --blue:#93c5fd;--blue-bg:#1e3a8a;--green:#bbf7d0;--green-bg:#14532d;
       --red:#fecaca;--red-bg:#7f1d1d;--yellow:#fde047;--yellow-bg:#78350f;
       --purple:#c4b5fd;--purple-bg:#3b0764;--orange:#fdba74;--orange-bg:#7c2d12;
+      --teal:#5eead4;--teal-bg:#134e4a;
     }}
     *{margin:0;padding:0;box-sizing:border-box;}
     body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
-
     .logo{font-family:'Syne',sans-serif;font-weight:800;letter-spacing:-1px;color:var(--text);}
     .logo-lg{font-size:42px;}.logo-sm{font-size:22px;}
     .logo-img-lg{height:52px;display:block;margin:0 auto 4px;}
@@ -55,10 +55,10 @@
     .btn-red{background:var(--red-bg);color:var(--red);border-color:transparent;}
     .btn-blue{background:var(--blue-bg);color:var(--blue);border-color:transparent;}
     .btn-orange{background:var(--orange-bg);color:var(--orange);border-color:transparent;}
+    .btn-teal{background:var(--teal-bg);color:var(--teal);border-color:transparent;}
     .btn-whatsapp{background:#25D366;color:#fff;border-color:transparent;}
     .btn-whatsapp:hover{background:#1ebe5d;}
     .btn-small{padding:4px 10px;font-size:12px;}
-    .btn-icon{padding:4px 8px;font-size:13px;}
 
     .content{padding:1.5rem;max-width:1200px;margin:0 auto;}
     .metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:1.5rem;}
@@ -97,16 +97,28 @@
     .badge-blue{background:var(--blue-bg);color:var(--blue);}
     .badge-purple{background:var(--purple-bg);color:var(--purple);}
     .badge-orange{background:var(--orange-bg);color:var(--orange);}
+    .badge-teal{background:var(--teal-bg);color:var(--teal);}
     .badge-unit{background:var(--bg);color:var(--text2);border:1px solid var(--border);font-size:11px;padding:2px 7px;}
     .badge-clickable{cursor:pointer;user-select:none;transition:opacity .15s;}
     .badge-clickable:hover{opacity:.8;}
     .badge-status-click::after{content:' ▾';font-size:10px;opacity:.7;}
-    .badge-date-click{cursor:pointer;}
-    .badge-date-click:hover{filter:brightness(.92);}
+    .badge-date-click{cursor:pointer;}.badge-date-click:hover{filter:brightness(.92);}
     .badge-date-click::after{content:' ✎';font-size:10px;opacity:.6;}
 
+    /* CONFIRMAÇÃO */
+    .conf-badge{display:inline-block;font-size:11px;margin-top:3px;cursor:pointer;padding:1px 7px;border-radius:6px;user-select:none;white-space:nowrap;font-weight:500;}
+    .conf-pendente{background:var(--yellow-bg);color:var(--yellow);}
+    .conf-confirmado{background:var(--green-bg);color:var(--green);}
+    .conf-nao-respondeu{background:var(--red-bg);color:var(--red);}
+    .convenio-tag{font-size:11px;color:var(--text2);background:var(--bg);border:1px solid var(--border);padding:1px 6px;border-radius:6px;margin-left:4px;}
+
+    /* PERFIL BADGE */
+    .perfil-ger{background:var(--purple-bg);color:var(--purple);}
+    .perfil-sup{background:var(--teal-bg);color:var(--teal);}
+    .perfil-sec{background:var(--bg);color:var(--text2);border:1px solid var(--border);}
+
     /* STATUS MENU */
-    .status-menu{position:fixed;background:var(--card);border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.15);z-index:5000;min-width:230px;overflow:hidden;}
+    .status-menu{position:fixed;background:var(--card);border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.15);z-index:5000;min-width:240px;overflow:hidden;}
     .status-menu-header{padding:8px 14px 6px;font-size:11px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;}
     .status-menu-item{display:flex;align-items:center;gap:8px;padding:10px 14px;font-size:13px;cursor:pointer;color:var(--text);transition:background .1s;}
     .status-menu-item:hover{background:var(--bg);}
@@ -127,20 +139,14 @@
     @media(max-width:900px){.config-grid{grid-template-columns:1fr 1fr;}}
     @media(max-width:600px){.config-grid{grid-template-columns:1fr;}}
 
-    .no-data{text-align:center;padding:2rem;color:var(--text2);}
-    .actions{display:flex;gap:4px;flex-wrap:wrap;}
-
-    .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;z-index:1000;padding:1rem;}
-    .modal{background:var(--card);border-radius:var(--radius);padding:1.5rem;width:100%;max-width:460px;max-height:90vh;overflow-y:auto;}
-    .modal h3{font-size:16px;margin-bottom:1.2rem;}
-    .modal-footer{display:flex;gap:8px;justify-content:flex-end;margin-top:1.2rem;}
-    .msg-preview{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:1rem;font-size:13px;line-height:1.7;white-space:pre-wrap;margin-bottom:1rem;max-height:220px;overflow-y:auto;}
-
-    /* CONFIRMAÇÃO */
-    .conf-badge{display:inline-block;font-size:11px;margin-top:3px;cursor:pointer;padding:1px 6px;border-radius:6px;user-select:none;white-space:nowrap;}
-    .conf-pendente{background:var(--yellow-bg);color:var(--yellow);}
-    .conf-confirmado{background:var(--green-bg);color:var(--green);}
-    .conf-nao-respondeu{background:var(--red-bg);color:var(--red);}
+    /* LOGS */
+    .log-row{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);align-items:flex-start;font-size:13px;}
+    .log-row:last-child{border-bottom:none;}
+    .log-icon{font-size:16px;width:22px;flex-shrink:0;line-height:1.4;}
+    .log-body{flex:1;}
+    .log-body .log-desc{color:var(--text);}
+    .log-body .log-meta{font-size:11px;color:var(--text2);margin-top:1px;}
+    .log-empty{text-align:center;padding:2rem;color:var(--text2);}
 
     /* HISTÓRICO */
     .hist-entry{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);}
@@ -149,16 +155,23 @@
     .hist-body{flex:1;}
     .hist-body strong{font-size:13px;}
     .hist-body small{font-size:12px;color:var(--text2);display:block;}
-    .modal-wide{max-width:560px;}
-    .convenio-tag{font-size:11px;color:var(--text2);background:var(--bg);border:1px solid var(--border);padding:1px 6px;border-radius:6px;margin-left:4px;}
+
+    .no-data{text-align:center;padding:2rem;color:var(--text2);}
+    .actions{display:flex;gap:4px;flex-wrap:wrap;}
+
+    .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;z-index:1000;padding:1rem;}
+    .modal{background:var(--card);border-radius:var(--radius);padding:1.5rem;width:100%;max-width:460px;max-height:90vh;overflow-y:auto;}
+    .modal-wide{max-width:600px;}
+    .modal h3{font-size:16px;margin-bottom:1.2rem;}
+    .modal-footer{display:flex;gap:8px;justify-content:flex-end;margin-top:1.2rem;}
+    .msg-preview{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:1rem;font-size:13px;line-height:1.7;white-space:pre-wrap;margin-bottom:1rem;max-height:220px;overflow-y:auto;}
 
     .notification{position:fixed;top:20px;right:20px;background:var(--green-bg);color:var(--green);padding:14px 20px;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.15);z-index:9999;font-size:14px;font-weight:500;transform:translateX(420px);transition:transform .3s ease;max-width:300px;}
     .notification.show{transform:translateX(0);}
 
     @media(max-width:600px){
       .topbar{flex-direction:column;gap:.5rem;align-items:flex-start;}
-      .content{padding:1rem;}
-      .actions{flex-direction:column;}
+      .content{padding:1rem;}.actions{flex-direction:column;}
       .metrics{grid-template-columns:repeat(2,1fr);}
     }
   </style>
@@ -201,6 +214,7 @@
       <button class="tab active" onclick="showTab('dashboard')">📈 Dashboard</button>
       <button class="tab" onclick="showTab('pacientes')">👥 Pacientes</button>
       <button class="tab" onclick="showTab('alertas')">🔔 Alertas</button>
+      <button class="tab" id="tab-logs-btn"   style="display:none" onclick="showTab('logs')">📊 Logs</button>
       <button class="tab" id="tab-config-btn" style="display:none" onclick="showTab('config')">⚙️ Configurações</button>
     </div>
 
@@ -218,7 +232,7 @@
         <div class="table-wrap">
           <table>
             <thead><tr>
-              <th>Paciente</th><th>Unidade</th><th>Última Reav.</th><th>Próxima</th>
+              <th>Paciente / Convênio</th><th>Unidade</th><th>Última Reav.</th><th>Próxima</th>
               <th>Agendamento ✎</th><th>Status ▾</th>
             </tr></thead>
             <tbody id="dashboard-table"></tbody>
@@ -244,8 +258,8 @@
         <div class="table-wrap">
           <table>
             <thead><tr>
-              <th>Nome / Convênio</th><th>Unidade</th><th>Secretaria</th><th>Última Reav.</th><th>Próxima</th>
-              <th>Agendamento ✎</th><th>Status ▾</th><th>Ações</th>
+              <th>Nome / Convênio</th><th>Unidade</th><th>Secretaria</th>
+              <th>Última Reav.</th><th>Próxima</th><th>Agendamento ✎</th><th>Status ▾</th><th>Ações</th>
             </tr></thead>
             <tbody id="pacientes-table"></tbody>
           </table>
@@ -267,10 +281,41 @@
       <div class="card"><div class="card-header"><h2>📅 Agendadas</h2></div><div id="lista-agendados"></div></div>
     </div>
 
+    <!-- LOGS (gerenciador only) -->
+    <div id="tab-logs" style="display:none">
+      <div class="card">
+        <div class="card-header">
+          <h2>📊 Log de Ações</h2>
+          <button class="btn btn-red btn-small" onclick="limparLogs()">🗑 Limpar logs</button>
+        </div>
+        <div class="filter-bar">
+          <label>Período:</label>
+          <select id="log-periodo" onchange="renderLogs()">
+            <option value="0">Hoje</option>
+            <option value="7" selected>Últimos 7 dias</option>
+            <option value="30">Últimos 30 dias</option>
+            <option value="all">Todos</option>
+          </select>
+          <label>Usuário:</label>
+          <select id="log-usuario" onchange="renderLogs()"><option value="">Todos</option></select>
+          <label>Tipo:</label>
+          <select id="log-tipo" onchange="renderLogs()">
+            <option value="">Todos</option>
+            <option value="login">Acesso</option>
+            <option value="paciente">Pacientes</option>
+            <option value="agenda">Agenda</option>
+            <option value="config">Configuração</option>
+          </select>
+        </div>
+        <div id="logs-container">
+          <p class="no-data">Nenhum log registrado.</p>
+        </div>
+      </div>
+    </div>
+
     <!-- CONFIGURAÇÕES (gerenciador only) -->
     <div id="tab-config" style="display:none">
       <div class="config-grid">
-
         <!-- UNIDADES -->
         <div class="card">
           <h3>🏢 Unidades</h3>
@@ -280,7 +325,6 @@
             <button class="btn btn-primary" onclick="adicionarUnidade()">+ Adicionar</button>
           </div>
         </div>
-
         <!-- SECRETARIAS -->
         <div class="card">
           <h3>👤 Secretarias</h3>
@@ -291,14 +335,17 @@
               <input type="text" id="nova-sec-nome" placeholder="Nome (ex: Carlos)">
               <input type="text" id="nova-sec-usuario" placeholder="Usuário de login (ex: carlos)" style="margin-top:6px">
               <input type="password" id="nova-sec-senha" placeholder="Senha" style="margin-top:6px">
-              <select id="nova-sec-unidade" style="margin-top:6px">
-                <option value="">Selecione a unidade responsável...</option>
+              <select id="nova-sec-perfil" style="margin-top:6px">
+                <option value="secretaria">👤 Secretaria — acesso restrito à unidade</option>
+                <option value="supervisor">👁️ Supervisor — acesso a todas as unidades</option>
               </select>
-              <button class="btn btn-primary" onclick="adicionarSecretaria()" style="margin-top:8px;width:100%">+ Adicionar Secretaria</button>
+              <select id="nova-sec-unidade" style="margin-top:6px">
+                <option value="">Selecione a unidade principal...</option>
+              </select>
+              <button class="btn btn-primary" onclick="adicionarSecretaria()" style="margin-top:8px;width:100%">+ Adicionar</button>
             </div>
           </div>
         </div>
-
         <!-- PROFISSIONAIS -->
         <div class="card">
           <h3>🩺 Profissionais</h3>
@@ -308,10 +355,8 @@
             <button class="btn btn-primary" onclick="adicionarProfissional()">+ Adicionar</button>
           </div>
         </div>
-
       </div>
-
-      <!-- ALTERAR SENHA DO GERENCIADOR -->
+      <!-- SENHA GERENCIADOR -->
       <div class="card" style="max-width:460px">
         <h3>🔐 Alterar senha do gerenciador</h3>
         <div class="form-group"><label>Nova senha</label><input type="password" id="nova-senha-ger" placeholder="Digite a nova senha"></div>
@@ -359,7 +404,7 @@
     <div class="form-group"><label>Observações (opcional)</label><textarea id="ag-obs" rows="2" placeholder="Ex: Confirmado por WhatsApp..."></textarea></div>
     <div class="modal-footer">
       <button class="btn" onclick="document.getElementById('modal-agendar').style.display='none'">Cancelar</button>
-      <button class="btn btn-whatsapp" onclick="confirmarAgendamentoEWhatsApp()" title="Agendar e já enviar mensagem ao paciente">💬 Agendar e Avisar</button>
+      <button class="btn btn-whatsapp" onclick="confirmarAgendamentoEWhatsApp()">💬 Agendar e Avisar</button>
       <button class="btn btn-blue" onclick="confirmarAgendamento()">📅 Agendar</button>
     </div>
   </div>
@@ -371,11 +416,8 @@
     <h3>✅ Confirmar Reavaliação Realizada</h3>
     <p style="color:var(--text2);font-size:13px;margin-bottom:1.2rem">Paciente: <strong id="re-nome"></strong></p>
     <div class="form-group"><label>Data em que aconteceu</label><input type="date" id="re-data"></div>
-    <div class="form-group">
-      <label>Profissional que realizou</label>
-      <select id="re-profissional">
-        <option value="">Selecione (opcional)</option>
-      </select>
+    <div class="form-group"><label>Profissional que realizou</label>
+      <select id="re-profissional"><option value="">Selecione (opcional)</option></select>
     </div>
     <div class="form-group"><label>Observações (opcional)</label><textarea id="re-obs" rows="2"></textarea></div>
     <div class="modal-footer">
@@ -431,7 +473,7 @@
     <div class="msg-preview" id="wam-texto"></div>
     <div class="modal-footer">
       <button class="btn" onclick="document.getElementById('modal-wamsg').style.display='none'">Fechar</button>
-      <button class="btn btn-blue" onclick="copiarMsgWA()">📋 Copiar texto</button>
+      <button class="btn btn-blue" onclick="copiarMsgWA()">📋 Copiar</button>
       <button class="btn btn-whatsapp" onclick="abrirWhatsAppComMsg()">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:4px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Abrir WhatsApp
@@ -460,44 +502,90 @@
 let config = JSON.parse(localStorage.getItem('illic_config') || 'null') || {
   unidades: ['Jardim Ricetti','Damha','Faber','Descalvado','Mogi Guaçu'],
   secretarias: [
-    {nome:'Maria',  usuario:'maria', senha:'1234', unidade:'Jardim Ricetti'},
-    {nome:'Ana',    usuario:'ana',   senha:'1234', unidade:'Damha'}
+    {nome:'Maria', usuario:'maria', senha:'1234', unidade:'Jardim Ricetti', perfil:'secretaria'},
+    {nome:'Ana',   usuario:'ana',   senha:'1234', unidade:'Damha',          perfil:'secretaria'}
   ],
   profissionais: [],
   senhagerenciador: '1234'
 };
-// Migração: campos que podem estar ausentes em dados antigos
-config.secretarias.forEach(s=>{ if(!s.hasOwnProperty('unidade')) s.unidade=''; });
-if(!config.profissionais) config.profissionais = [];
+// Migrações
+config.secretarias.forEach(s=>{
+  if(!s.unidade) s.unidade='';
+  if(!s.perfil)  s.perfil='secretaria';
+});
+if(!config.profissionais) config.profissionais=[];
 
-function salvarConfig() { localStorage.setItem('illic_config', JSON.stringify(config)); }
-
-function getUsers() {
-  const u = { gerenciador: config.senhagerenciador };
-  config.secretarias.forEach(s => u[s.usuario] = s.senha);
+function salvarConfig(){ localStorage.setItem('illic_config',JSON.stringify(config)); }
+function getUsers(){
+  const u={gerenciador:config.senhagerenciador};
+  config.secretarias.forEach(s=>u[s.usuario]=s.senha);
   return u;
 }
 
+// ===================== LOGS =====================
+let logs = JSON.parse(localStorage.getItem('illic_logs')||'[]');
+function salvarLogs(){ localStorage.setItem('illic_logs',JSON.stringify(logs)); }
+
+const LOG_ICONS = {
+  login:'🔑', logout:'🚪',
+  paciente_criado:'➕', paciente_editado:'✏️', paciente_excluido:'🗑️',
+  agendamento:'📅', realizado:'✅', cancelamento:'❌', noshow:'🚫',
+  confirmacao:'🔄', config:'⚙️'
+};
+const LOG_GRUPOS = {
+  login:'login', logout:'login',
+  paciente_criado:'paciente', paciente_editado:'paciente', paciente_excluido:'paciente',
+  agendamento:'agenda', realizado:'agenda', cancelamento:'agenda', noshow:'agenda', confirmacao:'agenda',
+  config:'config'
+};
+
+function registrarLog(action, desc, paciente=''){
+  if(!currentUser) return;
+  logs.unshift({
+    ts: new Date().toISOString(),
+    user: currentUser,
+    perfil: getPerfil(),
+    action, desc, paciente
+  });
+  if(logs.length>1000) logs=logs.slice(0,1000);
+  salvarLogs();
+}
+
 // ===================== DADOS =====================
-let pacientes = JSON.parse(localStorage.getItem('illic_pacientes') || '[]');
-let currentUser = '';
+let pacientes = JSON.parse(localStorage.getItem('illic_pacientes')||'[]');
+let currentUser='';
 let editIndex=-1, agendarIndex=-1, realizarIndex=-1, cancelarIndex=-1, noshowIndex=-1;
 let _wamTel='', _wamMsg='';
 
-if (!pacientes.length) {
+if(!pacientes.length){
   const sub=m=>{const d=new Date();d.setMonth(d.getMonth()-m);return d.toISOString().split('T')[0];};
   const add=m=>{const d=new Date();d.setMonth(d.getMonth()+m);d.setDate(d.getDate()+5);return d.toISOString().split('T')[0];};
-  const u0=config.unidades[0]||'', u1=config.unidades[1]||u0;
-  const s0=config.secretarias[0]?.usuario||'', s1=config.secretarias[1]?.usuario||s0;
+  const u0=config.unidades[0]||'',u1=config.unidades[1]||u0;
+  const s0=config.secretarias[0]?.usuario||'',s1=config.secretarias[1]?.usuario||s0;
   pacientes=[
-    {nome:'João Silva',     tel:'(11) 98765-4321',email:'joao@email.com',  sec:s0,unidade:u0,ultimaReav:sub(4),intervalo:3,agendamento:null,historico:[]},
-    {nome:'Maria Oliveira', tel:'(11) 91234-5678',email:'maria@email.com', sec:s1,unidade:u1,ultimaReav:sub(1),intervalo:3,agendamento:{data:add(1),status:'agendada',obs:'Confirmada'},historico:[]},
-    {nome:'Carlos Santos',  tel:'(11) 99887-6543',email:'carlos@email.com',sec:s0,unidade:config.unidades[2]||u0,ultimaReav:sub(3),intervalo:3,agendamento:{data:add(0),status:'cancelada',motivo:'Viagem'},historico:[]},
-    {nome:'Ana Costa',      tel:'(11) 97654-3210',email:'ana@email.com',   sec:s1,unidade:config.unidades[3]||u0,ultimaReav:sub(0),intervalo:6,agendamento:{data:sub(0),status:'noshow',obs:'Não atendeu'},historico:[]},
+    {nome:'João Silva',     tel:'(11) 98765-4321',email:'joao@email.com',  convenio:'Particular', sec:s0,unidade:u0,ultimaReav:sub(4),intervalo:3,agendamento:null,historico:[]},
+    {nome:'Maria Oliveira', tel:'(11) 91234-5678',email:'maria@email.com', convenio:'Unimed',     sec:s1,unidade:u1,ultimaReav:sub(1),intervalo:3,agendamento:{data:add(1),status:'agendada',obs:'Confirmada',confirmacao:'confirmado'},historico:[]},
+    {nome:'Carlos Santos',  tel:'(11) 99887-6543',email:'carlos@email.com',convenio:'',           sec:s0,unidade:config.unidades[2]||u0,ultimaReav:sub(3),intervalo:3,agendamento:{data:add(0),status:'cancelada',motivo:'Viagem'},historico:[]},
+    {nome:'Ana Costa',      tel:'(11) 97654-3210',email:'ana@email.com',   convenio:'Bradesco',   sec:s1,unidade:config.unidades[3]||u0,ultimaReav:sub(0),intervalo:6,agendamento:{data:sub(0),status:'noshow',obs:'Não atendeu'},historico:[]},
   ];
   salvarDados();
 }
-function salvarDados() { localStorage.setItem('illic_pacientes', JSON.stringify(pacientes)); }
+function salvarDados(){ localStorage.setItem('illic_pacientes',JSON.stringify(pacientes)); }
+
+// ===================== PERFIS DE ACESSO =====================
+function getPerfil(){
+  if(currentUser==='gerenciador') return 'gerenciador';
+  const s=config.secretarias.find(x=>x.usuario===currentUser);
+  return s?.perfil||'secretaria';
+}
+function podeVerConfig(){ return currentUser==='gerenciador'; }
+// Supervisor vê tudo; secretaria só sua unidade
+function filtrarPorUsuario(lista){
+  const p=getPerfil();
+  if(p==='gerenciador'||p==='supervisor') return lista;
+  const u=secUnidade(currentUser);
+  return u?lista.filter(x=>x.unidade===u):lista;
+}
 
 // ===================== HELPERS =====================
 function calcProxima(p){const d=new Date(p.ultimaReav+'T12:00:00');d.setMonth(d.getMonth()+parseInt(p.intervalo));return d;}
@@ -511,43 +599,31 @@ function sortKey(p){
 }
 function sorted(l){return [...l].sort((a,b)=>sortKey(a)-sortKey(b));}
 function formatDate(d){if(!d)return'—';return new Date(d+'T12:00:00').toLocaleDateString('pt-BR');}
+function formatDateTime(iso){
+  if(!iso)return'—';
+  const d=new Date(iso);
+  return d.toLocaleDateString('pt-BR')+' '+d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
+}
 function cap(s){return s?s.charAt(0).toUpperCase()+s.slice(1):'';}
 function secNome(usuario){const s=config.secretarias.find(x=>x.usuario===usuario);return s?s.nome:cap(usuario);}
 function secUnidade(usuario){const s=config.secretarias.find(x=>x.usuario===usuario);return s?.unidade||'';}
+function perfilLabel(p){return{gerenciador:'Gerenciador',supervisor:'Supervisor',secretaria:'Secretaria'}[p]||cap(p);}
 
-function filtrarPorUsuario(lista){
-  if(currentUser==='gerenciador') return lista;
-  const u=secUnidade(currentUser);
-  return u ? lista.filter(p=>p.unidade===u) : lista;
-}
-
-// Agendamento badge — data clicável + confirmação de presença
-function getAgBadge(p, ri=-1){
+function getAgBadge(p,ri=-1){
   const ag=p.agendamento;
   if(!ag)return'<span style="color:var(--text2);font-size:12px">—</span>';
   if(ag.status==='agendada'){
     const click=ri>=0?`class="badge badge-blue badge-date-click" onclick="abrirAgendar(${ri})" title="Clique para alterar a data"`:`class="badge badge-blue"`;
     const conf=ag.confirmacao||'pendente';
-    const confMap={pendente:['conf-pendente','⏳ Aguardando confirmação'],confirmado:['conf-confirmado','✅ Presença confirmada'],'nao-respondeu':['conf-nao-respondeu','📵 Não respondeu']};
+    const confMap={pendente:['conf-pendente','⏳ Aguardando'],confirmado:['conf-confirmado','✅ Confirmado'],'nao-respondeu':['conf-nao-respondeu','📵 Não respondeu']};
     const [cls,label]=confMap[conf]||confMap.pendente;
-    const confClick=ri>=0?`onclick="toggleConfirmacao(${ri})" title="Clique para alterar confirmação"`:'';
-    return`<div><span ${click}>📅 ${formatDate(ag.data)}</span><br><span class="conf-badge ${cls}" ${confClick}>${label}</span></div>`;
+    const cfClick=ri>=0?`onclick="toggleConfirmacao(${ri})" title="Clique para alterar confirmação"`:'';
+    return`<div><span ${click}>📅 ${formatDate(ag.data)}</span><br><span class="conf-badge ${cls}" ${cfClick}>${label}</span></div>`;
   }
   if(ag.status==='cancelada') return`<span class="badge badge-purple">❌ ${ag.motivo||'—'}</span>`;
   if(ag.status==='noshow')    return`<span class="badge badge-orange">🚫 No-show</span>`;
   return'—';
 }
-
-// Cicla entre os estados de confirmação
-function toggleConfirmacao(ri){
-  const ag=pacientes[ri]?.agendamento;
-  if(!ag||ag.status!=='agendada')return;
-  const ciclo={pendente:'confirmado',confirmado:'nao-respondeu','nao-respondeu':'pendente'};
-  ag.confirmacao=ciclo[ag.confirmacao||'pendente']||'confirmado';
-  salvarDados();renderAll();
-}
-
-// Status badge (estado calculado)
 function getStatusBadge(p,ri,clickable=false){
   const ag=p.agendamento,dias=calcDias(p);
   let label='',color='';
@@ -557,68 +633,55 @@ function getStatusBadge(p,ri,clickable=false){
   else if(dias<0) {label=`Vencida (${Math.abs(dias)}d)`;color='red';}
   else if(dias<=7){label=`⚠️ Em ${dias}d`;color='yellow';}
   else            {label='✅ Em dia';color='green';}
-  const cl=clickable
-    ?`class="badge badge-${color} badge-clickable badge-status-click" onclick="abrirStatusMenu(event,${ri})"`
-    :`class="badge badge-${color}"`;
-  return `<span ${cl}>${label}</span>`;
+  const cl=clickable?`class="badge badge-${color} badge-clickable badge-status-click" onclick="abrirStatusMenu(event,${ri})"`:`class="badge badge-${color}"`;
+  return`<span ${cl}>${label}</span>`;
+}
+function perfilBadge(perfil){
+  const map={gerenciador:'perfil-ger',supervisor:'perfil-sup',secretaria:'perfil-sec'};
+  return`<span class="badge ${map[perfil]||'perfil-sec'}" style="font-size:11px;padding:1px 7px">${perfilLabel(perfil)}</span>`;
 }
 
-// ===================== DROPDOWNS DINÂMICOS =====================
-function populateSelects() {
+// ===================== DROPDOWNS =====================
+function populateSelects(){
   const unidades=config.unidades, secs=config.secretarias, profs=config.profissionais;
-
   ['filtro-unidade','filtro-alerta-unidade','dash-unidade'].forEach(id=>{
-    const el=document.getElementById(id); if(!el)return;
-    const val=el.value;
-    el.innerHTML='<option value="">Todas</option>'+unidades.map(u=>`<option ${val===u?'selected':''}>${u}</option>`).join('');
+    const el=document.getElementById(id);if(!el)return;
+    const v=el.value;
+    el.innerHTML='<option value="">Todas</option>'+unidades.map(u=>`<option ${v===u?'selected':''}>${u}</option>`).join('');
     if(id==='dash-unidade')el.querySelector('option').textContent='Todas as unidades';
   });
   const sf=document.getElementById('filtro-sec');
   if(sf){const v=sf.value;sf.innerHTML='<option value="">Todas</option>'+secs.map(s=>`<option value="${s.usuario}" ${v===s.usuario?'selected':''}>${s.nome}</option>`).join('');}
-
-  // Modal paciente
   const pu=document.getElementById('p-unidade');
   if(pu){const v=pu.value;pu.innerHTML='<option value="">Selecione a unidade</option>'+unidades.map(u=>`<option ${v===u?'selected':''}>${u}</option>`).join('');}
   const ps=document.getElementById('p-sec');
   if(ps){const v=ps.value;ps.innerHTML='<option value="">Selecione a secretaria</option>'+secs.map(s=>`<option value="${s.usuario}" ${v===s.usuario?'selected':''}>${s.nome}</option>`).join('');}
-
-  // Nova secretaria (config)
   const nsu=document.getElementById('nova-sec-unidade');
-  if(nsu){const v=nsu.value;nsu.innerHTML='<option value="">Selecione a unidade responsável...</option>'+unidades.map(u=>`<option ${v===u?'selected':''}>${u}</option>`).join('');}
-
-  // Profissional no modal Realizar
+  if(nsu){const v=nsu.value;nsu.innerHTML='<option value="">Selecione a unidade principal...</option>'+unidades.map(u=>`<option ${v===u?'selected':''}>${u}</option>`).join('');}
   const rp=document.getElementById('re-profissional');
   if(rp){const v=rp.value;rp.innerHTML='<option value="">Selecione (opcional)</option>'+profs.map(p=>`<option ${v===p?'selected':''}>${p}</option>`).join('');}
-
-  // Demo box no login
+  // Log usuario filter
+  const lu=document.getElementById('log-usuario');
+  if(lu){const v=lu.value;lu.innerHTML='<option value="">Todos</option><option value="gerenciador" '+(v==='gerenciador'?'selected':'')+'>Gerenciador</option>'+secs.map(s=>`<option value="${s.usuario}" ${v===s.usuario?'selected':''}>${s.nome}</option>`).join('');}
+  // Demo box
   const db=document.getElementById('demo-box');
   if(db)db.innerHTML=`<p><strong>Credenciais:</strong></p><p>Gerenciador: <span class="code">gerenciador / ****</span></p>`+
-    secs.map(s=>`<p>${s.nome} (${s.unidade||'sem unidade'}): <span class="code">${s.usuario} / ****</span></p>`).join('');
+    secs.map(s=>`<p>${s.nome} (${perfilLabel(s.perfil||'secretaria')} · ${s.unidade||'—'}): <span class="code">${s.usuario} / ****</span></p>`).join('');
 }
 
 function ajustarFiltros(){
-  const isGer=currentUser==='gerenciador';
-  const elems={
-    'dash-unidade-wrap':'block','dash-unidade-info':'none',
-    'pac-filtros-ger':'flex','pac-unidade-info':'none',
-    'alerta-filtros-ger':'flex','alerta-unidade-info':'none'
-  };
-  if(!isGer){
-    const u=secUnidade(currentUser);
-    const badge=`<span class="unit-badge-info">🏢 Unidade: ${u||'—'}</span>`;
-    ['dash-unidade-info','pac-unidade-info','alerta-unidade-info'].forEach(id=>{
-      const el=document.getElementById(id);if(el){el.style.display='block';el.innerHTML=badge;}
-    });
-    ['dash-unidade-wrap','pac-filtros-ger','alerta-filtros-ger'].forEach(id=>{
-      const el=document.getElementById(id);if(el)el.style.display='none';
-    });
-  }else{
-    ['dash-unidade-wrap'].forEach(id=>{const el=document.getElementById(id);if(el)el.style.display='';});
-    ['pac-filtros-ger','alerta-filtros-ger'].forEach(id=>{const el=document.getElementById(id);if(el)el.style.display='flex';});
-    ['dash-unidade-info','pac-unidade-info','alerta-unidade-info'].forEach(id=>{
-      const el=document.getElementById(id);if(el)el.style.display='none';
-    });
-  }
+  const perfil=getPerfil();
+  const isGerOuSup=perfil==='gerenciador'||perfil==='supervisor';
+  const badge=u=>`<span class="unit-badge-info">🏢 Unidade: ${u||'—'}</span>`;
+  ['dash-unidade-wrap','pac-filtros-ger','alerta-filtros-ger'].forEach(id=>{
+    const el=document.getElementById(id);if(el)el.style.display=isGerOuSup?'':'none';
+  });
+  ['dash-unidade-info','pac-unidade-info','alerta-unidade-info'].forEach(id=>{
+    const el=document.getElementById(id);
+    if(!el)return;
+    if(!isGerOuSup){el.style.display='block';el.innerHTML=badge(secUnidade(currentUser));}
+    else el.style.display='none';
+  });
 }
 
 // ===================== LOGIN =====================
@@ -628,14 +691,21 @@ function login(){
   const users=getUsers();
   if(users[u]&&users[u]===p){
     currentUser=u;
+    const perfil=getPerfil();
     document.getElementById('login-screen').style.display='none';
     document.getElementById('app-screen').style.display='block';
-    document.getElementById('user-label').textContent='👤 '+(u==='gerenciador'?'Gerenciador':secNome(u));
-    document.getElementById('tab-config-btn').style.display=u==='gerenciador'?'':'none';
-    ajustarFiltros(); populateSelects(); renderAll(); notify('Bem-vindo! 👋');
-  }else{document.getElementById('login-error').style.display='block';}
+    document.getElementById('user-label').innerHTML=
+      `👤 ${u==='gerenciador'?'Gerenciador':secNome(u)} ${perfilBadge(perfil)}`;
+    document.getElementById('tab-config-btn').style.display=podeVerConfig()?'':'none';
+    document.getElementById('tab-logs-btn').style.display=podeVerConfig()?'':'none';
+    registrarLog('login','Entrou no sistema');
+    ajustarFiltros();populateSelects();renderAll();notify('Bem-vindo! 👋');
+  }else{
+    document.getElementById('login-error').style.display='block';
+  }
 }
 function logout(){
+  registrarLog('logout','Saiu do sistema');
   document.getElementById('login-screen').style.display='flex';
   document.getElementById('app-screen').style.display='none';
   ['username','password'].forEach(id=>document.getElementById(id).value='');
@@ -647,11 +717,13 @@ document.getElementById('username').addEventListener('keydown',e=>{if(e.key==='E
 
 // ===================== TABS =====================
 function showTab(tab){
-  ['dashboard','pacientes','alertas','config'].forEach(t=>document.getElementById('tab-'+t).style.display=t===tab?'block':'none');
+  ['dashboard','pacientes','alertas','logs','config'].forEach(t=>
+    document.getElementById('tab-'+t).style.display=t===tab?'block':'none');
   document.querySelectorAll('.tab').forEach(el=>el.classList.remove('active'));
-  const idx={'dashboard':0,'pacientes':1,'alertas':2,'config':3};
+  const idx={dashboard:0,pacientes:1,alertas:2,logs:3,config:4};
   document.querySelectorAll('.tab')[idx[tab]]?.classList.add('active');
   if(tab==='config') renderConfig();
+  else if(tab==='logs'){populateSelects();renderLogs();}
   else renderAll();
 }
 
@@ -660,7 +732,7 @@ function renderAll(){ajustarFiltros();populateSelects();renderMetrics();renderDa
 
 function renderMetrics(){
   let lista=filtrarPorUsuario(pacientes);
-  if(currentUser==='gerenciador'){const u=document.getElementById('dash-unidade')?.value||'';if(u)lista=lista.filter(p=>p.unidade===u);}
+  if(getPerfil()!=='secretaria'){const u=document.getElementById('dash-unidade')?.value||'';if(u)lista=lista.filter(p=>p.unidade===u);}
   let total=lista.length,vencidas=0,proximas=0,agendadas=0,canceladas=0,noshows=0,emDia=0;
   lista.forEach(p=>{
     const ag=p.agendamento,dias=calcDias(p);
@@ -676,21 +748,20 @@ function renderMetrics(){
     <div class="metric"><div class="metric-label">No-shows</div><div class="metric-value orange">${noshows}</div></div>
     <div class="metric"><div class="metric-label">Próximas (7d)</div><div class="metric-value yellow">${proximas}</div></div>
     <div class="metric"><div class="metric-label">Agendadas</div><div class="metric-value blue">${agendadas}</div></div>
-    <div class="metric"><div class="metric-label">Em dia</div><div class="metric-value green">${emDia}</div></div>
-  `;
+    <div class="metric"><div class="metric-label">Em dia</div><div class="metric-value green">${emDia}</div></div>`;
 }
 
 function renderDashboard(){
   let lista=filtrarPorUsuario(pacientes);
-  if(currentUser==='gerenciador'){const u=document.getElementById('dash-unidade')?.value||'';if(u)lista=lista.filter(p=>p.unidade===u);}
+  if(getPerfil()!=='secretaria'){const u=document.getElementById('dash-unidade')?.value||'';if(u)lista=lista.filter(p=>p.unidade===u);}
   lista=sorted(lista).slice(0,20);
   const tb=document.getElementById('dashboard-table');
   if(!lista.length){tb.innerHTML='<tr><td colspan="6" class="no-data">Nenhum paciente encontrado.</td></tr>';return;}
   tb.innerHTML=lista.map(p=>{
     const ri=pacientes.indexOf(p);
-    const cvTag=p.convenio?`<span class="convenio-tag">${p.convenio}</span>`:'';
+    const cv=p.convenio?`<span class="convenio-tag">${p.convenio}</span>`:'';
     return`<tr>
-      <td><strong>${p.nome}</strong>${cvTag}<br><small style="color:var(--text2)">${p.tel}</small></td>
+      <td><strong>${p.nome}</strong>${cv}<br><small style="color:var(--text2)">${p.tel}</small></td>
       <td><span class="badge badge-unit">${p.unidade||'—'}</span></td>
       <td>${formatDate(p.ultimaReav)}</td>
       <td>${formatDate(calcProxima(p).toISOString().split('T')[0])}</td>
@@ -702,7 +773,7 @@ function renderDashboard(){
 
 function renderPacientes(){
   let lista=filtrarPorUsuario(pacientes);
-  if(currentUser==='gerenciador'){
+  if(getPerfil()!=='secretaria'){
     const unidade=document.getElementById('filtro-unidade')?.value||'';
     const sec=document.getElementById('filtro-sec')?.value||'';
     if(unidade)lista=lista.filter(p=>p.unidade===unidade);
@@ -711,14 +782,13 @@ function renderPacientes(){
   lista=sorted(lista);
   const tb=document.getElementById('pacientes-table');
   if(!lista.length){tb.innerHTML='<tr><td colspan="8" class="no-data">Nenhum paciente encontrado.</td></tr>';return;}
+  const wppSvg=`<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>`;
   tb.innerHTML=lista.map(p=>{
     const ri=pacientes.indexOf(p);
-    const wpp=p.tel?`<button class="btn btn-small btn-whatsapp" onclick="abrirWhatsApp('${p.tel}')" title="Abrir WhatsApp">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </button>`:'';
-    const convenioTag=p.convenio?`<span class="convenio-tag">${p.convenio}</span>`:'';
+    const cv=p.convenio?`<span class="convenio-tag">${p.convenio}</span>`:'';
+    const wpp=p.tel?`<button class="btn btn-small btn-whatsapp" onclick="abrirWhatsApp('${p.tel}')" title="WhatsApp">${wppSvg}</button>`:'';
     return`<tr>
-      <td><strong>${p.nome}</strong>${convenioTag}<br><small style="color:var(--text2)">${p.tel}</small></td>
+      <td><strong>${p.nome}</strong>${cv}<br><small style="color:var(--text2)">${p.tel}</small></td>
       <td><span class="badge badge-unit">${p.unidade||'—'}</span></td>
       <td>${secNome(p.sec)}</td>
       <td>${formatDate(p.ultimaReav)}</td>
@@ -726,7 +796,7 @@ function renderPacientes(){
       <td>${getAgBadge(p,ri)}</td>
       <td>${getStatusBadge(p,ri,true)}</td>
       <td><div class="actions">${wpp}
-        <button class="btn btn-small" onclick="abrirHistorico(${ri})" title="Ver histórico">📋</button>
+        <button class="btn btn-small" onclick="abrirHistorico(${ri})" title="Histórico">📋</button>
         <button class="btn btn-small" onclick="editarPaciente(${ri})">✏️</button>
         <button class="btn btn-small btn-red" onclick="excluirPaciente(${ri})">🗑</button>
       </div></td>
@@ -736,7 +806,7 @@ function renderPacientes(){
 
 function renderAlertas(){
   let base=filtrarPorUsuario(pacientes);
-  if(currentUser==='gerenciador'){const u=document.getElementById('filtro-alerta-unidade')?.value||'';if(u)base=base.filter(p=>p.unidade===u);}
+  if(getPerfil()!=='secretaria'){const u=document.getElementById('filtro-alerta-unidade')?.value||'';if(u)base=base.filter(p=>p.unidade===u);}
   const vencidos  =sorted(base.filter(p=>!p.agendamento&&calcDias(p)<0));
   const cancelados=sorted(base.filter(p=>p.agendamento?.status==='cancelada'));
   const noshows   =sorted(base.filter(p=>p.agendamento?.status==='noshow'));
@@ -747,10 +817,10 @@ function renderAlertas(){
     let b=`<button class="btn btn-small" onclick="abrirHistorico(${ri})" title="Histórico">📋</button>`;
     if(p.tel)b+=`<button class="btn btn-small btn-whatsapp" onclick="abrirWhatsApp('${p.tel}')">💬</button>`;
     if(tipo==='agendada'){
-      if(p.tel)b+=`<button class="btn btn-small" onclick="abrirMsgWA(${ri})" title="Enviar mensagem de agendamento">📨</button>`;
-      b+=`<button class="btn btn-small btn-green" onclick="abrirRealizar(${ri})">✅ Realizada</button>
-         <button class="btn btn-small btn-red" onclick="abrirCancelar(${ri})">❌ Cancelar</button>
-         <button class="btn btn-small btn-orange" onclick="abrirNoShow(${ri})">🚫 No-show</button>`;
+      if(p.tel)b+=`<button class="btn btn-small" onclick="abrirMsgWA(${ri})" title="Enviar mensagem">📨</button>`;
+      b+=`<button class="btn btn-small btn-green" onclick="abrirRealizar(${ri})">✅</button>
+         <button class="btn btn-small btn-red" onclick="abrirCancelar(${ri})">❌</button>
+         <button class="btn btn-small btn-orange" onclick="abrirNoShow(${ri})">🚫</button>`;
     }else{
       b+=`<button class="btn btn-small btn-blue" onclick="abrirAgendar(${ri})">📅 ${tipo==='cancelada'||tipo==='noshow'?'Reagendar':'Agendar'}</button>`;
     }
@@ -780,41 +850,70 @@ function renderAlertas(){
   renderL(agendados, 'lista-agendados', 'agendada');
 }
 
+// ===================== LOGS RENDER =====================
+function renderLogs(){
+  const periodo=document.getElementById('log-periodo')?.value||'7';
+  const usuario=document.getElementById('log-usuario')?.value||'';
+  const tipo   =document.getElementById('log-tipo')?.value||'';
+  const agora=new Date();
+  let filtrados=logs.filter(l=>{
+    if(usuario&&l.user!==usuario)return false;
+    if(tipo&&LOG_GRUPOS[l.action]!==tipo)return false;
+    if(periodo==='all')return true;
+    const dias=parseInt(periodo);
+    const d=new Date(l.ts);
+    if(dias===0){return d.toDateString()===agora.toDateString();}
+    return(agora-d)<=dias*86400000;
+  });
+  const el=document.getElementById('logs-container');
+  if(!filtrados.length){el.innerHTML='<p class="log-empty">Nenhum log encontrado para os filtros selecionados.</p>';return;}
+  el.innerHTML=filtrados.map(l=>{
+    const icon=LOG_ICONS[l.action]||'📝';
+    const pf=perfilBadge(l.perfil||'secretaria');
+    const nome=l.user==='gerenciador'?'Gerenciador':secNome(l.user)||cap(l.user);
+    return`<div class="log-row">
+      <div class="log-icon">${icon}</div>
+      <div class="log-body">
+        <span class="log-desc">${l.desc}</span>
+        <span class="log-meta">${formatDateTime(l.ts)} · <strong>${nome}</strong> ${pf}${l.paciente?' · '+l.paciente:''}</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+function limparLogs(){
+  if(!confirm('Limpar TODOS os logs do sistema? Esta ação não pode ser desfeita.'))return;
+  logs=[];salvarLogs();renderLogs();notify('Logs limpos.');
+}
+
 // ===================== CONFIGURAÇÕES =====================
 function renderConfig(){
-  // Unidades
   const ul=document.getElementById('config-unidades-list');
   ul.innerHTML=config.unidades.length?config.unidades.map((u,i)=>{
     const cp=pacientes.filter(p=>p.unidade===u).length;
     const cs=config.secretarias.filter(s=>s.unidade===u).length;
     return`<div class="config-item">
       <div class="config-item-info"><span>${u}</span><small>${cp} paciente${cp!==1?'s':''} · ${cs} secretaria${cs!==1?'s':''}</small></div>
-      <button class="btn btn-small btn-red" onclick="removerUnidade(${i})">✕</button>
-    </div>`;
-  }).join(''):'<p class="no-data" style="padding:1rem">Nenhuma unidade cadastrada.</p>';
+      <button class="btn btn-small btn-red" onclick="removerUnidade(${i})">✕</button></div>`;
+  }).join(''):'<p class="no-data" style="padding:1rem">Nenhuma unidade.</p>';
 
-  // Secretarias
   const sl=document.getElementById('config-secretarias-list');
   sl.innerHTML=config.secretarias.length?config.secretarias.map((s,i)=>{
     const count=pacientes.filter(p=>p.sec===s.usuario).length;
     return`<div class="config-item">
       <div class="config-item-info">
-        <span><strong>${s.nome}</strong> <span style="color:var(--text2);font-size:12px">@${s.usuario}</span></span>
-        <small>${s.unidade||'<em>sem unidade</em>'} · ${count} paciente${count!==1?'s':''}</small>
+        <span><strong>${s.nome}</strong> ${perfilBadge(s.perfil||'secretaria')} <span style="color:var(--text2);font-size:12px">@${s.usuario}</span></span>
+        <small>${s.unidade||'sem unidade'} · ${count} paciente${count!==1?'s':''}</small>
       </div>
-      <button class="btn btn-small btn-red" onclick="removerSecretaria(${i})">✕</button>
-    </div>`;
-  }).join(''):'<p class="no-data" style="padding:1rem">Nenhuma secretaria cadastrada.</p>';
+      <button class="btn btn-small btn-red" onclick="removerSecretaria(${i})">✕</button></div>`;
+  }).join(''):'<p class="no-data" style="padding:1rem">Nenhuma secretaria.</p>';
 
-  // Profissionais
   const pl=document.getElementById('config-profissionais-list');
   pl.innerHTML=config.profissionais.length?config.profissionais.map((p,i)=>{
     const count=(()=>{let c=0;pacientes.forEach(pac=>{(pac.historico||[]).forEach(h=>{if(h.profissional===p)c++;});});return c;})();
     return`<div class="config-item">
-      <div class="config-item-info"><span>${p}</span><small>${count} reavaliação${count!==1?'s':''} registrada${count!==1?'s':''}</small></div>
-      <button class="btn btn-small btn-red" onclick="removerProfissional(${i})">✕</button>
-    </div>`;
-  }).join(''):'<p class="no-data" style="padding:1rem">Nenhum profissional cadastrado.</p>';
+      <div class="config-item-info"><span>${p}</span><small>${count} reavaliação${count!==1?'s':''}</small></div>
+      <button class="btn btn-small btn-red" onclick="removerProfissional(${i})">✕</button></div>`;
+  }).join(''):'<p class="no-data" style="padding:1rem">Nenhum profissional.</p>';
 }
 
 function adicionarUnidade(){
@@ -822,82 +921,75 @@ function adicionarUnidade(){
   const nome=input.value.trim();
   if(!nome){alert('Digite o nome da unidade.');return;}
   if(config.unidades.includes(nome)){alert('Essa unidade já existe.');return;}
-  config.unidades.push(nome);
-  salvarConfig(); input.value=''; renderConfig(); populateSelects();
-  notify('Unidade adicionada! 🏢');
+  config.unidades.push(nome);salvarConfig();input.value='';
+  renderConfig();populateSelects();
+  registrarLog('config',`Adicionou unidade: ${nome}`);notify('Unidade adicionada! 🏢');
 }
 function removerUnidade(i){
   const u=config.unidades[i];
-  const cp=pacientes.filter(p=>p.unidade===u).length;
-  const cs=config.secretarias.filter(s=>s.unidade===u).length;
-  let msg=`Deseja remover a unidade "${u}"?`;
-  if(cp>0||cs>0) msg=`A unidade "${u}" possui:\n• ${cp} paciente(s)\n• ${cs} secretaria(s)\n\nEsses registros ficarão sem unidade. Continuar?`;
+  const cp=pacientes.filter(p=>p.unidade===u).length,cs=config.secretarias.filter(s=>s.unidade===u).length;
+  const msg=cp>0||cs>0?`A unidade "${u}" possui ${cp} paciente(s) e ${cs} secretaria(s).\nAo remover, ficarão sem unidade. Continuar?`:`Remover "${u}"?`;
   if(!confirm(msg))return;
   pacientes.forEach(p=>{if(p.unidade===u)p.unidade='';});
   config.secretarias.forEach(s=>{if(s.unidade===u)s.unidade='';});
-  salvarDados(); config.unidades.splice(i,1);
-  salvarConfig(); renderConfig(); populateSelects(); notify('Unidade removida.');
+  salvarDados();config.unidades.splice(i,1);salvarConfig();
+  renderConfig();populateSelects();
+  registrarLog('config',`Removeu unidade: ${u}`);notify('Unidade removida.');
 }
-
 function adicionarSecretaria(){
   const nome   =document.getElementById('nova-sec-nome').value.trim();
   const usuario=document.getElementById('nova-sec-usuario').value.trim().toLowerCase();
   const senha  =document.getElementById('nova-sec-senha').value;
+  const perfil =document.getElementById('nova-sec-perfil').value||'secretaria';
   const unidade=document.getElementById('nova-sec-unidade').value;
   if(!nome||!usuario||!senha){alert('Preencha nome, usuário e senha.');return;}
-  if(!unidade){alert('Selecione a unidade responsável.');return;}
+  if(perfil==='secretaria'&&!unidade){alert('Selecione a unidade responsável para o perfil Secretaria.');return;}
   if(usuario==='gerenciador'){alert('Usuário reservado.');return;}
   if(config.secretarias.find(s=>s.usuario===usuario)){alert('Esse usuário já existe.');return;}
-  config.secretarias.push({nome,usuario,senha,unidade});
-  salvarConfig();
+  config.secretarias.push({nome,usuario,senha,unidade,perfil});salvarConfig();
   ['nova-sec-nome','nova-sec-usuario','nova-sec-senha'].forEach(id=>document.getElementById(id).value='');
   document.getElementById('nova-sec-unidade').value='';
-  renderConfig(); populateSelects(); notify('Secretaria adicionada! 👤');
+  renderConfig();populateSelects();
+  registrarLog('config',`Adicionou secretaria: ${nome} (${perfilLabel(perfil)})`);notify('Secretaria adicionada! 👤');
 }
 function removerSecretaria(i){
   const s=config.secretarias[i];
   const count=pacientes.filter(p=>p.sec===s.usuario).length;
-  const msg=count>0
-    ?`"${s.nome}" tem ${count} paciente(s). Ao remover, ficarão sem secretaria. Continuar?`
-    :`Remover a secretaria "${s.nome}"?`;
+  const msg=count>0?`"${s.nome}" tem ${count} paciente(s). Ao remover, ficarão sem secretaria. Continuar?`:`Remover "${s.nome}"?`;
   if(!confirm(msg))return;
   if(count>0){pacientes.forEach(p=>{if(p.sec===s.usuario)p.sec='';});salvarDados();}
-  config.secretarias.splice(i,1);
-  salvarConfig(); renderConfig(); populateSelects(); notify('Secretaria removida.');
+  config.secretarias.splice(i,1);salvarConfig();renderConfig();populateSelects();
+  registrarLog('config',`Removeu secretaria: ${s.nome}`);notify('Secretaria removida.');
 }
-
 function adicionarProfissional(){
   const input=document.getElementById('novo-prof');
   const nome=input.value.trim();
-  if(!nome){alert('Digite o nome do profissional.');return;}
-  if(config.profissionais.includes(nome)){alert('Esse profissional já está cadastrado.');return;}
-  config.profissionais.push(nome);
-  salvarConfig(); input.value=''; renderConfig(); populateSelects();
-  notify('Profissional adicionado! 🩺');
+  if(!nome){alert('Digite o nome.');return;}
+  if(config.profissionais.includes(nome)){alert('Já cadastrado.');return;}
+  config.profissionais.push(nome);salvarConfig();input.value='';
+  renderConfig();populateSelects();
+  registrarLog('config',`Adicionou profissional: ${nome}`);notify('Profissional adicionado! 🩺');
 }
 function removerProfissional(i){
   const nome=config.profissionais[i];
-  if(!confirm(`Remover o profissional "${nome}"?`))return;
-  config.profissionais.splice(i,1);
-  salvarConfig(); renderConfig(); populateSelects(); notify('Profissional removido.');
+  if(!confirm(`Remover "${nome}"?`))return;
+  config.profissionais.splice(i,1);salvarConfig();renderConfig();populateSelects();
+  registrarLog('config',`Removeu profissional: ${nome}`);notify('Profissional removido.');
 }
-
 function alterarSenhaGerenciador(){
   const nova=document.getElementById('nova-senha-ger').value;
   const conf=document.getElementById('confirma-senha-ger').value;
   if(!nova){alert('Digite a nova senha.');return;}
   if(nova!==conf){alert('As senhas não coincidem.');return;}
-  if(nova.length<4){alert('A senha deve ter pelo menos 4 caracteres.');return;}
-  config.senhagerenciador=nova;
-  salvarConfig();
-  document.getElementById('nova-senha-ger').value='';
-  document.getElementById('confirma-senha-ger').value='';
-  notify('Senha do gerenciador alterada! 🔐');
+  if(nova.length<4){alert('Mínimo 4 caracteres.');return;}
+  config.senhagerenciador=nova;salvarConfig();
+  document.getElementById('nova-senha-ger').value='';document.getElementById('confirma-senha-ger').value='';
+  registrarLog('config','Alterou senha do gerenciador');notify('Senha alterada! 🔐');
 }
 
-// ===================== STATUS MENU (4 opções fixas) =====================
+// ===================== STATUS MENU =====================
 function abrirStatusMenu(event,ri){
-  event.stopPropagation(); fecharStatusMenu();
+  event.stopPropagation();fecharStatusMenu();
   const p=pacientes[ri],ag=p.agendamento;
   const menu=document.getElementById('status-menu');
   let html=`<div class="status-menu-header">Alterar status</div>`;
@@ -909,15 +1001,14 @@ function abrirStatusMenu(event,ri){
   if(ag?.status==='agendada'){
     html+=`<div class="status-menu-divider"></div>`;
     const conf=ag.confirmacao||'pendente';
-    const proxConf={pendente:'confirmado',confirmado:'nao-respondeu','nao-respondeu':'pendente'};
+    const prox={pendente:'confirmado',confirmado:'nao-respondeu','nao-respondeu':'pendente'};
     const confLabel={pendente:'⏳ Aguardando',confirmado:'✅ Confirmado','nao-respondeu':'📵 Não respondeu'};
-    const proximo=confLabel[proxConf[conf]];
-    html+=`<div class="status-menu-item" onclick="toggleConfirmacao(${ri});fecharStatusMenu()">🔄 Marcar como: ${proximo}</div>`;
+    html+=`<div class="status-menu-item" onclick="toggleConfirmacao(${ri});fecharStatusMenu()">🔄 Marcar: ${confLabel[prox[conf]]}</div>`;
     if(p.tel)html+=`<div class="status-menu-item wapp" onclick="abrirMsgWA(${ri});fecharStatusMenu()">💬 Enviar confirmação por WhatsApp</div>`;
   }
   menu.innerHTML=html;
   const rect=event.target.getBoundingClientRect();
-  const mw=240,mh=200;
+  const mw=250,mh=220;
   let top=rect.bottom+window.scrollY+4,left=rect.left+window.scrollX;
   if(left+mw>window.innerWidth)left=window.innerWidth-mw-8;
   if(top+mh>window.scrollY+window.innerHeight)top=rect.top+window.scrollY-mh-4;
@@ -925,6 +1016,18 @@ function abrirStatusMenu(event,ri){
 }
 function fecharStatusMenu(){document.getElementById('status-menu').style.display='none';}
 document.addEventListener('click',fecharStatusMenu);
+
+// ===================== CONFIRMAÇÃO =====================
+function toggleConfirmacao(ri){
+  const ag=pacientes[ri]?.agendamento;
+  if(!ag||ag.status!=='agendada')return;
+  const ciclo={pendente:'confirmado',confirmado:'nao-respondeu','nao-respondeu':'pendente'};
+  const label={pendente:'⏳ Aguardando',confirmado:'✅ Confirmado','nao-respondeu':'📵 Não respondeu'};
+  ag.confirmacao=ciclo[ag.confirmacao||'pendente'];
+  salvarDados();
+  registrarLog('confirmacao',`Alterou confirmação de ${pacientes[ri].nome} para: ${label[ag.confirmacao]}`,pacientes[ri].nome);
+  renderAll();
+}
 
 // ===================== PACIENTES CRUD =====================
 function abrirModalPaciente(){
@@ -934,7 +1037,7 @@ function abrirModalPaciente(){
   document.getElementById('p-data').value=new Date().toISOString().split('T')[0];
   document.getElementById('p-intervalo').value='3';
   populateSelects();
-  if(currentUser!=='gerenciador'){
+  if(getPerfil()==='secretaria'){
     const u=secUnidade(currentUser);
     if(u)document.getElementById('p-unidade').value=u;
     document.getElementById('p-sec').value=currentUser;
@@ -945,7 +1048,7 @@ function abrirModalPaciente(){
   document.getElementById('modal-paciente').style.display='flex';
 }
 function editarPaciente(i){
-  editIndex=i; const p=pacientes[i];
+  editIndex=i;const p=pacientes[i];
   document.getElementById('modal-titulo').textContent='Editar Paciente';
   document.getElementById('p-nome').value=p.nome;
   document.getElementById('p-tel').value=p.tel;
@@ -965,18 +1068,28 @@ function salvarPaciente(){
   if(!nome){alert('Digite o nome do paciente.');return;}
   if(!unidade){alert('Selecione a unidade.');return;}
   if(!sec){alert('Selecione a secretaria responsável.');return;}
-  const p={nome,tel:document.getElementById('p-tel').value.trim(),email:document.getElementById('p-email').value.trim(),
+  const p={nome,tel:document.getElementById('p-tel').value.trim(),
+    email:document.getElementById('p-email').value.trim(),
     convenio:document.getElementById('p-convenio').value.trim(),
-    unidade,sec,ultimaReav:document.getElementById('p-data').value,intervalo:document.getElementById('p-intervalo').value,
+    unidade,sec,ultimaReav:document.getElementById('p-data').value,
+    intervalo:document.getElementById('p-intervalo').value,
     agendamento:editIndex>=0?pacientes[editIndex].agendamento:null,
     historico:editIndex>=0?pacientes[editIndex].historico:[],
   };
-  if(editIndex>=0){pacientes[editIndex]=p;notify('Paciente atualizado! ✅');}
-  else{pacientes.push(p);notify('Paciente cadastrado! ✅');}
+  if(editIndex>=0){
+    pacientes[editIndex]=p;
+    registrarLog('paciente_editado',`Editou cadastro de ${nome}`,nome);
+    notify('Paciente atualizado! ✅');
+  }else{
+    pacientes.push(p);
+    registrarLog('paciente_criado',`Cadastrou ${nome} (${unidade})`,nome);
+    notify('Paciente cadastrado! ✅');
+  }
   salvarDados();document.getElementById('modal-paciente').style.display='none';renderAll();
 }
 function excluirPaciente(i){
   if(!confirm('Excluir '+pacientes[i].nome+'?'))return;
+  registrarLog('paciente_excluido',`Excluiu cadastro de ${pacientes[i].nome}`,pacientes[i].nome);
   pacientes.splice(i,1);salvarDados();renderAll();notify('Paciente removido.');
 }
 
@@ -986,26 +1099,23 @@ function abrirAgendar(i){
   document.getElementById('ag-nome').textContent=pacientes[i].nome;
   const ag=pacientes[i].agendamento;
   const proxima=calcProxima(pacientes[i]),hoje=new Date().toISOString().split('T')[0];
-  // Se já tem data agendada, pré-preenche com ela; caso contrário, usa a próxima prevista
-  const dataInicial=ag?.status==='agendada'&&ag.data ? ag.data
-    : (proxima.toISOString().split('T')[0]>hoje?proxima.toISOString().split('T')[0]:hoje);
+  const dataInicial=ag?.status==='agendada'&&ag.data?ag.data
+    :(proxima.toISOString().split('T')[0]>hoje?proxima.toISOString().split('T')[0]:hoje);
   document.getElementById('ag-data').value=dataInicial;
   document.getElementById('ag-obs').value=ag?.obs||'';
   document.getElementById('modal-agendar').style.display='flex';
 }
-function confirmarAgendamento(){
+function _salvarAgendamento(){
   const data=document.getElementById('ag-data').value;
-  if(!data){alert('Selecione a data.');return;}
-  pacientes[agendarIndex].agendamento={data,status:'agendada',obs:document.getElementById('ag-obs').value.trim()};
-  salvarDados();document.getElementById('modal-agendar').style.display='none';renderAll();notify('Reavaliação agendada! 📅');
+  if(!data){alert('Selecione a data.');return false;}
+  pacientes[agendarIndex].agendamento={data,status:'agendada',obs:document.getElementById('ag-obs').value.trim(),confirmacao:'pendente'};
+  salvarDados();
+  registrarLog('agendamento',`Agendou ${pacientes[agendarIndex].nome} para ${formatDate(data)}`,pacientes[agendarIndex].nome);
+  document.getElementById('modal-agendar').style.display='none';renderAll();
+  return true;
 }
-function confirmarAgendamentoEWhatsApp(){
-  const data=document.getElementById('ag-data').value;
-  if(!data){alert('Selecione a data.');return;}
-  pacientes[agendarIndex].agendamento={data,status:'agendada',obs:document.getElementById('ag-obs').value.trim()};
-  salvarDados();document.getElementById('modal-agendar').style.display='none';renderAll();notify('Reavaliação agendada! 📅');
-  abrirMsgWA(agendarIndex);
-}
+function confirmarAgendamento(){if(_salvarAgendamento())notify('Reavaliação agendada! 📅');}
+function confirmarAgendamentoEWhatsApp(){if(_salvarAgendamento()){notify('Reavaliação agendada! 📅');abrirMsgWA(agendarIndex);}}
 
 // ===================== REALIZAR =====================
 function abrirRealizar(i){
@@ -1013,8 +1123,7 @@ function abrirRealizar(i){
   document.getElementById('re-nome').textContent=pacientes[i].nome;
   document.getElementById('re-data').value=pacientes[i].agendamento?.data||new Date().toISOString().split('T')[0];
   document.getElementById('re-obs').value='';
-  populateSelects();
-  document.getElementById('re-profissional').value='';
+  populateSelects();document.getElementById('re-profissional').value='';
   document.getElementById('modal-realizar').style.display='flex';
 }
 function marcarRealizada(){
@@ -1026,8 +1135,9 @@ function marcarRealizada(){
   p.historico=p.historico||[];
   p.historico.unshift({data,tipo:'realizada',profissional,obs});
   p.ultimaReav=data;p.agendamento=null;
-  salvarDados();document.getElementById('modal-realizar').style.display='none';renderAll();
-  notify('Reavaliação confirmada! ✅'+(profissional?` · ${profissional}`:''));
+  salvarDados();document.getElementById('modal-realizar').style.display='none';
+  registrarLog('realizado',`Marcou reavaliação de ${p.nome} como realizada${profissional?' ('+profissional+')':''}`,p.nome);
+  renderAll();notify('Reavaliação confirmada! ✅'+(profissional?` · ${profissional}`:''));
 }
 
 // ===================== CANCELAR =====================
@@ -1051,10 +1161,12 @@ function confirmarCancelamento(){
   const reagendar=document.getElementById('ca-reagendar').value;
   const novaData=document.getElementById('ca-nova-data').value;
   if(reagendar==='sim'&&novaData){
-    p.agendamento={data:novaData,status:'agendada',obs:'Reagendado após cancelamento'};
+    p.agendamento={data:novaData,status:'agendada',obs:'Reagendado após cancelamento',confirmacao:'pendente'};
+    registrarLog('cancelamento',`Cancelou e reagendou ${p.nome} — motivo: ${motivo}`,p.nome);
     notify('Cancelamento registrado e reagendado! 📅');
   }else{
     p.agendamento={...p.agendamento,status:'cancelada',motivo};
+    registrarLog('cancelamento',`Cancelou agendamento de ${p.nome} — motivo: ${motivo}`,p.nome);
     notify('Cancelamento registrado. ❌');
   }
   salvarDados();document.getElementById('modal-cancelar').style.display='none';renderAll();
@@ -1072,7 +1184,9 @@ function confirmarNoShow(){
   p.historico=p.historico||[];
   p.historico.unshift({data:new Date().toISOString().split('T')[0],tipo:'noshow',obs});
   p.agendamento={...p.agendamento,status:'noshow',obs};
-  salvarDados();document.getElementById('modal-noshow').style.display='none';renderAll();notify('No-show registrado. 🚫');
+  salvarDados();document.getElementById('modal-noshow').style.display='none';
+  registrarLog('noshow',`Registrou no-show de ${p.nome}${obs?' · '+obs:''}`,p.nome);
+  renderAll();notify('No-show registrado. 🚫');
 }
 
 // ===================== HISTÓRICO =====================
@@ -1108,32 +1222,15 @@ function abrirHistorico(ri){
 }
 
 // ===================== WHATSAPP =====================
-function numWA(tel){
-  let n=tel.replace(/\D/g,'');
-  if(n.startsWith('0'))n=n.substring(1);
-  if(!n.startsWith('55'))n='55'+n;
-  return n;
-}
-function abrirWhatsApp(tel){ window.open('https://wa.me/'+numWA(tel),'_blank'); }
-
+function numWA(tel){let n=tel.replace(/\D/g,'');if(n.startsWith('0'))n=n.substring(1);if(!n.startsWith('55'))n='55'+n;return n;}
+function abrirWhatsApp(tel){window.open('https://wa.me/'+numWA(tel),'_blank');}
 function abrirMsgWA(i){
   const p=pacientes[i];
   if(!p.tel){alert('Paciente sem telefone cadastrado.');return;}
   const ag=p.agendamento;
   const data=ag?.status==='agendada'&&ag.data?formatDate(ag.data):'(data não definida)';
-  const unidade=p.unidade||'ILLIC';
-  const msg=
-`Olá, ${p.nome}! 😊
-
-A Clínica ILLIC – ${unidade} está entrando em contato para confirmar sua reavaliação agendada para *${data}*.
-
-Por favor, confirme sua presença respondendo *"Confirmado"* ✅
-
-Caso precise remarcar, entre em contato conosco com antecedência.
-
-Até logo! 🏥 ILLIC Fisioterapia`;
-  _wamTel=numWA(p.tel);
-  _wamMsg=msg;
+  const msg=`Olá, ${p.nome}! 😊\n\nA Clínica ILLIC – ${p.unidade||'ILLIC'} está entrando em contato para confirmar sua reavaliação agendada para *${data}*.\n\nPor favor, confirme sua presença respondendo *"Confirmado"* ✅\n\nCaso precise remarcar, entre em contato com antecedência.\n\nAté logo! 🏥 ILLIC Fisioterapia`;
+  _wamTel=numWA(p.tel);_wamMsg=msg;
   document.getElementById('wam-nome').textContent=p.nome;
   document.getElementById('wam-tel').textContent=p.tel;
   document.getElementById('wam-texto').textContent=msg;
@@ -1141,14 +1238,10 @@ Até logo! 🏥 ILLIC Fisioterapia`;
 }
 function copiarMsgWA(){
   navigator.clipboard.writeText(_wamMsg).then(()=>notify('Texto copiado! 📋')).catch(()=>{
-    // Fallback
     const ta=document.createElement('textarea');ta.value=_wamMsg;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);notify('Texto copiado! 📋');
   });
 }
-function abrirWhatsAppComMsg(){
-  window.open(`https://wa.me/${_wamTel}?text=${encodeURIComponent(_wamMsg)}`,'_blank');
-  document.getElementById('modal-wamsg').style.display='none';
-}
+function abrirWhatsAppComMsg(){window.open(`https://wa.me/${_wamTel}?text=${encodeURIComponent(_wamMsg)}`,'_blank');document.getElementById('modal-wamsg').style.display='none';}
 
 // ===================== UTILS =====================
 function fecharModal(e){if(e.target===e.currentTarget)e.currentTarget.style.display='none';}
@@ -1157,8 +1250,6 @@ function notify(msg){
   el.textContent=msg;el.classList.add('show');
   setTimeout(()=>el.classList.remove('show'),3500);
 }
-
-// Inicializa demo box
 populateSelects();
 </script>
 </body>
