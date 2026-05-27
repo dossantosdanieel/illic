@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>illic — Sistema de Reavaliações</title>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <style>
     :root{
       --bg:#f5f5f5;--card:#fff;--text:#1a1a1a;--text2:#666;--border:#e0e0e0;--radius:10px;
@@ -189,12 +190,24 @@
       .content{padding:1rem;}.actions{flex-direction:column;}
       .metrics{grid-template-columns:repeat(2,1fr);}
     }
+
+    /* LOADING */
+    #loading-screen{position:fixed;inset:0;background:var(--bg);z-index:9999;flex-direction:column;align-items:center;justify-content:center;gap:1rem;}
+    .spinner{width:36px;height:36px;border:3px solid var(--border);border-top-color:var(--text);border-radius:50%;animation:spin .8s linear infinite;}
+    @keyframes spin{to{transform:rotate(360deg);}}
   </style>
 </head>
 <body>
 
+<!-- LOADING -->
+<div id="loading-screen" style="display:flex">
+  <img src="logo.png" style="height:52px" onerror="this.style.display='none'">
+  <p style="color:var(--text2);font-size:14px" id="loading-msg">Carregando sistema...</p>
+  <div class="spinner"></div>
+</div>
+
 <!-- LOGIN -->
-<div id="login-screen">
+<div id="login-screen" style="display:none">
   <div class="login-box">
     <div class="login-header">
       <img src="logo.png" class="logo-img-lg" alt="illic"
@@ -423,17 +436,14 @@
         <option value="3" selected>3 meses</option><option value="6">6 meses</option><option value="12">12 meses</option>
       </select>
     </div>
-    <!-- RESPONSÁVEL (visível somente para menores) -->
     <div class="responsavel-section" id="responsavel-section" style="display:none">
       <h4>👪 Dados do Responsável Legal</h4>
       <div class="form-group"><label>Nome do responsável <span style="color:var(--red)">*</span></label><input type="text" id="p-resp-nome" placeholder="Nome completo"></div>
       <div class="form-group"><label>Telefone do responsável</label><input type="tel" id="p-resp-tel" placeholder="(11) 99999-9999"></div>
       <div class="form-group"><label>Parentesco</label>
         <select id="p-resp-parentesco">
-          <option value="mae">Mãe</option>
-          <option value="pai">Pai</option>
-          <option value="avo">Avô / Avó</option>
-          <option value="outro">Outro responsável</option>
+          <option value="mae">Mãe</option><option value="pai">Pai</option>
+          <option value="avo">Avô / Avó</option><option value="outro">Outro responsável</option>
         </select>
       </div>
     </div>
@@ -547,105 +557,89 @@
 <div class="notification" id="notification"></div>
 
 <script>
-// ===================== CONFIG =====================
-let config = JSON.parse(localStorage.getItem('illic_config') || 'null') || {
-  unidades: ['Jardim Ricetti','Damha','Faber','Descalvado','Mogi Guaçu'],
-  secretarias: [
-    {nome:'Maria',  usuario:'maria',  senha:'1234', unidade:'Jardim Ricetti', perfil:'secretaria'},
-    {nome:'Ana',    usuario:'ana',    senha:'1234', unidade:'Damha',          perfil:'secretaria'},
-    {nome:'Teste',  usuario:'teste',  senha:'1234', unidade:'Jardim Ricetti', perfil:'supervisor'}
-  ],
-  profissionais: ['Dr. Carlos','Dra. Fernanda'],
-  senhagerenciador: '1234'
-};
-// Migrações
-config.secretarias.forEach(s=>{
-  if(!s.unidade) s.unidade='';
-  if(!s.perfil)  s.perfil='secretaria';
-});
-if(!config.profissionais) config.profissionais=[];
+// ===================== SUPABASE =====================
+const SURL='https://paaufbmzzoijoqikjpfw.supabase.co';
+const SKEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBhYXVmYm16em9pam9xaWtqcGZ3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk4OTM5ODksImV4cCI6MjA5NTQ2OTk4OX0.CjVRo0xkiY3-922JrBE4UNI7g5XBRuo69kpBeQMW6yI';
+const db=supabase.createClient(SURL,SKEY);
 
-function salvarConfig(){ localStorage.setItem('illic_config',JSON.stringify(config)); }
-function getUsers(){
-  const u={gerenciador:config.senhagerenciador};
-  config.secretarias.forEach(s=>u[s.usuario]=s.senha);
-  return u;
+// ===================== DADOS EM MEMÓRIA =====================
+let config={unidades:[],secretarias:[],profissionais:[],senhagerenciador:'1234'};
+let pacientes=[];
+let logs=[];
+let currentUser='';
+let editIndex=-1,agendarIndex=-1,realizarIndex=-1,cancelarIndex=-1,noshowIndex=-1;
+let _wamTel='',_wamMsg='';
+
+// ===================== DB HELPERS =====================
+function toDBRow(p){
+  return{
+    nome:p.nome||'',tel:p.tel||'',email:p.email||'',
+    convenio:p.convenio||'',sec:p.sec||'',unidade:p.unidade||'',
+    ultima_reav:p.ultimaReav||'',intervalo:parseInt(p.intervalo)||3,
+    data_nascimento:p.dataNascimento||'',
+    responsavel:p.responsavel||null,
+    agendamento:p.agendamento||null,
+    historico:p.historico||[]
+  };
+}
+async function salvarConfig(){
+  const{error}=await db.from('illic_config').upsert({
+    id:1,unidades:config.unidades,
+    profissionais:config.profissionais,
+    senhagerenciador:config.senhagerenciador
+  });
+  if(error){console.error('Config save error:',error);notify('Erro ao salvar configuração ⚠️');}
+}
+async function salvarDados(p){
+  if(!p)return;
+  if(!p._id){
+    const{data,error}=await db.from('illic_pacientes').insert(toDBRow(p)).select('id').single();
+    if(data)p._id=data.id;
+    if(error){console.error('Insert paciente error:',error);notify('Erro ao salvar paciente ⚠️');}
+  }else{
+    const{error}=await db.from('illic_pacientes').update(toDBRow(p)).eq('id',p._id);
+    if(error){console.error('Update paciente error:',error);notify('Erro ao salvar paciente ⚠️');}
+  }
+}
+async function deletarPaciente(id){
+  if(!id)return;
+  const{error}=await db.from('illic_pacientes').delete().eq('id',id);
+  if(error)console.error('Delete paciente error:',error);
 }
 
 // ===================== LOGS =====================
-let logs = JSON.parse(localStorage.getItem('illic_logs')||'[]');
-function salvarLogs(){ localStorage.setItem('illic_logs',JSON.stringify(logs)); }
-
-const LOG_ICONS = {
-  login:'🔑', logout:'🚪',
-  paciente_criado:'➕', paciente_editado:'✏️', paciente_excluido:'🗑️',
-  agendamento:'📅', realizado:'✅', cancelamento:'❌', noshow:'🚫',
-  confirmacao:'🔄', config:'⚙️'
+const LOG_ICONS={
+  login:'🔑',logout:'🚪',
+  paciente_criado:'➕',paciente_editado:'✏️',paciente_excluido:'🗑️',
+  agendamento:'📅',realizado:'✅',cancelamento:'❌',noshow:'🚫',
+  confirmacao:'🔄',config:'⚙️'
 };
-const LOG_GRUPOS = {
-  login:'login', logout:'login',
-  paciente_criado:'paciente', paciente_editado:'paciente', paciente_excluido:'paciente',
-  agendamento:'agenda', realizado:'agenda', cancelamento:'agenda', noshow:'agenda', confirmacao:'agenda',
+const LOG_GRUPOS={
+  login:'login',logout:'login',
+  paciente_criado:'paciente',paciente_editado:'paciente',paciente_excluido:'paciente',
+  agendamento:'agenda',realizado:'agenda',cancelamento:'agenda',noshow:'agenda',confirmacao:'agenda',
   config:'config'
 };
-
-function registrarLog(action, desc, paciente=''){
-  if(!currentUser) return;
-  logs.unshift({
-    ts: new Date().toISOString(),
-    user: currentUser,
-    perfil: getPerfil(),
-    action, desc, paciente
-  });
-  if(logs.length>1000) logs=logs.slice(0,1000);
-  salvarLogs();
+function registrarLog(action,desc,paciente=''){
+  if(!currentUser)return;
+  const perfil=getPerfil();
+  const entry={ts:new Date().toISOString(),user:currentUser,perfil,action,desc,paciente};
+  logs.unshift(entry);
+  if(logs.length>1000)logs=logs.slice(0,1000);
+  db.from('illic_logs').insert({ts:entry.ts,usuario:currentUser,perfil,action,descricao:desc,paciente})
+    .then(({error})=>{if(error)console.error('Log error:',error);});
 }
 
-// ===================== DADOS =====================
-let pacientes = JSON.parse(localStorage.getItem('illic_pacientes')||'[]');
-// Migração: garante campos novos em registros antigos
-pacientes.forEach(p=>{
-  if(!p.historico)                 p.historico=[];
-  if(p.dataNascimento===undefined) p.dataNascimento='';
-  if(p.responsavel===undefined)    p.responsavel=null;
-});
-let currentUser='';
-let editIndex=-1, agendarIndex=-1, realizarIndex=-1, cancelarIndex=-1, noshowIndex=-1;
-let _wamTel='', _wamMsg='';
-
-if(!pacientes.length){
-  const sub=m=>{const d=new Date();d.setMonth(d.getMonth()-m);return d.toISOString().split('T')[0];};
-  const add=m=>{const d=new Date();d.setMonth(d.getMonth()+m);d.setDate(d.getDate()+5);return d.toISOString().split('T')[0];};
-  const u0=config.unidades[0]||'',u1=config.unidades[1]||u0;
-  const s0=config.secretarias[0]?.usuario||'',s1=config.secretarias[1]?.usuario||s0;
-  pacientes=[
-    {nome:'João Silva',     tel:'(11) 98765-4321',email:'joao@email.com',  convenio:'Particular', sec:s0,unidade:u0,ultimaReav:sub(4),intervalo:3,dataNascimento:'1985-03-12',responsavel:null,agendamento:null,
-      historico:[{data:sub(15),tipo:'realizada',profissional:'Dr. Carlos',obs:'Sem intercorrências'}]},
-    {nome:'Maria Oliveira', tel:'(11) 91234-5678',email:'maria@email.com', convenio:'Unimed',     sec:s1,unidade:u1,ultimaReav:sub(1),intervalo:3,dataNascimento:'1990-07-22',responsavel:null,
-      agendamento:{data:add(1),status:'agendada',obs:'Confirmada',confirmacao:'confirmado'},historico:[]},
-    {nome:'Carlos Santos',  tel:'(11) 99887-6543',email:'carlos@email.com',convenio:'',           sec:s0,unidade:config.unidades[2]||u0,ultimaReav:sub(3),intervalo:3,dataNascimento:'',responsavel:null,
-      agendamento:{data:add(0),status:'cancelada',motivo:'Viagem'},historico:[{data:sub(5),tipo:'cancelada',profissional:'',obs:'Paciente em viagem'}]},
-    {nome:'Ana Costa',      tel:'(11) 97654-3210',email:'ana@email.com',   convenio:'Bradesco',   sec:s1,unidade:config.unidades[3]||u0,ultimaReav:sub(0),intervalo:6,dataNascimento:'1978-11-05',responsavel:null,
-      agendamento:{data:sub(0),status:'noshow',obs:'Não atendeu'},historico:[]},
-    {nome:'Lucas Mendes',   tel:'(11) 96543-2109',email:'',               convenio:'Particular',  sec:s0,unidade:u0,ultimaReav:sub(2),intervalo:3,dataNascimento:'2012-06-18',
-      responsavel:{nome:'Roberto Mendes',tel:'(11) 98888-1234',parentesco:'pai'},
-      agendamento:null,historico:[{data:sub(9),tipo:'realizada',profissional:'Dra. Fernanda',obs:'Paciente colaborativo'}]},
-  ];
-  salvarDados();
-}
-function salvarDados(){ localStorage.setItem('illic_pacientes',JSON.stringify(pacientes)); }
-
-// ===================== PERFIS DE ACESSO =====================
+// ===================== PERFIS =====================
 function getPerfil(){
-  if(currentUser==='gerenciador') return 'gerenciador';
+  if(currentUser==='gerenciador')return'gerenciador';
   const s=config.secretarias.find(x=>x.usuario===currentUser);
   return s?.perfil||'secretaria';
 }
-function podeVerConfig(){ return currentUser==='gerenciador'; }
-// Supervisor vê tudo; secretaria só sua unidade
+function podeVerConfig(){return currentUser==='gerenciador';}
 function filtrarPorUsuario(lista){
   const p=getPerfil();
-  if(p==='gerenciador'||p==='supervisor') return lista;
+  if(p==='gerenciador'||p==='supervisor')return lista;
   const u=secUnidade(currentUser);
   return u?lista.filter(x=>x.unidade===u):lista;
 }
@@ -665,7 +659,7 @@ function sortKey(p){
   if(ag?.status==='agendada')  return 10000+dias;
   return dias;
 }
-function sorted(l){return [...l].sort((a,b)=>sortKey(a)-sortKey(b));}
+function sorted(l){return[...l].sort((a,b)=>sortKey(a)-sortKey(b));}
 function formatDate(d){if(!d)return'—';return new Date(d+'T12:00:00').toLocaleDateString('pt-BR');}
 function formatDateTime(iso){
   if(!iso)return'—';
@@ -676,7 +670,6 @@ function cap(s){return s?s.charAt(0).toUpperCase()+s.slice(1):'';}
 function secNome(usuario){const s=config.secretarias.find(x=>x.usuario===usuario);return s?s.nome:cap(usuario);}
 function secUnidade(usuario){const s=config.secretarias.find(x=>x.usuario===usuario);return s?.unidade||'';}
 function perfilLabel(p){return{gerenciador:'Gerenciador',supervisor:'Supervisor',secretaria:'Secretaria'}[p]||cap(p);}
-
 function getAgBadge(p,ri=-1){
   const ag=p.agendamento;
   if(!ag)return'<span style="color:var(--text2);font-size:12px">—</span>';
@@ -684,12 +677,12 @@ function getAgBadge(p,ri=-1){
     const click=ri>=0?`class="badge badge-blue badge-date-click" onclick="abrirAgendar(${ri})" title="Clique para alterar a data"`:`class="badge badge-blue"`;
     const conf=ag.confirmacao||'pendente';
     const confMap={pendente:['conf-pendente','⏳ Aguardando'],confirmado:['conf-confirmado','✅ Confirmado'],'nao-respondeu':['conf-nao-respondeu','📵 Não respondeu']};
-    const [cls,label]=confMap[conf]||confMap.pendente;
+    const[cls,label]=confMap[conf]||confMap.pendente;
     const cfClick=ri>=0?`onclick="toggleConfirmacao(${ri})" title="Clique para alterar confirmação"`:'';
     return`<div><span ${click}>📅 ${formatDate(ag.data)}</span><br><span class="conf-badge ${cls}" ${cfClick}>${label}</span></div>`;
   }
-  if(ag.status==='cancelada') return`<span class="badge badge-purple">❌ ${ag.motivo||'—'}</span>`;
-  if(ag.status==='noshow')    return`<span class="badge badge-orange">🚫 No-show</span>`;
+  if(ag.status==='cancelada')return`<span class="badge badge-purple">❌ ${ag.motivo||'—'}</span>`;
+  if(ag.status==='noshow')   return`<span class="badge badge-orange">🚫 No-show</span>`;
   return'—';
 }
 function getStatusBadge(p,ri,clickable=false){
@@ -711,7 +704,7 @@ function perfilBadge(perfil){
 
 // ===================== DROPDOWNS =====================
 function populateSelects(){
-  const unidades=config.unidades, secs=config.secretarias, profs=config.profissionais;
+  const unidades=config.unidades,secs=config.secretarias,profs=config.profissionais;
   ['filtro-unidade','filtro-alerta-unidade','dash-unidade','cad-unidade'].forEach(id=>{
     const el=document.getElementById(id);if(!el)return;
     const v=el.value;
@@ -729,11 +722,9 @@ function populateSelects(){
   if(nsu){const v=nsu.value;nsu.innerHTML='<option value="">Selecione a unidade principal...</option>'+unidades.map(u=>`<option ${v===u?'selected':''}>${u}</option>`).join('');}
   const rp=document.getElementById('re-profissional');
   if(rp){const v=rp.value;rp.innerHTML='<option value="">Selecione (opcional)</option>'+profs.map(p=>`<option ${v===p?'selected':''}>${p}</option>`).join('');}
-  // Log usuario filter
   const lu=document.getElementById('log-usuario');
   if(lu){const v=lu.value;lu.innerHTML='<option value="">Todos</option><option value="gerenciador" '+(v==='gerenciador'?'selected':'')+'>Gerenciador</option>'+secs.map(s=>`<option value="${s.usuario}" ${v===s.usuario?'selected':''}>${s.nome}</option>`).join('');}
 }
-
 function ajustarFiltros(){
   const perfil=getPerfil();
   const isGerOuSup=perfil==='gerenciador'||perfil==='supervisor';
@@ -753,8 +744,10 @@ function ajustarFiltros(){
 function login(){
   const u=document.getElementById('username').value.trim().toLowerCase();
   const p=document.getElementById('password').value;
-  const users=getUsers();
-  if(users[u]&&users[u]===p){
+  let ok=false;
+  if(u==='gerenciador'&&p===config.senhagerenciador){ok=true;}
+  else{const sec=config.secretarias.find(s=>s.usuario===u&&s.senha===p);if(sec)ok=true;}
+  if(ok){
     currentUser=u;
     const perfil=getPerfil();
     document.getElementById('login-screen').style.display='none';
@@ -788,15 +781,14 @@ function showTab(tab){
   document.querySelectorAll('.tab').forEach(el=>el.classList.remove('active'));
   const btn=document.getElementById('tab-'+tab+'-btn');
   if(btn)btn.classList.add('active');
-  if(tab==='config') renderConfig();
+  if(tab==='config')renderConfig();
   else if(tab==='logs'){populateSelects();renderLogs();}
-  else if(tab==='cadastros') renderCadastros();
+  else if(tab==='cadastros')renderCadastros();
   else renderAll();
 }
 
 // ===================== RENDER =====================
 function renderAll(){ajustarFiltros();populateSelects();renderMetrics();renderDashboard();renderPacientes();renderAlertas();}
-
 function renderMetrics(){
   let lista=filtrarPorUsuario(pacientes);
   if(getPerfil()!=='secretaria'){const u=document.getElementById('dash-unidade')?.value||'';if(u)lista=lista.filter(p=>p.unidade===u);}
@@ -817,7 +809,6 @@ function renderMetrics(){
     <div class="metric"><div class="metric-label">Agendadas</div><div class="metric-value blue">${agendadas}</div></div>
     <div class="metric"><div class="metric-label">Em dia</div><div class="metric-value green">${emDia}</div></div>`;
 }
-
 function renderDashboard(){
   let lista=filtrarPorUsuario(pacientes);
   if(getPerfil()!=='secretaria'){const u=document.getElementById('dash-unidade')?.value||'';if(u)lista=lista.filter(p=>p.unidade===u);}
@@ -837,7 +828,6 @@ function renderDashboard(){
     </tr>`;
   }).join('');
 }
-
 function renderPacientes(){
   let lista=filtrarPorUsuario(pacientes);
   if(getPerfil()!=='secretaria'){
@@ -854,7 +844,7 @@ function renderPacientes(){
     const ri=pacientes.indexOf(p);
     const cv=p.convenio?`<span class="convenio-tag">${p.convenio}</span>`:'';
     const wpp=p.tel?`<button class="btn btn-small btn-whatsapp" onclick="abrirWhatsApp('${p.tel}')" title="WhatsApp">${wppSvg}</button>`:'';
-    const menorTag=p.responsavel||( p.dataNascimento&&calcIdade(p.dataNascimento)<18)?`<span class="menor-badge-inline" style="font-size:10px;padding:0 5px">👶</span>`:'';
+    const menorTag=p.responsavel||(p.dataNascimento&&calcIdade(p.dataNascimento)<18)?`<span class="menor-badge-inline" style="font-size:10px;padding:0 5px">👶</span>`:'';
     return`<tr>
       <td><strong>${p.nome}</strong>${menorTag}${cv}<br><small style="color:var(--text2)">${p.tel}</small></td>
       <td><span class="badge badge-unit">${p.unidade||'—'}</span></td>
@@ -871,7 +861,6 @@ function renderPacientes(){
     </tr>`;
   }).join('');
 }
-
 function renderAlertas(){
   let base=filtrarPorUsuario(pacientes);
   if(getPerfil()!=='secretaria'){const u=document.getElementById('filtro-alerta-unidade')?.value||'';if(u)base=base.filter(p=>p.unidade===u);}
@@ -900,7 +889,7 @@ function renderAlertas(){
     el.innerHTML=lista.map(p=>{
       const ri=pacientes.indexOf(p),ag=p.agendamento,dias=calcDias(p);
       let info='';
-      if(ag?.status==='agendada')  info=`Agendada: ${formatDate(ag.data)}${ag.obs?' · '+ag.obs:''}`;
+      if(ag?.status==='agendada')   info=`Agendada: ${formatDate(ag.data)}${ag.obs?' · '+ag.obs:''}`;
       else if(ag?.status==='cancelada')info=`Motivo: ${ag.motivo||'—'} · Próxima: ${formatDate(calcProxima(p).toISOString().split('T')[0])}`;
       else if(ag?.status==='noshow')   info=`No-show${ag.obs?' · '+ag.obs:''} · Próxima: ${formatDate(calcProxima(p).toISOString().split('T')[0])}`;
       else info=`Próxima: ${formatDate(calcProxima(p).toISOString().split('T')[0])} · ${dias<0?Math.abs(dias)+'d vencida':'vence em '+dias+'d'}`;
@@ -948,9 +937,11 @@ function renderLogs(){
     </div>`;
   }).join('');
 }
-function limparLogs(){
+async function limparLogs(){
   if(!confirm('Limpar TODOS os logs do sistema? Esta ação não pode ser desfeita.'))return;
-  logs=[];salvarLogs();renderLogs();notify('Logs limpos.');
+  logs=[];
+  await db.from('illic_logs').delete().neq('id',0);
+  renderLogs();notify('Logs limpos.');
 }
 
 // ===================== CONFIGURAÇÕES =====================
@@ -963,7 +954,6 @@ function renderConfig(){
       <div class="config-item-info"><span>${u}</span><small>${cp} paciente${cp!==1?'s':''} · ${cs} secretaria${cs!==1?'s':''}</small></div>
       <button class="btn btn-small btn-red" onclick="removerUnidade(${i})">✕</button></div>`;
   }).join(''):'<p class="no-data" style="padding:1rem">Nenhuma unidade.</p>';
-
   const sl=document.getElementById('config-secretarias-list');
   sl.innerHTML=config.secretarias.length?config.secretarias.map((s,i)=>{
     const count=pacientes.filter(p=>p.sec===s.usuario).length;
@@ -974,7 +964,6 @@ function renderConfig(){
       </div>
       <button class="btn btn-small btn-red" onclick="removerSecretaria(${i})">✕</button></div>`;
   }).join(''):'<p class="no-data" style="padding:1rem">Nenhuma secretaria.</p>';
-
   const pl=document.getElementById('config-profissionais-list');
   pl.innerHTML=config.profissionais.length?config.profissionais.map((p,i)=>{
     const count=(()=>{let c=0;pacientes.forEach(pac=>{(pac.historico||[]).forEach(h=>{if(h.profissional===p)c++;});});return c;})();
@@ -983,7 +972,6 @@ function renderConfig(){
       <button class="btn btn-small btn-red" onclick="removerProfissional(${i})">✕</button></div>`;
   }).join(''):'<p class="no-data" style="padding:1rem">Nenhum profissional.</p>';
 }
-
 function adicionarUnidade(){
   const input=document.getElementById('nova-unidade');
   const nome=input.value.trim();
@@ -998,13 +986,13 @@ function removerUnidade(i){
   const cp=pacientes.filter(p=>p.unidade===u).length,cs=config.secretarias.filter(s=>s.unidade===u).length;
   const msg=cp>0||cs>0?`A unidade "${u}" possui ${cp} paciente(s) e ${cs} secretaria(s).\nAo remover, ficarão sem unidade. Continuar?`:`Remover "${u}"?`;
   if(!confirm(msg))return;
-  pacientes.forEach(p=>{if(p.unidade===u)p.unidade='';});
+  pacientes.filter(p=>p.unidade===u).forEach(p=>{p.unidade='';salvarDados(p);});
   config.secretarias.forEach(s=>{if(s.unidade===u)s.unidade='';});
-  salvarDados();config.unidades.splice(i,1);salvarConfig();
+  config.unidades.splice(i,1);salvarConfig();
   renderConfig();populateSelects();
   registrarLog('config',`Removeu unidade: ${u}`);notify('Unidade removida.');
 }
-function adicionarSecretaria(){
+async function adicionarSecretaria(){
   const nome   =document.getElementById('nova-sec-nome').value.trim();
   const usuario=document.getElementById('nova-sec-usuario').value.trim().toLowerCase();
   const senha  =document.getElementById('nova-sec-senha').value;
@@ -1014,19 +1002,22 @@ function adicionarSecretaria(){
   if(perfil==='secretaria'&&!unidade){alert('Selecione a unidade responsável para o perfil Secretaria.');return;}
   if(usuario==='gerenciador'){alert('Usuário reservado.');return;}
   if(config.secretarias.find(s=>s.usuario===usuario)){alert('Esse usuário já existe.');return;}
-  config.secretarias.push({nome,usuario,senha,unidade,perfil});salvarConfig();
+  const{data,error}=await db.from('illic_secretarias').insert({nome,usuario,senha,unidade,perfil}).select('id').single();
+  if(error){notify('Erro ao salvar secretaria ⚠️');console.error(error);return;}
+  config.secretarias.push({_id:data.id,nome,usuario,senha,unidade,perfil});
   ['nova-sec-nome','nova-sec-usuario','nova-sec-senha'].forEach(id=>document.getElementById(id).value='');
   document.getElementById('nova-sec-unidade').value='';
   renderConfig();populateSelects();
   registrarLog('config',`Adicionou secretaria: ${nome} (${perfilLabel(perfil)})`);notify('Secretaria adicionada! 👤');
 }
-function removerSecretaria(i){
+async function removerSecretaria(i){
   const s=config.secretarias[i];
   const count=pacientes.filter(p=>p.sec===s.usuario).length;
   const msg=count>0?`"${s.nome}" tem ${count} paciente(s). Ao remover, ficarão sem secretaria. Continuar?`:`Remover "${s.nome}"?`;
   if(!confirm(msg))return;
-  if(count>0){pacientes.forEach(p=>{if(p.sec===s.usuario)p.sec='';});salvarDados();}
-  config.secretarias.splice(i,1);salvarConfig();renderConfig();populateSelects();
+  if(count>0){pacientes.filter(p=>p.sec===s.usuario).forEach(p=>{p.sec='';salvarDados(p);});}
+  if(s._id)await db.from('illic_secretarias').delete().eq('id',s._id);
+  config.secretarias.splice(i,1);renderConfig();populateSelects();
   registrarLog('config',`Removeu secretaria: ${s.nome}`);notify('Secretaria removida.');
 }
 function adicionarProfissional(){
@@ -1092,7 +1083,7 @@ function toggleConfirmacao(ri){
   const ciclo={pendente:'confirmado',confirmado:'nao-respondeu','nao-respondeu':'pendente'};
   const label={pendente:'⏳ Aguardando',confirmado:'✅ Confirmado','nao-respondeu':'📵 Não respondeu'};
   ag.confirmacao=ciclo[ag.confirmacao||'pendente'];
-  salvarDados();
+  salvarDados(pacientes[ri]);
   registrarLog('confirmacao',`Alterou confirmação de ${pacientes[ri].nome} para: ${label[ag.confirmacao]}`,pacientes[ri].nome);
   renderAll();
 }
@@ -1128,7 +1119,6 @@ function editarPaciente(i){
   document.getElementById('p-nascimento').value=p.dataNascimento||'';
   document.getElementById('p-data').value=p.ultimaReav||'';
   document.getElementById('p-intervalo').value=p.intervalo||3;
-  // Responsável
   const resp=p.responsavel||{};
   document.getElementById('p-resp-nome').value=resp.nome||'';
   document.getElementById('p-resp-tel').value=resp.tel||'';
@@ -1158,19 +1148,18 @@ function salvarPaciente(){
     parentesco:document.getElementById('p-resp-parentesco').value
   }:null;
   const p={
-    nome,
-    dataNascimento:nascimento,
+    nome,dataNascimento:nascimento,
     tel:document.getElementById('p-tel').value.trim(),
     email:document.getElementById('p-email').value.trim(),
     convenio:document.getElementById('p-convenio').value.trim(),
-    responsavel,
-    unidade,sec,
+    responsavel,unidade,sec,
     ultimaReav:document.getElementById('p-data').value,
     intervalo:document.getElementById('p-intervalo').value,
     agendamento:editIndex>=0?pacientes[editIndex].agendamento:null,
     historico:editIndex>=0?pacientes[editIndex].historico:[],
   };
   if(editIndex>=0){
+    p._id=pacientes[editIndex]._id;
     pacientes[editIndex]=p;
     registrarLog('paciente_editado',`Editou cadastro de ${nome}${menor?' (menor)':''}`,nome);
     notify('Paciente atualizado! ✅');
@@ -1179,16 +1168,19 @@ function salvarPaciente(){
     registrarLog('paciente_criado',`Cadastrou ${nome} (${unidade})${menor?' — menor de idade':''}`,nome);
     notify('Paciente cadastrado! ✅');
   }
-  salvarDados();document.getElementById('modal-paciente').style.display='none';renderAll();
-  // Se estiver na aba Fichas, re-renderiza ela também
-  if(document.getElementById('tab-cadastros')?.style.display!=='none') renderCadastros();
+  salvarDados(p);
+  document.getElementById('modal-paciente').style.display='none';renderAll();
+  if(document.getElementById('tab-cadastros')?.style.display!=='none')renderCadastros();
 }
 function excluirPaciente(i){
   const nome=pacientes[i].nome;
+  const id=pacientes[i]._id;
   if(!confirm(`Excluir "${nome}"? Esta ação não pode ser desfeita.`))return;
   registrarLog('paciente_excluido',`Excluiu cadastro de ${nome}`,nome);
-  pacientes.splice(i,1);salvarDados();renderAll();
-  if(document.getElementById('tab-cadastros')?.style.display!=='none') renderCadastros();
+  pacientes.splice(i,1);
+  deletarPaciente(id);
+  renderAll();
+  if(document.getElementById('tab-cadastros')?.style.display!=='none')renderCadastros();
   notify('Paciente removido.');
 }
 
@@ -1208,7 +1200,7 @@ function _salvarAgendamento(){
   const data=document.getElementById('ag-data').value;
   if(!data){alert('Selecione a data.');return false;}
   pacientes[agendarIndex].agendamento={data,status:'agendada',obs:document.getElementById('ag-obs').value.trim(),confirmacao:'pendente'};
-  salvarDados();
+  salvarDados(pacientes[agendarIndex]);
   registrarLog('agendamento',`Agendou ${pacientes[agendarIndex].nome} para ${formatDate(data)}`,pacientes[agendarIndex].nome);
   document.getElementById('modal-agendar').style.display='none';renderAll();
   return true;
@@ -1234,7 +1226,8 @@ function marcarRealizada(){
   p.historico=p.historico||[];
   p.historico.unshift({data,tipo:'realizada',profissional,obs});
   p.ultimaReav=data;p.agendamento=null;
-  salvarDados();document.getElementById('modal-realizar').style.display='none';
+  salvarDados(p);
+  document.getElementById('modal-realizar').style.display='none';
   registrarLog('realizado',`Marcou reavaliação de ${p.nome} como realizada${profissional?' ('+profissional+')':''}`,p.nome);
   renderAll();notify('Reavaliação confirmada! ✅'+(profissional?` · ${profissional}`:''));
 }
@@ -1268,7 +1261,8 @@ function confirmarCancelamento(){
     registrarLog('cancelamento',`Cancelou agendamento de ${p.nome} — motivo: ${motivo}`,p.nome);
     notify('Cancelamento registrado. ❌');
   }
-  salvarDados();document.getElementById('modal-cancelar').style.display='none';renderAll();
+  salvarDados(p);
+  document.getElementById('modal-cancelar').style.display='none';renderAll();
 }
 
 // ===================== NO-SHOW =====================
@@ -1283,7 +1277,8 @@ function confirmarNoShow(){
   p.historico=p.historico||[];
   p.historico.unshift({data:new Date().toISOString().split('T')[0],tipo:'noshow',obs});
   p.agendamento={...p.agendamento,status:'noshow',obs};
-  salvarDados();document.getElementById('modal-noshow').style.display='none';
+  salvarDados(p);
+  document.getElementById('modal-noshow').style.display='none';
   registrarLog('noshow',`Registrou no-show de ${p.nome}${obs?' · '+obs:''}`,p.nome);
   renderAll();notify('No-show registrado. 🚫');
 }
@@ -1344,7 +1339,7 @@ function copiarMsgWA(){
 }
 function abrirWhatsAppComMsg(){window.open(`https://wa.me/${_wamTel}?text=${encodeURIComponent(_wamMsg)}`,'_blank');document.getElementById('modal-wamsg').style.display='none';}
 
-// ===================== IDADE / MENOR DE IDADE =====================
+// ===================== IDADE =====================
 function calcIdade(dataNasc){
   if(!dataNasc)return null;
   const nasc=new Date(dataNasc+'T12:00:00'),hoje=new Date();
@@ -1360,7 +1355,7 @@ function verificarIdade(){
   document.getElementById('responsavel-section').style.display=menor?'block':'none';
 }
 
-// ===================== FICHAS / CADASTROS =====================
+// ===================== FICHAS =====================
 function renderCadastros(){
   ajustarFiltros();populateSelects();
   let lista=filtrarPorUsuario(pacientes);
@@ -1427,7 +1422,7 @@ function renderCadastros(){
   }).join('');
 }
 
-// ===================== IMPRIMIR PDF (próximos 7 dias) =====================
+// ===================== IMPRIMIR PDF =====================
 function imprimirProximos7dias(){
   let base=filtrarPorUsuario(pacientes);
   const proximos=sorted(base.filter(p=>!p.agendamento&&calcDias(p)>=0&&calcDias(p)<=7));
@@ -1481,7 +1476,61 @@ function notify(msg){
   el.textContent=msg;el.classList.add('show');
   setTimeout(()=>el.classList.remove('show'),3500);
 }
-populateSelects();
+
+// ===================== INIT =====================
+async function initApp(){
+  const loading=document.getElementById('loading-screen');
+  const msg=document.getElementById('loading-msg');
+  loading.style.display='flex';
+  try{
+    // Config
+    const{data:cfg}=await db.from('illic_config').select('*').eq('id',1).single();
+    if(cfg){
+      config.unidades=cfg.unidades||[];
+      config.profissionais=cfg.profissionais||[];
+      config.senhagerenciador=cfg.senhagerenciador||'1234';
+    }else{
+      // Primeiro acesso: insere config padrão
+      const defaultUnidades=['Jardim Ricetti','Damha','Faber','Descalvado','Mogi Guaçu'];
+      await db.from('illic_config').insert({id:1,unidades:defaultUnidades,profissionais:[],senhagerenciador:'1234'});
+      config.unidades=defaultUnidades;
+    }
+    // Secretarias
+    const{data:secs}=await db.from('illic_secretarias').select('*').order('nome');
+    config.secretarias=(secs||[]).map(s=>({
+      _id:s.id,nome:s.nome,usuario:s.usuario,senha:s.senha,
+      unidade:s.unidade||'',perfil:s.perfil||'secretaria'
+    }));
+    // Pacientes
+    const{data:pacs}=await db.from('illic_pacientes').select('*').order('nome');
+    pacientes=(pacs||[]).map(p=>({
+      _id:p.id,
+      nome:p.nome,tel:p.tel||'',email:p.email||'',
+      convenio:p.convenio||'',sec:p.sec||'',unidade:p.unidade||'',
+      ultimaReav:p.ultima_reav||'',intervalo:p.intervalo||3,
+      dataNascimento:p.data_nascimento||'',
+      responsavel:p.responsavel||null,
+      agendamento:p.agendamento||null,
+      historico:p.historico||[]
+    }));
+    // Logs
+    const{data:logsData}=await db.from('illic_logs').select('*').order('ts',{ascending:false}).limit(500);
+    logs=(logsData||[]).map(l=>({
+      ts:l.ts,user:l.usuario,perfil:l.perfil,
+      action:l.action,desc:l.descricao,paciente:l.paciente||''
+    }));
+  }catch(err){
+    console.error('Erro Supabase:',err);
+    msg.textContent='Erro de conexão. Verifique sua internet e recarregue. ⚠️';
+    msg.style.color='#991b1b';
+    return;
+  }
+  loading.style.display='none';
+  populateSelects();
+  document.getElementById('login-screen').style.display='flex';
+}
+
+initApp();
 </script>
 </body>
 </html>
