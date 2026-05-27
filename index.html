@@ -556,6 +556,53 @@
 <div id="status-menu" class="status-menu" style="display:none"></div>
 <div class="notification" id="notification"></div>
 
+<!-- MODAL: EDITAR SECRETARIA -->
+<div class="modal-overlay" id="modal-edit-sec" style="display:none" onclick="fecharModal(event)">
+  <div class="modal">
+    <h3>✏️ Editar Secretaria</h3>
+    <div class="form-group"><label>Nome</label><input type="text" id="edit-sec-nome" placeholder="Nome da secretaria"></div>
+    <div class="form-group"><label>Usuário de login</label><input type="text" id="edit-sec-usuario" placeholder="usuario"></div>
+    <div class="form-group"><label>Nova senha <small style="color:var(--text2);font-weight:400">(deixe em branco para não alterar)</small></label><input type="password" id="edit-sec-senha" placeholder="Nova senha (opcional)"></div>
+    <div class="form-group"><label>Perfil</label>
+      <select id="edit-sec-perfil">
+        <option value="secretaria">👤 Secretaria — acesso restrito à unidade</option>
+        <option value="supervisor">👁️ Supervisor — acesso a todas as unidades</option>
+      </select>
+    </div>
+    <div class="form-group"><label>Unidade principal</label>
+      <select id="edit-sec-unidade"><option value="">Sem unidade específica</option></select>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" onclick="document.getElementById('modal-edit-sec').style.display='none'">Cancelar</button>
+      <button class="btn btn-primary" onclick="salvarEditSecretaria()">Salvar alterações</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: EDITAR UNIDADE -->
+<div class="modal-overlay" id="modal-edit-unidade" style="display:none" onclick="fecharModal(event)">
+  <div class="modal">
+    <h3>✏️ Editar Unidade</h3>
+    <div class="form-group"><label>Nome da unidade</label><input type="text" id="edit-unidade-nome" placeholder="Nome da unidade" onkeydown="if(event.key==='Enter')salvarEditUnidade()"></div>
+    <div class="modal-footer">
+      <button class="btn" onclick="document.getElementById('modal-edit-unidade').style.display='none'">Cancelar</button>
+      <button class="btn btn-primary" onclick="salvarEditUnidade()">Salvar</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: EDITAR PROFISSIONAL -->
+<div class="modal-overlay" id="modal-edit-prof" style="display:none" onclick="fecharModal(event)">
+  <div class="modal">
+    <h3>✏️ Editar Profissional</h3>
+    <div class="form-group"><label>Nome do profissional</label><input type="text" id="edit-prof-nome" placeholder="Nome do profissional" onkeydown="if(event.key==='Enter')salvarEditProfissional()"></div>
+    <div class="modal-footer">
+      <button class="btn" onclick="document.getElementById('modal-edit-prof').style.display='none'">Cancelar</button>
+      <button class="btn btn-primary" onclick="salvarEditProfissional()">Salvar</button>
+    </div>
+  </div>
+</div>
+
 <script>
 // ===================== SUPABASE =====================
 const SURL='https://paaufbmzzoijoqikjpfw.supabase.co';
@@ -568,6 +615,7 @@ let pacientes=[];
 let logs=[];
 let currentUser='';
 let editIndex=-1,agendarIndex=-1,realizarIndex=-1,cancelarIndex=-1,noshowIndex=-1;
+let editSecIndex=-1,editUnidadeIndex=-1,editProfIndex=-1;
 let _wamTel='',_wamMsg='';
 
 // ===================== DB HELPERS =====================
@@ -952,7 +1000,10 @@ function renderConfig(){
     const cs=config.secretarias.filter(s=>s.unidade===u).length;
     return`<div class="config-item">
       <div class="config-item-info"><span>${u}</span><small>${cp} paciente${cp!==1?'s':''} · ${cs} secretaria${cs!==1?'s':''}</small></div>
-      <button class="btn btn-small btn-red" onclick="removerUnidade(${i})">✕</button></div>`;
+      <div style="display:flex;gap:4px">
+        <button class="btn btn-small btn-blue" onclick="editarUnidade(${i})" title="Editar">✏️</button>
+        <button class="btn btn-small btn-red" onclick="removerUnidade(${i})" title="Remover">✕</button>
+      </div></div>`;
   }).join(''):'<p class="no-data" style="padding:1rem">Nenhuma unidade.</p>';
   const sl=document.getElementById('config-secretarias-list');
   sl.innerHTML=config.secretarias.length?config.secretarias.map((s,i)=>{
@@ -962,14 +1013,20 @@ function renderConfig(){
         <span><strong>${s.nome}</strong> ${perfilBadge(s.perfil||'secretaria')} <span style="color:var(--text2);font-size:12px">@${s.usuario}</span></span>
         <small>${s.unidade||'sem unidade'} · ${count} paciente${count!==1?'s':''}</small>
       </div>
-      <button class="btn btn-small btn-red" onclick="removerSecretaria(${i})">✕</button></div>`;
+      <div style="display:flex;gap:4px">
+        <button class="btn btn-small btn-blue" onclick="editarSecretaria(${i})" title="Editar">✏️</button>
+        <button class="btn btn-small btn-red" onclick="removerSecretaria(${i})" title="Remover">✕</button>
+      </div></div>`;
   }).join(''):'<p class="no-data" style="padding:1rem">Nenhuma secretaria.</p>';
   const pl=document.getElementById('config-profissionais-list');
   pl.innerHTML=config.profissionais.length?config.profissionais.map((p,i)=>{
     const count=(()=>{let c=0;pacientes.forEach(pac=>{(pac.historico||[]).forEach(h=>{if(h.profissional===p)c++;});});return c;})();
     return`<div class="config-item">
       <div class="config-item-info"><span>${p}</span><small>${count} reavaliação${count!==1?'s':''}</small></div>
-      <button class="btn btn-small btn-red" onclick="removerProfissional(${i})">✕</button></div>`;
+      <div style="display:flex;gap:4px">
+        <button class="btn btn-small btn-blue" onclick="editarProfissional(${i})" title="Editar">✏️</button>
+        <button class="btn btn-small btn-red" onclick="removerProfissional(${i})" title="Remover">✕</button>
+      </div></div>`;
   }).join(''):'<p class="no-data" style="padding:1rem">Nenhum profissional.</p>';
 }
 function adicionarUnidade(){
@@ -1035,6 +1092,78 @@ function removerProfissional(i){
   config.profissionais.splice(i,1);salvarConfig();renderConfig();populateSelects();
   registrarLog('config',`Removeu profissional: ${nome}`);notify('Profissional removido.');
 }
+// ===================== EDITAR CONFIGS =====================
+function editarUnidade(i){
+  editUnidadeIndex=i;
+  document.getElementById('edit-unidade-nome').value=config.unidades[i];
+  document.getElementById('modal-edit-unidade').style.display='flex';
+}
+function salvarEditUnidade(){
+  const nome=document.getElementById('edit-unidade-nome').value.trim();
+  const atual=config.unidades[editUnidadeIndex];
+  if(!nome){alert('Digite o nome da unidade.');return;}
+  if(nome===atual){document.getElementById('modal-edit-unidade').style.display='none';return;}
+  if(config.unidades.includes(nome)){alert('Essa unidade já existe.');return;}
+  pacientes.filter(p=>p.unidade===atual).forEach(p=>{p.unidade=nome;salvarDados(p);});
+  config.secretarias.forEach(s=>{if(s.unidade===atual)s.unidade=nome;});
+  config.unidades[editUnidadeIndex]=nome;
+  salvarConfig();renderConfig();populateSelects();
+  document.getElementById('modal-edit-unidade').style.display='none';
+  registrarLog('config',`Renomeou unidade: "${atual}" → "${nome}"`);
+  notify('Unidade atualizada! 🏢');
+}
+function editarProfissional(i){
+  editProfIndex=i;
+  document.getElementById('edit-prof-nome').value=config.profissionais[i];
+  document.getElementById('modal-edit-prof').style.display='flex';
+}
+function salvarEditProfissional(){
+  const nome=document.getElementById('edit-prof-nome').value.trim();
+  const atual=config.profissionais[editProfIndex];
+  if(!nome){alert('Digite o nome.');return;}
+  if(nome===atual){document.getElementById('modal-edit-prof').style.display='none';return;}
+  if(config.profissionais.includes(nome)){alert('Já cadastrado.');return;}
+  config.profissionais[editProfIndex]=nome;
+  salvarConfig();renderConfig();populateSelects();
+  document.getElementById('modal-edit-prof').style.display='none';
+  registrarLog('config',`Renomeou profissional: "${atual}" → "${nome}"`);
+  notify('Profissional atualizado! 🩺');
+}
+function editarSecretaria(i){
+  editSecIndex=i;
+  const s=config.secretarias[i];
+  document.getElementById('edit-sec-nome').value=s.nome;
+  document.getElementById('edit-sec-usuario').value=s.usuario;
+  document.getElementById('edit-sec-senha').value='';
+  document.getElementById('edit-sec-perfil').value=s.perfil||'secretaria';
+  const sel=document.getElementById('edit-sec-unidade');
+  sel.innerHTML='<option value="">Sem unidade específica</option>'+
+    config.unidades.map(u=>`<option${u===s.unidade?' selected':''}>${u}</option>`).join('');
+  document.getElementById('modal-edit-sec').style.display='flex';
+}
+async function salvarEditSecretaria(){
+  const s=config.secretarias[editSecIndex];
+  const nome=document.getElementById('edit-sec-nome').value.trim();
+  const usuario=document.getElementById('edit-sec-usuario').value.trim().toLowerCase();
+  const senha=document.getElementById('edit-sec-senha').value;
+  const perfil=document.getElementById('edit-sec-perfil').value;
+  const unidade=document.getElementById('edit-sec-unidade').value;
+  if(!nome||!usuario){alert('Preencha nome e usuário.');return;}
+  if(perfil==='secretaria'&&!unidade){alert('Selecione a unidade para o perfil Secretaria.');return;}
+  if(usuario===s.usuario===false&&config.secretarias.find(x=>x.usuario===usuario)){alert('Esse usuário já existe.');return;}
+  if(usuario!==s.usuario&&config.secretarias.find(x=>x.usuario===usuario)){alert('Esse usuário já existe.');return;}
+  const upd={nome,usuario,unidade,perfil};
+  if(senha)upd.senha=senha;
+  const{error}=await db.from('illic_secretarias').update(upd).eq('id',s._id);
+  if(error){notify('Erro ao salvar ⚠️');console.error(error);return;}
+  s.nome=nome;s.usuario=usuario;s.unidade=unidade;s.perfil=perfil;
+  if(senha)s.senha=senha;
+  document.getElementById('modal-edit-sec').style.display='none';
+  renderConfig();populateSelects();
+  registrarLog('config',`Editou secretaria: ${nome} (@${usuario})`);
+  notify('Secretaria atualizada! ✅');
+}
+
 function alterarSenhaGerenciador(){
   const nova=document.getElementById('nova-senha-ger').value;
   const conf=document.getElementById('confirma-senha-ger').value;
