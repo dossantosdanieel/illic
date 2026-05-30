@@ -33,6 +33,9 @@
     .login-box{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;width:100%;max-width:400px;}
     .login-header{text-align:center;margin-bottom:2rem;}
     .login-header p{font-size:13px;color:var(--text2);margin-top:4px;}
+    .login-logo-wrap{background:#111827;margin:-2rem -2rem 1.5rem;padding:1.8rem 2rem 1.5rem;border-radius:9px 9px 0 0;text-align:center;}
+    .login-logo-wrap p{font-size:13px;color:rgba(255,255,255,.55);margin-top:6px;}
+    .login-logo-wrap .logo{color:#fff;}
     .error-msg{background:var(--red-bg);color:var(--red);padding:10px 12px;border-radius:8px;font-size:13px;margin-bottom:1rem;display:none;}
     .form-group{margin-bottom:1.2rem;}
     .form-group label{display:block;font-weight:500;font-size:14px;margin-bottom:6px;}
@@ -209,7 +212,7 @@
 <!-- LOGIN -->
 <div id="login-screen" style="display:none">
   <div class="login-box">
-    <div class="login-header">
+    <div class="login-logo-wrap">
       <img src="logo.png" class="logo-img-lg" alt="illic"
            onerror="this.style.display='none';document.getElementById('logo-fb-login').style.display='block'">
       <div class="logo logo-lg" id="logo-fb-login" style="display:none">illic</div>
@@ -279,14 +282,14 @@
         <div id="pac-filtros-ger" class="filter-bar">
           <label>Unidade:</label>
           <select id="filtro-unidade" onchange="renderPacientes()"><option value="">Todas</option></select>
-          <label style="margin-left:.5rem">Secretaria:</label>
-          <select id="filtro-sec" onchange="renderPacientes()"><option value="">Todas</option></select>
+          <label style="margin-left:.5rem">Usuário:</label>
+          <select id="filtro-sec" onchange="renderPacientes()"><option value="">Todos</option></select>
         </div>
         <div id="pac-unidade-info" style="display:none;margin-bottom:.8rem"></div>
         <div class="table-wrap">
           <table>
             <thead><tr>
-              <th>Nome / Convênio</th><th>Unidade</th><th>Secretaria</th>
+              <th>Nome / Convênio</th><th>Unidade</th><th>Usuário</th>
               <th>Última Reav.</th><th>Próxima</th><th>Agendamento ✎</th><th>Status ▾</th><th>Ações</th>
             </tr></thead>
             <tbody id="pacientes-table"></tbody>
@@ -373,10 +376,10 @@
         </div>
         <!-- SECRETARIAS -->
         <div class="card">
-          <h3>👤 Secretarias</h3>
+          <h3>👤 Usuários</h3>
           <div class="config-list" id="config-secretarias-list"></div>
           <div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:1rem;margin-top:.5rem">
-            <p style="font-size:13px;font-weight:500;margin-bottom:.8rem;color:var(--text2)">Nova secretaria:</p>
+            <p style="font-size:13px;font-weight:500;margin-bottom:.8rem;color:var(--text2)">Novo usuário:</p>
             <div class="config-add" style="flex-direction:column">
               <input type="text" id="nova-sec-nome" placeholder="Nome (ex: Carlos)">
               <input type="text" id="nova-sec-usuario" placeholder="Usuário de login (ex: carlos)" style="margin-top:6px">
@@ -426,7 +429,7 @@
     <div class="form-group"><label>Unidade <span style="color:var(--red)">*</span></label>
       <select id="p-unidade"><option value="">Selecione a unidade</option></select>
     </div>
-    <div class="form-group"><label>Secretaria responsável <span style="color:var(--red)">*</span></label>
+    <div class="form-group"><label>Usuário responsável <span style="color:var(--red)">*</span></label>
       <select id="p-sec"><option value="">Selecione a secretaria</option></select>
     </div>
     <div class="form-group"><label>Data da última reavaliação</label><input type="date" id="p-data"></div>
@@ -559,7 +562,7 @@
 <!-- MODAL: EDITAR SECRETARIA -->
 <div class="modal-overlay" id="modal-edit-sec" style="display:none" onclick="fecharModal(event)">
   <div class="modal">
-    <h3>✏️ Editar Secretaria</h3>
+    <h3>✏️ Editar Usuário</h3>
     <div class="form-group"><label>Nome</label><input type="text" id="edit-sec-nome" placeholder="Nome da secretaria"></div>
     <div class="form-group"><label>Usuário de login</label><input type="text" id="edit-sec-usuario" placeholder="usuario"></div>
     <div class="form-group"><label>Nova senha <small style="color:var(--text2);font-weight:400">(deixe em branco para não alterar)</small></label><input type="password" id="edit-sec-senha" placeholder="Nova senha (opcional)"></div>
@@ -575,6 +578,19 @@
     <div class="modal-footer">
       <button class="btn" onclick="document.getElementById('modal-edit-sec').style.display='none'">Cancelar</button>
       <button class="btn btn-primary" onclick="salvarEditSecretaria()">Salvar alterações</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: PROMPT SEMANAL -->
+<div class="modal-overlay" id="modal-prompt-semanal" style="display:none">
+  <div class="modal">
+    <h3>📋 Novos pacientes esta semana?</h3>
+    <p style="color:var(--text2);font-size:14px;margin-bottom:.8rem">Você realizou avaliações nos últimos 7 dias que ainda não foram cadastradas no sistema?</p>
+    <p style="color:var(--text2);font-size:13px;margin-bottom:1.2rem">Manter o cadastro atualizado garante que nenhum paciente fique sem acompanhamento. 💪</p>
+    <div class="modal-footer">
+      <button class="btn" onclick="document.getElementById('modal-prompt-semanal').style.display='none'">Já está tudo cadastrado</button>
+      <button class="btn btn-primary" onclick="document.getElementById('modal-prompt-semanal').style.display='none';abrirModalPaciente()">+ Cadastrar paciente</button>
     </div>
   </div>
 </div>
@@ -765,7 +781,7 @@ function populateSelects(){
   const pu=document.getElementById('p-unidade');
   if(pu){const v=pu.value;pu.innerHTML='<option value="">Selecione a unidade</option>'+unidades.map(u=>`<option ${v===u?'selected':''}>${u}</option>`).join('');}
   const ps=document.getElementById('p-sec');
-  if(ps){const v=ps.value;ps.innerHTML='<option value="">Selecione a secretaria</option>'+secs.map(s=>`<option value="${s.usuario}" ${v===s.usuario?'selected':''}>${s.nome}</option>`).join('');}
+  if(ps){const v=ps.value;ps.innerHTML='<option value="">Selecione o usuário</option>'+secs.map(s=>`<option value="${s.usuario}" ${v===s.usuario?'selected':''}>${s.nome}</option>`).join('');}
   const nsu=document.getElementById('nova-sec-unidade');
   if(nsu){const v=nsu.value;nsu.innerHTML='<option value="">Selecione a unidade principal...</option>'+unidades.map(u=>`<option ${v===u?'selected':''}>${u}</option>`).join('');}
   const rp=document.getElementById('re-profissional');
@@ -806,6 +822,7 @@ function login(){
     document.getElementById('tab-logs-btn').style.display=podeVerConfig()?'':'none';
     registrarLog('login','Entrou no sistema');
     ajustarFiltros();populateSelects();renderAll();notify('Bem-vindo! 👋');
+    verificarPromptSemanal();
   }else{
     document.getElementById('login-error').style.display='block';
   }
@@ -999,7 +1016,7 @@ function renderConfig(){
     const cp=pacientes.filter(p=>p.unidade===u).length;
     const cs=config.secretarias.filter(s=>s.unidade===u).length;
     return`<div class="config-item">
-      <div class="config-item-info"><span>${u}</span><small>${cp} paciente${cp!==1?'s':''} · ${cs} secretaria${cs!==1?'s':''}</small></div>
+      <div class="config-item-info"><span>${u}</span><small>${cp} paciente${cp!==1?'s':''} · ${cs} usuário${cs!==1?'s':''}</small></div>
       <div style="display:flex;gap:4px">
         <button class="btn btn-small btn-blue" onclick="editarUnidade(${i})" title="Editar">✏️</button>
         <button class="btn btn-small btn-red" onclick="removerUnidade(${i})" title="Remover">✕</button>
@@ -1017,7 +1034,7 @@ function renderConfig(){
         <button class="btn btn-small btn-blue" onclick="editarSecretaria(${i})" title="Editar">✏️</button>
         <button class="btn btn-small btn-red" onclick="removerSecretaria(${i})" title="Remover">✕</button>
       </div></div>`;
-  }).join(''):'<p class="no-data" style="padding:1rem">Nenhuma secretaria.</p>';
+  }).join(''):'<p class="no-data" style="padding:1rem">Nenhum usuário.</p>';
   const pl=document.getElementById('config-profissionais-list');
   pl.innerHTML=config.profissionais.length?config.profissionais.map((p,i)=>{
     const count=(()=>{let c=0;pacientes.forEach(pac=>{(pac.historico||[]).forEach(h=>{if(h.profissional===p)c++;});});return c;})();
@@ -1065,7 +1082,7 @@ async function adicionarSecretaria(){
   ['nova-sec-nome','nova-sec-usuario','nova-sec-senha'].forEach(id=>document.getElementById(id).value='');
   document.getElementById('nova-sec-unidade').value='';
   renderConfig();populateSelects();
-  registrarLog('config',`Adicionou secretaria: ${nome} (${perfilLabel(perfil)})`);notify('Secretaria adicionada! 👤');
+  registrarLog('config',`Adicionou usuário: ${nome} (${perfilLabel(perfil)})`);notify('Usuário adicionado! 👤');
 }
 async function removerSecretaria(i){
   const s=config.secretarias[i];
@@ -1075,7 +1092,7 @@ async function removerSecretaria(i){
   if(count>0){pacientes.filter(p=>p.sec===s.usuario).forEach(p=>{p.sec='';salvarDados(p);});}
   if(s._id)await db.from('illic_secretarias').delete().eq('id',s._id);
   config.secretarias.splice(i,1);renderConfig();populateSelects();
-  registrarLog('config',`Removeu secretaria: ${s.nome}`);notify('Secretaria removida.');
+  registrarLog('config',`Removeu usuário: ${s.nome}`);notify('Usuário removido.');
 }
 function adicionarProfissional(){
   const input=document.getElementById('novo-prof');
@@ -1160,8 +1177,8 @@ async function salvarEditSecretaria(){
   if(senha)s.senha=senha;
   document.getElementById('modal-edit-sec').style.display='none';
   renderConfig();populateSelects();
-  registrarLog('config',`Editou secretaria: ${nome} (@${usuario})`);
-  notify('Secretaria atualizada! ✅');
+  registrarLog('config',`Editou usuário: ${nome} (@${usuario})`);
+  notify('Usuário atualizado! ✅');
 }
 
 function alterarSenhaGerenciador(){
@@ -1268,6 +1285,16 @@ function salvarPaciente(){
   if(!dataReav){alert('Informe a data da última reavaliação.');return;}
   if(!unidade){alert('Selecione a unidade.');return;}
   if(!sec){alert('Selecione a secretaria responsável.');return;}
+  // Verificar duplicatas
+  const nomeLower=nome.toLowerCase().trim();
+  const duplicatas=pacientes.filter((p,idx)=>{
+    if(editIndex>=0&&idx===editIndex)return false;
+    return p.nome.toLowerCase().trim()===nomeLower;
+  });
+  if(duplicatas.length>0){
+    const d=duplicatas[0];
+    if(!confirm(`⚠️ Já existe um paciente com o nome "${d.nome}" (${d.unidade||'sem unidade'}).\n\nDeseja cadastrar mesmo assim?`))return;
+  }
   const menor=nascimento?calcIdade(nascimento)<18:false;
   const respNome=document.getElementById('p-resp-nome').value.trim();
   if(menor&&!respNome){alert('Paciente menor de idade: informe o nome do responsável.');return;}
@@ -1386,9 +1413,9 @@ function confirmarCancelamento(){
     registrarLog('cancelamento',`Cancelou e reagendou ${p.nome} — motivo: ${motivo}`,p.nome);
     notify('Cancelamento registrado e reagendado! 📅');
   }else{
-    p.agendamento={...p.agendamento,status:'cancelada',motivo};
+    p.agendamento=null;
     registrarLog('cancelamento',`Cancelou agendamento de ${p.nome} — motivo: ${motivo}`,p.nome);
-    notify('Cancelamento registrado. ❌');
+    notify('Cancelamento registrado. Paciente volta para fila de pendências. ❌');
   }
   salvarDados(p);
   document.getElementById('modal-cancelar').style.display='none';renderAll();
@@ -1405,11 +1432,11 @@ function confirmarNoShow(){
   const p=pacientes[noshowIndex],obs=document.getElementById('ns-obs').value.trim();
   p.historico=p.historico||[];
   p.historico.unshift({data:new Date().toISOString().split('T')[0],tipo:'noshow',obs});
-  p.agendamento={...p.agendamento,status:'noshow',obs};
+  p.agendamento=null;
   salvarDados(p);
   document.getElementById('modal-noshow').style.display='none';
   registrarLog('noshow',`Registrou no-show de ${p.nome}${obs?' · '+obs:''}`,p.nome);
-  renderAll();notify('No-show registrado. 🚫');
+  renderAll();notify('No-show registrado. Paciente volta para fila de pendências. 🚫');
 }
 
 // ===================== HISTÓRICO =====================
@@ -1596,6 +1623,24 @@ function imprimirProximos7dias(){
     <script>window.onload=function(){window.print();}<\/script>
   </body></html>`);
   win.document.close();
+}
+
+// ===================== PROMPT SEMANAL =====================
+function getNumSemana(d){
+  const dt=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()));
+  const dia=dt.getUTCDay()||7;
+  dt.setUTCDate(dt.getUTCDate()+4-dia);
+  const ini=new Date(Date.UTC(dt.getUTCFullYear(),0,1));
+  return Math.ceil((((dt-ini)/86400000)+1)/7);
+}
+function verificarPromptSemanal(){
+  const hoje=new Date();
+  const chave=`illic_semana_${currentUser}`;
+  const atual=`${hoje.getFullYear()}-${getNumSemana(hoje)}`;
+  if(localStorage.getItem(chave)!==atual){
+    localStorage.setItem(chave,atual);
+    setTimeout(()=>{document.getElementById('modal-prompt-semanal').style.display='flex';},1200);
+  }
 }
 
 // ===================== UTILS =====================
