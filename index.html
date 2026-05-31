@@ -1091,10 +1091,15 @@ function adicionarUnidade(){
 function removerUnidade(i){
   const u=config.unidades[i];
   const cp=pacientes.filter(p=>p.unidade===u).length,cs=config.secretarias.filter(s=>s.unidade===u).length;
-  const msg=cp>0||cs>0?`A unidade "${u}" possui ${cp} paciente(s) e ${cs} secretaria(s).\nAo remover, ficarão sem unidade. Continuar?`:`Remover "${u}"?`;
+  const msg=cp>0||cs>0?`A unidade "${u}" possui ${cp} paciente(s) e ${cs} usuário(s).\nAo remover, ficarão sem unidade. Continuar?`:`Remover "${u}"?`;
   if(!confirm(msg))return;
   pacientes.filter(p=>p.unidade===u).forEach(p=>{p.unidade='';salvarDados(p);});
-  config.secretarias.forEach(s=>{if(s.unidade===u)s.unidade='';});
+  config.secretarias.forEach(async s=>{
+    if(s.unidade===u){
+      s.unidade='';
+      if(s._id)await db.from('illic_secretarias').update({unidade:''}).eq('id',s._id);
+    }
+  });
   config.unidades.splice(i,1);salvarConfig();
   renderConfig();populateSelects();
   registrarLog('config',`Removeu unidade: ${u}`);notify('Unidade removida.');
@@ -1155,7 +1160,12 @@ function salvarEditUnidade(){
   if(nome===atual){document.getElementById('modal-edit-unidade').style.display='none';return;}
   if(config.unidades.includes(nome)){alert('Essa unidade já existe.');return;}
   pacientes.filter(p=>p.unidade===atual).forEach(p=>{p.unidade=nome;salvarDados(p);});
-  config.secretarias.forEach(s=>{if(s.unidade===atual)s.unidade=nome;});
+  config.secretarias.forEach(async s=>{
+    if(s.unidade===atual){
+      s.unidade=nome;
+      if(s._id)await db.from('illic_secretarias').update({unidade:nome}).eq('id',s._id);
+    }
+  });
   config.unidades[editUnidadeIndex]=nome;
   salvarConfig();renderConfig();populateSelects();
   document.getElementById('modal-edit-unidade').style.display='none';
@@ -1200,7 +1210,6 @@ async function salvarEditSecretaria(){
   const unidade=document.getElementById('edit-sec-unidade').value;
   if(!nome||!usuario){alert('Preencha nome e usuário.');return;}
   if(perfil==='secretaria'&&!unidade){alert('Selecione a unidade para o perfil Secretaria.');return;}
-  if(usuario===s.usuario===false&&config.secretarias.find(x=>x.usuario===usuario)){alert('Esse usuário já existe.');return;}
   if(usuario!==s.usuario&&config.secretarias.find(x=>x.usuario===usuario)){alert('Esse usuário já existe.');return;}
   const upd={nome,usuario,unidade,perfil};
   if(senha)upd.senha=senha;
@@ -2000,7 +2009,7 @@ async function initApp(){
       `👤 ${sessao==='gerenciador'?'Gerenciador':secNome(sessao)} ${perfilBadge(perfil)}`;
     document.getElementById('tab-config-btn').style.display=podeVerConfig()?'':'none';
     document.getElementById('tab-logs-btn').style.display=podeVerConfig()?'':'none';
-    ajustarFiltros();populateSelects();renderAll();
+    ajustarFiltros();populateSelects();renderAll();verificarPromptSemanal();
   }else{
     if(sessao)localStorage.removeItem('illic_sessao');
     populateSelects();
