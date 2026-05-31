@@ -1638,12 +1638,12 @@ function exportarFiltroPDF(){
     const cv=document.createElement('canvas');
     cv.width=img.width;cv.height=img.height;
     cv.getContext('2d').drawImage(img,0,0);
-    _gerarPDF(lista,cv.toDataURL('image/png'));
+    _gerarPDF(lista,cv.toDataURL('image/png'),img.width,img.height);
   };
-  img.onerror=function(){_gerarPDF(lista,null);};
+  img.onerror=function(){_gerarPDF(lista,null,0,0);};
   img.src='logo.png';
 }
-function _gerarPDF(lista,logoData){
+function _gerarPDF(lista,logoData,imgW,imgH){
   const{jsPDF}=window.jspdf;
   const doc=new jsPDF({orientation:'landscape',unit:'mm',format:'a4'});
   const hoje=new Date().toLocaleDateString('pt-BR');
@@ -1655,7 +1655,7 @@ function _gerarPDF(lista,logoData){
   doc.rect(0,0,W,24,'F');
   // Logo — mantém proporção original
   const logoH=12;
-  const logoW=Math.round((img?img.width/img.height:3)*logoH*10)/10;
+  const logoW=Math.round((imgW&&imgH?imgW/imgH:3)*logoH*10)/10;
   if(logoData){doc.addImage(logoData,'PNG',10,6,logoW,logoH);}
   else{
     doc.setFontSize(18);doc.setFont(undefined,'bold');
