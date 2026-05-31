@@ -29,20 +29,22 @@
     .logo-img-sm{height:28px;display:block;}
 
     /* LOGIN */
-    #login-screen{display:flex;justify-content:center;align-items:center;min-height:100vh;padding:1rem;}
-    .login-box{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;width:100%;max-width:400px;}
-    .login-header{text-align:center;margin-bottom:2rem;}
-    .login-header p{font-size:13px;color:var(--text2);margin-top:4px;}
-    .login-logo-wrap{background:#111827;margin:-2rem -2rem 1.5rem;padding:1.8rem 2rem 1.5rem;border-radius:9px 9px 0 0;text-align:center;}
-    .login-logo-wrap p{font-size:13px;color:rgba(255,255,255,.55);margin-top:6px;}
+    #login-screen{display:flex;justify-content:center;align-items:center;min-height:100vh;padding:1rem;background:#0f172a;}
+    .login-box{background:#1e293b;border:1px solid #334155;border-radius:var(--radius);padding:2rem;width:100%;max-width:400px;}
+    .login-logo-wrap{text-align:center;margin-bottom:2rem;}
+    .login-logo-wrap p{font-size:13px;color:rgba(255,255,255,.5);margin-top:6px;}
     .login-logo-wrap .logo{color:#fff;}
-    .error-msg{background:var(--red-bg);color:var(--red);padding:10px 12px;border-radius:8px;font-size:13px;margin-bottom:1rem;display:none;}
+    .login-label{color:#cbd5e1;font-weight:500;font-size:14px;display:block;margin-bottom:6px;}
+    .error-msg{background:rgba(239,68,68,.15);color:#fca5a5;padding:10px 12px;border-radius:8px;font-size:13px;margin-bottom:1rem;display:none;border:1px solid rgba(239,68,68,.3);}
     .form-group{margin-bottom:1.2rem;}
-    .form-group label{display:block;font-weight:500;font-size:14px;margin-bottom:6px;}
+    .form-group label{display:block;font-weight:500;font-size:14px;margin-bottom:6px;color:#cbd5e1;}
     .form-group input,.form-group select,.form-group textarea{width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:8px;font-size:14px;background:var(--card);color:var(--text);font-family:inherit;}
     .form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:2px solid var(--blue-bg);}
-    .btn-login{width:100%;padding:12px;background:var(--text);color:var(--card);border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;margin-top:.5rem;}
-    .btn-login:hover{opacity:.85;}
+    #login-screen .form-group input{background:#0f172a;border:1px solid #334155;color:#f1f5f9;}
+    #login-screen .form-group input::placeholder{color:#64748b;}
+    #login-screen .form-group input:focus{outline:2px solid #3b82f6;border-color:#3b82f6;}
+    .btn-login{width:100%;padding:12px;background:#3b82f6;color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;margin-top:.5rem;}
+    .btn-login:hover{background:#2563eb;}
 
     /* APP */
     #app-screen{display:none;min-height:100vh;}
@@ -215,7 +217,7 @@
     <div class="login-logo-wrap">
       <img src="logo.png" class="logo-img-lg" alt="illic"
            onerror="this.style.display='none';document.getElementById('logo-fb-login').style.display='block'">
-      <div class="logo logo-lg" id="logo-fb-login" style="display:none">illic</div>
+      <div class="logo logo-lg" id="logo-fb-login" style="display:none;color:#fff">illic</div>
       <p>Sistema de Reavaliações</p>
     </div>
     <div class="error-msg" id="login-error">Usuário ou senha incorretos.</div>
