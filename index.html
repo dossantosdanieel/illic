@@ -64,7 +64,8 @@
 
     .content{padding:1.5rem;max-width:1200px;margin:0 auto;}
     .metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:1.5rem;}
-    .metric{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:.9rem;text-align:center;}
+    .metric{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:.9rem;text-align:center;cursor:pointer;transition:box-shadow .15s,transform .12s;}
+    .metric:hover{box-shadow:0 4px 18px rgba(0,0,0,.1);transform:translateY(-2px);border-color:var(--text2);}
     .metric-label{font-size:11px;color:var(--text2);margin-bottom:4px;text-transform:uppercase;letter-spacing:.5px;}
     .metric-value{font-size:28px;font-weight:700;}
     .metric-value.red{color:var(--red);}.metric-value.yellow{color:var(--yellow);}
@@ -583,6 +584,17 @@
   </div>
 </div>
 
+<!-- MODAL: LISTA FILTRADA POR MÉTRICA -->
+<div class="modal-overlay" id="modal-lista-filtro" style="display:none" onclick="fecharModal(event)">
+  <div class="modal" style="max-width:680px;width:100%">
+    <h3 id="filtro-modal-titulo">Pacientes</h3>
+    <div id="filtro-modal-lista" style="max-height:60vh;overflow-y:auto;margin-top:.5rem"></div>
+    <div class="modal-footer">
+      <button class="btn" onclick="document.getElementById('modal-lista-filtro').style.display='none'">Fechar</button>
+    </div>
+  </div>
+</div>
+
 <!-- MODAL: PROMPT SEMANAL -->
 <div class="modal-overlay" id="modal-prompt-semanal" style="display:none">
   <div class="modal">
@@ -867,13 +879,13 @@ function renderMetrics(){
     if(dias<0)vencidas++;else if(dias<=7)proximas++;else emDia++;
   });
   document.getElementById('metrics-grid').innerHTML=`
-    <div class="metric"><div class="metric-label">Total</div><div class="metric-value">${total}</div></div>
-    <div class="metric"><div class="metric-label">Vencidas</div><div class="metric-value red">${vencidas}</div></div>
-    <div class="metric"><div class="metric-label">Cancelamentos</div><div class="metric-value purple">${canceladas}</div></div>
-    <div class="metric"><div class="metric-label">No-shows</div><div class="metric-value orange">${noshows}</div></div>
-    <div class="metric"><div class="metric-label">Próximas (7d)</div><div class="metric-value yellow">${proximas}</div></div>
-    <div class="metric"><div class="metric-label">Agendadas</div><div class="metric-value blue">${agendadas}</div></div>
-    <div class="metric"><div class="metric-label">Em dia</div><div class="metric-value green">${emDia}</div></div>`;
+    <div class="metric" onclick="abrirFiltroMetrica('total')"         title="Ver todos"><div class="metric-label">Total</div><div class="metric-value">${total}</div></div>
+    <div class="metric" onclick="abrirFiltroMetrica('vencidas')"      title="Ver vencidas"><div class="metric-label">Vencidas</div><div class="metric-value red">${vencidas}</div></div>
+    <div class="metric" onclick="abrirFiltroMetrica('cancelamentos')" title="Ver cancelamentos"><div class="metric-label">Cancelamentos</div><div class="metric-value purple">${canceladas}</div></div>
+    <div class="metric" onclick="abrirFiltroMetrica('noshows')"       title="Ver no-shows"><div class="metric-label">No-shows</div><div class="metric-value orange">${noshows}</div></div>
+    <div class="metric" onclick="abrirFiltroMetrica('proximas')"      title="Ver próximas"><div class="metric-label">Próximas (7d)</div><div class="metric-value yellow">${proximas}</div></div>
+    <div class="metric" onclick="abrirFiltroMetrica('agendadas')"     title="Ver agendadas"><div class="metric-label">Agendadas</div><div class="metric-value blue">${agendadas}</div></div>
+    <div class="metric" onclick="abrirFiltroMetrica('emdia')"         title="Ver em dia"><div class="metric-label">Em dia</div><div class="metric-value green">${emDia}</div></div>`;
 }
 function renderDashboard(){
   let lista=filtrarPorUsuario(pacientes);
@@ -1624,6 +1636,62 @@ function imprimirProximos7dias(){
     <script>window.onload=function(){window.print();}<\/script>
   </body></html>`);
   win.document.close();
+}
+
+// ===================== FILTRO POR MÉTRICA =====================
+function abrirFiltroMetrica(tipo){
+  let lista=filtrarPorUsuario(pacientes);
+  if(getPerfil()!=='secretaria'){const u=document.getElementById('dash-unidade')?.value||'';if(u)lista=lista.filter(p=>p.unidade===u);}
+  const titulos={
+    total:'👥 Todos os Pacientes',vencidas:'🔴 Reavaliações Vencidas',
+    cancelamentos:'❌ Cancelamentos',noshows:'🚫 No-shows',
+    proximas:'⚠️ Próximas (7 dias)',agendadas:'📅 Agendadas',emdia:'✅ Em dia'
+  };
+  let filtrados;
+  switch(tipo){
+    case'total':      filtrados=lista;break;
+    case'vencidas':   filtrados=lista.filter(p=>!p.agendamento&&calcDias(p)<0);break;
+    case'cancelamentos':filtrados=lista.filter(p=>p.agendamento?.status==='cancelada');break;
+    case'noshows':    filtrados=lista.filter(p=>p.agendamento?.status==='noshow');break;
+    case'proximas':   filtrados=lista.filter(p=>!p.agendamento&&calcDias(p)>=0&&calcDias(p)<=7);break;
+    case'agendadas':  filtrados=lista.filter(p=>p.agendamento?.status==='agendada');break;
+    case'emdia':      filtrados=lista.filter(p=>!p.agendamento&&calcDias(p)>7);break;
+    default:filtrados=lista;
+  }
+  filtrados=sorted(filtrados);
+  document.getElementById('filtro-modal-titulo').textContent=
+    `${titulos[tipo]||'Pacientes'} — ${filtrados.length} paciente${filtrados.length!==1?'s':''}`;
+  const el=document.getElementById('filtro-modal-lista');
+  if(!filtrados.length){
+    el.innerHTML='<p class="no-data">Nenhum paciente nesta categoria.</p>';
+  }else{
+    el.innerHTML=filtrados.map(p=>{
+      const ri=pacientes.indexOf(p);
+      const dias=calcDias(p),ag=p.agendamento;
+      let info='';
+      if(ag?.status==='agendada')   info=`📅 Agendada: ${formatDate(ag.data)}`;
+      else if(ag?.status==='cancelada')info=`❌ Cancelado`;
+      else if(ag?.status==='noshow')   info=`🚫 No-show`;
+      else if(dias<0) info=`🔴 Vencida há ${Math.abs(dias)}d`;
+      else if(dias<=7)info=`⚠️ Vence em ${dias}d`;
+      else            info=`✅ Próxima: ${formatDate(calcProxima(p).toISOString().split('T')[0])}`;
+      const cv=p.convenio?`<span class="convenio-tag">${p.convenio}</span>`:'';
+      const fecharFiltro=`document.getElementById('modal-lista-filtro').style.display='none';`;
+      return`<div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);gap:8px;flex-wrap:wrap">
+        <div>
+          <strong>${p.nome}</strong>${cv} <span class="badge badge-unit">${p.unidade||'—'}</span><br>
+          <small style="color:var(--text2)">${p.tel||'sem telefone'} · ${secNome(p.sec)} · ${info}</small>
+        </div>
+        <div class="actions">
+          ${p.tel?`<button class="btn btn-small btn-whatsapp" onclick="abrirWhatsApp('${p.tel}')" title="WhatsApp">💬</button>`:''}
+          <button class="btn btn-small btn-blue" onclick="${fecharFiltro}abrirAgendar(${ri})" title="Agendar">📅</button>
+          <button class="btn btn-small" onclick="${fecharFiltro}abrirHistorico(${ri})" title="Histórico">📋</button>
+          <button class="btn btn-small" onclick="${fecharFiltro}editarPaciente(${ri})" title="Editar">✏️</button>
+        </div>
+      </div>`;
+    }).join('');
+  }
+  document.getElementById('modal-lista-filtro').style.display='flex';
 }
 
 // ===================== PROMPT SEMANAL =====================
