@@ -1653,21 +1653,25 @@ function _gerarPDF(lista,logoData){
   // Cabeçalho branco
   doc.setFillColor(255,255,255);
   doc.rect(0,0,W,24,'F');
-  // Logo
-  if(logoData){doc.addImage(logoData,'PNG',10,4,32,14);}
+  // Logo — mantém proporção original
+  const logoH=12;
+  const logoW=Math.round((img?img.width/img.height:3)*logoH*10)/10;
+  if(logoData){doc.addImage(logoData,'PNG',10,6,logoW,logoH);}
   else{
     doc.setFontSize(18);doc.setFont(undefined,'bold');
     doc.setTextColor(0,0,0);doc.text('illic',10,15);
   }
   // Linha vertical separadora
+  const sepX=logoW+16;
   doc.setDrawColor(220,220,220);doc.setLineWidth(0.3);
-  doc.line(48,5,48,21);
+  doc.line(sepX,5,sepX,21);
   // Título e subtítulo
+  const txtX=sepX+6;
   doc.setTextColor(20,20,20);doc.setFontSize(12);doc.setFont(undefined,'bold');
-  doc.text(titulo,52,13);
+  doc.text(titulo,txtX,13);
   doc.setFontSize(8);doc.setFont(undefined,'normal');
   doc.setTextColor(120,120,120);
-  doc.text(`Gerado em ${hoje}  ·  ${lista.length} paciente(s)`,52,19);
+  doc.text(`Gerado em ${hoje}  ·  ${lista.length} paciente(s)`,txtX,19);
   // Linha separadora azul
   doc.setFillColor(30,64,175);
   doc.rect(0,24,W,0.8,'F');
