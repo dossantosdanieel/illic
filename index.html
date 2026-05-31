@@ -1632,19 +1632,48 @@ function exportarFiltroExcel(){
 function exportarFiltroPDF(){
   const lista=_filtroModalLista;
   if(!lista.length){notify('Nenhum paciente para exportar.');return;}
+  // Carrega a logo antes de gerar o PDF
+  const img=new Image();
+  img.onload=function(){
+    const cv=document.createElement('canvas');
+    cv.width=img.width;cv.height=img.height;
+    cv.getContext('2d').drawImage(img,0,0);
+    _gerarPDF(lista,cv.toDataURL('image/png'));
+  };
+  img.onerror=function(){_gerarPDF(lista,null);};
+  img.src='logo.png';
+}
+function _gerarPDF(lista,logoData){
   const{jsPDF}=window.jspdf;
   const doc=new jsPDF({orientation:'landscape',unit:'mm',format:'a4'});
   const hoje=new Date().toLocaleDateString('pt-BR');
+  // Remove emojis do título para o PDF
+  const titulo=_filtroModalTitulo.replace(/[\u{1F000}-\u{1FFFF}☀-➿︀-️]/gu,'').replace(/\s+/g,' ').trim();
+  const W=297;
+  // Cabeçalho branco
+  doc.setFillColor(255,255,255);
+  doc.rect(0,0,W,24,'F');
+  // Logo
+  if(logoData){doc.addImage(logoData,'PNG',10,4,32,14);}
+  else{
+    doc.setFontSize(18);doc.setFont(undefined,'bold');
+    doc.setTextColor(0,0,0);doc.text('illic',10,15);
+  }
+  // Linha vertical separadora
+  doc.setDrawColor(220,220,220);doc.setLineWidth(0.3);
+  doc.line(48,5,48,21);
+  // Título e subtítulo
+  doc.setTextColor(20,20,20);doc.setFontSize(12);doc.setFont(undefined,'bold');
+  doc.text(titulo,52,13);
+  doc.setFontSize(8);doc.setFont(undefined,'normal');
+  doc.setTextColor(120,120,120);
+  doc.text(`Gerado em ${hoje}  ·  ${lista.length} paciente(s)`,52,19);
+  // Linha separadora azul
   doc.setFillColor(30,64,175);
-  doc.rect(0,0,297,18,'F');
-  doc.setTextColor(255,255,255);
-  doc.setFontSize(13);doc.setFont(undefined,'bold');
-  doc.text(`illic — ${_filtroModalTitulo}`,14,11);
-  doc.setFontSize(9);doc.setFont(undefined,'normal');
-  doc.text(`Gerado em ${hoje}  ·  ${lista.length} paciente(s)`,14,16);
-  doc.setTextColor(0,0,0);
+  doc.rect(0,24,W,0.8,'F');
+  // Tabela
   doc.autoTable({
-    startY:22,
+    startY:27,
     head:[['Nome','Telefone','Convênio','Unidade','Usuário','Última Reav.','Próxima Reav.','Status']],
     body:lista.map(p=>[
       p.nome,p.tel||'—',p.convenio||'—',p.unidade||'—',
@@ -1652,19 +1681,22 @@ function exportarFiltroPDF(){
       formatDate(calcProxima(p).toISOString().split('T')[0]),
       getStatusTexto(p)
     ]),
-    styles:{fontSize:8,cellPadding:3},
-    headStyles:{fillColor:[30,64,175],textColor:255,fontStyle:'bold'},
-    alternateRowStyles:{fillColor:[245,247,250]},
-    columnStyles:{0:{cellWidth:44},7:{cellWidth:30}}
+    styles:{fontSize:8,cellPadding:3,textColor:[30,30,30]},
+    headStyles:{fillColor:[30,64,175],textColor:255,fontStyle:'bold',fontSize:8},
+    alternateRowStyles:{fillColor:[245,245,245]},
+    bodyStyles:{fillColor:[255,255,255]},
+    columnStyles:{0:{cellWidth:44},7:{cellWidth:30}},
+    tableLineColor:[220,220,220],tableLineWidth:0.1
   });
+  // Rodapé
   const pages=doc.internal.getNumberOfPages();
   for(let i=1;i<=pages;i++){
-    doc.setPage(i);doc.setFontSize(8);doc.setTextColor(150);
-    doc.text(`illic Fisioterapia · Página ${i} de ${pages}`,14,doc.internal.pageSize.height-5);
-    doc.text(hoje,doc.internal.pageSize.width-30,doc.internal.pageSize.height-5);
+    doc.setPage(i);doc.setFontSize(8);doc.setTextColor(180,180,180);
+    doc.text(`illic Fisioterapia  ·  Página ${i} de ${pages}`,14,doc.internal.pageSize.height-5);
+    doc.text(hoje,W-30,doc.internal.pageSize.height-5);
   }
   doc.save(`illic-${new Date().toISOString().split('T')[0]}.pdf`);
-  registrarLog('config',`Exportou "${_filtroModalTitulo}" (PDF) — ${lista.length} paciente(s)`);
+  registrarLog('config',`Exportou "${titulo}" (PDF) — ${lista.length} paciente(s)`);
   notify(`PDF gerado! ${lista.length} paciente(s) 📄`);
 }
 
