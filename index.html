@@ -9,6 +9,9 @@
   <title>illic — Sistema de Reavaliações</title>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
   <style>
     :root{
       --bg:#f5f5f5;--card:#fff;--text:#1a1a1a;--text2:#666;--border:#e0e0e0;--radius:10px;
@@ -279,7 +282,11 @@
       <div class="card">
         <div class="card-header">
           <h2>Pacientes</h2>
-          <button class="btn btn-primary" onclick="abrirModalPaciente()">+ Novo Paciente</button>
+          <div style="display:flex;gap:6px;flex-wrap:wrap">
+            <button class="btn btn-small btn-teal" onclick="exportarExcel('pacientes')" title="Exportar para Excel">📊 Excel</button>
+            <button class="btn btn-small btn-blue" onclick="exportarPDF('pacientes')" title="Exportar para PDF">📄 PDF</button>
+            <button class="btn btn-primary" onclick="abrirModalPaciente()">+ Novo Paciente</button>
+          </div>
         </div>
         <div id="pac-filtros-ger" class="filter-bar">
           <label>Unidade:</label>
@@ -319,7 +326,11 @@
       <div class="card">
         <div class="card-header">
           <h2>📁 Fichas de Pacientes</h2>
-          <button class="btn btn-primary" onclick="abrirModalPaciente()">+ Novo Paciente</button>
+          <div style="display:flex;gap:6px;flex-wrap:wrap">
+            <button class="btn btn-small btn-teal" onclick="exportarExcel('fichas')" title="Exportar para Excel">📊 Excel</button>
+            <button class="btn btn-small btn-blue" onclick="exportarPDF('fichas')" title="Exportar para PDF">📄 PDF</button>
+            <button class="btn btn-primary" onclick="abrirModalPaciente()">+ Novo Paciente</button>
+          </div>
         </div>
         <div class="filter-bar">
           <input type="text" class="search-input" id="cad-busca" placeholder="🔍 Buscar por nome, telefone ou convênio..." oninput="renderCadastros()">
@@ -1591,6 +1602,109 @@ function renderCadastros(){
       </div>
     </div>`;
   }).join('');
+}
+
+// ===================== EXPORTAÇÃO =====================
+function getStatusTexto(p){
+  const ag=p.agendamento,dias=calcDias(p);
+  if(ag?.status==='agendada') return`Agendada: ${formatDate(ag.data)}`;
+  if(ag?.status==='cancelada')return'Cancelado';
+  if(ag?.status==='noshow')   return'No-show';
+  if(dias<0) return`Vencida (${Math.abs(dias)}d)`;
+  if(dias<=7)return`Próxima em ${dias}d`;
+  return'Em dia';
+}
+function getListaExport(origem){
+  let lista=filtrarPorUsuario(pacientes);
+  if(origem==='pacientes'&&getPerfil()!=='secretaria'){
+    const u=document.getElementById('filtro-unidade')?.value||'';
+    const s=document.getElementById('filtro-sec')?.value||'';
+    if(u)lista=lista.filter(p=>p.unidade===u);
+    if(s)lista=lista.filter(p=>p.sec===s);
+  }
+  if(origem==='fichas'){
+    const busca=(document.getElementById('cad-busca')?.value||'').toLowerCase().trim();
+    const u=document.getElementById('cad-unidade')?.value||'';
+    if(busca)lista=lista.filter(p=>
+      p.nome.toLowerCase().includes(busca)||
+      (p.tel&&p.tel.replace(/\D/g,'').includes(busca.replace(/\D/g,'')))||
+      (p.convenio&&p.convenio.toLowerCase().includes(busca))
+    );
+    if(u)lista=lista.filter(p=>p.unidade===u);
+    lista=[...lista].sort((a,b)=>a.nome.localeCompare(b.nome,'pt-BR'));
+  }else{
+    lista=sorted(lista);
+  }
+  return lista;
+}
+function exportarExcel(origem){
+  const lista=getListaExport(origem);
+  if(!lista.length){notify('Nenhum paciente para exportar.');return;}
+  const rows=lista.map(p=>({
+    'Nome':p.nome,
+    'Telefone':p.tel||'',
+    'Email':p.email||'',
+    'Convênio':p.convenio||'',
+    'Unidade':p.unidade||'',
+    'Usuário':secNome(p.sec),
+    'Data Nasc.':p.dataNascimento?formatDate(p.dataNascimento):'',
+    'Última Reav.':formatDate(p.ultimaReav),
+    'Próxima Reav.':formatDate(calcProxima(p).toISOString().split('T')[0]),
+    'Intervalo (meses)':p.intervalo||3,
+    'Status':getStatusTexto(p)
+  }));
+  const ws=XLSX.utils.json_to_sheet(rows);
+  // Largura das colunas
+  ws['!cols']=[{wch:30},{wch:16},{wch:24},{wch:16},{wch:16},{wch:18},{wch:12},{wch:14},{wch:14},{wch:8},{wch:20}];
+  const wb=XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb,ws,'Pacientes');
+  const nome=`illic-pacientes-${new Date().toISOString().split('T')[0]}.xlsx`;
+  XLSX.writeFile(wb,nome);
+  registrarLog('config',`Exportou lista (Excel) — ${lista.length} paciente(s)`);
+  notify(`Excel gerado! ${lista.length} paciente(s) 📊`);
+}
+function exportarPDF(origem){
+  const lista=getListaExport(origem);
+  if(!lista.length){notify('Nenhum paciente para exportar.');return;}
+  const{jsPDF}=window.jspdf;
+  const doc=new jsPDF({orientation:'landscape',unit:'mm',format:'a4'});
+  const hoje=new Date().toLocaleDateString('pt-BR');
+  const unidadeLabel=getPerfil()==='secretaria'?(secUnidade(currentUser)||'Minha unidade'):'Todas as unidades';
+  // Cabeçalho
+  doc.setFillColor(30,64,175);
+  doc.rect(0,0,297,18,'F');
+  doc.setTextColor(255,255,255);
+  doc.setFontSize(14);doc.setFont(undefined,'bold');
+  doc.text('illic — Lista de Pacientes',14,11);
+  doc.setFontSize(9);doc.setFont(undefined,'normal');
+  doc.text(`Gerado em ${hoje}  ·  ${unidadeLabel}  ·  ${lista.length} paciente(s)`,14,16);
+  doc.setTextColor(0,0,0);
+  // Tabela
+  doc.autoTable({
+    startY:22,
+    head:[['Nome','Telefone','Convênio','Unidade','Usuário','Última Reav.','Próxima Reav.','Status']],
+    body:lista.map(p=>[
+      p.nome,p.tel||'—',p.convenio||'—',p.unidade||'—',
+      secNome(p.sec),formatDate(p.ultimaReav),
+      formatDate(calcProxima(p).toISOString().split('T')[0]),
+      getStatusTexto(p)
+    ]),
+    styles:{fontSize:8,cellPadding:3},
+    headStyles:{fillColor:[30,64,175],textColor:255,fontStyle:'bold'},
+    alternateRowStyles:{fillColor:[245,247,250]},
+    columnStyles:{0:{cellWidth:42},7:{cellWidth:32}}
+  });
+  // Rodapé
+  const pages=doc.internal.getNumberOfPages();
+  for(let i=1;i<=pages;i++){
+    doc.setPage(i);
+    doc.setFontSize(8);doc.setTextColor(150);
+    doc.text(`illic Fisioterapia · Página ${i} de ${pages}`,14,doc.internal.pageSize.height-5);
+    doc.text(hoje,doc.internal.pageSize.width-30,doc.internal.pageSize.height-5);
+  }
+  doc.save(`illic-pacientes-${new Date().toISOString().split('T')[0]}.pdf`);
+  registrarLog('config',`Exportou lista (PDF) — ${lista.length} paciente(s)`);
+  notify(`PDF gerado! ${lista.length} paciente(s) 📄`);
 }
 
 // ===================== IMPRIMIR PDF =====================
