@@ -845,6 +845,7 @@ function login(){
   else{const sec=config.secretarias.find(s=>s.usuario===u&&s.senha===p);if(sec)ok=true;}
   if(ok){
     currentUser=u;
+    localStorage.setItem('illic_sessao',u);
     const perfil=getPerfil();
     document.getElementById('login-screen').style.display='none';
     document.getElementById('app-screen').style.display='block';
@@ -861,6 +862,7 @@ function login(){
 }
 function logout(){
   registrarLog('logout','Saiu do sistema');
+  localStorage.removeItem('illic_sessao');
   document.getElementById('login-screen').style.display='flex';
   document.getElementById('app-screen').style.display='none';
   ['username','password'].forEach(id=>document.getElementById(id).value='');
@@ -1986,9 +1988,24 @@ async function initApp(){
     msg.style.color='#991b1b';
     return;
   }
+  // Restaurar sessão salva
+  const sessao=localStorage.getItem('illic_sessao');
+  const sessaoValida=sessao&&(sessao==='gerenciador'||config.secretarias.some(s=>s.usuario===sessao));
   loading.style.display='none';
-  populateSelects();
-  document.getElementById('login-screen').style.display='flex';
+  if(sessaoValida){
+    currentUser=sessao;
+    const perfil=getPerfil();
+    document.getElementById('app-screen').style.display='block';
+    document.getElementById('user-label').innerHTML=
+      `👤 ${sessao==='gerenciador'?'Gerenciador':secNome(sessao)} ${perfilBadge(perfil)}`;
+    document.getElementById('tab-config-btn').style.display=podeVerConfig()?'':'none';
+    document.getElementById('tab-logs-btn').style.display=podeVerConfig()?'':'none';
+    ajustarFiltros();populateSelects();renderAll();
+  }else{
+    if(sessao)localStorage.removeItem('illic_sessao');
+    populateSelects();
+    document.getElementById('login-screen').style.display='flex';
+  }
 }
 
 initApp();
