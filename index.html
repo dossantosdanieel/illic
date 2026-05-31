@@ -599,8 +599,12 @@
 <div class="modal-overlay" id="modal-lista-filtro" style="display:none" onclick="fecharModal(event)">
   <div class="modal" style="max-width:680px;width:100%">
     <h3 id="filtro-modal-titulo">Pacientes</h3>
-    <div id="filtro-modal-lista" style="max-height:60vh;overflow-y:auto;margin-top:.5rem"></div>
-    <div class="modal-footer">
+    <div id="filtro-modal-lista" style="max-height:55vh;overflow-y:auto;margin-top:.5rem"></div>
+    <div class="modal-footer" style="justify-content:space-between;flex-wrap:wrap;gap:8px">
+      <div style="display:flex;gap:6px">
+        <button class="btn btn-small btn-teal" onclick="exportarFiltroExcel()" title="Exportar lista para Excel">📊 Excel</button>
+        <button class="btn btn-small btn-blue" onclick="exportarFiltroPDF()" title="Exportar lista para PDF">📄 PDF</button>
+      </div>
       <button class="btn" onclick="document.getElementById('modal-lista-filtro').style.display='none'">Fechar</button>
     </div>
   </div>
@@ -660,6 +664,7 @@ let currentUser='';
 let editIndex=-1,agendarIndex=-1,realizarIndex=-1,cancelarIndex=-1,noshowIndex=-1;
 let editSecIndex=-1,editUnidadeIndex=-1,editProfIndex=-1;
 let _wamTel='',_wamMsg='';
+let _filtroModalLista=[],_filtroModalTitulo='';
 
 // ===================== DB HELPERS =====================
 function toDBRow(p){
@@ -1604,6 +1609,65 @@ function renderCadastros(){
   }).join('');
 }
 
+// ===================== EXPORTAÇÃO DO MODAL DE MÉTRICA =====================
+function exportarFiltroExcel(){
+  const lista=_filtroModalLista;
+  if(!lista.length){notify('Nenhum paciente para exportar.');return;}
+  const rows=lista.map(p=>({
+    'Nome':p.nome,'Telefone':p.tel||'','Email':p.email||'',
+    'Convênio':p.convenio||'','Unidade':p.unidade||'',
+    'Usuário':secNome(p.sec),
+    'Última Reav.':formatDate(p.ultimaReav),
+    'Próxima Reav.':formatDate(calcProxima(p).toISOString().split('T')[0]),
+    'Status':getStatusTexto(p)
+  }));
+  const ws=XLSX.utils.json_to_sheet(rows);
+  ws['!cols']=[{wch:32},{wch:16},{wch:24},{wch:16},{wch:16},{wch:18},{wch:14},{wch:14},{wch:22}];
+  const wb=XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb,ws,'Pacientes');
+  XLSX.writeFile(wb,`illic-${new Date().toISOString().split('T')[0]}.xlsx`);
+  registrarLog('config',`Exportou "${_filtroModalTitulo}" (Excel) — ${lista.length} paciente(s)`);
+  notify(`Excel gerado! ${lista.length} paciente(s) 📊`);
+}
+function exportarFiltroPDF(){
+  const lista=_filtroModalLista;
+  if(!lista.length){notify('Nenhum paciente para exportar.');return;}
+  const{jsPDF}=window.jspdf;
+  const doc=new jsPDF({orientation:'landscape',unit:'mm',format:'a4'});
+  const hoje=new Date().toLocaleDateString('pt-BR');
+  doc.setFillColor(30,64,175);
+  doc.rect(0,0,297,18,'F');
+  doc.setTextColor(255,255,255);
+  doc.setFontSize(13);doc.setFont(undefined,'bold');
+  doc.text(`illic — ${_filtroModalTitulo}`,14,11);
+  doc.setFontSize(9);doc.setFont(undefined,'normal');
+  doc.text(`Gerado em ${hoje}  ·  ${lista.length} paciente(s)`,14,16);
+  doc.setTextColor(0,0,0);
+  doc.autoTable({
+    startY:22,
+    head:[['Nome','Telefone','Convênio','Unidade','Usuário','Última Reav.','Próxima Reav.','Status']],
+    body:lista.map(p=>[
+      p.nome,p.tel||'—',p.convenio||'—',p.unidade||'—',
+      secNome(p.sec),formatDate(p.ultimaReav),
+      formatDate(calcProxima(p).toISOString().split('T')[0]),
+      getStatusTexto(p)
+    ]),
+    styles:{fontSize:8,cellPadding:3},
+    headStyles:{fillColor:[30,64,175],textColor:255,fontStyle:'bold'},
+    alternateRowStyles:{fillColor:[245,247,250]},
+    columnStyles:{0:{cellWidth:44},7:{cellWidth:30}}
+  });
+  const pages=doc.internal.getNumberOfPages();
+  for(let i=1;i<=pages;i++){
+    doc.setPage(i);doc.setFontSize(8);doc.setTextColor(150);
+    doc.text(`illic Fisioterapia · Página ${i} de ${pages}`,14,doc.internal.pageSize.height-5);
+    doc.text(hoje,doc.internal.pageSize.width-30,doc.internal.pageSize.height-5);
+  }
+  doc.save(`illic-${new Date().toISOString().split('T')[0]}.pdf`);
+  registrarLog('config',`Exportou "${_filtroModalTitulo}" (PDF) — ${lista.length} paciente(s)`);
+  notify(`PDF gerado! ${lista.length} paciente(s) 📄`);
+}
+
 // ===================== EXPORTAÇÃO =====================
 function getStatusTexto(p){
   const ag=p.agendamento,dias=calcDias(p);
@@ -1775,8 +1839,10 @@ function abrirFiltroMetrica(tipo){
     default:filtrados=lista;
   }
   filtrados=sorted(filtrados);
+  _filtroModalLista=filtrados;
+  _filtroModalTitulo=titulos[tipo]||'Pacientes';
   document.getElementById('filtro-modal-titulo').textContent=
-    `${titulos[tipo]||'Pacientes'} — ${filtrados.length} paciente${filtrados.length!==1?'s':''}`;
+    `${_filtroModalTitulo} — ${filtrados.length} paciente${filtrados.length!==1?'s':''}`;
   const el=document.getElementById('filtro-modal-lista');
   if(!filtrados.length){
     el.innerHTML='<p class="no-data">Nenhum paciente nesta categoria.</p>';
