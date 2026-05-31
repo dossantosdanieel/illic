@@ -477,8 +477,9 @@
     <p style="color:var(--text2);font-size:13px;margin-bottom:1.2rem">Paciente: <strong id="ag-nome"></strong></p>
     <div class="form-group"><label>Data do agendamento</label><input type="date" id="ag-data"></div>
     <div class="form-group"><label>Observações (opcional)</label><textarea id="ag-obs" rows="2" placeholder="Ex: Confirmado por WhatsApp..."></textarea></div>
-    <div class="modal-footer">
-      <button class="btn" onclick="document.getElementById('modal-agendar').style.display='none'">Cancelar</button>
+    <div class="modal-footer" style="flex-wrap:wrap;gap:8px">
+      <button class="btn" onclick="document.getElementById('modal-agendar').style.display='none'">Voltar</button>
+      <button class="btn btn-red" id="ag-remover-btn" style="display:none" onclick="removerAgendamento()">🗑 Remover agendamento</button>
       <button class="btn btn-whatsapp" onclick="confirmarAgendamentoEWhatsApp()">💬 Agendar e Avisar</button>
       <button class="btn btn-blue" onclick="confirmarAgendamento()">📅 Agendar</button>
     </div>
@@ -1392,7 +1393,17 @@ function abrirAgendar(i){
     :(proxima.toISOString().split('T')[0]>hoje?proxima.toISOString().split('T')[0]:hoje);
   document.getElementById('ag-data').value=dataInicial;
   document.getElementById('ag-obs').value=ag?.obs||'';
+  document.getElementById('ag-remover-btn').style.display=ag?.status==='agendada'?'':'none';
   document.getElementById('modal-agendar').style.display='flex';
+}
+function removerAgendamento(){
+  const p=pacientes[agendarIndex];
+  if(!confirm(`Remover o agendamento de ${p.nome}?\nO paciente voltará para a fila de pendências.`))return;
+  p.agendamento=null;
+  salvarDados(p);
+  registrarLog('agendamento',`Removeu agendamento de ${p.nome}`,p.nome);
+  document.getElementById('modal-agendar').style.display='none';
+  renderAll();notify('Agendamento removido. Paciente voltou para a fila. 🗑');
 }
 function _salvarAgendamento(){
   const data=document.getElementById('ag-data').value;
