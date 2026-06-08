@@ -173,6 +173,14 @@
     .search-input{padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:13px;background:var(--card);color:var(--text);font-family:inherit;min-width:200px;}
     .menor-badge-inline{background:var(--yellow-bg);color:var(--yellow);font-size:11px;padding:1px 7px;border-radius:6px;font-weight:500;}
 
+    /* PAGINAÇÃO */
+    .pagination{display:flex;align-items:center;justify-content:center;gap:.4rem;padding:.9rem 0 .4rem;}
+    .pagination button{padding:5px 12px;border:1px solid var(--border);border-radius:8px;background:transparent;color:var(--text);font-size:13px;cursor:pointer;transition:background .15s,color .15s;}
+    .pagination button:hover:not(:disabled){background:var(--border);}
+    .pagination button:disabled{opacity:.35;cursor:default;}
+    .pagination button.pag-ativa{background:var(--text);color:var(--bg);border-color:var(--text);font-weight:600;}
+    .pag-info{font-size:13px;color:var(--text2);padding:0 .3rem;}
+
     /* IMPRESSÃO */
     @media print{
       #login-screen,#app-screen .topbar,#app-screen .tabs,
@@ -290,9 +298,9 @@
         </div>
         <div id="pac-filtros-ger" class="filter-bar">
           <label>Unidade:</label>
-          <select id="filtro-unidade" onchange="renderPacientes()"><option value="">Todas</option></select>
+          <select id="filtro-unidade" onchange="_pacPagina=0;renderPacientes()"><option value="">Todas</option></select>
           <label style="margin-left:.5rem">Usuário:</label>
-          <select id="filtro-sec" onchange="renderPacientes()"><option value="">Todos</option></select>
+          <select id="filtro-sec" onchange="_pacPagina=0;renderPacientes()"><option value="">Todos</option></select>
         </div>
         <div id="pac-unidade-info" style="display:none;margin-bottom:.8rem"></div>
         <div class="table-wrap">
@@ -304,6 +312,7 @@
             <tbody id="pacientes-table"></tbody>
           </table>
         </div>
+        <div id="pac-pagination"></div>
       </div>
     </div>
 
@@ -665,6 +674,7 @@ let currentUser='';
 let editIndex=-1,agendarIndex=-1,realizarIndex=-1,cancelarIndex=-1,noshowIndex=-1;
 let editSecIndex=-1,editUnidadeIndex=-1,editProfIndex=-1;
 let _wamTel='',_wamMsg='';
+let _pacPagina=0;
 let _filtroModalLista=[],_filtroModalTitulo='';
 
 // ===================== DB HELPERS =====================
@@ -928,6 +938,7 @@ function renderDashboard(){
     </tr>`;
   }).join('');
 }
+function _irPagina(n){_pacPagina=n;renderPacientes();}
 function renderPacientes(){
   let lista=filtrarPorUsuario(pacientes);
   if(getPerfil()!=='secretaria'){
@@ -938,8 +949,36 @@ function renderPacientes(){
   }
   lista=sorted(lista);
   const tb=document.getElementById('pacientes-table');
-  if(!lista.length){tb.innerHTML='<tr><td colspan="8" class="no-data">Nenhum paciente encontrado.</td></tr>';return;}
-  tb.innerHTML=lista.map(p=>{
+  const pag=document.getElementById('pac-pagination');
+  const POR_PAG=10;
+  const total=lista.length;
+  const totalPag=Math.max(1,Math.ceil(total/POR_PAG));
+  if(_pacPagina>=totalPag)_pacPagina=totalPag-1;
+  if(_pacPagina<0)_pacPagina=0;
+  const inicio=_pacPagina*POR_PAG;
+  const pagina=lista.slice(inicio,inicio+POR_PAG);
+  if(!total){
+    tb.innerHTML='<tr><td colspan="8" class="no-data">Nenhum paciente encontrado.</td></tr>';
+    if(pag)pag.innerHTML='';
+    return;
+  }
+  // Paginação
+  if(pag){
+    if(totalPag>1){
+      let btns=`<button onclick="_irPagina(${_pacPagina-1})" ${_pacPagina===0?'disabled':''}>‹ Anterior</button>`;
+      for(let i=0;i<totalPag;i++){
+        if(totalPag<=7||i===0||i===totalPag-1||Math.abs(i-_pacPagina)<=1){
+          btns+=`<button class="${i===_pacPagina?'pag-ativa':''}" onclick="_irPagina(${i})">${i+1}</button>`;
+        }else if(Math.abs(i-_pacPagina)===2){
+          btns+=`<span class="pag-info">…</span>`;
+        }
+      }
+      btns+=`<button onclick="_irPagina(${_pacPagina+1})" ${_pacPagina===totalPag-1?'disabled':''}>Próxima ›</button>`;
+      btns+=`<span class="pag-info">${inicio+1}–${Math.min(inicio+POR_PAG,total)} de ${total}</span>`;
+      pag.innerHTML=`<div class="pagination">${btns}</div>`;
+    }else{pag.innerHTML='';}
+  }
+  tb.innerHTML=pagina.map(p=>{
     const ri=pacientes.indexOf(p);
     const cv=p.convenio?`<span class="convenio-tag">${p.convenio}</span>`:'';
     const wpp=p.tel?`<button class="btn btn-small btn-whatsapp" onclick="abrirWhatsApp('${p.tel}')" title="WhatsApp">${wppSvg}</button>`:'';
