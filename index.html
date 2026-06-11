@@ -173,6 +173,12 @@
     .search-input{padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:13px;background:var(--card);color:var(--text);font-family:inherit;min-width:200px;}
     .menor-badge-inline{background:var(--yellow-bg);color:var(--yellow);font-size:11px;padding:1px 7px;border-radius:6px;font-weight:500;}
 
+    /* ENCERRADO */
+    .badge-encerrado{background:#e2e8f0;color:#64748b;}
+    tr.row-encerrada td{opacity:.55;}
+    .search-input{padding:6px 10px;border:1px solid var(--border);border-radius:8px;font-size:13px;font-family:inherit;background:var(--card);color:var(--text);min-width:160px;}
+    .search-input:focus{outline:none;border-color:var(--blue);}
+
     /* PAGINAÇÃO */
     .pagination{display:flex;align-items:center;justify-content:center;gap:.4rem;padding:.9rem 0 .4rem;}
     .pagination button{padding:5px 12px;border:1px solid var(--border);border-radius:8px;background:transparent;color:var(--text);font-size:13px;cursor:pointer;transition:background .15s,color .15s;}
@@ -268,8 +274,9 @@
       <div class="card">
         <div class="card-header">
           <h2>Pacientes por prioridade</h2>
-          <div id="dash-unidade-wrap" class="filter-bar" style="margin:0">
+          <div id="dash-unidade-wrap" class="filter-bar" style="margin:0;flex-wrap:wrap;gap:.5rem">
             <select id="dash-unidade" onchange="renderAll()"><option value="">Todas as unidades</option></select>
+            <input id="dash-busca" class="search-input" type="search" placeholder="🔍 Buscar paciente..." oninput="renderDashboard()">
           </div>
         </div>
         <div id="dash-unidade-info" style="display:none;margin-bottom:.8rem"></div>
@@ -296,13 +303,25 @@
             <button class="btn btn-primary" onclick="abrirModalPaciente()">+ Novo Paciente</button>
           </div>
         </div>
-        <div id="pac-filtros-ger" class="filter-bar">
+        <div id="pac-filtros-ger" class="filter-bar" style="flex-wrap:wrap">
           <label>Unidade:</label>
           <select id="filtro-unidade" onchange="_pacPagina=0;renderPacientes()"><option value="">Todas</option></select>
           <label style="margin-left:.5rem">Usuário:</label>
           <select id="filtro-sec" onchange="_pacPagina=0;renderPacientes()"><option value="">Todos</option></select>
         </div>
         <div id="pac-unidade-info" style="display:none;margin-bottom:.8rem"></div>
+        <div class="filter-bar" style="flex-wrap:wrap;gap:.5rem;margin-bottom:.6rem">
+          <input id="pac-busca" class="search-input" type="search" placeholder="🔍 Buscar por nome, telefone, convênio..." oninput="_pacPagina=0;renderPacientes()" style="flex:1;max-width:300px">
+          <label>Status:</label>
+          <select id="filtro-status" onchange="_pacPagina=0;renderPacientes()">
+            <option value="">Todos os ativos</option>
+            <option value="vencida">🔴 Vencidas</option>
+            <option value="proxima">⚠️ Próximas (7d)</option>
+            <option value="agendada">📅 Agendadas</option>
+            <option value="emdia">✅ Em dia</option>
+            <option value="encerrado">🔒 Encerrados</option>
+          </select>
+        </div>
         <div class="table-wrap">
           <table>
             <thead><tr>
@@ -550,6 +569,29 @@
   </div>
 </div>
 
+<!-- MODAL: ENCERRAR PACIENTE -->
+<div class="modal-overlay" id="modal-encerrar" style="display:none" onclick="fecharModal(event)">
+  <div class="modal">
+    <h3>🔒 Encerrar Paciente</h3>
+    <p style="color:var(--text2);font-size:13px;margin-bottom:1.2rem">Paciente: <strong id="enc-nome"></strong></p>
+    <div class="form-group">
+      <label>Motivo do encerramento</label>
+      <select id="enc-motivo">
+        <option value="alta">Alta fisioterapêutica</option>
+        <option value="desistencia">Desistência</option>
+        <option value="obito">Óbito</option>
+        <option value="outros">Outros motivos</option>
+      </select>
+    </div>
+    <div class="form-group"><label>Observações (opcional)</label><textarea id="enc-obs" rows="2" placeholder="Detalhes adicionais..."></textarea></div>
+    <div class="form-group"><label>Data</label><input type="date" id="enc-data"></div>
+    <div class="modal-footer">
+      <button class="btn" onclick="document.getElementById('modal-encerrar').style.display='none'">Voltar</button>
+      <button class="btn btn-red" onclick="confirmarEncerrar()">🔒 Encerrar</button>
+    </div>
+  </div>
+</div>
+
 <!-- MODAL: MENSAGEM WHATSAPP -->
 <div class="modal-overlay" id="modal-wamsg" style="display:none" onclick="fecharModal(event)">
   <div class="modal">
@@ -671,7 +713,7 @@ let config={unidades:[],secretarias:[],profissionais:[],senhagerenciador:'1234'}
 let pacientes=[];
 let logs=[];
 let currentUser='';
-let editIndex=-1,agendarIndex=-1,realizarIndex=-1,cancelarIndex=-1,noshowIndex=-1;
+let editIndex=-1,agendarIndex=-1,realizarIndex=-1,cancelarIndex=-1,noshowIndex=-1,encerrarIndex=-1;
 let editSecIndex=-1,editUnidadeIndex=-1,editProfIndex=-1;
 let _wamTel='',_wamMsg='';
 let _pacPagina=0;
@@ -793,6 +835,10 @@ function getAgBadge(p,ri=-1){
   return'—';
 }
 function getStatusBadge(p,ri,clickable=false){
+  if(p.agendamento?.status==='encerrado'){
+    const m={alta:'Alta',desistencia:'Desistência',obito:'Óbito',outros:'Outros'};
+    return`<span class="badge badge-encerrado">🔒 ${m[p.agendamento.motivo]||'Encerrado'}</span>`;
+  }
   const ag=p.agendamento,dias=calcDias(p);
   let label='',color='';
   if(ag?.status==='agendada')  {label='📅 Agendado';color='blue';}
@@ -900,7 +946,7 @@ function showTab(tab){
 // ===================== RENDER =====================
 function renderAll(){ajustarFiltros();populateSelects();renderMetrics();renderDashboard();renderPacientes();renderAlertas();}
 function renderMetrics(){
-  let lista=filtrarPorUsuario(pacientes);
+  let lista=filtrarPorUsuario(pacientes).filter(p=>p.agendamento?.status!=='encerrado');
   if(getPerfil()!=='secretaria'){const u=document.getElementById('dash-unidade')?.value||'';if(u)lista=lista.filter(p=>p.unidade===u);}
   let total=lista.length,vencidas=0,proximas=0,agendadas=0,canceladas=0,noshows=0,emDia=0;
   lista.forEach(p=>{
@@ -920,8 +966,10 @@ function renderMetrics(){
     <div class="metric" onclick="abrirFiltroMetrica('emdia')"         title="Ver em dia"><div class="metric-label">Em dia</div><div class="metric-value green">${emDia}</div></div>`;
 }
 function renderDashboard(){
-  let lista=filtrarPorUsuario(pacientes);
+  let lista=filtrarPorUsuario(pacientes).filter(p=>p.agendamento?.status!=='encerrado');
   if(getPerfil()!=='secretaria'){const u=document.getElementById('dash-unidade')?.value||'';if(u)lista=lista.filter(p=>p.unidade===u);}
+  const busca=(document.getElementById('dash-busca')?.value||'').toLowerCase().trim();
+  if(busca)lista=lista.filter(p=>p.nome.toLowerCase().includes(busca)||(p.tel||'').includes(busca));
   lista=sorted(lista).slice(0,20);
   const tb=document.getElementById('dashboard-table');
   if(!lista.length){tb.innerHTML='<tr><td colspan="6" class="no-data">Nenhum paciente encontrado.</td></tr>';return;}
@@ -947,6 +995,23 @@ function renderPacientes(){
     if(unidade)lista=lista.filter(p=>p.unidade===unidade);
     if(sec)lista=lista.filter(p=>p.sec===sec);
   }
+  const statusFiltro=document.getElementById('filtro-status')?.value||'';
+  const busca=(document.getElementById('pac-busca')?.value||'').toLowerCase().trim();
+  if(statusFiltro==='encerrado'){
+    lista=lista.filter(p=>p.agendamento?.status==='encerrado');
+  }else{
+    lista=lista.filter(p=>p.agendamento?.status!=='encerrado');
+    if(statusFiltro==='vencida') lista=lista.filter(p=>!p.agendamento&&calcDias(p)<0);
+    else if(statusFiltro==='proxima') lista=lista.filter(p=>!p.agendamento&&calcDias(p)>=0&&calcDias(p)<=7);
+    else if(statusFiltro==='agendada') lista=lista.filter(p=>p.agendamento?.status==='agendada');
+    else if(statusFiltro==='emdia') lista=lista.filter(p=>!p.agendamento&&calcDias(p)>7);
+  }
+  if(busca)lista=lista.filter(p=>
+    p.nome.toLowerCase().includes(busca)||
+    (p.tel||'').includes(busca)||
+    secNome(p.sec).toLowerCase().includes(busca)||
+    (p.convenio||'').toLowerCase().includes(busca)
+  );
   lista=sorted(lista);
   const tb=document.getElementById('pacientes-table');
   const pag=document.getElementById('pac-pagination');
@@ -983,24 +1048,29 @@ function renderPacientes(){
     const cv=p.convenio?`<span class="convenio-tag">${p.convenio}</span>`:'';
     const wpp=p.tel?`<button class="btn btn-small btn-whatsapp" onclick="abrirWhatsApp('${p.tel}')" title="WhatsApp">${wppSvg}</button>`:'';
     const menorTag=p.responsavel||(p.dataNascimento&&calcIdade(p.dataNascimento)<18)?`<span class="menor-badge-inline" style="font-size:10px;padding:0 5px">👶</span>`:'';
-    return`<tr>
+    const enc=p.agendamento?.status==='encerrado';
+    const acoes=enc
+      ?`${wpp}<button class="btn btn-small" onclick="abrirHistorico(${ri})" title="Histórico">📋</button>
+         <button class="btn btn-small btn-green" onclick="reativarPaciente(${ri})" title="Reativar paciente">↩️</button>
+         <button class="btn btn-small btn-red" onclick="excluirPaciente(${ri})">🗑</button>`
+      :`${wpp}<button class="btn btn-small" onclick="abrirHistorico(${ri})" title="Histórico">📋</button>
+         <button class="btn btn-small" onclick="editarPaciente(${ri})">✏️</button>
+         <button class="btn btn-small" onclick="abrirEncerrar(${ri})" title="Encerrar paciente" style="color:var(--text2)">🔒</button>
+         <button class="btn btn-small btn-red" onclick="excluirPaciente(${ri})">🗑</button>`;
+    return`<tr class="${enc?'row-encerrada':''}">
       <td><strong>${p.nome}</strong>${menorTag}${cv}<br><small style="color:var(--text2)">${p.tel}</small></td>
       <td><span class="badge badge-unit">${p.unidade||'—'}</span></td>
       <td>${secNome(p.sec)}</td>
       <td>${formatDate(p.ultimaReav)}</td>
-      <td>${formatDate(calcProxima(p).toISOString().split('T')[0])}</td>
-      <td>${getAgBadge(p,ri)}</td>
-      <td>${getStatusBadge(p,ri,true)}</td>
-      <td><div class="actions">${wpp}
-        <button class="btn btn-small" onclick="abrirHistorico(${ri})" title="Histórico">📋</button>
-        <button class="btn btn-small" onclick="editarPaciente(${ri})">✏️</button>
-        <button class="btn btn-small btn-red" onclick="excluirPaciente(${ri})">🗑</button>
-      </div></td>
+      <td>${enc?'—':formatDate(calcProxima(p).toISOString().split('T')[0])}</td>
+      <td>${enc?'—':getAgBadge(p,ri)}</td>
+      <td>${getStatusBadge(p,ri,!enc)}</td>
+      <td><div class="actions">${acoes}</div></td>
     </tr>`;
   }).join('');
 }
 function renderAlertas(){
-  let base=filtrarPorUsuario(pacientes);
+  let base=filtrarPorUsuario(pacientes).filter(p=>p.agendamento?.status!=='encerrado');
   if(getPerfil()!=='secretaria'){const u=document.getElementById('filtro-alerta-unidade')?.value||'';if(u)base=base.filter(p=>p.unidade===u);}
   const vencidos  =sorted(base.filter(p=>!p.agendamento&&calcDias(p)<0));
   const cancelados=sorted(base.filter(p=>p.agendamento?.status==='cancelada'));
@@ -1531,6 +1601,39 @@ function confirmarNoShow(){
   renderAll();notify('No-show registrado. Paciente volta para fila de pendências. 🚫');
 }
 
+// ===================== ENCERRAR PACIENTE =====================
+function abrirEncerrar(i){
+  encerrarIndex=i;
+  document.getElementById('enc-nome').textContent=pacientes[i].nome;
+  document.getElementById('enc-motivo').value='alta';
+  document.getElementById('enc-obs').value='';
+  document.getElementById('enc-data').value=new Date().toISOString().split('T')[0];
+  document.getElementById('modal-encerrar').style.display='flex';
+}
+function confirmarEncerrar(){
+  const p=pacientes[encerrarIndex];
+  const motivo=document.getElementById('enc-motivo').value;
+  const obs=document.getElementById('enc-obs').value.trim();
+  const data=document.getElementById('enc-data').value;
+  if(!data){alert('Selecione a data.');return;}
+  const motivoLabel={alta:'Alta fisioterapêutica',desistencia:'Desistência',obito:'Óbito',outros:'Outros'};
+  p.historico=p.historico||[];
+  p.historico.unshift({data,tipo:'encerramento',obs:`${motivoLabel[motivo]}${obs?' — '+obs:''}`});
+  p.agendamento={status:'encerrado',motivo,descricao:obs,data};
+  salvarDados(p);
+  document.getElementById('modal-encerrar').style.display='none';
+  registrarLog('paciente_editado',`Encerrou: ${p.nome} (${motivoLabel[motivo]})`,p.nome);
+  renderAll();notify(`Paciente encerrado — ${motivoLabel[motivo]}. 🔒`);
+}
+function reativarPaciente(i){
+  const p=pacientes[i];
+  if(!confirm(`Reativar "${p.nome}"?\nO paciente voltará para a fila de pendências normalmente.`))return;
+  p.agendamento=null;
+  salvarDados(p);
+  registrarLog('paciente_editado',`Reativou paciente: ${p.nome}`,p.nome);
+  renderAll();notify('Paciente reativado! ✅');
+}
+
 // ===================== HISTÓRICO =====================
 function abrirHistorico(ri){
   const p=pacientes[ri];
@@ -1917,7 +2020,7 @@ function imprimirProximos7dias(){
 
 // ===================== FILTRO POR MÉTRICA =====================
 function abrirFiltroMetrica(tipo){
-  let lista=filtrarPorUsuario(pacientes);
+  let lista=filtrarPorUsuario(pacientes).filter(p=>p.agendamento?.status!=='encerrado');
   if(getPerfil()!=='secretaria'){const u=document.getElementById('dash-unidade')?.value||'';if(u)lista=lista.filter(p=>p.unidade===u);}
   const titulos={
     total:'👥 Todos os Pacientes',vencidas:'🔴 Reavaliações Vencidas',
