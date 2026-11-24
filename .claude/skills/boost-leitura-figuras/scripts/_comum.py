@@ -70,7 +70,8 @@ def ler_json(caminho: Path, padrao=None):
 
 def gravar_json(caminho: Path, dados) -> None:
     caminho.parent.mkdir(parents=True, exist_ok=True)
-    tmp = caminho.with_suffix(caminho.suffix + ".tmp")
+    # nome temporário único: vários processos podem gravar a mesma pasta ao mesmo tempo
+    tmp = caminho.with_suffix(f"{caminho.suffix}.{os.getpid()}.tmp")
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(dados, f, ensure_ascii=False, indent=2)
         f.write("\n")
@@ -331,18 +332,59 @@ def sha256_arquivo(caminho: Path) -> str:
 # --------------------------------------------------------------------------
 
 
-def carregar_catalogo(aula: Aula) -> list[dict]:
-    dados = ler_json(aula.catalogo, [])
+# Vários agentes podem trabalhar artigos diferentes da mesma aula em paralelo. Cada processo guarda
+# o catálogo como estava quando o leu; ao salvar, relê o arquivo sob trava e aplica só o que ele
+# mesmo mudou (entradas novas, alteradas ou removidas), sem apagar o que outro processo gravou.
+_CATALOGO_LIDO: dict[str, dict[str, str]] = {}
+
+
+def _ler_catalogo_arquivo(caminho: Path) -> list[dict]:
+    dados = ler_json(caminho, [])
     if isinstance(dados, dict):
         dados = dados.get("figuras") or []
     return [e for e in dados if isinstance(e, dict) and e.get("id")]
+
+
+def _assinatura(e: dict) -> str:
+    return json.dumps(e, ensure_ascii=False, sort_keys=True)
+
+
+def carregar_catalogo(aula: Aula) -> list[dict]:
+    itens = _ler_catalogo_arquivo(aula.catalogo)
+    _CATALOGO_LIDO[str(aula.catalogo)] = {e["id"]: _assinatura(e) for e in itens}
+    return itens
 
 
 def salvar_catalogo(aula: Aula, itens: list[dict]) -> None:
     def ordem(e):
         m = re.search(r"(\d+)", str(e.get("rotulo") or e["id"].split("_", 1)[-1]))
         return (str(e.get("chave")), int(e.get("pagina") or 0), int(m.group(1)) if m else 0, e["id"])
-    gravar_json(aula.catalogo, sorted(itens, key=ordem))
+
+    caminho = aula.catalogo
+    caminho.parent.mkdir(parents=True, exist_ok=True)
+    trava = open(caminho.with_suffix(caminho.suffix + ".lock"), "a")
+    try:
+        try:
+            import fcntl
+            fcntl.flock(trava, fcntl.LOCK_EX)
+        except (ImportError, OSError):
+            pass  # sem trava disponível (ex.: Windows): segue com a mesclagem simples
+        lido = _CATALOGO_LIDO.get(str(caminho))
+        if lido is None:
+            final = list(itens)
+        else:
+            meus = {e["id"]: e for e in itens}
+            removidos = set(lido) - set(meus)
+            mudados = {i: e for i, e in meus.items() if lido.get(i) != _assinatura(e)}
+            atual = {e["id"]: e for e in _ler_catalogo_arquivo(caminho)}
+            for i in removidos:
+                atual.pop(i, None)
+            atual.update(mudados)
+            final = list(atual.values())
+        gravar_json(caminho, sorted(final, key=ordem))
+        _CATALOGO_LIDO[str(caminho)] = {e["id"]: _assinatura(e) for e in final}
+    finally:
+        trava.close()
 
 
 # --------------------------------------------------------------------------
