@@ -100,7 +100,8 @@ def analisar(pasta: Path, validar: bool = True) -> Situacao:
     def checagem(n: int, ordem: float, bloqueia_de: float, como: str):
         feito = and_["checagens"].get(n)
         if feito:
-            add(ordem, f"checagem{n}", f"Checagem {n}: {C.CHECAGENS[n]}", "ok", detalhe=feito)
+            add(ordem, f"checagem{n}", f"Checagem {n}: {C.CHECAGENS[n]}", "ok",
+                detalhe=feito.replace(C.CHECAGENS[n], "").strip(" —-") or None)
         elif sem_parar:
             add(ordem, f"checagem{n}", f"Checagem {n} pulada (modo sem parar)", "ok",
                 detalhe="registre no fim o que o usuário precisa revisar")
@@ -375,6 +376,9 @@ def analisar(pasta: Path, validar: bool = True) -> Situacao:
     aula4 = pasta / "04_aula"
     rot = aula4 / "roteiro.md"
     tem_leitura = bool(fichas) and not sem_ficha
+    mapa = pasta / "00_mapa_evidencias.md"
+    if mapa.exists():
+        add(4.9, "mapa", "Mapa de evidências (00_mapa_evidencias.md)", "ok")
     if tem_leitura or rot.exists():
         if not rot.exists():
             add(5.0, "roteiro", "Escrever 04_aula/roteiro.md com a linha do tempo", "fazer",
@@ -459,6 +463,18 @@ def analisar(pasta: Path, validar: bool = True) -> Situacao:
                 "fazer", f"{C.cmd_proprio('relatorio_final.py')} {A}")
         else:
             add(7.0, "entrega", "Relatório de entrega gerado (04_aula/entrega.md)", "ok")
+
+    # Checagem não registrada, mas com trabalho já feito depois dela (pasta de outra sessão, aprovação só na
+    # conversa): não trava; vira aviso para confirmar e registrar.
+    for p in P:
+        if p.estado == "usuario" and p.chave.startswith("checagem") and p.bloqueia_de is not None:
+            if any(q.estado == "ok" and q.ordem >= p.bloqueia_de and not q.chave.startswith("checagem") for q in P):
+                n = p.chave[-1]
+                p.estado = "aviso"
+                p.texto = f"Checagem {n} não registrada, mas o trabalho já passou dela"
+                p.detalhe = "confirme com o usuário se ele aprovou; se sim, registre"
+                p.comando = f"{C.cmd_proprio('situacao.py')} {A} --marcar {n} --nota \"aprovada antes (registro retroativo)\""
+                p.bloqueia_de = None
     return S
 
 
@@ -596,8 +612,10 @@ def main() -> int:
     ap.add_argument("pasta", help="pasta da aula (aulas/<AAAA-MM>-<slug>) ou a pasta que guarda as aulas")
     ap.add_argument("--json", action="store_true", help="saída em JSON")
     ap.add_argument("--sem-validar", action="store_true", help="não roda o validador pedagógico do deck.json")
-    ap.add_argument("--marcar", type=int, choices=sorted(C.CHECAGENS), help="marca a checagem N como feita")
-    ap.add_argument("--desmarcar", type=int, choices=sorted(C.CHECAGENS), help="reabre a checagem N")
+    ap.add_argument("--marcar", type=int, choices=sorted(C.CHECAGENS), action="append", default=[],
+                    help="marca a checagem N como feita (pode repetir)")
+    ap.add_argument("--desmarcar", type=int, choices=sorted(C.CHECAGENS), action="append", default=[],
+                    help="reabre a checagem N (pode repetir)")
     ap.add_argument("--modo", choices=("sem-parar", "com-checagens"), help="troca o modo de condução")
     ap.add_argument("--nota", help="texto curto que acompanha --marcar/--modo no registro")
     ap.add_argument("--registrar", metavar="TEXTO", help="acrescenta uma linha ao registro de 00_andamento.md")
@@ -606,17 +624,18 @@ def main() -> int:
     if not pasta.exists():
         print(f"ERRO: pasta não encontrada: {pasta}", file=sys.stderr)
         return 2
-    if any(x is not None for x in (a.marcar, a.desmarcar, a.modo, a.registrar)):
+    if a.marcar or a.desmarcar or a.modo or a.registrar:
         if not (pasta / "00_briefing.md").exists() and not (pasta / "00_andamento.md").exists():
             print(f"ERRO: {pasta} não parece ser a pasta de uma aula (sem 00_briefing.md).", file=sys.stderr)
             return 2
-        nota = a.registrar if a.registrar and not (a.marcar or a.desmarcar or a.modo) else a.nota
-        feitos = C.atualizar_andamento(pasta, marcar=a.marcar, desmarcar=a.desmarcar,
-                                       modo=a.modo.replace("-", " ") if a.modo else None,
-                                       nota=nota, tema=tema_de(pasta))
-        if a.registrar and (a.marcar or a.desmarcar or a.modo):
-            C.atualizar_andamento(pasta, nota=a.registrar)
-            feitos.append(f"registro: {a.registrar}")
+        feitos: list[str] = []
+        acoes = [("marcar", n) for n in a.marcar] + [("desmarcar", n) for n in a.desmarcar]
+        if a.modo:
+            acoes.append(("modo", a.modo.replace("-", " ")))
+        for tipo, valor in acoes:
+            feitos += C.atualizar_andamento(pasta, nota=a.nota, tema=tema_de(pasta), **{tipo: valor})
+        if a.registrar or (a.nota and not acoes):
+            feitos += C.atualizar_andamento(pasta, nota=a.registrar or a.nota, tema=tema_de(pasta))
         print(f"00_andamento.md atualizado: {'; '.join(feitos)}")
         print()
     if not (pasta / "00_briefing.md").exists() and not (pasta / "01_busca").exists() and \

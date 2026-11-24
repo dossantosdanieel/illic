@@ -99,8 +99,10 @@ def main() -> int:
     sel = C.lista_de(C.ler_json(B / "selecionados.json", []), "selecionados", "registros")
     manifest = {str(m.get("chave")): m for m in C.lista_de(C.ler_json(art / "manifest.json", []), "artigos")
                 if m.get("chave")}
-    catalogo = {str(e.get("id")): e for e in C.lista_de(C.ler_json(pasta / "03_figuras" / "catalogo.json", []), "figuras")
-                if e.get("id")}
+    cat_arq = pasta / "03_figuras" / "catalogo.json"
+    if meta.get("catalogo"):  # o deck pode apontar para outro catálogo (relativo ao deck.json)
+        cat_arq = (aula4 / str(meta["catalogo"])).resolve()
+    catalogo = {str(e.get("id")): e for e in C.lista_de(C.ler_json(cat_arq, []), "figuras") if e.get("id")}
     avisos_gerais: list[str] = []
 
     L: list[str] = []
@@ -162,6 +164,8 @@ def main() -> int:
             k, r.get("desenho"), r.get("ano") or m.get("ano"), r.get("revista") or m.get("revista"), r.get("papel"),
             pdf, m.get("licenca") or r.get("licenca") or "desconhecida", texto_lido(art / "leitura" / f"{k}.md"),
             slides, conf)) + " |")
+    if not chaves:
+        L.append("| (nenhum artigo selecionado ainda) | | | | | | | | | |")
     extras = [k for k in refs if k not in chaves]
     if extras:
         L += ["", f"Referências do deck fora de `selecionados.json`: {', '.join(extras)} "
@@ -212,7 +216,7 @@ def main() -> int:
         nao.append(f"Checagens com o usuário não registradas: {', '.join(abertas)}"
                    + (" (modo sem parar: peça a revisão agora)." if S.modo == "sem parar" else "."))
     for p in S.passos:
-        if p.estado in ("fazer", "aviso") and p.etapa >= 3 and p.chave not in ("entrega", "licencas"):
+        if p.estado in ("fazer", "aviso") and p.etapa >= 1 and p.chave not in ("entrega", "licencas", "andamento"):
             nao.append(f"Etapa {p.etapa} pendente: {p.texto}" + (f" ({p.detalhe})" if p.detalhe else "") + ".")
     if avisos_gerais:
         nao.append("Arquivos que faltam: " + "; ".join(avisos_gerais) + ".")
