@@ -359,7 +359,10 @@ RE_LAB = _R(r"\b(electromyograph\w*|emg|biomechanic\w*|kinematic\w*|kinetics?|ca
             r"elastograph\w*|motion analysis|acromiohumeral distance|subacromial space|motor unit\w*|"
             r"corticospinal|cortical excitab\w*|pain sensitivity|conditioned pain modulation|"
             r"pressure pain threshold\w*)\b")
-RE_CASO = _R(r"\bcase reports?\b|\bcase series\b|\ba case of\b|\bcase study\b|\bcase presentation\b|: a case\b")
+RE_CASO = _R(r"\bcase reports?\b|\bcase series\b|\ba case of\b|\bcase study\b|\bcase presentation\b|"
+              r": a case\b(?![- ]control)")
+RE_CASO_RESUMO = _R(r"\b(this|a|an|our|the present|retrospective|prospective|consecutive|therapeutic)\s+(\w+\s+){0,2}"
+                    r"case[- ]series\b")
 RE_CASO_CONTROLE = _R(r"case[- ]control")
 RE_COORTE = _R(r"\bcohort\b|prospective (study|observational|longitudinal)|longitudinal (study|analysis|cohort)|"
                r"\bregistry\b|retrospective (study|analysis|review|cohort|chart)|prognostic (factors?|study|model)|"
@@ -370,6 +373,55 @@ RE_MEDIDA = _R(r"\b(reliability|validity|validation|responsiveness|measurement p
 RE_QUALI = _R(r"\bqualitative\b|focus groups?|semi-structured interviews?|thematic analysis|mixed[- ]methods")
 RE_NARRATIVA = _R(r"\b(narrative review|literature review|review|overview|current concepts?|clinical commentary|"
                   r"masterclass|state[- ]of[- ]the[- ]art|update on|viewpoint|perspective)\b")
+
+# Desenho DECLARADO pelos autores no resumo. Revistas de medicina esportiva (AJSM, JOSPT, OJSM, Arthroscopy,
+# Sports Health, BJSM) trazem uma seção "Study Design: Cohort study; Level of evidence, 3" ou fecham com
+# "Level of Evidence: IV, therapeutic case series". É o dado mais confiável depois dos tipos de publicação do
+# PubMed: medido em 1.720 registros de LCA, as regras de título/MeSH sozinhas acertavam 60% desses casos
+# (série de casos virava "Coorte"; estudo de laboratório com grupo-controle virava "Caso-controle").
+RE_DESENHO_ROTULO = _R(r"(?:^|[\n.]\s*)(?:study\s+design|design)s?\s*:\s*([^\n.;]{3,90})")
+RE_NIVEL_EVIDENCIA = _R(r"level of evidence:?\s*(?:level\s*)?(?:[1-5]|iv|i{1,3}|v)\b[\s,;:.\-(]*([a-z][^\n.;)]{3,70})")
+RE_SEGUIMENTO = _R(r"\b(retrospectively|prospectively) (reviewed|analy[sz]ed|identified|collected|followed|enrolled|"
+                   r"evaluated|recruited|included|assessed|studied)|consecutive (patients|athletes|cases)|"
+                   r"(minimum|mean|median|average|final|latest)(?: \w+){0,2} follow[- ]up|were followed (for|up)|"
+                   r"\d+[- ](year|month)s? follow[- ]up|follow[- ]up of \d+")
+
+
+def desenho_declarado(resumo: str) -> tuple[str | None, str]:
+    """Lê o desenho que os próprios autores declararam no resumo. Devolve (desenho ou None, trecho lido)."""
+    achado = RE_DESENHO_ROTULO.search(resumo or "") or RE_NIVEL_EVIDENCIA.search(resumo or "")
+    if not achado:
+        return None, ""
+    trecho = achado.group(1).strip()
+    t = trecho.lower()
+    desenho = None
+    if "protocol" in t:
+        desenho = None
+    elif re.search(r"systematic review|meta-?analy|scoping review|umbrella review", t):
+        desenho = "Revisao sistematica/meta-analise"
+    elif re.search(r"randomi[sz]ed|\brct\b", t) and not re.search(
+            r"non-?randomi|secondary|post[- ]hoc|ancillary|cohort|case[- ]control|cross[- ]sectional", t):
+        desenho = "ECR"
+    elif "laboratory" in t or re.search(r"cadaver|in vitro", t):
+        desenho = "Laboratorio/mecanistico"
+    elif re.search(r"case[- ]series|case report", t):
+        desenho = "Relato/serie de casos"
+    elif re.search(r"case[- ]control", t):
+        desenho = "Caso-controle"
+    elif re.search(r"cross[- ]sectional|survey|descriptive epidemiolog", t):
+        desenho = "Transversal"
+    elif re.search(r"diagnostic accuracy", t):
+        desenho = "Estudo de acuracia diagnostica"
+    elif "diagnos" in t:
+        desenho = None  # "Cohort study (diagnosis)" cobre validação de escala e acurácia: as outras regras decidem
+    elif re.search(r"cohort|prospective|retrospective|longitudinal|prognos|comparative study", t):
+        desenho = "Coorte"
+    elif re.search(r"delphi|consensus", t):
+        desenho = "Consenso/Delphi"
+    elif re.search(r"narrative review|clinical review|literature review|clinical commentary|current concepts", t):
+        desenho = "Revisao narrativa"
+    return desenho, trecho[:60]
+
 
 PT_EDITORIAL = {"Editorial", "Comment", "Letter", "News", "Newspaper Article", "Interview", "Biography",
                 "Patient Education Handout", "Introductory Journal Article", "Personal Narrative"}
@@ -408,6 +460,11 @@ def classificar(reg: dict) -> tuple[str, str]:
         return "Revisao sistematica/meta-analise", "revisão Cochrane (DOI 10.1002/14651858)"
     if RE_RS.search(titulo) and not (pts & PT_EDITORIAL) and not RE_COMENTARIO.search(titulo):
         return "Revisao sistematica/meta-analise", f"título: '{RE_RS.search(titulo).group(0)}'"
+    declarado, trecho = desenho_declarado(resumo)
+    if declarado and not (pts & PT_EDITORIAL):
+        if RE_MEDIDA.search(titulo) and declarado in ("Coorte", "Transversal", "Caso-controle"):
+            return "Outro", "estudo de propriedades de medida (confiabilidade/validade)"
+        return declarado, f"desenho declarado pelos autores no resumo: '{trecho}'"
     if pts & PT_ECR:
         extra = " (análise secundária)" if RE_SECUNDARIA.search(titulo) else ""
         return "ECR", "tipo de publicação PubMed: Randomized Controlled Trial" + extra
@@ -439,7 +496,7 @@ def classificar(reg: dict) -> tuple[str, str]:
         return "Relato/serie de casos", "tipo de publicação ou título indica relato/série de casos"
     if "Animals" in mesh and "Humans" not in mesh:
         return "Laboratorio/mecanistico", "MeSH: estudo em animais"
-    if RE_LAB.search(titulo) and "Review" not in pts:
+    if RE_LAB.search(titulo) and "Review" not in pts and not RE_COORTE.search(titulo):
         return "Laboratorio/mecanistico", f"título: '{RE_LAB.search(titulo).group(0)}'"
     if "Review" in pts or (not pts and (tipo_scopus == "review" or tipo_oa == "review")):
         return "Revisao narrativa", "tipo Review sem método sistemático identificado"
@@ -452,6 +509,8 @@ def classificar(reg: dict) -> tuple[str, str]:
     if RE_COORTE.search(titulo) or mesh & MESH_COORTE:
         base = RE_COORTE.search(titulo)
         return "Coorte", (f"título: '{base.group(0)}'" if base else "MeSH: " + ", ".join(sorted(mesh & MESH_COORTE)))
+    if RE_CASO_RESUMO.search(resumo[:2500]):
+        return "Relato/serie de casos", f"resumo: '{RE_CASO_RESUMO.search(resumo[:2500]).group(0)[:40]}'"
     if "Case-Control Studies" in mesh or RE_CASO_CONTROLE.search(resumo):
         return "Caso-controle", "MeSH/resumo: caso-controle (o MeSH é atribuído com folga; confira)"
     if RE_TRANSVERSAL.search(titulo) or "Cross-Sectional Studies" in mesh:
@@ -466,6 +525,8 @@ def classificar(reg: dict) -> tuple[str, str]:
         return "Laboratorio/mecanistico", f"resumo: '{RE_LAB.search(resumo[:2500]).group(0)}'"
     if pts & PT_ENSAIO:
         return "Outro", "ensaio clínico sem randomização declarada"
+    if RE_SEGUIMENTO.search(resumo[:2500]):
+        return "Coorte", f"resumo indica seguimento de pacientes: '{RE_SEGUIMENTO.search(resumo[:2500]).group(0)[:40]}'"
     if RE_NARRATIVA.search(titulo):
         return "Revisao narrativa", f"título: '{RE_NARRATIVA.search(titulo).group(0)}'"
     return "Outro", "desenho não identificado pelos metadados; confira no resumo"

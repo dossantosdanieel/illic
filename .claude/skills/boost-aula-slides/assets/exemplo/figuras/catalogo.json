@@ -1,0 +1,98 @@
+[
+  {
+    "id": "Welling2018_fig2",
+    "chave": "Welling2018",
+    "arquivo": "Welling2018/fig2.png",
+    "pagina": 6,
+    "bbox_pt": [
+      75,
+      347,
+      528,
+      608
+    ],
+    "dpi": 300,
+    "rotulo": "Fig. 2",
+    "legenda_original": "Overview of percentages of patients that passed specific RTS criteria at 6 and 9 months.",
+    "legenda_pt": "Porcentagem de pacientes que passaram em cada critério aos 6 meses (azul) e aos 9 meses (vermelho). LSI: simetria entre as pernas; SLH e TLH: hop simples e triplo.",
+    "tipo": "grafico",
+    "o_que_ensina": "Aos 9 meses quase todos passam nos hop tests e cerca de metade falha na força de quadríceps.",
+    "licenca": "cc-by",
+    "origem": "manual",
+    "aprovada": true,
+    "citacao": "Welling W et al. Knee Surg Sports Traumatol Arthrosc. 2018;26(12):3636-44. Fig. 2. CC BY 4.0.",
+    "largura_px": 1888,
+    "altura_px": 1087
+  },
+  {
+    "id": "Welling2018_fig3",
+    "chave": "Welling2018",
+    "arquivo": "Welling2018/fig3.png",
+    "pagina": 7,
+    "bbox_pt": [
+      178,
+      50,
+      560,
+      266
+    ],
+    "dpi": 300,
+    "rotulo": "Fig. 3",
+    "legenda_original": "LSI values for males at 6 months and 9 months for quadriceps strength at 60°/s, hamstring strength at 60°/s, single-leg hop test (SLH), triple-leg hop test (TLH) and side hop test (SH).",
+    "legenda_pt": "Simetria entre as pernas aos 6 e aos 9 meses, em homens: força de quadríceps e de isquiotibiais a 60°/s e três hop tests.",
+    "tipo": "grafico",
+    "o_que_ensina": "Os hop tests chegam perto de 98% de simetria aos 9 meses; o quadríceps fica em 91%.",
+    "licenca": "cc-by",
+    "origem": "manual",
+    "aprovada": true,
+    "citacao": "Welling W et al. Knee Surg Sports Traumatol Arthrosc. 2018;26(12):3636-44. Fig. 3. CC BY 4.0.",
+    "largura_px": 1591,
+    "altura_px": 900
+  },
+  {
+    "id": "Kotsifaki2022_fig2",
+    "chave": "Kotsifaki2022",
+    "arquivo": "Kotsifaki2022/fig2.png",
+    "pagina": 7,
+    "bbox_pt": [
+      31,
+      46,
+      569,
+      262
+    ],
+    "dpi": 300,
+    "rotulo": "Figure 2",
+    "legenda_original": "Average percentage work contributions from the hip, knee and ankle joints during the propulsion and landing phases of the single leg vertical jump (A) and the absorption and generation phase of the first landing (reactive landing) of the single leg drop jump (B).",
+    "legenda_pt": "Parte do trabalho feita por quadril (cinza), joelho (verde) e tornozelo (escuro) no salto vertical (A) e no drop jump (B) em uma perna: lado operado, lado não operado e controles.",
+    "tipo": "grafico",
+    "o_que_ensina": "No salto vertical unipodal o joelho operado contribui menos e o quadril compensa.",
+    "licenca": "cc-by",
+    "origem": "manual",
+    "aprovada": true,
+    "citacao": "Kotsifaki A et al. Br J Sports Med. 2022;56(9):490-8. Fig. 2. CC BY 4.0.",
+    "largura_px": 2242,
+    "altura_px": 900
+  },
+  {
+    "id": "Faleide2021_fig2",
+    "chave": "Faleide2021",
+    "arquivo": "Faleide2021/fig2.png",
+    "pagina": 6,
+    "bbox_pt": [
+      46,
+      66,
+      274,
+      328
+    ],
+    "dpi": 300,
+    "rotulo": "Figure 2",
+    "legenda_original": "Receiver operating characteristic (ROC) curve for Anterior Cruciate Ligament-Return to Sport after Injury scale (ACL-RSI) for predicting return to preinjury level of sport.",
+    "legenda_pt": "Curva ROC do ACL-RSI aos 9 meses para prever a volta ao nível de antes da lesão em 2 anos. A diagonal é o acaso.",
+    "tipo": "grafico",
+    "o_que_ensina": "O ACL-RSI discrimina pouco acima do acaso: sensível, mas pouco específico.",
+    "licenca": "cc-by",
+    "origem": "manual",
+    "aprovada": true,
+    "citacao": "Faleide AGH et al. Am J Sports Med. 2021;49(5):1236-43. Fig. 2. CC BY 4.0.",
+    "largura_px": 950,
+    "altura_px": 1092
+  }
+]
