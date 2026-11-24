@@ -2,7 +2,7 @@
   "meta": {
     "titulo": "Liberar depois do LCA: **o que os testes garantem**",
     "subtitulo": "Volta ao esporte de pivô em três decisões, com a turma lendo os números antes de decidir",
-    "autor": "Boost Education",
+    "autor": "Daniel Santos",
     "slug": "exemplo-lca-volta-ao-esporte",
     "publico": "Fisioterapeutas da equipe, de recém-formados a especialistas em joelho",
     "duracao_alvo_min": 32,
@@ -21,7 +21,7 @@
     "resumo": {
       "pontos_chave": [
         "Antes de 9 meses, cada mês de espera reduziu a taxa de nova lesão em 51% (Grindem 2016); depois disso não houve redução adicional.",
-        "Entre os que voltaram sem passar nos critérios, 38,2% tiveram nova lesão no joelho; entre os que passaram, 5,6%. A razão de risco foi 0,16, com intervalo de 0,02 a 1,20: direção forte, precisão baixa (1 evento em 18).",
+        "Entre os que voltaram sem passar nos critérios, 38,2% tiveram nova lesão no joelho; entre os que passaram, 5,6%. A razão de risco foi 0,16, com intervalo de 0,02 a 1,20: direção forte, precisão baixa (1 evento em 18; Grindem 2016).",
         "Aos 9 meses, 96,8% passaram no hop simples e só 53,2% na força de quadríceps a 60°/s; 11,3% passaram em todos os critérios (Welling 2018).",
         "Atletas já liberados tinham 97% de simetria na distância do hop e só 83% e 77% na altura do salto vertical e do drop jump unipodais (Kotsifaki 2022).",
         "ACL-RSI abaixo de 47 aos 9 meses: sensibilidade de 85% e especificidade de 45% para não voltar ao nível anterior (Faleide 2021). Serve para abrir a conversa, não para vetar."
@@ -104,7 +104,8 @@
       "tempo_s": 45,
       "interacao": {
         "tipo": "mao_camera",
-        "duracao_s": 20
+        "duracao_s": 20,
+        "pedido": "Polegar para cima: já liberou um atleta de LCA antes dos 9 meses. Para baixo: nunca liberou."
       },
       "itens": [
         {
@@ -206,7 +207,7 @@
         }
       ],
       "linhas": [
-        "**Quem:** 106 atletas de esportes de pivô, seguidos por 2 anos. Passar: mais de 90 em força de quadríceps, quatro hop tests e duas escalas."
+        "**Quem:** 106 atletas de pivô, seguidos por 2 anos. Passar: quadríceps, quatro hop tests e duas escalas acima de 90."
       ],
       "fonte": [
         "Grindem2016"
@@ -265,7 +266,8 @@
       "interacao": {
         "tipo": "mao_camera",
         "duracao_s": 20,
-        "inicio_s": 80
+        "inicio_s": 80,
+        "pedido": "Polegar para cima: mede força de quadríceps com dinamômetro. Para baixo: libera só com hop."
       },
       "figura": {
         "id": "Welling2018_fig2"
@@ -357,7 +359,8 @@
       "interacao": {
         "tipo": "mao_camera",
         "duracao_s": 20,
-        "inicio_s": 35
+        "inicio_s": 35,
+        "pedido": "Polegar para cima: mede altura de salto em uma perna. Para baixo: mede só distância."
       },
       "rotulo": "Simetria entre as pernas, em % (26 atletas já liberados)",
       "categorias": [
@@ -432,7 +435,7 @@
           ]
         },
         {
-          "rotulo": "Agora: o que expõe o joelho",
+          "rotulo": "Agora: o que expõe",
           "itens": [
             {
               "titulo": "Tempo",
@@ -480,13 +483,13 @@
         "duracao_s": 240
       },
       "itens": [
-        "Quais 4 medidas entram na liberação dele, e com que ponto de corte?",
+        "Quais 4 medidas entram na liberação, e com que corte?",
         "Quadríceps em 84%: o que muda no treino das próximas 8 semanas?",
         "O que você responde sobre a final, em uma frase?"
       ],
       "entrega": "o porta-voz cola no chat as 4 medidas, com o corte, e a frase.",
       "ancora": "use só o que a sua clínica já mede.",
-      "desafio": "sem medida de antes da lesão, como estimar a perna sã?",
+      "desafio": "como estimar a perna sã sem medida pré-lesão?",
       "notas": "Interação: salas de 3 por 4 minutos. Antes de abrir as salas, dizer quem é o porta-voz: a pessoa cujo nome vem primeiro no alfabeto. Avisar que a entrega é escrita e vai para o chat. Entrar em duas salas para ouvir. Na volta, pedir a três porta-vozes que colem a resposta e comparar duas baterias diferentes lado a lado. Cobrar a terceira pergunta: a frase para o Rafael. A que interessa diz não à final e sim a um plano com data. Para quem está começando, a âncora do slide: usar só o que a clínica já mede. Para quem já domina, o desafio: como estimar a perna sã sem medida de antes da lesão."
     },
     {
@@ -666,7 +669,8 @@
       "interacao": {
         "tipo": "mao_camera",
         "duracao_s": 20,
-        "inicio_s": 35
+        "inicio_s": 35,
+        "pedido": "Polegar para cima: põe o Rafael no degrau 2 hoje. Para baixo: deixa no degrau 1."
       },
       "numerar": true,
       "passos": [
@@ -807,7 +811,7 @@
           "texto": "Leia o intervalo de confiança e os alarmes falsos."
         }
       ],
-      "faixa": "**Para segunda-feira:** em um paciente de LCA, meça força de quadríceps e altura do salto em uma perna.",
+      "faixa": "**Para segunda-feira:** meça quadríceps e altura do salto unipodal no próximo LCA.",
       "fonte": [
         "Grindem2016",
         "Kotsifaki2022",

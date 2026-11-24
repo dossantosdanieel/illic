@@ -207,7 +207,7 @@ def ler_ris(texto: str) -> tuple[list[dict], list[str]]:
         um = lambda *tags: next((atual[t][0] for t in tags if atual.get(t)), "")  # noqa: E731
         notas = " ; ".join(atual.get("N1", []))
         citacoes = re.search(r"Cited By\s*:?\s*(\d+)", notas, re.I)
-        issn = next((re.sub(r"\(.*?\)", "", v) for v in atual.get("SN", []) if "ISBN" not in v.upper()), "")
+        issn = "; ".join(re.sub(r"\(.*?\)", "", v) for v in atual.get("SN", []) if "ISBN" not in v.upper())
         pmid = next((v for v in atual.get("C2", []) + atual.get("AN", []) if re.fullmatch(r"\d{6,9}", v.strip())), "")
         tipo = um("M3") or {"JOUR": "Article", "CONF": "Conference paper", "CHAP": "Book chapter",
                             "BOOK": "Book"}.get(um("TY"), um("TY"))
@@ -263,6 +263,7 @@ def _tirar_latex(texto: str) -> str:
     texto = re.sub(r"\{?\\([cvuHkr])\s*\{([A-Za-z])\}\}?", acento, texto)
     texto = re.sub(r"\{?\\(ss|aa|AA|ae|AE|oe|OE|o|O|l|L|i)\b\s*\}?", lambda m: _ESPECIAIS[m.group(1)], texto)
     texto = re.sub(r"\\([&%_#$])", r"\1", texto)
+    texto = re.sub(r"\{?\\(copyright|textcopyright)\b\s*\}?", "©", texto)
     texto = texto.replace("\\textendash", "-").replace("\\textemdash", "-").replace("--", "-").replace("~", " ")
     return re.sub(r"[{}]", "", texto)
 
@@ -337,7 +338,7 @@ def ler_bibtex(texto: str) -> tuple[list[dict], list[str]]:
                  "artigo_numero": c.get("art_number", ""),
                  "doi": c.get("doi", ""), "link": c.get("url", ""), "resumo": c.get("abstract", ""),
                  "palavras_chave": c.get("author_keywords", ""), "termos_indice": c.get("keywords", ""),
-                 "issn": c.get("issn", ""), "pmid": c.get("pmid", ""), "idioma": c.get("language", ""),
+                 "issn": c.get("issn", ""), "pmid": c.get("pmid") or c.get("pubmed_id", ""), "idioma": c.get("language", ""),
                  "tipo_scopus": tipo, "estagio": c.get("publication_stage", ""),
                  "citacoes_scopus": citacoes.group(1) if citacoes else "",
                  "acesso_aberto_scopus": oa.group(1) if oa else ""}
@@ -372,6 +373,35 @@ def importar_arquivo(caminho: Path) -> tuple[list[dict], list[str], str]:
     return registros, avisos, formato
 
 
+def _chaves(r: dict) -> list[str]:
+    """Identificadores de um registro do Scopus: EID, DOI e título. O mesmo artigo pode vir com EID num arquivo
+    (CSV) e só com DOI em outro (RIS sem a linha UR)."""
+    chaves = []
+    if r.get("scopus_eid"):
+        chaves.append("eid:" + r["scopus_eid"])
+    if r.get("doi"):
+        chaves.append("doi:" + r["doi"])
+    chaves.append("ti:" + re.sub(r"[^a-z0-9]+", " ", (r.get("titulo") or "").lower()).strip() + f"|{r.get('ano')}")
+    return chaves
+
+
+def _juntar(antigo: dict, novo: dict) -> None:
+    """Junta duas leituras do mesmo artigo sem perder campo: o que estava vazio é preenchido, listas somam,
+    o resumo mais longo fica. Exportações em partes ou em formatos diferentes trazem campos diferentes."""
+    for campo, valor in novo.items():
+        atual = antigo.get(campo)
+        if valor in (None, "", [], {}):
+            continue
+        if atual in (None, "", [], {}):
+            antigo[campo] = valor
+        elif isinstance(atual, list) and isinstance(valor, list):
+            antigo[campo] = atual + [v for v in valor if v not in atual]
+        elif campo == "resumo" and len(str(valor)) > len(str(atual)):
+            antigo[campo] = valor
+        elif campo == "citacoes_scopus" and isinstance(valor, int) and isinstance(atual, int):
+            antigo[campo] = max(atual, valor)
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(
         description="Lê a exportação do Scopus (CSV, RIS ou BibTeX) e grava brutos/scopus.json no formato dos "
@@ -402,8 +432,11 @@ def main(argv=None) -> int:
     if not saida or not isinstance(saida, dict):
         saida = {"fonte": "scopus", "execucoes": [], "registros": []}
     indice: dict[str, dict] = {}
+    unicos: list[dict] = []
     for r in saida["registros"]:
-        indice[r.get("scopus_eid") or r.get("doi") or r["titulo"].lower()] = r
+        unicos.append(r)
+        for k in _chaves(r):
+            indice.setdefault(k, r)
 
     falhas = 0
     for caminho in arquivos:
@@ -420,10 +453,15 @@ def main(argv=None) -> int:
             continue
         novos = 0
         for r in registros:
-            chave = r.get("scopus_eid") or r.get("doi") or r["titulo"].lower()
-            if chave not in indice:
+            antigo = next((indice[k] for k in _chaves(r) if k in indice), None)
+            if antigo is None:
                 novos += 1
-            indice[chave] = r
+                unicos.append(r)
+                antigo = r
+            else:
+                _juntar(antigo, r)
+            for k in _chaves(antigo):
+                indice.setdefault(k, antigo)
         tipos = Counter(r["tipo_scopus"] or "(sem tipo)" for r in registros)
         anos = [r["ano"] for r in registros if r["ano"]]
         print(f"  formato: {formato} | registros lidos: {len(registros)} | novos: {novos}")
@@ -441,7 +479,7 @@ def main(argv=None) -> int:
             falhas += 1
         saida["execucoes"].append({"data": agora_iso(), "arquivo": caminho.name, "formato": formato,
                                    "registros": len(registros), "novos": novos, "avisos": avisos[:50]})
-    saida["registros"] = list(indice.values())
+    saida["registros"] = unicos
     gravar_json(destino, saida)
     print(f"\nGravado: {destino} ({len(saida['registros'])} registros únicos do Scopus)")
     return 1 if falhas else 0

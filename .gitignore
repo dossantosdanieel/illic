@@ -1,2 +1,10 @@
 __pycache__/
 *.pyc
+# Aulas: PDFs de artigos, textos extraídos e recortes ficam só na máquina (direitos autorais e tamanho)
+aulas/**/02_artigos/pdf/
+aulas/**/02_artigos/manual/
+aulas/**/02_artigos/texto/
+aulas/**/03_figuras/
+aulas/**/04_aula/previa/
+aulas/_base-capacitacao-cotovelo/midia/
+aulas/_base-capacitacao-cotovelo/folha*.png

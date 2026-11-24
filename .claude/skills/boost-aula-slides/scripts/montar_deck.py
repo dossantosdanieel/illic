@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import argparse
 import copy
+import re
 import sys
 from pathlib import Path
 
@@ -1111,15 +1112,24 @@ class Construtor:
 
     # ---- referencias (pagina sozinho)
     def linhas_referencias(self) -> list[str]:
-        out = []
+        """Uma referencia por linha, como no deck de referencia ("Autor et al. Revista Ano. PMID n").
+        Se alguma forma completa quebra a linha, todas perdem volume e paginas, para o slide ficar
+        homogeneo; a forma completa continua no resumo do aluno e no rodape das figuras."""
+        itens = []
         for ref in sorted(self.refs.values(), key=lambda x: M.sem_marcacao(str(x.get("texto") or x.get("curta") or x.get("id"))).lower()):
             t = str(ref.get("texto") or ref.get("curta") or ref.get("id")).strip().rstrip(".")
+            sufixo = ""
             if ref.get("pmid"):
-                t += f". PMID {ref['pmid']}"
+                sufixo += f". PMID {ref['pmid']}"
             if ref.get("doi") and (not ref.get("pmid") or self.meta.get("referencias_com_doi")):
-                t += f". DOI {ref['doi']}"
-            out.append(t)
-        return out
+                sufixo += f". DOI {ref['doi']}"
+            itens.append((t, sufixo))
+        curto = self.meta.get("referencias_formato") == "curto" or (
+            self.meta.get("referencias_formato") != "completo"
+            and any(self.med.n_linhas(t + suf, 12, 5.722) > 1 for t, suf in itens))
+        if curto:
+            itens = [(re.sub(r"(\b(19|20)\d{2}[a-z]?)\s*;[^;]*$", r"\1", t), suf) for t, suf in itens]
+        return [t + suf for t, suf in itens]
 
     def nota_referencias(self, s) -> str:
         if (s.get("notas") or "").strip():
@@ -1147,7 +1157,7 @@ class Construtor:
         linhas = self.linhas_referencias()
         for extra in M.como_lista(s.get("outras")):
             linhas.append(f"Também: {extra}")
-        wcol = 5.55
+        wcol = 5.722               # medido no deck de referencia: duas colunas de 5,722 pol em x=0,889 e 6,889
         xs = [M.ME, 6.889]
         pt, ls = 12, 15.6
         blocos = [(t, self.h_pars([par(t, pt, "texto", ls=ls)], wcol)) for t in linhas]
@@ -1171,7 +1181,7 @@ class Construtor:
                 while i < len(blocos) and y + blocos[i][1] <= y_fim:
                     t, h = blocos[i]
                     self.caixa(sl, x, y, wcol, h, [par(t, pt, "texto", ls=ls)])
-                    y += h + 0.07
+                    y += h + 0.042         # passo de 0,286 pol entre referencias de uma linha, como no deck de referencia
                     i += 1
                 if i >= len(blocos):
                     break

@@ -146,6 +146,16 @@ def _anos_compativeis(a: dict, b: dict, tolerancia: int) -> bool:
     return abs(int(a["ano"]) - int(b["ano"])) <= tolerancia
 
 
+def _autores_compativeis(a: dict, b: dict) -> bool:
+    """Primeiro autor igual ou parecido ('Hamrin Senorski' x 'Senorski', 'van Melick' x 'Melick'). Sem autor
+    num dos lados, não dá para dizer que são diferentes."""
+    x = re.sub(r"[^a-z]", "", a.get("_sobrenome") or "")
+    y = re.sub(r"[^a-z]", "", b.get("_sobrenome") or "")
+    if not x or not y or x == y or x in y or y in x:
+        return True
+    return SequenceMatcher(None, x, y).ratio() >= 0.75
+
+
 def deduplicar(registros: list[dict], tolerancia_ano: int = 1) -> tuple[list[list[dict]], list[set]]:
     """Agrupa registros do mesmo artigo. Ordem dos critérios: DOI, PMID, EID, título normalizado + ano
     (com tolerância) e, por fim, título quase igual do mesmo primeiro autor."""
@@ -176,6 +186,8 @@ def deduplicar(registros: list[dict], tolerancia_ano: int = 1) -> tuple[list[lis
                     continue
                 if curto and ra["_sobrenome"] and rb["_sobrenome"] and ra["_sobrenome"] != rb["_sobrenome"]:
                     continue  # títulos genéricos ('Shoulder pain') só se juntam com o mesmo primeiro autor
+                if not _autores_compativeis(ra, rb):
+                    continue  # mesmo título longo, autores diferentes: artigos diferentes (comentários, capítulos)
                 if uf.conflito(a, b):
                     continue
                 uf.unir(a, b, "titulo+ano")
@@ -311,6 +323,10 @@ def enriquecer(reg: dict, por_doi: dict, por_pmid: dict) -> None:
             reg["pmcid"] = e["pmcid"]
         if not reg["pmid"] and e.get("pmid"):
             reg["pmid"] = e["pmid"]
+        if not reg["doi"] and e.get("doi"):
+            # O PubMed não traz DOI de parte das revistas fora do MEDLINE (IJSPT, por exemplo); o OpenAlex,
+            # achado pelo PMID, traz. Sem DOI a etapa de download não acha o PDF aberto.
+            reg["doi"] = normalizar_doi(e["doi"])
         if e.get("retratado"):
             reg["retratado"] = True
     if reg["acesso_aberto"] is None and reg["pmcid"]:
@@ -338,14 +354,15 @@ RE_CONSENSO = _R(r"\b(consensus statement|expert consensus|international consens
                  r"document|exercise|study|meeting|conference|opinion|expert|definition|for|on)|"
                  r"consensus$|delphi|position statement|position stand)\b")
 RE_CONSENSO_NAO = _R(r"consensus on exercise reporting|\bCERT\b|consensus[- ]based (standards|checklist)")
-RE_LAB_FORTE = _R(r"\b(cadaver\w*|in vitro|finite element|animal model|rat model|murine|mice|rats?|rabbits?|"
+RE_LAB_FORTE = _R(r"\b(cadaver\w*|in vitro|finite element|animal model|rat model|murine|(?-i:mice|rats?|rabbits?)|"
                   r"biomechanical (analysis|study|evaluation|comparison|testing|assessment))\b")
 RE_RS = _R(r"systematic(ally)? review|systematic literature review|meta-?analy|metaanaly|umbrella review|"
            r"scoping review|overview of (systematic )?reviews|network meta|cochrane review|rapid review|"
            r"review of systematic reviews|evidence synthesis|meta-regression|best[- ]evidence synthesis")
 RE_RS_RESUMO = _R(r"systematic(ally)? (review|search)|meta-analys|were searched|prisma\b|risk of bias")
 RE_ECR_TITULO = _R(r"randomi[sz]ed|\brct\b|randomly (assigned|allocated)|controlled (clinical )?trial")
-RE_ECR_RESUMO = _R(r"randomly (assigned|allocated|divided|distributed)|were randomi[sz]ed|was randomi[sz]ed|"
+RE_ECR_RESUMO = _R(r"randomly (assigned|allocated|divided|distributed)|(assigned|allocated|divided|distributed) "
+                   r"(at )?random(ly)?\b|were randomi[sz]ed|was randomi[sz]ed|"
                    r"randomi[sz]ed (to|into)\b|participants? (were|was) (randomly|randomi[sz]ed)|"
                    r"(design|methods?):?\s*(a |this |the )?(\w+[- ]){0,4}randomi[sz]ed (controlled|clinical)")
 RE_SECUNDARIA = _R(r"secondary analysis|post[- ]hoc|ancillary|follow-up of a randomi|exploratory analysis|"
@@ -354,12 +371,13 @@ RE_ACURACIA = _R(r"diagnostic accuracy|sensitivity and specificity|likelihood ra
                  r"performance|utility)|accuracy of\b.*\b(tests?|examination|ultraso|mri|imaging|assessment)|"
                  r"clinical tests? for")
 RE_LAB = _R(r"\b(electromyograph\w*|emg|biomechanic\w*|kinematic\w*|kinetics?|cadaver\w*|in vitro|in vivo|"
-            r"finite element|animal model|rat model|murine|mice|rats?|rabbits?|histolog\w*|gene expression|"
+            r"finite element|animal model|rat model|murine|(?-i:mice|rats?|rabbits?)|histolog\w*|gene expression|"
             r"muscle activ\w+|mechanobiolog\w*|tendon (stiffness|thickness|properties|structure)|shear[- ]wave|"
             r"elastograph\w*|motion analysis|acromiohumeral distance|subacromial space|motor unit\w*|"
             r"corticospinal|cortical excitab\w*|pain sensitivity|conditioned pain modulation|"
             r"pressure pain threshold\w*)\b")
 RE_CASO = _R(r"\bcase reports?\b|\bcase series\b|\ba case of\b|\bcase study\b|\bcase presentation\b|"
+              r"\b(in|of) an? \d+[- ]years?[- ]old\b|"
               r": a case\b(?![- ]control)")
 RE_CASO_RESUMO = _R(r"\b(this|a|an|our|the present|retrospective|prospective|consecutive|therapeutic)\s+(\w+\s+){0,2}"
                     r"case[- ]series\b")
@@ -373,6 +391,8 @@ RE_MEDIDA = _R(r"\b(reliability|validity|validation|responsiveness|measurement p
 RE_QUALI = _R(r"\bqualitative\b|focus groups?|semi-structured interviews?|thematic analysis|mixed[- ]methods")
 RE_NARRATIVA = _R(r"\b(narrative review|literature review|review|overview|current concepts?|clinical commentary|"
                   r"masterclass|state[- ]of[- ]the[- ]art|update on|viewpoint|perspective)\b")
+RE_OPINIAO = _R(r"\bthe case (for|against)\b|\b(a )?clinical framework\b|\bwhat (we|you) (know|need)|"
+                r"\bis it time\b|\bwhere are we\b")
 
 # Desenho DECLARADO pelos autores no resumo. Revistas de medicina esportiva (AJSM, JOSPT, OJSM, Arthroscopy,
 # Sports Health, BJSM) trazem uma seção "Study Design: Cohort study; Level of evidence, 3" ou fecham com
@@ -381,6 +401,11 @@ RE_NARRATIVA = _R(r"\b(narrative review|literature review|review|overview|curren
 # (série de casos virava "Coorte"; estudo de laboratório com grupo-controle virava "Caso-controle").
 RE_DESENHO_ROTULO = _R(r"(?:^|[\n.]\s*)(?:study\s+design|design)s?\s*:\s*([^\n.;]{3,90})")
 RE_NIVEL_EVIDENCIA = _R(r"level of evidence:?\s*(?:level\s*)?(?:[1-5]|iv|i{1,3}|v)\b[\s,;:.\-(]*([a-z][^\n.;)]{3,70})")
+# Coorte compara grupos (exposto x não exposto, fatores de risco). Seguimento de um só grupo operado é série de
+# casos. Medido no LCA com o rótulo declarado escondido: 191 de 273 séries viravam coorte; com esta regra, 163
+# (a coorte perdeu 12 de 661). Ganho pequeno e líquido; o rótulo declarado continua mandando quando existe.
+RE_COMPARACAO = _R(r"\bcompar\w*|\bversus\b|\bvs\.?\b|control group|\bcontrols\b|matched|risk factors?|"
+                   r"associat\w+|odds ratio|hazard ratio|relative risk|\bgroups?\b|predict\w*|regression")
 RE_SEGUIMENTO = _R(r"\b(retrospectively|prospectively) (reviewed|analy[sz]ed|identified|collected|followed|enrolled|"
                    r"evaluated|recruited|included|assessed|studied)|consecutive (patients|athletes|cases)|"
                    r"(minimum|mean|median|average|final|latest)(?: \w+){0,2} follow[- ]up|were followed (for|up)|"
@@ -518,13 +543,22 @@ def classificar(reg: dict) -> tuple[str, str]:
     if mesh & MESH_LAB:
         return "Laboratorio/mecanistico", "MeSH: " + ", ".join(sorted(mesh & MESH_LAB))
     if RE_COORTE.search(resumo[:2500]) or "Retrospective Studies" in mesh or "Follow-Up Studies" in mesh:
+        if not RE_COMPARACAO.search(resumo):
+            return "Relato/serie de casos", "seguimento de um só grupo, sem comparação no resumo (série de casos)"
         return "Coorte", "resumo/MeSH indicam estudo longitudinal ou retrospectivo"
     if RE_TRANSVERSAL.search(resumo[:2500]) or "Observational Study" in pts:
         return "Transversal", "resumo indica estudo transversal/observacional"
-    if RE_LAB.search(resumo[:2500]) and not resumo.lower().count("random"):
-        return "Laboratorio/mecanistico", f"resumo: '{RE_LAB.search(resumo[:2500]).group(0)}'"
+    if RE_NARRATIVA.search(titulo) or RE_OPINIAO.search(titulo):
+        return "Revisao narrativa", f"título: '{(RE_NARRATIVA.search(titulo) or RE_OPINIAO.search(titulo)).group(0)}'"
+    # Um termo de laboratório solto no resumo ("biomechanical", "kinetics", "EMG") aparece em todo tipo de estudo
+    # clínico: conferido à mão, a regra com um termo errava 12 de 14. Com dois termos distintos ela fica útil.
+    termos_lab = {m.group(0).lower()[:8] for m in RE_LAB.finditer(resumo[:2500])}
+    if len(termos_lab) >= 2 and not resumo.lower().count("random"):
+        return "Laboratorio/mecanistico", f"resumo: {', '.join(sorted(termos_lab))}"
     if pts & PT_ENSAIO:
         return "Outro", "ensaio clínico sem randomização declarada"
+    if RE_SEGUIMENTO.search(resumo[:2500]) and not RE_COMPARACAO.search(resumo):
+        return "Relato/serie de casos", "seguimento de um só grupo, sem comparação no resumo (série de casos)"
     if RE_SEGUIMENTO.search(resumo[:2500]):
         return "Coorte", f"resumo indica seguimento de pacientes: '{RE_SEGUIMENTO.search(resumo[:2500]).group(0)[:40]}'"
     if RE_NARRATIVA.search(titulo):
@@ -1042,7 +1076,11 @@ def main(argv=None) -> int:
     por_desenho = Counter(r["desenho"] for r in registros)
     notas_fonte = {}
     pubmed = ler_json(pasta / "brutos" / "pubmed.json") or {}
-    cortes = [e for e in pubmed.get("execucoes", []) if e.get("total", 0) > e.get("baixados", 0) > 0]
+    ultima_por_variante = {}
+    for e in pubmed.get("execucoes", []):
+        if e.get("baixados"):  # --so-contar não baixa nada e não conta como rodada
+            ultima_por_variante[e.get("variante")] = e
+    cortes = [e for e in ultima_por_variante.values() if e.get("total", 0) > e.get("baixados", 0) > 0]
     if cortes:
         notas_fonte["pubmed"] = "; ".join(f"variante {e['variante']}: {e['baixados']} baixados de {e['total']}"
                                           for e in cortes[-3:])

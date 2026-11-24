@@ -222,7 +222,9 @@ def main(argv=None) -> int:
                     help="citam = quem cita o sentinela; citados = o que o sentinela cita (padrão ambos)")
     ap.add_argument("--max-citam", type=int, default=200, help="máximo de artigos que citam, por sentinela (padrão 200, "
                                                               "os mais citados primeiro)")
-    ap.add_argument("--de-ano", type=int, help="na perseguição, só artigos publicados a partir deste ano")
+    ap.add_argument("--de-ano", type=int, help="na perseguição para a frente (quem cita o sentinela), só artigos "
+                                                "publicados a partir deste ano. Para trás (o que o sentinela cita) "
+                                                "vale o ano inicial de conceitos.json, para não perder os clássicos")
     ap.add_argument("--filtro-local", default="ancora", choices=["ancora", "auto", "um", "todos", "nenhum"],
                     help="filtro dos artigos perseguidos pelos blocos de conceito: 'ancora' exige o bloco da "
                          "condição (papel P) no titulo/resumo (padrão)")
@@ -323,7 +325,10 @@ def main(argv=None) -> int:
                 obras, total, erros = listar_paginado(cliente, filtro, args.max_citam)
                 lotes.append(("cita o sentinela", obras, total, erros))
             if args.direcao in ("citados", "ambos"):
-                filtro = f"cited_by:{wid}" + (f",from_publication_date:{args.de_ano}-01-01" if args.de_ano else "")
+                # Para trás, --de-ano cortaria justamente os artigos fundadores que o sentinela cita (um consenso
+                # de 2016 citado pela diretriz de 2023 sumia com --de-ano 2018). Vale o limite da busca.
+                ano_tras = ((conceitos or {}).get("limites") or {}).get("ano_inicio")
+                filtro = f"cited_by:{wid}" + (f",from_publication_date:{ano_tras}-01-01" if ano_tras else "")
                 obras, total, erros = listar_paginado(cliente, filtro, 500)
                 lotes.append(("citado pelo sentinela", obras, total, erros))
             for relacao, obras, total, erros in lotes:

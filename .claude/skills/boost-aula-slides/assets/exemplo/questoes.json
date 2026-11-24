@@ -1,0 +1,130 @@
+{
+  "questoes": [
+    {
+      "id": "q1",
+      "objetivo": 1,
+      "nivel": "aplicação",
+      "cenario": "Lucas, 24 anos, joga futebol amador. Está a 7 meses da reconstrução do LCA com enxerto de isquiotibiais. Hop simples em distância: 95% da outra perna. Força isocinética de quadríceps a 60°/s: 82% da outra perna. Sem dor e sem derrame. Ele quer voltar ao campeonato em 3 semanas.",
+      "pergunta": "Qual conduta os dados sustentam melhor?",
+      "opcoes": {
+        "A": "Liberar para o jogo, porque o hop passou de 90%.",
+        "B": "Adiar o jogo e priorizar força de quadríceps, reavaliando depois dos 9 meses.",
+        "C": "Liberar com joelheira funcional e minutos controlados.",
+        "D": "Liberar, porque sem dor e sem derrame o enxerto está pronto."
+      },
+      "gabarito": "B",
+      "comentario": "Na coorte Delaware-Oslo, cada mês de espera até o 9º reduziu a taxa de nova lesão em 51%, e cada ponto percentual a mais de simetria de quadríceps reduziu a taxa em 3%. Lucas está antes dos 9 meses e com o quadríceps abaixo de 90%: os dois fatores que o estudo associou a nova lesão.",
+      "distratores": {
+        "A": "Tomar a distância do hop como prova de joelho pronto: quase todos passam no hop aos 9 meses, inclusive quem tem quadríceps fraco.",
+        "C": "Achar que um acessório compensa déficit de força e de tempo de maturação; nenhum dos estudos da aula testou joelheira.",
+        "D": "Usar ausência de sintoma como critério de liberação: sintoma não mede força nem o risco associado ao tempo."
+      },
+      "referencia": ["Grindem2016"]
+    },
+    {
+      "id": "q2",
+      "objetivo": 2,
+      "nivel": "análise",
+      "cenario": "Na coorte Delaware-Oslo (106 atletas de esportes de pivô seguidos por 2 anos), entre os atletas que voltaram ao esporte de nível I com quadríceps abaixo de 90% de simetria, 15 de 45 (33,3%) tiveram nova lesão no joelho; entre os que voltaram com quadríceps acima de 90%, 3 de 24 (12,5%).",
+      "pergunta": "Supondo que a diferença fosse inteiramente causada pela força, de quantos atletas seria preciso levar o quadríceps acima de 90% para evitar uma nova lesão?",
+      "opcoes": {
+        "A": "Cerca de 2.",
+        "B": "Cerca de 21.",
+        "C": "Cerca de 5.",
+        "D": "Cerca de 3."
+      },
+      "gabarito": "C",
+      "comentario": "Risco absoluto: 33,3% − 12,5% = 20,8 pontos percentuais. NNT = 1 ÷ 0,208 ≈ 4,8, ou cerca de 5. A suposição de causa é forte: é uma coorte, os grupos são pequenos e o intervalo de confiança dessa diferença é largo.",
+      "distratores": {
+        "A": "Usar o risco relativo (33,3 ÷ 12,5 ≈ 2,7) como se fosse NNT.",
+        "B": "Confundir a diferença em pontos percentuais (20,8) com o número necessário para tratar.",
+        "D": "Calcular 1 ÷ 0,333, usando o risco de um grupo só e ignorando que o grupo forte também se lesiona."
+      },
+      "referencia": ["Grindem2016"]
+    },
+    {
+      "id": "q3",
+      "objetivo": 3,
+      "nivel": "análise",
+      "cenario": "Uma atleta de handebol, liberada há 2 semanas, tem simetria de 97% na distância do hop simples. No salto vertical unipodal, a altura do lado operado é 83% da do outro lado.",
+      "pergunta": "Qual interpretação é mais coerente com a biomecânica descrita em atletas já liberados?",
+      "opcoes": {
+        "A": "A distância esconde o déficit do joelho: o quadril e o tornozelo compensam no salto horizontal.",
+        "B": "O salto vertical tem baixa confiabilidade, então vale a simetria da distância.",
+        "C": "O déficit é de tornozelo, porque o joelho já atingiu 97%.",
+        "D": "Os dois testes medem a mesma coisa; a diferença é variação do dia."
+      },
+      "gabarito": "A",
+      "comentario": "Em 26 atletas já liberados, a simetria foi de 97% na distância do hop e de 83% e 77% na altura do salto vertical e do drop jump unipodais. No salto vertical, o joelho operado fez 29% do trabalho articular, contra 34% no lado não operado e nos controles, e o quadril subiu para 36%.",
+      "distratores": {
+        "B": "Desqualificar o teste que mostra o problema em vez de perguntar por que os testes discordam.",
+        "C": "Atribuir ao joelho o resultado de um teste que o joelho pode terceirizar para outras articulações.",
+        "D": "Tratar uma diferença de 14 pontos como ruído sem olhar a medida de trabalho articular."
+      },
+      "referencia": ["Kotsifaki2022"]
+    },
+    {
+      "id": "q4",
+      "objetivo": 2,
+      "nivel": "avaliação",
+      "cenario": "Aos 9 meses de pós-operatório, um atleta marca 40 no ACL-RSI. Para prever quem não volta ao nível anterior em 2 anos, o corte de 47 teve sensibilidade de 85% e especificidade de 45%.",
+      "pergunta": "Qual leitura do resultado é a mais correta?",
+      "opcoes": {
+        "A": "Ele tem 85% de chance de não voltar ao nível anterior.",
+        "B": "O resultado não informa nada, porque a especificidade é menor que 50%.",
+        "C": "Ele só deve ser liberado quando passar de 47.",
+        "D": "O resultado aumenta pouco a probabilidade de não voltar; serve para abrir a conversa e orientar a exposição, não para vetar."
+      },
+      "gabarito": "D",
+      "comentario": "Razão de verossimilhança positiva = sensibilidade ÷ (1 − especificidade) = 0,85 ÷ 0,55 ≈ 1,5: muda pouco a probabilidade pré-teste. A área sob a curva foi 0,69 (IC 95% 0,58 a 0,79). O escore abaixo do corte é um alerta com muitos falsos positivos; o que fazer com ele é decisão clínica.",
+      "distratores": {
+        "A": "Ler a sensibilidade como valor preditivo positivo: 85% é a proporção, entre os que não voltaram, de quem estava abaixo do corte.",
+        "B": "Ignorar que a sensibilidade alta ajuda: escore acima de 47 torna o desfecho ruim menos provável.",
+        "C": "Transformar um teste de baixa especificidade em veto, o que seguraria muitos atletas que voltariam bem."
+      },
+      "referencia": ["Faleide2021"]
+    },
+    {
+      "id": "q5",
+      "objetivo": 1,
+      "nivel": "avaliação",
+      "cenario": "Rafaela, 21 anos, basquete, 10 meses de pós-operatório. Quadríceps 93% e altura do salto vertical unipodal 92% da outra perna. ACL-RSI 45. Diz que trava quando precisa mudar de direção em velocidade.",
+      "pergunta": "Qual plano é o mais defensável?",
+      "opcoes": {
+        "A": "Liberar para o jogo completo: os critérios físicos estão cumpridos.",
+        "B": "Entrar no treino coletivo sem contato, expor a mudança de direção em degraus e reavaliar o ACL-RSI com força e salto em 3 a 4 semanas.",
+        "C": "Suspender o retorno até o ACL-RSI passar de 47.",
+        "D": "Encaminhar para a psicologia e manter só treino individual até a alta de lá."
+      },
+      "gabarito": "B",
+      "comentario": "O físico está cumprido e a prontidão psicológica está baixa, com medo de um gesto específico. Menor prontidão psicológica se associou a menor retorno ao nível anterior e a mais ruptura do enxerto; o que fazer com isso não foi testado em ensaio. Expor em degraus, medir de novo e decidir junto é proposta clínica coerente com os dados, não protocolo validado.",
+      "distratores": {
+        "A": "Separar corpo e cabeça: tratar o medo declarado do gesto como detalhe quando ele está ligado a pior desfecho.",
+        "C": "Usar o corte de uma escala com especificidade de 45% como veto absoluto.",
+        "D": "Terceirizar o medo e tirar a atleta da exposição ao gesto temido, que é justamente o que o treino pode oferecer."
+      },
+      "referencia": ["Faleide2021", "Cronstrom2023"]
+    },
+    {
+      "id": "q6",
+      "objetivo": 3,
+      "nivel": "análise",
+      "cenario": "Uma clínica libera atletas de LCA com uma bateria só de hop tests em distância. Em 62 pacientes avaliados aos 9 meses, 96,8% passaram no hop simples e 53,2% passaram no critério de força de quadríceps a 60°/s; 11,3% passaram em todos os critérios.",
+      "pergunta": "O que esses números dizem sobre a bateria da clínica?",
+      "opcoes": {
+        "A": "Ela é adequada, porque quase todos os pacientes passam e isso reduz a ansiedade do atleta.",
+        "B": "Ela é exigente demais, porque só 11,3% passariam em tudo.",
+        "C": "Passar no hop quase não discrimina: cerca de metade de quem passa ainda tem o quadríceps abaixo do critério.",
+        "D": "Hop e força medem o mesmo construto; basta um dos dois."
+      },
+      "gabarito": "C",
+      "comentario": "Com 96,8% de aprovação, o hop tem efeito teto aos 9 meses: quase ninguém falha, então o teste não separa quem está pronto de quem não está. A força de quadríceps, ligada a nova lesão na coorte de Grindem, falha em quase metade.",
+      "distratores": {
+        "A": "Confundir taxa de aprovação alta com bom teste: um teste que todos passam não informa nada.",
+        "B": "Ler o 11,3% como defeito da bateria completa, e não como sinal de que a maioria ainda não está pronta aos 9 meses.",
+        "D": "Supor que desempenho em salto horizontal reflete força de quadríceps, o que o próprio estudo desmente."
+      },
+      "referencia": ["Welling2018", "Grindem2016"]
+    }
+  ]
+}
