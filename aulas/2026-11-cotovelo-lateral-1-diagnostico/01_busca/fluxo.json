@@ -1,0 +1,47 @@
+{
+  "data": "2026-11-24T13:19:52",
+  "recorte": "topo_mecanismos",
+  "por_fonte": {
+    "pubmed": 3107,
+    "crossref": 208,
+    "openalex": 351
+  },
+  "notas_fonte": {
+    "pubmed": "variante rs: 313 baixados de 314; variante ecr: 831 baixados de 833; variante base: 3107 baixados de 3121"
+  },
+  "identificados": 3666,
+  "duplicatas": 454,
+  "unicos": 3212,
+  "por_desenho": {
+    "Diretriz": 7,
+    "Revisao sistematica/meta-analise": 320,
+    "ECR": 458,
+    "Coorte": 362,
+    "Caso-controle": 51,
+    "Transversal": 193,
+    "Estudo de acuracia diagnostica": 21,
+    "Consenso/Delphi": 17,
+    "Laboratorio/mecanistico": 317,
+    "Revisao narrativa": 319,
+    "Relato/serie de casos": 369,
+    "Editorial/comentario": 177,
+    "Outro": 601
+  },
+  "sentinelas_presentes": 14,
+  "sentinelas_esperados": 14,
+  "triagem": {
+    "data": "2026-11-24T13:19:59",
+    "incluidos": 30,
+    "excluidos": 224,
+    "talvez": 26,
+    "sem_decisao": 2932,
+    "excluidos_por_motivo": {
+      "fora do tema": 27,
+      "outro": 127,
+      "população diferente": 53,
+      "intervenção diferente": 13,
+      "superado por evidência mais nova": 3,
+      "sem resultados (protocolo)": 1
+    }
+  }
+}

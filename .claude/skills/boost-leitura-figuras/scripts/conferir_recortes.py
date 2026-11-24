@@ -102,9 +102,15 @@ def main() -> int:
                     if k not in palavras_cache:
                         palavras_cache[k] = P.palavras_da_pagina(pdf, int(e["pagina"]))
                     palavras = palavras_cache[k]
+                apagadas = [tuple(a["bbox_pt"]) for a in e.get("apagado_pt", [])]
+                continua = None
+                if simples and pdf.exists():
+                    try:
+                        continua = P.continua_fora(pdf, int(e["pagina"]), tuple(e["bbox_pt"]), apagadas)
+                    except Exception:
+                        continua = None
                 qc = P.avaliar_recorte(img, tuple(e["bbox_pt"]) if simples else None, palavras,
-                                       float(e.get("dpi") or 300), e.get("dpi_nativo"),
-                                       [tuple(a["bbox_pt"]) for a in e.get("apagado_pt", [])])
+                                       float(e.get("dpi") or 300), e.get("dpi_nativo"), apagadas, continua)
                 erros += qc.pop("erros")
                 avisos += qc.pop("avisos")
         if e.get("aprovada"):

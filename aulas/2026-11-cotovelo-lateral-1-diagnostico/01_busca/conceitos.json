@@ -1,0 +1,355 @@
+{
+  "tema": "Dor lateral no cotovelo / tendinopatia lateral do cotovelo: diagnóstico, prognóstico, mecanismo e reabilitação (aulas 1 e 2 da trilha cotovelo e mão)",
+  "pergunta": {
+    "P": "Adultos com dor lateral no cotovelo / tendinopatia lateral do cotovelo (inclui a nomenclatura antiga: epicondilite lateral, epicondilalgia lateral, cotovelo de tenista)",
+    "I": "Eixos clínicos das duas aulas, somados num único bloco: diagnóstico (testes, acurácia, imagem, força de preensão, PRTEE), prognóstico e curso natural, fatores de risco, mecanismo (entese, tendinose, processamento da dor) e tratamento (exercício e dose, corticoide e outras injeções, terapia manual, órteses e bandagem, agulhamento, eletrofísicos, ondas de choque, PRP)",
+    "C": "Fora da string: qualquer comparador (espera vigilante, placebo, corticoide, outro tratamento conservador)",
+    "O": "Fora da string: dor, função (PRTEE, DASH), força de preensão sem dor, melhora global, recidiva, acurácia (sensibilidade, especificidade, RV)",
+    "nota": "Uma estratégia só para as duas aulas. O segundo bloco não é uma intervenção: é a união dos eixos clínicos (diagnóstico, prognóstico/risco, mecanismo, tratamento), para que uma única string sirva às duas aulas e corte o que não interessa (técnica cirúrgica isolada, relato de anatomia sem relação clínica). Comparador e desfecho ficam fora porque muitos resumos não os citam; viram critério de triagem. O custo do segundo bloco foi medido contra a busca só com o bloco da condição (ver Decisões e histórico). Limite de ano em 2000 para alcançar os ensaios clássicos que mudaram a conduta (Smidt 2002, Bisset 2006, Coombes 2013). NOT só no título para fratura (fratura do epicôndilo lateral em criança é outra condição)."
+  },
+  "recorte": "topo_mecanismos",
+  "blocos": [
+    {
+      "id": "condicao",
+      "rotulo": "Tendinopatia lateral do cotovelo / dor lateral no cotovelo",
+      "papel": "P",
+      "campo": "tiab",
+      "mesh": [
+        "Tennis Elbow",
+        "Elbow Tendinopathy"
+      ],
+      "livres": [
+        "lateral epicondyl*",
+        "epicondylalgia",
+        "tennis elbow",
+        "lateral elbow tendin*",
+        "lateral elbow pain",
+        "common extensor tendon",
+        "extensor carpi radialis brevis",
+        "epicondylitis humeri",
+        "humeral epicondylitis"
+      ],
+      "proximidade": [
+        {
+          "a": [
+            "lateral elbow",
+            "lateral epicondylar",
+            "extensor origin"
+          ],
+          "b": [
+            "tendinopathy",
+            "tendinosis",
+            "tendinitis",
+            "tendonitis",
+            "pain",
+            "enthesopathy"
+          ],
+          "n": 3
+        }
+      ],
+      "simples": [
+        "tennis elbow",
+        "lateral epicondylitis",
+        "lateral epicondylalgia",
+        "lateral elbow tendinopathy",
+        "lateral elbow pain"
+      ]
+    },
+    {
+      "id": "eixos",
+      "rotulo": "Eixos clínicos: diagnóstico, prognóstico/risco, mecanismo e tratamento",
+      "papel": "I",
+      "campo": "tiab",
+      "mesh": [
+        "Diagnosis, Differential",
+        "Sensitivity and Specificity",
+        "Physical Examination",
+        "Ultrasonography",
+        "Magnetic Resonance Imaging",
+        "Hand Strength",
+        "Disability Evaluation",
+        "Prognosis",
+        "Risk Factors",
+        "Recurrence",
+        "Cohort Studies",
+        "Occupational Diseases",
+        "Hyperalgesia",
+        "Central Nervous System Sensitization",
+        "Pain Threshold",
+        "Biomechanical Phenomena",
+        "Exercise Therapy",
+        "Physical Therapy Modalities",
+        "Musculoskeletal Manipulations",
+        "Injections",
+        "Glucocorticoids",
+        "Adrenal Cortex Hormones",
+        "Platelet-Rich Plasma",
+        "Extracorporeal Shockwave Therapy",
+        "Dry Needling",
+        "Orthotic Devices",
+        "Braces",
+        "Athletic Tape",
+        "Transcutaneous Electric Nerve Stimulation",
+        "Low-Level Light Therapy",
+        "Ultrasonic Therapy",
+        "Acupuncture Therapy",
+        "Botulinum Toxins",
+        "Prolotherapy"
+      ],
+      "livres": [
+        "diagnos*",
+        "accuracy",
+        "sensitivity",
+        "specificity",
+        "clinical test*",
+        "provocation test*",
+        "physical examination",
+        "ultrasound",
+        "ultrasonograph*",
+        "sonograph*",
+        "magnetic resonance",
+        "MRI",
+        "imaging",
+        "grip strength",
+        "pain-free grip",
+        "PRTEE",
+        "patient-rated tennis elbow",
+        "minimal clinically important",
+        "radial tunnel",
+        "posterior interosseous",
+        "radiculopathy",
+        "prognos*",
+        "predict*",
+        "natural history",
+        "natural course",
+        "clinical course",
+        "recurren*",
+        "risk factor*",
+        "incidence",
+        "prevalence",
+        "occupational",
+        "workers",
+        "wait and see",
+        "wait-and-see",
+        "mechanism*",
+        "pathophysiolog*",
+        "histopatholog*",
+        "tendinosis",
+        "neovascular*",
+        "hyperalgesia",
+        "sensitization",
+        "sensitisation",
+        "pain processing",
+        "conditioned pain modulation",
+        "motor impairment*",
+        "enthes*",
+        "biomechanic*",
+        "exercis*",
+        "eccentric*",
+        "isometric*",
+        "isotonic",
+        "strengthening",
+        "resistance training",
+        "loading",
+        "physiotherap*",
+        "physical therap*",
+        "rehabilitation",
+        "manual therap*",
+        "mobilisation",
+        "mobilization",
+        "mobilisation with movement",
+        "mobilization with movement",
+        "manipulation*",
+        "massage",
+        "corticosteroid*",
+        "steroid*",
+        "glucocorticoid*",
+        "injection*",
+        "platelet-rich plasma",
+        "platelet rich plasma",
+        "PRP",
+        "autologous blood",
+        "shockwave",
+        "shock wave",
+        "ESWT",
+        "dry needling",
+        "acupuncture",
+        "brace",
+        "braces",
+        "bracing",
+        "counterforce",
+        "orthos*",
+        "orthotic*",
+        "splint*",
+        "tape",
+        "taping",
+        "kinesio*",
+        "TENS",
+        "electrical stimulation",
+        "laser",
+        "photobiomodulation",
+        "botulinum",
+        "prolotherapy",
+        "hyaluronic",
+        "glyceryl trinitrate",
+        "nitric oxide",
+        "education",
+        "conservative",
+        "nonoperative",
+        "non-operative",
+        "management"
+      ],
+      "simples": [
+        "diagnosis",
+        "prognosis",
+        "exercise",
+        "physiotherapy",
+        "injection",
+        "treatment"
+      ]
+    }
+  ],
+  "excluir": {
+    "mesh": [],
+    "livres": [
+      "fracture*"
+    ],
+    "campo": "ti"
+  },
+  "limites": {
+    "ano_inicio": 2000,
+    "ano_fim": null,
+    "idiomas": [
+      "english",
+      "portuguese",
+      "spanish"
+    ],
+    "somente_humanos": true,
+    "tipos_scopus": [
+      "ar",
+      "re"
+    ]
+  },
+  "revistas_alvo": [
+    {
+      "nome": "J Orthop Sports Phys Ther",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ]
+    },
+    {
+      "nome": "Br J Sports Med",
+      "issn": [
+        "0306-3674",
+        "1473-0480"
+      ]
+    },
+    {
+      "nome": "J Hand Ther",
+      "issn": [
+        "0894-1130",
+        "1545-004X"
+      ]
+    },
+    {
+      "nome": "J Physiother",
+      "issn": [
+        "1836-9553",
+        "1836-9561"
+      ]
+    },
+    {
+      "nome": "J Shoulder Elbow Surg",
+      "issn": [
+        "1058-2746",
+        "1532-6500"
+      ]
+    },
+    {
+      "nome": "Clin Rehabil",
+      "issn": [
+        "0269-2155",
+        "1477-0873"
+      ]
+    },
+    {
+      "nome": "Musculoskelet Sci Pract",
+      "issn": [
+        "2468-8630",
+        "2468-7812"
+      ]
+    }
+  ],
+  "sentinelas": [
+    {
+      "pmid": "36453071",
+      "doi": "10.2519/jospt.2022.0302",
+      "nota": "Diretriz JOSPT 2022 (Lucado et al.), espinha dorsal da aula base"
+    },
+    {
+      "pmid": "23385272",
+      "doi": "10.1001/jama.2013.129",
+      "nota": "ECR fatorial JAMA 2013 (Coombes): corticoide, fisioterapia ou ambos, 1 ano"
+    },
+    {
+      "pmid": "17012266",
+      "doi": "10.1136/bmj.38961.584653.ae",
+      "nota": "ECR BMJ 2006 (Bisset): MWM + exercício x corticoide x espera"
+    },
+    {
+      "pmid": "11879861",
+      "doi": "10.1016/s0140-6736(02)07811-x",
+      "nota": "ECR Lancet 2002 (Smidt): corticoide x fisioterapia x espera"
+    },
+    {
+      "pmid": "20970844",
+      "doi": "10.1016/s0140-6736(10)61160-9",
+      "nota": "RS Lancet 2010 (Coombes): corticoide e outras injeções na tendinopatia"
+    },
+    {
+      "pmid": "31425384",
+      "doi": "10.1249/mss.0000000000002128",
+      "nota": "ECR MSSE 2020 (Vuvan): isométrico não supervisionado x espera"
+    },
+    {
+      "pmid": "33148599",
+      "doi": "10.1136/bjsports-2020-102525",
+      "nota": "RS/MA BJSM 2021 (Karanasios): exercício x intervenções passivas, 30 estudos"
+    },
+    {
+      "pmid": "31598419",
+      "nota": "Programa por fases (Day 2019). Conferido: é Int J Sports Phys Ther, não JOSPT"
+    },
+    {
+      "pmid": "26381484",
+      "doi": "10.2519/jospt.2015.5841",
+      "nota": "Revisão clínica JOSPT 2015 (Coombes): one size does not fit all"
+    },
+    {
+      "pmid": "18838330",
+      "doi": "10.1016/j.math.2008.08.004",
+      "nota": "Regra de predição clínica para MWM + exercício (Vicenzino 2009, Man Ther)"
+    },
+    {
+      "pmid": "15643732",
+      "doi": "10.2519/jospt.2004.34.12.770",
+      "nota": "Prognóstico de longo prazo, JOSPT 2004 (Waugh): uso de computador"
+    },
+    {
+      "pmid": "14966719",
+      "doi": "10.1016/s0003-9993(03)00480-5",
+      "nota": "Prognóstico após 8 semanas de fisioterapia (Waugh 2004, Arch Phys Med Rehabil), o da aula base"
+    },
+    {
+      "pmid": "24480912",
+      "doi": "10.1097/ajp.0000000000000078",
+      "nota": "Hiperalgesia ao frio e pior prognóstico em 1 ano (Coombes, Clin J Pain 2015; o de 2012 é outro estudo)"
+    },
+    {
+      "pmid": "33814224",
+      "doi": "10.1016/j.jht.2021.02.002",
+      "nota": "RS de acurácia dos testes de exame (Karanasios 2022, J Hand Ther): testa o eixo diagnóstico"
+    }
+  ]
+}

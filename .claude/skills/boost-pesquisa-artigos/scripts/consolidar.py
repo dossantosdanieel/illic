@@ -192,10 +192,15 @@ def deduplicar(registros: list[dict], tolerancia_ano: int = 1) -> tuple[list[lis
                     continue
                 uf.unir(a, b, "titulo+ano")
     # títulos quase iguais (subtítulo a mais, pontuação), restrito ao mesmo primeiro autor
+    # Sobrenome composto muda de forma entre as bases ('Hamrin Senorski E' no PubMed, 'Senorski E.H.' no Scopus;
+    # 'Garcia-Lopez' x 'Garcia Lopez'): o registro entra no grupo de cada parte do sobrenome.
+    particulas = {"van", "von", "der", "den", "de", "da", "das", "do", "dos", "del", "della", "di", "le", "la", "du"}
     por_autor: dict[str, list[int]] = {}
     for i, r in enumerate(registros):
         if r["_sobrenome"] and len(r["_titulo_norm"]) >= 25:
-            por_autor.setdefault(r["_sobrenome"], []).append(i)
+            partes = [p for p in re.split(r"[^a-z]+", r["_sobrenome"]) if len(p) >= 2 and p not in particulas]
+            for parte in dict.fromkeys(partes or [r["_sobrenome"]]):
+                por_autor.setdefault(parte, []).append(i)
     for indices in por_autor.values():
         if len(indices) > 400:
             continue
@@ -229,6 +234,21 @@ def _primeiro(grupo: list[dict], campo: str, vazio=None):
             if r["fonte"] == fonte and r.get(campo) not in (None, "", [], {}):
                 return r[campo]
     return vazio
+
+
+def _somar_listas(grupo: list[dict], campo: str) -> list:
+    """Une as listas do campo em todas as fontes (prioridade da fonte primeiro), sem repetir maiúscula/minúscula."""
+    saida, vistos = [], set()
+    for fonte in PRIORIDADE_FONTE:
+        for r in grupo:
+            if r["fonte"] != fonte:
+                continue
+            for item in r.get(campo) or []:
+                chave = str(item).strip().lower()
+                if chave and chave not in vistos:
+                    vistos.add(chave)
+                    saida.append(item)
+    return saida
 
 
 def fundir(grupo: list[dict], criterios: set) -> dict:
@@ -278,7 +298,7 @@ def fundir(grupo: list[dict], criterios: set) -> dict:
         "revista_completa": _primeiro(grupo, "revista_completa", ""),
         "volume": _primeiro(grupo, "volume", ""), "fasciculo": _primeiro(grupo, "fasciculo", ""),
         "paginas": _primeiro(grupo, "paginas", ""),
-        "palavras_chave": _primeiro(grupo, "palavras_chave", []),
+        "palavras_chave": _somar_listas(grupo, "palavras_chave"),
         "tipo_scopus": _primeiro(grupo, "tipo_scopus", ""),
         "tipo_openalex": _primeiro(grupo, "tipo_openalex", ""),
         "situacao_indexacao": _primeiro(grupo, "situacao_indexacao", ""),
@@ -345,7 +365,7 @@ RE_PROTOCOLO = _R(r"\b(study protocol|trial protocol|protocol (for|of) (a|an|the
                   r"protocol for\b|rationale and design)")
 RE_DIRETRIZ = _R(r"\b(clinical practice guidelines?|practice guidelines?|guidelines?|best practice recommendations?)\b")
 RE_DIRETRIZ_NAO = _R(r"\b(adher|complian|implement|survey|knowledge|awareness|concordan|consisten|according to|"
-                     r"quality of|appraisal|uptake|follow)")
+                     r"quality of|appraisal|uptake|follow|beyond|qualitative|interview)")
 RE_COMENTARIO = _R(r"^(re:|response\b|reply\b|letter to|letter:|comments? on|commentary\b|authors?['’]? ?(response|reply)|"
                    r"in reply|editorial\b|correspondence|invited commentary|corr insights|editor['’]s spotlight|"
                    r"critically appraised paper|expert commentary)|perspectives for patients|"
@@ -364,7 +384,10 @@ RE_ECR_TITULO = _R(r"randomi[sz]ed|\brct\b|randomly (assigned|allocated)|control
 RE_ECR_RESUMO = _R(r"randomly (assigned|allocated|divided|distributed)|(assigned|allocated|divided|distributed) "
                    r"(at )?random(ly)?\b|were randomi[sz]ed|was randomi[sz]ed|"
                    r"randomi[sz]ed (to|into)\b|participants? (were|was) (randomly|randomi[sz]ed)|"
-                   r"(design|methods?):?\s*(a |this |the )?(\w+[- ]){0,4}randomi[sz]ed (controlled|clinical)")
+                   r"(design|methods?)[:.]?\s*(a |this |the )?(\w+[- ]){0,4}randomi[sz]ed (controlled|clinical)|"
+                   r"(?<![-\w])(?<!non )randomi[sz]ed (controlled |clinical |pilot )*(trial|study) (was|were) (conducted|performed|"
+                   r"carried out|undertaken)|(this|the present|our) (\w+[- ]){0,3}randomi[sz]ed (controlled |clinical )*"
+                   r"(trial|study)")
 RE_SECUNDARIA = _R(r"secondary analysis|post[- ]hoc|ancillary|follow-up of a randomi|exploratory analysis|"
                    r"prespecified|pre-specified|mediation analysis")
 RE_ACURACIA = _R(r"diagnostic accuracy|sensitivity and specificity|likelihood ratio|diagnostic (value|validity|"
@@ -385,11 +408,11 @@ RE_CASO_CONTROLE = _R(r"case[- ]control")
 RE_COORTE = _R(r"\bcohort\b|prospective (study|observational|longitudinal)|longitudinal (study|analysis|cohort)|"
                r"\bregistry\b|retrospective (study|analysis|review|cohort|chart)|prognostic (factors?|study|model)|"
                r"predict(ors?|ive factors?) of|follow-up study")
-RE_TRANSVERSAL = _R(r"cross[- ]sectional|\bsurvey\b|\bprevalence\b|questionnaire study|observational study")
+RE_TRANSVERSAL = _R(r"cross[- ]sectional(?! area)|\bsurvey\b|\bprevalence\b|questionnaire study|observational study")
 RE_MEDIDA = _R(r"\b(reliability|validity|validation|responsiveness|measurement properties|psychometric\w*|"
                r"minimal(ly)? (clinically )?important|cross-cultural adaptation|translation and)\b")
 RE_QUALI = _R(r"\bqualitative\b|focus groups?|semi-structured interviews?|thematic analysis|mixed[- ]methods")
-RE_NARRATIVA = _R(r"\b(narrative review|literature review|review|overview|current concepts?|clinical commentary|"
+RE_NARRATIVA = _R(r"\b(narrative review|literature review|review|overview|current (\w+ ){0,2}concepts?|clinical commentary|"
                   r"masterclass|state[- ]of[- ]the[- ]art|update on|viewpoint|perspective)\b")
 RE_OPINIAO = _R(r"\bthe case (for|against)\b|\b(a )?clinical framework\b|\bwhat (we|you) (know|need)|"
                 r"\bis it time\b|\bwhere are we\b")
@@ -406,6 +429,11 @@ RE_NIVEL_EVIDENCIA = _R(r"level of evidence:?\s*(?:level\s*)?(?:[1-5]|iv|i{1,3}|
 # (a coorte perdeu 12 de 661). Ganho pequeno e líquido; o rótulo declarado continua mandando quando existe.
 RE_COMPARACAO = _R(r"\bcompar\w*|\bversus\b|\bvs\.?\b|control group|\bcontrols\b|matched|risk factors?|"
                    r"associat\w+|odds ratio|hazard ratio|relative risk|\bgroups?\b|predict\w*|regression")
+RE_INQUERITO = _R(r"\b(online|web-based|electronic|internet|national|international|anonymous|cross-sectional) "
+                   r"(\w+ ){0,2}survey|\bsurvey (of|among) "
+                   r"(\w+ ){0,3}(surgeons|physicians|physiotherapists|physical therapists|clinicians|members|athletic "
+                   r"trainers|coaches)")
+RE_NIVEL_IV = _R(r"level of evidence:?\s*(level\s*)?(iv|4)\b")
 RE_SEGUIMENTO = _R(r"\b(retrospectively|prospectively) (reviewed|analy[sz]ed|identified|collected|followed|enrolled|"
                    r"evaluated|recruited|included|assessed|studied)|consecutive (patients|athletes|cases)|"
                    r"(minimum|mean|median|average|final|latest)(?: \w+){0,2} follow[- ]up|were followed (for|up)|"
@@ -498,10 +526,15 @@ def classificar(reg: dict) -> tuple[str, str]:
     if RE_COMENTARIO.search(titulo) or (not pts and tipo_scopus in ("editorial", "letter", "note", "short survey")) \
             or (not pts and tipo_oa in ("editorial", "letter", "erratum", "paratext")):
         return "Editorial/comentario", "título ou tipo de documento indica carta, comentário ou editorial"
+    if RE_QUALI.search(titulo) or "Qualitative Research" in mesh:
+        return "Outro", "estudo qualitativo ou de métodos mistos"
     if RE_DIRETRIZ.search(titulo) and not RE_DIRETRIZ_NAO.search(titulo):
         return "Diretriz", f"título: '{RE_DIRETRIZ.search(titulo).group(0)}'"
     if pts & PT_CONSENSO:
         return "Consenso/Delphi", "tipo de publicação PubMed: " + ", ".join(sorted(pts & PT_CONSENSO))
+    if re.search(r"symposium|expert (group|panel)|working group|task force", titulo, re.I) and re.search(
+            r"consensus|delphi|panel of|experts? (panel|group)", resumo, re.I):
+        return "Consenso/Delphi", "título (simpósio/grupo de especialistas) e resumo indicam consenso"
     if (RE_CONSENSO.search(titulo) and not RE_CONSENSO_NAO.search(titulo)) or (
             "Delphi Technique" in mesh and re.search(r"consensus", resumo, re.I)):
         return "Consenso/Delphi", "título ou MeSH indicam consenso/Delphi"
@@ -542,6 +575,9 @@ def classificar(reg: dict) -> tuple[str, str]:
         return "Transversal", "título ou MeSH: transversal"
     if mesh & MESH_LAB:
         return "Laboratorio/mecanistico", "MeSH: " + ", ".join(sorted(mesh & MESH_LAB))
+    if RE_INQUERITO.search(resumo[:2500]) and not RE_COORTE.search(resumo[:2500]) \
+            and not RE_SEGUIMENTO.search(resumo[:2500]):
+        return "Transversal", f"resumo: inquérito ('{RE_INQUERITO.search(resumo[:2500]).group(0)[:40]}')"
     if RE_COORTE.search(resumo[:2500]) or "Retrospective Studies" in mesh or "Follow-Up Studies" in mesh:
         if not RE_COMPARACAO.search(resumo):
             return "Relato/serie de casos", "seguimento de um só grupo, sem comparação no resumo (série de casos)"
@@ -563,6 +599,8 @@ def classificar(reg: dict) -> tuple[str, str]:
         return "Coorte", f"resumo indica seguimento de pacientes: '{RE_SEGUIMENTO.search(resumo[:2500]).group(0)[:40]}'"
     if RE_NARRATIVA.search(titulo):
         return "Revisao narrativa", f"título: '{RE_NARRATIVA.search(titulo).group(0)}'"
+    if RE_NIVEL_IV.search(resumo):
+        return "Relato/serie de casos", "resumo declara nível de evidência IV (em ortopedia/esporte, série de casos)"
     return "Outro", "desenho não identificado pelos metadados; confira no resumo"
 
 

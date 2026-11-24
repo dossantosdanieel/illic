@@ -1,0 +1,472 @@
+{
+  "tema": "Aula 3 da trilha cotovelo e mão: tendinopatia medial do cotovelo (e diferenciais), dedo em gatilho e De Quervain",
+  "pergunta": {
+    "P": "Adultos com dor medial no cotovelo (tendinopatia medial; diferenciais: neuropatia ulnar, insuficiência do LCU), dedo em gatilho ou De Quervain",
+    "I": "Diagnóstico (testes, acurácia, graduação) e tratamento (órtese, corticoide, exercício/carga, terapia manual, cirurgia e encaminhamento)",
+    "C": "Fora da string",
+    "O": "Fora da string",
+    "nota": "Estratégia com quatro ramos (ramos/1a_cotovelo_medial, 1b_diferencial_medial, 2_dedo_gatilho, 3_de_quervain), cada um com conceitos.json, estrategia.md e strings próprios, rodados em separado no PubMed e na Crossref. Este arquivo é a UNIÃO dos blocos e sentinelas, usada pela consolidação (aderência e sentinelas) e pelo filtro local do OpenAlex. Não rode o PubMed por ele: a união (condições x diagnóstico/tratamento) misturaria os ramos e traria a cirurgia da neuropatia ulnar inteira. Comparador e desfecho ficam fora da string (muitos resumos não os citam) e entram como critério de triagem. O segundo bloco reúne diagnóstico e tratamento porque a aula cobre os dois; termos genéricos como 'treatment*', 'therap*' e 'diagnos*' ficaram de fora de propósito (casariam com quase tudo). Limite 1990+ para alcançar os clássicos de acurácia e os ensaios antigos de corticoide; citações da aula base anteriores a 1990 entram por PMID (pubmed_busca.py --pmids)."
+  },
+  "recorte": "topo_mecanismos",
+  "blocos": [
+    {
+      "id": "condicao",
+      "rotulo": "Condição (união dos ramos 1a, 1b, 2 e 3)",
+      "papel": "P",
+      "mesh": [
+        {
+          "termo": "Elbow Tendinopathy",
+          "explodir": false
+        },
+        "Cubital Tunnel Syndrome",
+        "Ulnar Nerve Compression Syndromes",
+        "Trigger Finger Disorder",
+        "De Quervain Disease"
+      ],
+      "livres": [
+        "medial epicondylit*",
+        "medial epicondylos*",
+        "medial epicondylalg*",
+        "medial epicondylopath*",
+        "medial epicondyle tendin*",
+        "medial elbow tendinopath*",
+        "medial elbow tendinos*",
+        "medial elbow pain",
+        "golfer elbow",
+        "golfers elbow",
+        "golfer's elbow",
+        "flexor-pronator",
+        "flexor pronator",
+        "common flexor tendon*",
+        "medial tennis elbow",
+        "cubital tunnel",
+        "ulnar neuropathy at the elbow",
+        "ulnar neuropathy at elbow",
+        "ulnar nerve entrapment",
+        "ulnar nerve compression",
+        "ulnar neuritis",
+        "ulnar nerve subluxation",
+        "ulnar nerve instability",
+        "medial collateral ligament of the elbow",
+        "elbow ulnar collateral ligament",
+        "elbow medial collateral ligament",
+        "valgus instability",
+        "valgus extension overload",
+        "medial elbow instability",
+        "throwing elbow",
+        "thrower's elbow",
+        "throwers elbow",
+        "trigger finger*",
+        "trigger digit*",
+        "trigger thumb*",
+        "stenosing tenosynovitis",
+        "stenosing flexor tenosynovitis",
+        "stenosing tenovaginitis",
+        "flexor tenosynovitis",
+        "A1 pulley",
+        "de quervain tenosynovitis",
+        "de quervain's tenosynovitis",
+        "de quervain disease",
+        "de quervain's disease",
+        "de quervain syndrome",
+        "de quervain's syndrome",
+        "de quervain tendinopathy",
+        "de quervain's tendinopathy",
+        "dequervain*",
+        "first dorsal compartment",
+        "first extensor compartment",
+        "first dorsal extensor compartment",
+        "radial styloid tenosynovitis"
+      ],
+      "proximidade": [
+        {
+          "a": [
+            "medial epicondyle",
+            "medial elbow",
+            "flexor pronator",
+            "common flexor"
+          ],
+          "b": [
+            "tendinopathy",
+            "tendinosis",
+            "tendinitis",
+            "tendonitis",
+            "pain",
+            "enthesopathy"
+          ],
+          "n": 3
+        },
+        {
+          "a": [
+            "ulnar collateral ligament",
+            "medial collateral ligament",
+            "UCL"
+          ],
+          "b": [
+            "elbow",
+            "throwing",
+            "throwers",
+            "pitcher",
+            "pitchers",
+            "baseball",
+            "overhead"
+          ],
+          "n": 5
+        },
+        {
+          "a": [
+            "quervain",
+            "quervain's",
+            "quervains"
+          ],
+          "b": [
+            "tenosynovitis",
+            "tenovaginitis",
+            "disease",
+            "syndrome",
+            "tendinopathy",
+            "tendinitis",
+            "wrist",
+            "stenosing"
+          ],
+          "n": 3
+        }
+      ],
+      "simples": [
+        "medial epicondylitis",
+        "golfer's elbow",
+        "medial elbow",
+        "cubital tunnel",
+        "ulnar neuropathy",
+        "ulnar collateral ligament elbow",
+        "trigger finger",
+        "trigger digit",
+        "stenosing tenosynovitis",
+        "de quervain",
+        "first dorsal compartment"
+      ]
+    },
+    {
+      "id": "dx_tx",
+      "rotulo": "Diagnóstico ou tratamento (união dos ramos)",
+      "papel": "I",
+      "mesh": [
+        "Diagnosis, Differential",
+        "Physical Examination",
+        "Sensitivity and Specificity",
+        "Predictive Value of Tests",
+        "Severity of Illness Index",
+        "Orthotic Devices",
+        "Splints",
+        "Braces",
+        "Injections",
+        "Glucocorticoids",
+        "Adrenal Cortex Hormones",
+        "Exercise Therapy",
+        "Physical Therapy Modalities",
+        "Musculoskeletal Manipulations",
+        "Conservative Treatment",
+        "Orthopedic Procedures",
+        "Remission, Spontaneous"
+      ],
+      "livres": [
+        "differential diagnos*",
+        "physical exam*",
+        "clinical exam*",
+        "clinical test*",
+        "provocative test*",
+        "sensitivity",
+        "specificity",
+        "likelihood ratio*",
+        "diagnostic accuracy",
+        "classification",
+        "grading",
+        "conservative",
+        "nonoperative",
+        "non-operative",
+        "nonsurgical",
+        "non-surgical",
+        "splint*",
+        "orthos*",
+        "orthotic*",
+        "brace*",
+        "immobili*",
+        "corticosteroid*",
+        "steroid*",
+        "glucocorticoid*",
+        "triamcinolone",
+        "methylprednisolone",
+        "injection*",
+        "exercis*",
+        "eccentric*",
+        "physiotherap*",
+        "physical therap*",
+        "hand therap*",
+        "manual therap*",
+        "mobilization",
+        "mobilisation",
+        "massage",
+        "surgery",
+        "surgical",
+        "release",
+        "natural history",
+        "spontaneous resolution",
+        "randomized",
+        "randomised",
+        "platelet-rich plasma",
+        "PRP",
+        "shock wave",
+        "shockwave",
+        "dry needling",
+        "tenotomy",
+        "debridement",
+        "autologous blood",
+        "diagnostic value",
+        "elbow flexion test",
+        "Tinel*",
+        "scratch collapse",
+        "moving valgus",
+        "milking maneuver",
+        "milking manoeuvre",
+        "milking test",
+        "valgus stress test*",
+        "rehabilitat*",
+        "Quinnell",
+        "Green classification",
+        "severity",
+        "percutaneous",
+        "A1 pulley release",
+        "Finkelstein*",
+        "Eichhoff*",
+        "WHAT test",
+        "wrist hyperflexion",
+        "thumb spica",
+        "postpartum",
+        "pregnan*",
+        "lactation",
+        "breastfeeding",
+        "new mothers"
+      ],
+      "simples": [
+        "diagnosis",
+        "treatment",
+        "injection",
+        "orthosis",
+        "exercise",
+        "surgery",
+        "physical examination",
+        "conservative treatment"
+      ]
+    }
+  ],
+  "limites": {
+    "ano_inicio": 1990,
+    "ano_fim": null,
+    "idiomas": [
+      "english",
+      "portuguese",
+      "spanish"
+    ],
+    "somente_humanos": true,
+    "tipos_scopus": [
+      "ar",
+      "re"
+    ]
+  },
+  "revistas_alvo": [
+    {
+      "nome": "J Orthop Sports Phys Ther",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ]
+    },
+    {
+      "nome": "J Hand Ther",
+      "issn": [
+        "0894-1130",
+        "1545-004X"
+      ]
+    },
+    {
+      "nome": "J Hand Surg Am",
+      "issn": [
+        "0363-5023",
+        "1531-6564"
+      ]
+    },
+    {
+      "nome": "J Hand Surg Eur Vol",
+      "issn": [
+        "1753-1934",
+        "2043-6289"
+      ]
+    },
+    {
+      "nome": "J Shoulder Elbow Surg",
+      "issn": [
+        "1058-2746",
+        "1532-6500"
+      ]
+    },
+    {
+      "nome": "Am J Sports Med",
+      "issn": [
+        "0363-5465",
+        "1552-3365"
+      ]
+    },
+    {
+      "nome": "Cochrane Database Syst Rev",
+      "issn": [
+        "1469-493X"
+      ]
+    }
+  ],
+  "sentinelas": [
+    {
+      "pmid": "26001427",
+      "nota": "Revisão JAAOS 2015 (Amin): fonte provável do texto da aula base sobre MET"
+    },
+    {
+      "pmid": "14506342",
+      "nota": "Descatha 2003: prevalência e incidência ocupacional (citado na aula base, slide 141, que lhe atribui 'até 84%' de comorbidades: conferir no texto)"
+    },
+    {
+      "pmid": "16518220",
+      "nota": "Ciccotti 2003 Tech Hand Up Extrem Surg (citado na aula base, slide 139)"
+    },
+    {
+      "pmid": "9384424",
+      "nota": "ECR Stahl 1997: injeção de corticoide na epicondilite medial"
+    },
+    {
+      "pmid": "16968862",
+      "nota": "Shiri 2006: prevalência populacional de epicondilite lateral e medial"
+    },
+    {
+      "pmid": "23335238",
+      "nota": "RS Dingemanse 2014 BJSM: recursos eletrofísicos na epicondilite medial e lateral"
+    },
+    {
+      "pmid": "35658623",
+      "nota": "RS Arevalo 2023 AJSM: cirurgia da epicondilite medial"
+    },
+    {
+      "pmid": "41887339",
+      "nota": "RS See 2026: exercício excêntrico na epicondilite medial"
+    },
+    {
+      "pmid": "15701609",
+      "nota": "O'Driscoll 2005 AJSM: moving valgus stress test (acurácia contra artroscopia)"
+    },
+    {
+      "pmid": "7806810",
+      "nota": "Novak 1994: testes provocativos na síndrome do túnel cubital"
+    },
+    {
+      "pmid": "40298125",
+      "nota": "Cochrane 2025 (Caliandro): tratamento da neuropatia ulnar no cotovelo"
+    },
+    {
+      "pmid": "23062797",
+      "nota": "Valdes 2013 J Hand Ther: valor dos testes provocativos de punho e cotovelo"
+    },
+    {
+      "pmid": "19188042",
+      "nota": "Goldman 2009 J Hand Ther: testes e sinais clínicos da neuropatia ulnar"
+    },
+    {
+      "pmid": "36796550",
+      "nota": "Erickson 2023: consenso sobre lesões do LCU do cotovelo"
+    },
+    {
+      "pmid": "12860556",
+      "nota": "Cain 2003 AJSM: lesões do cotovelo no arremessador (citado na aula base, slide 138)"
+    },
+    {
+      "pmid": "24810861",
+      "nota": "Diretriz de consenso HANDGUIDE para dedo em gatilho (Huisstede 2014, Phys Ther)"
+    },
+    {
+      "pmid": "19160256",
+      "nota": "Cochrane 2009: injeção de corticoide no dedo em gatilho"
+    },
+    {
+      "pmid": "29460276",
+      "nota": "Cochrane 2018: cirurgia no dedo em gatilho"
+    },
+    {
+      "pmid": "33849080",
+      "nota": "Cochrane 2021: AINE no dedo em gatilho"
+    },
+    {
+      "pmid": "21816888",
+      "nota": "ECR Salim 2012: corticoide x fisioterapia no gatilho leve"
+    },
+    {
+      "pmid": "22039269",
+      "nota": "ECR Sato 2012: injeção x liberação percutânea x cirurgia aberta"
+    },
+    {
+      "pmid": "1538090",
+      "nota": "Patel 1992: quando imobilizar, injetar ou operar (graduação clássica)"
+    },
+    {
+      "pmid": "29290504",
+      "nota": "RS Lunsford 2019 J Hand Ther: manejo conservador"
+    },
+    {
+      "pmid": "37391318",
+      "nota": "RS Leong 2023 J Hand Ther: órteses"
+    },
+    {
+      "pmid": "41691955",
+      "nota": "RS com meta-análise em rede Chiang 2026: manejo do dedo em gatilho em adultos"
+    },
+    {
+      "pmid": "24700135",
+      "nota": "Diretriz de consenso HANDGUIDE para De Quervain (Huisstede 2014, Phys Ther)"
+    },
+    {
+      "pmid": "19588376",
+      "nota": "Cochrane 2009: injeção de corticoide na De Quervain"
+    },
+    {
+      "pmid": "23340762",
+      "nota": "Goubau 2014: WHAT test x Eichhoff"
+    },
+    {
+      "pmid": "1402284",
+      "nota": "Elliott 1992: o erro de descrição do Finkelstein que produz falso positivo"
+    },
+    {
+      "pmid": "30154628",
+      "nota": "Wu 2018: Finkelstein superior a Eichhoff"
+    },
+    {
+      "pmid": "11901392",
+      "nota": "ECR Avci 2002: gestação e lactação, injeção x órtese"
+    },
+    {
+      "pmid": "12665175",
+      "nota": "Richie 2003: análise agregada de injeção x órtese"
+    },
+    {
+      "pmid": "26705671",
+      "nota": "RS/MA Cavaleri 2016 J Hand Ther: terapia da mão x injeção"
+    },
+    {
+      "pmid": "24315492",
+      "nota": "ECR Mardani-Kivi 2014: injeção com ou sem gesso de polegar"
+    },
+    {
+      "pmid": "37889490",
+      "nota": "RS com meta-análise em rede Challoumas 2023 JAMA Netw Open"
+    },
+    {
+      "pmid": "41298159",
+      "nota": "RS com meta-análise em rede Cuenca-Zaldívar 2026 J Hand Ther: conservador"
+    }
+  ]
+}

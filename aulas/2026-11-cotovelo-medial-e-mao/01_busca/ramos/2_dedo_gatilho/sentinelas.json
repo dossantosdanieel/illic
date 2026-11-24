@@ -1,0 +1,197 @@
+{
+  "data": "2026-11-24T13:14:00",
+  "variante": "base",
+  "variantes": {
+    "base": {
+      "recuperados": [
+        "1538090",
+        "19160256",
+        "21816888",
+        "22039269",
+        "24810861",
+        "29290504",
+        "29460276",
+        "33849080",
+        "37391318",
+        "41691955"
+      ],
+      "testaveis": 10
+    },
+    "rs": {
+      "recuperados": [
+        "19160256",
+        "29290504",
+        "29460276",
+        "33849080",
+        "37391318",
+        "41691955"
+      ],
+      "testaveis": 10
+    },
+    "ecr": {
+      "recuperados": [
+        "19160256",
+        "21816888",
+        "22039269",
+        "29290504",
+        "29460276",
+        "33849080",
+        "41691955"
+      ],
+      "testaveis": 10
+    },
+    "diretriz": {
+      "recuperados": [
+        "24810861"
+      ],
+      "testaveis": 10
+    }
+  },
+  "total": 10,
+  "recuperados": 10,
+  "resultados": [
+    {
+      "pmid": "24810861",
+      "doi": "10.2522/ptj.20130135",
+      "titulo": "Multidisciplinary consensus guideline for managing trigger finger: results from the European HANDGUIDE Study",
+      "nota": "Diretriz de consenso HANDGUIDE para dedo em gatilho (Huisstede 2014, Phys Ther)",
+      "primeiro_autor": "Huisstede",
+      "ano": 2014,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "19160256",
+      "doi": "10.1002/14651858.cd005617.pub2",
+      "titulo": "Corticosteroid injection for trigger finger in adults",
+      "nota": "Cochrane 2009: injeção de corticoide no dedo em gatilho",
+      "primeiro_autor": "Peters-Veluthamaningal",
+      "ano": 2009,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "29460276",
+      "doi": "10.1002/14651858.cd009860.pub2",
+      "titulo": "Surgery for trigger finger",
+      "nota": "Cochrane 2018: cirurgia no dedo em gatilho",
+      "primeiro_autor": "Fiorini",
+      "ano": 2018,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "33849080",
+      "doi": "10.1002/14651858.cd012789.pub2",
+      "titulo": "Non-steroidal anti-inflammatory drugs (NSAIDs) for trigger finger",
+      "nota": "Cochrane 2021: AINE no dedo em gatilho",
+      "primeiro_autor": "Leow",
+      "ano": 2021,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "21816888",
+      "doi": "10.1177/1753193411415343",
+      "titulo": "Outcome of corticosteroid injection versus physiotherapy in the treatment of mild trigger fingers",
+      "nota": "ECR Salim 2012: corticoide x fisioterapia no gatilho leve",
+      "primeiro_autor": "Salim",
+      "ano": 2012,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "22039269",
+      "doi": "10.1093/rheumatology/ker315",
+      "titulo": "Treatment of trigger finger: randomized clinical trial comparing the methods of corticosteroid injection, percutaneous release and open surgery",
+      "nota": "ECR Sato 2012: injeção x liberação percutânea x cirurgia aberta",
+      "primeiro_autor": "Sato",
+      "ano": 2012,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "1538090",
+      "doi": "10.1016/0363-5023(92)90124-8",
+      "titulo": "Trigger fingers and thumb: when to splint, inject, or operate",
+      "nota": "Patel 1992: quando imobilizar, injetar ou operar (graduação clássica)",
+      "primeiro_autor": "Patel",
+      "ano": 1992,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "29290504",
+      "doi": "10.1016/j.jht.2017.10.016",
+      "titulo": "Conservative management of trigger finger: A systematic review",
+      "nota": "RS Lunsford 2019 J Hand Ther: manejo conservador",
+      "primeiro_autor": "Lunsford",
+      "ano": 2019,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "37391318",
+      "doi": "10.1016/j.jht.2023.05.016",
+      "titulo": "Orthotic intervention options to non-surgically manage adult and pediatric trigger finger: A systematic review",
+      "nota": "RS Leong 2023 J Hand Ther: órteses",
+      "primeiro_autor": "Leong",
+      "ano": 2023,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "41691955",
+      "doi": "10.1016/j.rehab.2025.102074",
+      "titulo": "Evidence-based management strategies for adult trigger digits: a systematic review and network meta-analysis of randomized controlled trials",
+      "nota": "RS com meta-análise em rede Chiang 2026: manejo do dedo em gatilho em adultos",
+      "primeiro_autor": "Chiang",
+      "ano": 2026,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    }
+  ],
+  "fora_de_todos_os_filtros": [
+    "1538090"
+  ]
+}

@@ -26,6 +26,30 @@ def log(msg: str) -> None:
     print(msg, flush=True)
 
 
+def texto_girado(pdf: Path, numero: int) -> str:
+    """Texto dos caracteres girados 90° (tabela em paisagem numa página em pé), na ordem de leitura
+    de quem gira a página. O leitor principal ignora esses caracteres."""
+    import pdfplumber
+
+    try:
+        with pdfplumber.open(str(pdf)) as doc:
+            page = doc.pages[numero - 1]
+            rot = [c for c in page.chars if not c.get("upright", True)]
+            if len(rot) < 40:
+                return ""
+            # sobe (de baixo para cima) ou desce? compara a posição dos caracteres seguidos de uma mesma palavra
+            sobe = sum(1 for a, b in zip(rot, rot[1:]) if abs(a["x0"] - b["x0"]) < 1 and b["top"] < a["top"])
+            desce = sum(1 for a, b in zip(rot, rot[1:]) if abs(a["x0"] - b["x0"]) < 1 and b["top"] > a["top"])
+            filtro = page.filter(lambda o: o.get("object_type") != "char" or not o.get("upright", True))
+            if sobe >= desce:
+                t = filtro.extract_text(line_dir_rotated="ltr", char_dir_rotated="btt", y_tolerance=6, x_tolerance=3)
+            else:
+                t = filtro.extract_text(line_dir_rotated="rtl", char_dir_rotated="ttb", y_tolerance=6, x_tolerance=3)
+    except Exception:
+        return ""
+    return (t or "").strip()
+
+
 def extrair(pdf: Path, titulo: str, cabecalho: list[str]) -> tuple[str, dict]:
     doc = P.DocLayout(pdf)
     corpo: list[str] = []
@@ -34,10 +58,17 @@ def extrair(pdf: Path, titulo: str, cabecalho: list[str]) -> tuple[str, dict]:
     for pag in doc.paginas:
         corpo += ["", f"## Página {pag.numero}", ""]
         itens = P.texto_ordenado(doc, pag)
+        girado = texto_girado(pdf, pag.numero) if pag.frac_girado > 0.3 else ""
+        if girado:
+            n_car += len(girado)
+            corpo += ["_(texto girado nesta página, em geral tabela em paisagem, lido à parte: as células saem "
+                      "uma por linha, na ordem das linhas da tabela; confira números na miniatura ou no recorte)_",
+                      "", "```", girado, "```", ""]
         if not itens:
-            corpo.append("_(página sem texto extraível: provavelmente só imagem)_")
+            if not girado:
+                corpo.append("_(página sem texto extraível: provavelmente só imagem)_")
             continue
-        if pag.frac_girado > 0.5:
+        if pag.frac_girado > 0.5 and not girado:
             corpo.append("_(página com conteúdo girado, em geral tabela em paisagem: o texto abaixo pode vir "
                          "incompleto; confira na miniatura)_")
             corpo.append("")
@@ -82,7 +113,37 @@ def extrair(pdf: Path, titulo: str, cabecalho: list[str]) -> tuple[str, dict]:
         topo.append(f"- Aviso: {a}")
     info = {"paginas": len(doc.paginas), "caracteres": n_car, "duas_colunas": doc.duas_colunas,
             "secoes": [s[0] for s in secoes], "legendas": len(legendas), "avisos": avisos}
+    corpo = consertar_hifens(corpo)
     return "\n".join(topo + corpo).rstrip() + "\n", info
+
+
+def consertar_hifens(linhas: list[str]) -> list[str]:
+    """Desfaz hifenização que sobrou ('inter-vention', 'recom - mended', 'exer - cise') usando o
+    próprio artigo como dicionário: só junta se a palavra inteira aparece sem hífen no texto e
+    é mais comum que a forma com hífen. 'non-specific', 'self-report' ficam como estão."""
+    import re
+    from collections import Counter
+
+    texto = "\n".join(linhas)
+    vocab = Counter(w.lower() for w in re.findall(r"[A-Za-zÀ-ÿ]{3,}", texto))
+    padrao = re.compile(r"\b([A-Za-zÀ-ÿ]{2,})(?: - |- | -|-)([a-zà-ÿ]{2,})\b")
+    hif = Counter(f"{a.lower()}-{b.lower()}" for a, b in padrao.findall(texto))
+
+    def troca(m):
+        a, b = m.group(1), m.group(2)
+        if a.lower() in ("and", "or", "nor", "e", "ou"):
+            return m.group(0)   # 'hands-on and -off'
+        junto = (a + b).lower()
+        if vocab.get(junto, 0) >= 2 and vocab[junto] > hif.get(f"{a.lower()}-{b.lower()}", 0):
+            return a + b
+        conj = ("and", "or", "nor", "to", "e", "ou", "a", "versus", "vs")
+        if b.lower() in conj or a.lower() in conj:
+            return m.group(0)   # hífen suspenso: 'low- and high-intensity' fica como está
+        if m.group(0) != f"{a}-{b}" and " - " not in m.group(0):
+            return f"{a}-{b}"   # 'tendon- loading' -> 'tendon-loading'
+        return m.group(0)
+
+    return [padrao.sub(troca, ln) for ln in linhas]
 
 
 def main() -> int:

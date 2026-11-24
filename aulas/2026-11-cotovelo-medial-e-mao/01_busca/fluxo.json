@@ -1,0 +1,49 @@
+{
+  "data": "2026-11-24T13:31:48",
+  "recorte": "topo_mecanismos",
+  "por_fonte": {
+    "pubmed": 4613,
+    "crossref": 651,
+    "openalex": 259
+  },
+  "notas_fonte": {
+    "pubmed": "variante 1b_diferencial_medial:base: 1721 baixados de 1722; variante 2_dedo_gatilho:base: 1828 baixados de 1831; variante 3_de_quervain:base: 737 baixados de 739"
+  },
+  "identificados": 5523,
+  "duplicatas": 603,
+  "unicos": 4920,
+  "por_desenho": {
+    "Diretriz": 7,
+    "Revisao sistematica/meta-analise": 245,
+    "ECR": 240,
+    "Coorte": 955,
+    "Caso-controle": 71,
+    "Transversal": 231,
+    "Estudo de acuracia diagnostica": 48,
+    "Consenso/Delphi": 11,
+    "Laboratorio/mecanistico": 403,
+    "Revisao narrativa": 526,
+    "Relato/serie de casos": 1047,
+    "Editorial/comentario": 168,
+    "Outro": 968
+  },
+  "sentinelas_presentes": 36,
+  "sentinelas_esperados": 36,
+  "triagem": {
+    "data": "2026-11-24T13:32:00",
+    "incluidos": 20,
+    "excluidos": 192,
+    "talvez": 64,
+    "sem_decisao": 4644,
+    "excluidos_por_motivo": {
+      "superado por evidência mais nova": 9,
+      "fora do tema": 63,
+      "intervenção diferente": 100,
+      "desenho inadequado": 3,
+      "outro": 10,
+      "população diferente": 5,
+      "qualidade insuficiente": 1,
+      "duplicata ou republicação": 1
+    }
+  }
+}

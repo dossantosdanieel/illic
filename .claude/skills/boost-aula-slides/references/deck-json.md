@@ -67,7 +67,7 @@ Uma entrada por artigo citado em qualquer slide.
 | `tempo_s` | Tempo previsto do slide em segundos, **incluindo** a interação. Obrigatório, exceto em slides de apoio. |
 | `notas` | O que falar e como conduzir, na voz de `voz-das-notas.md`. Não escreva a linha "Tempo:": o script põe `Tempo: 1 min 30 s (acumulado 12:00).` na frente. |
 | `interacao` | `{"tipo": "...", "duracao_s": 60}`. Tipos: `enquete`, `chat_cascata`, `salas`, `mao_camera`, `chat`. Opcionais: `inicio_s` (segundos depois do início do slide em que a interação começa), `pedido` (o que a turma faz, em uma frase, para o roteiro de `enquetes.md`), `tamanho` (salas de 2, 3, 4...), `rotulo` (troca o texto da pílula). A pílula aparece sozinha no canto superior direito. |
-| `olho` | Linha pequena em caixa alta acima do título ("Bloco 2 · A evidência"). Curta: não pode encostar na pílula. |
+| `olho` | Linha pequena em caixa alta acima do título ("Bloco 2 · A evidência"). Uma linha só, antes da pílula: se não couber, é erro de layout (a segunda linha cai em cima do título). |
 | `titulo` | Título do slide. Em slides de evidência, a **conclusão** em uma frase, não o assunto. |
 | `fonte` | Lista de `id` de referência e/ou textos livres ("degraus: proposta clínica da equipe"). Sai no rodapé, à direita. Texto livre que parece citação (Sobrenome ... 2021) precisa estar em `referencias`. |
 | `bloco` | Nome do bloco ("abertura", "tempo e critérios", "fechamento"). O validador confere o ciclo dentro de cada bloco. |
@@ -309,7 +309,7 @@ Destaques:
 {"tipo": "rotulo", "x": 0.50, "y": 0.05, "texto": "9 meses", "cor": "marinho"}
 ```
 
-`cor`: `alerta` (padrão), `ciano`, `marinho`, `petroleo`. `rotulo_pos`: `sup-esq` (padrão), `sup-dir`,
+Coordenadas fora de 0 a 1 são erro de layout (o destaque sai da figura). `cor`: `alerta` (padrão), `ciano`, `marinho`, `petroleo`. `rotulo_pos`: `sup-esq` (padrão), `sup-dir`,
 `inf-esq`, `inf-dir`. Numere os destaques com o mesmo número do ponto "o que olhar" correspondente.
 Para acertar as coordenadas: abra o PNG, meça em pixels e divida pela largura e pela altura; depois
 renderize e confira.
@@ -431,7 +431,7 @@ de 0, fundo cinza), `nota` (12 pt embaixo), `lateral`.
 
 ### numeros
 
-Cartões com número grande (48 pt, reduz se o número for longo) e rótulo; `destaque` deixa o cartão
+Cartões com número grande (48 pt, reduz até 28 pt se o número for longo; se nem assim couber, é erro: deixe só o número e passe intervalo e unidade para o rótulo) e rótulo; `destaque` deixa o cartão
 marinho. Campos: `itens` (`{"numero", "rotulo", "destaque"}`, 2 a 4), `linhas` (cartões brancos de
 largura total embaixo, para "Quem:" e "Leitura:").
 
@@ -475,7 +475,7 @@ PowerPoint, com rótulos de valor em negrito e sem eixo de valores (como no deck
 séries viram barras agrupadas com legenda desenhada (quadradinho + nome). Campos: `categorias`,
 `series` (`{"nome", "valores", "cor"}`; cores da marca na ordem marinho, cinza, ciano, petróleo,
 lavanda), `formato` (formato numérico do Excel: `"0"`, `"0.0"`, `"0\"%\""`), `rotulo` (olho acima do
-gráfico), `destaque_categorias` (índices pintados em vermelho-alerta, só com uma série),
+gráfico, em uma linha; o script avisa se quebrar), `destaque_categorias` (índices pintados em vermelho-alerta, só com uma série),
 `legenda_destaque`, `minimo`, `maximo`, `rotulos` (`false` tira os valores), `vao`, `altura`, `nota`, `lateral`.
 
 ```json
@@ -537,7 +537,7 @@ gráfico), `destaque_categorias` (índices pintados em vermelho-alerta, só com 
 ### linha
 
 Gráfico nativo de linha com marcadores, linhas de grade cinza claras e eixo de valores à esquerda.
-Mesmos campos de `barras`; `destaque_categorias` aumenta e pinta de vermelho o ponto daquele índice.
+Mesmos campos de `barras`; `destaque_categorias` aumenta e pinta de vermelho o ponto daquele índice (no PowerPoint; no render do LibreOffice o ponto sai maior, mas na cor da série: isso é esperado).
 
 ```json
 {
@@ -815,7 +815,7 @@ Campos: `pontos` (strings ou `{"titulo", "texto"}`), `faixa`.
 ### referencias
 
 Duas colunas de 5,72 pol, 12 pt, uma referência por linha no formato "Autor et al. Revista Ano. PMID n"
-(com volume e páginas quando todas cabem em uma linha; ver `meta.referencias_formato`). Se não couber, o script abre outro slide sozinho ("Referências (2)"). As referências vêm do
+(com volume e páginas quando todas cabem em uma linha; ver `meta.referencias_formato`). As duas colunas ficam com alturas parecidas, como no deck de referência; até 8 linhas ficam numa coluna só. Se não couber, o script abre outro slide sozinho ("Referências (2)"). As referências vêm do
 bloco `referencias` do deck, em ordem alfabética. Campos: `outras` (linhas extras "Também: ..."),
 `notas` (se vazio, o script escreve a declaração do que foi conferido no texto completo, no resumo e o
 que é proposta clínica). É slide de apoio: não entra no tempo.

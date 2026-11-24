@@ -1,0 +1,212 @@
+{
+  "data": "2026-11-24T13:17:12",
+  "variante": "base",
+  "variantes": {
+    "base": {
+      "recuperados": [
+        "11901392",
+        "12665175",
+        "1402284",
+        "19588376",
+        "23340762",
+        "24315492",
+        "24700135",
+        "26705671",
+        "30154628",
+        "37889490",
+        "41298159"
+      ],
+      "testaveis": 11
+    },
+    "rs": {
+      "recuperados": [
+        "19588376",
+        "24700135",
+        "26705671",
+        "37889490",
+        "41298159"
+      ],
+      "testaveis": 11
+    },
+    "ecr": {
+      "recuperados": [
+        "11901392",
+        "19588376",
+        "24315492",
+        "37889490",
+        "41298159"
+      ],
+      "testaveis": 11
+    },
+    "diretriz": {
+      "recuperados": [
+        "24700135"
+      ],
+      "testaveis": 11
+    }
+  },
+  "total": 11,
+  "recuperados": 11,
+  "resultados": [
+    {
+      "pmid": "24700135",
+      "doi": "10.2522/ptj.20130069",
+      "titulo": "Consensus on a multidisciplinary treatment guideline for de Quervain disease: results from the European HANDGUIDE study",
+      "nota": "Diretriz de consenso HANDGUIDE para De Quervain (Huisstede 2014, Phys Ther)",
+      "primeiro_autor": "Huisstede",
+      "ano": 2014,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "19588376",
+      "doi": "10.1002/14651858.cd005616.pub2",
+      "titulo": "Corticosteroid injection for de Quervain's tenosynovitis",
+      "nota": "Cochrane 2009: injeção de corticoide na De Quervain",
+      "primeiro_autor": "Peters-Veluthamaningal",
+      "ano": 2009,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "23340762",
+      "doi": "10.1177/1753193412475043",
+      "titulo": "The wrist hyperflexion and abduction of the thumb (WHAT) test: a more specific and sensitive test to diagnose de Quervain tenosynovitis than the Eichhoff's Test",
+      "nota": "Goubau 2014: WHAT test x Eichhoff",
+      "primeiro_autor": "Goubau",
+      "ano": 2014,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "1402284",
+      "doi": "10.1016/s0266-7681(05)80280-3",
+      "titulo": "Finkelstein's test: a descriptive error that can produce a false positive",
+      "nota": "Elliott 1992: o erro de descrição do Finkelstein que produz falso positivo",
+      "primeiro_autor": "Elliott",
+      "ano": 1992,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "30154628",
+      "doi": "10.1055/s-0038-1626690",
+      "titulo": "Finkelstein's Test Is Superior to Eichhoff's Test in the Investigation of de Quervain's Disease",
+      "nota": "Wu 2018: Finkelstein superior a Eichhoff",
+      "primeiro_autor": "Wu",
+      "ano": 2018,
+      "situacao": "recuperado",
+      "indexacao": "PubMed-not-MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "11901392",
+      "doi": "10.1053/jhsu.2002.32084",
+      "titulo": "Comparison of nonsurgical treatment measures for de Quervain's disease of pregnancy and lactation",
+      "nota": "ECR Avci 2002: gestação e lactação, injeção x órtese",
+      "primeiro_autor": "Avci",
+      "ano": 2002,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "12665175",
+      "doi": "10.3122/jabfm.16.2.102",
+      "titulo": "Corticosteroid injection for treatment of de Quervain's tenosynovitis: a pooled quantitative literature evaluation",
+      "nota": "Richie 2003: análise agregada de injeção x órtese",
+      "primeiro_autor": "Richie",
+      "ano": 2003,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "26705671",
+      "doi": "10.1016/j.jht.2015.10.004",
+      "titulo": "Hand therapy versus corticosteroid injections in the treatment of de Quervain's disease: A systematic review and meta-analysis",
+      "nota": "RS/MA Cavaleri 2016 J Hand Ther: terapia da mão x injeção",
+      "primeiro_autor": "Cavaleri",
+      "ano": 2016,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "24315492",
+      "doi": "10.1016/j.jhsa.2013.10.013",
+      "titulo": "Corticosteroid injection with or without thumb spica cast for de Quervain tenosynovitis",
+      "nota": "ECR Mardani-Kivi 2014: injeção com ou sem gesso de polegar",
+      "primeiro_autor": "Mardani-Kivi",
+      "ano": 2014,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "37889490",
+      "doi": "10.1001/jamanetworkopen.2023.37001",
+      "titulo": "Management of de Quervain Tenosynovitis: A Systematic Review and Network Meta-Analysis",
+      "nota": "RS com meta-análise em rede Challoumas 2023 JAMA Netw Open",
+      "primeiro_autor": "Challoumas",
+      "ano": 2023,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "41298159",
+      "doi": "10.1016/j.jht.2025.09.001",
+      "titulo": "Conservative treatments for De Quervain's tenosynovitis: A systematic review and network meta-analysis",
+      "nota": "RS com meta-análise em rede Cuenca-Zaldívar 2026 J Hand Ther: conservador",
+      "primeiro_autor": "Cuenca-Zaldívar",
+      "ano": 2026,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    }
+  ],
+  "fora_de_todos_os_filtros": [
+    "23340762",
+    "1402284",
+    "30154628",
+    "12665175"
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "data": "2026-11-24T13:14:31",
+  "variante": "base",
+  "variantes": {
+    "base": {
+      "recuperados": [
+        "14506342",
+        "16518220",
+        "16968862",
+        "23335238",
+        "26001427",
+        "35658623",
+        "41887339",
+        "9384424"
+      ],
+      "testaveis": 8
+    },
+    "rs": {
+      "recuperados": [
+        "23335238",
+        "35658623",
+        "41887339"
+      ],
+      "testaveis": 8
+    },
+    "ecr": {
+      "recuperados": [
+        "23335238",
+        "41887339",
+        "9384424"
+      ],
+      "testaveis": 8
+    },
+    "diretriz": {
+      "recuperados": [],
+      "testaveis": 8
+    }
+  },
+  "total": 8,
+  "recuperados": 8,
+  "resultados": [
+    {
+      "pmid": "26001427",
+      "doi": "10.5435/jaaos-d-14-00145",
+      "titulo": "Medial epicondylitis: evaluation and management",
+      "nota": "Revisão JAAOS 2015 (Amin): fonte provável do texto da aula base sobre MET",
+      "primeiro_autor": "Amin",
+      "ano": 2015,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "14506342",
+      "doi": "10.1097/01.jom.0000085888.37273.d9",
+      "titulo": "Medial epicondylitis in occupational settings: prevalence, incidence and associated risk factors",
+      "nota": "Descatha 2003: prevalência ocupacional e 84% de comorbidade (citado na aula base, slide 141)",
+      "primeiro_autor": "Descatha",
+      "ano": 2003,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "16518220",
+      "doi": "10.1097/00130911-200312000-00010",
+      "titulo": "Medial epicondylitis",
+      "nota": "Ciccotti 2003 Tech Hand Up Extrem Surg (citado na aula base, slide 139)",
+      "primeiro_autor": "Ciccotti",
+      "ano": 2003,
+      "situacao": "recuperado",
+      "indexacao": "PubMed-not-MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "9384424",
+      "doi": "10.2106/00004623-199711000-00006",
+      "titulo": "The efficacy of an injection of steroids for medial epicondylitis. A prospective study of sixty elbows",
+      "nota": "ECR Stahl 1997: injeção de corticoide na epicondilite medial",
+      "primeiro_autor": "Stahl",
+      "ano": 1997,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "16968862",
+      "doi": "10.1093/aje/kwj325",
+      "titulo": "Prevalence and determinants of lateral and medial epicondylitis: a population study",
+      "nota": "Shiri 2006: prevalência populacional de epicondilite lateral e medial",
+      "primeiro_autor": "Shiri",
+      "ano": 2006,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "23335238",
+      "doi": "10.1136/bjsports-2012-091513",
+      "titulo": "Evidence for the effectiveness of electrophysical modalities for treatment of medial and lateral epicondylitis: a systematic review",
+      "nota": "RS Dingemanse 2014 BJSM: recursos eletrofísicos na epicondilite medial e lateral",
+      "primeiro_autor": "Dingemanse",
+      "ano": 2014,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "35658623",
+      "doi": "10.1177/03635465221095565",
+      "titulo": "Surgical Techniques and Clinical Outcomes for Medial Epicondylitis: A Systematic Review",
+      "nota": "RS Arevalo 2023 AJSM: cirurgia da epicondilite medial",
+      "primeiro_autor": "Arevalo",
+      "ano": 2023,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "41887339",
+      "doi": "10.1016/j.ctim.2026.103364",
+      "titulo": "Eccentric exercise therapy for medial epicondylitis: A systematic review of clinical outcomes",
+      "nota": "RS See 2026: exercício excêntrico na epicondilite medial",
+      "primeiro_autor": "See",
+      "ano": 2026,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    }
+  ],
+  "fora_de_todos_os_filtros": [
+    "26001427",
+    "14506342",
+    "16518220",
+    "16968862"
+  ]
+}

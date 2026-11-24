@@ -22,8 +22,8 @@ import argparse
 import re
 from datetime import date
 
-from _comum import (JOSPT, Cliente, ErroRede, agora_iso, autor_curto, carregar_conceitos, gravar_json, issns_alvo,
-                    ler_json, limpar_texto, lista_issn, normalizar_doi, passa_filtro_local, sair)
+from _comum import (JOSPT, Cliente, ErroRede, json_com, agora_iso, autor_curto, carregar_conceitos, gravar_json,
+                    issns_alvo, ler_json, limpar_texto, lista_issn, normalizar_doi, passa_filtro_local, sair)
 import montar_strings as ms
 
 API = "https://api.crossref.org/works"
@@ -109,7 +109,8 @@ def buscar(cliente: Cliente, consulta: str | None, issns: list[str], de_ano: int
         base["query.bibliographic"] = consulta
     erros: list[str] = []
     try:
-        total = cliente.get(API, {**base, "rows": "0"}).json().get("message", {}).get("total-results", 0)
+        total = json_com(cliente.get(API, {**base, "rows": "0"}), "message", "a Crossref")["message"].get(
+            "total-results", 0)
     except (ErroRede, ValueError) as exc:
         return [], 0, [f"contagem inicial falhou: {exc}"], "falha"
     if total == 0:
@@ -125,7 +126,7 @@ def buscar(cliente: Cliente, consulta: str | None, issns: list[str], de_ano: int
         params["offset"] = "0"
     while len(itens) < min(maximo, total):
         try:
-            msg = cliente.get(API, params).json().get("message", {})
+            msg = json_com(cliente.get(API, params), "message", "a Crossref")["message"]
         except ErroRede as exc:
             erros.append(str(exc))
             break
@@ -234,7 +235,12 @@ def main(argv=None) -> int:
         else:
             descartados += 1
 
-    saida = None if args.substituir else ler_json(destino)
+    substituir = args.substituir
+    if substituir and not itens and erros and ler_json(destino):
+        # sem rede (ou Crossref fora do ar) não se apaga o que já foi baixado
+        print("AVISO: nada foi lido da Crossref; --substituir ignorado para não apagar o arquivo existente.")
+        substituir = False
+    saida = None if substituir else ler_json(destino)
     if not saida or not isinstance(saida, dict):
         saida = {"fonte": "crossref", "execucoes": [], "registros": []}
     por_doi = {r["doi"]: r for r in saida.get("registros", [])}

@@ -70,6 +70,29 @@ def caixa_com_pagina(texto: str, pagina_padrao: int | None) -> tuple[int | None,
     return pagina_padrao, numeros(texto)
 
 
+def texto_logo_fora(bbox, palavras: list[dict], alcance: float = 14.0) -> list[tuple[str, str, float]]:
+    """A linha de texto mais próxima fora de cada borda (até 'alcance' pt), na faixa da caixa.
+    Mostra o que ficou de fora: uma linha de tabela, um rótulo de eixo, um título de painel.
+    Os lados são os da página (antes de --girar)."""
+    x0, y0, x1, y1 = bbox
+    saida = []
+    lados = {
+        "acima": lambda w: (y0 - w["bottom"]) if w["bottom"] <= y0 + 0.5 and w["x1"] > x0 and w["x0"] < x1 else None,
+        "abaixo": lambda w: (w["top"] - y1) if w["top"] >= y1 - 0.5 and w["x1"] > x0 and w["x0"] < x1 else None,
+        "à esquerda": lambda w: (x0 - w["x1"]) if w["x1"] <= x0 + 0.5 and w["bottom"] > y0 and w["top"] < y1 else None,
+        "à direita": lambda w: (w["x0"] - x1) if w["x0"] >= x1 - 0.5 and w["bottom"] > y0 and w["top"] < y1 else None,
+    }
+    for lado, dist in lados.items():
+        perto = [(d, w) for w in palavras if (d := dist(w)) is not None and d <= alcance]
+        if not perto:
+            continue
+        dmin = min(d for d, _ in perto)
+        linha = sorted((w for d, w in perto if d <= dmin + 3), key=lambda w: (round(w["top"]), w["x0"]))
+        txt = " ".join(w["text"] for w in linha)[:70]
+        saida.append((lado, txt, max(dmin, 0.0)))
+    return saida
+
+
 def nome_de(rotulo: str) -> str:
     m = re.match(r"\s*(\D+?)\.?\s*(S?\d+[A-Za-z]?|[IVXLC]+)\s*$", rotulo or "")
     if not m:
@@ -88,6 +111,10 @@ def main() -> int:
     ap.add_argument("--pagina", type=int, help="página do PDF (1 = primeira)")
     ap.add_argument("--frac", help="caixa em fração da página: esquerda,topo,direita,base (0 a 1)")
     ap.add_argument("--bbox", help="caixa em pontos PDF: x0,y0,x1,y1 (origem no canto superior esquerdo)")
+    ap.add_argument("--dentro", metavar="ID",
+                    help="--frac passa a ser fração do recorte ID que você já abriu (ex.: só o painel A de "
+                         "Owen2020_fig3: --dentro Owen2020_fig3 --frac 0,0,0.5,0.5); a página vem dele, e --apagar "
+                         "sem página também vira fração desse recorte")
     ap.add_argument("--ajustar", help="desloca as bordas da caixa atual, em pontos: d_esq,d_topo,d_dir,d_base "
                                       "(negativo = para a esquerda/para cima)")
     ap.add_argument("--painel", action="append", default=[], metavar="[PAG:]x0,y0,x1,y1",
@@ -151,13 +178,29 @@ def main() -> int:
     if recortar:
         pdfium = P.abrir_pdfium(pdf)
         n_pag = len(pdfium)
-        pagina = args.pagina or (atual or {}).get("pagina")
+        base_dentro = None
+        if args.dentro:
+            base_dentro = next((e for e in catalogo if e["id"] == args.dentro), None)
+            if not base_dentro or not base_dentro.get("bbox_pt"):
+                C.sair(f"--dentro: {args.dentro} não está no catálogo (ou não tem bbox_pt).")
+            if base_dentro.get("girado") or len(base_dentro.get("paineis") or []) > 1:
+                C.sair("--dentro não serve para recorte girado ou de vários painéis; use --frac da página.")
+            if not args.frac:
+                C.sair("--dentro precisa de --frac (frações do recorte de origem).")
+            if base_dentro.get("chave") != chave:
+                C.sair(f"--dentro: {args.dentro} é de outro artigo ({base_dentro.get('chave')}).")
+        pagina = (base_dentro or {}).get("pagina") or args.pagina or (atual or {}).get("pagina")
         if not pagina:
             C.sair("informe --pagina.")
         if not 1 <= pagina <= n_pag:
             C.sair(f"página {pagina} não existe (o PDF tem {n_pag}).")
         larg, alt = P.tamanho_pagina(pdfium, pagina - 1)
-        if args.frac:
+        if base_dentro:
+            bx0, by0, bx1, by1 = base_dentro["bbox_pt"]
+            f = numeros(args.frac)
+            bbox = caixa_em_pontos([bx0 + f[0] * (bx1 - bx0), by0 + f[1] * (by1 - by0),
+                                    bx0 + f[2] * (bx1 - bx0), by0 + f[3] * (by1 - by0)], larg, alt, "pt")
+        elif args.frac:
             bbox = caixa_em_pontos(numeros(args.frac), larg, alt, "frac")
         elif args.bbox:
             bbox = caixa_em_pontos(numeros(args.bbox), larg, alt, "pt")
@@ -181,6 +224,12 @@ def main() -> int:
         for txt in args.apagar:
             pg, vals = caixa_com_pagina(txt, pagina)
             lw, lh = P.tamanho_pagina(pdfium, pg - 1)
+            if base_dentro and ":" not in txt:   # com --dentro, --apagar também é fração do recorte de origem
+                bx0, by0, bx1, by1 = base_dentro["bbox_pt"]
+                vals = [bx0 + vals[0] * (bx1 - bx0), by0 + vals[1] * (by1 - by0),
+                        bx0 + vals[2] * (bx1 - bx0), by0 + vals[3] * (by1 - by0)]
+                apagar.setdefault(pg, []).append(caixa_em_pontos(vals, lw, lh, "pt"))
+                continue
             apagar.setdefault(pg, []).append(caixa_em_pontos(vals, lw, lh))
         if not args.exato:   # nenhuma palavra fica cortada ao meio pela borda
             ajustados = []
@@ -342,8 +391,15 @@ def main() -> int:
         else:
             ent.pop("dpi_nativo", None)
         C.salvar_catalogo(aula, catalogo)
+        apagadas = [tuple(a["bbox_pt"]) for a in ent.get("apagado_pt", [])]
+        continua = None
+        if len(paineis) == 1:
+            try:
+                continua = P.continua_fora(pdf, ent["pagina"], tuple(ent["bbox_pt"]), apagadas)
+            except Exception:
+                continua = None
         qc = P.avaliar_recorte(img, tuple(ent["bbox_pt"]) if palavras else None, palavras, ent["dpi"], nativo,
-                               [tuple(a["bbox_pt"]) for a in ent.get("apagado_pt", [])])
+                               apagadas, continua)
         log(f"Recorte gravado: {aula.figuras / ent['arquivo']}")
         log(f"  {ent['id']} · p.{ent['pagina']} · {img.width}×{img.height} px a {ent['dpi']} dpi · cabe em: {qc['cabe']}"
             f" · caixa (pt) {ent['bbox_pt']}")
@@ -351,6 +407,9 @@ def main() -> int:
             log(f"  PROBLEMA: {e}")
         for a in qc["avisos"]:
             log(f"  aviso: {a}")
+        if palavras:
+            for lado, txt, dist in texto_logo_fora(tuple(ent["bbox_pt"]), palavras):
+                log(f"  logo fora da caixa, {lado} (a {dist:.0f} pt): \"{txt}\" — é da figura? então abra a caixa")
         if ent.get("aprovada"):
             log("  Marcado como aprovado. Se ainda não olhou o PNG, olhe agora.")
         else:

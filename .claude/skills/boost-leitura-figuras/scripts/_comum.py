@@ -479,12 +479,13 @@ def escrever_pendentes(aula: Aula, registros: list[dict], manifest: dict[str, di
         return 0
     total = len(registros)
     linhas += [
-        f"Faltam **{len(pend)}** de {total} artigos. Não consegui obter estes por via aberta e legal "
-        "(o motivo está em cada item); use a sua assinatura ou o acesso institucional.",
+        f"Faltam **{len(pend)}** de {total} artigos. O download automático não conseguiu estes "
+        "(o motivo está em cada item). Os da seção \"Gratuitos\" não pedem login; os outros pedem a sua "
+        "assinatura ou o acesso institucional.",
         "",
         "Como fazer:",
         "",
-        "1. Abra o link de cada artigo, entre com a sua conta e baixe o PDF do editor.",
+        "1. Abra o link de cada artigo (\"Versão gratuita\" quando houver), entre com a sua conta se pedir, e baixe o PDF.",
         f"2. Salve em `02_artigos/manual/` (pasta completa: `{aula.manual}`), com qualquer nome de arquivo.",
         "3. Avise quando terminar: eu identifico cada PDF pelo DOI ou pelo título e renomeio "
         "(`incorporar_manuais.py`).",
@@ -492,12 +493,22 @@ def escrever_pendentes(aula: Aula, registros: list[dict], manifest: dict[str, di
         f"Atualizado em {agora()[:16].replace('T', ' ')}.",
         "",
     ]
+    gratis = [r for r in pend if manifest.get(r["chave"], {}).get("url_gratuita")]
     grupos: dict[str, list[dict]] = {}
     for r in pend:
+        if r in gratis:
+            continue
         grupos.setdefault(editora_de(r, manifest.get(r["chave"])), []).append(r)
+    secoes: list[tuple[str, str, list[dict]]] = []
+    if gratis:
+        secoes.append(("Gratuitos: só abrir no navegador e salvar (sem login)",
+                       "Estes têm versão gratuita legal (PMC ou página do editor), mas o servidor recusou o "
+                       "download automático. Abra o link \"Versão gratuita\", clique em PDF e salve.", gratis))
     for nome in sorted(grupos, key=lambda n: (n.startswith("Editora não"), n.lower())):
-        linhas += [f"## {nome}", "", f"_{dica_editora(nome)}_", ""]
-        for r in grupos[nome]:
+        secoes.append((nome, dica_editora(nome), grupos[nome]))
+    for nome, dica, itens in secoes:
+        linhas += [f"## {nome}", "", f"_{dica}_", ""]
+        for r in itens:
             ent = manifest.get(r["chave"], {})
             doi = normalizar_doi(r.get("doi"))
             if doi:
@@ -510,12 +521,14 @@ def escrever_pendentes(aula: Aula, registros: list[dict], manifest: dict[str, di
             ref = f"{autores_curto(r)}. {revista + '. ' if revista else ''}{r.get('ano') or ''}".strip()
             linhas.append(f"- [ ] **{r['chave']}** — {r.get('titulo') or '(sem título)'}")
             linhas.append(f"  - {ref}")
-            linhas.append(f"  - Link: {link}")
+            if ent.get("url_gratuita"):
+                linhas.append(f"  - Versão gratuita: {ent['url_gratuita']}")
+                linhas.append(f"  - Página do editor: {link}")
+            else:
+                linhas.append(f"  - Link: {link}")
             linhas.append(f"  - Por que importa para a aula: {papel_na_aula(r)}")
             motivo = ent.get("motivo_pendencia")
             if motivo:
-                if "há versão aberta" in motivo:
-                    motivo += " — o PDF é gratuito na página do artigo, sem login"
                 linhas.append(f"  - Situação: {motivo}")
             linhas.append("  - Salvar em: `02_artigos/manual/`")
         linhas.append("")
@@ -557,16 +570,18 @@ class Rede:
         if falta > 0:
             time.sleep(falta)
 
-    def get(self, url: str, *, params=None, headers=None, stream: bool = False):
+    def get(self, url: str, *, params=None, headers=None, stream: bool = False,
+            timeout: float | None = None, tentativas: int | None = None):
         host = urlparse(url).netloc
         if host in self.bloqueados:
             raise ErroRede(f"{host} está bloqueado nesta rede (pulado)")
         ultimo_erro = "sem resposta"
-        for n in range(self.tentativas):
+        tentativas = tentativas or self.tentativas
+        for n in range(tentativas):
             self._esperar(host)
             try:
                 r = self.s.get(url, params=params, headers=headers, stream=stream,
-                               timeout=self.timeout, allow_redirects=True)
+                               timeout=timeout or self.timeout, allow_redirects=True)
             except self._requests.exceptions.ProxyError as e:
                 self._ultimo[host] = time.monotonic()
                 self.bloqueados.add(host)
@@ -588,14 +603,15 @@ class Rede:
                 if ra.isdigit():
                     espera = min(max(espera, float(ra)), 60.0)
                 r.close()
-                if n + 1 < self.tentativas:
+                if n + 1 < tentativas:
                     time.sleep(espera)
                 continue
             return r
-        raise ErroRede(f"{host}: {ultimo_erro} após {self.tentativas} tentativas")
+        raise ErroRede(f"{host}: {ultimo_erro} após {tentativas} tentativas")
 
-    def json(self, url: str, *, params=None):
-        r = self.get(url, params=params, headers={"Accept": "application/json"})
+    def json(self, url: str, *, params=None, timeout: float | None = None, tentativas: int | None = None):
+        r = self.get(url, params=params, headers={"Accept": "application/json"},
+                     timeout=timeout, tentativas=tentativas)
         if r.status_code != 200:
             raise ErroRede(f"{urlparse(url).netloc}: HTTP {r.status_code}")
         try:
@@ -691,6 +707,16 @@ def cobertura_titulo(titulo: str, texto: str) -> float:
     return achadas / len(t)
 
 
+def titulo_curto(titulo: str) -> bool:
+    """Título com menos de 4 palavras significativas: palavras soltas batem em qualquer artigo do tema."""
+    return len([p for p in normalizar_texto(titulo).split() if len(p) > 2]) < 4
+
+
+def titulo_exato(titulo: str, texto: str) -> bool:
+    t = normalizar_texto(titulo)
+    return bool(t) and t in normalizar_texto(texto)
+
+
 def pdf_confere(reg: dict, caminho: Path) -> tuple[bool | None, str]:
     """O PDF parece ser o artigo do registro? (True/False/None quando nao da para saber)."""
     texto = texto_inicial_pdf(caminho, 2) + "\n" + metadados_pdf(caminho)
@@ -701,7 +727,12 @@ def pdf_confere(reg: dict, caminho: Path) -> tuple[bool | None, str]:
         return True, "DOI encontrado no PDF"
     if doi and doi.replace("/", "").replace(".", "") in re.sub(r"[^a-z0-9]", "", texto.lower()):
         return True, "DOI encontrado no PDF"
-    cob = cobertura_titulo(reg.get("titulo") or "", texto)
+    titulo = reg.get("titulo") or ""
+    if titulo_curto(titulo):  # título curto: exige a frase inteira, senão qualquer artigo do tema passa
+        if titulo_exato(titulo, texto):
+            return True, "título (curto) encontrado por inteiro no PDF"
+        return False, "título curto não aparece por inteiro nas primeiras páginas"
+    cob = cobertura_titulo(titulo, texto)
     if cob >= 0.8:
         return True, f"título encontrado no PDF ({cob:.0%})"
     return False, f"nem o DOI nem o título aparecem nas primeiras páginas (título {cob:.0%})"

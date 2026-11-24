@@ -407,6 +407,22 @@ class DocLayout:
         com_texto = [p for p, l in zip(self.paginas, self._brutas) if len(l) >= 15]
         self.duas_colunas = bool(com_texto) and len(calhas) >= max(2, 0.35 * len(com_texto))
         if self.duas_colunas:
+            # Uma tabela larga com coluna vazia pode ganhar a votação da calha numa página
+            # (visto em AJSM: calha em 233 pt em vez de 292). Se a calha típica do documento
+            # também separa bem as linhas desta página, fica com a típica.
+            ref_doc = statistics.median(calhas)
+            for pag, linhas in zip(self.paginas, self._brutas):
+                if pag.calha is None or abs(pag.calha - ref_doc) <= 12:
+                    continue
+                livres = 0
+                for it in linhas:
+                    for a, b in zip(it, it[1:]):
+                        if a["x1"] <= ref_doc - 2 and b["x0"] >= ref_doc + 2 and a["x1"] - it[0]["x0"] >= 60 \
+                                and it[-1]["x1"] - b["x0"] >= 60:
+                            livres += 1
+                            break
+                if livres >= 8:
+                    pag.calha = ref_doc
             for paridade in (0, 1):
                 xs = [p.calha for p in self.paginas if p.calha is not None and p.numero % 2 == paridade]
                 ref = statistics.median(xs) if xs else statistics.median(calhas)
@@ -1106,8 +1122,69 @@ def palavras_da_pagina(caminho: str | Path, pagina: int) -> list[dict]:
         return []
 
 
+_CACHE_CINZA: dict = {}
+
+
+def continua_fora(caminho: str | Path, pagina: int, bbox, apagadas: list | None = None,
+                  faixa: float = 1.5, escala: float = 2.0) -> list[str]:
+    """Lados (da página) em que a tinta atravessa a borda da caixa: há traço logo dentro E logo
+    fora, na mesma posição. É o sinal de figura cortada (eixo, rótulo, linha de tabela, painel),
+    e vale também para figura em bitmap, onde não há palavras para conferir. Um recorte justo,
+    com branco logo fora, não aparece aqui."""
+    import numpy as np
+
+    chave = (str(caminho), pagina)
+    if chave not in _CACHE_CINZA:
+        doc = abrir_pdfium(caminho)
+        try:
+            _CACHE_CINZA.clear()
+            _CACHE_CINZA[chave] = np.asarray(render_pagina(doc, pagina - 1, 72.0 * escala, cinza=True)).copy()
+        finally:
+            doc.close()
+    a = _CACHE_CINZA[chave].copy()
+    h, w = a.shape
+    for r in apagadas or []:
+        a[max(int(r[1] * escala), 0):int(r[3] * escala) + 1, max(int(r[0] * escala), 0):int(r[2] * escala) + 1] = 255
+    tinta = a < 190
+    x0, y0, x1, y1 = [v * escala for v in bbox]
+    # filetes paralelos à borda (régua de tabela, moldura) não indicam corte: some com eles
+    X0_, X1_ = max(int(x0), 0), min(int(round(x1)), w)
+    Y0_, Y1_ = max(int(y0), 0), min(int(round(y1)), h)
+    if X1_ > X0_ and Y1_ > Y0_:
+        tinta = tinta.copy()
+        linhas = tinta[:, X0_:X1_].mean(axis=1) > 0.6
+        tinta[linhas, X0_:X1_] = False
+        colunas = tinta[Y0_:Y1_, :].mean(axis=0) > 0.6
+        tinta[Y0_:Y1_, colunas] = False
+    f = max(int(round(faixa * escala)), 2)
+    g = max(int(round(1.0 * escala)), 1)   # a faixa de fora começa 1 pt além da borda: um filete fino
+    import math   # arredonda para DENTRO da caixa: a faixa de dentro não pode pegar tinta de fora
+    X0, X1 = max(math.ceil(x0), 0), min(math.floor(x1), w)   # que só encosta na borda (régua de tabela) não conta
+    Y0, Y1 = max(math.ceil(y0), 0), min(math.floor(y1), h)
+    lados = []
+    testes = {
+        "topo": (Y0 - g - f >= 0, lambda: (tinta[Y0:Y0 + f, X0:X1].any(axis=0),
+                                           tinta[Y0 - g - f:Y0 - g, X0:X1].any(axis=0))),
+        "base": (Y1 + g + f <= h, lambda: (tinta[Y1 - f:Y1, X0:X1].any(axis=0),
+                                           tinta[Y1 + g:Y1 + g + f, X0:X1].any(axis=0))),
+        "esquerda": (X0 - g - f >= 0, lambda: (tinta[Y0:Y1, X0:X0 + f].any(axis=1),
+                                               tinta[Y0:Y1, X0 - g - f:X0 - g].any(axis=1))),
+        "direita": (X1 + g + f <= w, lambda: (tinta[Y0:Y1, X1 - f:X1].any(axis=1),
+                                              tinta[Y0:Y1, X1 + g:X1 + g + f].any(axis=1))),
+    }
+    for lado, (cabe, bandas) in testes.items():
+        if not cabe:
+            continue
+        dentro, fora = bandas()
+        juntos = dentro & fora
+        if juntos.sum() >= 3 and juntos.mean() > 0.004:
+            lados.append(lado)
+    return lados
+
+
 def avaliar_recorte(img, bbox_pt=None, palavras: list[dict] | None = None, dpi: float = 300.0,
-                    nativo: float | None = None, apagadas: list | None = None) -> dict:
+                    nativo: float | None = None, apagadas: list | None = None,
+                    continua: list[str] | None = None) -> dict:
     """Mede um recorte: resolução útil no slide, branco, conteúdo na borda, proporção.
 
     Devolve {"cabe", "dpi_slide_inteiro", "dpi_meio_slide", "branco", "erros": [...], "avisos": [...]}.
@@ -1138,7 +1215,7 @@ def avaliar_recorte(img, bbox_pt=None, palavras: list[dict] | None = None, dpi: 
     if cabe != "pequena" and fator < 1.0 and nativo:
         avisos.append(f"a imagem embutida no PDF tem ~{int(nativo)} dpi: aumentar o --dpi do recorte não melhora a nitidez")
     branco = float((a >= 245).mean())
-    if branco > 0.97:
+    if branco > 0.995 or int((a < 200).sum()) < 400:   # gráfico de linhas finas chega a 97% de branco
         erros.append("recorte quase todo em branco: a caixa não pegou a figura")
     else:
         tinta = a < 245
@@ -1165,12 +1242,22 @@ def avaliar_recorte(img, bbox_pt=None, palavras: list[dict] | None = None, dpi: 
                 cx, cy = (max(p["x0"], x0) + min(p["x1"], x1)) / 2, (max(p["top"], y0) + min(p["bottom"], y1)) / 2
                 if any(r[0] <= cx <= r[2] and r[1] <= cy <= r[3] for r in (apagadas or [])):
                     continue
+                if continua is not None:
+                    # a caixa da fonte é mais alta que a letra (sobrescrito, acento): só conta se a tinta
+                    # da palavra de fato atravessa a borda desse lado
+                    lados_p = {l for l, c in (("esquerda", p["x0"] < x0 - 1.2), ("direita", p["x1"] > x1 + 1.2),
+                                                 ("topo", p["top"] < y0 - 1.5), ("base", p["bottom"] > y1 + 1.5)) if c}
+                    if not (lados_p & set(continua)):
+                        continue
                 cortadas.append(p["text"])
     if cortadas:
         amostra = ", ".join(repr(c) for c in cortadas[:4])
         erros.append(f"texto cortado pela borda do recorte ({amostra}{'…' if len(cortadas) > 4 else ''}): "
                      "abrir a caixa ou apagar esse trecho com --apagar")
-    elif encostado:
+    elif continua:
+        erros.append("a figura continua além da borda (" + ", ".join(continua) + ", lados da página): "
+                     "eixo, rótulo, linha ou painel cortado; abrir a caixa (--ajustar) e olhar de novo")
+    elif encostado and continua is None:
         avisos.append("conteúdo encostado na borda (" + ", ".join(encostado) + "): conferir se nada foi cortado")
     prop = w / max(h, 1)
     if prop > 3.2:

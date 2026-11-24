@@ -1,0 +1,769 @@
+[
+  {
+    "chave": "Caliandro2025",
+    "titulo": "Treatment for ulnar neuropathy at the elbow",
+    "doi": "10.1002/14651858.cd006839.pub5",
+    "pmid": "40298125",
+    "pmcid": "PMC12038884",
+    "revista": "Cochrane Database Syst Rev",
+    "ano": 2025,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "há versão aberta, mas o download automático falhou nesta rede",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "artigo não está no repositório aberto do PMC"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://europepmc.org/articles/PMC12038884?pdf=render",
+        "resultado": "HTTP 403: o site exige navegador (desafio anti-robô); não contornado"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC12038884&blobtype=pdf",
+        "resultado": "o site exige navegador (desafio anti-robô); não contornado"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "url_gratuita": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12038884/",
+    "volume": "4",
+    "numero": "4",
+    "paginas_artigo": "CD006839",
+    "editora": "Wiley"
+  },
+  {
+    "chave": "Arevalo2023",
+    "titulo": "Surgical Techniques and Clinical Outcomes for Medial Epicondylitis: A Systematic Review",
+    "doi": "10.1177/03635465221095565",
+    "pmid": "35658623",
+    "revista": "Am J Sports Med",
+    "ano": 2023,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "51",
+    "numero": "9",
+    "paginas_artigo": "2506-2515",
+    "editora": "SAGE"
+  },
+  {
+    "chave": "Fiorini2018",
+    "titulo": "Surgery for trigger finger",
+    "doi": "10.1002/14651858.cd009860.pub2",
+    "pmid": "29460276",
+    "pmcid": "PMC6491286",
+    "revista": "Cochrane Database Syst Rev",
+    "ano": 2018,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "há versão aberta, mas o download automático falhou nesta rede",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "artigo não está no repositório aberto do PMC"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://europepmc.org/articles/pmc6491286?pdf=render",
+        "resultado": "o site exige navegador (desafio anti-robô); não contornado"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC6491286&blobtype=pdf",
+        "resultado": "o site exige navegador (desafio anti-robô); não contornado"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD009860.pub2/pdf/full",
+        "resultado": "www.cochranelibrary.com inacessível pelo proxy desta rede"
+      }
+    ],
+    "url_gratuita": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6491286/",
+    "volume": "2",
+    "numero": "2",
+    "paginas_artigo": "CD009860",
+    "editora": "Wiley"
+  },
+  {
+    "chave": "Challoumas2023",
+    "titulo": "Management of de Quervain Tenosynovitis: A Systematic Review and Network Meta-Analysis",
+    "doi": "10.1001/jamanetworkopen.2023.37001",
+    "pmid": "37889490",
+    "pmcid": "PMC10611995",
+    "revista": "JAMA Netw Open",
+    "ano": 2023,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "há versão aberta, mas o download automático falhou nesta rede",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "artigo está no PMC, mas sem PDF no repositório aberto"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://europepmc.org/articles/PMC10611995?pdf=render",
+        "resultado": "o site exige navegador (desafio anti-robô); não contornado"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC10611995&blobtype=pdf",
+        "resultado": "o site exige navegador (desafio anti-robô); não contornado"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": "https://jamanetwork.com/journals/jamanetworkopen/articlepdf/2811119/challoumas_2023_oi_231079_1697662039.63331.pdf",
+        "resultado": "jamanetwork.com inacessível pelo proxy desta rede"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": "https://eprints.gla.ac.uk/306378/1/306378.pdf",
+        "resultado": "eprints.gla.ac.uk inacessível pelo proxy desta rede"
+      }
+    ],
+    "url_gratuita": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10611995/",
+    "volume": "6",
+    "numero": "10",
+    "paginas_artigo": "e2337001",
+    "editora": "JAMA Network"
+  },
+  {
+    "chave": "Chiang2026",
+    "titulo": "Evidence-based management strategies for adult trigger digits: a systematic review and network meta-analysis of randomized controlled trials",
+    "doi": "10.1016/j.rehab.2025.102074",
+    "pmid": "41691955",
+    "revista": "Ann Phys Rehabil Med",
+    "ano": 2026,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "69",
+    "numero": "4",
+    "paginas_artigo": "102074",
+    "editora": "Elsevier (ScienceDirect)"
+  },
+  {
+    "chave": "See2026",
+    "titulo": "Eccentric exercise therapy for medial epicondylitis: A systematic review of clinical outcomes",
+    "doi": "10.1016/j.ctim.2026.103364",
+    "pmid": "41887339",
+    "revista": "Complement Ther Med",
+    "ano": 2026,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "nenhuma versão aberta encontrada",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "98",
+    "paginas_artigo": "103364",
+    "editora": "Elsevier (ScienceDirect)"
+  },
+  {
+    "chave": "PetersVeluthamaningal2009",
+    "titulo": "Corticosteroid injection for trigger finger in adults",
+    "doi": "10.1002/14651858.cd005617.pub2",
+    "pmid": "19160256",
+    "pmcid": "PMC12671840",
+    "revista": "Cochrane Database Syst Rev",
+    "ano": 2009,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "há versão aberta, mas o download automático falhou nesta rede",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "artigo não está no repositório aberto do PMC"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD005617.pub2/pdf/full",
+        "resultado": "www.cochranelibrary.com está bloqueado nesta rede (pulado)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://europepmc.org/articles/PMC12671840?pdf=render",
+        "resultado": "o site exige navegador (desafio anti-robô); não contornado"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC12671840&blobtype=pdf",
+        "resultado": "o site exige navegador (desafio anti-robô); não contornado"
+      }
+    ],
+    "url_gratuita": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12671840/",
+    "volume": "2010",
+    "numero": "1",
+    "paginas_artigo": "CD005617",
+    "editora": "Wiley"
+  },
+  {
+    "chave": "Minkhorst2025",
+    "titulo": "Does Orthosis Improve Outcomes of Conservative Treatment in Trigger Fingers? A 3-Arm Prospective Randomized Controlled Trial",
+    "doi": "10.1016/j.apmr.2025.05.015",
+    "pmid": "40449569",
+    "revista": "Arch Phys Med Rehabil",
+    "ano": 2025,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "há versão aberta, mas o download automático falhou nesta rede",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": "https://www.archives-pmr.org/action/showPdf?pii=S0003999325007233",
+        "resultado": "www.archives-pmr.org inacessível pelo proxy desta rede"
+      }
+    ],
+    "url_gratuita": "https://www.archives-pmr.org/action/showPdf?pii=S0003999325007233",
+    "volume": "106",
+    "numero": "12",
+    "paginas_artigo": "1798-1806",
+    "editora": "Elsevier (ScienceDirect)"
+  },
+  {
+    "chave": "Avci2002",
+    "titulo": "Comparison of nonsurgical treatment measures for de Quervain's disease of pregnancy and lactation",
+    "doi": "10.1053/jhsu.2002.32084",
+    "pmid": "11901392",
+    "revista": "J Hand Surg Am",
+    "ano": 2002,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "27",
+    "numero": "2",
+    "paginas_artigo": "322-324",
+    "editora": "Elsevier (ScienceDirect)"
+  },
+  {
+    "chave": "Goubau2014",
+    "titulo": "The wrist hyperflexion and abduction of the thumb (WHAT) test: a more specific and sensitive test to diagnose de Quervain tenosynovitis than the Eichhoff's Test",
+    "doi": "10.1177/1753193412475043",
+    "pmid": "23340762",
+    "revista": "J Hand Surg Eur Vol",
+    "ano": 2014,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "39",
+    "numero": "3",
+    "paginas_artigo": "286-292",
+    "editora": "SAGE"
+  },
+  {
+    "chave": "Huisstede2014",
+    "titulo": "Consensus on a multidisciplinary treatment guideline for de Quervain disease: results from the European HANDGUIDE study",
+    "doi": "10.2522/ptj.20130069",
+    "pmid": "24700135",
+    "revista": "Phys Ther",
+    "ano": 2014,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://academic.oup.com/ptj/article-pdf/94/8/1095/9365840/ptj1095.pdf",
+        "resultado": "academic.oup.com inacessível pelo proxy desta rede"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "94",
+    "numero": "8",
+    "paginas_artigo": "1095-1110",
+    "editora": "Oxford University Press (OUP)"
+  },
+  {
+    "chave": "Zwerus2018",
+    "titulo": "Physical examination of the elbow, what is the evidence? A systematic literature review",
+    "doi": "10.1136/bjsports-2016-096712",
+    "pmid": "28249855",
+    "revista": "Br J Sports Med",
+    "ano": 2018,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "há versão aberta, mas o download automático falhou nesta rede",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": "https://pure.amsterdamumc.nl/files/158378414/Physical-examination-of-the-elbow-what-is-the-evidence-a-systematic-literature-review.pdf",
+        "resultado": "pure.amsterdamumc.nl inacessível pelo proxy desta rede"
+      }
+    ],
+    "url_gratuita": "https://pure.amsterdamumc.nl/files/158378414/Physical-examination-of-the-elbow-what-is-the-evidence-a-systematic-literature-review.pdf",
+    "volume": "52",
+    "numero": "19",
+    "paginas_artigo": "1253-1260",
+    "editora": "BMJ"
+  },
+  {
+    "chave": "Fukunaga2023",
+    "titulo": "Flexor-Pronator Mass Training Exercises Selectively Activate Forearm Musculature",
+    "doi": "10.26603/001c.68073",
+    "pmid": "36793573",
+    "pmcid": "PMC9897040",
+    "revista": "Int J Sports Phys Ther",
+    "ano": 2023,
+    "status": "ok",
+    "origem": "pmc",
+    "licenca": "cc-by-nc",
+    "url_origem": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9897040.1/PMC9897040.1.pdf",
+    "arquivo": "pdf/Fukunaga2023.pdf",
+    "bytes": 273004,
+    "paginas": 7,
+    "sha256": "8f315adb0b700cd478f3ff8714ed7e266ac8192ceca1fb8b28eb0b058dfbb12c",
+    "confere_artigo": true,
+    "baixado_em": "2026-11-24T13:50:35+00:00",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9897040.1/PMC9897040.1.pdf",
+        "resultado": "ok"
+      }
+    ],
+    "volume": "18",
+    "numero": "1",
+    "paginas_artigo": "208-14",
+    "editora": "IJSPT",
+    "texto": "texto/Fukunaga2023.md",
+    "texto_caracteres": 22020,
+    "figuras_detectadas": 5
+  },
+  {
+    "chave": "ODriscoll2005",
+    "titulo": "The \"moving valgus stress test\" for medial collateral ligament tears of the elbow",
+    "doi": "10.1177/0363546504267804",
+    "pmid": "15701609",
+    "revista": "Am J Sports Med",
+    "ano": 2005,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "33",
+    "numero": "2",
+    "paginas_artigo": "231-239",
+    "editora": "SAGE"
+  },
+  {
+    "chave": "Patel1992",
+    "titulo": "Trigger fingers and thumb: when to splint, inject, or operate",
+    "doi": "10.1016/0363-5023(92)90124-8",
+    "pmid": "1538090",
+    "revista": "J Hand Surg Am",
+    "ano": 1992,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "17",
+    "numero": "1",
+    "paginas_artigo": "110-113",
+    "editora": "Elsevier (ScienceDirect)"
+  },
+  {
+    "chave": "Huisstede2014b",
+    "titulo": "Multidisciplinary consensus guideline for managing trigger finger: results from the European HANDGUIDE Study",
+    "doi": "10.2522/ptj.20130135",
+    "pmid": "24810861",
+    "revista": "Phys Ther",
+    "ano": 2014,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "94",
+    "numero": "10",
+    "paginas_artigo": "1421-1433",
+    "editora": "Oxford University Press (OUP)"
+  },
+  {
+    "chave": "Stahl1997c",
+    "titulo": "The efficacy of an injection of steroids for medial epicondylitis. A prospective study of sixty elbows",
+    "doi": "10.2106/00004623-199711000-00006",
+    "pmid": "9384424",
+    "revista": "J Bone Joint Surg Am",
+    "ano": 1997,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "79",
+    "numero": "11",
+    "paginas_artigo": "1648-1652",
+    "editora": "JBJS"
+  },
+  {
+    "chave": "Descatha2003",
+    "titulo": "Medial epicondylitis in occupational settings: prevalence, incidence and associated risk factors",
+    "doi": "10.1097/01.jom.0000085888.37273.d9",
+    "pmid": "14506342",
+    "pmcid": "PMC4850209",
+    "revista": "J Occup Environ Med",
+    "ano": 2003,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "há versão aberta, mas o download automático falhou nesta rede",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "artigo não está no repositório aberto do PMC"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://europepmc.org/articles/PMC4850209?pdf=render",
+        "resultado": "o site exige navegador (desafio anti-robô); não contornado"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC4850209&blobtype=pdf",
+        "resultado": "o site exige navegador (desafio anti-robô); não contornado"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "url_gratuita": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4850209/",
+    "volume": "45",
+    "numero": "9",
+    "paginas_artigo": "993-1001",
+    "editora": "Wolters Kluwer (LWW)"
+  },
+  {
+    "chave": "Beekman2009",
+    "titulo": "The diagnostic value of provocative clinical tests in ulnar neuropathy at the elbow is marginal",
+    "doi": "10.1136/jnnp.2009.180844",
+    "pmid": "19553231",
+    "revista": "J Neurol Neurosurg Psychiatry",
+    "ano": 2009,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "há versão aberta, mas o download automático falhou nesta rede",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": "https://pure.amsterdamumc.nl/files/111171880/237958.pdf",
+        "resultado": "pure.amsterdamumc.nl está bloqueado nesta rede (pulado)"
+      }
+    ],
+    "url_gratuita": "https://pure.amsterdamumc.nl/files/111171880/237958.pdf",
+    "volume": "80",
+    "numero": "12",
+    "paginas_artigo": "1369-1374",
+    "editora": "BMJ"
+  },
+  {
+    "chave": "Elliott1992",
+    "titulo": "Finkelstein's test: a descriptive error that can produce a false positive",
+    "doi": "10.1016/s0266-7681(05)80280-3",
+    "pmid": "1402284",
+    "revista": "J Hand Surg Br",
+    "ano": 1992,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "17",
+    "numero": "4",
+    "paginas_artigo": "481-482",
+    "editora": "Elsevier (ScienceDirect)"
+  }
+]

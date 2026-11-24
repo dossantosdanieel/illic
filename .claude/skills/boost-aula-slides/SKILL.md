@@ -59,6 +59,11 @@ Dois ou três, em nível de aplicação, análise ou avaliação (decidir, inter
 cada um ligado a uma decisão que a turma vai tomar e a uma questão do pós-teste. Pelo menos um objetivo
 exige raciocínio quantitativo (tamanho de efeito, IC, NNT, MCID, certeza, sensibilidade e
 especificidade). O porquê e os exemplos estão em `references/desenho-instrucional.md`, seções 1 e 8.
+Antes de seguir, leia em `desenho-instrucional.md` a parte "O que torna a aula de nível alto": a turma
+tem especialistas, e a aula que só confirma o que eles já fazem é perda de 30 minutos. Procure nas
+fichas o dado que contraria ou refina um hábito comum (o ranking citado por todos com certeza baixa, o
+preditor popular que não ficou no modelo, a melhora que não passa da MCID) e construa a decisão em torno
+dele.
 
 ### 3. Escrever `roteiro.md`
 
@@ -77,7 +82,9 @@ resumo do aluno.
 ### 4. Escrever `deck.json` e `questoes.json`
 
 Copie `assets/exemplo/deck.json` (aula completa de 32 min com todos os 16 tipos de slide) e reescreva.
-O esquema campo a campo, com um exemplo por tipo, está em `references/deck-json.md`. Pontos que mais
+Apague `meta.catalogo` da cópia: no exemplo ele aponta para `figuras/catalogo.json`, e na pasta da aula o
+padrão (`../03_figuras/catalogo.json`) já é o certo. O esquema campo a campo, com um exemplo por tipo,
+está em `references/deck-json.md` (longo: leia a parte geral e só os tipos que vai usar). Pontos que mais
 erram:
 
 - título de slide de evidência diz a **conclusão** ("Aos 9 meses quase todos passam no hop; metade
@@ -86,6 +93,9 @@ erram:
 - todo slide que afirma evidência tem `fonte`; dado do caso fictício leva `"origem": "caso"`;
 - figura com `o_que_olhar` (2–3 pontos) e `destaques` numerados na mesma ordem;
 - `bloco` e `papel` em todos os slides, para o validador conferir o ciclo;
+- `olho` curto (cabe em uma linha antes da pílula), `numero` só com o número (o intervalo vai no
+  `rotulo`), `rotulo` de gráfico em uma linha e destaques com coordenadas entre 0 e 1: o script
+  reprova o que passar disso, porque no slide vira texto encavalado;
 - notas na voz do deck de referência (`references/voz-das-notas.md`): papel do slide, o que dizer com os
   números e a origem, o que não antecipar, "Interação: ..." com o roteiro, e "proposta clínica" onde
   nenhum ensaio testou.
@@ -109,8 +119,8 @@ Para validar sem montar: `python3 SK/scripts/validar_aula.py deck.json` (ou `--j
 O validador **reprova**: duração acima de 35 min, primeira interação depois de 3 min, mais de 7 min sem
 interação, menos de 5 interações ou de 3 formatos, slide com mais de 100 palavras, slide de evidência
 sem fonte, fonte do rodapé ausente das referências, figura inexistente, sem citação ou de baixa
-resolução, slide sem notas, falta de bilhete de saída ou de referências, e figura mostrada antes de
-qualquer pergunta no bloco. **Avisa**: duração abaixo de 28 min, 6 a 7 min sem interação, 70 a 100
+resolução, slide sem notas, último slide cronometrado que não é o bilhete de saída (`chat`), falta de
+referências, e figura mostrada antes de qualquer pergunta no bloco. **Avisa**: duração abaixo de 28 min, 6 a 7 min sem interação, 70 a 100
 palavras, menos de 25% do tempo em atividade, objetivos com verbo fraco, figura sem legenda, falta de
 âncora/desafio, referências sem `conferido`. Corrija todo erro; decida conscientemente cada aviso.
 
@@ -138,12 +148,14 @@ limpos. Prefira cortar palavras a aceitar texto reduzido.
 
 ### 8. Conferir o .pptx por dentro
 
-Abra o .pptx com python-pptx e confira que toda nota começa com "Tempo: ... (acumulado M:SS)." e que os
-gráficos são nativos:
-
 ```bash
-python3 -c "from pptx import Presentation; p=Presentation('<slug>.pptx'); [print(i, [s.chart.chart_type for s in sl.shapes if s.has_chart], sl.notes_slide.notes_text_frame.text[:70]) for i, sl in enumerate(p.slides, 1)]"
+python3 SK/scripts/conferir_pptx.py aulas/<aula>/04_aula/deck.json aulas/<aula>/04_aula/<slug>.pptx
 ```
+
+Confere que toda nota começa com "Tempo: ... (acumulado M:SS)." com o acumulado certo, que os gráficos
+são nativos (com planilha embutida, editáveis), que nenhuma forma sai da página e que o pacote está
+íntegro; se houver esquemas OOXML no ambiente, valida o XML contra eles. Isso importa porque o
+PowerPoint é mais rígido que o LibreOffice: um arquivo que renderiza bem aqui pode abrir com "reparo" lá.
 
 ### 9. Gerar os materiais
 
@@ -156,7 +168,8 @@ Gera `enquetes.md` (texto pronto para criar e salvar as enquetes no Meet antes d
 roteiro de todas as interações), `pre_pos_teste.md` (questões em blocos prontos para colar no Google
 Forms, mais o gabarito comentado) e `resumo_aluno.md` (objetivos, pontos-chave com números e fontes,
 algoritmo de decisão, propostas clínicas, referências; a partir de `meta.resumo`). O script também
-confere a forma das questões (pistas, gabarito concentrado, distrator sem explicação). Releia os três: o
+confere a forma das questões (pistas, gabarito concentrado, distrator sem explicação), se cada objetivo
+tem questão e se alguma questão repete uma enquete da aula. Releia os três: o
 script confere a forma, não o conteúdo clínico.
 
 ### 10. Escrever `verificacao.md`
@@ -187,6 +200,7 @@ slide de figura).
 - `scripts/montar_deck.py` — deck.json → .pptx (valida antes).
 - `scripts/validar_aula.py` — regras pedagógicas e linha do tempo minuto a minuto.
 - `scripts/renderizar.py` — .pptx → PDF → PNGs + folhas de contato.
+- `scripts/conferir_pptx.py` — notas com tempo acumulado, gráficos nativos, formas fora da página, XML.
 - `scripts/materiais.py` — enquetes.md, pre_pos_teste.md, resumo_aluno.md.
 - `scripts/_marca.py` — medidas, cores, interações canônicas e medição de texto (mude a marca aqui).
 - `references/desenho-instrucional.md` — como desenhar a aula, com a base científica.

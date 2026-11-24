@@ -211,11 +211,40 @@ def conferir_questoes(qs: list[dict], refs: dict, avisos: list[str]) -> None:
         avisos.append(f"a resposta certa é a opção mais longa em {certa_mais_longa} de {len(qs)} questões: isso vira pista.")
 
 
+def conferir_alinhamento(deck: dict, qs: list[dict], avisos: list[str]) -> None:
+    """Cada objetivo tem questão; nenhuma questão repete uma enquete da aula (o pós-teste mede transferência)."""
+    objetivos = M.como_lista((deck.get("meta") or {}).get("objetivos"))
+    cobertos = set()
+    for q in qs:
+        for o in M.como_lista(q.get("objetivo")):
+            try:
+                cobertos.add(int(o))
+            except (TypeError, ValueError):
+                pass
+    for i in range(1, len(objetivos) + 1):
+        if qs and i not in cobertos:
+            avisos.append(f"o objetivo {i} não tem questão no pré/pós-teste: sem isso não dá para saber se ele foi atingido.")
+    norm = lambda t: re.sub(r"\W+", " ", limpo(t).lower()).strip()
+    enquetes = []
+    for s in M.como_lista(deck.get("slides")):
+        if isinstance(s, dict) and s.get("tipo") == "enquete" and not s.get("revela"):
+            enquetes.append((norm(s.get("pergunta") or s.get("titulo")), {norm(t) for t in opcoes_de(s).values()}))
+    for n, q in enumerate(qs, 1):
+        nome = f"questão {q.get('id') or n}"
+        ops = {norm(t) for t in opcoes_de(q).values()}
+        perg = norm(q.get("pergunta"))
+        for pe, oe in enquetes:
+            if (perg and perg == pe) or len(ops & oe) >= 2:
+                avisos.append(f"{nome}: repete uma enquete da aula. O pós-teste usa caso novo; senão mede a memória do slide.")
+                break
+
+
 def gerar_pre_pos(deck: dict, banco: dict, avisos: list[str]) -> str:
     meta = deck.get("meta") or {}
     refs = M.indice_referencias(deck)
     qs = [q for q in M.como_lista(banco.get("questoes")) if isinstance(q, dict)]
     conferir_questoes(qs, refs, avisos)
+    conferir_alinhamento(deck, qs, avisos)
     objetivos = M.como_lista(meta.get("objetivos"))
     out = [f"# Pré e pós-teste — {limpo(meta.get('titulo'))}", "",
            "**Como usar no Google Forms.** Crie um formulário, vá em Configurações → *Transformar em teste*. "

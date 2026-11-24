@@ -199,6 +199,33 @@ def _valida(caixa, min_alt: float = 28.0, min_larg: float = 45.0) -> bool:
     return caixa is not None and (caixa[3] - caixa[1]) >= min_alt and (caixa[2] - caixa[0]) >= min_larg
 
 
+def soltar_texto_da_borda(pag: P.PaginaLayout, residual, caixa, regiao, s: float):
+    """Se o limite da região cortou uma linha de texto (a caixa encosta no limite e uma linha
+    atravessa essa borda), recua a borda para fora dessa linha. Evita meia linha de texto
+    corrido no topo ou na base do recorte (visto em BMJ e Springer)."""
+    for _ in range(3):
+        x0, y0, x1, y1 = caixa
+        novo = None
+        for sg in pag.segs:
+            if sg.margem or _sobrepoe_x(sg.x0, sg.x1, x0, x1) < 3:
+                continue
+            # a linha pode terminar logo antes da borda e só as descendentes passarem dela
+            if abs(y0 - regiao[1]) <= 1.5 and sg.top < y0 - 0.8 and sg.bottom > y0 - 2.5:
+                novo = (x0, max(sg.bottom, y0) + 2.0, x1, y1)
+                break
+            if abs(y1 - regiao[3]) <= 1.5 and sg.top < y1 + 1.5 and sg.bottom > y1 + 0.8:
+                novo = (x0, y0, x1, sg.top - 0.6)
+                break
+        if novo is None:
+            return caixa, regiao
+        c2, _ = caixa_tinta(residual, novo, s)
+        if not _valida(c2):
+            return caixa, regiao
+        regiao = (regiao[0], max(regiao[1], novo[1]), regiao[2], min(regiao[3], novo[3]))
+        caixa = c2
+    return caixa, regiao
+
+
 def regiao_figura(pag, leg, residual, s):
     caixa, dens, regiao, alargou = regiao_vizinha(pag, leg, residual, s, "cima")
     avisos = []
@@ -206,9 +233,20 @@ def regiao_figura(pag, leg, residual, s):
         c2, d2, r2, a2 = regiao_vizinha(pag, leg, residual, s, "baixo")
         if _valida(c2):
             caixa, dens, regiao, alargou = c2, d2, r2, a2
-            avisos.append("figura abaixo da legenda (incomum): conferir")
+            lx0, lt, lx1, lb = leg.bbox
+            # legenda ao lado, alinhada pelo topo (Springer): a figura começa na altura do topo
+            # da legenda, à direita dela. Sem isto o topo da figura sai cortado.
+            lado_cx, _ = caixa_tinta(residual, (max(lx1 + 2, regiao[0]), lt - 1, regiao[2], lb + 0.5), s)
+            if (lado_cx is not None and (lx1 - lx0) < 0.4 * pag.largura
+                    and lado_cx[3] >= lb - 1 and lado_cx[0] >= lx1 - 1):
+                caixa = (min(caixa[0], lado_cx[0]), lado_cx[1], max(caixa[2], lado_cx[2]), caixa[3])
+                regiao = (regiao[0], lt - 1, regiao[2], regiao[3])
+                avisos.append("legenda ao lado da figura: conferir topo e laterais")
+            else:
+                avisos.append("figura abaixo da legenda (incomum): conferir")
         else:
             return None, ["não achei conteúdo gráfico junto à legenda"]
+    caixa, regiao = soltar_texto_da_borda(pag, residual, caixa, regiao, s)
     return (caixa, regiao), avisos
 
 
@@ -296,7 +334,13 @@ def regiao_tabela(doc: P.DocLayout, pag, leg, tinta, residual, fios, s, exigir_f
     # sem fios (ou só o de cima): usa o que há entre o título e o próximo texto corrido
     caixa, dens, regiao, alargou = regiao_vizinha(pag, leg, residual, s, "baixo")
     if not _valida(caixa, 18.0, 60.0):
-        return None, ["não achei a grade da tabela abaixo do título"]
+        # título abaixo da tabela (Nature/Scientific Reports): tenta acima
+        c2, d2, r2, a2 = regiao_vizinha(pag, leg, residual, s, "cima")
+        if not _valida(c2, 18.0, 60.0):
+            return None, ["não achei a grade da tabela abaixo nem acima do título"]
+        c2, r2 = soltar_texto_da_borda(pag, residual, c2, r2, s)
+        avisos.append("título abaixo da tabela: conferir os limites")
+        return (c2, (min(c2[0], lx0), c2[1], max(c2[2], lx1), lb)), avisos
     if primeiro is None:
         avisos.append("tabela sem fios horizontais: conferir os limites")
     return (caixa, (min(caixa[0], lx0), lt, max(caixa[2], lx1), caixa[3])), avisos
@@ -412,6 +456,53 @@ def margem_segura(caixa, limites, m: float, pag: P.PaginaLayout):
     return (x0, min(y0, caixa[1]), x1, max(y1, caixa[3]))
 
 
+FAIXA_MARGEM = 0.11   # fração da altura da página no topo e na base onde mora o cabeçalho/rodapé
+
+
+def _faixas_margem(tinta):
+    import numpy as np
+
+    h = tinta.shape[0]
+    k = int(h * FAIXA_MARGEM)
+    m = np.zeros_like(tinta)
+    m[:k] = tinta[:k]
+    m[h - k:] = tinta[h - k:]
+    return m
+
+
+def tinta_repetida(faixas: dict) -> dict:
+    """Pixels com tinta, nas faixas de topo e base, na mesma posição em pelo menos 80% das
+    páginas do mesmo formato (ou 85% das pares/ímpares): logotipo, filete e cabeçalho gráfico
+    da revista, que não são texto e escapam da detecção de cabeçalho (visto no PeerJ)."""
+    import numpy as np
+
+    saida = {}
+    for _, itens in faixas.items():
+        if len(itens) < 3:
+            continue
+        soma = np.zeros(itens[0][1].shape, np.int32)
+        par = {0: np.zeros_like(soma), 1: np.zeros_like(soma)}
+        npar = {0: 0, 1: 0}
+        for i, m in itens:
+            soma += m
+            par[i % 2] += m
+            npar[i % 2] += 1
+        # limiar alto: texto corrido e figuras no alto da página coincidem em parte entre páginas,
+        # e apagar isso cortaria figura de verdade; logotipo e filete estão em quase todas
+        rep = soma >= max(3, 0.8 * len(itens))
+        for k in (0, 1):
+            if npar[k] >= 3:
+                rep |= par[k] >= max(3, 0.85 * npar[k])
+        if not rep.any():
+            continue
+        # engorda 2 px para levar a borda antisserrilhada junto
+        g = rep.copy()
+        g[1:] |= rep[:-1]; g[:-1] |= rep[1:]; g[:, 1:] |= rep[:, :-1]; g[:, :-1] |= rep[:, 1:]
+        for i, _ in itens:
+            saida[i] = g
+    return saida
+
+
 def mobilia(fios_por_pagina: list[list[tuple]], n_pag: int) -> set[tuple]:
     """Fios que se repetem na mesma posição em muitas páginas (réguas de cabeçalho e rodapé)."""
     from collections import Counter
@@ -454,20 +545,27 @@ def processar(aula: C.Aula, pdf: Path, reg: dict, ent: dict, catalogo: list[dict
     usados: set[str] = set()   # nomes desta rodada (um id já aprovado mantém o nome e não é refeito)
     novos: list[dict] = []
     avisos_art: list[str] = list(doc.avisos)
+    if sum(pg.n_palavras for pg in doc.paginas) < 30 * max(n_pag, 1):
+        avisos_art.append("PDF quase sem camada de texto (digitalizado?): legendas não podem ser achadas. "
+                          "Olhe _visao_geral.png e recorte à mão com recortar.py --pagina N --frac ...")
     miniaturas: list[Path] = []
     licenca = ent.get("licenca") or C.normalizar_licenca(reg.get("licenca")) or C.LICENCA_DESCONHECIDA
 
     # passada 1: fios de todas as páginas (para reconhecer as réguas que se repetem)
     fios_pag: list[list[tuple]] = []
     tintas: dict[int, object] = {}
+    mascara_mobilia = {}
     if not args.so_miniaturas:
+        faixas: dict[tuple, list] = {}   # formato da página -> [(i, máscara das faixas de topo e base)]
         for i, pag in enumerate(doc.paginas):
             cinza = np.asarray(P.render_pagina(pdfium, i, 72.0 * S, cinza=True))
             tinta = cinza < LIMIAR_TINTA
             fios_pag.append(achar_fios(tinta, S))
             if pag.legendas:
                 tintas[i] = tinta
+            faixas.setdefault(tinta.shape, []).append((i, _faixas_margem(tinta)))
         repetidos = mobilia(fios_pag, n_pag)
+        mascara_mobilia = tinta_repetida(faixas)
     else:
         repetidos = set()
 
@@ -492,6 +590,8 @@ def processar(aula: C.Aula, pdf: Path, reg: dict, ent: dict, catalogo: list[dict
                     apagar(tinta, f, S, 1.0)
                 else:
                     fios.append(f)
+            if i in mascara_mobilia:   # logotipo/filete da revista repetido no topo ou na base
+                tinta = tinta & ~mascara_mobilia[i]
             residual = tinta.copy()
             for b in pag.blocos:
                 if b.tipo in ("corpo", "legenda"):

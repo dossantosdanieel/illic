@@ -51,7 +51,7 @@ Para montar a lista de sinônimos:
 2. Olhe os termos de entrada do descritor no banco MeSH: são os sinônimos que o próprio NLM reconhece.
 3. Inclua a nomenclatura antiga. A literatura de ombro anterior a 2015 fala em "subacromial impingement"; a atual, em "rotator cuff related shoulder pain". Quem busca só o nome novo perde uma década.
 4. Inclua grafia britânica e americana quando a raiz muda, e siglas consagradas (RCRSP, ACL).
-5. Descritor criado há pouco só indexa dali em diante ("Rotator Cuff Injuries" é de 2017): mantenha o descritor antigo e o texto livre. A tabela está em `vocabulario-fisioterapia.md`.
+5. Descritor criado há pouco pode não alcançar o artigo antigo. Depende do descritor: "Rotator Cuff Injuries" (2017) foi aplicado para trás e traz 1.212 artigos de 2005-2010; "Return to Sport" (2016) não tem nenhum desse período. Como não dá para saber sem medir, mantenha o descritor antigo e o texto livre. A tabela está em `vocabulario-fisioterapia.md`.
 
 Explosão: desligue (`"explodir": false`) quando o descritor é uma estrutura anatômica ou um termo-guarda-chuva cujos filhos não interessam. Tópico principal (`[Majr]`) aumenta a precisão e derruba a sensibilidade; reserve para buscas exploratórias.
 

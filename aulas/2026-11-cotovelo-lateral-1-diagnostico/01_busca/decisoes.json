@@ -1,0 +1,1656 @@
+[
+ {
+  "chave": "Karanasios2022",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 1 | origem: atualizacao] RS de acurácia de testes clínicos, ultrassom e RM (24 estudos): Cozen, força de preensão e imagem com sensibilidade/especificidade."
+ },
+ {
+  "chave": "Karanasios2021",
+  "decisao": "incluir",
+  "papel": "âncora da aula",
+  "observacoes": "[aula 2 | origem: ambos] RS/MA de 30 estudos (2123 participantes): exercício x intervenções passivas, espera vigilante e corticoide; tamanhos de efeito por prazo."
+ },
+ {
+  "chave": "Chen2024",
+  "decisao": "talvez",
+  "observacoes": "MA de fatores de risco pessoais (sexo, tabagismo, trabalho manual, hipercolesterolemia); alternativa/complemento a Bretschneider 2022."
+ },
+ {
+  "chave": "Heales2025",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Qualidade de vídeos do TikTok."
+ },
+ {
+  "chave": "Dunning2024",
+  "decisao": "talvez",
+  "observacoes": "ECR de agulhamento percutâneo do tendão + manipulação como adjuvante; complemento a Ma 2024."
+ },
+ {
+  "chave": "Rhim2024",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Chen2021",
+  "decisao": "talvez",
+  "observacoes": "MA de excêntrico da aula base; Karanasios 2021 e Wallis 2024 cobrem a pergunta de forma mais ampla."
+ },
+ {
+  "chave": "Hohmann2023",
+  "decisao": "talvez",
+  "observacoes": "MA PRP x corticoide (1 mês x 6 meses); alternativa a Karjalainen 2021."
+ },
+ {
+  "chave": "Karanasios2022b",
+  "decisao": "talvez",
+  "observacoes": "ECR JOSPT de exercício com restrição de fluxo sanguíneo; desafio avançado da aula 2."
+ },
+ {
+  "chave": "Rais2026",
+  "decisao": "talvez",
+  "observacoes": "RS/MA 2026 de fortalecimento escapular; desafio avançado da aula 2."
+ },
+ {
+  "chave": "NavarroSantana2020",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Agulhamento/acupuntura: coberto por Ma 2024."
+ },
+ {
+  "chave": "Taylor2024",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Exercício: pergunta coberta por Karanasios 2021, Wallis 2024, Vuvan 2020, Couppe 2022 e Day 2019."
+ },
+ {
+  "chave": "Wallis2024",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 2 | origem: atualizacao] Revisão Cochrane 2024 (23 ensaios, 1612 participantes): terapia manual e exercício x placebo, mínimo ou nenhum tratamento, com certeza GRADE."
+ },
+ {
+  "chave": "Lowdon2024",
+  "decisao": "incluir",
+  "papel": "contraponto",
+  "observacoes": "[aula 2 | origem: atualizacao] Meta-análise em rede (13 ECRs, PRTEE dor): nenhum tratamento supera controle no curto prazo; só fisioterapia/exercício no médio prazo."
+ },
+ {
+  "chave": "Shim2022",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Li2022b",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Cooper2023",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Karanasios2021b",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 2 | origem: atualizacao] RS/MA de ondas de choque (27 estudos, 1871 pacientes): sem benefício clínico relevante x simulado ou corticoide."
+ },
+ {
+  "chave": "Uygur2021",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Agulhamento/acupuntura: coberto por Ma 2024."
+ },
+ {
+  "chave": "Kim2022",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "Tratamento cirúrgico ou intervencionista fora do escopo das aulas de fisioterapia."
+ },
+ {
+  "chave": "Campos2024",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Exercício: pergunta coberta por Karanasios 2021, Wallis 2024, Vuvan 2020, Couppe 2022 e Day 2019."
+ },
+ {
+  "chave": "Kinney2023",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Eapen2023",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Terapia manual: coberta por Wallis 2024 (Cochrane) e Lucado 2019."
+ },
+ {
+  "chave": "Lucado2019",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 2 | origem: aula base] RS/MA da aula base de mobilizações articulares (20 estudos, 7 na meta-análise): efeito da MWM lateral do cotovelo na dor e força."
+ },
+ {
+  "chave": "GutierrezEspinoza2025",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Exercício: pergunta coberta por Karanasios 2021, Wallis 2024, Vuvan 2020, Couppe 2022 e Day 2019."
+ },
+ {
+  "chave": "Gercek2026b",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Exercício: pergunta coberta por Karanasios 2021, Wallis 2024, Vuvan 2020, Couppe 2022 e Day 2019."
+ },
+ {
+  "chave": "Khatri2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Corticoide/injeções: coberto por Coombes 2010, Coombes 2013, Smidt 2002 e Bisset 2006."
+ },
+ {
+  "chave": "Coombes2025",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Terapia manual: coberta por Wallis 2024 (Cochrane) e Lucado 2019."
+ },
+ {
+  "chave": "Zwerus2018",
+  "decisao": "incluir",
+  "papel": "aplicação clínica",
+  "observacoes": "[aula 1 | origem: atualizacao] RS de exame físico do cotovelo com acurácia e instruções dos testes, inclusive instabilidade rotatória posterolateral (diferencial)."
+ },
+ {
+  "chave": "Heales2020",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Órtese: coberta por Shahabi 2020 e pela diretriz."
+ },
+ {
+  "chave": "RodriguezHuguet2024",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Eletrofísicos: cabem na tabela de força de evidência a partir da diretriz JOSPT 2022 e de Karanasios 2021."
+ },
+ {
+  "chave": "Ikonen2022",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 1,2 | origem: atualizacao] RS/MA dos braços placebo/sem tratamento de ECRs: curso natural, meia-vida de melhora de 2,5 a 3 meses e cerca de 90% de resolução em 1 ano (resumo)."
+ },
+ {
+  "chave": "Cullinane2014",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Exercício: pergunta coberta por Karanasios 2021, Wallis 2024, Vuvan 2020, Couppe 2022 e Day 2019."
+ },
+ {
+  "chave": "Bateman2024",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Xu2024",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "VilchezCavazos2025",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Laimi2018",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Lapner2022",
+  "decisao": "talvez",
+  "observacoes": "MA de tratamento não cirúrgico (JSES Int) que embasa o position statement canadense."
+ },
+ {
+  "chave": "Amako2026",
+  "decisao": "talvez",
+  "observacoes": "Diretriz JOA 2024 (ortopedia japonesa); contraponto de diretriz médica à JOSPT."
+ },
+ {
+  "chave": "Zhang2024c",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Ondas de choque: coberto por Karanasios 2021b."
+ },
+ {
+  "chave": "DiFilippo2022",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Diagnóstico/imagem: coberto por Karanasios 2022, Zwerus 2018, Krogh 2020 e ACR 2022."
+ },
+ {
+  "chave": "OrtegaCastillo2022",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Maroun2025",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Liu2022",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Ondas de choque: coberto por Karanasios 2021b."
+ },
+ {
+  "chave": "Zhu2022",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Ye2025",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Young2025",
+  "decisao": "talvez",
+  "observacoes": "Clinimetria de END, PRTEE e outros instrumentos (2025); pode atualizar a diferença mínima importante do PRTEE de Poltawski 2011."
+ },
+ {
+  "chave": "Majidi2024",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Yuksel2025",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Eletrofísicos: cabem na tabela de força de evidência a partir da diretriz JOSPT 2022 e de Karanasios 2021."
+ },
+ {
+  "chave": "Yoon2021",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Exercício: pergunta coberta por Karanasios 2021, Wallis 2024, Vuvan 2020, Couppe 2022 e Day 2019."
+ },
+ {
+  "chave": "LandesaPineiro2022",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Ma2024",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 2 | origem: atualizacao] RS/MA atualizada de agulhamento seco (17 ECRs, 979 participantes) com GRADE; atualiza o ECR de Uygur 2021 da aula base."
+ },
+ {
+  "chave": "Saleh2024",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Balevi2023",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Bandagem: coberta pela diretriz JOSPT 2022 (seção de bandagem) e pela aula base."
+ },
+ {
+  "chave": "Hill2023b",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Bandagem: coberta pela diretriz JOSPT 2022 (seção de bandagem) e pela aula base."
+ },
+ {
+  "chave": "Sahoo2023",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Órtese: coberta por Shahabi 2020 e pela diretriz."
+ },
+ {
+  "chave": "Basson2017",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Oeding2025",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Sharma2024c",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Corticoide/injeções: coberto por Coombes 2010, Coombes 2013, Smidt 2002 e Bisset 2006."
+ },
+ {
+  "chave": "SteginkJansen2021",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Savva2021",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Masiello2023",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Barreto2024",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Alyanak2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Eletrofísicos: cabem na tabela de força de evidência a partir da diretriz JOSPT 2022 e de Karanasios 2021."
+ },
+ {
+  "chave": "Walecka2026b",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Walecka2026c",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Dejnek2025",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Zhu2025b",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Ondas de choque: coberto por Karanasios 2021b."
+ },
+ {
+  "chave": "Schumacher2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Xu2026b",
+  "decisao": "talvez",
+  "observacoes": "Meta-análise em rede 2026 de tratamentos percutâneos (41 ECRs) com efeito rebote do corticoide; muito recente, sem citações."
+ },
+ {
+  "chave": "Stasinopoulos2017",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Exercício: pergunta coberta por Karanasios 2021, Wallis 2024, Vuvan 2020, Couppe 2022 e Day 2019."
+ },
+ {
+  "chave": "Muir2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "Tratamento cirúrgico ou intervencionista fora do escopo das aulas de fisioterapia."
+ },
+ {
+  "chave": "Vuvan2020",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 2 | origem: aula base] ECR da aula base: isométrico não supervisionado x espera por 8 semanas; PRTEE melhor (DPM -0,92 no resumo), sem diferença em melhora global e força. Dose nas tabelas dos slides 51 a 53 da aula base (conferir no texto)."
+ },
+ {
+  "chave": "Biedron2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Diagnóstico/imagem: coberto por Karanasios 2022, Zwerus 2018, Krogh 2020 e ACR 2022."
+ },
+ {
+  "chave": "Cha2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Park2026b",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Agulhamento/acupuntura: coberto por Ma 2024."
+ },
+ {
+  "chave": "Pradhana2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "RiquelmeAguado2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Eletrofísicos: cabem na tabela de força de evidência a partir da diretriz JOSPT 2022 e de Karanasios 2021."
+ },
+ {
+  "chave": "Yin2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Agulhamento/acupuntura: coberto por Ma 2024."
+ },
+ {
+  "chave": "Lin2018",
+  "decisao": "excluir",
+  "motivo": "superado por evidência mais nova",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Alharbi2025",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Ondas de choque: coberto por Karanasios 2021b."
+ },
+ {
+  "chave": "Averell2024",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "ElMeligie2023",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Eletrofísicos: cabem na tabela de força de evidência a partir da diretriz JOSPT 2022 e de Karanasios 2021."
+ },
+ {
+  "chave": "Tran2023",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Prognóstico/risco: coberto por Ikonen 2022, Smidt 2006, Waugh 2004, Coombes 2015 e Bretschneider 2022."
+ },
+ {
+  "chave": "Manickaraj2025",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Exercício: pergunta coberta por Karanasios 2021, Wallis 2024, Vuvan 2020, Couppe 2022 e Day 2019."
+ },
+ {
+  "chave": "Niemiec2022",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Capotosto2024",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Kim2024",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Westad2019",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Rio2021",
+  "decisao": "incluir",
+  "papel": "mecanismo",
+  "observacoes": "[aula 1 | origem: atualizacao] RS/MA JOSPT de processamento sensorial na tendinopatia (18 de 30 estudos no cotovelo lateral): limiar de dor à pressão e térmico local e regional."
+ },
+ {
+  "chave": "Altas2022",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Bandagem: coberta pela diretriz JOSPT 2022 (seção de bandagem) e pela aula base."
+ },
+ {
+  "chave": "Raman2012",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Exercício: pergunta coberta por Karanasios 2021, Wallis 2024, Vuvan 2020, Couppe 2022 e Day 2019."
+ },
+ {
+  "chave": "Li2024",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Bandagem: coberta pela diretriz JOSPT 2022 (seção de bandagem) e pela aula base."
+ },
+ {
+  "chave": "Baktir2019",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Eletrofísicos: cabem na tabela de força de evidência a partir da diretriz JOSPT 2022 e de Karanasios 2021."
+ },
+ {
+  "chave": "Kholinne2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "Tratamento cirúrgico ou intervencionista fora do escopo das aulas de fisioterapia."
+ },
+ {
+  "chave": "Bateman2022",
+  "decisao": "talvez",
+  "observacoes": "Core outcome set (COS-LET); justificaria os desfechos escolhidos para o caso."
+ },
+ {
+  "chave": "Lian2019",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Dong2016",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Corticoide/injeções: coberto por Coombes 2010, Coombes 2013, Smidt 2002 e Bisset 2006."
+ },
+ {
+  "chave": "Xiong2024",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "AntunesJunior2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Yao2020",
+  "decisao": "excluir",
+  "motivo": "superado por evidência mais nova",
+  "observacoes": "Ondas de choque: coberto por Karanasios 2021b."
+ },
+ {
+  "chave": "Coombes2016",
+  "decisao": "talvez",
+  "observacoes": "Análise econômica do ECR JAMA, usada na aula base; manter como reserva de figura."
+ },
+ {
+  "chave": "Stania2026",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "AmorSalamanca2025",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Prognóstico/risco: coberto por Ikonen 2022, Smidt 2006, Waugh 2004, Coombes 2015 e Bretschneider 2022."
+ },
+ {
+  "chave": "Ghandour2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "Tratamento cirúrgico ou intervencionista fora do escopo das aulas de fisioterapia."
+ },
+ {
+  "chave": "Sveinall2024",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Ondas de choque: coberto por Karanasios 2021b."
+ },
+ {
+  "chave": "Amako2022",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Yilmaz2022",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Terapia manual: coberta por Wallis 2024 (Cochrane) e Lucado 2019."
+ },
+ {
+  "chave": "Zhong2020",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Bandagem: coberta pela diretriz JOSPT 2022 (seção de bandagem) e pela aula base."
+ },
+ {
+  "chave": "DeVos2014b",
+  "decisao": "excluir",
+  "motivo": "superado por evidência mais nova",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Tiryaki2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Exercício: pergunta coberta por Karanasios 2021, Wallis 2024, Vuvan 2020, Couppe 2022 e Day 2019."
+ },
+ {
+  "chave": "Kim2021",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "McQueen2021",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Exercício: pergunta coberta por Karanasios 2021, Wallis 2024, Vuvan 2020, Couppe 2022 e Day 2019."
+ },
+ {
+  "chave": "Ouyang2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Prognóstico/risco: coberto por Ikonen 2022, Smidt 2006, Waugh 2004, Coombes 2015 e Bretschneider 2022."
+ },
+ {
+  "chave": "Dingemanse2014",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Hedbany2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Ozmen2021",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Ondas de choque: coberto por Karanasios 2021b."
+ },
+ {
+  "chave": "Tavassoli2022",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Corticoide/injeções: coberto por Coombes 2010, Coombes 2013, Smidt 2002 e Bisset 2006."
+ },
+ {
+  "chave": "Lenoir2019",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Mansfield2019",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Healy2018",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Lhee2025",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Dakkak2024",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Speed2014",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Chen2023",
+  "decisao": "talvez",
+  "observacoes": "MA de efeito de longo prazo do tratamento conservador; reforça a mensagem de 1 ano."
+ },
+ {
+  "chave": "Shafiee2022",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Mallows2017",
+  "decisao": "talvez",
+  "observacoes": "RS de variáveis psicológicas e desfecho na tendinopatia; prognóstico além do tecido."
+ },
+ {
+  "chave": "Winkler2025",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Luo2022",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Eletrofísicos: cabem na tabela de força de evidência a partir da diretriz JOSPT 2022 e de Karanasios 2021."
+ },
+ {
+  "chave": "Karanasios2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Exercício: pergunta coberta por Karanasios 2021, Wallis 2024, Vuvan 2020, Couppe 2022 e Day 2019."
+ },
+ {
+  "chave": "Nuhmani2023",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Shahabi2020",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 2 | origem: aula base] RS/MA da aula base de órtese de contraforça (17 estudos, 1145 participantes) sobre a dor."
+ },
+ {
+  "chave": "Ronconi2025",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Tayyab2025",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Driscoll2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Karjalainen2021",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 2 | origem: atualizacao] Revisão Cochrane 2021 de sangue autólogo e PRP: o que responder ao paciente que pergunta sobre PRP, com certeza da evidência."
+ },
+ {
+  "chave": "Kemp2021",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Kroslak2019",
+  "decisao": "talvez",
+  "observacoes": "ECR placebo-controlado de órtese de contraforça; complemento a Shahabi 2020."
+ },
+ {
+  "chave": "Hoogvliet2013",
+  "decisao": "talvez",
+  "observacoes": "RS da aula base de exercício e mobilização; superada por Wallis 2024."
+ },
+ {
+  "chave": "Bretschneider2022",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 1 | origem: atualizacao] RS/MA com GRADE de fatores físicos de trabalho em estudos prospectivos (Strain Index, rotação de antebraço): fatores de risco ocupacionais."
+ },
+ {
+  "chave": "Bobos2020",
+  "decisao": "talvez",
+  "observacoes": "RS/MA de propriedades de medida da força de preensão; apoio para a medida sem dor."
+ },
+ {
+  "chave": "AlbertLucena2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Eletrofísicos: cabem na tabela de força de evidência a partir da diretriz JOSPT 2022 e de Karanasios 2021."
+ },
+ {
+  "chave": "Kizilkurt2025",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Scaturro2025",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Ondas de choque: coberto por Karanasios 2021b."
+ },
+ {
+  "chave": "Bruni2023",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Bisset2005",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Amelie2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Ondas de choque: coberto por Karanasios 2021b."
+ },
+ {
+  "chave": "Elhadi2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Jin2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Ondas de choque: coberto por Karanasios 2021b."
+ },
+ {
+  "chave": "Wu2026b",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Ondas de choque: coberto por Karanasios 2021b."
+ },
+ {
+  "chave": "Zhang2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Eletrofísicos: cabem na tabela de força de evidência a partir da diretriz JOSPT 2022 e de Karanasios 2021."
+ },
+ {
+  "chave": "Alharran2025",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Ondas de choque: coberto por Karanasios 2021b."
+ },
+ {
+  "chave": "Shah2025",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Tayyab2025b",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Bandagem: coberta pela diretriz JOSPT 2022 (seção de bandagem) e pela aula base."
+ },
+ {
+  "chave": "Perveen2024",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Ondas de choque: coberto por Karanasios 2021b."
+ },
+ {
+  "chave": "Sen2024",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Ondas de choque: coberto por Karanasios 2021b."
+ },
+ {
+  "chave": "Li2023",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "Tratamento cirúrgico ou intervencionista fora do escopo das aulas de fisioterapia."
+ },
+ {
+  "chave": "Cox2016",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Oruk2023",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "DaLuz2019",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Eletrofísicos: cabem na tabela de força de evidência a partir da diretriz JOSPT 2022 e de Karanasios 2021."
+ },
+ {
+  "chave": "Hones2024",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Cheema2023",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Ondas de choque: coberto por Karanasios 2021b."
+ },
+ {
+  "chave": "Couppe2022",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 2 | origem: atualizacao] ECR de 3 braços (60 pacientes): 12 semanas de HSR com elástico, somando corticoide, agulhamento do tendão ou placebo; HSR é o efeito, corticoide piora em 52 semanas."
+ },
+ {
+  "chave": "Day2021",
+  "decisao": "talvez",
+  "observacoes": "ECR de fortalecimento escapular da aula base; Rais 2026 e Mostafaee 2022 tratam da mesma pergunta."
+ },
+ {
+  "chave": "Chen2021b",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Kholinne2021",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Barakat2025",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Epicondilite medial: fica para a aula 3."
+ },
+ {
+  "chave": "De2024",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Muthu2022",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Totlis2024",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Castonguay2024",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Texakalidis2025",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Su2023",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Pereira2025",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Tang2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "Tratamento cirúrgico ou intervencionista fora do escopo das aulas de fisioterapia."
+ },
+ {
+  "chave": "Zhu2025c",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Curti2021",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Prognóstico/risco: coberto por Ikonen 2022, Smidt 2006, Waugh 2004, Coombes 2015 e Bretschneider 2022."
+ },
+ {
+  "chave": "Muthu2021",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "AriasVazquez2022",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Ali2026",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "Tratamento cirúrgico ou intervencionista fora do escopo das aulas de fisioterapia."
+ },
+ {
+  "chave": "Christiansen2026",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Dudon2026",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Guo2026",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Hong2026b",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "IsmailHassan2026",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Jahn2026",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Khan2026",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Litsos2026",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Mashida2026",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Pinto2026",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "Tratamento cirúrgico ou intervencionista fora do escopo das aulas de fisioterapia."
+ },
+ {
+  "chave": "Raymond2026",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Sahlan2026",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "See2026",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Epicondilite medial: fica para a aula 3."
+ },
+ {
+  "chave": "Song2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Prognóstico/risco: coberto por Ikonen 2022, Smidt 2006, Waugh 2004, Coombes 2015 e Bretschneider 2022."
+ },
+ {
+  "chave": "StafiFilho2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Zhao2026",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Giannikou2025",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Shu2025",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "DiasDeLacerda2022",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "NavarroSantana2021",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Agulhamento/acupuntura: coberto por Ma 2024."
+ },
+ {
+  "chave": "Arevalo2023",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Epicondilite medial: fica para a aula 3."
+ },
+ {
+  "chave": "Heales2021",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Exercício: pergunta coberta por Karanasios 2021, Wallis 2024, Vuvan 2020, Couppe 2022 e Day 2019."
+ },
+ {
+  "chave": "Papacharalambous2022",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Coombes2013",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 1,2 | origem: atualizacao] ECR fatorial JAMA (165 pacientes): no resumo, corticoide x placebo em 1 ano 83% x 96% de recuperação/muita melhora e recidiva 54% x 12%; fisioterapia x sem fisioterapia sem diferença em 1 ano. A aula base usa a análise econômica do mesmo ensaio (Coombes 2016)."
+ },
+ {
+  "chave": "Vukelic2021",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Corticoide/injeções: coberto por Coombes 2010, Coombes 2013, Smidt 2002 e Bisset 2006."
+ },
+ {
+  "chave": "Kholinne2021b",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Coombes2010",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 2 | origem: atualizacao] RS Lancet de injeções na tendinopatia: corticoide com benefício de curto prazo e piora em médio/longo prazo no cotovelo lateral; outras injeções."
+ },
+ {
+  "chave": "CancelaCilleruelo2025",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Previtali2022",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Hardy2021",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "Tratamento cirúrgico ou intervencionista fora do escopo das aulas de fisioterapia."
+ },
+ {
+  "chave": "Dakkak2021",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Heales2021c",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Prognóstico/risco: coberto por Ikonen 2022, Smidt 2006, Waugh 2004, Coombes 2015 e Bretschneider 2022."
+ },
+ {
+  "chave": "Sun2023",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Karjalainen2022b",
+  "decisao": "excluir",
+  "motivo": "sem resultados (protocolo)",
+  "observacoes": "Protocolo Cochrane de corticoide; acompanhar a publicação da revisão."
+ },
+ {
+  "chave": "Bonczar2023d",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "VanDerMolen2021",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Sidhu2024",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Chiarotto2023",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Prognóstico/risco: coberto por Ikonen 2022, Smidt 2006, Waugh 2004, Coombes 2015 e Bretschneider 2022."
+ },
+ {
+  "chave": "SousaFilho2021",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Bizzoca2023",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Heales2014",
+  "decisao": "talvez",
+  "observacoes": "RS de déficits sensoriais e motores no lado não lesionado; mecanismo e cuidado ao usar o lado contralateral como referência."
+ },
+ {
+  "chave": "Johnson2026",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Laudet2025",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Auliffe2021",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "LoBianco2026",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Loh2026",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Poolton2025",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Epicondilite medial: fica para a aula 3."
+ },
+ {
+  "chave": "Vajapey2021",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "McCulloch2022",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Lapner2022b",
+  "decisao": "talvez",
+  "observacoes": "Position statement canadense de tratamento não cirúrgico (GRADE); contraponto à diretriz JOSPT."
+ },
+ {
+  "chave": "Mostafaee2022",
+  "decisao": "talvez",
+  "observacoes": "ECR da aula base de treino de ombro/escápula."
+ },
+ {
+  "chave": "Sajan2025",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Coombes2015b",
+  "decisao": "incluir",
+  "papel": "aplicação clínica",
+  "observacoes": "[aula 2 | origem: atualizacao] Revisão clínica JOSPT 'one size does not fit all': raciocínio para combinar educação, carga e tratamento da dor por subgrupo."
+ },
+ {
+  "chave": "Bisset2006b",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 1,2 | origem: atualizacao] ECR BMJ (198 pacientes): MWM + exercício x corticoide x espera; corticoide melhor em 6 semanas e pior em 52, com recidiva; braço de espera mostra o curso natural."
+ },
+ {
+  "chave": "Smidt2002",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 1,2 | origem: atualizacao] ECR Lancet (185 pacientes): corticoide x fisioterapia x espera; efeito do corticoide em 6 semanas some e inverte no longo prazo."
+ },
+ {
+  "chave": "Lucado2022",
+  "decisao": "incluir",
+  "papel": "âncora da aula",
+  "observacoes": "[aula 1,2 | origem: ambos] Diretriz JOSPT 2022, espinha dorsal da aula base: diagnóstico, classificação, prognóstico e recomendações de intervenção com grau de evidência."
+ },
+ {
+  "chave": "SonneryCottet2025",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Saltychev2022",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Wood2022",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Prognóstico/risco: coberto por Ikonen 2022, Smidt 2006, Waugh 2004, Coombes 2015 e Bretschneider 2022."
+ },
+ {
+  "chave": "Ansari2024",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Mahmoud2021",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "Tratamento cirúrgico ou intervencionista fora do escopo das aulas de fisioterapia."
+ },
+ {
+  "chave": "Carmody2023",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Worden2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "Tratamento cirúrgico ou intervencionista fora do escopo das aulas de fisioterapia."
+ },
+ {
+  "chave": "Fernandez2021",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "RodriguezMerchan2022",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Expert2022",
+  "decisao": "incluir",
+  "papel": "aplicação clínica",
+  "observacoes": "[aula 1 | origem: atualizacao] ACR Appropriateness Criteria de dor crônica no cotovelo (2022): quando pedir radiografia, US ou RM; sustenta a decisão sobre imagem."
+ },
+ {
+  "chave": "Cho2021",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Olaussen2013",
+  "decisao": "talvez",
+  "observacoes": "RS da aula base corticoide x fisioterapia; superada por Coombes 2010/2013 e Karanasios 2021 na pergunta central."
+ },
+ {
+  "chave": "Benes2021",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Schaeffer2021",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "JuradoVelez2022",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Scott2013",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Leschinger2022",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Sconfienza2018",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Coombes2015",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 1 | origem: aula base] Prognóstico de 1 ano com 41 pacientes do braço placebo de um ECR (resumo): hiperalgesia ao frio associada a pior desfecho; sinal de sensibilização."
+ },
+ {
+  "chave": "SonneryCottet2017",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Evans2021",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Injeções biológicas/percutâneas: pergunta coberta por Karjalainen 2021 (Cochrane), Coombes 2010 e Lowdon 2024."
+ },
+ {
+  "chave": "Hohmann2026",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Kunze2026",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Waugh2004b",
+  "decisao": "talvez",
+  "observacoes": "Prognóstico de longo prazo (JOSPT 2004): uso de computador; complementa Waugh 2004 APMR se couber."
+ },
+ {
+  "chave": "Sconfienza2020",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Harris2001",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "Tamminga2021",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Waugh2004",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 1 | origem: aula base] Coorte multicêntrica (83 pacientes) da aula base: preditores de desfecho em 8 semanas de fisioterapia (DASH inicial, sexo, sintomas de nervo)."
+ },
+ {
+  "chave": "Day2019",
+  "decisao": "incluir",
+  "papel": "aplicação clínica",
+  "observacoes": "[aula 2 | origem: aula base] Comentário clínico com programa por fases ao longo da cadeia cinética, com critérios de progressão e dose (3 fases segundo as notas do slide 69 da aula base); Int J Sports Phys Ther, não JOSPT."
+ },
+ {
+  "chave": "Hegmann2013",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "Savoie2007",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "Tratamento cirúrgico ou intervencionista fora do escopo das aulas de fisioterapia."
+ },
+ {
+  "chave": "Coombes2009",
+  "decisao": "talvez",
+  "observacoes": "Modelo integrativo (tendão, sistema de dor, sistema motor) para a explicação de mecanismo; Rio 2021 e Coombes 2015 já cobrem o sistema de dor."
+ },
+ {
+  "chave": "Bruyn2014",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "Tendinopatias ou condições musculoesqueléticas em geral; o cotovelo lateral é subgrupo menor."
+ },
+ {
+  "chave": "Sanders2015",
+  "decisao": "talvez",
+  "observacoes": "Epidemiologia da aula base (incidência por idade); contexto, cabe em uma frase."
+ },
+ {
+  "chave": "Krogh2020",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 1 | origem: atualizacao] US em 60 pacientes x 264 assintomáticos: espessamento, Doppler e esporão também aparecem em cotovelos sem dor; base para explicar o laudo."
+ },
+ {
+  "chave": "Bunata2007",
+  "decisao": "incluir",
+  "papel": "mecanismo",
+  "observacoes": "[aula 1 | origem: aula base] Estudo anatômico da aula base: contato e abrasão do ECRB contra o capítulo com a extensão do cotovelo."
+ },
+ {
+  "chave": "Smidt2006",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 1 | origem: atualizacao] Coorte de 349 pacientes de atenção primária: curso e fatores prognósticos (dor inicial, duração, dor no ombro e no pescoço)."
+ },
+ {
+  "chave": "Gadau2016",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Fora do recorte de 30 a 35 minutos; tema coberto pelos selecionados."
+ },
+ {
+  "chave": "AlvarezNemegyei2011",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "Não trata de dor lateral no cotovelo."
+ },
+ {
+  "chave": "WebsterHarrison2002",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "Tratamento cirúrgico ou intervencionista fora do escopo das aulas de fisioterapia."
+ },
+ {
+  "chave": "Lim2013",
+  "decisao": "talvez",
+  "observacoes": "Nota clinimétrica do teste de força de preensão sem dor (J Physiother); ver se traz confiabilidade e MDC."
+ },
+ {
+  "chave": "Poltawski2011",
+  "decisao": "incluir",
+  "papel": "aplicação clínica",
+  "observacoes": "[aula 1,2 | origem: atualizacao] Diferença mínima clinicamente importante do PRTEE (7/100 para 'um pouco melhor', 11/100 para 'muito melhor', no resumo)."
+ },
+ {
+  "chave": "Bisset2006",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "Caso-controle de déficits sensório-motores bilaterais; mecanismo já coberto por Rio 2021 e Heales 2014 (talvez)."
+ },
+ {
+  "chave": "Vicenzino2009",
+  "decisao": "incluir",
+  "papel": "aplicação clínica",
+  "observacoes": "[aula 1,2 | origem: aula base] Regra de predição (análise post hoc, n=64) para resposta inicial a MWM + exercício; o resumo traz limiares de força de preensão sem dor (112 N afetado, 336 N não afetado); conferir os três critérios no texto. Não prediz desfecho na espera."
+ }
+]

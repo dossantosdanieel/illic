@@ -86,6 +86,11 @@ def tempo_extenso(seg: int) -> str:
     return f"{s} s"
 
 
+def num(x: float, casas: int = 1) -> str:
+    """1.25 -> '1,3' (vírgula decimal nas mensagens)."""
+    return f"{x:.{casas}f}".replace(".", ",")
+
+
 def relogio(seg: int) -> str:
     seg = int(round(seg))
     return f"{seg // 60}:{seg % 60:02d}"

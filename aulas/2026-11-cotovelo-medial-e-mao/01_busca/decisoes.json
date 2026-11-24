@@ -1,0 +1,1549 @@
+[
+ {
+  "chave": "Descatha2003",
+  "decisao": "incluir",
+  "papel": "contexto",
+  "observacoes": "Citado na aula base (slide 141): prevalência ocupacional 4-5%, incidência 1,5%/ano, trabalho com força como fator de risco e 81% de recuperação em 3 anos (resumo); sustenta o curso natural favorável e o exame do membro inteiro (comorbidades)."
+ },
+ {
+  "chave": "Stahl1997c",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "Único ECR de corticoide na tendinopatia medial: benefício só às 6 semanas, sem diferença em 3 meses e 1 ano (resumo); os autores atribuem a melhora ao curso natural. Âncora da decisão 'injetar ou não' no caso do cotovelo medial."
+ },
+ {
+  "chave": "See2026",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "RS de exercício excêntrico na tendinopatia medial: só 5 estudos e 143 pacientes, desenhos mistos (resumo). É o retrato da evidência escassa e a base da extrapolação explícita a partir da tendinopatia lateral."
+ },
+ {
+  "chave": "Arevalo2023",
+  "decisao": "incluir",
+  "papel": "aplicação clínica",
+  "observacoes": "RS das técnicas cirúrgicas e desfechos na epicondilite medial: cirurgia como desfecho e critério de encaminhamento depois do conservador; nenhuma técnica padronizada (resumo)."
+ },
+ {
+  "chave": "Zwerus2018",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "RS de acurácia dos testes do cotovelo: nenhum estudo elegível para epicondilite medial e um só para insuficiência do LCM (resumo). Mostra que o diagnóstico da dor medial se apoia em poucos dados; acesso aberto."
+ },
+ {
+  "chave": "ODriscoll2005",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "Teste de estresse em valgo em movimento contra exploração cirúrgica/artroscopia: sensibilidade 100% (17/17) e especificidade 75% (3/4) (resumo). Amostra minúscula de não lesionados: discutir o IC largo na aula."
+ },
+ {
+  "chave": "Beekman2009",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "Coorte diagnóstica prospectiva (192 pacientes) dos testes provocativos na neuropatia ulnar no cotovelo contra ENMG e ultrassom: valor marginal (resumo). Ensina a não confiar no Tinel isolado e quando pedir exame."
+ },
+ {
+  "chave": "Caliandro2025",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "Revisão Cochrane (atualização 2025) do tratamento da neuropatia ulnar no cotovelo: conservador x cirurgia e entre técnicas; sustenta orientação, órtese noturna e o momento de encaminhar."
+ },
+ {
+  "chave": "Fukunaga2023",
+  "decisao": "incluir",
+  "papel": "mecanismo",
+  "observacoes": "EMG de dois exercícios com faixa elástica para a massa flexora-pronadora (FUC, FSD, pronador redondo) (resumo): base mecânica para prescrever carga ao cotovelo medial e ao arremessador; acesso aberto (PMC)."
+ },
+ {
+  "chave": "Huisstede2014b",
+  "decisao": "incluir",
+  "papel": "âncora da aula",
+  "observacoes": "Diretriz de consenso multidisciplinar europeia (HANDGUIDE) para dedo em gatilho: escolha do tratamento pela gravidade, duração e tratamentos prévios (resumo). Âncora do caso do gatilho; Phys Ther."
+ },
+ {
+  "chave": "Chiang2026",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "Meta-análise em rede de 27 ECRs (2.099 participantes, 12 tratamentos) no dedo em gatilho do adulto (resumo): situa órtese, injeção e liberação percutânea/aberta numa mesma escala."
+ },
+ {
+  "chave": "PetersVeluthamaningal2009",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "Revisão Cochrane de injeção de corticoide no dedo em gatilho: os números de resolução de curto prazo que o paciente pergunta; acesso aberto."
+ },
+ {
+  "chave": "Fiorini2018",
+  "decisao": "incluir",
+  "papel": "aplicação clínica",
+  "observacoes": "Revisão Cochrane de cirurgia no dedo em gatilho (aberta x percutânea x injeção): sustenta o encaminhamento e o que esperar da cirurgia; acesso aberto."
+ },
+ {
+  "chave": "Patel1992",
+  "decisao": "incluir",
+  "papel": "aplicação clínica",
+  "observacoes": "Clássico de quando imobilizar, injetar ou operar: órtese da MCF com 66% de sucesso, injeção 84%; travamento marcado, >6 meses e vários dedos predizem falha da órtese (resumo). Liga graduação a decisão."
+ },
+ {
+  "chave": "Minkhorst2025",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "ECR de 3 braços (órtese noturna x injeção x combinação) estratificado pelo grau de Green e diabetes (resumo): a pergunta exata do fisioterapeuta sobre órtese; acesso aberto."
+ },
+ {
+  "chave": "Huisstede2014",
+  "decisao": "incluir",
+  "papel": "âncora da aula",
+  "observacoes": "Diretriz de consenso multidisciplinar europeia (HANDGUIDE) para De Quervain: orientação, AINE, órtese, injeção e cirurgia escolhidos por gravidade e duração (resumo). Âncora do caso da De Quervain."
+ },
+ {
+  "chave": "Challoumas2023",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "RS com meta-análise em rede de ECRs no manejo da De Quervain (JAMA Netw Open): compara injeção, órtese, terapias e combinações; acesso aberto (PMC)."
+ },
+ {
+  "chave": "Goubau2014",
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "WHAT test x Eichhoff: sensibilidade 0,99 e especificidade 0,29 do WHAT (resumo). Dado central do bloco 'diagnóstico sem falso positivo' (especificidade baixa também para o WHAT: discutir)."
+ },
+ {
+  "chave": "Elliott1992",
+  "decisao": "incluir",
+  "papel": "mecanismo",
+  "observacoes": "Mostra que o 'Finkelstein' dos livros é na verdade o Eichhoff (polegar fechado na mão + desvio ulnar), que produz falso positivo e cirurgia inadequada (resumo). Explica o porquê do falso positivo."
+ },
+ {
+  "chave": "Avci2002",
+  "decisao": "incluir",
+  "papel": "aplicação clínica",
+  "observacoes": "ECR em gestantes e lactantes: injeção com alívio completo em 9/9; órtese sem alívio completo, resolução espontânea ao fim da lactação em 8 (resumo). Base da conduta no puerpério; amostra de 19 punhos."
+ },
+ {
+  "chave": "Amin2015",
+  "decisao": "talvez",
+  "observacoes": "Revisão JAAOS da epicondilite medial; o texto dos slides 126-145 da aula base parece segui-la (as notas numeradas coincidem com referências que ela cita, como Cain 2003, Shiri 2006 e Stahl 1997, conferidas pelo OpenAlex), mas a aula base não a cita: confirmar no texto completo antes de marcar origem 'aula base'."
+ },
+ {
+  "chave": "PetersVeluthamaningal2009b",
+  "decisao": "talvez",
+  "observacoes": "Cochrane 2009 de corticoide na De Quervain (acesso aberto); provavelmente superada por Challoumas2023, mas a tarefa pede Cochrane quando existir: decidir na leitura."
+ },
+ {
+  "chave": "Cain2003",
+  "decisao": "talvez",
+  "observacoes": "Citado na aula base (slide 138); revisão de 2003 do cotovelo do arremessador, superada em parte por Erickson2023; reserva de figura."
+ },
+ {
+  "chave": "Ciccotti2003",
+  "decisao": "talvez",
+  "observacoes": "Citado na aula base (slide 139): local da dor 5-10 mm distal e anterior ao epicôndilo; revisão técnica sem dados novos."
+ },
+ {
+  "chave": "Galloway1992",
+  "decisao": "talvez",
+  "observacoes": "Citado na aula base (slides 134-135): reabilitação de epicondilites; revisão narrativa de 1992."
+ },
+ {
+  "chave": "Sisto1987",
+  "decisao": "talvez",
+  "observacoes": "Citado na aula base (slide 131): EMG do cotovelo no arremesso; mecanismo clássico, complementar a Fukunaga2023."
+ },
+ {
+  "chave": "Wu2018",
+  "decisao": "talvez",
+  "observacoes": "Finkelstein x Eichhoff (acesso aberto, PMC): contraponto direto a Goubau2014; desenho classificado como 'outro', conferir na leitura."
+ },
+ {
+  "chave": "Leong2023",
+  "decisao": "talvez",
+  "observacoes": "RS de órteses no dedo em gatilho (J Hand Ther, pago); detalha tipos de órtese (MCF, IFP, movimento relativo) que a aula pode mostrar."
+ },
+ {
+  "chave": "CuencaZaldivar2026",
+  "decisao": "talvez",
+  "observacoes": "Meta-análise em rede de tratamentos conservadores na De Quervain (2026, pago); complementar a Challoumas2023."
+ },
+ {
+  "chave": "Chong2024",
+  "decisao": "talvez",
+  "observacoes": "Meta-análise em rede De Quervain (J Hand Surg Am 2024); concorrente de Challoumas2023."
+ },
+ {
+  "chave": "Leow2021",
+  "decisao": "talvez",
+  "observacoes": "Cochrane 2021 de AINE no dedo em gatilho; leitura complementar."
+ },
+ {
+  "chave": "Gopinatth2023",
+  "decisao": "talvez",
+  "observacoes": "RS de retorno ao esporte após tratamento não cirúrgico do LCU: números para o caso do arremessador."
+ },
+ {
+  "chave": "Erickson2023",
+  "decisao": "talvez",
+  "observacoes": "Consenso modificado sobre lesões do LCU (sentinela): exame, imagem e indicação cirúrgica."
+ },
+ {
+  "chave": "Natroshvili2023",
+  "decisao": "talvez",
+  "observacoes": "RS/MA do conservador na compressão ulnar no cotovelo: melhora em 54% com injeção e 89% com órtese (resumo); complementar à Cochrane."
+ },
+ {
+  "chave": "Jain2024",
+  "decisao": "talvez",
+  "observacoes": "RS do scratch collapse test; acurácia controversa."
+ },
+ {
+  "chave": "Novak1994",
+  "decisao": "talvez",
+  "observacoes": "Clássico dos testes provocativos no túnel cubital (flexão do cotovelo + pressão)."
+ },
+ {
+  "chave": "Salim2012",
+  "decisao": "talvez",
+  "observacoes": "ECR corticoide x fisioterapia no gatilho leve (sentinela); relevante para o fisioterapeuta."
+ },
+ {
+  "chave": "Sato2012",
+  "decisao": "talvez",
+  "observacoes": "ECR injeção x percutânea x aberta (sentinela); provavelmente na rede de Chiang2026."
+ },
+ {
+  "chave": "Dingemanse2014",
+  "decisao": "talvez",
+  "observacoes": "RS de recursos eletrofísicos na epicondilite medial e lateral (BJSM): quase só ensaios da lateral; serve para mostrar a escassez."
+ },
+ {
+  "chave": "Shiri2006",
+  "decisao": "talvez",
+  "observacoes": "Prevalência populacional de epicondilite lateral e medial; contexto."
+ },
+ {
+  "chave": "Huisstede2018",
+  "decisao": "talvez",
+  "observacoes": "RS de intervenções para gatilho, Dupuytren e De Quervain (acesso aberto); base de evidência da diretriz HANDGUIDE atualizada."
+ },
+ {
+  "chave": "Cevik2024",
+  "decisao": "talvez",
+  "observacoes": "RS corticoide x imobilização na De Quervain."
+ },
+ {
+  "chave": "Yendi2024",
+  "decisao": "talvez",
+  "observacoes": "ECR órtese de bloqueio da MCF x movimento relativo no gatilho."
+ },
+ {
+  "chave": "Leong2026",
+  "decisao": "talvez",
+  "observacoes": "ECR movimento relativo x bloqueio da MCF no gatilho (2026)."
+ },
+ {
+  "chave": "Teo2019",
+  "decisao": "talvez",
+  "observacoes": "ECR órtese de bloqueio da IFP x MCF no gatilho."
+ },
+ {
+  "chave": "McKenna2026",
+  "decisao": "talvez",
+  "observacoes": "RS de órtese no gatilho do adulto, curto prazo (acesso aberto)."
+ },
+ {
+  "chave": "Bitar2023",
+  "decisao": "talvez",
+  "observacoes": "ECR do alívio dia a dia após injeção no gatilho: útil para aconselhar o paciente."
+ },
+ {
+  "chave": "Atthakomol2023b",
+  "decisao": "talvez",
+  "observacoes": "Diferença mínima importante do MHQ e da dor no gatilho: número para o slide de desfechos."
+ },
+ {
+  "chave": "Luangjarmekorn2024",
+  "decisao": "talvez",
+  "observacoes": "Fatores de sucesso da injeção repetida no gatilho recidivado."
+ },
+ {
+  "chave": "Karki2025",
+  "decisao": "talvez",
+  "observacoes": "ECR liberação percutânea x injeção (2025, acesso aberto)."
+ },
+ {
+  "chave": "Navaneeth2025",
+  "decisao": "talvez",
+  "observacoes": "RS de corticoide e função no gatilho (BMJ Open, acesso aberto)."
+ },
+ {
+  "chave": "Yang2026",
+  "decisao": "talvez",
+  "observacoes": "Meta-análise em rede de ECRs (2026, acesso aberto); conferir se trata do gatilho e se acrescenta a Chiang2026."
+ },
+ {
+  "chave": "Amirfeyz2017",
+  "decisao": "talvez",
+  "observacoes": "Revisão baseada em evidência do gatilho no adulto (J Hand Surg Eur)."
+ },
+ {
+  "chave": "Shohda2024",
+  "decisao": "talvez",
+  "observacoes": "Revisão de escopo da fisiopatologia do gatilho (acesso aberto, PMC): mecanismo para o slide da polia A1."
+ },
+ {
+  "chave": "Dragisic2025",
+  "decisao": "talvez",
+  "observacoes": "Estudo anatômico das origens tendíneas no epicôndilo medial: mecanismo para o slide de anatomia."
+ },
+ {
+  "chave": "Dillon2026",
+  "decisao": "talvez",
+  "observacoes": "Coorte: estiramento dos flexores do antebraço e risco posterior de cirurgia do LCU em arremessadores da MLB (acesso aberto): liga tendinopatia medial e LCU."
+ },
+ {
+  "chave": "Ifarraguerri2024",
+  "decisao": "talvez",
+  "observacoes": "RS de lesões parciais do LCU em atletas."
+ },
+ {
+  "chave": "Collins2025",
+  "decisao": "talvez",
+  "observacoes": "Consenso sobre diagnóstico da síndrome do túnel cubital."
+ },
+ {
+  "chave": "Donati2026",
+  "decisao": "talvez",
+  "observacoes": "Revisão da neuropatia ulnar no cotovelo do diagnóstico à reabilitação (acesso aberto)."
+ },
+ {
+  "chave": "Bateman2025",
+  "decisao": "talvez",
+  "observacoes": "RS de órtese noturna na síndrome do túnel cubital (acesso aberto)."
+ },
+ {
+  "chave": "Wolny2022",
+  "decisao": "talvez",
+  "observacoes": "RS de fisioterapia na síndrome do túnel cubital (acesso aberto)."
+ },
+ {
+  "chave": "Barakat2025",
+  "decisao": "talvez",
+  "observacoes": "RS de técnicas cirúrgicas na epicondilite medial (2025, acesso aberto); comparar com Arevalo2023."
+ },
+ {
+  "chave": "Alzahrani2022",
+  "decisao": "talvez",
+  "observacoes": "RS de PRP como alternativa à cirurgia na epicondilite medial (Cureus); o que o paciente pergunta."
+ },
+ {
+  "chave": "Kume2012",
+  "decisao": "talvez",
+  "observacoes": "ECR: subcompartimento do ECP e injeção guiada por US na De Quervain; mecanismo da falha da injeção."
+ },
+ {
+  "chave": "Lee2017",
+  "decisao": "talvez",
+  "observacoes": "RS da anatomia do primeiro compartimento extensor (septo): mecanismo para o slide da De Quervain."
+ },
+ {
+  "chave": "MardaniKivi2014",
+  "decisao": "talvez",
+  "observacoes": "ECR injeção com ou sem gesso de polegar (sentinela; acesso aberto)."
+ },
+ {
+  "chave": "Richie2003",
+  "decisao": "talvez",
+  "observacoes": "Análise agregada injeção x órtese na De Quervain (sentinela; acesso aberto)."
+ },
+ {
+  "chave": "Valdes2013",
+  "decisao": "talvez",
+  "observacoes": "Revisão dos testes provocativos de punho e cotovelo (sentinela)."
+ },
+ {
+  "chave": "Goldman2009",
+  "decisao": "talvez",
+  "observacoes": "Revisão dos testes e sinais da neuropatia ulnar (sentinela; acesso aberto)."
+ },
+ {
+  "chave": "Konarski2023",
+  "decisao": "talvez",
+  "observacoes": "Revisão narrativa do curso natural e manejo da epicondilite medial (acesso aberto, PMC)."
+ },
+ {
+  "chave": "Karanasios2022",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "tendinopatia lateral: pertence às aulas 1 e 2"
+ },
+ {
+  "chave": "Lowdon2024",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "tendinopatia lateral: pertence às aulas 1 e 2"
+ },
+ {
+  "chave": "Heales2025",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "tendinopatia lateral: pertence às aulas 1 e 2"
+ },
+ {
+  "chave": "Chen2021",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "tendinopatia lateral: pertence às aulas 1 e 2"
+ },
+ {
+  "chave": "Karanasios2022b",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "tendinopatia lateral: pertence às aulas 1 e 2"
+ },
+ {
+  "chave": "Yuksel2025",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "tendinopatia lateral: pertence às aulas 1 e 2"
+ },
+ {
+  "chave": "Lucado2019",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "tendinopatia lateral: pertence às aulas 1 e 2"
+ },
+ {
+  "chave": "VilchezCavazos2025",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "tendinopatia lateral: pertence às aulas 1 e 2"
+ },
+ {
+  "chave": "Tran2023",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "tendinopatia lateral: pertence às aulas 1 e 2"
+ },
+ {
+  "chave": "Taylor2024",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "tendinopatia lateral: pertence às aulas 1 e 2"
+ },
+ {
+  "chave": "Karanasios2021",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "tendinopatia lateral: pertence às aulas 1 e 2"
+ },
+ {
+  "chave": "Stasinopoulos2017",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "tendinopatia lateral: pertence às aulas 1 e 2"
+ },
+ {
+  "chave": "Hones2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica ou reabilitação pós-operatória do LCU; a aula trata do diagnóstico e do encaminhamento"
+ },
+ {
+  "chave": "Ciccotti2025b",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica ou reabilitação pós-operatória do LCU; a aula trata do diagnóstico e do encaminhamento"
+ },
+ {
+  "chave": "Kemler2022",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica ou reabilitação pós-operatória do LCU; a aula trata do diagnóstico e do encaminhamento"
+ },
+ {
+  "chave": "Anderson2022",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica ou reabilitação pós-operatória do LCU; a aula trata do diagnóstico e do encaminhamento"
+ },
+ {
+  "chave": "Looney2022b",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica ou reabilitação pós-operatória do LCU; a aula trata do diagnóstico e do encaminhamento"
+ },
+ {
+  "chave": "Looney2021",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica ou reabilitação pós-operatória do LCU; a aula trata do diagnóstico e do encaminhamento"
+ },
+ {
+  "chave": "Clain2019",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica ou reabilitação pós-operatória do LCU; a aula trata do diagnóstico e do encaminhamento"
+ },
+ {
+  "chave": "Hadley2020",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica ou reabilitação pós-operatória do LCU; a aula trata do diagnóstico e do encaminhamento"
+ },
+ {
+  "chave": "Looney2022",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica ou reabilitação pós-operatória do LCU; a aula trata do diagnóstico e do encaminhamento"
+ },
+ {
+  "chave": "Saez2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica ou reabilitação pós-operatória do LCU; a aula trata do diagnóstico e do encaminhamento"
+ },
+ {
+  "chave": "Buchanan2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica ou reabilitação pós-operatória do LCU; a aula trata do diagnóstico e do encaminhamento"
+ },
+ {
+  "chave": "Casey2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Shekouhi2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Bonczar2023",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Levit2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Amro2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Wen2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Abourisha2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Nakagawa2023",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Garcia2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Suwannaphisit2022",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Huang2026",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Olaiya2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Alkuwari2027",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Light2027",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Ghalimah2026",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Kitridis2026",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Roh2026",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Hubbard2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Earp2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Crislip2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Cavanaugh2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Hourston2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Nasser2026",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Ali2026",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Ramtin2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Gallo2020",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Clark2020",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "detalhe de técnica cirúrgica, anestesia ou cuidado pós-operatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "De2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "recurso ou injetável fora do foco da aula (PRP, laser, acupuntura, ondas de choque, outros agentes)"
+ },
+ {
+  "chave": "ElGendy2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "recurso ou injetável fora do foco da aula (PRP, laser, acupuntura, ondas de choque, outros agentes)"
+ },
+ {
+  "chave": "Hidajat2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "recurso ou injetável fora do foco da aula (PRP, laser, acupuntura, ondas de choque, outros agentes)"
+ },
+ {
+  "chave": "Liang2023",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "recurso ou injetável fora do foco da aula (PRP, laser, acupuntura, ondas de choque, outros agentes)"
+ },
+ {
+  "chave": "Qin2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "recurso ou injetável fora do foco da aula (PRP, laser, acupuntura, ondas de choque, outros agentes)"
+ },
+ {
+  "chave": "AlMousllie2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "recurso ou injetável fora do foco da aula (PRP, laser, acupuntura, ondas de choque, outros agentes)"
+ },
+ {
+  "chave": "Abumadian2026",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "recurso ou injetável fora do foco da aula (PRP, laser, acupuntura, ondas de choque, outros agentes)"
+ },
+ {
+  "chave": "Fogel2026",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "recurso ou injetável fora do foco da aula (PRP, laser, acupuntura, ondas de choque, outros agentes)"
+ },
+ {
+  "chave": "He2023",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "recurso ou injetável fora do foco da aula (PRP, laser, acupuntura, ondas de choque, outros agentes)"
+ },
+ {
+  "chave": "Kuper2026",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "recurso ou injetável fora do foco da aula (PRP, laser, acupuntura, ondas de choque, outros agentes)"
+ },
+ {
+  "chave": "Caliandro2016",
+  "decisao": "excluir",
+  "motivo": "superado por evidência mais nova",
+  "observacoes": "versão anterior da Cochrane; vale Caliandro2025"
+ },
+ {
+  "chave": "Lunsford2019",
+  "decisao": "excluir",
+  "motivo": "superado por evidência mais nova",
+  "observacoes": "superada por Leong2023 e Chiang2026"
+ },
+ {
+  "chave": "Cavaleri2016",
+  "decisao": "excluir",
+  "motivo": "superado por evidência mais nova",
+  "observacoes": "superada pelas meta-análises em rede de 2023-2026"
+ },
+ {
+  "chave": "AbiRafeh2020",
+  "decisao": "excluir",
+  "motivo": "superado por evidência mais nova",
+  "observacoes": "revisão superada por Challoumas2023"
+ },
+ {
+  "chave": "Poolton2025",
+  "decisao": "excluir",
+  "motivo": "superado por evidência mais nova",
+  "observacoes": "mesma pergunta de Arevalo2023"
+ },
+ {
+  "chave": "Wong2022",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "dedo em gatilho pediátrico"
+ },
+ {
+  "chave": "Tang2024",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "dedo em gatilho pediátrico"
+ },
+ {
+  "chave": "Chiaramonte2022",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "neuropatias da mão em ciclistas"
+ },
+ {
+  "chave": "Novo2026",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Davey2021",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Piggott2022",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Khan2023",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Formiga2024",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Gray2025",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Rio2021",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Basson2017",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Couppe2022",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Brosnan2026",
+  "decisao": "excluir",
+  "motivo": "desenho inadequado",
+  "observacoes": "revisão de escopo de órteses de movimento relativo para várias condições"
+ },
+ {
+  "chave": "Campbell2020",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "imagem do LCU; a aula decide pelo exame clínico e encaminha para imagem"
+ },
+ {
+  "chave": "Reiman2019",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "fatores de risco do LCU no beisebol; contexto distante do público"
+ },
+ {
+  "chave": "AbiRafeh2022",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "ultrassonografia e anatomia cirúrgica; Lee2017 cobre o mecanismo"
+ },
+ {
+  "chave": "Jafarian2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "revista regional; Challoumas2023 e CuencaZaldivar2026 cobrem órtese na De Quervain"
+ },
+ {
+  "chave": "Myers2025",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "prevalência de testes positivos em jogadores de pickleball"
+ },
+ {
+  "chave": "Mitchell2026",
+  "decisao": "talvez",
+  "observacoes": "Síntese de diretrizes e fluxos para distúrbios não traumáticos do punho (acesso aberto): conferir se traz recomendação para De Quervain além da HANDGUIDE."
+ },
+ {
+  "chave": "Choi2025",
+  "decisao": "talvez",
+  "observacoes": "ECR de exercício de deslizamento dos tendões associado à injeção no gatilho (acesso aberto): o exercício que o fisioterapeuta prescreve."
+ },
+ {
+  "chave": "Hansen2017",
+  "decisao": "talvez",
+  "observacoes": "ECR cirurgia aberta x injeção guiada por US no gatilho, 1 ano; provavelmente dentro de Chiang2026."
+ },
+ {
+  "chave": "Shook2022",
+  "decisao": "talvez",
+  "observacoes": "Diretriz baseada em evidência de ultrassom neuromuscular no diagnóstico da neuropatia ulnar no cotovelo: o que o exame acrescenta."
+ },
+ {
+  "chave": "Assmus2011",
+  "decisao": "talvez",
+  "observacoes": "Diretriz alemã de síndrome do túnel cubital (revisão e manejo); conferir idioma e atualidade."
+ },
+ {
+  "chave": "Curti2021",
+  "decisao": "talvez",
+  "observacoes": "RS de sobrecarga biomecânica ocupacional e tendinopatias do cotovelo (acesso aberto): fatores de exposição do trabalhador com dor medial."
+ },
+ {
+  "chave": "Singh2024",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Weimer2025b",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Forder2024",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Giladi2015",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Douwes2025",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Zhang2025b",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Brunet2024",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Ameri2026",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Strelzow2026",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Wang2026b",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Philipsen2006",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Hoogvliet2013b",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "SemAutor1999",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "SemAutor1999c",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "DeLuca2025",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Bruni2023",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Kortlever2022b",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Weinheimer2019",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Dunning2024",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "tendinopatia lateral: pertence às aulas 1 e 2"
+ },
+ {
+  "chave": "Kamble2023",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "tendinopatia lateral: pertence às aulas 1 e 2"
+ },
+ {
+  "chave": "Giannikou2025",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "tendinopatia lateral: pertence às aulas 1 e 2"
+ },
+ {
+  "chave": "Cassidy2026",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica, de injeção ou cuidado perioperatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Moungondo2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica, de injeção ou cuidado perioperatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Bosman2022",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica, de injeção ou cuidado perioperatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Koopman2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica, de injeção ou cuidado perioperatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Li2024c",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica, de injeção ou cuidado perioperatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Kwan2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica, de injeção ou cuidado perioperatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Jegal2019",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica, de injeção ou cuidado perioperatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Blazar2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica, de injeção ou cuidado perioperatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Oner2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica, de injeção ou cuidado perioperatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Zan2023",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica, de injeção ou cuidado perioperatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Riaz2026",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica, de injeção ou cuidado perioperatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Pohl2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica, de injeção ou cuidado perioperatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Vitale2008",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica, de injeção ou cuidado perioperatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Peters2018",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica, de injeção ou cuidado perioperatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Tuncez2023",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica, de injeção ou cuidado perioperatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Nabil2026",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica, de injeção ou cuidado perioperatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Jimenez2020b",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "técnica cirúrgica, de injeção ou cuidado perioperatório; fora do que o fisioterapeuta decide"
+ },
+ {
+  "chave": "Chowley2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "recurso ou injetável fora do foco (PRP, laser, ondas de choque, outros)"
+ },
+ {
+  "chave": "Sajadi2026",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "recurso ou injetável fora do foco (PRP, laser, ondas de choque, outros)"
+ },
+ {
+  "chave": "Sumanapun2026",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "recurso ou injetável fora do foco (PRP, laser, ondas de choque, outros)"
+ },
+ {
+  "chave": "Ryskalin2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "recurso ou injetável fora do foco (PRP, laser, ondas de choque, outros)"
+ },
+ {
+  "chave": "KarakuzuGungor2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "recurso ou injetável fora do foco (PRP, laser, ondas de choque, outros)"
+ },
+ {
+  "chave": "Alam2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "recurso ou injetável fora do foco (PRP, laser, ondas de choque, outros)"
+ },
+ {
+  "chave": "Rhim2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "recurso ou injetável fora do foco (PRP, laser, ondas de choque, outros)"
+ },
+ {
+  "chave": "Frizziero2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "recurso ou injetável fora do foco (PRP, laser, ondas de choque, outros)"
+ },
+ {
+  "chave": "Zhang2026b",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "recurso ou injetável fora do foco (PRP, laser, ondas de choque, outros)"
+ },
+ {
+  "chave": "Faderani2026",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "recurso ou injetável fora do foco (PRP, laser, ondas de choque, outros)"
+ },
+ {
+  "chave": "Zhao2014",
+  "decisao": "excluir",
+  "motivo": "superado por evidência mais nova",
+  "observacoes": "coberto por Fiorini2018 e Chiang2026"
+ },
+ {
+  "chave": "Pathak2022",
+  "decisao": "excluir",
+  "motivo": "superado por evidência mais nova",
+  "observacoes": "coberto por Chiang2026"
+ },
+ {
+  "chave": "Supriyadi2024",
+  "decisao": "excluir",
+  "motivo": "qualidade insuficiente",
+  "observacoes": "revisão sem método claro no resumo"
+ },
+ {
+  "chave": "Savva2021",
+  "decisao": "excluir",
+  "motivo": "desenho inadequado",
+  "observacoes": "revisão narrativa geral de terapia manual em tendinopatias"
+ },
+ {
+  "chave": "Mitchell2024",
+  "decisao": "excluir",
+  "motivo": "desenho inadequado",
+  "observacoes": "revisão de escopo; Mitchell2026 é a síntese de diretrizes"
+ },
+ {
+  "chave": "Faszholz2024",
+  "decisao": "excluir",
+  "motivo": "superado por evidência mais nova",
+  "observacoes": "mesma pergunta de Jain2024 (scratch collapse)"
+ },
+ {
+  "chave": "Lo2023",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "epidemiologia, imagem ou população fora do foco das decisões da aula"
+ },
+ {
+  "chave": "Sallai2025",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "epidemiologia, imagem ou população fora do foco das decisões da aula"
+ },
+ {
+  "chave": "Yanko2025",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "epidemiologia, imagem ou população fora do foco das decisões da aula"
+ },
+ {
+  "chave": "McBain2019",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "epidemiologia, imagem ou população fora do foco das decisões da aula"
+ },
+ {
+  "chave": "Bezie2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "epidemiologia, imagem ou população fora do foco das decisões da aula"
+ },
+ {
+  "chave": "Xinling2026",
+  "decisao": "excluir",
+  "motivo": "outro",
+  "observacoes": "epidemiologia, imagem ou população fora do foco das decisões da aula"
+ },
+ {
+  "chave": "Grzelak2024",
+  "decisao": "talvez",
+  "observacoes": "RS da epicondilite medial (causas, sintomas, tratamento) em revista pouco conhecida: conferir método antes de usar."
+ },
+ {
+  "chave": "Drapeza2022",
+  "decisao": "talvez",
+  "observacoes": "RS/MA de bandagem na De Quervain: recurso que o fisioterapeuta usa."
+ },
+ {
+  "chave": "Chiarotto2023",
+  "decisao": "talvez",
+  "observacoes": "RS de exposições físicas e psicossociais no trabalho e distúrbios do cotovelo: contexto ocupacional da dor medial."
+ },
+ {
+  "chave": "Triplet2023",
+  "decisao": "talvez",
+  "observacoes": "RS de fatores que aumentam o estresse no cotovelo do arremessador: mecanismo para o caso do LCU."
+ },
+ {
+  "chave": "Frost2021",
+  "decisao": "talvez",
+  "observacoes": "RS: hipermobilidade do nervo ulnar e neuropatia no cotovelo (subluxação citada na aula base, slide 144)."
+ },
+ {
+  "chave": "Tamminga2021",
+  "decisao": "talvez",
+  "observacoes": "Consenso internacional de definições de caso de distúrbios musculoesqueléticos do trabalho (inclui epicondilite): critérios diagnósticos."
+ },
+ {
+  "chave": "VanDerMolen2021",
+  "decisao": "talvez",
+  "observacoes": "Revisão de escopo de critérios diagnósticos de distúrbios musculoesqueléticos ocupacionais."
+ },
+ {
+  "chave": "Harrington1998",
+  "decisao": "talvez",
+  "observacoes": "Definições de caso clássicas (inclui epicondilite medial) para vigilância ocupacional."
+ },
+ {
+  "chave": "Afridi2022",
+  "decisao": "excluir",
+  "motivo": "duplicata ou republicação",
+  "observacoes": "resumo da Cochrane Leow2021"
+ },
+ {
+  "chave": "Levine2022",
+  "decisao": "excluir",
+  "motivo": "superado por evidência mais nova",
+  "observacoes": "coberto por Chiang2026"
+ },
+ {
+  "chave": "Cushman2021",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "exclui de propósito as tenossinovites estenosantes"
+ },
+ {
+  "chave": "Huang2025c",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "cirurgia ou retorno ao esporte após cirurgia do LCU"
+ },
+ {
+  "chave": "Jackson2023",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "cirurgia ou retorno ao esporte após cirurgia do LCU"
+ },
+ {
+  "chave": "Jackson2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "cirurgia ou retorno ao esporte após cirurgia do LCU"
+ },
+ {
+  "chave": "Wallace2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "cirurgia ou retorno ao esporte após cirurgia do LCU"
+ },
+ {
+  "chave": "Roura2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "cirurgia ou retorno ao esporte após cirurgia do LCU"
+ },
+ {
+  "chave": "Griffith2021",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "cirurgia ou retorno ao esporte após cirurgia do LCU"
+ },
+ {
+  "chave": "Ose2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "cirurgia ou retorno ao esporte após cirurgia do LCU"
+ },
+ {
+  "chave": "Trofa2021",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "cirurgia ou retorno ao esporte após cirurgia do LCU"
+ },
+ {
+  "chave": "Dias2023",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "cirurgia ou retorno ao esporte após cirurgia do LCU"
+ },
+ {
+  "chave": "Vajapey2021",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "procedimento, injetável ou recurso fora do foco da aula"
+ },
+ {
+  "chave": "Azizi2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "procedimento, injetável ou recurso fora do foco da aula"
+ },
+ {
+  "chave": "Rohilla2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "procedimento, injetável ou recurso fora do foco da aula"
+ },
+ {
+  "chave": "Hong2023",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "procedimento, injetável ou recurso fora do foco da aula"
+ },
+ {
+  "chave": "JoseJerome2026",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "procedimento, injetável ou recurso fora do foco da aula"
+ },
+ {
+  "chave": "Crouch2023",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "procedimento, injetável ou recurso fora do foco da aula"
+ },
+ {
+  "chave": "Atthakomol2022",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "procedimento, injetável ou recurso fora do foco da aula"
+ },
+ {
+  "chave": "DoRosarioSaraiva2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "procedimento, injetável ou recurso fora do foco da aula"
+ },
+ {
+  "chave": "Jiravichitchai2024",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "procedimento, injetável ou recurso fora do foco da aula"
+ },
+ {
+  "chave": "Dunn2021",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "procedimento, injetável ou recurso fora do foco da aula"
+ },
+ {
+  "chave": "Fok2021",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "procedimento, injetável ou recurso fora do foco da aula"
+ },
+ {
+  "chave": "BulaOyola2021",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "procedimento, injetável ou recurso fora do foco da aula"
+ },
+ {
+  "chave": "Freund2023",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "procedimento, injetável ou recurso fora do foco da aula"
+ },
+ {
+  "chave": "Sajan2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "procedimento, injetável ou recurso fora do foco da aula"
+ },
+ {
+  "chave": "Sconfienza2020",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "procedimento, injetável ou recurso fora do foco da aula"
+ },
+ {
+  "chave": "Jiravichitchai2025",
+  "decisao": "excluir",
+  "motivo": "intervenção diferente",
+  "observacoes": "procedimento, injetável ou recurso fora do foco da aula"
+ },
+ {
+  "chave": "Anzillotti2025",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Perlmutter2025",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Ogawa2022",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Benaroch2026",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Braud2026",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Dogar2026",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Gunenc2026",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Chung2022",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Kadar2024",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Ghai2023",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Landau2022",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Worden2024",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Jeong2022",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Gouveia2021",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Chiang2021",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Aruchunan2024",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Schaeffer2021",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "AlvarezNemegyei2011",
+  "decisao": "excluir",
+  "motivo": "fora do tema"
+ },
+ {
+  "chave": "Sirithiantong2021",
+  "decisao": "excluir",
+  "motivo": "população diferente",
+  "observacoes": "polegar em gatilho pediátrico"
+ },
+ {
+  "chave": "Bateman2022",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "tendinopatia lateral: pertence às aulas 1 e 2"
+ },
+ {
+  "chave": "Evans2021",
+  "decisao": "excluir",
+  "motivo": "fora do tema",
+  "observacoes": "tendinopatia lateral: pertence às aulas 1 e 2"
+ }
+]

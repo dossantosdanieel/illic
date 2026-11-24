@@ -33,7 +33,7 @@ de medir (Roediger & Karpicke 2006; Butler & Roediger 2008): o comentário do ga
 
 | Erro | Exemplo de distrator |
 |---|---|
-| Ler risco relativo como absoluto | "Passar corta o risco em 84%" (com 1 evento em 18) |
+| Ler risco relativo como absoluto | "Passar corta o risco em 84%" (com 1 evento em 18); calcular o NNT com a redução relativa |
 | Intervalo que cruza o nulo = "não funciona" | "Não há efeito: o intervalo cruza o 1" |
 | Significância estatística = importância clínica | "p < 0,05, então o paciente vai sentir a diferença" (sem olhar a MCID) |
 | Sensibilidade lida como valor preditivo | "Ele tem 85% de chance de não voltar" |
@@ -85,7 +85,7 @@ certa é a mais longa em mais de um terço das questões.
 > A) Cerca de 2. B) Cerca de 21. C) Cerca de 5. D) Cerca de 3.
 >
 > **Gabarito:** C. Diferença absoluta 20,8 pontos; NNT = 1 ÷ 0,208 ≈ 5. A suposição de causa é forte:
-> coorte, grupos pequenos, intervalo largo. **Distratores:** A usa o risco relativo como NNT; B confunde
+> coorte, grupos pequenos, intervalo largo. **Distratores:** A usa a redução relativa do risco (62,5%) no lugar da absoluta; B confunde
 > pontos percentuais com NNT; D usa o risco de um grupo só.
 
 ### Bom (enquete de aula, leitura de intervalo)
@@ -107,7 +107,12 @@ com o número de eventos.
 - Gabarito distribuído entre as letras (o script avisa se uma letra passa de metade).
 - Números com vírgula decimal e unidade. Todo número do cenário tem origem (artigo ou caso fictício).
 - Pré-teste sem nota e sem gabarito; pós-teste 7 a 14 dias depois, com feedback depois do envio (o
-  intervalo usa o efeito de espaçamento: Cepeda et al. 2006).
+  intervalo usa o efeito de espaçamento: Cepeda et al. 2006). Se houver tempo para escrever, prefira um
+  pós-teste paralelo (mesmo objetivo e mesmo nível, caso diferente) ao mesmo item do pré-teste: o item
+  repetido mede em parte a lembrança da própria questão.
+- Pelo menos uma questão por objetivo (o `materiais.py` avisa quando falta) e nenhuma cópia das enquetes.
+- Questão sobre conduta que é proposta clínica: pergunte "qual é a mais defensável", não "o que a aula
+  propôs" (o pré-teste vem antes da aula), e diga no comentário que é proposta clínica.
 
 ## Esquema do `questoes.json`
 
@@ -123,7 +128,7 @@ com o número de eventos.
       "opcoes": {"A": "Cerca de 2.", "B": "Cerca de 21.", "C": "Cerca de 5.", "D": "Cerca de 3."},
       "gabarito": "C",
       "comentario": "Risco absoluto: 33,3% − 12,5% = 20,8 pontos (...)",
-      "distratores": {"A": "Usar o risco relativo como NNT.", "B": "(...)", "D": "(...)"},
+      "distratores": {"A": "Usar a redução relativa do risco no lugar da absoluta.", "B": "(...)", "D": "(...)"},
       "referencia": ["Grindem2016"]
     }
   ]

@@ -171,7 +171,10 @@ class Construtor:
         alt = ins[1] + self.h_pars(pars, w - ins[0] - ins[2]) + ins[3]
         if h is not None:
             alt = max(alt, h)
-        self.caixa(sl, x, y, w, alt, pars, fill=fill, borda=borda, ins=ins, forma="cartao")
+        # Altura calculada pelo texto: a medida usa a fonte mais larga disponível, então no PowerPoint
+        # (com Lato) pode sobrar uma linha. Centralizar evita a faixa com espaço vazio embaixo.
+        self.caixa(sl, x, y, w, alt, pars, fill=fill, borda=borda, ins=ins, forma="cartao",
+                   ancora="m" if h is None else "t")
         return alt
 
     def h_cartao(self, w, pars, ins=(0.23, 0.14, 0.15, 0.13)) -> float:
@@ -222,7 +225,8 @@ class Construtor:
         if olho:
             p = olho_par(olho, "ciano_claro" if escuro else "petroleo")
             if self.med.largura(p["texto"], 12, True, 1.5) > x_pil - M.ME - 0.25:
-                self.aviso("o olho (texto pequeno acima do título) encosta na pílula de interação: encurte.")
+                self.aviso("o olho (texto pequeno acima do título) não cabe em uma linha antes da pílula e cai "
+                           "em cima do título: encurte para poucas palavras (\"Bloco 2 · A evidência\").", "erro")
             self.caixa(sl, M.ME, M.Y_OLHO, x_pil - M.ME - 0.2, 0.228, [p])
         tit = s.get("titulo")
         if not tit:
@@ -351,10 +355,11 @@ class Construtor:
             self.caixa(sl, M.ME, M.Y_OLHO, x_pil - M.ME - 0.2, 0.228, [olho_par(s["olho"], "ciano_claro")])
         y = 6.42
         linhas_extra = []
-        if s.get("desafio"):
-            linhas_extra.append(par(f"**Desafio:** {s['desafio']}", 14, "lavanda", ls=19.6, cor_neg="ciano_claro"))
+        # mesma ordem do slide de tarefa: primeiro o degrau de entrada, depois o desafio
         if s.get("ancora"):
             linhas_extra.append(par(f"**Para começar:** {s['ancora']}", 14, "lavanda", ls=19.6, cor_neg="ciano_claro"))
+        if s.get("desafio"):
+            linhas_extra.append(par(f"**Desafio:** {s['desafio']}", 14, "lavanda", ls=19.6, cor_neg="ciano_claro"))
         for p in reversed(linhas_extra):
             h = self.h_pars([p], 10.014)
             y -= h
@@ -526,6 +531,14 @@ class Construtor:
         cores = {"alerta": "alerta", "ciano": "ciano", "marinho": "marinho", "petroleo": "petroleo"}
         for d in M.como_lista(s.get("destaques")):
             try:
+                coords = [d.get(k) for k in ("x", "y") if d.get(k) is not None]
+                if d.get("w") is not None:
+                    coords += [float(d["x"]) + float(d["w"]), float(d["y"]) + float(d.get("h", 0))]
+                for k in ("de", "para"):
+                    coords += list(d.get(k) or [])
+                if any(not -0.02 <= float(c) <= 1.02 for c in coords):
+                    self.aviso(f"destaque {d.get('texto') or d.get('tipo')!r} sai da figura: as coordenadas são "
+                               "relativas à imagem e vão de 0 a 1.", "erro")
                 cor = cores.get(d.get("cor", "alerta"), "alerta")
                 tipo = d.get("tipo", "retangulo")
                 if tipo in ("retangulo", "elipse"):
@@ -624,8 +637,11 @@ class Construtor:
             if not self.seco:
                 ppp = info["largura_px"] / iw
                 if iw < pl["wmax"] * 0.72 and ih < pl["hmax"] * 0.72:
-                    self.aviso(f"figura pequena no slide ({iw:.1f} × {ih:.1f} pol): o recorte tem só "
+                    self.aviso(f"figura pequena no slide ({M.num(iw)} × {M.num(ih)} pol): o recorte tem só "
                                f"{info['largura_px']} × {info['altura_px']} px. Recorte de novo em 300 dpi ou mais.")
+                if iw < 2.5 or ih < 1.8:
+                    self.aviso(f"figura com proporção extrema ocupa só {M.num(iw)} × {M.num(ih)} pol no slide e fica "
+                               "ilegível: recorte só o painel que a aula usa.")
                 if ppp < M.PPP_MINIMO - 1:
                     self.aviso(f"figura ampliada além da resolução útil ({ppp:.0f} px/pol).", "erro")
         else:
@@ -799,8 +815,12 @@ class Construtor:
         wt = wc - 0.25 - 0.15
         pt_n = 48
         for it in itens:
-            while pt_n > 30 and self.med.largura(str(it.get("numero", "")), pt_n, True) > wt:
+            while pt_n > 28 and self.med.largura(str(it.get("numero", "")), pt_n, True) > wt:
                 pt_n -= 2
+        longos = [str(it.get("numero", "")) for it in itens if self.med.largura(str(it.get("numero", "")), pt_n, True) > wt]
+        if longos:
+            self.aviso(f"número grande demais para o cartão ({'; '.join(longos)}): deixe só o número no campo "
+                       "'numero' e passe o intervalo ou a unidade longa para o 'rotulo'.", "erro")
         pt_l = self.pt_r(14, r, 12)
         h_rot = max([self.h_pars([par(it.get("rotulo"), pt_l, "texto", ls=pt_l * 1.4)], wt) for it in itens] or [0.3])
         hc = 0.17 + pt_n * 1.15 / 72 + 0.03 + h_rot + 0.22
@@ -819,15 +839,21 @@ class Construtor:
         return M.Y_LIMITE - y
 
     # ---- graficos nativos
-    def _legenda_manual(self, sl, series, x, y):
-        """Legenda desenhada como no deck de referencia: quadradinho + nome."""
+    def _legenda_manual(self, sl, series, x, y, largura=None):
+        """Legenda desenhada como no deck de referencia: quadradinho + nome. Quebra a linha quando
+        passa da largura do grafico. Devolve a altura ocupada."""
+        x0, linhas = x, 1
+        largura = largura or M.LC
         for i, se in enumerate(series):
             cor = se.get("cor") or M.CORES_SERIES[i % len(M.CORES_SERIES)]
             nome = str(se.get("nome", ""))
-            self.caixa(sl, x, y + 0.035, 0.167, 0.167, fill=cor, forma="cartao", raio=0.028)
             w = self.med.largura(nome, 12) + 0.1
+            if x > x0 and x + 0.25 + w > x0 + largura:
+                x, y, linhas = x0, y + 0.3, linhas + 1
+            self.caixa(sl, x, y + 0.035, 0.167, 0.167, fill=cor, forma="cartao", raio=0.028)
             self.caixa(sl, x + 0.25, y, w, 0.24, [par(nome, 12, "texto", ls=15.6)])
             x += 0.25 + w + 0.25
+        return 0.24 + 0.3 * (linhas - 1)
 
     def _grafico(self, sl, s, x, y, w, h, tipo):
         if self.seco or sl is None:
@@ -847,6 +873,13 @@ class Construtor:
         gf = sl.shapes.add_chart(xl, Inches(x), Inches(y), Inches(w), Inches(h), cd)
         gf.name = "Grafico nativo (editavel)"
         ch = gf.chart
+        # O modelo de colunas/barras do python-pptx grava ids de eixo negativos; o esquema OOXML pede
+        # inteiro sem sinal. Usa o valor absoluto (fica abaixo de 2^31: o LibreOffice lê como inteiro
+        # com sinal e perde o eixo de categorias se o id passar disso).
+        for el in ch._chartSpace.iter(qn("c:axId"), qn("c:crossAx")):
+            v = int(el.get("val"))
+            if v < 0:
+                el.set("val", str(abs(v)))
         ch.has_title = False
         ch.has_legend = False
         ch.font.name = M.FONTE
@@ -916,6 +949,10 @@ class Construtor:
                         pto.marker.format.fill.solid()
                         pto.marker.format.fill.fore_color.rgb = rgb("alerta")
                         pto.marker.format.line.color.rgb = rgb("alerta")
+                        # O PowerPoint pinta o marcador pelo spPr do marcador (acima). O render do
+                        # LibreOffice ignora essa cor e mostra o ponto maior, na cor da serie; pintar
+                        # o spPr do ponto deixaria vermelho no LibreOffice, mas tambem o trecho de
+                        # linha no PowerPoint. Fica o que e certo no PowerPoint.
             else:
                 se.format.fill.solid()
                 se.format.fill.fore_color.rgb = rgb(cor)
@@ -935,15 +972,25 @@ class Construtor:
         w = 6.9 if lateral else M.LC
         y = y0
         if s.get("rotulo"):
-            self.caixa(sl, M.ME, y, w, 0.228, [olho_par(s["rotulo"], "texto2")])
-            y += 0.228 + 0.1
+            p_rot = olho_par(s["rotulo"], "texto2")
+            n_rot = self.n_linhas(p_rot, w)
+            if n_rot > 1:
+                self.aviso("o rótulo do gráfico ocupa mais de uma linha: encurte (é um olho, não uma frase).")
+            h_rot = n_rot * p_rot["ls"] / 72.0
+            self.caixa(sl, M.ME, y, w, h_rot, [p_rot])
+            y += h_rot + 0.1
         mostra_leg = len(series) > 1 or s.get("legenda_destaque")
         if mostra_leg:
             leg = list(series) if len(series) > 1 else []
             if s.get("legenda_destaque"):
                 leg.append({"nome": s["legenda_destaque"], "cor": "alerta"})
-            self._legenda_manual(sl, leg, M.ME, y)
-            y += 0.24 + 0.1
+            y += self._legenda_manual(sl, leg, M.ME, y, w) + 0.1
+        cats = [str(c) for c in M.como_lista(s.get("categorias"))]
+        if cats and tipo == "barras" and (s.get("orientacao") or "vertical") != "horizontal":
+            vaga = w / len(cats) - 0.1
+            if max(self.med.largura(c, 12) for c in cats) > 2 * vaga:
+                self.aviso("nomes de categoria longos para colunas: o PowerPoint vai girar os rótulos. "
+                           "Encurte os nomes ou use \"orientacao\": \"horizontal\".")
         p_nota = par(s["nota"], 12, "texto2", ls=15.6) if s.get("nota") else None
         h_nota = (self.h_pars([p_nota], w) + 0.1) if p_nota else 0
         y_lat = self.pilha(sl, lateral, M.ME + w + 0.35, y0, M.MD - (M.ME + w + 0.35), r) if lateral else y0
@@ -1176,9 +1223,22 @@ class Construtor:
             sp["olho"] = s.get("olho") or "Fontes"
             sp["titulo"] = (s.get("titulo") or "**Referências**") + (f" ({pag})" if pag > 1 else "")
             y0 = self.cabecalho(sl, sp)
-            for x in xs:
+            # quantas cabem nesta pagina (duas colunas cheias) e quantas vao para a esquerda:
+            # como no deck de referencia, as duas colunas ficam com alturas parecidas
+            cap, j = [], i
+            for _x in xs:
+                y, c = y0, 0
+                while j < len(blocos) and y + blocos[j][1] <= y_fim:
+                    y += blocos[j][1] + 0.042
+                    j += 1
+                    c += 1
+                cap.append(c)
+            n_pag = sum(cap)
+            # poucas referencias (ate 8 linhas) ficam numa coluna so, como uma lista curta
+            limite_esq = i + (cap[0] if n_pag <= 8 else min(cap[0], (n_pag + 1) // 2))
+            for k, x in enumerate(xs):
                 y = y0
-                while i < len(blocos) and y + blocos[i][1] <= y_fim:
+                while i < len(blocos) and y + blocos[i][1] <= y_fim and (k > 0 or i < limite_esq):
                     t, h = blocos[i]
                     self.caixa(sl, x, y, wcol, h, [par(t, pt, "texto", ls=ls)])
                     y += h + 0.042         # passo de 0,286 pol entre referencias de uma linha, como no deck de referencia
@@ -1225,7 +1285,8 @@ class Construtor:
                 if r_ok > 0 and folga >= -0.005:
                     self.aviso(f"texto reduzido em {r_ok} pt para caber. Se puder, corte palavras.")
                 if folga < -0.005:
-                    self.aviso(f"o conteúdo não cabe no slide nem com a fonte reduzida (sobram {abs(folga):.2f} pol). "
+                    passa = f"{abs(folga):.2f}".replace(".", ",")
+                    self.aviso(f"o conteúdo não cabe no slide nem com a fonte reduzida (passa {passa} pol do limite). "
                                "Corte texto ou divida em dois slides.", "erro")
                 fonte = None
                 if tipo == "figura":

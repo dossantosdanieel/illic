@@ -1,0 +1,9282 @@
+[
+  {
+    "chave": "Rais2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "The role of scapular muscles strengthening in lateral epicondylalgia rehabilitation: A systematic review with meta-analysis"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1016/j.jht.2026.09.013"
+    ],
+    "pmids": [
+      "43015197"
+    ]
+  },
+  {
+    "chave": "Cha2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Comparative Effectiveness of Focused Versus Radial Extracorporeal Shockwave Therapy and Leukocyte-Poor Versus Leukocyte-Rich Platelet-Rich Plasma for Lateral Epicondylitis: A Network Meta-Analysis"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.3390/jcm15176679"
+    ],
+    "pmids": [
+      "42739684"
+    ]
+  },
+  {
+    "chave": "Yin2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Efficacy evaluation of acupuncture combined with manipulation for lateral epicondylitis: a meta-analysis"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.3389/fmed.2026.1892618"
+    ],
+    "pmids": [
+      "42723768"
+    ]
+  },
+  {
+    "chave": "Schumacher2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Inadequate cervicothoracic assessment is nearly universal for screening participants with lateral elbow tendinopathy: A systematic review of 208 randomized controlled trials"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1177/17585732261467932"
+    ],
+    "pmids": [
+      "42437185"
+    ]
+  },
+  {
+    "chave": "Xu2026b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Time-Dependent Efficacy and Safety of Percutaneous Treatments for Lateral Epicondylitis: A Systematic Review and Network Meta-Analysis"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.2147/jpr.s604185"
+    ],
+    "pmids": [
+      "42079417"
+    ]
+  },
+  {
+    "chave": "Ouyang2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Time-dependent comparative efficacy of non-surgical treatments for pain relief in lateral epicondylitis: a systematic review and network meta-analysis"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.3389/fphys.2026.1782562"
+    ],
+    "pmids": [
+      "41971661"
+    ]
+  },
+  {
+    "chave": "Heales2025",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "A systematic review of the quality and engagement of TikTok videos of resistance exercises for the management of lateral elbow tendinopathy"
+    ],
+    "anos": [
+      2025
+    ],
+    "dois": [
+      "10.1016/j.jht.2025.02.016"
+    ],
+    "pmids": [
+      "40274443"
+    ]
+  },
+  {
+    "chave": "Barreto2024",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "The efficacy of Botulinum Toxin in Tennis Elbow: a meta-analysis of randomized clinical trials"
+    ],
+    "anos": [
+      2024
+    ],
+    "dois": [
+      "10.1007/s00264-024-06339-6"
+    ],
+    "pmids": [
+      "39347988"
+    ]
+  },
+  {
+    "chave": "Zhang2024c",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Extracorporeal Shock Wave Therapy Versus Local Corticosteroid Injection for Chronic Lateral Epicondylitis: A Systematic Review with Meta-Analysis of Randomized Controlled Trials",
+      "Extracorporeal Shock Wave Therapy Versus Local Corticosteroid Injection for Chronic Lateral Epicondylitis: A Systematic Review with Meta‐Analysis of Randomized Controlled Trials"
+    ],
+    "anos": [
+      2024
+    ],
+    "dois": [
+      "10.1111/os.14212"
+    ],
+    "pmids": [
+      "39198038"
+    ]
+  },
+  {
+    "chave": "Wallis2024",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Manual therapy and exercise for lateral elbow pain"
+    ],
+    "anos": [
+      2024
+    ],
+    "dois": [
+      "10.1002/14651858.cd013042.pub2"
+    ],
+    "pmids": [
+      "38802121"
+    ]
+  },
+  {
+    "chave": "Lowdon2024",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Comparison of Interventions for Lateral Elbow Tendinopathy: A Systematic Review and Network Meta-Analysis for Patient-Rated Tennis Elbow Evaluation Pain Outcome"
+    ],
+    "anos": [
+      2024
+    ],
+    "dois": [
+      "10.1016/j.jhsa.2024.03.007"
+    ],
+    "pmids": [
+      "38678448"
+    ]
+  },
+  {
+    "chave": "Sharma2024c",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Physical therapy intervention versus corticosteroid injection for lateral elbow tendinopathy. Does slow and steady win the race? - A systematic review",
+      "Physical therapy intervention versus corticosteroid injection for lateral elbow tendinopathy. Does slow and steady win the race? – A systematic review"
+    ],
+    "anos": [
+      2022,
+      2024
+    ],
+    "dois": [
+      "10.1177/17585732221132545"
+    ],
+    "pmids": [
+      "38425735"
+    ]
+  },
+  {
+    "chave": "Campos2024",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Effectiveness of non-invasive therapies on pain, maximum grip strength, disability, and quality of life for lateral elbow tendinopathy: A systematic review and meta-analysis"
+    ],
+    "anos": [
+      2024
+    ],
+    "dois": [
+      "10.1016/j.bjpt.2024.100596"
+    ],
+    "pmids": [
+      "38402668"
+    ]
+  },
+  {
+    "chave": "Cooper2023",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Exercise therapy for tendinopathy: a mixed-methods evidence synthesis exploring feasibility, acceptability and effectiveness"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.3310/tfws2748"
+    ],
+    "pmids": [
+      "37929629"
+    ]
+  },
+  {
+    "chave": "VilchezCavazos2025",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Clinical efficacy of botulinum toxin in lateral elbow tendinopathy: A systematic review and meta-analysis of randomized controlled trials"
+    ],
+    "anos": [
+      2023,
+      2025
+    ],
+    "dois": [
+      "10.1016/j.otsr.2023.103733"
+    ],
+    "pmids": [
+      "37890524"
+    ]
+  },
+  {
+    "chave": "Kinney2023",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Nonoperative Management of Lateral Epicondyle Tendinopathy: An Umbrella Review"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.1016/j.jcm.2023.04.004"
+    ],
+    "pmids": [
+      "37644995"
+    ]
+  },
+  {
+    "chave": "Chen2024",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "A meta-analysis of the risk factors for lateral epicondylitis"
+    ],
+    "anos": [
+      2024
+    ],
+    "dois": [
+      "10.1016/j.jht.2023.05.013"
+    ],
+    "pmids": [
+      "37580201"
+    ]
+  },
+  {
+    "chave": "Hohmann2023",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Corticosteroid injections for the treatment of lateral epicondylitis are superior to platelet-rich plasma at 1 month but platelet-rich plasma is more effective at 6 months: an updated systematic review and meta-analysis of level 1 and 2 studies"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.1016/j.jse.2023.04.018"
+    ],
+    "pmids": [
+      "37247780"
+    ]
+  },
+  {
+    "chave": "Eapen2023",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "A systematic review of the effectiveness of wrist manipulative therapy in patients with lateral epicondylitis"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.1016/j.jht.2022.10.002"
+    ],
+    "pmids": [
+      "36918310"
+    ]
+  },
+  {
+    "chave": "Tavassoli2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Clinical efficacy of local injection therapies for lateral epicondylitis: A systematic review and network meta-analysis",
+      "Clinical efficacy of local injection therapies for lateral epicondylitis: A systematic review and network meta-analysis."
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.22088/cjim.13.2.1"
+    ],
+    "pmids": [
+      "35919654"
+    ]
+  },
+  {
+    "chave": "Li2022b",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "A systematic review on the efficacy of different types of platelet-rich plasma in the management of lateral epicondylitis"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.1016/j.jse.2022.02.017"
+    ],
+    "pmids": [
+      "35337955"
+    ]
+  },
+  {
+    "chave": "Lapner2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Nonoperative treatment of lateral epicondylitis: a systematic review and meta-analysis"
+    ],
+    "anos": [
+      2021,
+      2022
+    ],
+    "dois": [
+      "10.1016/j.jseint.2021.11.010"
+    ],
+    "pmids": [
+      "35252934"
+    ]
+  },
+  {
+    "chave": "Zhu2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Effects of Hypertonic Dextrose Injection (Prolotherapy) in Lateral Elbow Tendinosis: A Systematic Review and Meta-analysis"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.1016/j.apmr.2022.01.166"
+    ],
+    "pmids": [
+      "35240122"
+    ]
+  },
+  {
+    "chave": "Liu2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Extracorporeal Shock Wave Therapy Shows Superiority Over Injections for Pain Relief and Grip Strength Recovery in Lateral Epicondylitis: A Systematic Review and Network Meta-analysis",
+      "Extracorporeal Shock Wave Therapy Shows Superiority Over Injections for Pain Relief and Grip Strength Recovery in Lateral Epicondylitis: A Systematic Review and Network Meta‐analysis"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.1016/j.arthro.2022.01.025"
+    ],
+    "pmids": [
+      "35093494"
+    ]
+  },
+  {
+    "chave": "Ikonen2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Persistent Tennis Elbow Symptoms Have Little Prognostic Value: A Systematic Review and Meta-analysis"
+    ],
+    "anos": [
+      2021,
+      2022
+    ],
+    "dois": [
+      "10.1097/corr.0000000000002058"
+    ],
+    "pmids": [
+      "34874323"
+    ]
+  },
+  {
+    "chave": "Shim2022",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "The effect of leucocyte concentration of platelet-rich plasma on outcomes in patients with lateral epicondylitis: a systematic review and meta-analysis"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.1016/j.jse.2021.10.036"
+    ],
+    "pmids": [
+      "34861405"
+    ]
+  },
+  {
+    "chave": "Kim2022",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Platelet-rich plasma injection vs. operative treatment for lateral elbow tendinosis: a systematic review and meta-analysis"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.1016/j.jse.2021.09.008"
+    ],
+    "pmids": [
+      "34656779"
+    ]
+  },
+  {
+    "chave": "Heales2021",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "An Investigation of Maximal Strength of the Upper Limb Bilaterally in Individuals With Lateral Elbow Tendinopathy: A Systematic Review With Meta-Analysis"
+    ],
+    "anos": [
+      2021
+    ],
+    "dois": [
+      "10.1093/ptj/pzab230"
+    ],
+    "pmids": [
+      "34636922"
+    ]
+  },
+  {
+    "chave": "Yoon2021",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "The Beneficial Effects of Eccentric Exercise in the Management of Lateral Elbow Tendinopathy: A Systematic Review and Meta-Analysis"
+    ],
+    "anos": [
+      2021
+    ],
+    "dois": [
+      "10.3390/jcm10173968"
+    ],
+    "pmids": [
+      "34501416"
+    ]
+  },
+  {
+    "chave": "Karanasios2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Diagnostic accuracy of examination tests for lateral elbow tendinopathy (LET) - A systematic review",
+      "Diagnostic accuracy of examination tests for lateral elbow tendinopathy (LET) – A systematic review"
+    ],
+    "anos": [
+      2021,
+      2022
+    ],
+    "dois": [
+      "10.1016/j.jht.2021.02.002"
+    ],
+    "pmids": [
+      "33814224"
+    ]
+  },
+  {
+    "chave": "Karanasios2021b",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Clinical effectiveness of shockwave therapy in lateral elbow tendinopathy: systematic review and meta-analysis"
+    ],
+    "anos": [
+      2021
+    ],
+    "dois": [
+      "10.1177/02692155211006860"
+    ],
+    "pmids": [
+      "33813913"
+    ]
+  },
+  {
+    "chave": "Rio2021",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Sensory Processing in People With and Without Tendinopathy: A Systematic Review With Meta-analysis of Local, Regional, and Remote Sites in Upper- and Lower-Limb Conditions"
+    ],
+    "anos": [
+      2021
+    ],
+    "dois": [
+      "10.2519/jospt.2021.9417"
+    ],
+    "pmids": [
+      "33383996"
+    ]
+  },
+  {
+    "chave": "Karanasios2021",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Exercise interventions in lateral elbow tendinopathy have better outcomes than passive interventions, but the effects are small: a systematic review and meta-analysis of 2123 subjects in 30 trials"
+    ],
+    "anos": [
+      2020,
+      2021
+    ],
+    "dois": [
+      "10.1136/bjsports-2020-102525"
+    ],
+    "pmids": [
+      "33148599"
+    ]
+  },
+  {
+    "chave": "Shahabi2020",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "The effects of counterforce brace on pain in subjects with lateral elbow tendinopathy: A systematic review and meta-analysis of randomized controlled trials"
+    ],
+    "anos": [
+      2020
+    ],
+    "dois": [
+      "10.1177/0309364620930618"
+    ],
+    "pmids": [
+      "32635812"
+    ]
+  },
+  {
+    "chave": "NavarroSantana2020",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Effects of trigger point dry needling on lateral epicondylalgia of musculoskeletal origin: a systematic review and meta-analysis"
+    ],
+    "anos": [
+      2020
+    ],
+    "dois": [
+      "10.1177/0269215520937468"
+    ],
+    "pmids": [
+      "32576044"
+    ]
+  },
+  {
+    "chave": "Heales2020",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Evaluating the immediate effect of forearm and wrist orthoses on pain and function in individuals with lateral elbow tendinopathy: A systematic review"
+    ],
+    "anos": [
+      2020
+    ],
+    "dois": [
+      "10.1016/j.msksp.2020.102147"
+    ],
+    "pmids": [
+      "32452393"
+    ]
+  },
+  {
+    "chave": "Chen2021",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Effectiveness of eccentric strengthening in the treatment of lateral elbow tendinopathy: A systematic review with meta-analysis"
+    ],
+    "anos": [
+      2020,
+      2021
+    ],
+    "dois": [
+      "10.1016/j.jht.2020.02.002"
+    ],
+    "pmids": [
+      "32284219"
+    ]
+  },
+  {
+    "chave": "Zhong2020",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Kinesio tape reduces pain in patients with lateral epicondylitis: A meta-analysis of randomized controlled trials"
+    ],
+    "anos": [
+      2020
+    ],
+    "dois": [
+      "10.1016/j.ijsu.2020.02.044"
+    ],
+    "pmids": [
+      "32165280"
+    ]
+  },
+  {
+    "chave": "George2019",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Sticking to the facts: A systematic review of the effects of therapeutic tape in lateral epicondylalgia"
+    ],
+    "anos": [
+      2019
+    ],
+    "dois": [
+      "10.1016/j.ptsp.2019.08.011"
+    ],
+    "pmids": [
+      "31518778"
+    ]
+  },
+  {
+    "chave": "Mansfield2019",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "The Effects of Needling Therapies on Muscle Force Production: A Systematic Review and Meta-analysis"
+    ],
+    "anos": [
+      2019
+    ],
+    "dois": [
+      "10.2519/jospt.2019.8270"
+    ],
+    "pmids": [
+      "30501386"
+    ]
+  },
+  {
+    "chave": "Lian2019",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Comparative Efficacy and Safety of Nonsurgical Treatment Options for Enthesopathy of the Extensor Carpi Radialis Brevis: A Systematic Review and Meta-analysis of Randomized Placebo-Controlled Trials"
+    ],
+    "anos": [
+      2018,
+      2019
+    ],
+    "dois": [
+      "10.1177/0363546518801914"
+    ],
+    "pmids": [
+      "30380334"
+    ]
+  },
+  {
+    "chave": "Lucado2019",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Do joint mobilizations assist in the recovery of lateral elbow tendinopathy? A systematic review and meta-analysis"
+    ],
+    "anos": [
+      2018,
+      2019
+    ],
+    "dois": [
+      "10.1016/j.jht.2018.01.010"
+    ],
+    "pmids": [
+      "29705077"
+    ]
+  },
+  {
+    "chave": "Healy2018",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "A systematic review of randomised controlled trials assessing effectiveness of prosthetic and orthotic interventions"
+    ],
+    "anos": [
+      2018
+    ],
+    "dois": [
+      "10.1371/journal.pone.0192094"
+    ],
+    "pmids": [
+      "29538382"
+    ]
+  },
+  {
+    "chave": "Laimi2018",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Effectiveness of myofascial release in treatment of chronic musculoskeletal pain: a systematic review"
+    ],
+    "anos": [
+      2017,
+      2018
+    ],
+    "dois": [
+      "10.1177/0269215517732820"
+    ],
+    "pmids": [
+      "28956477"
+    ]
+  },
+  {
+    "chave": "Basson2017",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "The Effectiveness of Neural Mobilization for Neuromusculoskeletal Conditions: A Systematic Review and Meta-analysis"
+    ],
+    "anos": [
+      2017
+    ],
+    "dois": [
+      "10.2519/jospt.2017.7117"
+    ],
+    "pmids": [
+      "28704626"
+    ]
+  },
+  {
+    "chave": "Lin2018",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Comparative effectiveness of botulinum toxin versus non-surgical treatments for treating lateral epicondylitis: a systematic review and meta-analysis"
+    ],
+    "anos": [
+      2017,
+      2018
+    ],
+    "dois": [
+      "10.1177/0269215517702517"
+    ],
+    "pmids": [
+      "28349703"
+    ]
+  },
+  {
+    "chave": "Zwerus2018",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Physical examination of the elbow, what is the evidence? A systematic literature review"
+    ],
+    "anos": [
+      2017,
+      2018
+    ],
+    "dois": [
+      "10.1136/bjsports-2016-096712"
+    ],
+    "pmids": [
+      "28249855"
+    ]
+  },
+  {
+    "chave": "Descatha2016",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Lateral Epicondylitis and Physical Exposure at Work? A Review of Prospective Studies and Meta-Analysis",
+      "Lateral Epicondylitis and Physical Exposure at Work? A Review of Prospective Studies and Meta‐Analysis"
+    ],
+    "anos": [
+      2016
+    ],
+    "dois": [
+      "10.1002/acr.22874"
+    ],
+    "pmids": [
+      "26946473"
+    ]
+  },
+  {
+    "chave": "Cox2016",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Effectiveness of Acupuncture Therapies to Manage Musculoskeletal Disorders of the Extremities: A Systematic Review"
+    ],
+    "anos": [
+      2016
+    ],
+    "dois": [
+      "10.2519/jospt.2016.6270"
+    ],
+    "pmids": [
+      "27117725"
+    ]
+  },
+  {
+    "chave": "Dion2017",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Are Passive Physical Modalities Effective for the Management of Common Soft Tissue Injuries of the Elbow? A Systematic Review by the Ontario Protocol for Traffic Injury Management (OPTIMa) Collaboration",
+      "Are Passive Physical Modalities Effective for the Management of Common Soft Tissue Injuries of the Elbow?: A Systematic Review by the Ontario Protocol for Traffic Injury Management (OPTIMa) Collaboration"
+    ],
+    "anos": [
+      2016,
+      2017
+    ],
+    "dois": [
+      "10.1097/ajp.0000000000000368"
+    ],
+    "pmids": [
+      "27022675"
+    ]
+  },
+  {
+    "chave": "Dong2016",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Injection therapies for lateral epicondylalgia: a systematic review and Bayesian network meta-analysis"
+    ],
+    "anos": [
+      2015,
+      2016
+    ],
+    "dois": [
+      "10.1136/bjsports-2014-094387"
+    ],
+    "pmids": [
+      "26392595"
+    ]
+  },
+  {
+    "chave": "OrtegaCastillo2016",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Effectiveness of the eccentric exercise therapy in physically active adults with symptomatic shoulder impingement or lateral epicondylar tendinopathy: A systematic review"
+    ],
+    "anos": [
+      2015,
+      2016
+    ],
+    "dois": [
+      "10.1016/j.jsams.2015.06.007"
+    ],
+    "pmids": [
+      "26304796"
+    ]
+  },
+  {
+    "chave": "Weber2015",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Efficacy of physical therapy for the treatment of lateral epicondylitis: a meta-analysis"
+    ],
+    "anos": [
+      2015
+    ],
+    "dois": [
+      "10.1186/s12891-015-0665-4"
+    ],
+    "pmids": [
+      "26303397"
+    ]
+  },
+  {
+    "chave": "Long2015",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "What is the clinical effectiveness and cost-effectiveness of conservative interventions for tendinopathy? An overview of systematic reviews of clinical effectiveness and systematic review of economic evaluations"
+    ],
+    "anos": [
+      2015
+    ],
+    "dois": [
+      "10.3310/hta19080"
+    ],
+    "pmids": [
+      "25629427"
+    ]
+  },
+  {
+    "chave": "Krey2015",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Tendon needling for treatment of tendinopathy: A systematic review"
+    ],
+    "anos": [
+      2015
+    ],
+    "dois": [
+      "10.1080/00913847.2015.1004296"
+    ],
+    "pmids": [
+      "25613418"
+    ]
+  },
+  {
+    "chave": "Sims2014",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Non-Surgical Treatment of Lateral Epicondylitis: A Aystematic Review of Randomized Controlled Trials",
+      "Non-surgical treatment of lateral epicondylitis: a systematic review of randomized controlled trials"
+    ],
+    "anos": [
+      2014
+    ],
+    "dois": [
+      "10.1007/s11552-014-9642-x"
+    ],
+    "pmids": [
+      "25414603"
+    ]
+  },
+  {
+    "chave": "Sayegh2015",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Does Nonsurgical Treatment Improve Longitudinal Outcomes of Lateral Epicondylitis Over No Treatment? A Meta-analysis",
+      "Does nonsurgical treatment improve longitudinal outcomes of lateral epicondylitis over no treatment? A meta-analysis"
+    ],
+    "anos": [
+      2014,
+      2015
+    ],
+    "dois": [
+      "10.1007/s11999-014-4022-y"
+    ],
+    "pmids": [
+      "25352261"
+    ]
+  },
+  {
+    "chave": "Dones2014",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "The diagnostic validity of musculoskeletal ultrasound in lateral epicondylalgia: a systematic review"
+    ],
+    "anos": [
+      2014
+    ],
+    "dois": [
+      "10.1186/1471-2342-14-10"
+    ],
+    "pmids": [
+      "24589069"
+    ]
+  },
+  {
+    "chave": "Olaussen2013",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Treating lateral epicondylitis with corticosteroid injections or non-electrotherapeutical physiotherapy: a systematic review"
+    ],
+    "anos": [
+      2013
+    ],
+    "dois": [
+      "10.1136/bmjopen-2013-003564"
+    ],
+    "pmids": [
+      "24171937"
+    ]
+  },
+  {
+    "chave": "Cullinane2014",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Is eccentric exercise an effective treatment for lateral epicondylitis? A systematic review"
+    ],
+    "anos": [
+      2013,
+      2014
+    ],
+    "dois": [
+      "10.1177/0269215513491974"
+    ],
+    "pmids": [
+      "23881334"
+    ]
+  },
+  {
+    "chave": "Hoogvliet2013",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Does effectiveness of exercise therapy and mobilisation techniques offer guidance for the treatment of lateral and medial epicondylitis? A systematic review"
+    ],
+    "anos": [
+      2013
+    ],
+    "dois": [
+      "10.1136/bjsports-2012-091990"
+    ],
+    "pmids": [
+      "23709519"
+    ]
+  },
+  {
+    "chave": "Dingemanse2014",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Evidence for the effectiveness of electrophysical modalities for treatment of medial and lateral epicondylitis: a systematic review"
+    ],
+    "anos": [
+      2013,
+      2014
+    ],
+    "dois": [
+      "10.1136/bjsports-2012-091513"
+    ],
+    "pmids": [
+      "23335238"
+    ]
+  },
+  {
+    "chave": "Raman2012",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Effectiveness of Different Methods of Resistance Exercises in Lateral Epicondylosis—A Systematic Review",
+      "Effectiveness of different methods of resistance exercises in lateral epicondylosis--a systematic review"
+    ],
+    "anos": [
+      2011,
+      2012
+    ],
+    "dois": [
+      "10.1016/j.jht.2011.09.001"
+    ],
+    "pmids": [
+      "22075055"
+    ]
+  },
+  {
+    "chave": "Dick2011",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Workplace management of upper limb disorders: a systematic review"
+    ],
+    "anos": [
+      2010,
+      2011
+    ],
+    "dois": [
+      "10.1093/occmed/kqq174"
+    ],
+    "pmids": [
+      "21127200"
+    ]
+  },
+  {
+    "chave": "Chang2010",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Therapeutic Effects of Low-Level Laser on Lateral Epicondylitis from Differential Interventions of Chinese-Western Medicine: Systematic Review",
+      "Therapeutic effects of low-level laser on lateral epicondylitis from differential interventions of Chinese-Western medicine: systematic review"
+    ],
+    "anos": [
+      2010
+    ],
+    "dois": [
+      "10.1089/pho.2009.2558"
+    ],
+    "pmids": [
+      "19874256"
+    ]
+  },
+  {
+    "chave": "VanRijn2009",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Associations between work-related factors and specific disorders at the elbow: a systematic literature review"
+    ],
+    "anos": [
+      2008,
+      2009
+    ],
+    "dois": [
+      "10.1093/rheumatology/kep013"
+    ],
+    "pmids": [
+      "19224937"
+    ]
+  },
+  {
+    "chave": "Herd2008",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "A Systematic Review of the Effectiveness of Manipulative Therapy in Treating Lateral Epicondylalgia",
+      "A systematic review of the effectiveness of manipulative therapy in treating lateral epicondylalgia"
+    ],
+    "anos": [
+      2008
+    ],
+    "dois": [
+      "10.1179/106698108790818288"
+    ],
+    "pmids": [
+      "19771195"
+    ]
+  },
+  {
+    "chave": "Bisset2005",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "A systematic review and meta-analysis of clinical trials on physical interventions for lateral epicondylalgia"
+    ],
+    "anos": [
+      2005
+    ],
+    "dois": [
+      "10.1136/bjsm.2004.016170"
+    ],
+    "pmids": [
+      "15976161"
+    ]
+  },
+  {
+    "chave": "Trudel2004",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Rehabilitation for patients with lateral epicondylitis: a systematic review"
+    ],
+    "anos": [
+      2004
+    ],
+    "dois": [
+      "10.1197/j.jht.2004.02.011"
+    ],
+    "pmids": [
+      "15162109"
+    ]
+  },
+  {
+    "chave": "Borkholder2004",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "The efficacy of splinting for lateral epicondylitis: a systematic review"
+    ],
+    "anos": [
+      2004
+    ],
+    "dois": [
+      "10.1197/j.jht.2004.02.007"
+    ],
+    "pmids": [
+      "15162105"
+    ]
+  },
+  {
+    "chave": "Smidt2003",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Effectiveness of physiotherapy for lateral epicondylitis: a systematic review"
+    ],
+    "anos": [
+      2003
+    ],
+    "dois": [
+      "10.1080/07853890310004138"
+    ],
+    "pmids": [
+      "12693613"
+    ]
+  },
+  {
+    "chave": "Struijs2002",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed"
+    ],
+    "titulos": [
+      "Orthotic devices for tennis elbow",
+      "Orthotic devices for the treatment of tennis elbow"
+    ],
+    "anos": [
+      2001,
+      2002
+    ],
+    "dois": [
+      "10.1002/14651858.cd001821"
+    ],
+    "pmids": [
+      "11406011",
+      "11869609"
+    ]
+  },
+  {
+    "chave": "Pasternack2001",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "MR findings in humeral epicondylitis. . A systematic review",
+      "MR findings in humeral epicondylitis. A systematic review"
+    ],
+    "anos": [
+      2001
+    ],
+    "dois": [
+      "10.1080/028418501127347142"
+    ],
+    "pmids": [
+      "11552879"
+    ]
+  },
+  {
+    "chave": "Bateman2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Development of a core outcome set for lateral elbow tendinopathy (COS-LET) using best available evidence and an international consensus process"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.1136/bjsports-2021-105044"
+    ],
+    "pmids": [
+      "35135827"
+    ]
+  },
+  {
+    "chave": "Amako2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Japanese Orthopaedic Association (JOA) clinical practice guidelines on the management of lateral epicondylitis 2024-secondary publication",
+      "Japanese Orthopaedic Association (JOA) clinical practice guidelines on the management of lateral epicondylitis 2024—secondary publication"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1016/j.jos.2026.10.007"
+    ],
+    "pmids": [
+      "43026041"
+    ]
+  },
+  {
+    "chave": "Lucado2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Lateral Elbow Pain and Muscle Function Impairments",
+      "Lateral Elbow Pain and Muscle Function Impairments: Clinical Practice Guidelines Linked to the International Classification of Functioning, Disability and Health from the Academy of Hand and Upper Extremity Physical Therapy and the Academy of Orthopaedic Physical Therapy of the American Physical Therapy Association"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.2519/jospt.2022.0302"
+    ],
+    "pmids": [
+      "36453071"
+    ]
+  },
+  {
+    "chave": "Amako2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Japanese Orthopaedic Association (JOA) clinical practice guidelines on the management of lateral epicondylitis of the humerus - Secondary publication"
+    ],
+    "anos": [
+      2021,
+      2022
+    ],
+    "dois": [
+      "10.1016/j.jos.2021.09.003"
+    ],
+    "pmids": [
+      "34922804"
+    ]
+  },
+  {
+    "chave": "Leschinger2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Epicondylopathia humeri radialis"
+    ],
+    "anos": [
+      2021,
+      2022
+    ],
+    "dois": [
+      "10.1055/a-1340-0931"
+    ],
+    "pmids": [
+      "33851405"
+    ]
+  },
+  {
+    "chave": "Lapner2022b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Position statement: nonoperative management of lateral epicondylitis in adults"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.1503/cjs.019221"
+    ],
+    "pmids": [
+      "36130807"
+    ]
+  },
+  {
+    "chave": "AlbertLucena2024b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Exploring Symptom Responses to Upper Limb Neural Test Variations of the Radial Nerve in Patients With Lateral Epicondylalgia: An Observational Study"
+    ],
+    "anos": [
+      2024
+    ],
+    "dois": [
+      "10.1093/ptj/pzae041"
+    ],
+    "pmids": [
+      "38501862"
+    ]
+  },
+  {
+    "chave": "Bateman2021b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Development of an optimised physiotherapist-led treatment protocol for lateral elbow tendinopathy: a consensus study using an online nominal group technique"
+    ],
+    "anos": [
+      2021
+    ],
+    "dois": [
+      "10.1136/bmjopen-2021-053841"
+    ],
+    "pmids": [
+      "34949626"
+    ]
+  },
+  {
+    "chave": "Titchener2015",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Corticosteroid and platelet-rich plasma injection therapy in tennis elbow (lateral epicondylalgia): a survey of current U.K. specialist practice and a call for clinical guidelines",
+      "Corticosteroid and platelet-rich plasma injection therapy in tennis elbow (lateral epicondylalgia): a survey of current UK specialist practice and a call for clinical guidelines"
+    ],
+    "anos": [
+      2013,
+      2015
+    ],
+    "dois": [
+      "10.1136/bjsports-2013-092674"
+    ],
+    "pmids": [
+      "24195919"
+    ]
+  },
+  {
+    "chave": "Gercek2026b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "The effect of motor learning exercises on motor imagery, function, pain, and grip strength in individuals with chronic lateral epicondylitis: A randomized controlled trials"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1016/j.jht.2026.09.028"
+    ],
+    "pmids": [
+      "43039753"
+    ]
+  },
+  {
+    "chave": "DincYavas2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Short-Term Clinical Outcomes of Mesotherapy vs. Saline Injection in Patients with Lateral Epicondylitis: A Retrospective Comparative Study"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.3390/jcm15218339"
+    ],
+    "pmids": [
+      "43030482"
+    ]
+  },
+  {
+    "chave": "Alyanak2026",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Effect of percutaneous electrolysis combined with exercise on pain and function in chronic lateral epicondylitis: A randomized controlled trial"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1016/j.msksp.2026.103684"
+    ],
+    "pmids": [
+      "42987491"
+    ]
+  },
+  {
+    "chave": "Basaran2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Short-term effects of extracorporeal shockwave therapy and low-level laser therapy on clinical outcomes and ultrasonographic tendon thickness in lateral elbow tendinopathy"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1177/10538127261502104"
+    ],
+    "pmids": [
+      "42925264"
+    ]
+  },
+  {
+    "chave": "ElMelhat2026b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Effects of adding sustained natural apophyseal glides on neuropathic pain-related symptoms and clinical outcomes in patients with lateral elbow tendinopathy: A randomized controlled trial"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1080/09593985.2026.2749509"
+    ],
+    "pmids": [
+      "42897970"
+    ]
+  },
+  {
+    "chave": "Walecka2026c",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Comparative efficacy of leukocyte-rich and leukocyte-poor PRP for lateral epicondylitis on isokinetic and isometric upper limb strength under an identical rehabilitation protocol: a randomized controlled trial"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1016/j.jse.2026.09.009"
+    ],
+    "pmids": [
+      "42829102"
+    ]
+  },
+  {
+    "chave": "Sveinall2026b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Patient expectations assessed before randomisation and after the first treatment session, and their associations with pain outcome at 3 months in patients with tennis elbow: a secondary analysis of a randomised controlled feasibility trial in Norwegian secondary care"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1136/bmjopen-2026-122686"
+    ],
+    "pmids": [
+      "42744356"
+    ]
+  },
+  {
+    "chave": "Biedron2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "A Literature Review of Lateral Epicondylitis: Diagnosis, Risk Factors, Management and Treatment"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.3390/life16071043"
+    ],
+    "pmids": [
+      "42514112"
+    ]
+  },
+  {
+    "chave": "AlbertLucena2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Long-Term Benefits of Ultrasound-Guided Percutaneous Electrical Nerve Stimulation for Chronic Lateral Elbow Pain: A Randomized Controlled Trial"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1016/j.apmr.2026.07.006"
+    ],
+    "pmids": [
+      "42457107"
+    ]
+  },
+  {
+    "chave": "Zhang2026b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Musculoskeletal Ultrasound-Guided Micro-Needle-Knife Intervention at the Deep Fascial versus Superficial Fascial Layers in Lateral Epicondylitis Patients: A Randomized Controlled Trial"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.2147/jpr.s608269"
+    ],
+    "pmids": [
+      "42311471"
+    ]
+  },
+  {
+    "chave": "Tiryaki2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Strengthening of Rotator Cuff and Scapular Muscles in Patients With Lateral Elbow Tendinopathy: A Randomized Controlled Study"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1016/j.apmr.2026.05.006"
+    ],
+    "pmids": [
+      "42177007"
+    ]
+  },
+  {
+    "chave": "Walecka2026b",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Morphological changes in tennis elbow after PRP injection: a novel MRI-based assessment in a randomized controlled study"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1016/j.jse.2026.03.020"
+    ],
+    "pmids": [
+      "41962735"
+    ]
+  },
+  {
+    "chave": "Tan2026b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "The combined effect of radial extracorporeal shockwave therapy and exercise in lateral epicondylitis: A randomized controlled trial"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1016/j.jos.2026.03.006"
+    ],
+    "pmids": [
+      "41927410"
+    ]
+  },
+  {
+    "chave": "Bastug2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Investigating the effects of eccentric stretching on pain, grip strength, and functional outcomes in patients with lateral epicondylopathy: a randomized controlled trial"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1080/09593985.2026.2647787"
+    ],
+    "pmids": [
+      "41885244"
+    ]
+  },
+  {
+    "chave": "Stasinopoulos2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Comments on the article \"Comparative effectiveness of laser, PRP, splinting, and ESWT versus corticosteroid injection in lateral epicondylitis: a randomized controlled trial\"",
+      "Comments on the article “Comparative effectiveness of laser, PRP, splinting, and ESWT versus corticosteroid injection in lateral epicondylitis: a randomized controlled trial“"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1007/s11845-025-04273-z"
+    ],
+    "pmids": [
+      "41543829"
+    ]
+  },
+  {
+    "chave": "Khatri2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "The KINDLE trial: ketorolac vs. triamcinolone injections for lateral epicondylitis- a non-inferiority randomized controlled multicentric trial"
+    ],
+    "anos": [
+      2025,
+      2026
+    ],
+    "dois": [
+      "10.1016/j.jse.2025.11.012"
+    ],
+    "pmids": [
+      "41397516"
+    ]
+  },
+  {
+    "chave": "Day2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Soft tissue mobilization is more effective than self-stretching in the acute reduction of common wrist extensor tendon stiffness in recreational tennis players"
+    ],
+    "anos": [
+      2025,
+      2026
+    ],
+    "dois": [
+      "10.1080/09593985.2025.2587139"
+    ],
+    "pmids": [
+      "41219719"
+    ]
+  },
+  {
+    "chave": "Lear2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "An open label randomized controlled trial comparing physical therapy with low load blood flow restriction vs. standard physical therapy in treatment of lateral epicondylitis"
+    ],
+    "anos": [
+      2025,
+      2026
+    ],
+    "dois": [
+      "10.1080/09593985.2025.2562909"
+    ],
+    "pmids": [
+      "41026040"
+    ]
+  },
+  {
+    "chave": "Coombes2025",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Mobilisation-with-movement induces analgesia during exercise but exercise alone is not analgesic in people with lateral elbow tendinopathy: An assessor blinded, randomised crossover trial"
+    ],
+    "anos": [
+      2025
+    ],
+    "dois": [
+      "10.1016/j.msksp.2025.103421"
+    ],
+    "pmids": [
+      "41005254"
+    ]
+  },
+  {
+    "chave": "Hoseini2025",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Comparison of kinesiotape, counterforce brace, and corticosteroid injection in patients with tennis elbow: A prospective, randomized, controlled study"
+    ],
+    "anos": [
+      2025
+    ],
+    "dois": [
+      "10.1371/journal.pone.0328396"
+    ],
+    "pmids": [
+      "40680057"
+    ]
+  },
+  {
+    "chave": "Scaturro2025",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Efficacy of extracorporeal shock wave therapy and nutraceutical supplementation in the treatment of lateral epicondylitis: a randomized controlled trial"
+    ],
+    "anos": [
+      2025
+    ],
+    "dois": [
+      "10.3389/fresc.2025.1593909"
+    ],
+    "pmids": [
+      "40567345"
+    ]
+  },
+  {
+    "chave": "Yuksel2025",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Comparison of the effectiveness of kinesiologic taping and high intensity laser therapy in lateral elbow tendinopathy: A randomized controlled trial"
+    ],
+    "anos": [
+      2025
+    ],
+    "dois": [
+      "10.1016/j.jht.2025.01.008"
+    ],
+    "pmids": [
+      "40113534"
+    ]
+  },
+  {
+    "chave": "Karanasios2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "The immediate effects of wrist extensor training with blood flow restriction on pain perception in middle-aged patients with lateral elbow tendinopathy: A cross-over randomized controlled trial"
+    ],
+    "anos": [
+      2025,
+      2026
+    ],
+    "dois": [
+      "10.1016/j.smhs.2025.03.003"
+    ],
+    "pmids": [
+      "42282458"
+    ]
+  },
+  {
+    "chave": "Dejnek2025",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Comparative Efficacy of Platelet-Rich Plasma, Corticosteroid, Hyaluronic Acid, and Placebo (Saline) Injections in Patients with Lateral Elbow Tendinopathy: A Randomized Controlled Trial"
+    ],
+    "anos": [
+      2025
+    ],
+    "dois": [
+      "10.3390/jcm14020472"
+    ],
+    "pmids": [
+      "39860479"
+    ]
+  },
+  {
+    "chave": "Sveinall2024",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Heavy slow resistance training, radial extracorporeal shock wave therapy or advice for patients with tennis elbow in the Norwegian secondary care: a randomised controlled feasibility trial"
+    ],
+    "anos": [
+      2024
+    ],
+    "dois": [
+      "10.1136/bmjopen-2024-085916"
+    ],
+    "pmids": [
+      "39806585"
+    ]
+  },
+  {
+    "chave": "Young2025",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Clinimetric analysis of the numeric pain rating scale, patient-rated tennis elbow evaluation, and tennis elbow function scale in patients with lateral elbow tendinopathy"
+    ],
+    "anos": [
+      2025
+    ],
+    "dois": [
+      "10.1080/09593985.2025.2450090"
+    ],
+    "pmids": [
+      "39793982"
+    ]
+  },
+  {
+    "chave": "Mollazehi2024",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "How effective is proprioception exercise on pain, grip force, dexterity and proprioception of elbow joint in patients with tennis elbow? A randomized controlled trial"
+    ],
+    "anos": [
+      2024
+    ],
+    "dois": [
+      "10.1016/j.jbmt.2024.10.035"
+    ],
+    "pmids": [
+      "39593530"
+    ]
+  },
+  {
+    "chave": "Dunning2024",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Percutaneous tendon dry needling and thrust manipulation as an adjunct to multimodal physical therapy in patients with lateral elbow tendinopathy: A multicenter randomized clinical trial"
+    ],
+    "anos": [
+      2024
+    ],
+    "dois": [
+      "10.1177/02692155241249968"
+    ],
+    "pmids": [
+      "38676324"
+    ]
+  },
+  {
+    "chave": "RodriguezHuguet2024",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Pulsed negative pressure myofascial vacuum therapy and percutaneous electrolysis in the treatment of lateral epicondylalgia: A single-blind randomized controlled trial"
+    ],
+    "anos": [
+      2024
+    ],
+    "dois": [
+      "10.1016/j.jht.2024.02.003"
+    ],
+    "pmids": [
+      "38453573"
+    ]
+  },
+  {
+    "chave": "Bateman2024",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Optimising physiotherapy for people with lateral elbow tendinopathy - Results of a mixed-methods pilot and feasibility randomised controlled trial (OPTimisE)",
+      "Optimising physiotherapy for people with lateral elbow tendinopathy – Results of a mixed-methods pilot and feasibility randomised controlled trial (OPTimisE)"
+    ],
+    "anos": [
+      2023,
+      2024
+    ],
+    "dois": [
+      "10.1016/j.msksp.2023.102905"
+    ],
+    "pmids": [
+      "38194841"
+    ]
+  },
+  {
+    "chave": "Celik2023",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Bracing or kinesio taping in the management of lateral elbow tendinopathy: A prospective, randomized single-blinded trial"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.1016/j.jbmt.2023.07.006"
+    ],
+    "pmids": [
+      "37949566"
+    ]
+  },
+  {
+    "chave": "Singh2023b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "BESS patient care pathway: Tennis elbow"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.1177/17585732231170793"
+    ],
+    "pmids": [
+      "37538521"
+    ]
+  },
+  {
+    "chave": "Sahoo2023",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Efficacy of extension wrist hand orthosis on pain, grip strength and electromyographic activities in lateral epicondylitis: A randomized single-blind clinical trial"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.1016/j.jht.2023.06.006"
+    ],
+    "pmids": [
+      "37474430"
+    ]
+  },
+  {
+    "chave": "Challoumas2023",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Determining minimal important differences for patient-reported outcome measures in shoulder, lateral elbow, patellar and Achilles tendinopathies using distribution-based methods"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.1186/s12891-023-06261-9"
+    ],
+    "pmids": [
+      "36864412"
+    ]
+  },
+  {
+    "chave": "Nambi2023",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Clinical and radiological effects of Corticosteroid injection combined with deep transverse friction massage and Mill's manipulation in lateral epicondylalgia-A prospective, randomized, single-blinded, sham controlled trial",
+      "Clinical and radiological effects of Corticosteroid injection combined with deep transverse friction massage and Mill’s manipulation in lateral epicondylalgia–A prospective, randomized, single-blinded, sham controlled trial"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.1371/journal.pone.0281206"
+    ],
+    "pmids": [
+      "36780557"
+    ]
+  },
+  {
+    "chave": "Hill2023b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Effects of multidirectional elastic tape on pain and function in individuals with lateral elbow tendinopathy: A randomised crossover trial"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.1177/02692155231152817"
+    ],
+    "pmids": [
+      "36727206"
+    ]
+  },
+  {
+    "chave": "Lemmens2023",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Functional recovery in the surgical treatment of tennis elbow: side-to-side vs. tendon-to-bone attachment using a knotless suture anchor: a randomized controlled trial"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.1016/j.jse.2022.11.019"
+    ],
+    "pmids": [
+      "36584873"
+    ]
+  },
+  {
+    "chave": "Nambi2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "MRI and Ultrasound Analysis of Corticosteroid Injection Combined with Extracorporeal Shockwave Therapy in Lateral Epicondylitis-A Prospective, Randomized, Double-Blinded, Placebo-Controlled Trial",
+      "MRI and Ultrasound Analysis of Corticosteroid Injection Combined with Extracorporeal Shockwave Therapy in Lateral Epicondylitis—A Prospective, Randomized, Double-Blinded, Placebo-Controlled Trial"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.3390/jpm12111892"
+    ],
+    "pmids": [
+      "36422067"
+    ]
+  },
+  {
+    "chave": "Hill2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Effects of multidirectional elastic tape on forearm muscle activity and wrist extension during submaximal gripping in individuals with lateral elbow tendinopathy: A randomised crossover trial"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.1016/j.clinbiomech.2022.105810"
+    ],
+    "pmids": [
+      "36327545"
+    ]
+  },
+  {
+    "chave": "Karanasios2022b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Low-Load Resistance Training With Blood Flow Restriction Is Effective for Managing Lateral Elbow Tendinopathy: A Randomized, Sham-Controlled Trial"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.2519/jospt.2022.11211"
+    ],
+    "pmids": [
+      "36099170"
+    ]
+  },
+  {
+    "chave": "Bateman2022b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Comparing an optimised physiotherapy treatment package with usual physiotherapy care for people with tennis elbow - protocol for the OPTimisE pilot and feasibility randomised controlled trial",
+      "Comparing an optimised physiotherapy treatment package with usual physiotherapy care for people with tennis elbow — protocol for the OPTimisE pilot and feasibility randomised controlled trial"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.1186/s40814-022-01132-x"
+    ],
+    "pmids": [
+      "35953842"
+    ]
+  },
+  {
+    "chave": "Couppe2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Effects of Heavy Slow Resistance Training Combined With Corticosteroid Injections or Tendon Needling in Patients With Lateral Elbow Tendinopathy: A 3-Arm Randomized Double-Blinded Placebo-Controlled Study"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.1177/03635465221110214"
+    ],
+    "pmids": [
+      "35867777"
+    ]
+  },
+  {
+    "chave": "Altas2022",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "The comparison of the effectiveness of Kinesio Taping and dry needling in the treatment of lateral epicondylitis: a clinical and ultrasonographic study"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.1016/j.jse.2022.03.010"
+    ],
+    "pmids": [
+      "35483568"
+    ]
+  },
+  {
+    "chave": "Sun2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Efficacy of ultrasound therapy for the treatment of lateral elbow tendinopathy (the UCICLET Trial): study protocol for a three-arm, prospective, multicentre, randomised controlled trial"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.1136/bmjopen-2021-057266"
+    ],
+    "pmids": [
+      "35039305"
+    ]
+  },
+  {
+    "chave": "Klifto2022",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Platelet-rich plasma vs. corticosteroid injections for the treatment of recalcitrant lateral epicondylitis: a cost-effectiveness Markov decision analysis"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.1016/j.jse.2021.12.010"
+    ],
+    "pmids": [
+      "35031496"
+    ]
+  },
+  {
+    "chave": "Vukelic2021",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Which injections are effective for lateral epicondylitis?"
+    ],
+    "anos": [
+      2021
+    ],
+    "dois": [
+      "10.12788/jfp.0308"
+    ],
+    "pmids": [
+      "34818156"
+    ]
+  },
+  {
+    "chave": "Tran2023",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "The impact of a hand therapy workplace-based educational approach on the management of lateral elbow tendinopathy: A randomized controlled study"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.1016/j.jht.2021.09.004"
+    ],
+    "pmids": [
+      "34756796"
+    ]
+  },
+  {
+    "chave": "Balevi2023",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Evaluation of short-term and residual effects of Kinesio taping in chronic lateral epicondylitis: A randomized, double-blinded, controlled trial"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.1016/j.jht.2021.09.001"
+    ],
+    "pmids": [
+      "34736818"
+    ]
+  },
+  {
+    "chave": "Gupta2022",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Letter to the Editor regarding Uygur et al.: \"The use of dry needling vs. corticosteroid injection to treat lateral epicondylitis: a prospective, randomized, controlled study\"",
+      "Letter to the Editor regarding Uygur et al.: “The use of dry needling vs. corticosteroid injection to treat lateral epicondylitis: a prospective, randomized, controlled study”"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.1016/j.jse.2021.08.014"
+    ],
+    "pmids": [
+      "34537340"
+    ]
+  },
+  {
+    "chave": "HuseyinUnver2021",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Comparing the efficacy of continuous and pulsed ultrasound therapies in patients with lateral epicondylitis: A double-blind, randomized, placebo-controlled study"
+    ],
+    "anos": [
+      2021
+    ],
+    "dois": [
+      "10.5606/tftrd.2021.4789"
+    ],
+    "pmids": [
+      "33948550"
+    ]
+  },
+  {
+    "chave": "MartinezBeltran2021",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Are there any changes in strength after the application of Kinesio taping in lateral epicondylalgia?"
+    ],
+    "anos": [
+      2021
+    ],
+    "dois": [
+      "10.3233/bmr-200325"
+    ],
+    "pmids": [
+      "33896814"
+    ]
+  },
+  {
+    "chave": "Savva2021",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "The analgesic effect of joint mobilization and manipulation in tendinopathy: a narrative review"
+    ],
+    "anos": [
+      2021
+    ],
+    "dois": [
+      "10.1080/10669817.2021.1904348"
+    ],
+    "pmids": [
+      "33769226"
+    ]
+  },
+  {
+    "chave": "Yilmaz2022",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Investigating the effects of neuromobilization in lateral epicondylitis"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.1016/j.jht.2020.11.003"
+    ],
+    "pmids": [
+      "33563509"
+    ]
+  },
+  {
+    "chave": "Day2021",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "The Effect of Scapular Muscle Strengthening on Functional Recovery in Patients With Lateral Elbow Tendinopathy: A Pilot Randomized Controlled Trial"
+    ],
+    "anos": [
+      2021
+    ],
+    "dois": [
+      "10.1123/jsr.2020-0203"
+    ],
+    "pmids": [
+      "33440342"
+    ]
+  },
+  {
+    "chave": "Uygur2021",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "The use of dry needling vs. corticosteroid injection to treat lateral epicondylitis: a prospective, randomized, controlled study"
+    ],
+    "anos": [
+      2020,
+      2021
+    ],
+    "dois": [
+      "10.1016/j.jse.2020.08.044"
+    ],
+    "pmids": [
+      "32950674"
+    ]
+  },
+  {
+    "chave": "MansizKaplan2021",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Comparison of the effects of using non-steroidal anti-inflammatory drugs with or without kinesio taping on the radial nerve in lateral epicondylitis: A randomized-single blind study"
+    ],
+    "anos": [
+      2020,
+      2021
+    ],
+    "dois": [
+      "10.1016/j.explore.2020.07.008"
+    ],
+    "pmids": [
+      "32792245"
+    ]
+  },
+  {
+    "chave": "Ozmen2021",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Comparison of the clinical and sonographic effects of ultrasound therapy, extracorporeal shock wave therapy, and Kinesio taping in lateral epicondylitis"
+    ],
+    "anos": [
+      2021
+    ],
+    "dois": [
+      "10.3906/sag-2001-79"
+    ],
+    "pmids": [
+      "32682361"
+    ]
+  },
+  {
+    "chave": "RodriguezHuguet2020",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Percutaneous Electrolysis in the Treatment of Lateral Epicondylalgia: A Single-Blind Randomized Controlled Trial"
+    ],
+    "anos": [
+      2020
+    ],
+    "dois": [
+      "10.3390/jcm9072068"
+    ],
+    "pmids": [
+      "32630241"
+    ]
+  },
+  {
+    "chave": "Tezel2020",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "The effects of kinesiotaping on wrist extensor strength using an isokinetic device in patients with chronic lateral epicondylitis: A randomized-controlled trial"
+    ],
+    "anos": [
+      2020
+    ],
+    "dois": [
+      "10.5606/tftrd.2020.3298"
+    ],
+    "pmids": [
+      "32318676"
+    ]
+  },
+  {
+    "chave": "Zunke2020",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "The effect of manual therapy to the thoracic spine on pain-free grip and sympathetic activity in patients with lateral epicondylalgia humeri. A randomized, sample sized planned, placebo-controlled, patient-blinded monocentric trial"
+    ],
+    "anos": [
+      2020
+    ],
+    "dois": [
+      "10.1186/s12891-020-3175-y"
+    ],
+    "pmids": [
+      "32209068"
+    ]
+  },
+  {
+    "chave": "Yelland2019",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Prolotherapy injections and physiotherapy used singly and in combination for lateral epicondylalgia: a single-blinded randomised clinical trial"
+    ],
+    "anos": [
+      2019
+    ],
+    "dois": [
+      "10.1186/s12891-019-2905-5"
+    ],
+    "pmids": [
+      "31679521"
+    ]
+  },
+  {
+    "chave": "Day2019",
+    "criterios": [
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "A COMPREHENSIVE REHABILITATION PROGRAM FOR TREATING LATERAL ELBOW TENDINOPATHY"
+    ],
+    "anos": [
+      2019
+    ],
+    "dois": [
+      "10.26603/ijspt20190818"
+    ],
+    "pmids": [
+      "31598419"
+    ]
+  },
+  {
+    "chave": "DaLuz2019",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Iontophoresis in lateral epicondylitis: a randomized, double-blind clinical trial"
+    ],
+    "anos": [
+      2019
+    ],
+    "dois": [
+      "10.1016/j.jse.2019.05.020"
+    ],
+    "pmids": [
+      "31447123"
+    ]
+  },
+  {
+    "chave": "Vuvan2020",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Unsupervised Isometric Exercise versus Wait-and-See for Lateral Elbow Tendinopathy"
+    ],
+    "anos": [
+      2019,
+      2020
+    ],
+    "dois": [
+      "10.1249/mss.0000000000002128"
+    ],
+    "pmids": [
+      "31425384"
+    ]
+  },
+  {
+    "chave": "Holmedal2019",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Predictors for outcome in acute lateral epicondylitis"
+    ],
+    "anos": [
+      2019
+    ],
+    "dois": [
+      "10.1186/s12891-019-2758-y"
+    ],
+    "pmids": [
+      "31421668"
+    ]
+  },
+  {
+    "chave": "Reyhan2020",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "The effects of Mulligan's mobilization with movement technique in patients with lateral epicondylitis",
+      "The effects of Mulligan’s mobilization with movement technique in patients with lateral epicondylitis"
+    ],
+    "anos": [
+      2019,
+      2020
+    ],
+    "dois": [
+      "10.3233/bmr-181135"
+    ],
+    "pmids": [
+      "31104005"
+    ]
+  },
+  {
+    "chave": "Kaydok2020",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Short-term Efficacy Comparison of High-intensity and Low-intensity Laser Therapy in the Treatment of Lateral Epicondylitis: A Randomized Double-blind Clinical Study"
+    ],
+    "anos": [
+      2020
+    ],
+    "dois": [
+      "10.5606/archrheumatol.2020.7347"
+    ],
+    "pmids": [
+      "32637921"
+    ]
+  },
+  {
+    "chave": "Kroslak2019",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Counterforce bracing of lateral epicondylitis: a prospective, randomized, double-blinded, placebo-controlled clinical trial"
+    ],
+    "anos": [
+      2019
+    ],
+    "dois": [
+      "10.1016/j.jse.2018.10.002"
+    ],
+    "pmids": [
+      "30658774"
+    ]
+  },
+  {
+    "chave": "Barati2019",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "The immediate sensorimotor effects of elbow orthoses in patients with lateral elbow tendinopathy: a prospective crossover study"
+    ],
+    "anos": [
+      2019
+    ],
+    "dois": [
+      "10.1016/j.jse.2018.08.042"
+    ],
+    "pmids": [
+      "30551783"
+    ]
+  },
+  {
+    "chave": "Sethi2018",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Scapular muscles strengthening on pain, functional outcome and muscle activity in chronic lateral epicondylalgia"
+    ],
+    "anos": [
+      2018
+    ],
+    "dois": [
+      "10.1016/j.jos.2018.05.003"
+    ],
+    "pmids": [
+      "29958726"
+    ]
+  },
+  {
+    "chave": "Baktir2019",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "The short-term effectiveness of low-level laser, phonophoresis, and iontophoresis in patients with lateral epicondylosis"
+    ],
+    "anos": [
+      2018,
+      2019
+    ],
+    "dois": [
+      "10.1016/j.jht.2018.01.002"
+    ],
+    "pmids": [
+      "29452929"
+    ]
+  },
+  {
+    "chave": "LopezDeCelis2018",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Effectiveness of diacutaneous fibrolysis for the treatment of chronic lateral epicondylalgia: a randomized clinical trial"
+    ],
+    "anos": [
+      2017,
+      2018
+    ],
+    "dois": [
+      "10.1177/0269215517738114"
+    ],
+    "pmids": [
+      "29086586"
+    ]
+  },
+  {
+    "chave": "Yi2018",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Deep Friction Massage Versus Steroid Injection in the Treatment of Lateral Epicondylitis"
+    ],
+    "anos": [
+      2017,
+      2018
+    ],
+    "dois": [
+      "10.1177/1558944717692088"
+    ],
+    "pmids": [
+      "28719982"
+    ]
+  },
+  {
+    "chave": "Shakeri2018",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "The effects of KinesioTape on the treatment of lateral epicondylitis"
+    ],
+    "anos": [
+      2018
+    ],
+    "dois": [
+      "10.1016/j.jht.2017.01.001"
+    ],
+    "pmids": [
+      "28256305"
+    ]
+  },
+  {
+    "chave": "Stasinopoulos2017",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Comparison of effects of eccentric training, eccentric-concentric training, and eccentric-concentric training combined with isometric contraction in the treatment of lateral elbow tendinopathy"
+    ],
+    "anos": [
+      2016,
+      2017
+    ],
+    "dois": [
+      "10.1016/j.jht.2016.09.001"
+    ],
+    "pmids": [
+      "27823901"
+    ]
+  },
+  {
+    "chave": "Coombes2016",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Economic evaluation favours physiotherapy but not corticosteroid injection as a first-line intervention for chronic lateral epicondylalgia: evidence from a randomised clinical trial"
+    ],
+    "anos": [
+      2015,
+      2016
+    ],
+    "dois": [
+      "10.1136/bjsports-2015-094729"
+    ],
+    "pmids": [
+      "26036675"
+    ]
+  },
+  {
+    "chave": "Hsu2016",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Manipulation Therapy Relieved Pain More Rapidly Than Acupuncture among Lateral Epicondylalgia (Tennis Elbow) Patients: A Randomized Controlled Trial with 8-Week Follow-Up",
+      "Manipulation Therapy Relieved Pain More Rapidly Than Acupuncture among Lateral Epicondylalgia (Tennis Elbow) Patients: A Randomized Controlled Trial with 8‐Week Follow‐Up"
+    ],
+    "anos": [
+      2016
+    ],
+    "dois": [
+      "10.1155/2016/3079247"
+    ],
+    "pmids": [
+      "27143983"
+    ]
+  },
+  {
+    "chave": "Murtezani2015",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Exercise and Therapeutic Ultrasound Compared with Corticosteroid Injection for Chronic Lateral Epicondylitis: A Randomized Controlled Trial"
+    ],
+    "anos": [
+      2015
+    ],
+    "dois": [
+      "10.5604/15093492.1173377"
+    ],
+    "pmids": [
+      "26468172"
+    ]
+  },
+  {
+    "chave": "Lizis2015",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Analgesic effect of extracorporeal shock wave therapy versus ultrasound therapy in chronic tennis elbow"
+    ],
+    "anos": [
+      2015
+    ],
+    "dois": [
+      "10.1589/jpts.27.2563"
+    ],
+    "pmids": [
+      "26357440"
+    ]
+  },
+  {
+    "chave": "Sevier2015",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Astym treatment vs. eccentric exercise for lateral elbow tendinopathy: a randomized controlled clinical trial",
+      "Astym treatmentvs.eccentric exercise for lateral elbow tendinopathy: a randomized controlled clinical trial"
+    ],
+    "anos": [
+      2015
+    ],
+    "dois": [
+      "10.7717/peerj.967"
+    ],
+    "pmids": [
+      "26038722"
+    ]
+  },
+  {
+    "chave": "Olaussen2015",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Corticosteroid or placebo injection combined with deep transverse friction massage, Mills manipulation, stretching and eccentric exercise for acute lateral epicondylitis: a randomised, controlled trial"
+    ],
+    "anos": [
+      2015
+    ],
+    "dois": [
+      "10.1186/s12891-015-0582-6"
+    ],
+    "pmids": [
+      "25989985"
+    ]
+  },
+  {
+    "chave": "Dundar2015",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Effectiveness of high-intensity laser therapy and splinting in lateral epicondylitis; a prospective, randomized, controlled study"
+    ],
+    "anos": [
+      2015
+    ],
+    "dois": [
+      "10.1007/s10103-015-1716-7"
+    ],
+    "pmids": [
+      "25614134"
+    ]
+  },
+  {
+    "chave": "Dale2015",
+    "criterios": [
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Outcomes of a pilates-based intervention for individuals with lateral epicondylosis: A pilot study"
+    ],
+    "anos": [
+      2015
+    ],
+    "dois": [
+      "10.3233/wor-152108"
+    ],
+    "pmids": [
+      "27331240"
+    ]
+  },
+  {
+    "chave": "Chesterton2014",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Transcutaneous electrical nerve stimulation as adjunct to primary care management for tennis elbow: pragmatic randomised controlled trial (TATE trial)"
+    ],
+    "anos": [
+      2014
+    ],
+    "dois": [
+      "10.1136/bjsports-2013-f5160rep"
+    ],
+    "pmids": [
+      "25213605"
+    ]
+  },
+  {
+    "chave": "Peterson2014",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "A randomized controlled trial of eccentric vs. concentric graded exercise in chronic tennis elbow (lateral elbow tendinopathy)"
+    ],
+    "anos": [
+      2014
+    ],
+    "dois": [
+      "10.1177/0269215514527595"
+    ],
+    "pmids": [
+      "24634444"
+    ]
+  },
+  {
+    "chave": "Coombes2015",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Cold Hyperalgesia Associated With Poorer Prognosis in Lateral Epicondylalgia: A 1-Year Prognostic Study of Physical and Psychological Factors",
+      "Cold hyperalgesia associated with poorer prognosis in lateral epicondylalgia: a 1-year prognostic study of physical and psychological factors"
+    ],
+    "anos": [
+      2014,
+      2015
+    ],
+    "dois": [
+      "10.1097/ajp.0000000000000078"
+    ],
+    "pmids": [
+      "24480912"
+    ]
+  },
+  {
+    "chave": "Bisset2014",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Immediate Effects of 2 Types of Braces on Pain and Grip Strength in People With Lateral Epicondylalgia: A Randomized Controlled Trial",
+      "Immediate effects of 2 types of braces on pain and grip strength in people with lateral epicondylalgia: a randomized controlled trial"
+    ],
+    "anos": [
+      2014
+    ],
+    "dois": [
+      "10.2519/jospt.2014.4744"
+    ],
+    "pmids": [
+      "24405258"
+    ]
+  },
+  {
+    "chave": "Chesterton2013",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Transcutaneous electrical nerve stimulation as adjunct to primary care management for tennis elbow: pragmatic randomised controlled trial (TATE trial)"
+    ],
+    "anos": [
+      2013
+    ],
+    "dois": [
+      "10.1136/bmj.f5160"
+    ],
+    "pmids": [
+      "23999980"
+    ]
+  },
+  {
+    "chave": "Coombes2013",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Effect of Corticosteroid Injection, Physiotherapy, or Both on Clinical Outcomes in Patients With Unilateral Lateral Epicondylalgia: A Randomized Controlled Trial",
+      "Effect of corticosteroid injection, physiotherapy, or both on clinical outcomes in patients with unilateral lateral epicondylalgia: a randomized controlled trial"
+    ],
+    "anos": [
+      2013
+    ],
+    "dois": [
+      "10.1001/jama.2013.129"
+    ],
+    "pmids": [
+      "23385272"
+    ]
+  },
+  {
+    "chave": "Wen2011",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Eccentric Strengthening for Chronic Lateral Epicondylosis: A Prospective Randomized Study",
+      "Eccentric strengthening for chronic lateral epicondylosis: a prospective randomized study"
+    ],
+    "anos": [
+      2011
+    ],
+    "dois": [
+      "10.1177/1941738111409690"
+    ],
+    "pmids": [
+      "23016049"
+    ]
+  },
+  {
+    "chave": "MartinezSegura2012",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Immediate Changes in Widespread Pressure Pain Sensitivity, Neck Pain, and Cervical Range of Motion After Cervical or Thoracic Thrust Manipulation in Patients With Bilateral Chronic Mechanical Neck Pain: A Randomized Clinical Trial",
+      "Immediate changes in widespread pressure pain sensitivity, neck pain, and cervical range of motion after cervical or thoracic thrust manipulation in patients with bilateral chronic mechanical neck pain: a randomized clinical trial"
+    ],
+    "anos": [
+      2012
+    ],
+    "dois": [
+      "10.2519/jospt.2012.4151"
+    ],
+    "pmids": [
+      "22711239"
+    ]
+  },
+  {
+    "chave": "Viswas2012",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Comparison of Effectiveness of Supervised Exercise Program and Cyriax Physiotherapy in Patients with Tennis Elbow (Lateral Epicondylitis): A Randomized Clinical Trial",
+      "Comparison of effectiveness of supervised exercise program and Cyriax physiotherapy in patients with tennis elbow (lateral epicondylitis): a randomized clinical trial"
+    ],
+    "anos": [
+      2012
+    ],
+    "dois": [
+      "10.1100/2012/939645"
+    ],
+    "pmids": [
+      "22629225"
+    ]
+  },
+  {
+    "chave": "Ajimsha2012",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Effectiveness of Myofascial Release in the Management of Lateral Epicondylitis in Computer Professionals",
+      "Effectiveness of myofascial release in the management of lateral epicondylitis in computer professionals"
+    ],
+    "anos": [
+      2012
+    ],
+    "dois": [
+      "10.1016/j.apmr.2011.10.012"
+    ],
+    "pmids": [
+      "22236639"
+    ]
+  },
+  {
+    "chave": "Peterson2011",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "A randomized controlled trial of exercise versus wait-list in chronic tennis elbow (lateral epicondylosis)"
+    ],
+    "anos": [
+      2011
+    ],
+    "dois": [
+      "10.3109/03009734.2011.600476"
+    ],
+    "pmids": [
+      "22066975"
+    ]
+  },
+  {
+    "chave": "Nilsson2012b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Lateral epicondylalgia: a structured programme better than corticosteroids and NSAID"
+    ],
+    "anos": [
+      2011,
+      2012
+    ],
+    "dois": [
+      "10.3109/11038128.2011.620983"
+    ],
+    "pmids": [
+      "22050362"
+    ]
+  },
+  {
+    "chave": "WalkerBone2012",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Occupation and epicondylitis: a population-based study"
+    ],
+    "anos": [
+      2011,
+      2012
+    ],
+    "dois": [
+      "10.1093/rheumatology/ker228"
+    ],
+    "pmids": [
+      "22019808"
+    ]
+  },
+  {
+    "chave": "FernandezCarnero2011",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Examination of Motor and Hypoalgesic Effects of Cervical vs Thoracic Spine Manipulation in Patients With Lateral Epicondylalgia: A Clinical Trial",
+      "Examination of motor and hypoalgesic effects of cervical vs thoracic spine manipulation in patients with lateral epicondylalgia: a clinical trial"
+    ],
+    "anos": [
+      2011
+    ],
+    "dois": [
+      "10.1016/j.jmpt.2011.05.019"
+    ],
+    "pmids": [
+      "21875517"
+    ]
+  },
+  {
+    "chave": "Soderberg2012",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Effects of eccentric training on hand strength in subjects with lateral epicondylalgia: a randomized-controlled trial",
+      "Effects of eccentric training on hand strength in subjects with lateral epicondylalgia: a randomized‐controlled trial"
+    ],
+    "anos": [
+      2011,
+      2012
+    ],
+    "dois": [
+      "10.1111/j.1600-0838.2011.01317.x"
+    ],
+    "pmids": [
+      "21496112"
+    ]
+  },
+  {
+    "chave": "Blanchette2011",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Augmented Soft Tissue Mobilization vs Natural History in the Treatment of Lateral Epicondylitis: A Pilot Study",
+      "Augmented soft tissue mobilization vs natural history in the treatment of lateral epicondylitis: a pilot study"
+    ],
+    "anos": [
+      2011
+    ],
+    "dois": [
+      "10.1016/j.jmpt.2010.12.001"
+    ],
+    "pmids": [
+      "21334545"
+    ]
+  },
+  {
+    "chave": "Park2010",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Prospective Evaluation of the Effectiveness of a Home-Based Program of Isometric Strengthening Exercises: 12-Month Follow-up",
+      "Prospective evaluation of the effectiveness of a home-based program of isometric strengthening exercises: 12-month follow-up"
+    ],
+    "anos": [
+      2010
+    ],
+    "dois": [
+      "10.4055/cios.2010.2.3.173"
+    ],
+    "pmids": [
+      "20808589"
+    ]
+  },
+  {
+    "chave": "Tyler2010",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Addition of isolated wrist extensor eccentric exercise to standard treatment for chronic lateral epicondylosis: A prospective randomized trial",
+      "Addition of isolated wrist extensor eccentric exercise to standard treatment for chronic lateral epicondylosis: a prospective randomized trial"
+    ],
+    "anos": [
+      2010
+    ],
+    "dois": [
+      "10.1016/j.jse.2010.04.041"
+    ],
+    "pmids": [
+      "20579907"
+    ]
+  },
+  {
+    "chave": "Garg2010",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "A prospective randomized study comparing a forearm strap brace versus a wrist splint for the treatment of lateral epicondylitis"
+    ],
+    "anos": [
+      2010
+    ],
+    "dois": [
+      "10.1016/j.jse.2009.12.015"
+    ],
+    "pmids": [
+      "20363158"
+    ]
+  },
+  {
+    "chave": "Nagrale2009",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Cyriax Physiotherapy Versus Phonophoresis with Supervised Exercise in Subjects with Lateral Epicondylalgia: A Randomized Clinical Trial",
+      "Cyriax physiotherapy versus phonophoresis with supervised exercise in subjects with lateral epicondylalgia: a randomized clinical trial"
+    ],
+    "anos": [
+      2009
+    ],
+    "dois": [
+      "10.1179/jmt.2009.17.3.171"
+    ],
+    "pmids": [
+      "20046624"
+    ]
+  },
+  {
+    "chave": "Osborne2010",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Stop injecting corticosteroid into patients with tennis elbow, they are much more likely to get better by themselves!"
+    ],
+    "anos": [
+      2009,
+      2010
+    ],
+    "dois": [
+      "10.1016/j.jsams.2009.09.009"
+    ],
+    "pmids": [
+      "19944643"
+    ]
+  },
+  {
+    "chave": "Stasinopoulos2010",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Comparison of effects of a home exercise programme and a supervised exercise programme for the management of lateral elbow tendinopathy"
+    ],
+    "anos": [
+      2009,
+      2010
+    ],
+    "dois": [
+      "10.1136/bjsm.2008.049759"
+    ],
+    "pmids": [
+      "19887440"
+    ]
+  },
+  {
+    "chave": "McCallum2011",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Five-year prospective comparison study of topical glyceryl trinitrate treatment of chronic lateral epicondylosis at the elbow"
+    ],
+    "anos": [
+      2009,
+      2011
+    ],
+    "dois": [
+      "10.1136/bjsm.2009.061002"
+    ],
+    "pmids": [
+      "19553221"
+    ]
+  },
+  {
+    "chave": "Coombes2009b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Optimising corticosteroid injection for lateral epicondylalgia with the addition of physiotherapy: A protocol for a randomised control trial with placebo comparison",
+      "Optimising corticosteroid injection for lateral epicondylalgia with the addition of physiotherapy: a protocol for a randomised control trial with placebo comparison"
+    ],
+    "anos": [
+      2009
+    ],
+    "dois": [
+      "10.1186/1471-2474-10-76"
+    ],
+    "pmids": [
+      "19552805"
+    ]
+  },
+  {
+    "chave": "Jafarian2009",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "The Immediate Effect of Orthotic Management on Grip Strength of Patients With Lateral Epicondylosis",
+      "The immediate effect of orthotic management on grip strength of patients with lateral epicondylosis"
+    ],
+    "anos": [
+      2009
+    ],
+    "dois": [
+      "10.2519/jospt.2009.2988"
+    ],
+    "pmids": [
+      "19487823"
+    ]
+  },
+  {
+    "chave": "FernandezCarnero2008b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Immediate Hypoalgesic and Motor Effects After a Single Cervical Spine Manipulation in Subjects With Lateral Epicondylalgia",
+      "Immediate hypoalgesic and motor effects after a single cervical spine manipulation in subjects with lateral epicondylalgia"
+    ],
+    "anos": [
+      2008
+    ],
+    "dois": [
+      "10.1016/j.jmpt.2008.10.005"
+    ],
+    "pmids": [
+      "19028251"
+    ]
+  },
+  {
+    "chave": "RezaNourbakhsh2008",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "An alternative approach to treating lateral epicondylitis. A randomized, placebo-controlled, double-blinded study"
+    ],
+    "anos": [
+      2008
+    ],
+    "dois": [
+      "10.1177/0269215507088447"
+    ],
+    "pmids": [
+      "18586811"
+    ]
+  },
+  {
+    "chave": "Luginbuhl2008",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "No effect of forearm band and extensor strengthening exercises for the treatment of tennis elbow: a prospective randomised study"
+    ],
+    "anos": [
+      2008
+    ],
+    "dois": [
+      "10.1007/s12306-007-0006-3"
+    ],
+    "pmids": [
+      "18320371"
+    ]
+  },
+  {
+    "chave": "Zeisig2008",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Pain relief after intratendinous injections in patients with tennis elbow: results of a randomised study"
+    ],
+    "anos": [
+      2008
+    ],
+    "dois": [
+      "10.1136/bjsm.2007.042762"
+    ],
+    "pmids": [
+      "18216158"
+    ]
+  },
+  {
+    "chave": "Oken2008",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "The Short-term Efficacy of Laser, Brace, and Ultrasound Treatment in Lateral Epicondylitis: A Prospective, Randomized, Controlled Trial",
+      "The short-term efficacy of laser, brace, and ultrasound treatment in lateral epicondylitis: a prospective, randomized, controlled trial"
+    ],
+    "anos": [
+      2008
+    ],
+    "dois": [
+      "10.1197/j.jht.2007.09.003"
+    ],
+    "pmids": [
+      "18215753"
+    ]
+  },
+  {
+    "chave": "Marik2008",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Clinical Commentary in Response to: The Effects of Oscillating-Energy Manual Therapy on Lateral Epicondylitis: A Randomized, Placebo-Controlled, and Double-Blinded Study",
+      "Clinical commentary in response to: the effects of oscillating-energy manual therapy on lateral epicondylitis: a randomized, placebo-controlled, and double-blinded study"
+    ],
+    "anos": [
+      2008
+    ],
+    "dois": [
+      "10.1197/j.jht.2007.10.004"
+    ],
+    "pmids": [
+      "18215747"
+    ]
+  },
+  {
+    "chave": "Nourbakhsh2008",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "The Effect of Oscillating-energy Manual Therapy on Lateral Epicondylitis: A Randomized, Placebo-control, Double-blinded Study",
+      "The effect of oscillating-energy manual therapy on lateral epicondylitis: a randomized, placebo-control, double-blinded study"
+    ],
+    "anos": [
+      2008
+    ],
+    "dois": [
+      "10.1197/j.jht.2007.09.005"
+    ],
+    "pmids": [
+      "18215746"
+    ]
+  },
+  {
+    "chave": "Nilsson2007",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "A prospective pilot study of a multidisciplinary home training programme for lateral epicondylitis"
+    ],
+    "anos": [
+      2006,
+      2007
+    ],
+    "dois": [
+      "10.1002/msc.97"
+    ],
+    "pmids": [
+      "17183512"
+    ]
+  },
+  {
+    "chave": "Tonks2007",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Steroid injection therapy is the best conservative treatment for lateral epicondylitis: a prospective randomised controlled trial"
+    ],
+    "anos": [
+      2006,
+      2007
+    ],
+    "dois": [
+      "10.1111/j.1742-1241.2006.01140.x"
+    ],
+    "pmids": [
+      "17166184"
+    ]
+  },
+  {
+    "chave": "Bisset2006b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Mobilisation with movement and exercise, corticosteroid injection, or wait and see for tennis elbow: randomised trial"
+    ],
+    "anos": [
+      2006
+    ],
+    "dois": [
+      "10.1136/bmj.38961.584653.ae"
+    ],
+    "pmids": [
+      "17012266"
+    ]
+  },
+  {
+    "chave": "Smidt2006",
+    "criterios": [
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Lateral epicondylitis in general practice: course and prognostic indicators of outcome",
+      "Lateral epicondylitis in general practice: course and prognostic indicators of outcome."
+    ],
+    "anos": [
+      2006
+    ],
+    "dois": [],
+    "pmids": [
+      "16881095"
+    ]
+  },
+  {
+    "chave": "Struijs2006",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Cost effectiveness of brace, physiotherapy, or both for treatment of tennis elbow"
+    ],
+    "anos": [
+      2006
+    ],
+    "dois": [
+      "10.1136/bjsm.2006.026187"
+    ],
+    "pmids": [
+      "16687482"
+    ]
+  },
+  {
+    "chave": "Stasinopoulos2006",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Comparison of effects of Cyriax physiotherapy, a supervised exercise programme and polarized polychromatic non-coherent light (Bioptron light) for the treatment of lateral epicondylitis"
+    ],
+    "anos": [
+      2006
+    ],
+    "dois": [
+      "10.1191/0269215506cr921oa"
+    ],
+    "pmids": [
+      "16502745"
+    ]
+  },
+  {
+    "chave": "Manias2006",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "A controlled clinical pilot trial to study the effectiveness of ice as a supplement to the exercise programme for the management of lateral elbow tendinopathy"
+    ],
+    "anos": [
+      2005,
+      2006
+    ],
+    "dois": [
+      "10.1136/bjsm.2005.020909"
+    ],
+    "pmids": [
+      "16371498"
+    ]
+  },
+  {
+    "chave": "MartinezSilvestrini2005",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Chronic Lateral Epicondylitis: Comparative Effectiveness of a Home Exercise Program Including Stretching Alone versus Stretching Supplemented with Eccentric or Concentric Strengthening",
+      "Chronic lateral epicondylitis: comparative effectiveness of a home exercise program including stretching alone versus stretching supplemented with eccentric or concentric strengthening"
+    ],
+    "anos": [
+      2005
+    ],
+    "dois": [
+      "10.1197/j.jht.2005.07.007"
+    ],
+    "pmids": [
+      "16271688"
+    ]
+  },
+  {
+    "chave": "Stasinopoulos2005",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Effectiveness of extracorporeal shock wave therapy for tennis elbow (lateral epicondylitis)"
+    ],
+    "anos": [
+      2005
+    ],
+    "dois": [
+      "10.1136/bjsm.2004.015545"
+    ],
+    "pmids": [
+      "15728688"
+    ]
+  },
+  {
+    "chave": "Melegati2004",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Comparison of two ultrasonographic localization techniques for the treatment of lateral epicondylitis with extracorporeal shock wave therapy: a randomized study"
+    ],
+    "anos": [
+      2004
+    ],
+    "dois": [
+      "10.1191/0269215504cr762oa"
+    ],
+    "pmids": [
+      "15180119"
+    ]
+  },
+  {
+    "chave": "Struijs2004",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Conservative Treatment of Lateral Epicondylitis: Brace Versus Physical Therapy or a Combination of Both—A Randomized Clinical Trial",
+      "Conservative treatment of lateral epicondylitis: brace versus physical therapy or a combination of both-a randomized clinical trial"
+    ],
+    "anos": [
+      2004
+    ],
+    "dois": [
+      "10.1177/0095399703258714"
+    ],
+    "pmids": [
+      "14977675"
+    ]
+  },
+  {
+    "chave": "Vicenzino2003b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Initial Effects of Elbow Taping on Pain-Free Grip Strength and Pressure Pain Threshold",
+      "Initial effects of elbow taping on pain-free grip strength and pressure pain threshold"
+    ],
+    "anos": [
+      2003
+    ],
+    "dois": [
+      "10.2519/jospt.2003.33.7.400"
+    ],
+    "pmids": [
+      "12918865"
+    ]
+  },
+  {
+    "chave": "Struijs2003",
+    "criterios": [
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Manipulation of the Wrist for Management of Lateral Epicondylitis: A Randomized Pilot Study",
+      "Manipulation of the wrist for management of lateral epicondylitis: a randomized pilot study"
+    ],
+    "anos": [
+      2003
+    ],
+    "dois": [
+      "10.1093/ptj/83.7.608"
+    ],
+    "pmids": [
+      "12837122"
+    ]
+  },
+  {
+    "chave": "Haahr2003b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Prognostic factors in lateral epicondylitis: a randomized trial with one-year follow-up in 266 new cases treated with minimal occupational intervention or the usual approach in general practice"
+    ],
+    "anos": [
+      2003
+    ],
+    "dois": [
+      "10.1093/rheumatology/keg360"
+    ],
+    "pmids": [
+      "12810936"
+    ]
+  },
+  {
+    "chave": "Baskurt2003",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Comparison of effects of phonophoresis and iontophoresis of naproxen in the treatment of lateral epicondylitis"
+    ],
+    "anos": [
+      2003
+    ],
+    "dois": [
+      "10.1191/0269215503cr588oa"
+    ],
+    "pmids": [
+      "12617384"
+    ]
+  },
+  {
+    "chave": "Smidt2002c",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Interobserver reproducibility of the assessment of severity of complaints, grip strength, and pressure pain threshold in patients with lateral epicondylitis"
+    ],
+    "anos": [
+      2002
+    ],
+    "dois": [
+      "10.1053/apmr.2002.33728"
+    ],
+    "pmids": [
+      "12161838"
+    ]
+  },
+  {
+    "chave": "Lewis2002",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Effects of manual work on recovery from lateral epicondylitis"
+    ],
+    "anos": [
+      2002
+    ],
+    "dois": [
+      "10.5271/sjweh.654"
+    ],
+    "pmids": [
+      "12019587"
+    ]
+  },
+  {
+    "chave": "Smidt2002",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Corticosteroid injections, physiotherapy, or a wait-and-see policy for lateral epicondylitis: a randomised controlled trial"
+    ],
+    "anos": [
+      2002
+    ],
+    "dois": [
+      "10.1016/s0140-6736(02)07811-x"
+    ],
+    "pmids": [
+      "11879861"
+    ]
+  },
+  {
+    "chave": "Svernlov2001",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Non-operative treatment regime including eccentric training for lateral humeral epicondylalgia",
+      "Non‐operative treatment regime including eccentric training for lateral humeral epicondylalgia"
+    ],
+    "anos": [
+      2001
+    ],
+    "dois": [
+      "10.1034/j.1600-0838.2001.110603.x"
+    ],
+    "pmids": [
+      "11782264"
+    ]
+  },
+  {
+    "chave": "Newcomer2001",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Corticosteroid Injection in Early Treatment of Lateral Epicondylitis",
+      "Corticosteroid injection in early treatment of lateral epicondylitis"
+    ],
+    "anos": [
+      2001
+    ],
+    "dois": [
+      "10.1097/00042752-200110000-00002"
+    ],
+    "pmids": [
+      "11753057"
+    ]
+  },
+  {
+    "chave": "Connell2009",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Treatment of lateral epicondylitis using skin-derived tenocyte-like cells"
+    ],
+    "anos": [
+      2009
+    ],
+    "dois": [
+      "10.1136/bjsm.2008.056457"
+    ],
+    "pmids": [
+      "19224912"
+    ]
+  },
+  {
+    "chave": "Stasinopoulos2015",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Greek adaptation and validation of the Patient-Rated Tennis Elbow Evaluation (PRTEE)"
+    ],
+    "anos": [
+      2014,
+      2015
+    ],
+    "dois": [
+      "10.1016/j.jht.2014.12.005"
+    ],
+    "pmids": [
+      "26003013"
+    ]
+  },
+  {
+    "chave": "Suzuki2022",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Repeated magnetic resonance imaging at 6 follow-up visits over a 2-year period after platelet-rich plasma injection in patients with lateral epicondylitis"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.1016/j.jse.2022.01.147"
+    ],
+    "pmids": [
+      "35247575"
+    ]
+  },
+  {
+    "chave": "Blanchette2010",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Cross-cultural Adaptation of the Patient-rated Tennis Elbow Evaluation to Canadian French",
+      "Cross-cultural adaptation of the patient-rated tennis elbow evaluation to Canadian French"
+    ],
+    "anos": [
+      2010
+    ],
+    "dois": [
+      "10.1016/j.jht.2010.01.003"
+    ],
+    "pmids": [
+      "20400264"
+    ]
+  },
+  {
+    "chave": "Syed2024",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "The effects of the addition of Mulligan mobilization with movement to exercise on elbow pain and function associated with lateral elbow tendinopathy"
+    ],
+    "anos": [
+      2024
+    ],
+    "dois": [
+      "10.1016/j.jbmt.2024.06.007"
+    ],
+    "pmids": [
+      "39593689"
+    ]
+  },
+  {
+    "chave": "Farkash2019",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "First clinical experience with a new injectable recombinant human collagen scaffold combined with autologous platelet-rich plasma for the treatment of lateral epicondylar tendinopathy (tennis elbow)"
+    ],
+    "anos": [
+      2019
+    ],
+    "dois": [
+      "10.1016/j.jse.2018.09.007"
+    ],
+    "pmids": [
+      "30487054"
+    ]
+  },
+  {
+    "chave": "Ku2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Serum 25-Hydroxyvitamin D Status and 12-Week Functional Outcomes After Extracorporeal Shock Wave Therapy for Lateral Epicondylitis: A Retrospective Cohort Study"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.3390/nu18132152"
+    ],
+    "pmids": [
+      "42451155"
+    ]
+  },
+  {
+    "chave": "Bhatt2013",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Middle and Lower Trapezius Strengthening for the Management of Lateral Epicondylalgia: A Case Report",
+      "Middle and lower trapezius strengthening for the management of lateral epicondylalgia: a case report"
+    ],
+    "anos": [
+      2013
+    ],
+    "dois": [
+      "10.2519/jospt.2013.4659"
+    ],
+    "pmids": [
+      "24175610"
+    ]
+  },
+  {
+    "chave": "Hortz2024",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Treating Lateral Epicondylopathy With Dry Needling and Exercise: A Case Series"
+    ],
+    "anos": [
+      2024
+    ],
+    "dois": [
+      "10.1123/jsr.2023-0015"
+    ],
+    "pmids": [
+      "38531344"
+    ]
+  },
+  {
+    "chave": "Li2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Lateral epicondylosis"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.1503/cmaj.211047"
+    ],
+    "pmids": [
+      "35193862"
+    ]
+  },
+  {
+    "chave": "Roh2019",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "The Prognostic Value of Pain Sensitization in Patients With Lateral Epicondylitis"
+    ],
+    "anos": [
+      2018,
+      2019
+    ],
+    "dois": [
+      "10.1016/j.jhsa.2018.06.013"
+    ],
+    "pmids": [
+      "30037764"
+    ]
+  },
+  {
+    "chave": "Boden2019",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Platelet-rich plasma versus Tenex in the treatment of medial and lateral epicondylitis"
+    ],
+    "anos": [
+      2019
+    ],
+    "dois": [
+      "10.1016/j.jse.2018.08.032"
+    ],
+    "pmids": [
+      "30551782"
+    ]
+  },
+  {
+    "chave": "Stasinopoulos2019",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "The role of proprioception in the management of lateral elbow tendinopathy"
+    ],
+    "anos": [
+      2019
+    ],
+    "dois": [
+      "10.1016/j.jht.2018.02.010"
+    ],
+    "pmids": [
+      "30017410"
+    ]
+  },
+  {
+    "chave": "Stasinopoulos2005d",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "An exercise programme for the management of lateral elbow tendinopathy"
+    ],
+    "anos": [
+      2005
+    ],
+    "dois": [
+      "10.1136/bjsm.2005.019836"
+    ],
+    "pmids": [
+      "16306504"
+    ]
+  },
+  {
+    "chave": "Thapa2025",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Comparison of the Efficacy of Corticosteroid Injection and Dry Needling in Treating Lateral Epicondylitis: An Observational Study"
+    ],
+    "anos": [
+      2025
+    ],
+    "dois": [
+      "10.31729/jnma.v63i2091.9241"
+    ],
+    "pmids": [
+      "41782623"
+    ]
+  },
+  {
+    "chave": "Sun2021",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Trends in Corticosteroid Injections for Treatment of Lateral Epicondylitis: An Analysis of 80,169 Patients"
+    ],
+    "anos": [
+      2021
+    ],
+    "dois": [
+      "10.5435/jaaosglobal-d-21-00186"
+    ],
+    "pmids": [
+      "34506365"
+    ]
+  },
+  {
+    "chave": "AhmadiBani2019",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Design and construction of a tennis elbow brace with light-emitting diode in subjects with lateral epicondylitis"
+    ],
+    "anos": [
+      2019
+    ],
+    "dois": [
+      "10.1016/j.jht.2017.08.009"
+    ],
+    "pmids": [
+      "29153894"
+    ]
+  },
+  {
+    "chave": "Page2018",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Letter to the editor regarding \"The effects of KinesioTape on the treatment of lateral epicondylitis\"",
+      "Letter to the editor regarding “The effects of KinesioTape on the treatment of lateral epicondylitis”"
+    ],
+    "anos": [
+      2018
+    ],
+    "dois": [
+      "10.1016/j.jht.2017.06.006"
+    ],
+    "pmids": [
+      "28967459"
+    ]
+  },
+  {
+    "chave": "Vicenzino2003",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Lateral epicondylalgia: a musculoskeletal physiotherapy perspective"
+    ],
+    "anos": [
+      2003
+    ],
+    "dois": [
+      "10.1016/s1356-689x(02)00157-1"
+    ],
+    "pmids": [
+      "12890434"
+    ]
+  },
+  {
+    "chave": "Gercek2026",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Pain, grip strength, and motor imagery reaction time are associated with pain and disability in individuals with chronic lateral elbow tendinopathy"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1016/j.msksp.2025.103463"
+    ],
+    "pmids": [
+      "41349351"
+    ]
+  },
+  {
+    "chave": "Waugh2004",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Factors associated with prognosis of lateral epicondylitis after 8 weeks of physical therapy"
+    ],
+    "anos": [
+      2004
+    ],
+    "dois": [
+      "10.1016/s0003-9993(03)00480-5"
+    ],
+    "pmids": [
+      "14966719"
+    ]
+  },
+  {
+    "chave": "Iwamoto2017",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Transcatheter arterial embolization of abnormal vessels as a treatment for lateral epicondylitis refractory to conservative treatment: a pilot study with a 2-year follow-up"
+    ],
+    "anos": [
+      2017
+    ],
+    "dois": [
+      "10.1016/j.jse.2017.03.026"
+    ],
+    "pmids": [
+      "28734535"
+    ]
+  },
+  {
+    "chave": "Ruch2015",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "A comparison of débridement with and without anconeus muscle flap for treatment of refractory lateral epicondylitis"
+    ],
+    "anos": [
+      2015
+    ],
+    "dois": [
+      "10.1016/j.jse.2014.09.035"
+    ],
+    "pmids": [
+      "25457781"
+    ]
+  },
+  {
+    "chave": "Vicenzino2009",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Development of a clinical prediction rule to identify initial responders to mobilisation with movement and exercise for lateral epicondylalgia"
+    ],
+    "anos": [
+      2008,
+      2009
+    ],
+    "dois": [
+      "10.1016/j.math.2008.08.004"
+    ],
+    "pmids": [
+      "18838330"
+    ]
+  },
+  {
+    "chave": "Chourasia2013",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Relationships Between Biomechanics, Tendon Pathology, and Function in Individuals With Lateral Epicondylosis",
+      "Relationships between biomechanics, tendon pathology, and function in individuals with lateral epicondylosis"
+    ],
+    "anos": [
+      2013
+    ],
+    "dois": [
+      "10.2519/jospt.2013.4411"
+    ],
+    "pmids": [
+      "23508267"
+    ]
+  },
+  {
+    "chave": "Faes2006b",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "A Dynamic Extensor Brace Reduces Electromyographic Activity of Wrist Extensor Muscles in Patients With Lateral Epicondylalgia",
+      "A dynamic extensor brace reduces electromyographic activity of wrist extensor muscles in patients with lateral epicondylalgia"
+    ],
+    "anos": [
+      2006
+    ],
+    "dois": [
+      "10.2519/jospt.2006.36.3.170"
+    ],
+    "pmids": [
+      "16596893"
+    ]
+  },
+  {
+    "chave": "Cleland2004",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Effectiveness of Manual Physical Therapy to the Cervical Spine in the Management of Lateral Epicondylalgia: A Retrospective Analysis",
+      "Effectiveness of manual physical therapy to the cervical spine in the management of lateral epicondylalgia: a retrospective analysis"
+    ],
+    "anos": [
+      2004
+    ],
+    "dois": [
+      "10.2519/jospt.2004.34.11.713"
+    ],
+    "pmids": [
+      "15609491"
+    ]
+  },
+  {
+    "chave": "TorpPedersen2008",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Effect of glucocorticosteroid injections in tennis elbow verified on colour Doppler ultrasonography: evidence of inflammation"
+    ],
+    "anos": [
+      2008
+    ],
+    "dois": [
+      "10.1136/bjsm.2007.041285"
+    ],
+    "pmids": [
+      "18308885"
+    ]
+  },
+  {
+    "chave": "Fernandez2010",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Specific Mechanical Pain Hypersensitivity Over Peripheral Nerve Trunks in Women With Either Unilateral Epicondylalgia or Carpal Tunnel Syndrome",
+      "Specific mechanical pain hypersensitivity over peripheral nerve trunks in women with either unilateral epicondylalgia or carpal tunnel syndrome"
+    ],
+    "anos": [
+      2010
+    ],
+    "dois": [
+      "10.2519/jospt.2010.3331"
+    ],
+    "pmids": [
+      "21041964"
+    ]
+  },
+  {
+    "chave": "MacDermid2010",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Hand Therapist Management of the Lateral Epicondylosis: A Survey of Expert Opinion and Practice Patterns",
+      "Hand therapist management of the lateral epicondylosis: a survey of expert opinion and practice patterns"
+    ],
+    "anos": [
+      2009,
+      2010
+    ],
+    "dois": [
+      "10.1016/j.jht.2009.09.009"
+    ],
+    "pmids": [
+      "19959328"
+    ]
+  },
+  {
+    "chave": "Pienimaki2002b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Associations Between Pain, Grip Strength, and Manual Tests in the Treatment Evaluation of Chronic Tennis Elbow",
+      "Associations between pain, grip strength, and manual tests in the treatment evaluation of chronic tennis elbow"
+    ],
+    "anos": [
+      2002
+    ],
+    "dois": [
+      "10.1097/00002508-200205000-00005"
+    ],
+    "pmids": [
+      "12048418"
+    ]
+  },
+  {
+    "chave": "Henze2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "MRI severity of common extensor origin damage associated with prior glucocorticoid injection in chronic lateral epicondylitis: a retrospective multicenter analysis"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1186/s12891-026-10450-7"
+    ],
+    "pmids": [
+      "42823696"
+    ]
+  },
+  {
+    "chave": "Altan2010",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Reliability and validity of Turkish version of the patient rated tennis elbow evaluation"
+    ],
+    "anos": [
+      2009,
+      2010
+    ],
+    "dois": [
+      "10.1007/s00296-009-1101-6"
+    ],
+    "pmids": [
+      "19707766"
+    ]
+  },
+  {
+    "chave": "Waugh2004b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Computer Use Associated With Poor Long-Term Prognosis of Conservatively Managed Lateral Epicondylalgia",
+      "Computer use associated with poor long-term prognosis of conservatively managed lateral epicondylalgia"
+    ],
+    "anos": [
+      2004
+    ],
+    "dois": [
+      "10.2519/jospt.2004.34.12.770"
+    ],
+    "pmids": [
+      "15643732"
+    ]
+  },
+  {
+    "chave": "VanArk2014",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Cross-cultural adaptation and reliability and validity of the Dutch Patient-Rated Tennis Elbow Evaluation (PRTEE-D)"
+    ],
+    "anos": [
+      2014
+    ],
+    "dois": [
+      "10.1186/1471-2474-15-270"
+    ],
+    "pmids": [
+      "25112272"
+    ]
+  },
+  {
+    "chave": "Kalainov2005",
+    "criterios": [
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "POSTEROLATERAL ROTATORY INSTABILITY OF THE ELBOW IN ASSOCIATION WITH LATERAL EPICONDYLITIS: A REPORT OF THREE CASES",
+      "Posterolateral rotatory instability of the elbow in association with lateral epicondylitis. A report of three cases"
+    ],
+    "anos": [
+      2005
+    ],
+    "dois": [
+      "10.2106/00004623-200505000-00027",
+      "10.2106/jbjs.d.02293"
+    ],
+    "pmids": [
+      "15866979"
+    ]
+  },
+  {
+    "chave": "Wixom2012",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "A Potential Classification Model for Individuals with Tennis Elbow",
+      "A potential classification model for individuals with tennis elbow"
+    ],
+    "anos": [
+      2012
+    ],
+    "dois": [
+      "10.1016/j.jht.2012.06.007"
+    ],
+    "pmids": [
+      "22959537"
+    ]
+  },
+  {
+    "chave": "GutierrezEspinoza2024",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Effects of a Conventional Treatment Plus Scapular Exercises Program in Patients With Chronic Lateral Elbow Tendinopathy: A Pre-Post Single-Group Study",
+      "Effects of a Conventional Treatment Plus Scapular Exercises Program in Patients With Chronic Lateral Elbow Tendinopathy: A Pre−Post Single-Group Study"
+    ],
+    "anos": [
+      2024
+    ],
+    "dois": [
+      "10.1123/jsr.2023-0071"
+    ],
+    "pmids": [
+      "38167648"
+    ]
+  },
+  {
+    "chave": "Qiu2024",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Initial PROMIS Scores Correlate With Operative and Nonoperative Management of Lateral Epicondylitis"
+    ],
+    "anos": [
+      2022,
+      2024
+    ],
+    "dois": [
+      "10.1177/15589447221142885"
+    ],
+    "pmids": [
+      "36564976"
+    ]
+  },
+  {
+    "chave": "Coleman2010",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Surgical treatment for lateral epicondylitis: A long-term follow-up of results",
+      "Surgical treatment for lateral epicondylitis: a long-term follow-up of results"
+    ],
+    "anos": [
+      2010
+    ],
+    "dois": [
+      "10.1016/j.jse.2009.09.008"
+    ],
+    "pmids": [
+      "20004594"
+    ]
+  },
+  {
+    "chave": "Ozdincler2023",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Chronic lateral elbow tendinopathy with a supervised graded exercise protocol"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.1016/j.jht.2022.11.005"
+    ],
+    "pmids": [
+      "36914496"
+    ]
+  },
+  {
+    "chave": "Baker2000",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Arthroscopic classification and treatment of lateral epicondylitis: Two-year clinical results",
+      "Arthroscopic classification and treatment of lateral epicondylitis: two-year clinical results"
+    ],
+    "anos": [
+      2000
+    ],
+    "dois": [
+      "10.1067/mse.2000.108533"
+    ],
+    "pmids": [
+      "11155299"
+    ]
+  },
+  {
+    "chave": "Zeisig2010",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "A two-year sonographic follow-up after intratendinous injection therapy in patients with tennis elbow",
+      "A two-year sonographic follow-up after intratendinous injection therapy in patients with tennis elbow: Figure 1a–e"
+    ],
+    "anos": [
+      2008,
+      2010
+    ],
+    "dois": [
+      "10.1136/bjsm.2008.049874"
+    ],
+    "pmids": [
+      "18664498"
+    ]
+  },
+  {
+    "chave": "Hill2023",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Pain-free grip strength in individuals with lateral elbow tendinopathy: Between- and within-session reliability of one versus three trials"
+    ],
+    "anos": [
+      2022,
+      2023
+    ],
+    "dois": [
+      "10.1080/09593985.2022.2030445"
+    ],
+    "pmids": [
+      "35114892"
+    ]
+  },
+  {
+    "chave": "AriasBuria2019",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Ultrasound-Guided Percutaneous Electrical Nerve Stimulation of the Radial Nerve for a Patient With Lateral Elbow Pain: A Case Report With a 2-Year Follow-up"
+    ],
+    "anos": [
+      2019
+    ],
+    "dois": [
+      "10.2519/jospt.2019.8570"
+    ],
+    "pmids": [
+      "30658050"
+    ]
+  },
+  {
+    "chave": "Bisset2018",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Unilateral Lateral Epicondylalgia Shows a Pro-nociceptive Pain Profile: A Case-control Observational Study"
+    ],
+    "anos": [
+      2018
+    ],
+    "dois": [
+      "10.1097/ajp.0000000000000615"
+    ],
+    "pmids": [
+      "29620559"
+    ]
+  },
+  {
+    "chave": "Lee2025b",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Development and validation of a severity-focused score for the assessment of lateral epicondylitis using enhanced magnetic resonance imaging"
+    ],
+    "anos": [
+      2025
+    ],
+    "dois": [
+      "10.1016/j.jse.2025.01.052"
+    ],
+    "pmids": [
+      "40089014"
+    ]
+  },
+  {
+    "chave": "Walton2011",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "The Reliability and Validity of Magnetic Resonance Imaging in the Assessment of Chronic Lateral Epicondylitis",
+      "The reliability and validity of magnetic resonance imaging in the assessment of chronic lateral epicondylitis"
+    ],
+    "anos": [
+      2011
+    ],
+    "dois": [
+      "10.1016/j.jhsa.2010.11.040"
+    ],
+    "pmids": [
+      "21334144"
+    ]
+  },
+  {
+    "chave": "Ha2023",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Effect of Repetitive Corticosteroid Injection on Tennis Elbow Surgery"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.1177/03635465231166397"
+    ],
+    "pmids": [
+      "37129101"
+    ]
+  },
+  {
+    "chave": "Hegmann2017",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Association between Epicondylitis and Cardiovascular Risk Factors in Pooled Occupational Cohorts"
+    ],
+    "anos": [
+      2017
+    ],
+    "dois": [
+      "10.1186/s12891-017-1593-2"
+    ],
+    "pmids": [
+      "28558776"
+    ]
+  },
+  {
+    "chave": "Pitts2021",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Grip strength is more sensitive to changes in elbow position than isolated wrist extension strength in patients with lateral elbow tendinopathy"
+    ],
+    "anos": [
+      2021
+    ],
+    "dois": [
+      "10.1016/j.jht.2020.03.019"
+    ],
+    "pmids": [
+      "32565100"
+    ]
+  },
+  {
+    "chave": "Coombes2015b",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Management of Lateral Elbow Tendinopathy: One Size Does Not Fit All"
+    ],
+    "anos": [
+      2015
+    ],
+    "dois": [
+      "10.2519/jospt.2015.5841"
+    ],
+    "pmids": [
+      "26381484"
+    ]
+  },
+  {
+    "chave": "Zwerus2026",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Clinical diagnosis of lateral-sided elbow pain: predictors for recognizing a diagnosis other than tennis elbow"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1016/j.jse.2025.10.006"
+    ],
+    "pmids": [
+      "41192654"
+    ]
+  },
+  {
+    "chave": "Cacchio2012",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Cross-Cultural Adaptation and Measurement Properties of the Italian Version of the Patient-Rated Tennis Elbow Evaluation (PRTEE) Questionnaire",
+      "Cross-cultural adaptation and measurement properties of the italian version of the Patient-Rated Tennis Elbow Evaluation (PRTEE) questionnaire"
+    ],
+    "anos": [
+      2012
+    ],
+    "dois": [
+      "10.2522/ptj.20110398"
+    ],
+    "pmids": [
+      "22577068"
+    ]
+  },
+  {
+    "chave": "Degen2017",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Three or more preoperative injections is the most significant risk factor for revision surgery after operative treatment of lateral epicondylitis: an analysis of 3863 patients"
+    ],
+    "anos": [
+      2017
+    ],
+    "dois": [
+      "10.1016/j.jse.2016.10.022"
+    ],
+    "pmids": [
+      "28094190"
+    ]
+  },
+  {
+    "chave": "Jafarian2021",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "The Patient-Rated Tennis Elbow Evaluation Questionnaire was successfully translated to Persian"
+    ],
+    "anos": [
+      2020,
+      2021
+    ],
+    "dois": [
+      "10.1016/j.jht.2019.12.005"
+    ],
+    "pmids": [
+      "32156573"
+    ]
+  },
+  {
+    "chave": "Stasinopoulos2004",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Cyriax physiotherapy for tennis elbow/lateral epicondylitis"
+    ],
+    "anos": [
+      2004
+    ],
+    "dois": [
+      "10.1136/bjsm.2004.013573"
+    ],
+    "pmids": [
+      "15562158"
+    ]
+  },
+  {
+    "chave": "DuToit2008",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Diagnostic accuracy of power Doppler ultrasound in patients with chronic tennis elbow"
+    ],
+    "anos": [
+      2008
+    ],
+    "dois": [
+      "10.1136/bjsm.2007.043901"
+    ],
+    "pmids": [
+      "18308874"
+    ]
+  },
+  {
+    "chave": "Ucurum2019",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Comparison of scapular position and upper extremity muscle strength in patients with and without lateral epicondylalgia: a case-control study"
+    ],
+    "anos": [
+      2019
+    ],
+    "dois": [
+      "10.1016/j.jse.2018.12.010"
+    ],
+    "pmids": [
+      "30926184"
+    ]
+  },
+  {
+    "chave": "Heijnders2015",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "The effect of eccentric exercise in improving function or reducing pain in lateral epicondylitis is unclear"
+    ],
+    "anos": [
+      2015
+    ],
+    "dois": [
+      "10.1136/bjsports-2015-094640"
+    ],
+    "pmids": [
+      "25690409"
+    ]
+  },
+  {
+    "chave": "Manickaraj2025",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Altered anconeus muscle activation characteristics during isometric gripping in individuals with lateral elbow tendinopathy compared with age- and sex-matched control"
+    ],
+    "anos": [
+      2024,
+      2025
+    ],
+    "dois": [
+      "10.1016/j.jse.2024.11.001"
+    ],
+    "pmids": [
+      "39742949"
+    ]
+  },
+  {
+    "chave": "Zingg2006",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Debridement of extensors and drilling of the lateral epicondyle for tennis elbow: A retrospective follow-up study",
+      "Debridement of extensors and drilling of the lateral epicondyle for tennis elbow: a retrospective follow-up study"
+    ],
+    "anos": [
+      2006
+    ],
+    "dois": [
+      "10.1016/j.jse.2005.07.002"
+    ],
+    "pmids": [
+      "16679237"
+    ]
+  },
+  {
+    "chave": "Heales2018",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Stretching the evidence behind tennis elbow: mobile app user guide"
+    ],
+    "anos": [
+      2017,
+      2018
+    ],
+    "dois": [
+      "10.1136/bjsports-2017-098093"
+    ],
+    "pmids": [
+      "28928115"
+    ]
+  },
+  {
+    "chave": "Li2025",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Arthroscopic ligament débridement combined with tendon repair benefits lateral collateral ligament lesions in recalcitrant lateral epicondylitis patients: a retrospective comparative study"
+    ],
+    "anos": [
+      2025
+    ],
+    "dois": [
+      "10.1016/j.jse.2024.09.038"
+    ],
+    "pmids": [
+      "39617126"
+    ]
+  },
+  {
+    "chave": "Sasaki2011",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "The detection of the capsular tear at the undersurface of the extensor carpi radialis brevis tendon in chronic tennis elbow: the value of magnetic resonance imaging and computed tomography arthrography"
+    ],
+    "anos": [
+      2011
+    ],
+    "dois": [
+      "10.1016/j.jse.2010.12.002"
+    ],
+    "pmids": [
+      "21397791"
+    ]
+  },
+  {
+    "chave": "Karjalainen2025",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Can Surgeons or Patients Predict the Likelihood of Improvement With Nonoperative Treatment of Chronic Tennis Elbow?"
+    ],
+    "anos": [
+      2025
+    ],
+    "dois": [
+      "10.1097/corr.0000000000003425"
+    ],
+    "pmids": [
+      "40036009"
+    ]
+  },
+  {
+    "chave": "Heales2024",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Physiotherapy practices in the clinical assessment of lateral elbow tendinopathy: An international survey"
+    ],
+    "anos": [
+      2024
+    ],
+    "dois": [
+      "10.1002/pri.2125"
+    ],
+    "pmids": [
+      "39180299"
+    ]
+  },
+  {
+    "chave": "Bisset2015",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Physiotherapy management of lateral epicondylalgia"
+    ],
+    "anos": [
+      2015
+    ],
+    "dois": [
+      "10.1016/j.jphys.2015.07.015"
+    ],
+    "pmids": [
+      "26361816"
+    ]
+  },
+  {
+    "chave": "Park2019",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Association of steroid injection with soft-tissue calcification in lateral epicondylitis"
+    ],
+    "anos": [
+      2019
+    ],
+    "dois": [
+      "10.1016/j.jse.2018.10.009"
+    ],
+    "pmids": [
+      "30658775"
+    ]
+  },
+  {
+    "chave": "Nilsson2008",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Cross-cultural adaptation and determination of the reliability and validity of PRTEE-S (Patientskattad Utvärdering av Tennisarmbåge), a questionnaire for patients with lateral epicondylalgia, in a Swedish population"
+    ],
+    "anos": [
+      2008
+    ],
+    "dois": [
+      "10.1186/1471-2474-9-79"
+    ],
+    "pmids": [
+      "18534009"
+    ]
+  },
+  {
+    "chave": "Shim2018",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Surgical management of lateral epicondylitis combined with ligament insufficiency"
+    ],
+    "anos": [
+      2018
+    ],
+    "dois": [
+      "10.1016/j.jse.2018.06.011"
+    ],
+    "pmids": [
+      "30170794"
+    ]
+  },
+  {
+    "chave": "Coombes2009",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "A new integrative model of lateral epicondylalgia",
+      "A new integrative model of lateral epicondylalgia: Figure 1"
+    ],
+    "anos": [
+      2008,
+      2009
+    ],
+    "dois": [
+      "10.1136/bjsm.2008.052738"
+    ],
+    "pmids": [
+      "19050004"
+    ]
+  },
+  {
+    "chave": "Taylor2021",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "The forgotten radial nerve: A conceptual framework for treatment of lateral elbow pain"
+    ],
+    "anos": [
+      2021
+    ],
+    "dois": [
+      "10.1016/j.jht.2021.05.009"
+    ],
+    "pmids": [
+      "34193382"
+    ]
+  },
+  {
+    "chave": "Qi2016",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Magnetic Resonance Imaging of Patients With Chronic Lateral Epicondylitis: Is There a Relationship Between Magnetic Resonance Imaging Abnormalities of the Common Extensor Tendon and the Patient's Clinical Symptom?"
+    ],
+    "anos": [
+      2016
+    ],
+    "dois": [
+      "10.1097/md.0000000000002681"
+    ],
+    "pmids": [
+      "26844506"
+    ]
+  },
+  {
+    "chave": "Marks2021",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Patient-Rated Tennis Elbow Evaluation (PRTEE)",
+      "Patient-Rated Tennis Elbow Evaluation (PRTEE): Translation and Cross-Cultural Adaptation into German"
+    ],
+    "anos": [
+      2020,
+      2021
+    ],
+    "dois": [
+      "10.1055/a-1107-3313"
+    ],
+    "pmids": [
+      "32207123"
+    ]
+  },
+  {
+    "chave": "Kaux2016",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Cross-cultural adaptation and validation of the Patient-Rated Tennis Elbow Evaluation Questionnaire on lateral elbow tendinopathy for French-speaking patients"
+    ],
+    "anos": [
+      2016
+    ],
+    "dois": [
+      "10.1016/j.jht.2016.06.007"
+    ],
+    "pmids": [
+      "27769841"
+    ]
+  },
+  {
+    "chave": "Rompe2007",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Validation of the Patient-rated Tennis Elbow Evaluation Questionnaire"
+    ],
+    "anos": [
+      2007
+    ],
+    "dois": [
+      "10.1197/j.jht.2006.10.003"
+    ],
+    "pmids": [
+      "17254903"
+    ]
+  },
+  {
+    "chave": "Newcomer2005",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Sensitivity of the Patient-rated Forearm Evaluation Questionnaire in Lateral Epicondylitis",
+      "Sensitivity of the Patient-rated Forearm Evaluation Questionnaire in lateral epicondylitis"
+    ],
+    "anos": [
+      2005
+    ],
+    "dois": [
+      "10.1197/j.jht.2005.07.001"
+    ],
+    "pmids": [
+      "16271686"
+    ]
+  },
+  {
+    "chave": "Koh2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "The patient-rated tennis elbow evaluation questionnaire was successfully translated to Korean"
+    ],
+    "anos": [
+      2021,
+      2022
+    ],
+    "dois": [
+      "10.1016/j.jht.2021.04.007"
+    ],
+    "pmids": [
+      "34253401"
+    ]
+  },
+  {
+    "chave": "Savoie2010",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Arthroscopic tennis elbow release"
+    ],
+    "anos": [
+      2010
+    ],
+    "dois": [
+      "10.1016/j.jse.2009.12.016"
+    ],
+    "pmids": [
+      "20188266"
+    ]
+  },
+  {
+    "chave": "Aben2018",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Tennis elbow: associated psychological factors"
+    ],
+    "anos": [
+      2018
+    ],
+    "dois": [
+      "10.1016/j.jse.2017.11.033"
+    ],
+    "pmids": [
+      "29433642"
+    ]
+  },
+  {
+    "chave": "Paoloni2004",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "The Orthopaedic Research Institute-Tennis Elbow Testing System: A modified chair pick-up test-interrater and intrarater reliability testing and validity for monitoring lateral epicondylosis",
+      "The Orthopaedic Research Institute–Tennis Elbow Testing System: a modified chair pick-up test—interrater and intrarater reliability testing and validity for monitoring lateral epicondylosis"
+    ],
+    "anos": [
+      2004
+    ],
+    "dois": [
+      "10.1016/j.jse.2003.09.017"
+    ],
+    "pmids": [
+      "14735078"
+    ]
+  },
+  {
+    "chave": "Day2015",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Scapular Muscle Performance in Individuals With Lateral Epicondylalgia",
+      "Scapular muscle performance in individuals with lateral epicondylalgia"
+    ],
+    "anos": [
+      2015
+    ],
+    "dois": [
+      "10.2519/jospt.2015.5290"
+    ],
+    "pmids": [
+      "25579691"
+    ]
+  },
+  {
+    "chave": "Herquelot2013",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Work-related risk factors for lateral epicondylitis and other cause of elbow pain in the working population",
+      "Work‐related risk factors for lateral epicondylitis and other cause of elbow pain in the working population"
+    ],
+    "anos": [
+      2012,
+      2013
+    ],
+    "dois": [
+      "10.1002/ajim.22140"
+    ],
+    "pmids": [
+      "23152138"
+    ]
+  },
+  {
+    "chave": "Kwon2017",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "The Nirschl procedure versus arthroscopic extensor carpi radialis brevis débridement for lateral epicondylitis"
+    ],
+    "anos": [
+      2017
+    ],
+    "dois": [
+      "10.1016/j.jse.2016.09.022"
+    ],
+    "pmids": [
+      "27810264"
+    ]
+  },
+  {
+    "chave": "Kwon2019",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Does use of the 70° arthroscope improve the outcomes of arthroscopic débridement for chronic recalcitrant tennis elbow?"
+    ],
+    "anos": [
+      2019
+    ],
+    "dois": [
+      "10.1016/j.jse.2019.04.056"
+    ],
+    "pmids": [
+      "31326339"
+    ]
+  },
+  {
+    "chave": "Kim2026e",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Interpretable machine learning models for classifying lateral epicondylitis based on wrist range of motion and strength in assembly line workers"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1177/10519815261473861"
+    ],
+    "pmids": [
+      "42570259"
+    ]
+  },
+  {
+    "chave": "Marigi2023",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Lateral Epicondylitis: Critical Analysis Review of Current Nonoperative Treatments"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.2106/jbjs.rvw.22.00170"
+    ],
+    "pmids": [
+      "36800442"
+    ]
+  },
+  {
+    "chave": "Kohia2008",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Effectiveness of Physical Therapy Treatments on Lateral Epicondylitis",
+      "Effectiveness of physical therapy treatments on lateral epicondylitis"
+    ],
+    "anos": [
+      2008
+    ],
+    "dois": [
+      "10.1123/jsr.17.2.119"
+    ],
+    "pmids": [
+      "18515912"
+    ]
+  },
+  {
+    "chave": "Keating2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Exploring the Relationship Between Central Sensitization, Pain Characteristics, and Function in a Cross-Sectional Study of Individuals With Lateral Elbow Tendinopathy"
+    ],
+    "anos": [
+      2025,
+      2026
+    ],
+    "dois": [
+      "10.1097/ajp.0000000000001335"
+    ],
+    "pmids": [
+      "41084876"
+    ]
+  },
+  {
+    "chave": "Macdermid2005",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Update: The Patient-rated Forearm Evaluation Questionnaire Is Now the Patient-rated Tennis Elbow Evaluation",
+      "Update: The Patient-rated Forearm Evaluation Questionnaire is now the Patient-rated Tennis Elbow Evaluation"
+    ],
+    "anos": [
+      2005
+    ],
+    "dois": [
+      "10.1197/j.jht.2005.07.002"
+    ],
+    "pmids": [
+      "16271687"
+    ]
+  },
+  {
+    "chave": "Bunata2007",
+    "criterios": [
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Anatomic Factors Related to the Cause of Tennis Elbow",
+      "Anatomic factors related to the cause of tennis elbow"
+    ],
+    "anos": [
+      2007
+    ],
+    "dois": [
+      "10.2106/00004623-200709000-00010",
+      "10.2106/jbjs.f.00727"
+    ],
+    "pmids": [
+      "17768192"
+    ]
+  },
+  {
+    "chave": "Descatha2013",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Self-reported physical exposure association with medial and lateral epicondylitis incidence in a large longitudinal study",
+      "Self-reported physical exposure association with medial and lateral epicondylitis incidence in a large longitudinal study: Table 1"
+    ],
+    "anos": [
+      2013
+    ],
+    "dois": [
+      "10.1136/oemed-2012-101341"
+    ],
+    "pmids": [
+      "23825198"
+    ]
+  },
+  {
+    "chave": "Vincent2014",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Patient-Rated Tennis Elbow Evaluation Questionnaire",
+      "Patient-rated tennis elbow evaluation questionnaire"
+    ],
+    "anos": [
+      2014
+    ],
+    "dois": [
+      "10.1016/j.jphys.2014.08.002"
+    ],
+    "pmids": [
+      "25278488"
+    ]
+  },
+  {
+    "chave": "Cha2019",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Magnetic resonance imaging of patients with lateral epicondylitis: Relationship between pain and severity of imaging features in elbow joints"
+    ],
+    "anos": [
+      2019
+    ],
+    "dois": [
+      "10.1016/j.aott.2019.04.006"
+    ],
+    "pmids": [
+      "31040053"
+    ]
+  },
+  {
+    "chave": "Haahr2003",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Physical and psychosocial risk factors for lateral epicondylitis: a population based case-referent study"
+    ],
+    "anos": [
+      2003
+    ],
+    "dois": [
+      "10.1136/oem.60.5.322"
+    ],
+    "pmids": [
+      "12709516"
+    ]
+  },
+  {
+    "chave": "Takasaki2007",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Muscle strain on the radial wrist extensors during motion-simulating stretching exercises for lateral epicondylitis: A cadaveric study",
+      "Muscle strain on the radial wrist extensors during motion-simulating stretching exercises for lateral epicondylitis: a cadaveric study"
+    ],
+    "anos": [
+      2007
+    ],
+    "dois": [
+      "10.1016/j.jse.2007.03.022"
+    ],
+    "pmids": [
+      "17936026"
+    ]
+  },
+  {
+    "chave": "Alizadehkhaiyat2007b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Pain, Functional Disability, and Psychologic Status in Tennis Elbow",
+      "Pain, functional disability, and psychologic status in tennis elbow"
+    ],
+    "anos": [
+      2007
+    ],
+    "dois": [
+      "10.1097/ajp.0b013e31805f70fa"
+    ],
+    "pmids": [
+      "17575487"
+    ]
+  },
+  {
+    "chave": "Dzugan2012",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Acute radial ulno-humeral ligament injury in patients with chronic lateral epicondylitis: an observational report"
+    ],
+    "anos": [
+      2012
+    ],
+    "dois": [
+      "10.1016/j.jse.2012.04.008"
+    ],
+    "pmids": [
+      "22743071"
+    ]
+  },
+  {
+    "chave": "Ang2021",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Ultrasonic Percutaneous Tenotomy for Recalcitrant Lateral Elbow Tendinopathy: Clinical and Sonographic Results at 90 Months"
+    ],
+    "anos": [
+      2021
+    ],
+    "dois": [
+      "10.1177/03635465211010158"
+    ],
+    "pmids": [
+      "33956537"
+    ]
+  },
+  {
+    "chave": "Bonczar2023b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Evaluation of lateral epicondylopathy, posterior interosseous nerve compression, and plica syndrome as co-existing causes of chronic tennis elbow"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.1007/s00264-023-05805-x"
+    ],
+    "pmids": [
+      "37071147"
+    ]
+  },
+  {
+    "chave": "Lee2018d",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Prominent synovial plicae in radiocapitellar joints as a potential cause of lateral elbow pain: clinico-radiologic correlation"
+    ],
+    "anos": [
+      2018
+    ],
+    "dois": [
+      "10.1016/j.jse.2018.04.024"
+    ],
+    "pmids": [
+      "30016689"
+    ]
+  },
+  {
+    "chave": "SemAutor2023b",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Tennis Elbow: What Is It? How Do I Get Back to My Regular Activities?"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.2519/jospt.2023.0504"
+    ],
+    "pmids": [
+      "36975037"
+    ]
+  },
+  {
+    "chave": "Sanders2015",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "The Epidemiology and Health Care Burden of Tennis Elbow: A Population-Based Study",
+      "The epidemiology and health care burden of tennis elbow: a population-based study"
+    ],
+    "anos": [
+      2015
+    ],
+    "dois": [
+      "10.1177/0363546514568087"
+    ],
+    "pmids": [
+      "25656546"
+    ]
+  },
+  {
+    "chave": "Keating2026b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "The Association of Perceived Controllability, Fear, and Catastrophizing With Pain Experience: Insights From a Cross-sectional Study in Individuals With Lateral Elbow Tendinopathy"
+    ],
+    "anos": [
+      2025,
+      2026
+    ],
+    "dois": [
+      "10.2519/josptopen.2025.0179"
+    ],
+    "pmids": [
+      "42686170"
+    ]
+  },
+  {
+    "chave": "George2018",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "PT and OT Helper Golf Elbow: a mobile app user guide for getting a grip on medial epicondylalgia"
+    ],
+    "anos": [
+      2018
+    ],
+    "dois": [
+      "10.1136/bjsports-2017-098749"
+    ],
+    "pmids": [
+      "29351949"
+    ]
+  },
+  {
+    "chave": "Lattermann2010",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Arthroscopic debridement of the extensor carpi radialis brevis for recalcitrant lateral epicondylitis"
+    ],
+    "anos": [
+      2010
+    ],
+    "dois": [
+      "10.1016/j.jse.2010.02.008"
+    ],
+    "pmids": [
+      "20541097"
+    ]
+  },
+  {
+    "chave": "DeSmedt2007",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Lateral epicondylitis in tennis: update on aetiology, biomechanics and treatment"
+    ],
+    "anos": [
+      2007
+    ],
+    "dois": [
+      "10.1136/bjsm.2007.036723"
+    ],
+    "pmids": [
+      "17616547"
+    ]
+  },
+  {
+    "chave": "Wallace2024",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "CORR Insights®: In the Treatment of Lateral Epicondylitis by Percutaneous Perforation, Injectables Have No Added Value"
+    ],
+    "anos": [
+      2023,
+      2024
+    ],
+    "dois": [
+      "10.1097/corr.0000000000002876"
+    ],
+    "pmids": [
+      "37788352"
+    ]
+  },
+  {
+    "chave": "Lee2014",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "The relationship between positive or negative phrasing and patients' coping with lateral epicondylitis"
+    ],
+    "anos": [
+      2014
+    ],
+    "dois": [
+      "10.1016/j.jse.2014.01.020"
+    ],
+    "pmids": [
+      "24630548"
+    ]
+  },
+  {
+    "chave": "Myers2025",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Positive clinical tests for medial epicondylalgia are more common than tests for lateral epicondylalgia in recreational pickleball players: A cross-sectional study"
+    ],
+    "anos": [
+      2025
+    ],
+    "dois": [
+      "10.1016/j.jht.2024.12.013"
+    ],
+    "pmids": [
+      "39814630"
+    ]
+  },
+  {
+    "chave": "Fedorczyk2006",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Tennis Elbow: Blending Basic Science with Clinical Practice",
+      "Tennis elbow: blending basic science with clinical practice"
+    ],
+    "anos": [
+      2006
+    ],
+    "dois": [
+      "10.1197/j.jht.2006.02.016"
+    ],
+    "pmids": [
+      "16713862"
+    ]
+  },
+  {
+    "chave": "Gangatharam2021",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Anconeus syndrome: A potential cause for lateral elbow pain and its therapeutic management-A case report",
+      "Anconeus syndrome: A potential cause for lateral elbow pain and its therapeutic management—A case report"
+    ],
+    "anos": [
+      2021
+    ],
+    "dois": [
+      "10.1016/j.jht.2019.04.002"
+    ],
+    "pmids": [
+      "31492479"
+    ]
+  },
+  {
+    "chave": "LopezAlameda2022",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Arthroscopic surgery versus open surgery for lateral epicondylitis in an active work population: a comparative study"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.1016/j.jse.2021.11.017"
+    ],
+    "pmids": [
+      "34973424"
+    ]
+  },
+  {
+    "chave": "Ahmed2023",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Lateral epicondylitis of the elbow: an up-to-date review of management"
+    ],
+    "anos": [
+      2022,
+      2023
+    ],
+    "dois": [
+      "10.1007/s00590-021-03181-z"
+    ],
+    "pmids": [
+      "35031850"
+    ]
+  },
+  {
+    "chave": "Titchener2013",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Risk factors in lateral epicondylitis (tennis elbow): a case-control study"
+    ],
+    "anos": [
+      2012,
+      2013
+    ],
+    "dois": [
+      "10.1177/1753193412442464"
+    ],
+    "pmids": [
+      "22490998"
+    ]
+  },
+  {
+    "chave": "Ruch2006",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "The posterolateral plica: A cause of refractory lateral elbow pain",
+      "The posterolateral plica: a cause of refractory lateral elbow pain"
+    ],
+    "anos": [
+      2006
+    ],
+    "dois": [
+      "10.1016/j.jse.2005.08.013"
+    ],
+    "pmids": [
+      "16679240"
+    ]
+  },
+  {
+    "chave": "Ljung2004",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Neurokinin 1-receptors and sensory neuropeptides in tendon insertions at the medial and lateral epicondyles of the humerus. Studies on tennis elbow and medial epicondylalgia",
+      "Neurokinin 1‐receptors and sensory neuropeptides in tendon insertions at the medial and lateral epicondyles of the humerus Studies on tennis elbow and medial epicondylalgia"
+    ],
+    "anos": [
+      2004
+    ],
+    "dois": [
+      "10.1016/s0736-0266(03)00183-9"
+    ],
+    "pmids": [
+      "15013091"
+    ]
+  },
+  {
+    "chave": "Oki2014",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Time to functional recovery after arthroscopic surgery for tennis elbow"
+    ],
+    "anos": [
+      2014
+    ],
+    "dois": [
+      "10.1016/j.jse.2014.05.010"
+    ],
+    "pmids": [
+      "25220200"
+    ]
+  },
+  {
+    "chave": "Shiri2006",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Prevalence and Determinants of Lateral and Medial Epicondylitis: A Population Study",
+      "Prevalence and determinants of lateral and medial epicondylitis: a population study"
+    ],
+    "anos": [
+      2006
+    ],
+    "dois": [
+      "10.1093/aje/kwj325"
+    ],
+    "pmids": [
+      "16968862"
+    ]
+  },
+  {
+    "chave": "Taylor2024",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Adherence to exercise in lateral elbow tendinopathy, a scoping review",
+      "Adherence to exercise in lateral elbow tendinopathy, a scoping review."
+    ],
+    "anos": [
+      2024
+    ],
+    "dois": [
+      "10.1016/j.msksp.2024.102978"
+    ],
+    "pmids": [
+      "38820868"
+    ]
+  },
+  {
+    "chave": "Yang2024",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Modified arthroscopic tenotomy of the extensor carpi radialis brevis for refractory lateral epicondylitis: a cohort study"
+    ],
+    "anos": [
+      2024
+    ],
+    "dois": [
+      "10.1016/j.jse.2023.09.036"
+    ],
+    "pmids": [
+      "37944746"
+    ]
+  },
+  {
+    "chave": "Pomerance2002",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Radiographic analysis of lateral epicondylitis"
+    ],
+    "anos": [
+      2002
+    ],
+    "dois": [
+      "10.1067/mpn.2002.121147"
+    ],
+    "pmids": [
+      "11988727"
+    ]
+  },
+  {
+    "chave": "Macdermid2015",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Outcome Evaluation in Tendinopathy: Foundations of Assessment and a Summary of Selected Measures"
+    ],
+    "anos": [
+      2015
+    ],
+    "dois": [
+      "10.2519/jospt.2015.6054"
+    ],
+    "pmids": [
+      "26471855"
+    ]
+  },
+  {
+    "chave": "Xu2023b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Global Research Trends and Hotspots in Lateral Epicondylitis During the Past 30 Years: A Bibliometric and Visualization Study"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.12659/msm.939309"
+    ],
+    "pmids": [
+      "37245072"
+    ]
+  },
+  {
+    "chave": "Karbowiak2023",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Management of lateral epicondylitis (tennis elbow)"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.1136/bmj-2022-072574"
+    ],
+    "pmids": [
+      "37201946"
+    ]
+  },
+  {
+    "chave": "Eigenschink2023",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Lateral ulnar collateral ligament reconstruction using an autologous triceps tendon graft for subclinical posterolateral rotatory instability in recalcitrant lateral epicondylitis"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.1016/j.jse.2023.02.123"
+    ],
+    "pmids": [
+      "36914048"
+    ]
+  },
+  {
+    "chave": "Coombes2012",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Elbow flexor and extensor muscle weakness in lateral epicondylalgia"
+    ],
+    "anos": [
+      2011,
+      2012
+    ],
+    "dois": [
+      "10.1136/bjsm.2011.083949"
+    ],
+    "pmids": [
+      "21708935"
+    ]
+  },
+  {
+    "chave": "Bales2007",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Microvascular supply of the lateral epicondyle and common extensor origin"
+    ],
+    "anos": [
+      2007
+    ],
+    "dois": [
+      "10.1016/j.jse.2006.08.006"
+    ],
+    "pmids": [
+      "17254813"
+    ]
+  },
+  {
+    "chave": "AlDhafer2021",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Increased expression of macrophages and inflammatory cytokines at tendon origin in patients with chronic lateral epicondylitis"
+    ],
+    "anos": [
+      2021
+    ],
+    "dois": [
+      "10.1016/j.jse.2020.10.008"
+    ],
+    "pmids": [
+      "33197592"
+    ]
+  },
+  {
+    "chave": "SemAutor2023",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Physical Therapy for People with Lateral Elbow Tendinopathy: Using the Evidence to Guide Musculoskeletal Rehabilitation Clinical Practice"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.2519/jospt.2023.0501"
+    ],
+    "pmids": [
+      "36587262"
+    ]
+  },
+  {
+    "chave": "Zeisig2009",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Immunohistochemical evidence of local production of catecholamines in cells of the muscle origins at the lateral and medial humeral epicondyles: of importance for the development of tennis and golfer's elbow?",
+      "Immunohistochemical evidence of local production of catecholamines in cells of the muscle origins at the lateral and medial humeral epicondyles: of importance for the development of tennis and golfer’s elbow?"
+    ],
+    "anos": [
+      2009
+    ],
+    "dois": [
+      "10.1136/bjsm.2008.054619"
+    ],
+    "pmids": [
+      "19155232"
+    ]
+  },
+  {
+    "chave": "Leung2004",
+    "criterios": [
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Reliability of Hong Kong Chinese version of the Patient-rated Forearm Evaluation Questionnaire for lateral epicondylitis",
+      "Reliability of Hong Kong Chinese version of the Patient-rated Forearm Evaluation Questionnaire for lateral epicondylitis."
+    ],
+    "anos": [
+      2004
+    ],
+    "dois": [],
+    "pmids": [
+      "15181221"
+    ]
+  },
+  {
+    "chave": "JuulKristensen2008",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Poorer elbow proprioception in patients with lateral epicondylitis than in healthy controls: A cross-sectional study",
+      "Poorer elbow proprioception in patients with lateral epicondylitis than in healthy controls: a cross-sectional study"
+    ],
+    "anos": [
+      2008
+    ],
+    "dois": [
+      "10.1016/j.jse.2007.07.003"
+    ],
+    "pmids": [
+      "18036844"
+    ]
+  },
+  {
+    "chave": "Milz2004",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Molecular composition and pathology of entheses on the medial and lateral epicondyles of the humerus: a structural basis for epicondylitis"
+    ],
+    "anos": [
+      2004
+    ],
+    "dois": [
+      "10.1136/ard.2003.016378"
+    ],
+    "pmids": [
+      "15308511"
+    ]
+  },
+  {
+    "chave": "Esteves2026",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "The Patient-Rated Tennis Elbow Evaluation was successfully translated to European Portuguese"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1016/j.jht.2026.09.015"
+    ],
+    "pmids": [
+      "43015191"
+    ]
+  },
+  {
+    "chave": "Caekebeke2026",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Diagnostic Accuracy of the Resisted Anterior Drawer (RAD) Test for Lateral Elbow Instability in Lateral Epicondylitis"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1016/j.jse.2026.10.024"
+    ],
+    "pmids": [
+      "42982323"
+    ]
+  },
+  {
+    "chave": "Elam2026",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "The effects of a compressive tissue flossing program on the symptoms of lateral elbow tendinopathy in U.S. service members"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1016/j.jht.2025.12.007"
+    ],
+    "pmids": [
+      "41966927"
+    ]
+  },
+  {
+    "chave": "Satpute2025",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "The Patient-Rated Tennis Elbow Evaluation Questionnaire was successfully translated to Marathi"
+    ],
+    "anos": [
+      2025
+    ],
+    "dois": [
+      "10.1016/j.jht.2025.02.010"
+    ],
+    "pmids": [
+      "40087100"
+    ]
+  },
+  {
+    "chave": "RibeiroDeOliveira2025",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "The patient-rated tennis elbow evaluation questionnaire was successfully translated to Brazilian Portuguese"
+    ],
+    "anos": [
+      2025
+    ],
+    "dois": [
+      "10.1016/j.jht.2024.12.009"
+    ],
+    "pmids": [
+      "39919929"
+    ]
+  },
+  {
+    "chave": "Ahmad2025",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Patient Rated Tennis Elbow Evaluation-Urdu is a valid as well as reliable tool for patients with lateral elbow tendinopathy"
+    ],
+    "anos": [
+      2025
+    ],
+    "dois": [
+      "10.1016/j.jht.2024.02.012"
+    ],
+    "pmids": [
+      "38494384"
+    ]
+  },
+  {
+    "chave": "Li2022d",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Lateral epicondyle osteotomy approach vs. olecranon osteotomy approach: an anatomic study of cadavers"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.1016/j.jse.2022.04.022"
+    ],
+    "pmids": [
+      "35613695"
+    ]
+  },
+  {
+    "chave": "Samaras2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Greek physiotherapists' contemporary knowledge and practice for lateral elbow tendinopathy: An online survey",
+      "Greek physiotherapists’ contemporary knowledge and practice for lateral elbow tendinopathy: An online survey"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.1016/j.msksp.2022.102502"
+    ],
+    "pmids": [
+      "35030537"
+    ]
+  },
+  {
+    "chave": "Wiebusch2021",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Joint position sense, motor imagery and tactile acuity in lateral elbow tendinopathy: A cross-sectional study"
+    ],
+    "anos": [
+      2021
+    ],
+    "dois": [
+      "10.1016/j.msksp.2021.102422"
+    ],
+    "pmids": [
+      "34271414"
+    ]
+  },
+  {
+    "chave": "Hill2020",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Therapeutic tape use for lateral elbow tendinopathy: A survey of Australian healthcare practitioners"
+    ],
+    "anos": [
+      2020
+    ],
+    "dois": [
+      "10.1016/j.msksp.2020.102160"
+    ],
+    "pmids": [
+      "32560866"
+    ]
+  },
+  {
+    "chave": "Nijs2016",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Recognition and Treatment of Central Sensitization in Chronic Pain Patients: Not Limited to Specialized Care"
+    ],
+    "anos": [
+      2016
+    ],
+    "dois": [
+      "10.2519/jospt.2016.0612"
+    ],
+    "pmids": [
+      "27903159"
+    ]
+  },
+  {
+    "chave": "Spiteri2006",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "pubmed",
+      "crossref"
+    ],
+    "titulos": [
+      "Osteoid osteoma of the radial tuberosity presenting as lateral elbow pain"
+    ],
+    "anos": [
+      2006
+    ],
+    "dois": [
+      "10.1016/j.jse.2005.07.012"
+    ],
+    "pmids": [
+      "17126238"
+    ]
+  },
+  {
+    "chave": "Sharif2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Understanding experts' clinical reasoning when assessing and managing Lateral Elbow Tendinopathy: A qualitative study"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1016/j.physio.2026.102383"
+    ],
+    "pmids": [
+      "43063542"
+    ]
+  },
+  {
+    "chave": "CigaranMendez2026c",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Lateral Epicondylalgia as a Nociceptive/Nociplastic Pain Condition According to the International Association for the Study of Pain (IASP) Taxonomy: A Theoretical Hypothesis"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.3390/jcm15218432"
+    ],
+    "pmids": [
+      "43030576"
+    ]
+  },
+  {
+    "chave": "Williams2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Extrinsic risk factors for tendinopathy: bridging the basic and clinical research divide"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1080/03008207.2026.2731473"
+    ],
+    "pmids": [
+      "42911111"
+    ]
+  },
+  {
+    "chave": "Vitale2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Ultrasound-Guided Collagen Peptides Injections Combined with Focused Extracorporeal Shockwave Therapy and Therapeutic Exercise in Chronic Partial Common Extensor Tendon Tears at Elbow Lateral Epicondyle: A Retrospective Case Series"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.3390/life16091465"
+    ],
+    "pmids": [
+      "42795330"
+    ]
+  },
+  {
+    "chave": "Khawaji2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Validity and Reliability of the Arabic Version of the Patient-Specific Functional Scale in Individuals with Lateral Elbow Pain: A Cross-Sectional Study"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.3390/healthcare14182997"
+    ],
+    "pmids": [
+      "42793536"
+    ]
+  },
+  {
+    "chave": "Heales2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Physiotherapists' use of outcome measures in the assessment of lateral elbow tendinopathy: An international online survey",
+      "Physiotherapists’ use of outcome measures in the assessment of lateral elbow tendinopathy: An international online survey"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1177/17585732261440542"
+    ],
+    "pmids": [
+      "42038428"
+    ]
+  },
+  {
+    "chave": "Cassin2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "The Use of Flexion Arthrography Computed Tomography Signs (FACTS) to detect minor instability of the lateral aspect of the elbow"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1016/j.xrrt.2026.100692"
+    ],
+    "pmids": [
+      "42022272"
+    ]
+  },
+  {
+    "chave": "Shepherd2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Exploring the knowledge base of ChatGPT in lateral elbow tendinopathy"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1177/17585732261425930"
+    ],
+    "pmids": [
+      "41767552"
+    ]
+  },
+  {
+    "chave": "Albayrak2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Lateral Epicondylitis With Soft Tissue Atrophy Due to Repeated Corticosteroid Injections: Comparison of Open and Arthroscopic Surgery"
+    ],
+    "anos": [
+      2026
+    ],
+    "dois": [
+      "10.1177/23259671251400739"
+    ],
+    "pmids": [
+      "41522458"
+    ]
+  },
+  {
+    "chave": "Ikezu2025",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Pathological Classification of Lateral Elbow Tendinopathy Based on Fiber Orientation, Blood Flow Velocity of Radial Recurrent Artery, and Patient-Reported Outcome Measures"
+    ],
+    "anos": [
+      2025
+    ],
+    "dois": [
+      "10.3390/jcm14196979"
+    ],
+    "pmids": [
+      "41096059"
+    ]
+  },
+  {
+    "chave": "Sarkar2025",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Comparing the Functional Outcomes of Hyaluronic Acid Injection and Dry Needling in Lateral Epicondylitis: A Retrospective Study"
+    ],
+    "anos": [
+      2025
+    ],
+    "dois": [
+      "10.7759/cureus.84732"
+    ],
+    "pmids": [
+      "40556986"
+    ]
+  },
+  {
+    "chave": "Sveinall2026",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Measurement properties of core outcomes in patients with tennis elbow"
+    ],
+    "anos": [
+      2025,
+      2026
+    ],
+    "dois": [
+      "10.1177/17585732251344264"
+    ],
+    "pmids": [
+      "40453542"
+    ]
+  },
+  {
+    "chave": "DivyaMary2025",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Impact of Heavy Slow Resistance vs. Convectional Exercise in Lateral Epicondylitis-A Pilot Study",
+      "Impact of Heavy Slow Resistance vs. Convectional Exercise in Lateral Epicondylitis—A Pilot Study"
+    ],
+    "anos": [
+      2025
+    ],
+    "dois": [
+      "10.1002/hcs2.70004"
+    ],
+    "pmids": [
+      "40241983"
+    ]
+  },
+  {
+    "chave": "Uttamchandani2024b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Conservative Management of Lateral Epicondylalgia: A Review"
+    ],
+    "anos": [
+      2024
+    ],
+    "dois": [
+      "10.7759/cureus.59875"
+    ],
+    "pmids": [
+      "38854316"
+    ]
+  },
+  {
+    "chave": "Poenaru2024",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Botulinum Toxin in Chronic Lateral Epicondylitis, from Tendon to Muscle Approach-A Review",
+      "Botulinum Toxin in Chronic Lateral Epicondylitis, from Tendon to Muscle Approach—A Review"
+    ],
+    "anos": [
+      2024
+    ],
+    "dois": [
+      "10.3390/life14040528"
+    ],
+    "pmids": [
+      "38672798"
+    ]
+  },
+  {
+    "chave": "Parikh2024",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Lateral Epicondylitis: Treatment Preferences from the Potential Patient Perspective"
+    ],
+    "anos": [
+      2024
+    ],
+    "dois": [
+      "10.1097/gox.0000000000005706"
+    ],
+    "pmids": [
+      "38596580"
+    ]
+  },
+  {
+    "chave": "Ho2024",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Work-related musculoskeletal disorders affecting diagnostic radiologists and prophylactic physical therapy regimen"
+    ],
+    "anos": [
+      2024
+    ],
+    "dois": [
+      "10.1067/j.cpradiol.2024.03.008"
+    ],
+    "pmids": [
+      "38514284"
+    ]
+  },
+  {
+    "chave": "Rupe2023",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Efficacy of Ultrasonic Tenotomy and Debridement and Platelet-Rich Plasma Injections for Lateral Elbow Tendinopathy"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.1016/j.jhsg.2023.04.004"
+    ],
+    "pmids": [
+      "37790822"
+    ]
+  },
+  {
+    "chave": "Karanasios2023",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Wrist Extensor Training With Blood Flow Restriction for the Management of Lateral Elbow Tendinopathy: A Case Report"
+    ],
+    "anos": [
+      2023
+    ],
+    "dois": [
+      "10.7759/cureus.35468"
+    ],
+    "pmids": [
+      "36999107"
+    ]
+  },
+  {
+    "chave": "Annaniemi2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Platelet-Rich Plasma Injections Decrease the Need for Any Surgical Procedure for Chronic Epicondylitis versus Conservative Treatment-A Comparative Study with Long-Term Follow-Up",
+      "Platelet-Rich Plasma Injections Decrease the Need for Any Surgical Procedure for Chronic Epicondylitis versus Conservative Treatment—A Comparative Study with Long-Term Follow-Up"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.3390/jcm12010102"
+    ],
+    "pmids": [
+      "36614903"
+    ]
+  },
+  {
+    "chave": "Asghari2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Perceived Pain Severity and Disability After the Recurrence of Tennis Elbow Following a Local Corticosteroid Injection",
+      "Perceived Pain Severity and Disability After the Recurrence of Tennis Elbow Following a Local Corticosteroid Injection."
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.22038/abjs.2021.56951.2826"
+    ],
+    "pmids": [
+      "36246021"
+    ]
+  },
+  {
+    "chave": "Pellegrino2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Effectiveness of High-Intensity Laser Therapy Plus Ultrasound-Guided Peritendinous Hyaluronic Acid Compared to Therapeutic Exercise for Patients with Lateral Elbow Tendinopathy"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.3390/jcm11195492"
+    ],
+    "pmids": [
+      "36233361"
+    ]
+  },
+  {
+    "chave": "DiFilippo2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Treatment, Diagnostic Criteria and Variability of Terminology for Lateral Elbow Pain: Findings from an Overview of Systematic Reviews"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.3390/healthcare10061095"
+    ],
+    "pmids": [
+      "35742152"
+    ]
+  },
+  {
+    "chave": "Karabinov2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Lateral epicondylitis: New trends and challenges in treatment"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.5312/wjo.v13.i4.354"
+    ],
+    "pmids": [
+      "35582153"
+    ]
+  },
+  {
+    "chave": "Stasinopoulos2022",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Stop Using the Eccentric Exercises as the Gold Standard Treatment for the Management of Lateral Elbow Tendinopathy"
+    ],
+    "anos": [
+      2022
+    ],
+    "dois": [
+      "10.3390/jcm11051325"
+    ],
+    "pmids": [
+      "35268416"
+    ]
+  },
+  {
+    "chave": "Park2021",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Factors Associated With Lateral Epicondylitis of the Elbow"
+    ],
+    "anos": [
+      2021
+    ],
+    "dois": [
+      "10.1177/23259671211007734"
+    ],
+    "pmids": [
+      "34036114"
+    ]
+  },
+  {
+    "chave": "Bateman2019b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Management of tennis elbow: a survey of UK clinical practice"
+    ],
+    "anos": [
+      2017,
+      2019
+    ],
+    "dois": [
+      "10.1177/1758573217738199"
+    ],
+    "pmids": [
+      "31210796"
+    ]
+  },
+  {
+    "chave": "Bhabra2016",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Lateral Elbow Tendinopathy: Development of a Pathophysiology-Based Treatment Algorithm"
+    ],
+    "anos": [
+      2016
+    ],
+    "dois": [
+      "10.1177/2325967116670635"
+    ],
+    "pmids": [
+      "27833925"
+    ]
+  },
+  {
+    "chave": "Shamsoddini2013",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Effects of Taping on Pain, Grip Strength and Wrist Extension Force in Patients with Tennis Elbow",
+      "Effects of taping on pain, grip strength and wrist extension force in patients with tennis elbow"
+    ],
+    "anos": [
+      2013
+    ],
+    "dois": [
+      "10.5812/traumamon.12450"
+    ],
+    "pmids": [
+      "24350156"
+    ]
+  },
+  {
+    "chave": "Benjamin2006",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Where tendons and ligaments meet bone: attachment sites ('entheses') in relation to exercise and/or mechanical load",
+      "Where tendons and ligaments meet bone: attachment sites (‘entheses’) in relation to exercise and/or mechanical load"
+    ],
+    "anos": [
+      2006
+    ],
+    "dois": [
+      "10.1111/j.1469-7580.2006.00540.x"
+    ],
+    "pmids": [
+      "16637873"
+    ]
+  },
+  {
+    "chave": "Paoloni2004b",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Identification of prognostic indicators for patient outcomes in extensor tendinopathy at the elbow"
+    ],
+    "anos": [
+      2004
+    ],
+    "dois": [
+      "10.1111/j.1600-0838.2004.00358.x"
+    ],
+    "pmids": [
+      "15144356"
+    ]
+  },
+  {
+    "chave": "Ekstrom2002",
+    "criterios": [
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Examination of and Intervention for a Patient With Chronic Lateral Elbow Pain With Signs of Nerve Entrapment",
+      "Examination of and intervention for a patient with chronic lateral elbow pain with signs of nerve entrapment"
+    ],
+    "anos": [
+      2002
+    ],
+    "dois": [
+      "10.1093/ptj/82.11.1077"
+    ],
+    "pmids": [
+      "12405872"
+    ]
+  },
+  {
+    "chave": "Schneeberger2002",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Arterial Vascularization of the Proximal Extensor Carpi Radialis Brevis Tendon",
+      "Arterial vascularization of the proximal extensor carpi radialis brevis tendon"
+    ],
+    "anos": [
+      2002
+    ],
+    "dois": [
+      "10.1097/00003086-200205000-00033"
+    ],
+    "pmids": [
+      "11964656"
+    ]
+  },
+  {
+    "chave": "Antuna2001",
+    "criterios": [
+      "doi",
+      "pmid"
+    ],
+    "fontes": [
+      "pubmed",
+      "openalex"
+    ],
+    "titulos": [
+      "Snapping plicae associated with radiocapitellar chondromalacia"
+    ],
+    "anos": [
+      2001
+    ],
+    "dois": [
+      "10.1053/jars.2001.20096"
+    ],
+    "pmids": [
+      "11337715"
+    ]
+  },
+  {
+    "chave": "Takasaki2008",
+    "criterios": [
+      "doi"
+    ],
+    "fontes": [
+      "crossref",
+      "openalex"
+    ],
+    "titulos": [
+      "Strain Reduction of the Extensor Carpi Radialis Brevis Tendon Proximal Origin Following the Application of a Forearm Support Band"
+    ],
+    "anos": [
+      2008
+    ],
+    "dois": [
+      "10.2519/jospt.2008.2672"
+    ],
+    "pmids": [
+      "18448876"
+    ]
+  }
+]

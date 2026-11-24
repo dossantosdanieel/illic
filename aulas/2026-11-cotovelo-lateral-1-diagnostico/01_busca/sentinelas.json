@@ -1,0 +1,290 @@
+{
+  "data": "2026-11-24T13:13:11",
+  "variante": "base",
+  "variantes": {
+    "base": {
+      "recuperados": [
+        "11879861",
+        "14966719",
+        "15643732",
+        "17012266",
+        "18838330",
+        "20970844",
+        "23385272",
+        "24480912",
+        "26381484",
+        "31425384",
+        "31598419",
+        "33148599",
+        "33814224",
+        "36453071"
+      ],
+      "testaveis": 14
+    },
+    "rs": {
+      "recuperados": [
+        "20970844",
+        "33148599",
+        "33814224"
+      ],
+      "testaveis": 14
+    },
+    "ecr": {
+      "recuperados": [
+        "11879861",
+        "17012266",
+        "20970844",
+        "23385272",
+        "24480912",
+        "31425384",
+        "31598419",
+        "33148599"
+      ],
+      "testaveis": 14
+    },
+    "diretriz": {
+      "recuperados": [
+        "36453071"
+      ],
+      "testaveis": 14
+    }
+  },
+  "total": 14,
+  "recuperados": 14,
+  "resultados": [
+    {
+      "pmid": "36453071",
+      "doi": "10.2519/jospt.2022.0302",
+      "titulo": "Lateral Elbow Pain and Muscle Function Impairments",
+      "nota": "Diretriz JOSPT 2022 (Lucado et al.), espinha dorsal da aula base",
+      "primeiro_autor": "Lucado",
+      "ano": 2022,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [
+        "pubmed"
+      ],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "23385272",
+      "doi": "10.1001/jama.2013.129",
+      "titulo": "Effect of corticosteroid injection, physiotherapy, or both on clinical outcomes in patients with unilateral lateral epicondylalgia: a randomized controlled trial",
+      "nota": "ECR fatorial JAMA 2013 (Coombes): corticoide, fisioterapia ou ambos, 1 ano",
+      "primeiro_autor": "Coombes",
+      "ano": 2013,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [
+        "pubmed"
+      ],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "17012266",
+      "doi": "10.1136/bmj.38961.584653.ae",
+      "titulo": "Mobilisation with movement and exercise, corticosteroid injection, or wait and see for tennis elbow: randomised trial",
+      "nota": "ECR BMJ 2006 (Bisset): MWM + exercício x corticoide x espera",
+      "primeiro_autor": "Bisset",
+      "ano": 2006,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [
+        "pubmed"
+      ],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "11879861",
+      "doi": "10.1016/s0140-6736(02)07811-x",
+      "titulo": "Corticosteroid injections, physiotherapy, or a wait-and-see policy for lateral epicondylitis: a randomised controlled trial",
+      "nota": "ECR Lancet 2002 (Smidt): corticoide x fisioterapia x espera",
+      "primeiro_autor": "Smidt",
+      "ano": 2002,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [
+        "pubmed"
+      ],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "20970844",
+      "doi": "10.1016/s0140-6736(10)61160-9",
+      "titulo": "Efficacy and safety of corticosteroid injections and other injections for management of tendinopathy: a systematic review of randomised controlled trials",
+      "nota": "RS Lancet 2010 (Coombes): corticoide e outras injeções na tendinopatia",
+      "primeiro_autor": "Coombes",
+      "ano": 2010,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [
+        "pubmed"
+      ],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "31425384",
+      "doi": "10.1249/mss.0000000000002128",
+      "titulo": "Unsupervised Isometric Exercise versus Wait-and-See for Lateral Elbow Tendinopathy",
+      "nota": "ECR MSSE 2020 (Vuvan): isométrico não supervisionado x espera",
+      "primeiro_autor": "Vuvan",
+      "ano": 2020,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [
+        "pubmed"
+      ],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "33148599",
+      "doi": "10.1136/bjsports-2020-102525",
+      "titulo": "Exercise interventions in lateral elbow tendinopathy have better outcomes than passive interventions, but the effects are small: a systematic review and meta-analysis of 2123 subjects in 30 trials",
+      "nota": "RS/MA BJSM 2021 (Karanasios): exercício x intervenções passivas, 30 estudos",
+      "primeiro_autor": "Karanasios",
+      "ano": 2021,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [
+        "crossref",
+        "pubmed"
+      ],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "31598419",
+      "doi": null,
+      "titulo": "A COMPREHENSIVE REHABILITATION PROGRAM FOR TREATING LATERAL ELBOW TENDINOPATHY",
+      "nota": "Programa por fases (Day 2019). Conferido: é Int J Sports Phys Ther, não JOSPT",
+      "primeiro_autor": "Day",
+      "ano": 2019,
+      "situacao": "recuperado",
+      "indexacao": "PubMed-not-MEDLINE",
+      "presente_em_brutos": [
+        "pubmed"
+      ],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "26381484",
+      "doi": "10.2519/jospt.2015.5841",
+      "titulo": "Management of Lateral Elbow Tendinopathy: One Size Does Not Fit All",
+      "nota": "Revisão clínica JOSPT 2015 (Coombes): one size does not fit all",
+      "primeiro_autor": "Coombes",
+      "ano": 2015,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [
+        "crossref",
+        "pubmed"
+      ],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "18838330",
+      "doi": "10.1016/j.math.2008.08.004",
+      "titulo": "Development of a clinical prediction rule to identify initial responders to mobilisation with movement and exercise for lateral epicondylalgia",
+      "nota": "Regra de predição clínica para MWM + exercício (Vicenzino 2009, Man Ther)",
+      "primeiro_autor": "Vicenzino",
+      "ano": 2009,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [
+        "pubmed"
+      ],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "15643732",
+      "doi": "10.2519/jospt.2004.34.12.770",
+      "titulo": "Computer use associated with poor long-term prognosis of conservatively managed lateral epicondylalgia",
+      "nota": "Prognóstico de longo prazo, JOSPT 2004 (Waugh): uso de computador",
+      "primeiro_autor": "Waugh",
+      "ano": 2004,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [
+        "crossref",
+        "pubmed"
+      ],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "14966719",
+      "doi": "10.1016/s0003-9993(03)00480-5",
+      "titulo": "Factors associated with prognosis of lateral epicondylitis after 8 weeks of physical therapy",
+      "nota": "Prognóstico após 8 semanas de fisioterapia (Waugh 2004, Arch Phys Med Rehabil), o da aula base",
+      "primeiro_autor": "Waugh",
+      "ano": 2004,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [
+        "pubmed"
+      ],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "24480912",
+      "doi": "10.1097/ajp.0000000000000078",
+      "titulo": "Cold hyperalgesia associated with poorer prognosis in lateral epicondylalgia: a 1-year prognostic study of physical and psychological factors",
+      "nota": "Hiperalgesia ao frio e pior prognóstico em 1 ano (Coombes, Clin J Pain 2015; o de 2012 é outro estudo)",
+      "primeiro_autor": "Coombes",
+      "ano": 2015,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [
+        "pubmed"
+      ],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "33814224",
+      "doi": "10.1016/j.jht.2021.02.002",
+      "titulo": "Diagnostic accuracy of examination tests for lateral elbow tendinopathy (LET) - A systematic review",
+      "nota": "RS de acurácia dos testes de exame (Karanasios 2022, J Hand Ther): testa o eixo diagnóstico",
+      "primeiro_autor": "Karanasios",
+      "ano": 2022,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [
+        "crossref",
+        "pubmed"
+      ],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    }
+  ],
+  "fora_de_todos_os_filtros": [
+    "26381484",
+    "18838330",
+    "15643732",
+    "14966719"
+  ]
+}

@@ -25,8 +25,9 @@ prontidão psicológica." Exemplo ruim: "Conhecer os critérios de retorno ao es
 
 O teto é 35 minutos e o validador reprova acima disso. O alvo é 32: sobra margem para atraso de entrada,
 problema de áudio e uma pergunta boa da turma. Quando a aula estourar, **corte conteúdo, nunca a
-interação**: é a interação que produz aprendizagem (Freeman et al. 2014), e o conteúdo cortado vai para
-o resumo do aluno.
+interação**: na meta-análise de Freeman et al. (2014), com turmas de graduação em ciências e engenharia,
+aprendizagem ativa melhorou as notas e reduziu a reprovação em relação à aula expositiva; é evidência
+de outro público, mas consistente com o resto desta seção. O conteúdo cortado vai para o resumo do aluno.
 
 | Trecho | Tempo | O que acontece |
 |---|---|---|
@@ -67,7 +68,10 @@ O validador reprova um bloco em que a figura aparece antes de qualquer pergunta 
 
 - **Uma ideia por slide.** O texto do slide é o que a turma precisa ver; o que precisa ouvir vai para a
   fala. Texto escrito igual ao falado compete pela mesma atenção (princípio da redundância; Mayer 2021).
-- **Até ~70 palavras visíveis.** O validador avisa acima de 70 e reprova acima de 100.
+- **Até ~70 palavras visíveis.** O validador avisa acima de 70 e reprova acima de 100. É uma heurística
+  da casa, não um número tirado de estudo: o deck de referência (80 min) tem tabelas de 90 a 150
+  palavras, e numa aula de 30 min cada slide desses consome 2 a 3 min só de leitura. Tabela de 5 linhas
+  costuma passar de 70; aceite o aviso se a tabela for o objeto da decisão.
 - **Título que afirma.** "Aos 9 meses quase todos passam no hop; metade falha no quadríceps", e não
   "Resultados de Welling 2018". Títulos em forma de afirmação, com a evidência embaixo, melhoraram a
   compreensão e a retenção em comparação com títulos-tópico (Alley et al. 2006; Garner & Alley 2013;
@@ -182,6 +186,11 @@ ou na fala:
 | Quanto confiar? | Certeza da evidência (GRADE: alta, moderada, baixa, muito baixa) e por quê: risco de viés, imprecisão, inconsistência, evidência indireta, viés de publicação. | Guyatt et al. 2008 |
 | E o teste diagnóstico? | Sensibilidade, especificidade e razões de verossimilhança (RV+ = sens ÷ (1 − esp); RV− = (1 − sens) ÷ esp). RV+ abaixo de 2 muda pouco a probabilidade. Área sob a curva com intervalo. | Deeks & Altman 2004 |
 | Que desenho? | Coorte mostra associação; ensaio mostra efeito; diretriz ou consenso mostra opinião organizada. Diga qual é. | — |
+| Contra o quê? | O comparador muda o tamanho do efeito: contra "nenhum tratamento" ou lista de espera o efeito é sempre maior do que contra cuidado usual, placebo ou outro exercício. Diga o comparador junto com o número. | — |
+| E sem grupo controle? | Melhora num braço único mistura efeito do tratamento, história natural, regressão à média e expectativa. Não dá para atribuir a melhora ao tratamento, nem a "dose". | — |
+| Em quem e por quanto tempo? | Os pacientes do estudo se parecem com o seu (gravidade, duração, contexto)? O seguimento cobre o horizonte que importa ao paciente? | — |
+| Preditor, modificador ou alvo? | Fator prognóstico prevê o curso; modificador de efeito muda a resposta ao tratamento; nenhum dos dois prova que mexer nele muda o desfecho. "Prever não é causar." | — |
+| Vários testes? | Muitas associações testadas e poucas com p < 0,05 pedem desconfiança: a 5%, 20 testes geram cerca de 1 falso positivo. | — |
 
 Técnicas para treinar isso em aula:
 
@@ -190,6 +199,31 @@ Técnicas para treinar isso em aula:
 - **Conta feita junto e depois sozinho** (exemplo trabalhado com retirada de apoio).
 - **Fala obrigatória do professor**: ao mostrar um efeito, dizer o número de eventos ("1 em 18") e o
   intervalo. Ao propor uma conduta que nenhum ensaio testou, dizer "proposta clínica" com essas palavras.
+
+### O que torna a aula de nível alto (e não genérica)
+
+O público inclui especialistas. A aula falha com eles quando ensina o que já sabem ("exercício
+funciona", "a dor é multifatorial") ou quando para no número sem chegar à decisão. Antes de montar,
+confira:
+
+- **Há pelo menos uma decisão em que o hábito do clínico experiente é contrariado ou refinado pelo
+  dado** (o ranking que todo mundo cita é de certeza baixa; o teste que todos usam não discrimina; o
+  preditor popular não ficou no modelo). A enquete de abertura deve dividir a turma; se 90% acerta, a
+  pergunta estava fácil.
+- **Cada número vem com comparador, intervalo e unidade clínica**, e pelo menos uma vez a turma
+  converte uma medida abstrata (diferença padronizada, razão de chances, AUC) em algo que se diz ao
+  paciente (pontos na escala, pessoas em cada 10, chance de mudar a decisão).
+- **O limite do desenho muda a decisão**, e não aparece só como ressalva no fim ("é uma coorte, mas...").
+- **O caso tem dados que se contradizem** (um teste bom e outro ruim, melhora objetiva com desânimo),
+  como na clínica. Caso de livro, em que todos os dados apontam para o mesmo lado, não treina julgamento.
+- **A conduta proposta é dita com o tamanho do apoio**: o que vem de ensaio, o que é associação e o que
+  é proposta clínica. Quando a evidência é fraca, a conduta de nível alto é testar no paciente: medir a
+  resposta individual a cada 2 a 4 semanas e ajustar, em vez de seguir a média do grupo.
+- **A decisão inclui o paciente**: preferência, objetivo, acesso e adesão entram na escolha entre
+  opções que a evidência não separa. Isso não é "baixar o nível"; é a parte da prática baseada em
+  evidência que o número sozinho não resolve.
+- **O desafio de cada bloco é de transferência ou de limite do estudo**, nunca curiosidade ("quantos
+  eventos a mais mudariam a conclusão?", "o que muda se a associação é dentro da mesma pessoa?").
 
 ## 9. Fechamento
 
@@ -210,6 +244,8 @@ Técnicas para treinar isso em aula:
 - [ ] Âncora e desafio em cada bloco.
 - [ ] Recuperação antes da síntese; bilhete de saída no fim.
 - [ ] Soma de 30 a 35 min, com 32 como alvo.
+- [ ] Pelo menos uma decisão que contraria ou refina um hábito do clínico experiente (seção 8).
+- [ ] Todo número com comparador e intervalo; ao menos uma conversão para a escala do paciente.
 
 ## Referências
 

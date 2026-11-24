@@ -36,6 +36,7 @@ equipe); se a aula for vendida, refazer como gráfico nativo "Adaptado de" ou pe
 - `validar_aula.py`: <APROVADA | APROVADA com avisos: ... | REPROVADA>
 - `montar_deck.py`: <0 erros de layout; textos reduzidos: ...>
 - Render olhado slide a slide em <data>: <o que foi corrigido>
+- `conferir_pptx.py`: <notas e acumulado, gráficos nativos, XML>
 - `materiais.py`: <avisos>
 
 ## 7. Pendências

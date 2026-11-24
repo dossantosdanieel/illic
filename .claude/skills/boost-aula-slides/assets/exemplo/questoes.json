@@ -36,7 +36,7 @@
       "gabarito": "C",
       "comentario": "Risco absoluto: 33,3% − 12,5% = 20,8 pontos percentuais. NNT = 1 ÷ 0,208 ≈ 4,8, ou cerca de 5. A suposição de causa é forte: é uma coorte, os grupos são pequenos e o intervalo de confiança dessa diferença é largo.",
       "distratores": {
-        "A": "Usar o risco relativo (33,3 ÷ 12,5 ≈ 2,7) como se fosse NNT.",
+        "A": "Usar a redução relativa do risco no lugar da absoluta: 1 − 12,5 ÷ 33,3 = 62,5%, e 1 ÷ 0,625 ≈ 1,6.",
         "B": "Confundir a diferença em pontos percentuais (20,8) com o número necessário para tratar.",
         "D": "Calcular 1 ÷ 0,333, usando o risco de um grupo só e ignorando que o grupo forte também se lesiona."
       },

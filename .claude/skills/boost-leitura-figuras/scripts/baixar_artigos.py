@@ -44,17 +44,50 @@ def resolver_pmcid(rede: C.Rede, reg: dict, email: str) -> str | None:
     pmcid = (reg.get("pmcid") or "").strip().upper()
     if pmcid:
         return pmcid if pmcid.startswith("PMC") else f"PMC{pmcid}"
-    ident = C.normalizar_doi(reg.get("doi")) or (str(reg.get("pmid")) if reg.get("pmid") else None)
+    doi = C.normalizar_doi(reg.get("doi"))
+    pmid = str(reg.get("pmid") or "").strip()
+    ident = doi or pmid
     if not ident:
         return None
+    # 1) conversor de IDs do PMC; 2) E-utilities (PubMed -> PMC); 3) API REST do Europe PMC.
+    # O conversor às vezes responde 403 a clientes que não são navegador; por isso há plano B.
     try:
         j = rede.json("https://pmc.ncbi.nlm.nih.gov/tools/idconv/api/v1/articles/",
                       params={"ids": ident, "format": "json", "tool": C.FERRAMENTA, "email": email})
+        for rec in j.get("records") or []:
+            if rec.get("pmcid"):
+                return str(rec["pmcid"]).upper()
+            if not pmid and rec.get("pmid"):
+                pmid = str(rec["pmid"])
     except C.ErroRede:
-        return None
-    for rec in j.get("records") or []:
-        if rec.get("pmcid"):
-            return str(rec["pmcid"]).upper()
+        pass
+    eutils = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
+    try:
+        if not pmid and doi:
+            j = rede.json(eutils + "esearch.fcgi", params={"db": "pubmed", "term": f"{doi}[doi]", "retmode": "json",
+                                                           "tool": C.FERRAMENTA, "email": email})
+            ids = (j.get("esearchresult") or {}).get("idlist") or []
+            pmid = ids[0] if len(ids) == 1 else ""
+        if pmid:
+            j = rede.json(eutils + "esummary.fcgi", params={"db": "pubmed", "id": pmid, "retmode": "json",
+                                                            "tool": C.FERRAMENTA, "email": email})
+            doc = (j.get("result") or {}).get(pmid) or {}
+            for a in doc.get("articleids") or []:
+                if a.get("idtype") == "pmc" and str(a.get("value", "")).upper().startswith("PMC"):
+                    return str(a["value"]).upper()
+            return None  # PubMed respondeu e não há PMCID: não está no PMC
+    except C.ErroRede:
+        pass
+    try:
+        consulta = f'DOI:"{doi}"' if doi else f"EXT_ID:{pmid} AND SRC:MED"
+        j = rede.json("https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+                      params={"query": consulta, "format": "json", "resultType": "lite", "pageSize": 1},
+                      timeout=20, tentativas=1)
+        res = (j.get("resultList") or {}).get("result") or []
+        if res and res[0].get("pmcid"):
+            return str(res[0]["pmcid"]).upper()
+    except C.ErroRede:
+        pass
     return None
 
 
@@ -98,8 +131,10 @@ def fonte_europepmc(rede: C.Rede, reg: dict, pmcid: str | None, info: dict) -> l
     consulta = f'DOI:"{doi}"' if doi else (f"EXT_ID:{reg['pmid']} AND SRC:MED" if reg.get("pmid") else None)
     if consulta:
         try:
+            # A API do Europe PMC às vezes leva mais de um minuto: espera curta, uma tentativa só.
             j = rede.json("https://www.ebi.ac.uk/europepmc/webservices/rest/search",
-                          params={"query": consulta, "format": "json", "resultType": "core", "pageSize": 1})
+                          params={"query": consulta, "format": "json", "resultType": "core", "pageSize": 1},
+                          timeout=20, tentativas=1)
             res = (j.get("resultList") or {}).get("result") or []
             if res:
                 x = res[0]
@@ -308,10 +343,11 @@ def processar(rede: C.Rede | None, reg: dict, ent: dict, aula: C.Aula, args, ema
         if not cands:
             tentativas.append({"fonte": fonte, "url": None, "resultado": "nenhuma versão aberta em PDF"})
             continue
-        ja = {t["url"] for t in tentativas if t.get("url")}
+        ja = {t["url"].lower() for t in tentativas if t.get("url")}
         for cand in cands:
-            if cand["url"] in ja:
+            if cand["url"].lower() in ja:
                 continue
+            ja.add(cand["url"].lower())
             tmp = destino.with_suffix(".baixando")
             ok, motivo = baixar_para(rede, cand, tmp, args.tamanho_minimo)
             if ok:
@@ -349,6 +385,20 @@ def processar(rede: C.Rede | None, reg: dict, ent: dict, aula: C.Aula, args, ema
     else:
         motivo = "nenhuma versão aberta encontrada"
     ent.update(status="pendente", origem=None, motivo_pendencia=motivo, tentativas=tentativas)
+    # Onde o usuário acha a versão gratuita no navegador (o PMC entrega o PDF a quem usa navegador).
+    gratis = None
+    if pmcid:
+        gratis = f"https://pmc.ncbi.nlm.nih.gov/articles/{pmcid}/"
+    else:
+        for t in tentativas:
+            u = t.get("url") or ""
+            if u and urlparse(u).netloc.lower() not in HOSTS_SO_NAVEGADOR:
+                gratis = u
+                break
+    if gratis and motivo.startswith("há versão aberta"):
+        ent["url_gratuita"] = gratis
+    else:
+        ent.pop("url_gratuita", None)
     for k in ("volume", "numero", "paginas_artigo"):
         if info.get(k):
             ent[k] = info[k]

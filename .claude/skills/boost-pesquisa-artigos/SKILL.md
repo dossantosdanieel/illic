@@ -65,7 +65,7 @@ python3 $S/pubmed_busca.py --conceitos $B/conceitos.json                        
 
 O script imprime a **tradução** que o PubMed fez da consulta. Leia: cada termo tem de aparecer com o campo que você pediu. `[All Fields]` onde você não pediu, um termo truncado que perdeu o asterisco ou um AVISO de frase não encontrada indicam erro na string. No diagnóstico, termo com zero é grafia errada ou descritor inexistente; termo que domina o bloco é a fonte do ruído.
 
-Volume alto na variante `base` (um ou dois milhares) é aceitável: a priorização ordena a leitura. Se passar de `--max` (1000 por variante), o script avisa e baixa os mais relevantes. Se a saída terminar com ATENÇÃO de variante incompleta (falha de rede no meio), rode de novo só aquela variante: o resultado se soma ao que já foi baixado.
+Volume alto na variante `base` é aceitável: a priorização ordena a leitura. Se passar de `--max` (1000 por variante), o script avisa e baixa os primeiros pela relevância do PubMed. Relevância não é importância: no tema do LCA (5.286 na `base`), a coorte mais citada do assunto estava na posição 1.503. Com `base` até uns 5.000, rode de novo só ela com `--variante base --max 5000` (cerca de 1 minuto); acima disso, aperte a busca (seção 9 de `references/estrategia-de-busca.md`). Se a saída terminar com ATENÇÃO de variante incompleta (falha de rede no meio), rode de novo só aquela variante: o resultado se soma ao que já foi baixado.
 
 ### 6. Testar os sentinelas
 
@@ -73,7 +73,7 @@ Volume alto na variante `base` (um ou dois milhares) é aceitável: a priorizaç
 python3 $S/teste_sentinela.py --conceitos $B/conceitos.json --variante base,rs,ecr,diretriz
 ```
 
-Meta: 100% na `base`. Para cada perdido o relatório diz o que o eliminou (bloco, limite ou filtro) e mostra os MeSH e as palavras do título que faltam no bloco. Acrescente os termos, rode os passos 4 a 6 de novo e anote a mudança em "Decisões e histórico" de `estrategia.md` (essa seção é preservada). Duas ou três voltas bastam. Com filtros de desenho, o que importa é a matriz no fim: nenhum sentinela pode ficar fora de todos.
+Meta: 100% na `base`. Para cada perdido o relatório diz o que o eliminou (bloco, limite ou filtro) e mostra os MeSH e as palavras do título que faltam no bloco. "A string recupera, mas o registro não está em brutos/pubmed.json" quer dizer corte por `--max`: aumente o `--max` da variante (passo 5). Sentinela mais amplo que a pergunta (um consenso geral de retorno ao esporte numa busca sobre LCA, a diretriz de outra condição) não justifica alargar os blocos: acrescente-o com `python3 $S/pubmed_busca.py --pmids 27226389 --saida $B/brutos/pubmed.json` e anote a decisão. Acrescente os termos, rode os passos 4 a 6 de novo e anote a mudança em "Decisões e histórico" de `estrategia.md` (essa seção é preservada). Duas ou três voltas bastam. Com filtros de desenho, o que importa é a matriz no fim: nenhum sentinela pode ficar fora de todos.
 
 ### 7. Crossref (JOSPT e revistas-alvo) e OpenAlex
 
@@ -180,7 +180,7 @@ No claude.ai, ou quando o proxy bloquear as APIs, os scripts falham com mensagem
 
 - `references/estrategia-de-busca.md`: o método completo, com o exemplo do manguito rotador. Leia antes de montar os blocos.
 - `references/esquema-conceitos.md` e `references/exemplo-conceitos-manguito.json`: formato de `conceitos.json`.
-- `references/vocabulario-fisioterapia.md`: 342 descritores MeSH conferidos, os termos que parecem MeSH e não são, sinônimos por tema, siglas de instrumentos e as revistas-alvo com ISSN.
+- `references/vocabulario-fisioterapia.md`: 335 descritores MeSH conferidos, os termos que parecem MeSH e não são, sinônimos por tema, siglas de instrumentos e as revistas-alvo com ISSN.
 - `references/sintaxe-bases.md`: PubMed x Scopus x Crossref x site do JOSPT, e os erros de tradução entre elas. Consulte quando uma string der erro ou resultado estranho.
 - `references/recortes-de-evidencia.md`: os três recortes e os pesos da pontuação.
 

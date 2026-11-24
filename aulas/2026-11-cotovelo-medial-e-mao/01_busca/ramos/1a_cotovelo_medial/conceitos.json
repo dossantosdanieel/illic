@@ -1,0 +1,175 @@
+{
+  "tema": "Ramo 1a. Tendinopatia medial do cotovelo (epicondilite medial / cotovelo de golfista): diagnóstico e tratamento",
+  "pergunta": {
+    "P": "Adultos (trabalhadores e atletas) com tendinopatia medial do cotovelo",
+    "I": "Avaliação clínica e testes; tratamento conservador (exercício/carga, órtese, terapia manual, recursos), injeção de corticoide ou de outros agentes, cirurgia",
+    "C": "Fora da string",
+    "O": "Fora da string: dor, função (DASH, PRTEE), força de preensão, retorno ao trabalho/esporte",
+    "nota": "Comparador e desfecho ficam fora da string (muitos resumos não os citam) e entram como critério de triagem. O segundo bloco reúne diagnóstico e tratamento porque a aula cobre os dois; termos genéricos como 'treatment*', 'therap*' e 'diagnos*' ficaram de fora de propósito (casariam com quase tudo). Limite 1990+ para alcançar os clássicos de acurácia e os ensaios antigos de corticoide; citações da aula base anteriores a 1990 entram por PMID (pubmed_busca.py --pmids). Volta 2: o ramo 1a ficou com UM bloco (só a condição). O bloco de diagnóstico/tratamento eliminava epidemiologia e mecanismo (Shiri 2006 perdido) e a literatura da tendinopatia medial é pequena o bastante para triar inteira; proximidade 'medial ~3 epicondylitis' acrescentada para 'medial and lateral epicondylitis' (Dingemanse 2014 perdido)."
+  },
+  "recorte": "topo_mecanismos",
+  "blocos": [
+    {
+      "id": "condicao",
+      "rotulo": "Tendinopatia medial do cotovelo",
+      "papel": "P",
+      "mesh": [
+        {
+          "termo": "Elbow Tendinopathy",
+          "explodir": false
+        }
+      ],
+      "livres": [
+        "medial epicondylit*",
+        "medial epicondylos*",
+        "medial epicondylalg*",
+        "medial epicondylopath*",
+        "medial epicondyle tendin*",
+        "medial elbow tendinopath*",
+        "medial elbow tendinos*",
+        "medial elbow pain",
+        "golfer elbow",
+        "golfers elbow",
+        "golfer's elbow",
+        "flexor-pronator",
+        "flexor pronator",
+        "common flexor tendon*",
+        "medial tennis elbow"
+      ],
+      "proximidade": [
+        {
+          "a": [
+            "medial epicondyle",
+            "medial elbow",
+            "flexor pronator",
+            "common flexor"
+          ],
+          "b": [
+            "tendinopathy",
+            "tendinosis",
+            "tendinitis",
+            "tendonitis",
+            "pain",
+            "enthesopathy"
+          ],
+          "n": 3
+        },
+        {
+          "a": [
+            "medial"
+          ],
+          "b": [
+            "epicondylitis",
+            "epicondylalgia",
+            "epicondylosis",
+            "epicondylopathy"
+          ],
+          "n": 3
+        }
+      ],
+      "simples": [
+        "medial epicondylitis",
+        "golfer's elbow",
+        "medial elbow"
+      ]
+    }
+  ],
+  "limites": {
+    "ano_inicio": 1990,
+    "ano_fim": null,
+    "idiomas": [
+      "english",
+      "portuguese",
+      "spanish"
+    ],
+    "somente_humanos": true,
+    "tipos_scopus": [
+      "ar",
+      "re"
+    ]
+  },
+  "revistas_alvo": [
+    {
+      "nome": "J Orthop Sports Phys Ther",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ]
+    },
+    {
+      "nome": "J Hand Ther",
+      "issn": [
+        "0894-1130",
+        "1545-004X"
+      ]
+    },
+    {
+      "nome": "J Hand Surg Am",
+      "issn": [
+        "0363-5023",
+        "1531-6564"
+      ]
+    },
+    {
+      "nome": "J Hand Surg Eur Vol",
+      "issn": [
+        "1753-1934",
+        "2043-6289"
+      ]
+    },
+    {
+      "nome": "J Shoulder Elbow Surg",
+      "issn": [
+        "1058-2746",
+        "1532-6500"
+      ]
+    },
+    {
+      "nome": "Am J Sports Med",
+      "issn": [
+        "0363-5465",
+        "1552-3365"
+      ]
+    },
+    {
+      "nome": "Cochrane Database Syst Rev",
+      "issn": [
+        "1469-493X"
+      ]
+    }
+  ],
+  "sentinelas": [
+    {
+      "pmid": "26001427",
+      "nota": "Revisão JAAOS 2015 (Amin): fonte provável do texto da aula base sobre MET"
+    },
+    {
+      "pmid": "14506342",
+      "nota": "Descatha 2003: prevalência e incidência ocupacional (citado na aula base, slide 141, que lhe atribui 'até 84%' de comorbidades: conferir no texto)"
+    },
+    {
+      "pmid": "16518220",
+      "nota": "Ciccotti 2003 Tech Hand Up Extrem Surg (citado na aula base, slide 139)"
+    },
+    {
+      "pmid": "9384424",
+      "nota": "ECR Stahl 1997: injeção de corticoide na epicondilite medial"
+    },
+    {
+      "pmid": "16968862",
+      "nota": "Shiri 2006: prevalência populacional de epicondilite lateral e medial"
+    },
+    {
+      "pmid": "23335238",
+      "nota": "RS Dingemanse 2014 BJSM: recursos eletrofísicos na epicondilite medial e lateral"
+    },
+    {
+      "pmid": "35658623",
+      "nota": "RS Arevalo 2023 AJSM: cirurgia da epicondilite medial"
+    },
+    {
+      "pmid": "41887339",
+      "nota": "RS See 2026: exercício excêntrico na epicondilite medial"
+    }
+  ]
+}

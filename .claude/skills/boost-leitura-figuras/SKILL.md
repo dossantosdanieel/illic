@@ -74,8 +74,11 @@ usuário no código.
 ### 2. Entregar a lista de pendências e incorporar os PDFs manuais
 
 Mostre ao usuário o conteúdo de `pendentes.md` (ele tem assinatura do JOSPT e acesso
-institucional) e diga a pasta exata onde salvar: `02_artigos/manual/`. Não fique parado: siga
-com os artigos que já têm PDF. Quando ele avisar que salvou:
+institucional) e diga a pasta exata onde salvar: `02_artigos/manual/`. A primeira seção,
+"Gratuitos", traz artigos abertos que o servidor recusou ao script (manuscrito de autor no PMC,
+artigo do JAMA ou do BMJ liberado na página): para esses basta abrir o link "Versão gratuita"
+no navegador e salvar, sem login. Não fique parado: siga com os artigos que já têm PDF. Quando
+ele avisar que salvou:
 
 ```
 python3 scripts/incorporar_manuais.py AULA
@@ -98,9 +101,10 @@ figuras e tabelas com página) e o texto por página em ordem de leitura. Use o 
 direto a Métodos e Resultados e para saber em que página está cada figura.
 
 Limites que você precisa conhecer: tabelas saem linha a linha com ` | ` entre células e podem
-embaralhar colunas (confira números de tabela na miniatura ou no recorte); a primeira página de
-alguns layouts mistura afiliações com o resumo; PDF digitalizado sai sem texto (o script avisa;
-leia pelas miniaturas).
+embaralhar colunas (confira números de tabela na miniatura ou no recorte); texto girado (tabela
+em paisagem) sai à parte, num bloco de código, uma célula por linha; a primeira página de alguns
+layouts mistura afiliações com o resumo; PDF digitalizado sai sem texto (o script avisa; leia
+pelas miniaturas).
 
 ### 4. Escrever as fichas de leitura crítica
 
@@ -148,8 +152,12 @@ achada, página com tabela em paisagem, imagem embutida de baixa resolução).
 boa para ensinar, quantas por aula de 30 a 35 min, quando recortar só um painel, quando refazer
 como gráfico nativo com "Adaptado de"). Parta das figuras apontadas nas fichas.
 
-**5d. Recortar e ajustar.** Coordenadas em fração da página, lidas na régua de `pNNN_grade.png`
-(esquerda, topo, direita, base), ou em pontos PDF com origem no canto superior esquerdo:
+**5d. Recortar e ajustar.** Parta sempre de uma caixa que já existe, porque ler fração na
+régua da miniatura erra fácil (no teste, duas de três primeiras tentativas cortaram conteúdo):
+ajuste um candidato com `--ajustar`, ou recorte uma parte dele com `--dentro ID --frac`, em
+frações do PNG que você acabou de abrir. Só para o que não tem candidato (tabela em paisagem,
+quadro "Box") use a régua de `pNNN_grade.png` (esquerda, topo, direita, base) ou pontos PDF com
+origem no canto superior esquerdo, e confira antes com `--previa`:
 
 ```
 # ver a caixa desenhada na página antes de recortar
@@ -157,7 +165,11 @@ python3 scripts/recortar.py AULA --chave Breda2021 --pagina 6 --frac 0.52,0.60,0
 # recorte novo
 python3 scripts/recortar.py AULA --chave Breda2021 --id fig4 --pagina 6 --frac 0.52,0.60,0.93,0.90 --rotulo "Figure 4" --aparar
 # ajustar um candidato: bordas em pontos (esq, topo, dir, base); negativo = para a esquerda ou para cima
+# (cumulativo: cada --ajustar parte da caixa atual)
 python3 scripts/recortar.py AULA --id Tagliaferri2020_fig1 --ajustar 0,22,0,0 --aparar
+# só um painel de um candidato, em frações do PNG do candidato; --apagar também vira fração dele
+python3 scripts/recortar.py AULA --chave Owen2020 --id fig3_dor --dentro Owen2020_fig3 --frac 0,0,0.515,0.56 \
+  --apagar 0.462,0.225,0.52,0.29 --rotulo "Figure 3" --aparar
 # apagar um trecho da página (legenda colada, cabeçalho da revista, anotação)
 python3 scripts/recortar.py AULA --id Breda2021_fig4 --apagar 0.74,0.80,0.90,0.83
 # juntar painéis lado a lado (ou --juntar vertical); o painel extra pode vir de outra página
@@ -167,9 +179,12 @@ python3 scripts/recortar.py AULA --chave Centner2019 --id tab1 --pagina 4 --frac
 ```
 
 A caixa se ajusta sozinha para não cortar palavra ao meio (desligue com `--exato`). Depois de
-cada recorte o script já diz se há texto cortado, sobra de branco ou resolução insuficiente, e
-imprime o caminho do PNG. **Abra o PNG.** Se não estiver bom, ajuste e olhe de novo. Recorte
-manual entra como `origem: "manual"`; mudar um recorte aprovado tira a aprovação.
+cada recorte o script diz se a figura continua além da borda (eixo, linha ou painel cortado),
+se há texto cortado, sobra de branco ou resolução insuficiente, e mostra a linha de texto que
+ficou **logo fora** de cada borda: se for uma linha da tabela, um rótulo de eixo ou o título do
+painel, abra a caixa para aquele lado. Com `--girar`, esses lados são os da página, não os do
+PNG girado. **Abra o PNG.** Se não estiver bom, ajuste e olhe de novo. Recorte manual entra
+como `origem: "manual"`; mudar um recorte aprovado tira a aprovação.
 
 **5e. Aprovar, com o conteúdo didático.** Só depois de olhar:
 
@@ -189,10 +204,13 @@ python3 scripts/recortar.py AULA --id Breda2021_fig4 --aprovar --tipo grafico \
 python3 scripts/conferir_recortes.py AULA
 ```
 
-Confere cada aprovado: resolução para meio slide ou slide inteiro, fração em branco, texto
-cortado na borda, proporção extrema, campos didáticos preenchidos, licença. Grava o resultado em
-`qc` no catálogo e gera `03_figuras/folha_contato.png`. **Abra a folha de contato final** e
-resolva todo "PROBLEMA" antes de entregar. Repita 5d a 5f até a folha estar limpa.
+Confere cada aprovado contra a página do PDF: resolução para meio slide ou slide inteiro,
+traço que atravessa a borda (figura cortada, vale também para figura em bitmap), palavra
+cortada, sobra de branco, proporção extrema, campos didáticos preenchidos, licença. Grava o
+resultado em `qc` no catálogo e gera `03_figuras/folha_contato.png`. **Abra a folha de contato
+final** e resolva todo "PROBLEMA" antes de entregar. O script não vê legenda de cores ou painel
+que ficou de fora com branco em volta: isso só o seu olho pega na folha. Repita 5d a 5f até a
+folha estar limpa.
 
 ### 6. Entregar
 
@@ -229,7 +247,7 @@ sem dar parecer jurídico e sem sermão. Detalhes e a tabela por licença:
 `revista`, `ano`, `status` (`ok` ou `pendente`), `origem` (`pmc`, `europepmc`, `unpaywall`,
 `openalex`, `manual`), `url_origem`, `licenca`, `arquivo`, `paginas`, `bytes`, `sha256`,
 `confere_artigo`, `editora`, `volume`, `numero`, `paginas_artigo`, `motivo_pendencia`,
-`tentativas`, `texto`.
+`url_gratuita` (pendente com versão aberta que o servidor recusou ao script), `tentativas`, `texto`.
 
 `licenca` usa: `cc-by`, `cc-by-nc`, `cc-by-nc-nd`, `cc-by-nc-sa`, `cc-by-sa`, `cc-by-nd`, `cc0`,
 `dominio publico`, `todos os direitos reservados`, `desconhecida`. As variantes NC e ND são
@@ -245,16 +263,21 @@ superior esquerdo da página, x para a direita e y para baixo, o mesmo sistema d
 
 ## O que o detector faz bem e onde falha
 
-Testado em 13 artigos de acesso aberto de fisioterapia e medicina esportiva (BMJ/BJSM, Springer,
-BMC, PLOS, MDPI, Frontiers, Elsevier, SAGE, Wiley, OUP, IJSPT). Nos layouts conhecidos, mais de
-nove em cada dez candidatos saem utilizáveis sem ajuste. Em revista nunca vista, a primeira
-passada pode perder metade das legendas por causa do formato do rótulo: confira sempre a visão
-geral das páginas. Falhas conhecidas:
+Testado em 19 artigos de acesso aberto de fisioterapia e medicina esportiva (BMJ/BJSM, Springer,
+BMC, PLOS, MDPI, Frontiers, Elsevier, SAGE/AJSM, Wiley, OUP, IJSPT, PeerJ, Scientific Reports,
+JMNI). Num conjunto novo de 6 artigos, 36 de 37 figuras e tabelas saíram com candidato correto
+(a que faltou era tabela em paisagem). Em revista nunca vista, a primeira passada pode perder
+legendas por causa do formato do rótulo: confira sempre a visão geral das páginas. Falhas
+conhecidas:
 
 - **Tabela ou figura em paisagem** (texto girado): não há candidato; o script avisa a página.
   Recorte com `--girar 90` (ou 270).
 - **Quadros "Box"**, figuras sem legenda ou com legenda ao lado: sem candidato. Recorte à mão.
 - **Legenda em página diferente da figura**: sem candidato ou candidato errado.
+- **Legenda ao lado da figura** (Springer) e **título abaixo da tabela** (Nature/Scientific
+  Reports): o detector tenta e marca o candidato com aviso; confira topo e laterais.
+- **Figuras em bitmap lado a lado com rótulos intercalados** (redes, mapas): um painel não sai
+  com caixa retangular limpa; use `--dentro` com `--apagar` sobre os rótulos do painel vizinho.
 - **PDF com camada de texto oculta** (figura embutida como página inteira recortada, comum em
   alguns artigos MDPI): pode sobrar uma linha de texto no topo do recorte.
 - **Tabela sem fios horizontais**: o limite inferior é estimado; o candidato vem com aviso.
@@ -267,7 +290,7 @@ geral das páginas. Falhas conhecidas:
 ## Referências
 
 - `references/leitura-critica.md`: ficha, risco de viés por desenho, DMCI, leitura de forest
-  plot, sobrevida e dispersão, conversões.
+  plot, sobrevida e dispersão, conversões, estudos de prognóstico e critérios de retorno.
 - `references/escolher-figuras.md`: critérios de escolha, quantas por aula, painel ou refazer,
   citação no slide, tabela de licenças.
 - `assets/ficha_leitura_modelo.md`: modelo da ficha.

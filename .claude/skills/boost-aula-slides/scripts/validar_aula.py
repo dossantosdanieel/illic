@@ -167,14 +167,19 @@ def validar(deck: dict, base: Path) -> dict:
             A(0, f"só {ativa:.0%} do tempo está em interação; abaixo de 25% a aula vira exposição com pausas.")
 
     # bilhete de saida
-    tem_bilhete = False
-    for it in linha:
-        s = slides[it["n"] - 1]
-        if s.get("bilhete_saida") or (it["interacao"] and it["interacao"]["tipo"] == "chat" and it["inicio"] >= total * 0.75):
-            tem_bilhete = True
+    # o bilhete de saída é o ÚLTIMO slide cronometrado: um 'chat' no meio da aula não fecha a aula
+    crono_ = [it for it in linha if not it["apoio"]]
+    ultimo = crono_[-1] if crono_ else None
+    tem_bilhete = bool(ultimo) and (
+        bool(slides[ultimo["n"] - 1].get("bilhete_saida"))
+        or bool(ultimo["interacao"] and ultimo["interacao"]["tipo"] == "chat"))
     if not tem_bilhete:
-        E(0, "falta o bilhete de saída: um slide final do tipo 'pergunta' com interação 'chat' "
-          "(\"O que você vai fazer diferente...\").")
+        E(ultimo["n"] if ultimo else 0,
+          "falta o bilhete de saída no último slide cronometrado: um slide do tipo 'pergunta' com interação "
+          "'chat' e \"bilhete_saida\": true (\"O que você vai fazer diferente...\").")
+    for it in crono_[:-1]:
+        if slides[it["n"] - 1].get("bilhete_saida"):
+            A(it["n"], "slide marcado como bilhete de saída, mas não é o último slide cronometrado.")
 
     # ------------------------------------------------------------------ por slide
     n_figuras = 0

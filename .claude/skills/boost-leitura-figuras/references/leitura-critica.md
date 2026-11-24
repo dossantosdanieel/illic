@@ -14,6 +14,7 @@ conduta muda** e **com que confiança**. Tudo o que entrar em slide sai daqui, c
 7. Como ler gráfico de dispersão
 8. Conversões entre medidas, sem errar
 9. Erros de leitura que mais aparecem em aula
+10. Estudos de prognóstico e de critérios de retorno (coorte, meta-análise de coortes)
 
 ## 1. Regras da ficha
 
@@ -36,6 +37,7 @@ conduta muda** e **com que confiança**. Tudo o que entrar em slide sai daqui, c
 |---|---|
 | Pergunta | PICO em uma frase. Se for diagnóstico ou prognóstico, use PIRD ou PEO. |
 | Desenho | Um dos desenhos do registro, mais o que o qualifica: paralelo ou cruzado, superioridade ou não inferioridade, número de centros, registro prospectivo (número) ou não. |
+| Análise | ITT ou por protocolo; cálculo amostral (para que diferença e com que DP); modelo (ANCOVA com valor de base, modelo misto); ajuste para confundidores (coorte); correção para múltiplos desfechos; em meta-análise, modelo (efeitos aleatórios com quantos estudos) e se há sobreposição de amostras. |
 | Amostra | n randomizado e n analisado por grupo; critérios que definem a quem o resultado se aplica (idade, tempo de sintoma, nível esportivo, tratamento prévio); perdas por grupo. |
 | Intervenção com dose | Exercício se descreve por dose: tipo, carga (% 1RM, RPE, dor permitida), séries × repetições, tempo sob tensão, frequência semanal, duração, progressão e critério de progressão, supervisão, adesão medida. Se o artigo não informa, escreva `não informado`: é achado de qualidade (TIDieR, CERT). |
 | Comparador | A mesma descrição de dose. Compare o que diferiu de fato entre os grupos (volume total, atenção do terapeuta, expectativa). |
@@ -46,6 +48,7 @@ conduta muda** e **com que confiança**. Tudo o que entrar em slide sai daqui, c
 | Aplicabilidade | Para quem da clínica isto vale: o paciente típico da ILLIC entraria no estudo? O que falta para aplicar (equipamento, supervisão, tempo)? |
 | O que muda na conduta | Uma a três frases no imperativo, cada uma presa a um número. Se nada muda, diga isso. |
 | Figuras e tabelas que valem slide | Rótulo, página, o que ensina, e se o melhor é reproduzir, recortar um painel ou redesenhar. |
+| Para a aula em camadas | Uma âncora para quem está começando (o conceito que precisa estar claro) e um desafio avançado (a pergunta que o artigo não responde, ou a falha que só se vê nos métodos). |
 | Citações textuais | Até três, com página. |
 | Pendências de verificação | O que ficou sem conferir e por quê. |
 
@@ -223,7 +226,11 @@ Marque na ficha todo valor convertido como **calculado**, com a fórmula e os va
   No slide, dê sempre o absoluto.
 - Sensibilidade e especificidade viram razões de verossimilhança: RV+ = sens / (1 − espec);
   RV− = (1 − sens) / espec. Probabilidade pós-teste: passe por chances (odds), não some
-  percentuais.
+  percentuais. Chance = p / (1 − p); chance pós = chance pré × RV; p = chance / (1 + chance).
+  Exemplo: pré-teste 20% (chance 0,25), RV+ 4 → chance 1,0 → 50%.
+- Associação não é previsão: um OR de 3 a 4 entre fator e desfecho pode conviver com AUC perto
+  de 0,6 (o fator separa mal quem vai e quem não vai ter o evento). Para usar um teste como
+  critério individual, peça sensibilidade, especificidade, AUC e calibração.
 
 ## 9. Erros de leitura que mais aparecem em aula
 
@@ -235,3 +242,30 @@ Marque na ficha todo valor convertido como **calculado**, com a fórmula e os va
 - Ignorar a dose: "exercício" não é uma intervenção, é uma categoria.
 - Desfecho substituto (espessura do tendão, ativação muscular) apresentado como desfecho clínico.
 - Muitos desfechos secundários sem correção: um p < 0,05 entre vinte é esperado por acaso.
+
+## 10. Estudos de prognóstico e de critérios de retorno
+
+Retorno ao esporte, relesão e cronificação da dor lombar chegam quase sempre por coortes e por
+meta-análises de coortes. O modelo da ficha foi pensado para ECR: adapte assim.
+
+- **Exposição no lugar de intervenção.** "Passou nos critérios", "LSI ≥ 90%", "cinesiofobia
+  alta" são exposições, não tratamentos. Descreva o teste como se descreve dose: quais testes,
+  ponto de corte, mês em que foi feito, quem aplicou, se foi antes do retorno.
+- **Confusão.** Quem não passa costuma voltar menos ao esporte e, por isso, se expõe menos ao
+  risco. OR bruto mistura o efeito do critério com o da exposição. Procure o ajuste (idade,
+  sexo, nível esportivo, tempo de exposição) e diga se ele existe.
+- **Absoluto antes do relativo.** Busque o número de eventos por grupo e o tempo de
+  seguimento. Sem eles, não há risco absoluto nem "NNT"; se fizer a conta com um risco de base
+  suposto, escreva que é ilustrativo e de onde veio o valor.
+- **Meta-análise de coortes.** Confira: OR bruto ou ajustado; efeitos aleatórios com poucos
+  estudos (o IC fica estreito demais com DerSimonian-Laird; Hartung-Knapp é mais honesto);
+  quanto do peso está em um ou dois estudos; amostras repetidas (mesma coorte em dois artigos);
+  subgrupos entre estudos (por país, por idade média) são comparações ecológicas e geram
+  hipótese, não conclusão.
+- **Ferramentas.** QUIPS para fator prognóstico, PROBAST para modelo de predição, Newcastle-
+  Ottawa só como resumo. GRADE para prognóstico começa em certeza alta quando a pergunta é de
+  fator prognóstico em coortes bem conduzidas, e cai pelos mesmos cinco domínios.
+- **O que levar para a aula.** Uma frase sobre direção e tamanho (com IC), uma sobre o que o
+  dado não autoriza (por exemplo, "não protege o outro joelho"), e o que falta para virar
+  critério individual (sensibilidade, especificidade, AUC).
+

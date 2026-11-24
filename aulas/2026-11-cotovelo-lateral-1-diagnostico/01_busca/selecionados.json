@@ -1,0 +1,2839 @@
+[
+ {
+  "chave": "Karanasios2022",
+  "titulo": "Diagnostic accuracy of examination tests for lateral elbow tendinopathy (LET) - A systematic review",
+  "autores": [
+   "Karanasios S",
+   "Korakakis V",
+   "Moutzouri M",
+   "Drakonaki E",
+   "Koci K",
+   "Pantazopoulou V",
+   "Tsepis E",
+   "Gioftsos G"
+  ],
+  "primeiro_autor": "Karanasios",
+  "ano": 2022,
+  "revista": "J Hand Ther",
+  "issn": [
+   "1545-004X",
+   "0894-1130"
+  ],
+  "doi": "10.1016/j.jht.2021.02.002",
+  "pmid": "33814224",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: Reviews on the diagnostic performance of the examination tests for lateral elbow tendinopathy (LET) based on updated context-specific tools and guidelines are missing.\nPURPOSE: To review the diagnostic accuracy of examination tests used in LET.\nDESIGN: Systematic review following PRISMA-DTA guidelines.\nMETHODS: We searched MEDLINE, PubMed, CINAHL, EMBASE, PEDro, ScienceDirect, and Cochrane Library databases. The QUADAS-2 checklist was used to assess the methodological quality of the eligible studies. We included diagnostic studies reporting the accuracy of physical examination tests or imaging modalities used in patients with LET.\nRESULTS: Twenty-four studies with 1370 participants were identified reporting the diagnostic performance of Ultrasound Imaging (USI) (18 studies), physical examination tests (2 studies) and Magnetic Resonance Imaging (MRI) (4 studies). Most studies (97%) were assessed with \"unclear\" or \"high risk\" of bias. Sonoelastography showed the highest sensitivity (75- 100%) and specificity (85- 96%). Grayscale with or without Doppler USI presented poor to excellent values (sensitivity: 53%-100%, specificity: 42%-90%). MRI performed better in the diagnosis of tendon thickening and enthesopathy (sensitivity and specificity: 81%-100%). The Cozen's test reported high sensitivity (91%) while a grip strength difference of 5%-10% between elbow flexion and extension showed high sensitivity (78%-83%) and specificity (80%-90%).\nCONCLUSIONS: Cozen's test and grip strength measurement present high accuracy in the diagnosis of LET but are poorly investigated. USI and MRI provide variable diagnostic accuracy depending on the entities reported and should be recommended with caution when differential diagnosis is necessary. Substantial heterogeneity was found in inclusion criteria, operator/ examiner, mode of application, type of equipment and reference standards across the studies.\nSYSTEMATIC REVIEW REGISTRATION: PROSPERO ID CRD42020160402.",
+  "tipos_publicacao": [
+   "Systematic Review",
+   "Journal Article"
+  ],
+  "mesh": [
+   "Humans",
+   "Elbow",
+   "Elbow Tendinopathy",
+   "Ultrasonography",
+   "Magnetic Resonance Imaging",
+   "Musculoskeletal Diseases",
+   "Tendinopathy",
+   "Sensitivity and Specificity"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 109,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "crossref",
+   "openalex"
+  ],
+  "pontuacao": 96.9,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2022, 4 ano(s) (+16,9 de 20)",
+   "Citações: 109 (27,2/ano, OpenAlex) (+15,0 de 15)",
+   "Revista-alvo: J Hand Ther (+10)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "Journal of hand therapy : official journal of the American Society of Hand Therapists",
+  "volume": "35",
+  "fasciculo": "4",
+  "paginas": "541-551",
+  "palavras_chave": [
+   "Diagnosis",
+   "Sensitivity",
+   "Specificity",
+   "Tennis elbow"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "review",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "rs",
+   "base",
+   "revistas"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "33148599",
+    "relacao": "cita o sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 3,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "tipo de publicação PubMed: Systematic Review",
+  "citacoes_por_ano": 27.2,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 1 | origem: atualizacao] RS de acurácia de testes clínicos, ultrassom e RM (24 estudos): Cozen, força de preensão e imagem com sensibilidade/especificidade.",
+  "aula": "1",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Karanasios2021",
+  "titulo": "Exercise interventions in lateral elbow tendinopathy have better outcomes than passive interventions, but the effects are small: a systematic review and meta-analysis of 2123 subjects in 30 trials",
+  "autores": [
+   "Karanasios S",
+   "Korakakis V",
+   "Whiteley R",
+   "Vasilogeorgis I",
+   "Woodbridge S",
+   "Gioftsos G"
+  ],
+  "primeiro_autor": "Karanasios",
+  "ano": 2021,
+  "revista": "Br J Sports Med",
+  "issn": [
+   "1473-0480",
+   "0306-3674"
+  ],
+  "doi": "10.1136/bjsports-2020-102525",
+  "pmid": "33148599",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "OBJECTIVE: To evaluate the effectiveness of exercise compared with other conservative interventions in the management of lateral elbow tendinopathy (LET) on pain and function.\nDESIGN: Systematic review and meta-analysis.\nMETHODS: We used the Cochrane risk-of-bias tool 2 for randomised controlled trials (RCTs) to assess risk of bias and the Grading of Recommendations Assessment, Development and Evaluation methodology to grade the certainty of evidence. Self-perceived improvement, pain intensity, pain-free grip strength (PFGS) and elbow disability were used as primary outcome measures.\nELIGIBILITY CRITERIA: RCTs assessing the effectiveness of exercise alone or as an additive intervention compared with passive interventions, wait-and-see or injections in patients with LET.\nRESULTS: 30 RCTs (2123 participants, 5 comparator interventions) were identified. Exercise outperformed (low certainty) corticosteroid injections in all outcomes at all time points except short-term pain reduction. Clinically significant differences were found in PFGS at short-term (mean difference (MD): 12.15, (95% CI) 1.69 to 22.6), mid-term (MD: 22.45, 95% CI 3.63 to 41.3) and long-term follow-up (MD: 18, 95% CI 11.17 to 24.84). Statistically significant differences (very low certainty) for exercise compared with wait-and-see were found only in self-perceived improvement at short-term, pain reduction and elbow disability at short-term and long-term follow-up. Substantial heterogeneity in descriptions of equipment, load, duration and frequency of exercise programmes were evident.\nCONCLUSIONS: Low and very low certainty evidence suggests exercise is effective compared with passive interventions with or without invasive treatment in LET, but the effect is small.\nPROSPERO REGISTRATION NUMBER: CRD42018082703.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Meta-Analysis",
+   "Systematic Review"
+  ],
+  "mesh": [
+   "Adrenal Cortex Hormones",
+   "Adult",
+   "Bias",
+   "Cryotherapy",
+   "Exercise",
+   "Exercise Therapy",
+   "Female",
+   "Humans",
+   "Male",
+   "Middle Aged",
+   "Pain Measurement",
+   "Pinch Strength",
+   "Publication Bias",
+   "Randomized Controlled Trials as Topic",
+   "Tennis Elbow",
+   "Treatment Outcome",
+   "Ultrasonic Therapy",
+   "Watchful Waiting"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 85,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "crossref",
+   "openalex"
+  ],
+  "pontuacao": 93.7,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2021, 5 ano(s) (+15,4 de 20)",
+   "Citações: 85 (17,0/ano, OpenAlex) (+13,3 de 15)",
+   "Revista-alvo: Br J Sports Med (+10)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "British journal of sports medicine",
+  "volume": "55",
+  "fasciculo": "9",
+  "paginas": "477-485",
+  "palavras_chave": [
+   "elbow",
+   "exercise",
+   "tendinopathy",
+   "tennis elbow"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "review",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "rs",
+   "ecr",
+   "base",
+   "revistas"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "36453071",
+    "relacao": "citado pelo sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 3,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "tipo de publicação PubMed: Meta-Analysis, Systematic Review",
+  "citacoes_por_ano": 17.0,
+  "decisao": "incluir",
+  "papel": "âncora da aula",
+  "observacoes": "[aula 2 | origem: ambos] RS/MA de 30 estudos (2123 participantes): exercício x intervenções passivas, espera vigilante e corticoide; tamanhos de efeito por prazo.",
+  "aula": "2",
+  "origem": "ambos"
+ },
+ {
+  "chave": "Wallis2024",
+  "titulo": "Manual therapy and exercise for lateral elbow pain",
+  "autores": [
+   "Wallis JA",
+   "Bourne AM",
+   "Jessup RL",
+   "Johnston RV",
+   "Frydman A",
+   "Cyril S",
+   "Buchbinder R"
+  ],
+  "primeiro_autor": "Wallis",
+  "ano": 2024,
+  "revista": "Cochrane Database Syst Rev",
+  "issn": [
+   "1469-493X",
+   "1361-6137",
+   "1464-780X",
+   "1465-184X",
+   "1465-1858"
+  ],
+  "doi": "10.1002/14651858.cd013042.pub2",
+  "pmid": "38802121",
+  "pmcid": "PMC11129914",
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: Manual therapy and prescribed exercises are often provided together or separately in contemporary clinical practice to treat people with lateral elbow pain.\nOBJECTIVES: To assess the benefits and harms of manual therapy, prescribed exercises or both for adults with lateral elbow pain.\nSEARCH METHODS: We searched the databases CENTRAL, MEDLINE and Embase, and trial registries until 31 January 2024, unrestricted by language or date of publication.\nSELECTION CRITERIA: We included randomised or quasi-randomised trials. Participants were adults with lateral elbow pain. Interventions were manual therapy, prescribed exercises or both. Primary comparators were placebo or minimal or no intervention. We also included comparisons of manual therapy and prescribed exercises with either intervention alone, with or without glucocorticoid injection. Exclusions were trials testing a single application of an intervention or comparison of different types of manual therapy or prescribed exercises.\nDATA COLLECTION AND ANALYSIS: Two review authors independently selected studies for inclusion, extracted trial characteristics and numerical data, and assessed study risk of bias and certainty of evidence using GRADE. The main comparisons were manual therapy, prescribed exercises or both compared with placebo treatment, and with minimal or no intervention. Major outcomes were pain, disability, heath-related quality of life, participant-reported treatment success, participant withdrawals, adverse events and serious adverse events. The primary endpoint was end of intervention for pain, disability, health-related quality of life and participant-reported treatment success and final time point for adverse events and withdrawals.\nMAIN RESULTS: Twenty-three trials (1612 participants) met our inclusion criteria (mean age ranged from 38 to 52 years, 47% female, 70% dominant arm affected). One trial (23 participants) compared manual therapy to placebo manual therapy, 12 trials (1124 participants) compared manual therapy, prescribed exercises or both to minimal or no intervention, six trials (228 participants) compared manual therapy and exercise to exercise alone, one trial (60 participants) compared the addition of manual therapy to prescribed exercises and glucocorticoid injection, and four trials (177 participants) assessed the addition of manual therapy, prescribed exercises or both to glucocorticoid injection. Twenty-one trials without placebo control were susceptible to performance and detection bias as participants were not blinded to the intervention. Other biases included selection (nine trials, 39%, including two quasi-randomised), attrition (eight trials, 35%) and selective reporting (15 trials, 65%) biases. We report the results of the main comparisons. Manual therapy versus placebo manual therapy Low-certainty evidence, based upon a single trial (23 participants) and downgraded due to indirectness and imprecision, indicates manual therapy may reduce pain and elbow disability at the end of two to three weeks of treatment. Mean pain at the end of treatment was 4.1 points with placebo (0 to 10 scale) and 2.0 points with manual therapy, MD -2.1 points (95% CI -4.2 to -0.1). Mean disability was 40 points with placebo (0 to 100 scale) and 15 points with manual therapy, MD -25 points (95% CI -43 to -7). There was no follow-up beyond the end of treatment to show if these effects were sustained, and no other major outcomes were reported. Manual therapy, prescribed exercises or both versus minimal intervention Low-certainty evidence indicates manual therapy, prescribed exercises or both may slightly reduce pain and disability at the end of treatment, but the effects were not sustained, and there may be little to no improvement in health-related quality of life or number of participants reporting treatment success. We downgraded the evidence due to increased risk of performance bias and detection bias across all the trials, and indirectness due to the multimodal nature of the interventions included in the trials. At four weeks to three months, mean pain was 5.10 points with minimal treatment and manual therapy, prescribed exercises or both reduced pain by a MD of -0.53 points (95% CI -0.92 to -0.14, I2 = 43%; 12 trials, 1023 participants). At four weeks to three months, mean disability was 63.8 points with minimal or no treatment and manual therapy, prescribed exercises or both reduced disability by a MD of -5.00 points (95% CI -9.22 to -0.77, I2 = 63%; 10 trials, 732 participants). At four weeks to three months, mean quality of life was 73.04 points with minimal treatment on a 0 to 100 scale and prescribed exercises reduced quality of life by a MD of -5.58 points (95% CI -10.29 to -0.99; 2 trials, 113 participants). Treatment success was reported by 42% of participants with minimal or no treatment and 57.1% of participants with manual therapy, prescribed exercises or both, RR 1.36 (95% CI 0.96 to 1.93, I2 = 73%; 6 trials, 770 participants). We are uncertain if manual therapy, prescribed exercises or both results in more withdrawals or adverse events. There were 83/566 participant withdrawals (147 per 1000) from the minimal or no intervention group, and 77/581 (126 per 1000) from the manual therapy, prescribed exercises or both groups, RR 0.86 (95% CI 0.66 to 1.12, I2 = 0%; 12 trials). Adverse events were mild and transient and included pain, bruising and gastrointestinal events, and no serious adverse events were reported. Adverse events were reported by 19/224 (85 per 1000) in the minimal treatment group and 70/233 (313 per 1000) in the manual therapy, prescribed exercises or both groups, RR 3.69 (95% CI 0.98 to 13.97, I2 = 72%; 6 trials).\nAUTHORS' CONCLUSIONS: Low-certainty evidence from a single trial in people with lateral elbow pain indicates that, compared with placebo, manual therapy may provide a clinically worthwhile benefit in terms of pain and disability at the end of treatment, although the 95% confidence interval also includes both an important improvement and no improvement, and the longer-term outcomes are unknown. Low-certainty evidence from 12 trials indicates that manual therapy and exercise may slightly reduce pain and disability at the end of treatment, but this may not be clinically worthwhile and these benefits are not sustained. While pain after treatment was an adverse event from manual therapy, the number of events was too small to be certain.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Meta-Analysis",
+   "Review"
+  ],
+  "mesh": [
+   "Adult",
+   "Female",
+   "Humans",
+   "Middle Aged",
+   "Bias",
+   "Combined Modality Therapy",
+   "Exercise Therapy",
+   "Glucocorticoids",
+   "Injections, Intra-Articular",
+   "Musculoskeletal Manipulations",
+   "Quality of Life",
+   "Randomized Controlled Trials as Topic",
+   "Tennis Elbow"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 23,
+  "acesso_aberto": true,
+  "licenca": null,
+  "url_pdf_aberto": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11129914/pdf/CD013042.pdf",
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 83.6,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2024, 2 ano(s) (+20,0 de 20)",
+   "Citações: 23 (11,5/ano, OpenAlex) (+11,6 de 15)",
+   "Ligado por citação a 2 sentinela(s) (+7,0 de 10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "The Cochrane database of systematic reviews",
+  "volume": "5",
+  "fasciculo": "5",
+  "paginas": "CD013042",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "review",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "rs",
+   "ecr",
+   "base"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "33148599",
+    "relacao": "cita o sentinela"
+   },
+   {
+    "sentinela": "23385272",
+    "relacao": "cita o sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": false,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "green",
+  "url_oa": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11129914/pdf/CD013042.pdf",
+  "desenho_motivo": "tipo de publicação PubMed: Meta-Analysis",
+  "citacoes_por_ano": 11.5,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 2 | origem: atualizacao] Revisão Cochrane 2024 (23 ensaios, 1612 participantes): terapia manual e exercício x placebo, mínimo ou nenhum tratamento, com certeza GRADE.",
+  "aula": "2",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Lowdon2024",
+  "titulo": "Comparison of Interventions for Lateral Elbow Tendinopathy: A Systematic Review and Network Meta-Analysis for Patient-Rated Tennis Elbow Evaluation Pain Outcome",
+  "autores": [
+   "Lowdon H",
+   "Chong HH",
+   "Dhingra M",
+   "Gomaa AR",
+   "Teece L",
+   "Booth S",
+   "Watts AC",
+   "Singh HP"
+  ],
+  "primeiro_autor": "Lowdon",
+  "ano": 2024,
+  "revista": "J Hand Surg Am",
+  "issn": [
+   "1531-6564",
+   "0363-5023"
+  ],
+  "doi": "10.1016/j.jhsa.2024.03.007",
+  "pmid": "38678448",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "PURPOSE: There is controversy regarding the optimal treatment for lateral elbow tendinopathy (LET), and not all available treatment options have been compared directly with placebo/control. A network meta-analysis was conducted to compare the effectiveness of different LET treatments directly and indirectly against control/placebo based on a validated outcome, the Patient-Rated Tennis Elbow Evaluation (PRTEE) pain score.\nMETHODS: Randomized, controlled trials comparing different treatment methods for LET were included, provided they reported outcome data using the PRTEE pain score. A network meta-analysis with random effect was used to combine direct and indirect evidence between treatments compared with placebo in the short term (up to six weeks) and midterm (more than six weeks and up to six months) after intervention.\nRESULTS: Thirteen studies with 12 comparators including control/placebo were eligible. The results indicated no significant improvement in PRTEE pain score in the short term across all treatments compared with control/placebo. In the midterm, physiotherapy/exercise showed benefit against placebo (mean difference: -4.32, 95% confidence interval: -7.58 and -1.07). Although steroid injections, dry needling, and autologous blood also exhibited potential treatment effects, it is crucial for the clinician to consider certain pitfalls when considering these treatments. The limited number of small studies and paucity of data call for caution in interpreting the results and need for further evidence.\nCONCLUSIONS: Patients should be informed that there is currently no strong evidence that any treatment produces more rapid improvement in pain symptoms when compared with control/placebo in the short and medium terms.\nTYPE OF STUDY/LEVEL OF EVIDENCE: Therapeutic I.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Systematic Review",
+   "Comparative Study",
+   "Network Meta-Analysis",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Humans",
+   "Tennis Elbow",
+   "Pain Measurement",
+   "Elbow Tendinopathy",
+   "Patient Reported Outcome Measures",
+   "Physical Therapy Modalities",
+   "Exercise Therapy",
+   "Randomized Controlled Trials as Topic"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 22,
+  "acesso_aberto": true,
+  "licenca": "cc-by-nc-nd",
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 83.4,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2024, 2 ano(s) (+20,0 de 20)",
+   "Citações: 22 (11,0/ano, OpenAlex) (+11,4 de 15)",
+   "Ligado por citação a 2 sentinela(s) (+7,0 de 10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "The Journal of hand surgery",
+  "volume": "49",
+  "fasciculo": "7",
+  "paginas": "639-648",
+  "palavras_chave": [
+   "Lateral elbow tendinopathy",
+   "network meta-analysis",
+   "outcome",
+   "tennis elbow"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "review",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "rs",
+   "ecr",
+   "base"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "33148599",
+    "relacao": "cita o sentinela"
+   },
+   {
+    "sentinela": "23385272",
+    "relacao": "cita o sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": false,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "green",
+  "url_oa": "https://research.edgehill.ac.uk/en/publications/1023f4df-5507-4be9-9999-fe57fe6f4eaa",
+  "desenho_motivo": "tipo de publicação PubMed: Network Meta-Analysis, Systematic Review",
+  "citacoes_por_ano": 11.0,
+  "decisao": "incluir",
+  "papel": "contraponto",
+  "observacoes": "[aula 2 | origem: atualizacao] Meta-análise em rede (13 ECRs, PRTEE dor): nenhum tratamento supera controle no curto prazo; só fisioterapia/exercício no médio prazo.",
+  "aula": "2",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Karanasios2021b",
+  "titulo": "Clinical effectiveness of shockwave therapy in lateral elbow tendinopathy: systematic review and meta-analysis",
+  "autores": [
+   "Karanasios S",
+   "Tsamasiotis GK",
+   "Michopoulos K",
+   "Sakellari V",
+   "Gioftsos G"
+  ],
+  "primeiro_autor": "Karanasios",
+  "ano": 2021,
+  "revista": "Clin Rehabil",
+  "issn": [
+   "1477-0873",
+   "0269-2155"
+  ],
+  "doi": "10.1177/02692155211006860",
+  "pmid": "33813913",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "OBJECTIVE: To evaluate the effectiveness of extracorporeal shockwave therapy compared with other interventions on pain, grip strength and disability in patients with lateral elbow tendinopathy.\nDATA SOURCES: MEDLINE, PubMed, CINAHL, EMBASE, PEDro, ScienceDirect, Cochrane Library and clinical trial registries.\nREVIEW METHODS: We included randomized controlled trials assessing the effectiveness of extracorporeal shockwave therapy alone or as an additive intervention compared with sham or other interventions. Pain intensity, grip strength and elbow disability were used as primary outcome measures. We assessed methodological quality with the PEDro score and quality of evidence with the GRADE approach.\nRESULTS: Twenty-seven studies with 1871 patients were finally included. Extracorporeal shockwave therapy reduced pain intensity at mid-term follow-up (standardized mean difference: -1.21, 95% confidence interval:-1.53, -0.89, P < 0.001) and improved grip strength at very short- (mean difference:3.92, 95% confidence interval: 0.91, 6.94, P = 0.01) and short-term follow-up (mean difference:4.87, 95% confidence interval:2.24, 7.50, P < 0.001) compared with sham treatment. However, no clinically significant results were found between comparators in all outcomes and follow-up times. Extracorporeal shockwave therapy presented clinically better compared to Laser in grip strength at short-term (mean difference:3.50, 95% confidence interval:2.40, 4.60, P < 0.001) and ultrasound in pain intensity at very-short-term follow-up (standardized mean difference: -1.54, 95% confidence interval: -2.60, -0.48, P = 0.005).\nCONCLUSION: Low to moderate certainty of evidence suggests that there are no clinical benefits of extracorporeal shockwave therapy compared to sham interventions or corticosteroid injections. Based on very-low and moderate certainty of evidence, extracorporeal shockwave therapy outperforms against Laser and ultrasound, respectively.Level of Evidence: Therapy, level 1a.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Meta-Analysis",
+   "Systematic Review"
+  ],
+  "mesh": [
+   "Elbow",
+   "Elbow Tendinopathy",
+   "Extracorporeal Shockwave Therapy",
+   "High-Energy Shock Waves",
+   "Humans",
+   "Tendinopathy",
+   "Tennis Elbow",
+   "Treatment Outcome"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 51,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "crossref"
+  ],
+  "pontuacao": 81.5,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2021, 5 ano(s) (+15,4 de 20)",
+   "Citações: 51 (10,2/ano, OpenAlex) (+11,1 de 15)",
+   "Revista-alvo: Clin Rehabil (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "Clinical rehabilitation",
+  "volume": "35",
+  "fasciculo": "10",
+  "paginas": "1383-1398",
+  "palavras_chave": [
+   "Tennis elbow",
+   "lateral epicondylitis",
+   "meta-analysis",
+   "shockwave therapy"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "rs",
+   "ecr",
+   "base",
+   "revistas"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": false,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "tipo de publicação PubMed: Meta-Analysis, Systematic Review",
+  "citacoes_por_ano": 10.2,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 2 | origem: atualizacao] RS/MA de ondas de choque (27 estudos, 1871 pacientes): sem benefício clínico relevante x simulado ou corticoide.",
+  "aula": "2",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Lucado2019",
+  "titulo": "Do joint mobilizations assist in the recovery of lateral elbow tendinopathy? A systematic review and meta-analysis",
+  "autores": [
+   "Lucado AM",
+   "Dale RB",
+   "Vincent J",
+   "Day JM"
+  ],
+  "primeiro_autor": "Lucado",
+  "ano": 2019,
+  "revista": "J Hand Ther",
+  "issn": [
+   "1545-004X",
+   "0894-1130"
+  ],
+  "doi": "10.1016/j.jht.2018.01.010",
+  "pmid": "29705077",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "STUDY DESIGN: Systematic review.\nINTRODUCTION: No consensus exists as to which are the most effective methods to treat the symptoms associated with lateral elbow tendinopathy (LET). Research has suggested that joint mobilizations may assist in the recovery of patients with LET.\nPURPOSE OF THE STUDY: To determine if joint mobilizations are effective in improving pain, grip strength, and disability in adults with LET.\nMETHODS: Searches in 3 databases were performed to identify relevant clinical trials. Reviewers independently extracted data and assessed the methodological quality. Summary measures of quantitative data were extracted or calculated where possible. Appropriate data were pooled for meta-analysis using a random-effects model.\nRESULTS: A total of 20 studies met the inclusion criteria; 7 were included in the meta-analysis. Studies were broadly classified into 3 groups: mobilization with movement (MWM), Mill's manipulation, and regional mobilization techniques. Pooled data across all time periods demonstrated a mean effect size of 0.43 (95% confidence interval [CI]: 0.15-0.71) for MWM on improving pain rating, and 0.31 (95% CI: 0.11-0.51) for MWM on improving grip strength, 0.47 (95% CI: 0.11-0.82) for Mill's manipulation on improving pain rating. A mean effect size of -0.01 (95% CI: -0.27 to -0.26) shows Mill's manipulation did not improve pain free grip strength. Functional outcomes varied considerably among studies. Pain, grip strength, and functional outcomes were improved with regional mobilizations.\nCONCLUSION: There is compelling evidence that joint mobilizations have a positive effect on both pain and/or functional grip scores across all time frames compared to control groups in the management of LET.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Meta-Analysis",
+   "Systematic Review"
+  ],
+  "mesh": [
+   "Elbow Tendinopathy",
+   "Hand Strength",
+   "Humans",
+   "Manipulation, Orthopedic",
+   "Pain Measurement"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 72,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "crossref",
+   "openalex"
+  ],
+  "pontuacao": 80.0,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2019, 7 ano(s) (+12,3 de 20)",
+   "Citações: 72 (10,3/ano, OpenAlex) (+11,2 de 15)",
+   "Revista-alvo: J Hand Ther (+10)",
+   "Ligado por citação a 1 sentinela(s) (+4,0 de 10)",
+   "Aderência ao tema: 1 de 2 blocos no título, 1 só no resumo/MeSH (+7,5 de 10)"
+  ],
+  "revista_completa": "Journal of hand therapy : official journal of the American Society of Hand Therapists",
+  "volume": "32",
+  "fasciculo": "2",
+  "paginas": "262-276.e1",
+  "palavras_chave": [
+   "Elbow pain",
+   "Joint mobilization",
+   "Lateral epicondylitis",
+   "Manual therapy"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "review",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "rs",
+   "base",
+   "revistas"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "36453071",
+    "relacao": "citado pelo sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": false,
+  "registros_fundidos": 3,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "tipo de publicação PubMed: Meta-Analysis, Systematic Review",
+  "citacoes_por_ano": 10.3,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 2 | origem: aula base] RS/MA da aula base de mobilizações articulares (20 estudos, 7 na meta-análise): efeito da MWM lateral do cotovelo na dor e força.",
+  "aula": "2",
+  "origem": "aula base"
+ },
+ {
+  "chave": "Zwerus2018",
+  "titulo": "Physical examination of the elbow, what is the evidence? A systematic literature review",
+  "autores": [
+   "Zwerus EL",
+   "Somford MP",
+   "Maissan F",
+   "Heisen J",
+   "Eygendaal D",
+   "van den Bekerom MP"
+  ],
+  "primeiro_autor": "Zwerus",
+  "ano": 2018,
+  "revista": "Br J Sports Med",
+  "issn": [
+   "1473-0480",
+   "0306-3674"
+  ],
+  "doi": "10.1136/bjsports-2016-096712",
+  "pmid": "28249855",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "OBJECTIVE: Primary to provide an overview of diagnostic accuracy for clinical tests for common elbow (sport) injuries, secondary accompanied by reproducible instructions to perform these tests.\nDESIGN: A systematic literature review according to the PRISMA statement.\nDATA SOURCES: A comprehensive literature search was performed in MEDLINE via PubMed and EMBASE.\nELIGIBILITY CRITERIA: We included studies reporting diagnostic accuracy and a description on the performance for elbow tests, targeting the following conditions: distal biceps rupture, triceps rupture, posteromedial impingement, medial collateral ligament (MCL) insufficiency, posterolateral rotatory instability (PLRI), lateral epicondylitis and medial epicondylitis. After identifying the articles, the methodological quality was assessed using the QUADAS-2 checklist.\nRESULTS: Our primary literature search yielded 1144 hits. After assessment 10 articles were included: six for distal biceps rupture, one for MCL insufficiency, two for PLRI and one for lateral epicondylitis. No articles were selected for triceps rupture, posteromedial impingement and medial epicondylitis. Quality assessment showed high or unclear risk of bias in nine studies. We described 24 test procedures of which 14 tests contained data on diagnostic accuracy.\nCONCLUSIONS: Numerous clinical tests for the elbow were described in literature, seldom accompanied with data on diagnostic accuracy. None of the described tests can provide adequate certainty to rule in or rule out a disease based on sufficient diagnostic accuracy.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Systematic Review"
+  ],
+  "mesh": [
+   "Humans",
+   "Joint Instability",
+   "Observational Studies as Topic",
+   "Physical Examination",
+   "Rupture",
+   "Tennis Elbow",
+   "Elbow Injuries"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 114,
+  "acesso_aberto": true,
+  "licenca": "other-oa",
+  "url_pdf_aberto": "https://pure.amsterdamumc.nl/files/158378414/Physical-examination-of-the-elbow-what-is-the-evidence-a-systematic-literature-review.pdf",
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 79.8,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2018, 8 ano(s) (+10,8 de 20)",
+   "Citações: 114 (14,2/ano, OpenAlex) (+12,5 de 15)",
+   "Revista-alvo: Br J Sports Med (+10)",
+   "Ligado por citação a 1 sentinela(s) (+4,0 de 10)",
+   "Aderência ao tema: 1 de 2 blocos no título, 1 só no resumo/MeSH (+7,5 de 10)"
+  ],
+  "revista_completa": "British journal of sports medicine",
+  "volume": "52",
+  "fasciculo": "19",
+  "paginas": "1253-1260",
+  "palavras_chave": [
+   "diagnosis",
+   "elbow",
+   "examination",
+   "sporting injuries",
+   "testing"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "review",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "rs",
+   "base",
+   "revistas"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "36453071",
+    "relacao": "citado pelo sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": false,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "green",
+  "url_oa": "https://pure.amsterdamumc.nl/files/158378414/Physical-examination-of-the-elbow-what-is-the-evidence-a-systematic-literature-review.pdf",
+  "desenho_motivo": "tipo de publicação PubMed: Systematic Review",
+  "citacoes_por_ano": 14.2,
+  "decisao": "incluir",
+  "papel": "aplicação clínica",
+  "observacoes": "[aula 1 | origem: atualizacao] RS de exame físico do cotovelo com acurácia e instruções dos testes, inclusive instabilidade rotatória posterolateral (diferencial).",
+  "aula": "1",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Ikonen2022",
+  "titulo": "Persistent Tennis Elbow Symptoms Have Little Prognostic Value: A Systematic Review and Meta-analysis",
+  "autores": [
+   "Ikonen J",
+   "Lähdeoja T",
+   "Ardern CL",
+   "Buchbinder R",
+   "Reito A",
+   "Karjalainen T"
+  ],
+  "primeiro_autor": "Ikonen",
+  "ano": 2022,
+  "revista": "Clin Orthop Relat Res",
+  "issn": [
+   "1528-1132",
+   "0009-921X"
+  ],
+  "doi": "10.1097/corr.0000000000002058",
+  "pmid": "34874323",
+  "pmcid": "PMC8923574",
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: Tennis elbow is a common painful enthesopathy of the lateral elbow that limits upper limb function and frequently results in lost time at work. Surgeons often recommend surgery if symptoms persist despite nonsurgical management, but operations for tennis elbow are inconsistent in their efficacy, and what we know about those operations often derives from observational studies that assume the condition does not continue to improve over time. This assumption is largely untested, and it may not be true; meta-analyzing results from the control arms of tennis elbow studies can help us to evaluate this premise, but to our knowledge, this has not been done.\nQUESTIONS/PURPOSES: The aims of this systematic review were to describe the course of (1) global improvement, (2) pain, and (3) disability in participants who received no active treatment (placebo or no treatment) in published randomized controlled trials (RCTs) on tennis elbow. We also assessed (4) whether the duration of symptoms or placebo effect is associated with differences in symptom trajectories.\nMETHODS: We searched MEDLINE, Embase, and CENTRAL from database inception to August 12, 2019, for trials including participants with tennis elbow and a placebo or a no-treatment arm and a minimum follow-up duration of 6 months. There were no language restrictions or exclusion criteria. We extracted global improvement, pain, and disability outcomes. We used the Cochrane Risk of Bias tool to assess the risk of bias of included trials. To estimate the typical course of tennis elbow without active treatment, we pooled global improvement (the proportion of participants who reported feeling much better or completely recovered), mean pain, and mean disability using baseline, 1-month, 3-month, 6-month, and 12-month follow-up data. We transformed pain and disability data from the original papers so that at each timepoint the relevant outcome was expressed as change relative to baseline to account for different baseline values. We used meta-regression to assess whether the placebo effect or duration of symptoms before enrollment was associated with differences in symptom trajectories. We included 24 trials with 1085 participants who received no active treatment.\nRESULTS: The number of patients who were not improved decreased exponentially over time. The half-life of global improvement was between 2.5 and 3 months (that is, every 2.5 to 3 months, 50% of the remaining symptomatic patients reported complete recovery or greatly improved symptoms). At 1 year, 89% (189 of 213; 95% CI 80% to 97%) of patients experienced global improvement. The mean pain and disability followed a similar pattern, halving every 3 to 4 months. Eighty-eight percent of pain (95% CI 70% to 100%) and 85% of disability (95% CI 60% to 100%) had resolved by 1 year. The mean duration of symptoms before trial enrollment was not associated with differences in symptom trajectories. The trajectories of the no-treatment and placebo arms were similar, indicating that the placebo effect of the studied active treatments likely is negligible.\nCONCLUSION: Based on the placebo or no-treatment control arms of randomized trials, about 90% of people with untreated tennis elbow achieve symptom resolution at 1 year. The probability of resolution appears to remain constant throughout the first year of follow-up and does not depend on previous symptom duration, undermining the rationale that surgery is appropriate if symptoms persist beyond a certain point of time. We recommend that clinicians inform people who are frustrated with persisting symptoms that this is not a cause for apprehension, given that spontaneous improvement is about as likely during the subsequent few months as it was early after the symptoms first appeared. Because of the high likelihood of spontaneous recovery, any active intervention needs to be justified by high levels of early efficacy and little or no risk to outperform watchful waiting.\nLEVEL OF EVIDENCE: Level I, therapeutic study.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Meta-Analysis",
+   "Systematic Review"
+  ],
+  "mesh": [
+   "Elbow",
+   "Humans",
+   "Pain",
+   "Prognosis",
+   "Tennis Elbow"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 67,
+  "acesso_aberto": true,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 79.2,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2022, 4 ano(s) (+16,9 de 20)",
+   "Citações: 67 (16,8/ano, OpenAlex) (+13,2 de 15)",
+   "Ligado por citação a 1 sentinela(s) (+4,0 de 10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "Clinical orthopaedics and related research",
+  "volume": "480",
+  "fasciculo": "4",
+  "paginas": "647-660",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "review",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "rs",
+   "ecr",
+   "base"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "23385272",
+    "relacao": "cita o sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": false,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "green",
+  "url_oa": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8923574/",
+  "desenho_motivo": "tipo de publicação PubMed: Meta-Analysis, Systematic Review",
+  "citacoes_por_ano": 16.8,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 1,2 | origem: atualizacao] RS/MA dos braços placebo/sem tratamento de ECRs: curso natural, meia-vida de melhora de 2,5 a 3 meses e cerca de 90% de resolução em 1 ano (resumo).",
+  "aula": "1,2",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Ma2024",
+  "titulo": "Therapeutic Effects of Dry Needling on Lateral Epicondylitis: An Updated Systematic Review and Meta-analysis",
+  "autores": [
+   "Ma X",
+   "Qiao Y",
+   "Wang J",
+   "Xu A",
+   "Rong J"
+  ],
+  "primeiro_autor": "Ma",
+  "ano": 2024,
+  "revista": "Arch Phys Med Rehabil",
+  "issn": [
+   "1532-821X",
+   "0003-9993"
+  ],
+  "doi": "10.1016/j.apmr.2024.02.713",
+  "pmid": "38484834",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "OBJECTIVE: To investigate the therapeutic effects of dry needling on lateral epicondylitis and identify a relatively more effective needling technique.\nDATA SOURCES: English databases (Pubmed, Web of Science, Scopus, EBSCO, ScienceDirect, Taylor & Francis, ProQuest, Cochrane, Ovid, and Embase) and Chinese databases (China National Knowledge Infrastructure, Wanfang, and VIP) were searched.\nSTUDY SELECTION: This study included randomized controlled trials for comparing the effectiveness of dry needling with other treatment methods for lateral epicondylitis. The primary outcome measures were pain intensity and elbow disability, while the secondary outcome measures included grip strength and upper limb function.\nDATA EXTRACTION: Data extraction was performed by 2 researchers who used the Cochrane risk of bias analysis tool and the Physiotherapy Evidence Database checklist to assess the risk of bias and methodological quality of the included studies. The Grading of Recommendations, Assessment, Development, and Evaluation approach was used to assess the quality of evidence.\nDATA SYNTHESIS: A total of 17 studies that involved 979 subjects were included in this research. Dry needling exhibited a significant advantage in improving pain intensity among patients with lateral epicondylitis within 1 week after treatment (mean difference [MD]=-0.95, 95% confidence interval [CI], -1.88 to -0.02). Within 1 week and in the follow-ups that exceeded 1 week, dry needling also demonstrated better improvement in elbow disability (<1 week: standardized mean difference [SMD]=-1.37, 95% CI, -1.88 to -0.86; ≥1 week: SMD=-1.32, 95% CI, -2.23 to -0.4) and grip strength (<1 week: SMD=0.27, 95% CI, 0.01 to 0.53; ≥1 week: SMD=0.45, 95% CI, 0.02 to 0.88). Trigger point dry needling with local twitch response exhibited more significant improvement in pain intensity within 1 week (MD=-1.09, 95% CI, -1.75 to -0.44).\nCONCLUSIONS: Dry needling demonstrates good therapeutic effects on pain intensity (within 1 week), function, and grip strength among patients with lateral epicondylitis. Local twitch response is necessary in treatment that targets trigger points.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Meta-Analysis",
+   "Systematic Review",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Humans",
+   "Dry Needling",
+   "Hand Strength",
+   "Pain Measurement",
+   "Randomized Controlled Trials as Topic",
+   "Tennis Elbow",
+   "Treatment Outcome"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 24,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed"
+  ],
+  "pontuacao": 76.8,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2024, 2 ano(s) (+20,0 de 20)",
+   "Citações: 24 (12,0/ano, OpenAlex) (+11,8 de 15)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "Archives of physical medicine and rehabilitation",
+  "volume": "105",
+  "fasciculo": "11",
+  "paginas": "2184-2197",
+  "palavras_chave": [
+   "Dry needling",
+   "Lateral epicondylitis",
+   "Meta-analysis",
+   "Rehabilitation",
+   "Trigger point"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "rs",
+   "ecr",
+   "base"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": false,
+  "registros_fundidos": 1,
+  "criterios_dedup": [],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "tipo de publicação PubMed: Meta-Analysis, Systematic Review",
+  "citacoes_por_ano": 12.0,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 2 | origem: atualizacao] RS/MA atualizada de agulhamento seco (17 ECRs, 979 participantes) com GRADE; atualiza o ECR de Uygur 2021 da aula base.",
+  "aula": "2",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Vuvan2020",
+  "titulo": "Unsupervised Isometric Exercise versus Wait-and-See for Lateral Elbow Tendinopathy",
+  "autores": [
+   "Vuvan V",
+   "Vicenzino B",
+   "Mellor R",
+   "Heales LJ",
+   "Coombes BK"
+  ],
+  "primeiro_autor": "Vuvan",
+  "ano": 2020,
+  "revista": "Med Sci Sports Exerc",
+  "issn": [
+   "1530-0315",
+   "0195-9131"
+  ],
+  "doi": "10.1249/mss.0000000000002128",
+  "pmid": "31425384",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "PURPOSE: This study aimed to investigate the effect of unsupervised isometric exercise compared with a wait-and-see approach on pain, disability, global improvement, and pain-free grip strength in individuals with lateral elbow tendinopathy.\nMETHODS: Forty participants with unilateral lateral elbow tendinopathy of at least 6 wk duration were randomized to either wait-and-see (n = 19) or a single supervised instruction session by a physiotherapist, followed by an 8-wk unsupervised daily program of progressive isometric exercise (n = 21). Primary outcomes were Patient-Rated Tennis Elbow Evaluation, global rating of change on a six-point scale (dichotomized to success and no success) and pain-free grip strength at 8 wk. Secondary outcomes were resting and worst pain on an 11-point numerical rating scale, and thermal and pressure pain thresholds as a measure of pain sensitivity.\nRESULTS: Thirty-nine (98%) participants completed 8-wk measurements. The exercise group had lower Patient-Rated Tennis Elbow Evaluation scores compared with wait-and-see at 8 wk (standardized mean difference [SMD], -0.92; 95% confidence interval [CI], -1.58 to -0.26). No group differences were found for success on global rating of change (29% exercise vs 26% wait-and-see (risk difference, 2.3%; 95% CI, -24.5 to 29.1)), or pain-free grip strength (SMD, -0.33; 95% CI, -0.97 to 0.30). No differences were observed for all secondary outcomes except for worst pain, which was moderately lower in the exercise group (SMD, -0.80; 95% CI, -1.45 to -0.14).\nCONCLUSIONS: Unsupervised isometric exercise was effective in improving pain and disability, but not perceived rating of change and pain-free grip strength when compared with wait-and-see at 8 wk. With only one of the three primary outcomes being significantly different after isometric exercises, it is doubtful if this form of exercise is efficacious as a sole treatment.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Randomized Controlled Trial",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Adult",
+   "Arthralgia",
+   "Elbow Tendinopathy",
+   "Exercise",
+   "Exercise Therapy",
+   "Female",
+   "Hand Strength",
+   "Humans",
+   "Male",
+   "Middle Aged",
+   "Watchful Waiting"
+  ],
+  "desenho": "ECR",
+  "citacoes": 67,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 75.1,
+  "motivos_pontuacao": [
+   "Desenho: ECR (+29,8 de 35)",
+   "Atualidade: 2020, 6 ano(s) (+13,8 de 20)",
+   "Citações: 67 (11,2/ano, OpenAlex) (+11,5 de 15)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "Medicine and science in sports and exercise",
+  "volume": "52",
+  "fasciculo": "2",
+  "paginas": "287-295",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "article",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "ecr",
+   "base"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "36453071",
+    "relacao": "citado pelo sentinela"
+   },
+   {
+    "sentinela": "33148599",
+    "relacao": "citado pelo sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "tipo de publicação PubMed: Randomized Controlled Trial",
+  "citacoes_por_ano": 11.2,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 2 | origem: aula base] ECR da aula base: isométrico não supervisionado x espera por 8 semanas; PRTEE melhor (DPM -0,92 no resumo), sem diferença em melhora global e força. Dose nas tabelas dos slides 51 a 53 da aula base (conferir no texto).",
+  "aula": "2",
+  "origem": "aula base"
+ },
+ {
+  "chave": "Rio2021",
+  "titulo": "Sensory Processing in People With and Without Tendinopathy: A Systematic Review With Meta-analysis of Local, Regional, and Remote Sites in Upper- and Lower-Limb Conditions",
+  "autores": [
+   "Rio E",
+   "Sandler J",
+   "Cheng K",
+   "Moseley GL",
+   "Cook J",
+   "Girdwood M"
+  ],
+  "primeiro_autor": "Rio",
+  "ano": 2021,
+  "revista": "J Orthop Sports Phys Ther",
+  "issn": [
+   "1938-1344",
+   "0190-6011"
+  ],
+  "doi": "10.2519/jospt.2021.9417",
+  "pmid": "33383996",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "OBJECTIVE: To synthesize results of somatosensory processing tests in people with upper- and lower-limb tendinopathy, compared to controls.\nDESIGN: Systematic review with meta-analysis.\nLITERATURE SEARCH: Four electronic databases (MEDLINE, CINAHL Plus, SPORTDiscus, and Embase) were searched.\nSTUDY SELECTION CRITERIA: Included studies measured a domain of sensory processing and compared a tendinopathy group to a healthy control group.\nDATA SYNTHESIS: Meta-analysis was conducted for outcomes with homogeneous data from at least 2 studies. Upper- and lower-limb conditions were compared and outcomes were examined by measurement site (local, regional, or remote to location of pain).\nRESULTS: Of the 30 studies included, 18 investigated lateral elbow tendinopathy. The most commonly assessed outcome measures were pressure pain threshold (PPT) and thermal pain threshold. There was moderate evidence for local and regional reduction of PPT in upper-limb tendinopathies, but not at remote sites. In lower-limb tendinopathies, there was conflicting evidence regarding reduced PPT at local sites and limited evidence of normal PPT at remote sites. There was moderate evidence of sensitization of thermal pain threshold at local sites in upper-limb tendinopathies and limited evidence of no difference in thermal pain threshold in lower-limb tendinopathies. Findings across other domains were variable.\nCONCLUSION: Sensory processing was different between upper-limb tendinopathy and lower-limb tendinopathy. Upper-limb tendinopathies showed signs consistent with primary and secondary hyperalgesia, but lower-limb tendinopathies did not. There was mixed evidence for primary hyperalgesia and limited evidence against secondary hyperalgesia. J Orthop Sports Phys Ther 2021;51(1):12-26. doi:10.2519/jospt.2021.9417.",
+  "tipos_publicacao": [
+   "Comparative Study",
+   "Journal Article",
+   "Meta-Analysis",
+   "Systematic Review"
+  ],
+  "mesh": [
+   "Humans",
+   "Lower Extremity",
+   "Pain Threshold",
+   "Somatosensory Disorders",
+   "Tendinopathy",
+   "Upper Extremity"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 29,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "crossref"
+  ],
+  "pontuacao": 74.2,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2021, 5 ano(s) (+15,4 de 20)",
+   "Citações: 29 (5,8/ano, OpenAlex) (+8,8 de 15)",
+   "Revista-alvo: J Orthop Sports Phys Ther (+10)",
+   "Aderência ao tema: 0 de 2 blocos no título, 2 só no resumo/MeSH (+5,0 de 10)"
+  ],
+  "revista_completa": "The Journal of orthopaedic and sports physical therapy",
+  "volume": "51",
+  "fasciculo": "1",
+  "paginas": "12-26",
+  "palavras_chave": [
+   "hyperalgesia",
+   "pain",
+   "rehabilitation",
+   "sensory processing",
+   "tendinopathy"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "rs",
+   "revistas",
+   "base"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": false,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "tipo de publicação PubMed: Meta-Analysis, Systematic Review",
+  "citacoes_por_ano": 5.8,
+  "decisao": "incluir",
+  "papel": "mecanismo",
+  "observacoes": "[aula 1 | origem: atualizacao] RS/MA JOSPT de processamento sensorial na tendinopatia (18 de 30 estudos no cotovelo lateral): limiar de dor à pressão e térmico local e regional.",
+  "aula": "1",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Shahabi2020",
+  "titulo": "The effects of counterforce brace on pain in subjects with lateral elbow tendinopathy: A systematic review and meta-analysis of randomized controlled trials",
+  "autores": [
+   "Shahabi S",
+   "Bagheri Lankarani K",
+   "Heydari ST",
+   "Jalali M",
+   "Ghahramani S",
+   "Kamyab M",
+   "Tabrizi R",
+   "Hosseinabadi M"
+  ],
+  "primeiro_autor": "Shahabi",
+  "ano": 2020,
+  "revista": "Prosthet Orthot Int",
+  "issn": [
+   "1746-1553",
+   "0309-3646"
+  ],
+  "doi": "10.1177/0309364620930618",
+  "pmid": "32635812",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: Lateral elbow tendinopathy, also known as \"tennis elbow\" or \"lateral epicondylitis,\" is a common disease leading to pain in the lateral side of the elbow and disability during hand gripping. A counterforce brace is one of the most conventional treatments. However, its effects on outcomes remain inconclusive.\nOBJECTIVES: To investigate the effects of counterforce braces on pain in subjects with lateral elbow tendinopathy. Grip strength was reviewed as a secondary outcome.\nSTUDY DESIGN: Systematic review and meta-analysis of randomized controlled trials.\nMETHODS: PubMed, Embase, Scopus, Web of Science, CENTRAL, PEDro, ProQuest, RECAL, and RehabData were searched from January 1, 1995, through June 15, 2019.\nRESULTS: Seventeen studies were included with a total of 1145 participants. A small improvement in pain over the short term (standardized mean difference -0.02; 95% confidence interval: -0.85 to 0.80) and a moderate-to-large improvement in pain in subjects 45 years or younger (standardized mean difference -0.86; 95% confidence interval: -2.45 to 0.72) in favor of the brace versus physiotherapy interventions were found. In contrast, over the long-term physiotherapy interventions (standardized mean difference 1.17; 95% confidence interval: -0.00 to 2.34), wrist splint (standardized mean difference 0.35; 95% confidence interval: -0.07 to 0.76), and laser therapy (standardized mean difference 0.58; 95% confidence interval: -0.44 to 1.59) had better effects on pain improvement versus the brace.\nCONCLUSION: The results indicated that physiotherapy interventions compared to counterforce braces have better effects, especially over the long-term. However, counterforce braces may have better effects on pain in younger people (<45 years old) over the short term (<6 weeks).\nCLINICAL RELEVANCE: The results suggest that counterforce bracing is a reasonable strategy to alleviate pain over the short term. However, the subgroup analysis suggests that factors such as age may have a role in their effectiveness.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Meta-Analysis",
+   "Systematic Review"
+  ],
+  "mesh": [
+   "Braces",
+   "Hand Strength",
+   "Humans",
+   "Randomized Controlled Trials as Topic",
+   "Tennis Elbow"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 35,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 71.7,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2020, 6 ano(s) (+13,8 de 20)",
+   "Citações: 35 (5,8/ano, OpenAlex) (+8,8 de 15)",
+   "Ligado por citação a 1 sentinela(s) (+4,0 de 10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "Prosthetics and orthotics international",
+  "volume": "44",
+  "fasciculo": "5",
+  "paginas": "341-354",
+  "palavras_chave": [
+   "Counterforce brace",
+   "elbow pain",
+   "lateral elbow tendinopathy",
+   "systematic review"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "review",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "rs",
+   "ecr",
+   "base"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "36453071",
+    "relacao": "citado pelo sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": false,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "tipo de publicação PubMed: Meta-Analysis, Systematic Review",
+  "citacoes_por_ano": 5.8,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 2 | origem: aula base] RS/MA da aula base de órtese de contraforça (17 estudos, 1145 participantes) sobre a dor.",
+  "aula": "2",
+  "origem": "aula base"
+ },
+ {
+  "chave": "Karjalainen2021",
+  "titulo": "Autologous blood and platelet-rich plasma injection therapy for lateral elbow pain",
+  "autores": [
+   "Karjalainen TV",
+   "Silagy M",
+   "O'Bryan E",
+   "Johnston RV",
+   "Cyril S",
+   "Buchbinder R"
+  ],
+  "primeiro_autor": "Karjalainen",
+  "ano": 2021,
+  "revista": "Cochrane Database Syst Rev",
+  "issn": [
+   "1469-493X",
+   "1361-6137"
+  ],
+  "doi": "10.1002/14651858.cd010951.pub2",
+  "pmid": "34590307",
+  "pmcid": "PMC8481072",
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: Autologous whole blood or platelet-rich plasma (PRP) injections are commonly used to treat lateral elbow pain (also known as tennis elbow or lateral epicondylitis or epicondylalgia). Based on animal models and observational studies, these injections may modulate tendon injury healing, but randomised controlled trials have reported inconsistent results regarding benefit for people with lateral elbow pain.\nOBJECTIVES: To review current evidence on the benefit and safety of autologous whole blood or platelet-rich plasma (PRP) injection for treatment of people with lateral elbow pain.\nSEARCH METHODS: We searched CENTRAL, MEDLINE, and Embase for published trials, and Clinicaltrials.gov and the World Health Organization (WHO) International Clinical Trials Registry Platform (ICTRP) search portal for ongoing trials, on 18 September 2020.\nSELECTION CRITERIA: We included all randomised controlled trials (RCTs) and quasi-RCTs comparing autologous whole blood or PRP injection therapy to another therapy (placebo or active treatment, including non-pharmacological therapies, and comparison between PRP and autologous blood) for lateral elbow pain. The primary comparison was PRP versus placebo. Major outcomes were pain relief (≥ 30% or ≥ 50%), mean pain, mean function, treatment success, quality of life, withdrawal due to adverse events, and adverse events; the primary time point was three months.\nDATA COLLECTION AND ANALYSIS: We used standard methodological procedures expected by Cochrane.\nMAIN RESULTS: We included 32 studies with 2337 participants; 56% of participants were female, mean age varied between 36 and 53 years, and mean duration of symptoms ranged from 1 to 22 months. Seven trials had three intervention arms. Ten trials compared autologous blood or PRP injection to placebo injection (primary comparison). Fifteen trials compared autologous blood or PRP injection to glucocorticoid injection. Four studies compared autologous blood to PRP. Two trials compared autologous blood or PRP injection plus tennis elbow strap and exercise versus tennis elbow strap and exercise alone. Two trials compared PRP injection to surgery, and one trial compared PRP injection and dry needling to dry needling alone. Other comparisons include autologous blood versus extracorporeal shock wave therapy; PRP versus arthroscopic surgery; PRP versus laser; and autologous blood versus polidocanol. Most studies were at risk of selection, performance, and detection biases, mainly due to inadequate allocation concealment and lack of participant blinding. We found moderate-certainty evidence (downgraded for bias) to show that autologous blood or PRP injection probably does not provide clinically significant improvement in pain or function compared with placebo injection at three months. Further, low-certainty evidence (downgraded for bias and imprecision) suggests that PRP may not increase risk for adverse events. We are uncertain whether autologous blood or PRP injection improves treatment success (downgraded for bias, imprecision, and indirectness) or withdrawals due to adverse events (downgraded for bias and twice for imprecision). No studies measured health-related quality of life, and no studies reported pain relief (> 30% or 50%) at three months. At three months, mean pain was 3.7 points (0 to 10; 0 is best) with placebo and 0.16 points better (95% confidence interval (CI) 0.60 better to 0.29 worse; 8 studies, 523 participants) with autologous blood or PRP injection, for absolute improvement of 1.6% better (6% better to 3% worse). At three months, mean function was 27.5 points (0 to 100; 0 is best) with placebo and 1.86 points better (95% CI 4.9 better to 1.25 worse; 8 studies, 502 participants) with autologous blood or PRP injection, for absolute benefit of 1.9% (5% better to 1% worse), and treatment success was 121 out of 185 (65%) with placebo versus 125 out of 187 (67%) with autologous blood or PRP injection (risk ratio (RR) 1.00; 95% CI 0.83 to 1.19; 4 studies, 372 participants), for absolute improvement of 0% (11.1% lower to 12.4% higher). Regarding harm, we found very low-certainty evidence to suggest that we are uncertain whether withdrawal rates due to adverse events differed. Low-certainty evidence suggests that autologous blood or PRP injection may not increase adverse events compared with placebo injection. Withdrawal due to adverse events occurred in 3 out of 39 (8%) participants treated with placebo versus 1 out of 41 (2%) treated with autologous blood or PRP injection (RR 0.32, 95% CI 0.03 to 2.92; 1 study), for an absolute difference of 5.2% fewer (7.5% fewer to 14.8% more). Adverse event rates were 35 out of 208 (17%) with placebo versus 41 out of 217 (19%) with autologous blood or PRP injection (RR 1.14, 95% CI 0.76 to 1.72; 5 studies; 425 participants), for an absolute difference of 2.4% more (4% fewer to 12% more). At six and twelve months, no clinically important benefit for mean pain or function was observed with autologous blood or PRP injection compared with placebo injection.\nAUTHORS' CONCLUSIONS: Data in this review do not support the use of autologous blood or PRP injection for treatment of lateral elbow pain. These injections probably provide little or no clinically important benefit for pain or function (moderate-certainty evidence), and it is uncertain (very low-certainty evidence) whether they improve treatment success and pain relief > 50%, or increase withdrawal due to adverse events. Although risk for harm may not be increased compared with placebo injection (low-certainty evidence), injection therapies cause pain and carry a small risk of infection. With no evidence of benefit, the costs and risks are not justified.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't",
+   "Systematic Review"
+  ],
+  "mesh": [
+   "Arthroscopy",
+   "Elbow",
+   "Female",
+   "Humans",
+   "Infant",
+   "Pain Measurement",
+   "Platelet-Rich Plasma",
+   "Shoulder Pain"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 50,
+  "acesso_aberto": true,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed"
+  ],
+  "pontuacao": 71.4,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2021, 5 ano(s) (+15,4 de 20)",
+   "Citações: 50 (10,0/ano, OpenAlex) (+11,0 de 15)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "The Cochrane database of systematic reviews",
+  "volume": "9",
+  "fasciculo": "9",
+  "paginas": "CD010951",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "rs",
+   "ecr",
+   "base"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": false,
+  "registros_fundidos": 1,
+  "criterios_dedup": [],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "green",
+  "url_oa": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8481072/",
+  "desenho_motivo": "tipo de publicação PubMed: Systematic Review",
+  "citacoes_por_ano": 10.0,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 2 | origem: atualizacao] Revisão Cochrane 2021 de sangue autólogo e PRP: o que responder ao paciente que pergunta sobre PRP, com certeza da evidência.",
+  "aula": "2",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Bretschneider2022",
+  "titulo": "Work-relatedness of lateral epicondylitis: Systematic review including meta-analysis and GRADE work-relatedness of lateral epicondylitis",
+  "autores": [
+   "Bretschneider SF",
+   "Los FS",
+   "Eygendaal D",
+   "Kuijer PPFM",
+   "van der Molen HF"
+  ],
+  "primeiro_autor": "Bretschneider",
+  "ano": 2022,
+  "revista": "Am J Ind Med",
+  "issn": [
+   "1097-0274",
+   "0271-3586"
+  ],
+  "doi": "10.1002/ajim.23303",
+  "pmid": "34674287",
+  "pmcid": "PMC9297967",
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: Lateral epicondylitis (LE) is a highly prevalent musculoskeletal disorder in workers, often associated with physically demanding work. Knowledge of work-relatedness of LE is crucial to develop appropriate preventive measures. This study investigates the prospective association between work-related physical risk factors and LE.\nMETHODS: A systematic literature review was conducted in MedLine using PubMed from January 1, 2010 until February 16, 2021. Published reports were included if: (1) LE was clinically assessed, (2) exposure to work-related physical risk factors was assessed, and (3) associations between LE and work-related physical risk factors were reported in prospective studies. Quality of evidence was assessed using the Grading of Recommendations, Assessment, Development and Evaluation.\nRESULTS: In total, 318 workers with LE from a population of 5036 workers in five studies were included. Meta-analyses revealed high-quality evidence for associations between LE and a Strain Index (SI) score >5.1 (odds ratio [OR]: 1.75, 95% confidence interval (CI): 1.11-2.78) and moderate-quality evidence for forearm rotation >4 h/day or forearm rotation ≥45° for ≥45% time (OR: 1.85, 95% CI: 1.10-3.10). Gripping, flexion and extension of the wrist, and repetitive movements showed no significant associations with LE.\nCONCLUSION: High-quality evidence was found indicating that a higher SI increased the risk of LE. Moderate-quality evidence was found for an association between forearm rotation and LE. No associations were found between other physical risk factors and LE. Primary preventive interventions should focus on a reduction of the SI and of high forearm rotation in work.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Meta-Analysis",
+   "Research Support, Non-U.S. Gov't",
+   "Systematic Review"
+  ],
+  "mesh": [
+   "Humans",
+   "Musculoskeletal Diseases",
+   "Occupational Diseases",
+   "Prospective Studies",
+   "Risk Factors",
+   "Tennis Elbow"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 49,
+  "acesso_aberto": true,
+  "licenca": "cc-by-nc-nd",
+  "url_pdf_aberto": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ajim.23303",
+  "fontes": [
+   "pubmed"
+  ],
+  "pontuacao": 71.3,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2022, 4 ano(s) (+16,9 de 20)",
+   "Citações: 49 (12,2/ano, OpenAlex) (+11,9 de 15)",
+   "Aderência ao tema: 1 de 2 blocos no título, 1 só no resumo/MeSH (+7,5 de 10)"
+  ],
+  "revista_completa": "American journal of industrial medicine",
+  "volume": "65",
+  "fasciculo": "1",
+  "paginas": "41-50",
+  "palavras_chave": [
+   "elbow tendinopathy",
+   "lateral epicondylitis",
+   "occupational disease",
+   "occupational exposures",
+   "occupational physician",
+   "physical risk factors",
+   "prevention",
+   "tennis elbow",
+   "workers' health"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "rs",
+   "base"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": false,
+  "registros_fundidos": 1,
+  "criterios_dedup": [],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "hybrid",
+  "url_oa": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ajim.23303",
+  "desenho_motivo": "tipo de publicação PubMed: Meta-Analysis, Systematic Review",
+  "citacoes_por_ano": 12.2,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 1 | origem: atualizacao] RS/MA com GRADE de fatores físicos de trabalho em estudos prospectivos (Strain Index, rotação de antebraço): fatores de risco ocupacionais.",
+  "aula": "1",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Couppe2022",
+  "titulo": "Effects of Heavy Slow Resistance Training Combined With Corticosteroid Injections or Tendon Needling in Patients With Lateral Elbow Tendinopathy: A 3-Arm Randomized Double-Blinded Placebo-Controlled Study",
+  "autores": [
+   "Couppé C",
+   "Døssing S",
+   "Bülow PM",
+   "Siersma VD",
+   "Zilmer CK",
+   "Bang CW",
+   "Høffner R",
+   "Kracht M",
+   "Hogg P",
+   "Edström G",
+   "Kjaer M",
+   "Magnusson SP"
+  ],
+  "primeiro_autor": "Couppé",
+  "ano": 2022,
+  "revista": "Am J Sports Med",
+  "issn": [
+   "1552-3365",
+   "0363-5465"
+  ],
+  "doi": "10.1177/03635465221110214",
+  "pmid": "35867777",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: Lateral elbow tendinopathy is a disabling tendon overuse injury. It remains unknown if a corticosteroid injection (CSI) or tendon needling (TN) combined with heavy slow resistance (HSR) training is superior to HSR alone in treating lateral elbow tendinopathy.\nPURPOSE/HYPOTHESIS: The purpose was to investigate the effects of HSR combined with either (1) a CSI, (2) TN, or (3) placebo needling (PN) as treatment for lateral elbow tendinopathy. We hypothesized that 12 weeks of HSR in combination with a CSI or TN would have superior effects compared with PN at 12, 26, and 52 (primary endpoint) weeks' follow-up on primary (Disabilities of the Arm, Shoulder and Hand [DASH] score) and secondary outcomes in patients with chronic unilateral lateral elbow tendinopathy.\nSTUDY DESIGN: Randomized controlled trial; Level of evidence, 1.\nMETHODS: A total of 60 patients with chronic unilateral lateral elbow tendinopathy were randomized to perform 12 weeks of home-based HSR with elastic band exercises combined with either (1) a CSI, (2) TN, or (3) PN, and at 12, 26, and 52 weeks, we assessed the primary outcome, the DASH score, and secondary outcomes: shortened version of the DASH (QuickDASH) score, pain (numerical rating scale [NRS] score), pain-free grip strength, and hypervascularization (power Doppler area).\nRESULTS: A CSI, TN, and PN improved patient outcomes equally based on the DASH (Δ20 points), QuickDASH (Δ21 points), and NRS (Δ2.5 points) scores after 12 weeks. Further, after 12 weeks, a CSI also resulted in decreased hypervascularization (power Doppler area) compared with PN (Δ-2251 pixels, P = .0418). Except for the QuickDASH score (CSI increased score by Δ15 points compared with PN; P = .0427), there were no differences between the groups after 52 weeks.\nCONCLUSION: These results suggest that 12 weeks of HSR improved symptoms in both the short and the long term and that a CSI or TN did not amplify this effect. In addition, a CSI seemed to impair patient-reported outcomes compared with HSR alone at long-term follow-up.\nREGISTRATION: NCT02521298 (ClinicalTrials.gov identifier).",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Randomized Controlled Trial",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Adrenal Cortex Hormones",
+   "Elbow Tendinopathy",
+   "Humans",
+   "Resistance Training",
+   "Tendinopathy",
+   "Tendons",
+   "Treatment Outcome"
+  ],
+  "desenho": "ECR",
+  "citacoes": 14,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 70.6,
+  "motivos_pontuacao": [
+   "Desenho: ECR (+29,8 de 35)",
+   "Atualidade: 2022, 4 ano(s) (+16,9 de 20)",
+   "Citações: 14 (3,5/ano, OpenAlex) (+6,9 de 15)",
+   "Ligado por citação a 2 sentinela(s) (+7,0 de 10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "The American journal of sports medicine",
+  "volume": "50",
+  "fasciculo": "10",
+  "paginas": "2787-2796",
+  "palavras_chave": [
+   "cortisone injection",
+   "heavy slow resistance training",
+   "needling",
+   "tendinopathy"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "article",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "ecr",
+   "base"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "33148599",
+    "relacao": "cita o sentinela"
+   },
+   {
+    "sentinela": "23385272",
+    "relacao": "cita o sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": false,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "desenho declarado pelos autores no resumo: 'Randomized controlled trial'",
+  "citacoes_por_ano": 3.5,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 2 | origem: atualizacao] ECR de 3 braços (60 pacientes): 12 semanas de HSR com elástico, somando corticoide, agulhamento do tendão ou placebo; HSR é o efeito, corticoide piora em 52 semanas.",
+  "aula": "2",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Coombes2013",
+  "titulo": "Effect of corticosteroid injection, physiotherapy, or both on clinical outcomes in patients with unilateral lateral epicondylalgia: a randomized controlled trial",
+  "autores": [
+   "Coombes BK",
+   "Bisset L",
+   "Brooks P",
+   "Khan A",
+   "Vicenzino B"
+  ],
+  "primeiro_autor": "Coombes",
+  "ano": 2013,
+  "revista": "JAMA",
+  "issn": [
+   "1538-3598",
+   "0098-7484",
+   "0002-9955",
+   "2376-8118"
+  ],
+  "doi": "10.1001/jama.2013.129",
+  "pmid": "23385272",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "IMPORTANCE: Corticosteroid injection and physiotherapy, common treatments for lateral epicondylalgia, are frequently combined in clinical practice. However, evidence on their combined efficacy is lacking.\nOBJECTIVE: To investigate the effectiveness of corticosteroid injection, multimodal physiotherapy, or both in patients with unilateral lateral epicondylalgia.\nDESIGN, SETTING, AND PATIENTS: A 2 × 2 factorial, randomized, injection-blinded, placebo-controlled trial was conducted at a single university research center and 16 primary care settings in Brisbane, Australia. A total of 165 patients aged 18 years or older with unilateral lateral epicondylalgia of longer than 6 weeks' duration were enrolled between July 2008 and May 2010; 1-year follow-up was completed in May 2011.\nINTERVENTIONS: Corticosteroid injection (n = 43), placebo injection (n = 41), corticosteroid injection plus physiotherapy (n = 40), or placebo injection plus physiotherapy (n = 41).\nMAIN OUTCOME MEASURES: The 2 primary outcomes were 1-year global rating of change scores for complete recovery or much improvement and 1-year recurrence (defined as complete recovery or much improvement at 4 or 8 weeks, but not later) analyzed on an intention-to-treat basis (P < .01). Secondary outcomes included complete recovery or much improvement at 4 and 26 weeks.\nRESULTS: Corticosteroid injection resulted in lower complete recovery or much improvement at 1 year vs placebo injection (83% vs 96%, respectively; relative risk [RR], 0.86 [99% CI, 0.75-0.99]; P = .01) and greater 1-year recurrence (54% vs 12%; RR, 0.23 [99% CI, 0.10-0.51]; P < .001). The physiotherapy and no physiotherapy groups did not differ on 1-year ratings of complete recovery or much improvement (91% vs 88%, respectively; RR, 1.04 [99% CI, 0.90-1.19]; P = .56) or recurrence (29% vs 38%; RR, 1.31 [99% CI, 0.73-2.35]; P = .25). Similar patterns were found at 26 weeks, with lower complete recovery or much improvement after corticosteroid injection vs placebo injection (55% vs 85%, respectively; RR, 0.79 [99% CI, 0.62-0.99]; P < .001) and no difference between the physiotherapy and no physiotherapy groups (71% vs 69%, respectively; RR, 1.22 [99% CI, 0.97-1.53]; P = .84). At 4 weeks, there was a significant interaction between corticosteroid injection and physiotherapy (P = .01), whereby patients receiving the placebo injection plus physiotherapy had greater complete recovery or much improvement vs no physiotherapy (39% vs 10%, respectively; RR, 4.00 [99% CI, 1.07-15.00]; P = .004). However, there was no difference between patients receiving the corticosteroid injection plus physiotherapy vs corticosteroid alone (68% vs 71%, respectively; RR, 0.95 [99% CI, 0.65-1.38]; P = .57).\nCONCLUSION AND RELEVANCE: Among patients with chronic unilateral lateral epicondylalgia, the use of corticosteroid injection vs placebo injection resulted in worse clinical outcomes after 1 year, and physiotherapy did not result in any significant differences.\nTRIAL REGISTRATION: anzctr.org Identifier: ACTRN12609000051246.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Randomized Controlled Trial",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Adrenal Cortex Hormones",
+   "Adult",
+   "Chronic Disease",
+   "Combined Modality Therapy",
+   "Double-Blind Method",
+   "Female",
+   "Humans",
+   "Male",
+   "Middle Aged",
+   "Physical Therapy Modalities",
+   "Recovery of Function",
+   "Tennis Elbow",
+   "Treatment Outcome"
+  ],
+  "desenho": "ECR",
+  "citacoes": 418,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 67.8,
+  "motivos_pontuacao": [
+   "Desenho: ECR (+29,8 de 35)",
+   "Atualidade: 2013, 13 ano(s) (+3,1 de 20)",
+   "Citações: 418 (32,2/ano, OpenAlex) (+15,0 de 15)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "JAMA",
+  "volume": "309",
+  "fasciculo": "5",
+  "paginas": "461-9",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "article",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "ecr",
+   "base"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "36453071",
+    "relacao": "citado pelo sentinela"
+   },
+   {
+    "sentinela": "33148599",
+    "relacao": "citado pelo sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "tipo de publicação PubMed: Randomized Controlled Trial",
+  "citacoes_por_ano": 32.2,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 1,2 | origem: atualizacao] ECR fatorial JAMA (165 pacientes): no resumo, corticoide x placebo em 1 ano 83% x 96% de recuperação/muita melhora e recidiva 54% x 12%; fisioterapia x sem fisioterapia sem diferença em 1 ano. A aula base usa a análise econômica do mesmo ensaio (Coombes 2016).",
+  "aula": "1,2",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Coombes2010",
+  "titulo": "Efficacy and safety of corticosteroid injections and other injections for management of tendinopathy: a systematic review of randomised controlled trials",
+  "autores": [
+   "Coombes BK",
+   "Bisset L",
+   "Vicenzino B"
+  ],
+  "primeiro_autor": "Coombes",
+  "ano": 2010,
+  "revista": "Lancet",
+  "issn": [
+   "1474-547X",
+   "0140-6736"
+  ],
+  "doi": "10.1016/s0140-6736(10)61160-9",
+  "pmid": "20970844",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: Few evidence-based treatment guidelines for tendinopathy exist. We undertook a systematic review of randomised trials to establish clinical efficacy and risk of adverse events for treatment by injection.\nMETHODS: We searched eight databases without language, publication, or date restrictions. We included randomised trials assessing efficacy of one or more peritendinous injections with placebo or non-surgical interventions for tendinopathy, scoring more than 50% on the modified physiotherapy evidence database scale. We undertook meta-analyses with a random-effects model, and estimated relative risk and standardised mean differences (SMDs). The primary outcome of clinical efficacy was protocol-defined pain score in the short term (4 weeks, range 0-12), intermediate term (26 weeks, 13-26), or long term (52 weeks, ≥52). Adverse events were also reported.\nFINDINGS: 3824 trials were identified and 41 met inclusion criteria, providing data for 2672 participants. We showed consistent findings between many high-quality randomised controlled trials that corticosteroid injections reduced pain in the short term compared with other interventions, but this effect was reversed at intermediate and long terms. For example, in pooled analysis of treatment for lateral epicondylalgia, corticosteroid injection had a large effect (defined as SMD>0·8) on reduction of pain compared with no intervention in the short term (SMD 1·44, 95% CI 1·17-1·71, p<0·0001), but no intervention was favoured at intermediate term (-0·40, -0·67 to -0·14, p<0·003) and long term (-0·31, -0·61 to -0·01, p=0·05). Short-term efficacy of corticosteroid injections for rotator-cuff tendinopathy is not clear. Of 991 participants who received corticosteroid injections in studies that reported adverse events, only one (0·1%) had a serious adverse event (tendon rupture). By comparison with placebo, reductions in pain were reported after injections of sodium hyaluronate (short [3·91, 3·54-4·28, p<0·0001], intermediate [2·89, 2·58-3·20, p<0·0001], and long [3·91, 3·55-4·28, p<0·0001] terms), botulinum toxin (short term [1·23, 0·67-1·78, p<0·0001]), and prolotherapy (intermediate term [2·62, 1·36-3·88, p<0·0001]) for treatment of lateral epicondylalgia. Lauromacrogol (polidocanol), aprotinin, and platelet-rich plasma were not more efficacious than was placebo for Achilles tendinopathy, while prolotherapy was not more effective than was eccentric exercise.\nINTERPRETATION: Despite the effectiveness of corticosteroid injections in the short term, non-corticosteroid injections might be of benefit for long-term treatment of lateral epicondylalgia. However, response to injection should not be generalised because of variation in effect between sites of tendinopathy.\nFUNDING: None.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't",
+   "Systematic Review"
+  ],
+  "mesh": [
+   "Anti-Inflammatory Agents",
+   "Aprotinin",
+   "Botulinum Toxins",
+   "Glucocorticoids",
+   "Glycosaminoglycans",
+   "Humans",
+   "Hyaluronic Acid",
+   "Injections",
+   "Patellar Ligament",
+   "Platelet-Rich Plasma",
+   "Polyethylene Glycols",
+   "Randomized Controlled Trials as Topic",
+   "Rotator Cuff",
+   "Tendinopathy",
+   "Tennis Elbow"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 978,
+  "acesso_aberto": true,
+  "licenca": null,
+  "url_pdf_aberto": "http://www.thelancet.com/article/S0140673610611609/pdf",
+  "fontes": [
+   "pubmed"
+  ],
+  "pontuacao": 67.5,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2010, 16 ano(s) (+0,0 de 20)",
+   "Citações: 978 (61,1/ano, OpenAlex) (+15,0 de 15)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 1 de 2 blocos no título, 1 só no resumo/MeSH (+7,5 de 10)"
+  ],
+  "revista_completa": "Lancet (London, England)",
+  "volume": "376",
+  "fasciculo": "9754",
+  "paginas": "1751-67",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "rs",
+   "ecr",
+   "base"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 1,
+  "criterios_dedup": [],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "bronze",
+  "url_oa": "http://www.thelancet.com/article/S0140673610611609/pdf",
+  "desenho_motivo": "tipo de publicação PubMed: Systematic Review",
+  "citacoes_por_ano": 61.1,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 2 | origem: atualizacao] RS Lancet de injeções na tendinopatia: corticoide com benefício de curto prazo e piora em médio/longo prazo no cotovelo lateral; outras injeções.",
+  "aula": "2",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Coombes2015b",
+  "titulo": "Management of Lateral Elbow Tendinopathy: One Size Does Not Fit All",
+  "autores": [
+   "Coombes BK",
+   "Bisset L",
+   "Vicenzino B"
+  ],
+  "primeiro_autor": "Coombes",
+  "ano": 2015,
+  "revista": "J Orthop Sports Phys Ther",
+  "issn": [
+   "1938-1344",
+   "0190-6011"
+  ],
+  "doi": "10.2519/jospt.2015.5841",
+  "pmid": "26381484",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "Synopsis Clear guidelines for the clinical management of individuals with lateral elbow tendinopathy (LET) are hampered by many proposed interventions and the condition's prognosis, ranging from immediate resolution of symptoms following simple advice in some patients to long-lasting problems, regardless of treatment, in others. This is compounded by our lack of understanding of the complexity of the underlying pathophysiology of LET. In this article, we collate evidence and expert opinion on the pathophysiology, clinical presentation, and differential diagnosis of LET. Factors that might provide prognostic value or direction for physical rehabilitation, such as the presence of neck pain, tendon tears, or central sensitization, are canvassed. Clinical recommendations for physical rehabilitation are provided, including the prescription of exercise and adjunctive physical therapy and pharmacotherapy. A preliminary algorithm, including targeted interventions, for the management of subgroups of patients with LET based on identified prognostic factors is proposed. Further research is needed to evaluate whether such an approach may lead to improved outcomes and more efficient resource allocation. J Orthop Sports Phys Ther 2015;45(11):938-949. Epub 17 Sep 2015. doi:10.2519/jospt.2015.5841.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Review"
+  ],
+  "mesh": [
+   "Algorithms",
+   "Diagnosis, Differential",
+   "Drug Therapy",
+   "Elbow Tendinopathy",
+   "Exercise Therapy",
+   "Humans",
+   "Physical Therapy Modalities",
+   "Prognosis"
+  ],
+  "desenho": "Revisao narrativa",
+  "citacoes": 262,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "crossref"
+  ],
+  "pontuacao": 64.9,
+  "motivos_pontuacao": [
+   "Desenho: Revisao narrativa (+14,0 de 35)",
+   "Atualidade: 2015, 11 ano(s) (+6,2 de 20)",
+   "Citações: 262 (23,8/ano, OpenAlex) (+14,8 de 15)",
+   "Revista-alvo: J Orthop Sports Phys Ther (+10)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "The Journal of orthopaedic and sports physical therapy",
+  "volume": "45",
+  "fasciculo": "11",
+  "paginas": "938-49",
+  "palavras_chave": [
+   "epicondylalgia",
+   "prognosis",
+   "tennis elbow"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "base",
+   "revistas"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "tipo Review sem método sistemático identificado",
+  "citacoes_por_ano": 23.8,
+  "decisao": "incluir",
+  "papel": "aplicação clínica",
+  "observacoes": "[aula 2 | origem: atualizacao] Revisão clínica JOSPT 'one size does not fit all': raciocínio para combinar educação, carga e tratamento da dor por subgrupo.",
+  "aula": "2",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Bisset2006b",
+  "titulo": "Mobilisation with movement and exercise, corticosteroid injection, or wait and see for tennis elbow: randomised trial",
+  "autores": [
+   "Bisset L",
+   "Beller E",
+   "Jull G",
+   "Brooks P",
+   "Darnell R",
+   "Vicenzino B"
+  ],
+  "primeiro_autor": "Bisset",
+  "ano": 2006,
+  "revista": "BMJ",
+  "issn": [
+   "1756-1833",
+   "0959-8138",
+   "0007-1447",
+   "0267-0623",
+   "1468-5833"
+  ],
+  "doi": "10.1136/bmj.38961.584653.ae",
+  "pmid": "17012266",
+  "pmcid": "PMC1633771",
+  "scopus_eid": null,
+  "resumo": "OBJECTIVE: To investigate the efficacy of physiotherapy compared with a wait and see approach or corticosteroid injections over 52 weeks in tennis elbow.\nDESIGN: Single blind randomised controlled trial.\nSETTING: Community setting, Brisbane, Australia.\nPARTICIPANTS: 198 participants aged 18 to 65 years with a clinical diagnosis of tennis elbow of a minimum six weeks' duration, who had not received any other active treatment by a health practitioner in the previous six months.\nINTERVENTIONS: Eight sessions of physiotherapy; corticosteroid injections; or wait and see.\nMAIN OUTCOME MEASURES: Global improvement, grip force, and assessor's rating of severity measured at baseline, six weeks, and 52 weeks.\nRESULTS: Corticosteroid injection showed significantly better effects at six weeks but with high recurrence rates thereafter (47/65 of successes subsequently regressed) and significantly poorer outcomes in the long term compared with physiotherapy. Physiotherapy was superior to wait and see in the short term; no difference was seen at 52 weeks, when most participants in both groups reported a successful outcome. Participants who had physiotherapy sought less additional treatment, such as non-steroidal anti-inflammatory drugs, than did participants who had wait and see or injections.\nCONCLUSION: Physiotherapy combining elbow manipulation and exercise has a superior benefit to wait and see in the first six weeks and to corticosteroid injections after six weeks, providing a reasonable alternative to injections in the mid to long term. The significant short term benefits of corticosteroid injection are paradoxically reversed after six weeks, with high recurrence rates, implying that this treatment should be used with caution in the management of tennis elbow.",
+  "tipos_publicacao": [
+   "Comparative Study",
+   "Journal Article",
+   "Randomized Controlled Trial",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Adolescent",
+   "Adrenal Cortex Hormones",
+   "Adult",
+   "Aged",
+   "Exercise Therapy",
+   "Female",
+   "Humans",
+   "Injections",
+   "Male",
+   "Middle Aged",
+   "Movement",
+   "Single-Blind Method",
+   "Tennis Elbow",
+   "Treatment Outcome"
+  ],
+  "desenho": "ECR",
+  "citacoes": 632,
+  "acesso_aberto": true,
+  "licenca": null,
+  "url_pdf_aberto": "https://www.bmj.com/content/bmj/333/7575/939.full.pdf",
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 64.8,
+  "motivos_pontuacao": [
+   "Desenho: ECR (+29,8 de 35)",
+   "Atualidade: 2006, 20 ano(s) (+0,0 de 20)",
+   "Citações: 632 (31,6/ano, OpenAlex) (+15,0 de 15)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "BMJ (Clinical research ed.)",
+  "volume": "333",
+  "fasciculo": "7575",
+  "paginas": "939",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "article",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "ecr",
+   "base"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "33148599",
+    "relacao": "citado pelo sentinela"
+   },
+   {
+    "sentinela": "23385272",
+    "relacao": "citado pelo sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "bronze",
+  "url_oa": "https://www.bmj.com/content/bmj/333/7575/939.full.pdf",
+  "desenho_motivo": "desenho declarado pelos autores no resumo: 'Single blind randomised controlled trial'",
+  "citacoes_por_ano": 31.6,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 1,2 | origem: atualizacao] ECR BMJ (198 pacientes): MWM + exercício x corticoide x espera; corticoide melhor em 6 semanas e pior em 52, com recidiva; braço de espera mostra o curso natural.",
+  "aula": "1,2",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Smidt2002",
+  "titulo": "Corticosteroid injections, physiotherapy, or a wait-and-see policy for lateral epicondylitis: a randomised controlled trial",
+  "autores": [
+   "Smidt N",
+   "van der Windt DA",
+   "Assendelft WJ",
+   "Devillé WL",
+   "Korthals-de Bos IB",
+   "Bouter LM"
+  ],
+  "primeiro_autor": "Smidt",
+  "ano": 2002,
+  "revista": "Lancet",
+  "issn": [
+   "0140-6736",
+   "0099-5355",
+   "1474-547X"
+  ],
+  "doi": "10.1016/s0140-6736(02)07811-x",
+  "pmid": "11879861",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: Lateral epicondylitis is generally treated with corticosteroid injections or physiotherapy. Dutch clinical guidelines recommend a wait-and-see policy. We compared the efficacy of these approaches.\nMETHODS: Patients with lateral epicondylitis of at least 6 weeks' duration were recruited by family doctors. We randomly allocated eligible patients to 6 weeks of treatment with corticosteroid injections, physiotherapy, or a wait-and-see policy. Outcome measures included general improvement, severity of the main complaint, pain, elbow disability, and patient satisfaction. Severity of elbow complaints, grip strength, and pressure pain threshold were assessed by a research physiotherapist who was unaware of treatment allocation. We assessed all outcomes at 3, 6, 12, 26, and 52 weeks. The principal analysis was done on an intention-to-treat basis.\nFINDINGS: We randomly assigned 185 patients. At 6 weeks, corticosteroid injections were significantly better than all other therapy options for all outcome measures. Success rates were 92% (57) compared with 47% (30) for physiotherapy and 32% (19) for wait-and-see policy. However, recurrence rate in the injection group was high. Long-term differences between injections and physiotherapy were significantly in favour of physiotherapy. Success rates at 52 weeks were 69% (43) for injections, 91% (58) for physiotherapy, and 83% (49) for a wait-and-see policy. Physiotherapy had better results than a wait-and-see policy, but differences were not significant.\nINTERPRETATION: Patients should be properly informed about the advantages and disadvantages of the treatment options for lateral epicondylitis. The decision to treat with physiotherapy or to adopt a wait-and-see policy might depend on available resources, since the relative gain of physiotherapy is small.",
+  "tipos_publicacao": [
+   "Clinical Trial",
+   "Comparative Study",
+   "Journal Article",
+   "Randomized Controlled Trial",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Adult",
+   "Exercise Therapy",
+   "Female",
+   "Glucocorticoids",
+   "Hand Strength",
+   "Humans",
+   "Injections",
+   "Male",
+   "Massage",
+   "Middle Aged",
+   "Patient Satisfaction",
+   "Physical Therapy Modalities",
+   "Tennis Elbow",
+   "Treatment Outcome",
+   "Ultrasonic Therapy"
+  ],
+  "desenho": "ECR",
+  "citacoes": 915,
+  "acesso_aberto": true,
+  "licenca": "other-oa",
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 64.8,
+  "motivos_pontuacao": [
+   "Desenho: ECR (+29,8 de 35)",
+   "Atualidade: 2002, 24 ano(s) (+0,0 de 20)",
+   "Citações: 915 (38,1/ano, OpenAlex) (+15,0 de 15)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "Lancet (London, England)",
+  "volume": "359",
+  "fasciculo": "9307",
+  "paginas": "657-62",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "article",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "ecr",
+   "base"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "33148599",
+    "relacao": "citado pelo sentinela"
+   },
+   {
+    "sentinela": "23385272",
+    "relacao": "citado pelo sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "green",
+  "url_oa": "https://hdl.handle.net/11370/e47634f1-5e2b-4b90-92fa-2ee53f242899",
+  "desenho_motivo": "tipo de publicação PubMed: Randomized Controlled Trial",
+  "citacoes_por_ano": 38.1,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 1,2 | origem: atualizacao] ECR Lancet (185 pacientes): corticoide x fisioterapia x espera; efeito do corticoide em 6 semanas some e inverte no longo prazo.",
+  "aula": "1,2",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Lucado2022",
+  "titulo": "Lateral Elbow Pain and Muscle Function Impairments",
+  "autores": [
+   "Lucado AM",
+   "Day JM",
+   "Vincent JI",
+   "MacDermid JC",
+   "Fedorczyk J",
+   "Grewal R",
+   "Martin RL"
+  ],
+  "primeiro_autor": "Lucado",
+  "ano": 2022,
+  "revista": "J Orthop Sports Phys Ther",
+  "issn": [
+   "1938-1344",
+   "0190-6011"
+  ],
+  "doi": "10.2519/jospt.2022.0302",
+  "pmid": "36453071",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "Although often described as a self-limiting condition and likely to resolve on its own, high recurrence rates and extended sick leave frame a need for effective non-surgical treatment for people with lateral elbow tendinopathy. The interrelationship of histological and structural changes to the tendon, the associated impairments in motor control, and potential changes in pain processing may all drive symptoms. This clinical practice guideline covers the epidemiology, functional anatomy and pathophysiology, risk factors, clinical course, prognosis, differential diagnosis, tests and measures, and interventions for managing lateral elbow tendinopathy in the physical therapy clinic. J Orthop Sports Phys Ther 2022;52(12):CPG1-CPG111. doi:10.2519/jospt.2022.0302.",
+  "tipos_publicacao": [
+   "Journal Article"
+  ],
+  "mesh": [
+   "Humans",
+   "Elbow",
+   "Arthralgia",
+   "Pain",
+   "Elbow Tendinopathy",
+   "Musculoskeletal Diseases",
+   "Tendinopathy",
+   "Muscles"
+  ],
+  "desenho": "Outro",
+  "citacoes": 101,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "crossref",
+   "openalex"
+  ],
+  "pontuacao": 64.7,
+  "motivos_pontuacao": [
+   "Desenho: Outro (+5,2 de 35)",
+   "Atualidade: 2022, 4 ano(s) (+16,9 de 20)",
+   "Citações: 101 (25,2/ano, OpenAlex) (+15,0 de 15)",
+   "Revista-alvo: J Orthop Sports Phys Ther (+10)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 1 de 2 blocos no título, 1 só no resumo/MeSH (+7,5 de 10)"
+  ],
+  "revista_completa": "The Journal of orthopaedic and sports physical therapy",
+  "volume": "52",
+  "fasciculo": "12",
+  "paginas": "CPG1-CPG111",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "article",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "diretriz",
+   "revistas",
+   "base"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "33148599",
+    "relacao": "cita o sentinela"
+   },
+   {
+    "sentinela": "23385272",
+    "relacao": "cita o sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 3,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "desenho não identificado pelos metadados; confira no resumo",
+  "citacoes_por_ano": 25.2,
+  "decisao": "incluir",
+  "papel": "âncora da aula",
+  "observacoes": "[aula 1,2 | origem: ambos] Diretriz JOSPT 2022, espinha dorsal da aula base: diagnóstico, classificação, prognóstico e recomendações de intervenção com grau de evidência.",
+  "aula": "1,2",
+  "origem": "ambos",
+  "desenho_conferido": "Diretriz de prática clínica"
+ },
+ {
+  "chave": "Expert2022",
+  "titulo": "ACR Appropriateness Criteria® Chronic Elbow Pain",
+  "autores": [
+   "Expert Panel on Musculoskeletal Imaging",
+   "Thomas JM",
+   "Chang EY",
+   "Ha AS",
+   "Bartolotta RJ",
+   "Bucknor MD",
+   "Caracciolo JT",
+   "Chen KC",
+   "Flug J",
+   "Kumaravel M",
+   "Raizman NM",
+   "Ross AB",
+   "Silvis ML",
+   "Surasi DS",
+   "Beaman FD"
+  ],
+  "primeiro_autor": "Expert Panel on Musculoskeletal Imaging",
+  "ano": 2022,
+  "revista": "J Am Coll Radiol",
+  "issn": [
+   "1558-349X",
+   "1546-1440"
+  ],
+  "doi": "10.1016/j.jacr.2022.09.022",
+  "pmid": "36436956",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "Chronic elbow pain can be osseous, soft tissue, cartilaginous, and nerve related in etiology. Imaging plays an important role in differentiating between these causes of chronic elbow pain. This document provides recommendations for imaging of chronic elbow pain in adult patients. The ACR Appropriateness Criteria are evidence-based guidelines for specific clinical conditions that are reviewed annually by a multidisciplinary expert panel. The guideline development and revision process support the systematic analysis of the medical literature from peer-reviewed journals. Established methodology principles such as Grading of Recommendations Assessment, Development, and Evaluation or GRADE are adapted to evaluate the evidence. The RAND/UCLA Appropriateness Method User Manual provides the methodology to determine the appropriateness of imaging and treatment procedures for specific clinical scenarios. In those instances in which peer-reviewed literature is lacking or equivocal, experts may be the primary evidentiary source available to formulate a recommendation.",
+  "tipos_publicacao": [
+   "Practice Guideline",
+   "Journal Article"
+  ],
+  "mesh": [
+   "Humans",
+   "Elbow",
+   "Societies, Medical",
+   "Evidence-Based Medicine",
+   "Arthralgia",
+   "Chronic Pain"
+  ],
+  "desenho": "Diretriz",
+  "citacoes": 15,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed"
+  ],
+  "pontuacao": 61.6,
+  "motivos_pontuacao": [
+   "Desenho: Diretriz (+35,0 de 35)",
+   "Atualidade: 2022, 4 ano(s) (+16,9 de 20)",
+   "Citações: 15 (3,8/ano, OpenAlex) (+7,2 de 15)",
+   "Aderência ao tema: 0 de 2 blocos no título, 1 só no resumo/MeSH (+2,5 de 10)"
+  ],
+  "revista_completa": "Journal of the American College of Radiology : JACR",
+  "volume": "19",
+  "fasciculo": "11S",
+  "paginas": "S256-S265",
+  "palavras_chave": [
+   "AUC",
+   "Appropriate Use Criteria",
+   "Appropriateness Criteria",
+   "Chronic elbow pain",
+   "Epicondylalgia",
+   "Imaging",
+   "Neuropathy",
+   "Osteochondral lesion",
+   "Ulnar collateral ligament"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "diretriz",
+   "base"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": false,
+  "registros_fundidos": 1,
+  "criterios_dedup": [],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "tipo de publicação PubMed: Practice Guideline",
+  "citacoes_por_ano": 3.8,
+  "decisao": "incluir",
+  "papel": "aplicação clínica",
+  "observacoes": "[aula 1 | origem: atualizacao] ACR Appropriateness Criteria de dor crônica no cotovelo (2022): quando pedir radiografia, US ou RM; sustenta a decisão sobre imagem.",
+  "aula": "1",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Coombes2015",
+  "titulo": "Cold hyperalgesia associated with poorer prognosis in lateral epicondylalgia: a 1-year prognostic study of physical and psychological factors",
+  "autores": [
+   "Coombes BK",
+   "Bisset L",
+   "Vicenzino B"
+  ],
+  "primeiro_autor": "Coombes",
+  "ano": 2015,
+  "revista": "Clin J Pain",
+  "issn": [
+   "1536-5409",
+   "0749-8047"
+  ],
+  "doi": "10.1097/ajp.0000000000000078",
+  "pmid": "24480912",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: Predictors of outcome in lateral epicondylalgia, which is mainly characterized as a mechanical hyperalgesia, are largely limited to sociodemographic and symptomatic factors. Quantitative sensory testing is used to study altered pain processing in various chronic pain conditions and may be of prognostic relevance.\nMETHODS: The predictive capacity of early measures of physical and psychological impairment on pain and disability and mechanical hyperalgesia, were examined using data from 41 patients assigned to placebo in a prospective randomized controlled trial of unilateral lateral epicondylalgia. Quantitative sensory testing (pressure, cold pain thresholds), motor function (pain-free grip), and psychological factors (Tampa Scale of Kinesiophobia, Hospital Anxiety and Depression Scale) were measured at baseline. The outcome measures were the Patient-rated Tennis Elbow Evaluation (PRTEE) scale and pressure pain threshold (PPT) measured by digital algometry at the affected elbow. Backward stepwise linear regression was used to predict PRTEE and PPT scores at 2 and 12 months.\nRESULTS: Cold pain threshold was the only consistent predictor for both PRTEE (P<0.034) and PPT (P<0.048). Initial PRTEE was the strongest single predictor of PRTEE at 2 months, whereas female sex was the strongest single predictor of PPT (P<0.002). At 1 year, final models explained 9% to 52% of the variability in pain and disability and mechanical hyperalgesia, respectively.\nDISCUSSION: Early assessment of cold pain threshold could be a useful clinical tool to help identify patients at risk of poorer outcomes and might provide direction for future research into mechanism-based treatment approaches for these patients.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Adrenal Cortex Hormones",
+   "Adult",
+   "Cold Temperature",
+   "Disability Evaluation",
+   "Female",
+   "Follow-Up Studies",
+   "Functional Laterality",
+   "Hand Strength",
+   "Humans",
+   "Hyperalgesia",
+   "Male",
+   "Middle Aged",
+   "Pain Measurement",
+   "Pain Threshold",
+   "Physical Therapy Modalities",
+   "Predictive Value of Tests",
+   "Prognosis",
+   "Retrospective Studies",
+   "Surveys and Questionnaires",
+   "Tennis Elbow"
+  ],
+  "desenho": "Coorte",
+  "citacoes": 85,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 57.1,
+  "motivos_pontuacao": [
+   "Desenho: Coorte (+21,0 de 35)",
+   "Atualidade: 2015, 11 ano(s) (+6,2 de 20)",
+   "Citações: 85 (7,7/ano, OpenAlex) (+10,0 de 15)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "The Clinical journal of pain",
+  "volume": "31",
+  "fasciculo": "1",
+  "paginas": "30-5",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "article",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "ecr",
+   "base"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "36453071",
+    "relacao": "citado pelo sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "título: 'prognostic study'",
+  "citacoes_por_ano": 7.7,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 1 | origem: aula base] Prognóstico de 1 ano com 41 pacientes do braço placebo de um ECR (resumo): hiperalgesia ao frio associada a pior desfecho; sinal de sensibilização.",
+  "aula": "1",
+  "origem": "aula base"
+ },
+ {
+  "chave": "Waugh2004",
+  "titulo": "Factors associated with prognosis of lateral epicondylitis after 8 weeks of physical therapy",
+  "autores": [
+   "Waugh EJ",
+   "Jaglal SB",
+   "Davis AM",
+   "Tomlinson G",
+   "Verrier MC"
+  ],
+  "primeiro_autor": "Waugh",
+  "ano": 2004,
+  "revista": "Arch Phys Med Rehabil",
+  "issn": [
+   "0003-9993",
+   "1532-821X"
+  ],
+  "doi": "10.1016/s0003-9993(03)00480-5",
+  "pmid": "14966719",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "OBJECTIVE: To identify key factors associated with outcomes of patients who underwent 8 weeks of physical therapy (PT) for lateral epicondylitis.\nDESIGN: Multicenter prospective design with inception cohort of lateral epicondylitis patients commencing PT. Baseline clinical examinations were conducted by 1 physical therapist; self-report outcome measures were completed at baseline and 8 weeks later.\nSETTING: Nine private sports medicine clinics and 2 hospital outpatient departments in Ontario, Canada.\nPARTICIPANTS: Eighty-three patients with unilateral lateral epicondylitis identified by the treating physical therapists.\nINTERVENTIONS: Not applicable.\nMAIN OUTCOME MEASURES: The final scores of the Disability of the Arm, Shoulder and Hand (DASH) questionnaire and a vertical pain visual analog scale (VAS) were used as the dependent variables.\nRESULTS: The final prognostic model for the 8-week DASH scores included the baseline score (95% confidence interval [CI], 0.34-0.66), sex (female) (95% CI, 3.3-14.5), and self-reported nerve symptoms (95% CI, 0.8-13.8). The model for the 8-week VAS scores included the baseline score (95% CI, 0.01-0.37), sex (female) (95% CI, 0.4-18.2), and self-reported nerve symptoms (95% CI, 4.7-25.5). A subanalysis indicated that women were more likely than men to have work-related onsets, repetitive keyboarding jobs, and cervical joint signs. Among women, these factors were associated with higher final DASH and VAS scores.\nCONCLUSIONS: Women and patients who report nerve symptoms are more likely to experience a poorer short-term outcome after PT management of lateral epicondylitis. Work-related onsets, repetitive keyboarding jobs, and cervical joint signs have a prognostic influence on women.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Multicenter Study"
+  ],
+  "mesh": [
+   "Adult",
+   "Anti-Inflammatory Agents",
+   "Anti-Inflammatory Agents, Non-Steroidal",
+   "Athletic Injuries",
+   "Cervical Vertebrae",
+   "Cortisone",
+   "Cumulative Trauma Disorders",
+   "Disability Evaluation",
+   "Female",
+   "Humans",
+   "Male",
+   "Middle Aged",
+   "Occupational Diseases",
+   "Outcome Assessment, Health Care",
+   "Pain Measurement",
+   "Physical Therapy Modalities",
+   "Prognosis",
+   "Prospective Studies",
+   "Radial Neuropathy",
+   "Regression Analysis",
+   "Sex Factors",
+   "Tennis Elbow"
+  ],
+  "desenho": "Coorte",
+  "citacoes": 119,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 49.6,
+  "motivos_pontuacao": [
+   "Desenho: Coorte (+21,0 de 35)",
+   "Atualidade: 2004, 22 ano(s) (+0,0 de 20)",
+   "Citações: 119 (5,4/ano, OpenAlex) (+8,6 de 15)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "Archives of physical medicine and rehabilitation",
+  "volume": "85",
+  "fasciculo": "2",
+  "paginas": "308-18",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "article",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "base"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "36453071",
+    "relacao": "citado pelo sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "desenho declarado pelos autores no resumo: 'Multicenter prospective design with inception cohort of late'",
+  "citacoes_por_ano": 5.4,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 1 | origem: aula base] Coorte multicêntrica (83 pacientes) da aula base: preditores de desfecho em 8 semanas de fisioterapia (DASH inicial, sexo, sintomas de nervo).",
+  "aula": "1",
+  "origem": "aula base"
+ },
+ {
+  "chave": "Day2019",
+  "titulo": "A COMPREHENSIVE REHABILITATION PROGRAM FOR TREATING LATERAL ELBOW TENDINOPATHY",
+  "autores": [
+   "Day JM",
+   "Lucado AM",
+   "Uhl TL"
+  ],
+  "primeiro_autor": "Day",
+  "ano": 2019,
+  "revista": "Int J Sports Phys Ther",
+  "issn": [
+   "2159-2896"
+  ],
+  "doi": "10.26603/ijspt20190818",
+  "pmid": "31598419",
+  "pmcid": "PMC6769266",
+  "scopus_eid": null,
+  "resumo": "UNLABELLED: Scapular muscle weakness in patients with lateral elbow tendinopathy is an identified impairment and is part of a multimodal rehabilitation approach. The published literature provides little information regarding specific rehabilitation guidelines that address both the proximal scapular muscle weakness and local elbow/wrist dysfunctions common in patients with lateral elbow tendinopathy. The purpose of this clinical commentary is to describe a comprehensive rehabilitation strategy for individuals with lateral elbow tendinopathy. This program emphasizes a phased therapeutic strategy that addresses proximal and local dysfunction along the kinetic chain. This clinical protocol is currently being tested for efficacy as part of a randomized controlled trial. The information in this commentary is intended to provide clinicians with sufficient detail to comprehensively guide the rehabilitation of a patient with lateral elbow tendinopathy.\nLEVEL OF EVIDENCE: 5.",
+  "tipos_publicacao": [
+   "Journal Article"
+  ],
+  "mesh": [],
+  "desenho": "Outro",
+  "citacoes": 75,
+  "acesso_aberto": true,
+  "licenca": "cc-by-nc",
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 48.9,
+  "motivos_pontuacao": [
+   "Desenho: Outro (+5,2 de 35)",
+   "Atualidade: 2019, 7 ano(s) (+12,3 de 20)",
+   "Citações: 75 (10,7/ano, OpenAlex) (+11,3 de 15)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "International journal of sports physical therapy",
+  "volume": "14",
+  "fasciculo": "5",
+  "paginas": "818-829",
+  "palavras_chave": [
+   "lateral epicondylalgia",
+   "lateral epicondylitis",
+   "movement system",
+   "scapula",
+   "shoulder"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "article",
+  "situacao_indexacao": "PubMed-not-MEDLINE",
+  "variantes_pubmed": [
+   "ecr",
+   "base"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "36453071",
+    "relacao": "citado pelo sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "diamond",
+  "url_oa": "https://doi.org/10.26603/ijspt20190818",
+  "desenho_motivo": "desenho não identificado pelos metadados; confira no resumo",
+  "citacoes_por_ano": 10.7,
+  "decisao": "incluir",
+  "papel": "aplicação clínica",
+  "observacoes": "[aula 2 | origem: aula base] Comentário clínico com programa por fases ao longo da cadeia cinética, com critérios de progressão e dose (3 fases segundo as notas do slide 69 da aula base); Int J Sports Phys Ther, não JOSPT.",
+  "aula": "2",
+  "origem": "aula base",
+  "desenho_conferido": "Comentário clínico (programa de reabilitação)"
+ },
+ {
+  "chave": "Krogh2020",
+  "titulo": "Clinical Value of Ultrasonographic Assessment in Lateral Epicondylitis Versus Asymptomatic Healthy Controls",
+  "autores": [
+   "Krogh TP",
+   "Fredberg U",
+   "Ammitzbøll C",
+   "Ellingsen T"
+  ],
+  "primeiro_autor": "Krogh",
+  "ano": 2020,
+  "revista": "Am J Sports Med",
+  "issn": [
+   "1552-3365",
+   "0363-5465"
+  ],
+  "doi": "10.1177/0363546520921949",
+  "pmid": "32484714",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: Ultrasonography (US) is often used in the assessment of lateral epicondylitis (LE). The strength of evidence supporting its role is, however, not well-documented.\nPURPOSE: To describe and compare the US tendinopathic changes observed in patients with LE and the general population, including any correlation between patient characteristics and US outcomes.\nSTUDY DESIGN: Cross-sectional study; Level of evidence, 3.\nMETHODS: Tendon thickness, color Doppler activity, and bone spur were assessed by US in 264 participants with healthy elbows and 60 patients with chronic LE. In addition to patient characteristics, Patient-Rated Tennis Elbow Evaluation (PRTEE) score, pain, and disability were recorded.\nRESULTS: Depending on the measurement technique used, mean LE tendon thickness increased by 0.53 mm (10.2%) or 0.70 mm (14.5%) as compared with the contralateral arm and 0.40 mm (7.9%) or 0.41 mm (8.5%) as compared with the general population. Mean color Doppler activity (scale, 0-4) was 3.47 in the LE arm versus 0.13 in the contralateral asymptomatic arm and 0.26 in the general population. Bone spur was observed in 78% of the LE arms as opposed to 45% in the contralateral arms and 50% in the general population. In the LE group and the general population, the prevalence of bone spur increases with age. No correlations were observed with pain, disability, PRTEE, and disease duration.\nCONCLUSION: Increased common extensor tendon thickness is part of the tendinopathic changes observed in LE. However, given the marked variation in natural tendon thickness and small increases in tendon thickness in patients with LE, this technique cannot be used as a stand-alone diagnostic tool but rather as a supplement to the overall assessment. The contralateral elbow (if asymptomatic) is a better tendon thickness comparator than a general population mean value. Color Doppler activity is an indicator of ongoing tendinopathy and supports the LE diagnosis, but it is not pathognomonic for the condition. Absence of Doppler activity in a patient with suspected LE should raise suspicion of other diagnoses. Identification of a bone spur is of very limited clinical value given the high prevalence in the general population. The important outcomes of pain, disability, PRTEE, and disease duration did not correlate with any of the investigated US techniques.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Case-Control Studies",
+   "Cross-Sectional Studies",
+   "Humans",
+   "Tendons",
+   "Tennis Elbow",
+   "Ultrasonography"
+  ],
+  "desenho": "Transversal",
+  "citacoes": 32,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed"
+  ],
+  "pontuacao": 46.3,
+  "motivos_pontuacao": [
+   "Desenho: Transversal (+14,0 de 35)",
+   "Atualidade: 2020, 6 ano(s) (+13,8 de 20)",
+   "Citações: 32 (5,3/ano, OpenAlex) (+8,5 de 15)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "The American journal of sports medicine",
+  "volume": "48",
+  "fasciculo": "8",
+  "paginas": "1873-1883",
+  "palavras_chave": [
+   "bone spur",
+   "color Doppler",
+   "lateral epicondylitis",
+   "tendon thickness",
+   "tennis elbow"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "base"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": false,
+  "registros_fundidos": 1,
+  "criterios_dedup": [],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "desenho declarado pelos autores no resumo: 'Cross-sectional study'",
+  "citacoes_por_ano": 5.3,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 1 | origem: atualizacao] US em 60 pacientes x 264 assintomáticos: espessamento, Doppler e esporão também aparecem em cotovelos sem dor; base para explicar o laudo.",
+  "aula": "1",
+  "origem": "atualizacao",
+  "desenho_conferido": "Transversal (comparação com assintomáticos)"
+ },
+ {
+  "chave": "Bunata2007",
+  "titulo": "Anatomic factors related to the cause of tennis elbow",
+  "autores": [
+   "Bunata RE",
+   "Brown DS",
+   "Capelo R"
+  ],
+  "primeiro_autor": "Bunata",
+  "ano": 2007,
+  "revista": "J Bone Joint Surg Am",
+  "issn": [
+   "0021-9355",
+   "1058-2436",
+   "1535-1386"
+  ],
+  "doi": "10.2106/jbjs.f.00727",
+  "pmid": "17768192",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: The pathogenesis of lateral epicondylitis remains unclear. Our purpose was to study the anatomy of the lateral aspect of the elbow under static and dynamic conditions in order to identify bone-to-tendon and tendon-to-tendon contact or rubbing that might cause abrasion of the tissues.\nMETHODS: Eighty-five cadaveric elbows were examined to determine details related to the bone structure and musculotendinous origins. We identified the relative positions of the musculotendinous units and the underlying bone when the elbow was in different degrees of flexion. We also recorded the contact between the extensor carpi radialis brevis and the lateral edge of the capitellum as elbow motion occurred, and we sought to identify the areas of the capitellum and extensor carpi radialis brevis where contact occurs.\nRESULTS: The average site of origin of the extensor carpi radialis brevis on the humerus lay slightly medial and superior to the outer edge of the capitellum. As the elbow was extended, the undersurface of the extensor carpi radialis brevis rubbed against the lateral edge of the capitellum while the extensor carpi radialis longus compressed the brevis against the underlying bone.\nCONCLUSIONS: The extensor carpi radialis brevis tendon has a unique anatomic location that makes its undersurface vulnerable to contact and abrasion against the lateral edge of the capitellum during elbow motion.",
+  "tipos_publicacao": [
+   "Journal Article"
+  ],
+  "mesh": [
+   "Biomechanical Phenomena",
+   "Cadaver",
+   "Coloring Agents",
+   "Elbow Joint",
+   "Humans",
+   "Humerus",
+   "Muscle, Skeletal",
+   "Pronation",
+   "Range of Motion, Articular",
+   "Supination",
+   "Tendons",
+   "Tennis Elbow"
+  ],
+  "desenho": "Laboratorio/mecanistico",
+  "citacoes": 153,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 46.1,
+  "motivos_pontuacao": [
+   "Desenho: Laboratorio/mecanistico (+24,5 de 35)",
+   "Atualidade: 2007, 19 ano(s) (+0,0 de 20)",
+   "Citações: 153 (8,1/ano, OpenAlex) (+10,1 de 15)",
+   "Ligado por citação a 1 sentinela(s) (+4,0 de 10)",
+   "Aderência ao tema: 1 de 2 blocos no título, 1 só no resumo/MeSH (+7,5 de 10)"
+  ],
+  "revista_completa": "The Journal of bone and joint surgery. American volume",
+  "volume": "89",
+  "fasciculo": "9",
+  "paginas": "1955-63",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "article",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "base"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "36453071",
+    "relacao": "citado pelo sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": false,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "MeSH: Biomechanical Phenomena, Cadaver",
+  "citacoes_por_ano": 8.1,
+  "decisao": "incluir",
+  "papel": "mecanismo",
+  "observacoes": "[aula 1 | origem: aula base] Estudo anatômico da aula base: contato e abrasão do ECRB contra o capítulo com a extensão do cotovelo.",
+  "aula": "1",
+  "origem": "aula base"
+ },
+ {
+  "chave": "Smidt2006",
+  "titulo": "Lateral epicondylitis in general practice: course and prognostic indicators of outcome",
+  "autores": [
+   "Smidt N",
+   "Lewis M",
+   "VAN DER Windt DA",
+   "Hay EM",
+   "Bouter LM",
+   "Croft P"
+  ],
+  "primeiro_autor": "Smidt",
+  "ano": 2006,
+  "revista": "J Rheumatol",
+  "issn": [
+   "0315-162X"
+  ],
+  "doi": null,
+  "pmid": "16881095",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "OBJECTIVE: To investigate the course of lateral epicondylitis and identify prognostic indicators associated with short- and longterm outcome of pain intensity.\nMETHODS: We prospectively followed patients (n = 349) from 2 randomized controlled trials investigating conservative interventions for lateral epicondylitis in primary care. Uni- and multivariate linear regression analyses were used to investigate the association between potential prognostic indicators and pain intensity (0-100 point scale) measured at 1, 6, and 12 months after randomization. Potential prognostic factors were duration of elbow complaints, concomitant neck pain, concomitant shoulder pain, previous elbow complaints, baseline pain scores, age, gender, involvement of dominant side, social class, and work status. The variables \"study\" and \"treatment\" were included as covariates in all models.\nRESULTS: Pain scores at 1 month followup were higher in patients with severe pain, a long duration of elbow complaints, and concomitant shoulder pain. At 12 month followup, the only different prognostic indicator for poor outcome was concomitant neck pain, in place of shoulder pain. Patients from higher social classes reported lower pain scores at 12 month followup than patients from lower social classes.\nCONCLUSIONS: Lateral epicondylitis seems to be a self-limiting condition in most patients. Long duration of elbow complaints, concomitant neck pain, and severe pain at presentation are associated with poor outcome at 12 months. Our results will help care providers give patients accurate information regarding their prognosis and assist in medical decision-making.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Adult",
+   "Anti-Inflammatory Agents",
+   "Decision Making",
+   "Disease Progression",
+   "Female",
+   "Follow-Up Studies",
+   "Humans",
+   "Injections",
+   "Linear Models",
+   "Male",
+   "Pain",
+   "Pain Management",
+   "Physical Therapy Modalities",
+   "Prospective Studies",
+   "Tennis Elbow",
+   "Time Factors",
+   "Treatment Outcome",
+   "Triamcinolone Acetonide"
+  ],
+  "desenho": "Coorte",
+  "citacoes": 199,
+  "acesso_aberto": true,
+  "licenca": "other-oa",
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 46.0,
+  "motivos_pontuacao": [
+   "Desenho: Coorte (+21,0 de 35)",
+   "Atualidade: 2006, 20 ano(s) (+0,0 de 20)",
+   "Citações: 199 (9,9/ano, OpenAlex) (+11,0 de 15)",
+   "Ligado por citação a 1 sentinela(s) (+4,0 de 10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "The Journal of rheumatology",
+  "volume": "33",
+  "fasciculo": "10",
+  "paginas": "2053-59",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "article",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "ecr",
+   "base"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "23385272",
+    "relacao": "citado pelo sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": false,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "green",
+  "url_oa": "https://hdl.handle.net/1871.1/8fc4f66f-e40b-490f-a174-7f5a71ac88ea",
+  "desenho_motivo": "MeSH: Prospective Studies",
+  "citacoes_por_ano": 9.9,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "[aula 1 | origem: atualizacao] Coorte de 349 pacientes de atenção primária: curso e fatores prognósticos (dor inicial, duração, dor no ombro e no pescoço).",
+  "aula": "1",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Poltawski2011",
+  "titulo": "Measuring clinically important change with the Patient-rated Tennis Elbow Evaluation",
+  "autores": [
+   "Poltawski L",
+   "Watson T"
+  ],
+  "primeiro_autor": "Poltawski",
+  "ano": 2011,
+  "revista": "Hand Therapy",
+  "issn": [
+   "1758-9991",
+   "1758-9983"
+  ],
+  "doi": "10.1258/ht.2011.011013",
+  "pmid": null,
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "Introduction The Patient-rated Tennis Elbow Evaluation (PRTEE) enables quantitative rating by the patient of pain and functional impairment associated with tennis elbow or lateral elbow tendinopathy. When used as an outcome measure in trials of therapies, a minimum clinically important difference (MCID) value is required to interpret trial outcomes. This study aimed to calculate the MCID for a sample of patients diagnosed with lateral elbow tendinopathy (LET). Methods The PRTEE was used as an outcome measure with participants in a trial of a novel therapy for LET. It was administered at baseline and after treatment, three weeks later. Score changes were compared with patient-rated global change scores using receiver operating curve analysis. MCID values were calculated for two different criteria of clinically important difference and the effects of baseline symptom severity on the MCID were investigated. Results Data were available from 57 participants, with PRTEE scores in the range 13–81/100. For clinical significance defined as ‘a little better’ the MCID for the total PRTEE score was 7/100 or 22% of baseline score. For clinical significance defined as ‘much better’ or ‘completely recovered’, the MCID was 11/100 or 37% of baseline score. The MCID value was higher for a subgroup with greater baseline severity. Conclusions Substantial changes in the PRTEE scores are required before they can be considered clinically significant. Clinically significant change varies according to the baseline score. The instrument may be less sensitive to change when used by people who are symptomatic in their non-dominant arm.",
+  "tipos_publicacao": [],
+  "mesh": [],
+  "desenho": "Outro",
+  "citacoes": 108,
+  "acesso_aberto": true,
+  "licenca": null,
+  "url_pdf_aberto": "https://uhra.herts.ac.uk/id/eprint/2674/1/Measuring_PRTEE_clinically_Important_Change_submission_revised.pdf",
+  "fontes": [
+   "openalex"
+  ],
+  "pontuacao": 31.9,
+  "motivos_pontuacao": [
+   "Desenho: Outro (+5,2 de 35)",
+   "Atualidade: 2011, 15 ano(s) (+0,0 de 20)",
+   "Citações: 108 (7,2/ano, OpenAlex) (+9,7 de 15)",
+   "Ligado por citação a 3 sentinela(s) (+7,0 de 10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "",
+  "volume": "16",
+  "fasciculo": "3",
+  "paginas": "52-57",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "article",
+  "situacao_indexacao": "",
+  "variantes_pubmed": [],
+  "origem_citacao": [
+   {
+    "sentinela": "36453071",
+    "relacao": "citado pelo sentinela"
+   },
+   {
+    "sentinela": "33148599",
+    "relacao": "citado pelo sentinela"
+   },
+   {
+    "sentinela": "23385272",
+    "relacao": "citado pelo sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": false,
+  "registros_fundidos": 1,
+  "criterios_dedup": [],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "green",
+  "url_oa": "https://uhra.herts.ac.uk/id/eprint/2674/1/Measuring_PRTEE_clinically_Important_Change_submission_revised.pdf",
+  "desenho_motivo": "desenho não identificado pelos metadados; confira no resumo",
+  "citacoes_por_ano": 7.2,
+  "decisao": "incluir",
+  "papel": "aplicação clínica",
+  "observacoes": "[aula 1,2 | origem: atualizacao] Diferença mínima clinicamente importante do PRTEE (7/100 para 'um pouco melhor', 11/100 para 'muito melhor', no resumo).",
+  "aula": "1,2",
+  "origem": "atualizacao",
+  "desenho_conferido": "Estudo clinimétrico (DMCI)"
+ },
+ {
+  "chave": "Vicenzino2009",
+  "titulo": "Development of a clinical prediction rule to identify initial responders to mobilisation with movement and exercise for lateral epicondylalgia",
+  "autores": [
+   "Vicenzino B",
+   "Smith D",
+   "Cleland J",
+   "Bisset L"
+  ],
+  "primeiro_autor": "Vicenzino",
+  "ano": 2009,
+  "revista": "Man Ther",
+  "issn": [
+   "1532-2769",
+   "1356-689X"
+  ],
+  "doi": "10.1016/j.math.2008.08.004",
+  "pmid": "18838330",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "The aim of this post hoc analysis was to develop a preliminary clinical prediction rule (CPR) for identifying patients with lateral epicondylalgia (LE) likely to respond to mobilisation with movement and exercise (PT). Currently practitioners do not have an evidence-based means to identify such patients a priori. Potential predictive factors were recorded at baseline and reference measures at 3 weeks after treatment was initiated. Participants (n=64) received standardised PT. After 3 weeks, participants were categorised as having experienced 'improvement' or 'no improvement' with treatment. Factors with univariate relationship (p 112N, +LR=2.3) and unaffected side (<336N, +LR=2.1). Probability of improvement rose from 79 to 100% if all three were positive. The CPR did not predict outcome for wait and see (n=57), indicating it was more accurate for PT. This post hoc analysis has created a Level IV CPR that with further validation will help practitioners identify responders. Future studies are required to validate the rule.",
+  "tipos_publicacao": [
+   "Journal Article"
+  ],
+  "mesh": [
+   "Adult",
+   "Exercise Therapy",
+   "Female",
+   "Hand Strength",
+   "Humans",
+   "Kinesiology, Applied",
+   "Male",
+   "Manipulation, Orthopedic",
+   "Middle Aged",
+   "Movement",
+   "Tennis Elbow",
+   "Treatment Outcome",
+   "Young Adult"
+  ],
+  "desenho": "Outro",
+  "citacoes": 37,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 30.6,
+  "motivos_pontuacao": [
+   "Desenho: Outro (+5,2 de 35)",
+   "Atualidade: 2009, 17 ano(s) (+0,0 de 20)",
+   "Citações: 37 (2,2/ano, OpenAlex) (+5,3 de 15)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "Manual therapy",
+  "volume": "14",
+  "fasciculo": "5",
+  "paginas": "550-4",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "article",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "base"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "36453071",
+    "relacao": "citado pelo sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "desenho não identificado pelos metadados; confira no resumo",
+  "citacoes_por_ano": 2.2,
+  "decisao": "incluir",
+  "papel": "aplicação clínica",
+  "observacoes": "[aula 1,2 | origem: aula base] Regra de predição (análise post hoc, n=64) para resposta inicial a MWM + exercício; o resumo traz limiares de força de preensão sem dor (112 N afetado, 336 N não afetado); conferir os três critérios no texto. Não prediz desfecho na espera.",
+  "aula": "1,2",
+  "origem": "aula base",
+  "desenho_conferido": "Coorte de derivação de regra de predição clínica"
+ }
+]

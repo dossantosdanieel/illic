@@ -1,0 +1,274 @@
+{
+  "tema": "Ramo 3. Tenossinovite de De Quervain: diagnóstico (Finkelstein, Eichhoff, WHAT) e tratamento, inclusive no puerpério",
+  "pergunta": {
+    "P": "Adultos com tenossinovite de De Quervain, incluindo gestantes e puérperas",
+    "I": "Testes clínicos (Finkelstein, Eichhoff, WHAT test), imagem; órtese, injeção de corticoide, exercício/terapia da mão, terapia manual, cirurgia",
+    "C": "Fora da string",
+    "O": "Fora da string: dor, função, sucesso do tratamento, recidiva, acurácia",
+    "nota": "Comparador e desfecho ficam fora da string (muitos resumos não os citam) e entram como critério de triagem. O segundo bloco reúne diagnóstico e tratamento porque a aula cobre os dois; termos genéricos como 'treatment*', 'therap*' e 'diagnos*' ficaram de fora de propósito (casariam com quase tudo). Limite 1990+ para alcançar os clássicos de acurácia e os ensaios antigos de corticoide; citações da aula base anteriores a 1990 entram por PMID (pubmed_busca.py --pmids). 'quervain' sozinho trazia a tireoidite de De Quervain: a condição usa proximidade com tenossinovite/doença/punho. Volta 2: 'finkelstein*' e 'eichhoff*' entram também no bloco da condição (Elliott 1992 perdido: título só com o nome do teste, MeSH Tenosynovitis). Volta 3: 'finkelstein*' e 'eichhoff*' soltos trouxeram ~400 registros alheios (nome de investigador, doença de Finkelstein, amiloidose); trocados por proximidade nome do teste ~2 test/maneuver/sign. Combinações de 'quervains' com zero resultado são inofensivas e ficaram."
+  },
+  "recorte": "topo_mecanismos",
+  "blocos": [
+    {
+      "id": "condicao",
+      "rotulo": "Tenossinovite de De Quervain",
+      "papel": "P",
+      "mesh": [
+        "De Quervain Disease"
+      ],
+      "livres": [
+        "de quervain tenosynovitis",
+        "de quervain's tenosynovitis",
+        "de quervain disease",
+        "de quervain's disease",
+        "de quervain syndrome",
+        "de quervain's syndrome",
+        "de quervain tendinopathy",
+        "de quervain's tendinopathy",
+        "dequervain*",
+        "first dorsal compartment",
+        "first extensor compartment",
+        "first dorsal extensor compartment",
+        "radial styloid tenosynovitis"
+      ],
+      "proximidade": [
+        {
+          "a": [
+            "quervain",
+            "quervain's",
+            "quervains"
+          ],
+          "b": [
+            "tenosynovitis",
+            "tenovaginitis",
+            "disease",
+            "syndrome",
+            "tendinopathy",
+            "tendinitis",
+            "wrist",
+            "stenosing"
+          ],
+          "n": 3
+        },
+        {
+          "a": [
+            "finkelstein",
+            "finkelstein's",
+            "eichhoff",
+            "eichhoff's"
+          ],
+          "b": [
+            "test",
+            "maneuver",
+            "manoeuvre",
+            "sign"
+          ],
+          "n": 2
+        }
+      ],
+      "simples": [
+        "de quervain",
+        "first dorsal compartment"
+      ]
+    },
+    {
+      "id": "dx_tx",
+      "rotulo": "Diagnóstico (testes, acurácia, graduação) ou tratamento",
+      "papel": "I",
+      "mesh": [
+        "Diagnosis, Differential",
+        "Physical Examination",
+        "Sensitivity and Specificity",
+        "Predictive Value of Tests",
+        "Severity of Illness Index",
+        "Orthotic Devices",
+        "Splints",
+        "Braces",
+        "Injections",
+        "Glucocorticoids",
+        "Adrenal Cortex Hormones",
+        "Exercise Therapy",
+        "Physical Therapy Modalities",
+        "Musculoskeletal Manipulations",
+        "Conservative Treatment",
+        "Orthopedic Procedures",
+        "Remission, Spontaneous"
+      ],
+      "livres": [
+        "differential diagnos*",
+        "physical exam*",
+        "clinical exam*",
+        "clinical test*",
+        "provocative test*",
+        "sensitivity",
+        "specificity",
+        "likelihood ratio*",
+        "diagnostic accuracy",
+        "classification",
+        "grading",
+        "conservative",
+        "nonoperative",
+        "non-operative",
+        "nonsurgical",
+        "non-surgical",
+        "splint*",
+        "orthos*",
+        "orthotic*",
+        "brace*",
+        "immobili*",
+        "corticosteroid*",
+        "steroid*",
+        "glucocorticoid*",
+        "triamcinolone",
+        "methylprednisolone",
+        "injection*",
+        "exercis*",
+        "eccentric*",
+        "physiotherap*",
+        "physical therap*",
+        "hand therap*",
+        "manual therap*",
+        "mobilization",
+        "mobilisation",
+        "massage",
+        "surgery",
+        "surgical",
+        "release",
+        "natural history",
+        "spontaneous resolution",
+        "randomized",
+        "randomised",
+        "WHAT test",
+        "wrist hyperflexion",
+        "thumb spica",
+        "postpartum",
+        "pregnan*",
+        "lactation",
+        "breastfeeding",
+        "new mothers",
+        "Finkelstein test",
+        "Finkelstein's test",
+        "Eichhoff test",
+        "Eichhoff's test"
+      ],
+      "simples": [
+        "diagnosis",
+        "treatment",
+        "injection",
+        "orthosis",
+        "exercise",
+        "surgery"
+      ]
+    }
+  ],
+  "limites": {
+    "ano_inicio": 1990,
+    "ano_fim": null,
+    "idiomas": [
+      "english",
+      "portuguese",
+      "spanish"
+    ],
+    "somente_humanos": true,
+    "tipos_scopus": [
+      "ar",
+      "re"
+    ]
+  },
+  "revistas_alvo": [
+    {
+      "nome": "J Orthop Sports Phys Ther",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ]
+    },
+    {
+      "nome": "J Hand Ther",
+      "issn": [
+        "0894-1130",
+        "1545-004X"
+      ]
+    },
+    {
+      "nome": "J Hand Surg Am",
+      "issn": [
+        "0363-5023",
+        "1531-6564"
+      ]
+    },
+    {
+      "nome": "J Hand Surg Eur Vol",
+      "issn": [
+        "1753-1934",
+        "2043-6289"
+      ]
+    },
+    {
+      "nome": "J Shoulder Elbow Surg",
+      "issn": [
+        "1058-2746",
+        "1532-6500"
+      ]
+    },
+    {
+      "nome": "Am J Sports Med",
+      "issn": [
+        "0363-5465",
+        "1552-3365"
+      ]
+    },
+    {
+      "nome": "Cochrane Database Syst Rev",
+      "issn": [
+        "1469-493X"
+      ]
+    }
+  ],
+  "sentinelas": [
+    {
+      "pmid": "24700135",
+      "nota": "Diretriz de consenso HANDGUIDE para De Quervain (Huisstede 2014, Phys Ther)"
+    },
+    {
+      "pmid": "19588376",
+      "nota": "Cochrane 2009: injeção de corticoide na De Quervain"
+    },
+    {
+      "pmid": "23340762",
+      "nota": "Goubau 2014: WHAT test x Eichhoff"
+    },
+    {
+      "pmid": "1402284",
+      "nota": "Elliott 1992: o erro de descrição do Finkelstein que produz falso positivo"
+    },
+    {
+      "pmid": "30154628",
+      "nota": "Wu 2018: Finkelstein superior a Eichhoff"
+    },
+    {
+      "pmid": "11901392",
+      "nota": "ECR Avci 2002: gestação e lactação, injeção x órtese"
+    },
+    {
+      "pmid": "12665175",
+      "nota": "Richie 2003: análise agregada de injeção x órtese"
+    },
+    {
+      "pmid": "26705671",
+      "nota": "RS/MA Cavaleri 2016 J Hand Ther: terapia da mão x injeção"
+    },
+    {
+      "pmid": "24315492",
+      "nota": "ECR Mardani-Kivi 2014: injeção com ou sem gesso de polegar"
+    },
+    {
+      "pmid": "37889490",
+      "nota": "RS com meta-análise em rede Challoumas 2023 JAMA Netw Open"
+    },
+    {
+      "pmid": "41298159",
+      "nota": "RS com meta-análise em rede Cuenca-Zaldívar 2026 J Hand Ther: conservador"
+    }
+  ]
+}

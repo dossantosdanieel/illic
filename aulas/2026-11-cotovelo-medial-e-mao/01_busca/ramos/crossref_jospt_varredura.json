@@ -1,0 +1,540 @@
+{
+  "fonte": "crossref",
+  "execucoes": [
+    {
+      "data": "2026-11-24T13:23:40",
+      "consulta": "(varredura)",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ],
+      "de_ano": 2000,
+      "ate_ano": null,
+      "total": 3376,
+      "modo": "cursor",
+      "lidos": 3376,
+      "mantidos": 16,
+      "novos": 16,
+      "filtro_local": "ancora",
+      "avisos": []
+    }
+  ],
+  "registros": [
+    {
+      "fonte": "crossref",
+      "doi": "10.2519/jospt.2010.3210",
+      "titulo": "Differential Diagnosis and Physical Therapy Management of a Patient With Radial Wrist Pain of 6 Months' Duration: A Case Report",
+      "autores": [
+        "González-Iglesias J",
+        "Huijbregts P",
+        "Fernández-De-Las-Peñas C",
+        "Cleland JA"
+      ],
+      "primeiro_autor": "González-Iglesias",
+      "ano": 2010,
+      "revista": "Journal of Orthopaedic & Sports Physical Therapy",
+      "revista_completa": "Journal of Orthopaedic & Sports Physical Therapy",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ],
+      "volume": "40",
+      "fasciculo": "6",
+      "paginas": "361-368",
+      "tipo_crossref": "journal-article",
+      "resumo": "Study Design Case report. Background Differential diagnosis for patients with radial wrist pain requires consideration of systemic disease, referred pain to the radial aspect of the wrist, and local dysfunction. The list of possible local dysfunctions should include De Quervain syndrome, as well as entrapment neuropathy of the superficial radial nerve. Case Description The patient was a 57-year-old man with right radial wrist pain of 6 months' duration. The referral diagnosis was De Quervain syndrome, but a previous course of electrophysical agents-based physical therapy management had been unsuccessful. The physical examination ruled out the cervical, shoulder, elbow, and wrist joints as possible sources of pain. In this case, the diagnosis of entrapment neuropathy of the superficial radial nerve, rather than De Quervain syndrome, was primarily based on the symptom provocation resulting from a modified radial bias upper limb nerve tension test. Based on this diagnosis, treatment consisted of active and passive exercises using neurodynamic techniques. Outcomes After 1 treatment session, the patient noted changes with regard to current pain intensity and function that exceeded the minimal clinically important difference and the minimal detectable change, respectively. After only 2 treatment sessions, the patient reported a complete resolution of symptoms and a full return to work. Discussion This case report critically evaluates the diagnostic process for patients with radial wrist pain and suggests neuropathy of the superficial sensory branch of the radial nerve as a differential diagnostic option. Level of Evidence Therapy, level 4. J Orthop Sports Phys Ther 2010;40(6):361–368. doi:10.2519/jospt.2010.3210",
+      "citacoes_crossref": 7,
+      "licenca": null,
+      "url": "https://doi.org/10.2519/jospt.2010.3210",
+      "relevancia_crossref": 0.0,
+      "blocos_casados": [
+        "condicao",
+        "dx_tx"
+      ],
+      "sem_resumo": false
+    },
+    {
+      "fonte": "crossref",
+      "doi": "10.2519/jospt.2010.3187",
+      "titulo": "Radiculopathy of the Eighth Cervical Nerve",
+      "autores": [
+        "Greathouse DG",
+        "Joshi A"
+      ],
+      "primeiro_autor": "Greathouse",
+      "ano": 2010,
+      "revista": "Journal of Orthopaedic & Sports Physical Therapy",
+      "revista_completa": "Journal of Orthopaedic & Sports Physical Therapy",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ],
+      "volume": "40",
+      "fasciculo": "12",
+      "paginas": "811-817",
+      "tipo_crossref": "journal-article",
+      "resumo": "Study Design Resident's case problem. Background The C8 nerve root is the least commonly encountered of cervical radiculopathies. The purpose of this resident's case problem is to provide an unusual presentation of a C8 radiculopathy, without cervical or proximal upper quarter symptoms, diagnosed by a combination of physical examination, electromyography (EMG) and nerve conduction studies (NCSs), and imaging. Diagnosis A 49-year-old, right-hand-dominant male was referred to the EMG/NCS laboratory for a suspected left ulnar neuropathy at the elbow. A physical examination, NCS, and EMG were performed, and a C8 radiculopathy involving both the anterior and posterior primary rami was identified. Following the EMG and NCS evaluation, the patient had enhanced magnetic resonance imaging studies that confirmed a foraminal C7-T1 herniation and associated small central disc protrusion. The patient was then referred to neurosurgery for further consultation and subsequent surgical intervention. The patient underwent a C7-T1 laminectomy, mesial facetectomy, and foraminotomy, and excision of a herniated disk using an operating microscope. The neurosurgeon noted that there was a large disk herniation containing some disk material immediately anterior to the C8 motor root, that impinged directly on the motor root. One month postoperatively, the patient had decreased pain and numbness and tingling in his arm and his hand weakness had improved. Discussion The report illustrates the utility of a combination of physical examination, EMG and NCSs, and imaging in the diagnosis of a C8 radiculopathy in a patient presenting with forearm and hand symptoms but without cervical or upper quarter symptoms. Level of Evidence Diagnosis, level 4. J Orthop Sports Phys Ther 2010;40(12):811–817. doi:10.2519/jospt.2010.3187",
+      "citacoes_crossref": 7,
+      "licenca": null,
+      "url": "https://doi.org/10.2519/jospt.2010.3187",
+      "relevancia_crossref": 0.0,
+      "blocos_casados": [
+        "condicao",
+        "dx_tx"
+      ],
+      "sem_resumo": false
+    },
+    {
+      "fonte": "crossref",
+      "doi": "10.2519/jospt.2012.3988",
+      "titulo": "The Validity of Upper-Limb Neurodynamic Tests for Detecting Peripheral Neuropathic Pain",
+      "autores": [
+        "Nee RJ",
+        "Jull GA",
+        "Vicenzino B",
+        "Coppieters MW"
+      ],
+      "primeiro_autor": "Nee",
+      "ano": 2012,
+      "revista": "Journal of Orthopaedic & Sports Physical Therapy",
+      "revista_completa": "Journal of Orthopaedic & Sports Physical Therapy",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ],
+      "volume": "42",
+      "fasciculo": "5",
+      "paginas": "413-424",
+      "tipo_crossref": "journal-article",
+      "resumo": "Synopsis The validity of upper-limb neurodynamic tests (ULNTs) for detecting peripheral neuropathic pain (PNP) was assessed by reviewing the evidence on plausibility, the definition of a positive test, reliability, and concurrent validity. Evidence was identified by a structured search for peer-reviewed articles published in English before May 2011. The quality of concurrent validity studies was assessed with the Quality Assessment of Diagnostic Accuracy Studies tool, where appropriate. Biomechanical and experimental pain data support the plausibility of ULNTs. Evidence suggests that a positive ULNT should at least partially reproduce the patient's symptoms and that structural differentiation should change these symptoms. Data indicate that this definition of a positive ULNT is reliable when used clinically. Limited evidence suggests that the median nerve test, but not the radial nerve test, helps determine whether a patient has cervical radiculopathy. The median nerve test does not help diagnose carpal tunnel syndrome. These findings should be interpreted cautiously, because diagnostic accuracy might have been distorted by the investigators' definitions of a positive ULNT. Furthermore, patients with PNP who presented with increased nerve mechanosensitivity rather than conduction loss might have been incorrectly classified by electrophysiological reference standards as not having PNP. The only evidence for concurrent validity of the ulnar nerve test was a case study on cubital tunnel syndrome. We recommend that researchers develop more comprehensive reference standards for PNP to accurately assess the concurrent validity of ULNTs and continue investigating the predictive validity of ULNTs for prognosis or treatment response. J Orthop Sports Phys Ther 2012;42(5):413–424, Epub 8 March 2012. doi:10.2519/jospt.2012.3988",
+      "citacoes_crossref": 148,
+      "licenca": null,
+      "url": "https://doi.org/10.2519/jospt.2012.3988",
+      "relevancia_crossref": 0.0,
+      "blocos_casados": [
+        "condicao",
+        "dx_tx"
+      ],
+      "sem_resumo": false
+    },
+    {
+      "fonte": "crossref",
+      "doi": "10.2519/jospt.2002.32.3.86",
+      "titulo": "Mobilization with Movement as an Adjunct Intervention in a Patient with Complicated De Quervain's Tenosynovitis: A Case Report",
+      "autores": [
+        "Backstrom KM"
+      ],
+      "primeiro_autor": "Backstrom",
+      "ano": 2002,
+      "revista": "J Orthop Sports Phys Ther",
+      "revista_completa": "Journal of Orthopaedic & Sports Physical Therapy",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ],
+      "volume": "32",
+      "fasciculo": "3",
+      "paginas": "86-97",
+      "tipo_crossref": "journal-article",
+      "resumo": "",
+      "citacoes_crossref": 36,
+      "licenca": null,
+      "url": "https://doi.org/10.2519/jospt.2002.32.3.86",
+      "relevancia_crossref": 0.0,
+      "blocos_casados": [
+        "condicao",
+        "dx_tx"
+      ],
+      "sem_resumo": true
+    },
+    {
+      "fonte": "crossref",
+      "doi": "10.2519/jospt.2013.4680",
+      "titulo": "Baseball Players Diagnosed With Ulnar Collateral Ligament Tears Demonstrate Decreased Balance Compared to Healthy Controls",
+      "autores": [
+        "Garrison JC",
+        "Arnold A",
+        "Macko MJ",
+        "Conway JE"
+      ],
+      "primeiro_autor": "Garrison",
+      "ano": 2013,
+      "revista": "Journal of Orthopaedic & Sports Physical Therapy",
+      "revista_completa": "Journal of Orthopaedic & Sports Physical Therapy",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ],
+      "volume": "43",
+      "fasciculo": "10",
+      "paginas": "752-758",
+      "tipo_crossref": "journal-article",
+      "resumo": "Study Design Cross-sectional. Objectives To compare lower extremity balance and shoulder range of motion in baseball players with ulnar collateral ligament (UCL) tears to a healthy cohort. Background Throwing is a complex motion that requires balance and coordination to effectively transfer energy through the kinetic chain. In theory, poorer balance could negatively affect throwing mechanics and lead to injury. Methods Thirty baseball players (mean ± SD age, 18.5 ± 1.9 years) with a diagnosis of a UCL tear of their throwing arm were compared to 30 players (age, 19.0 ± 1.1 years) without a UCL tear. All participants were competing at either the high school or collegiate level and reported an average ± SD of 13.5 ± 1.7 years of playing experience. The Y Balance Test composite scores were calculated for the stance and lead lower extremities of all players. Shoulder range of motion was used to calculate glenohumeral internal rotation deficit and side-to-side differences in total rotational motion. Group comparisons were made between participants with and without UCL tears using independent t tests. Results Baseball players with UCL tears scored significantly lower on the Y Balance Test for both the stance (P<.001) and lead (P<.001) lower extremities compared to the noninjured cohort. No between-group differences were noted in glenohumeral internal rotation deficit (P = .453), whereas the mean ± SD side-to-side difference in total rotational motion was −6.0° ± 9.6° for the injured group, compared to −0.4° ± 9.6° for the control group (P = .028). Conclusion Participants with a UCL tear demonstrated decreased performance for their stance and lead lower extremities during the Y Balance Test. These data are consistent with a clinical hypothesis of a potential association between impaired balance and UCL tears in high school and collegiate baseball players. The lower total rotational motion of the dominant shoulder in participants with UCL tears needs to be considered in the interpretation of those results. J Orthop Sports Phys Ther 2013;43(10):752–758. Epub 9 September 2013. doi:10.2519/jospt.2013.4680",
+      "citacoes_crossref": 89,
+      "licenca": null,
+      "url": "https://doi.org/10.2519/jospt.2013.4680",
+      "relevancia_crossref": 0.0,
+      "blocos_casados": [
+        "condicao"
+      ],
+      "sem_resumo": false
+    },
+    {
+      "fonte": "crossref",
+      "doi": "10.2519/jospt.2013.4659",
+      "titulo": "Middle and Lower Trapezius Strengthening for the Management of Lateral Epicondylalgia: A Case Report",
+      "autores": [
+        "Bhatt JB",
+        "Glaser R",
+        "Chavez A",
+        "Yung E"
+      ],
+      "primeiro_autor": "Bhatt",
+      "ano": 2013,
+      "revista": "Journal of Orthopaedic & Sports Physical Therapy",
+      "revista_completa": "Journal of Orthopaedic & Sports Physical Therapy",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ],
+      "volume": "43",
+      "fasciculo": "11",
+      "paginas": "841-847",
+      "tipo_crossref": "journal-article",
+      "resumo": "Study Design Case report. Background Addressing weakness of the shoulder region, especially the rotator cuff and scapular musculature, is often suggested clinically for the treatment of individuals with lateral epicondylalgia. However, to our knowledge, the clinical effectiveness of this approach has not been established. Case Description The patient was a 54-year-old woman with a 5-month history of right lateral elbow pain, whose symptoms were reproduced with clinical tests typically used to diagnose lateral elbow tendinopathy. The patient also demonstrated weakness in her middle and lower trapezius muscles, and the medial border of her scapula, measured with a tape measure, was 11 cm lateral from the spinous processes of the thoracic spine with the patient standing in relaxed stance. Based on improved grip strength and reduced associated elbow pain when tested with the scapula manually corrected in a more adducted position, treatment focused solely on strengthening of the middle and lower trapezius muscles over a 10-week period. Outcomes Following the intervention, the patient presented with improved scapular position, with the medial border of the scapula being 9 cm lateral to the midthoracic spine. The patient's middle and lower trapezius strength improved from 3+/5 and 4−/5, respectively, to 5/5, and her grip strength from 26.1 to 42.2 kg. The patient's scores on the Disabilities of the Arm, Shoulder and Hand questionnaire also improved from 44.2 at the initial evaluation to 0 at the completion of therapy, with the patient being able to perform all of her daily activities in a pain-free manner. Discussion The results of this case report suggest that assessment and treatment of scapular musculature warrant consideration in the management of individuals with lateral epicondylalgia. Level of Evidence Therapy, level 4. J Orthop Sports Phys Ther 2013;43(11):841–847. Epub 9 September 2013. doi:10.2519/jospt.2013.4659",
+      "citacoes_crossref": 20,
+      "licenca": null,
+      "url": "https://doi.org/10.2519/jospt.2013.4659",
+      "relevancia_crossref": 0.0,
+      "blocos_casados": [
+        "condicao",
+        "dx_tx"
+      ],
+      "sem_resumo": false
+    },
+    {
+      "fonte": "crossref",
+      "doi": "10.2519/jospt.2015.5841",
+      "titulo": "Management of Lateral Elbow Tendinopathy: One Size Does Not Fit All",
+      "autores": [
+        "Coombes BK",
+        "Bisset L",
+        "Vicenzino B"
+      ],
+      "primeiro_autor": "Coombes",
+      "ano": 2015,
+      "revista": "Journal of Orthopaedic & Sports Physical Therapy",
+      "revista_completa": "Journal of Orthopaedic & Sports Physical Therapy",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ],
+      "volume": "45",
+      "fasciculo": "11",
+      "paginas": "938-949",
+      "tipo_crossref": "journal-article",
+      "resumo": "Synopsis Clear guidelines for the clinical management of individuals with lateral elbow tendinopathy (LET) are hampered by many proposed interventions and the condition's prognosis, ranging from immediate resolution of symptoms following simple advice in some patients to long-lasting problems, regardless of treatment, in others. This is compounded by our lack of understanding of the complexity of the underlying pathophysiology of LET. In this article, we collate evidence and expert opinion on the pathophysiology, clinical presentation, and differential diagnosis of LET. Factors that might provide prognostic value or direction for physical rehabilitation, such as the presence of neck pain, tendon tears, or central sensitization, are canvassed. Clinical recommendations for physical rehabilitation are provided, including the prescription of exercise and adjunctive physical therapy and pharmacotherapy. A preliminary algorithm, including targeted interventions, for the management of subgroups of patients with LET based on identified prognostic factors is proposed. Further research is needed to evaluate whether such an approach may lead to improved outcomes and more efficient resource allocation. J Orthop Sports Phys Ther 2015;45(11):938–949. Epub 17 Sep 2015. doi:10.2519/jospt.2015.5841",
+      "citacoes_crossref": 178,
+      "licenca": null,
+      "url": "https://doi.org/10.2519/jospt.2015.5841",
+      "relevancia_crossref": 0.0,
+      "blocos_casados": [
+        "condicao",
+        "dx_tx"
+      ],
+      "sem_resumo": false
+    },
+    {
+      "fonte": "crossref",
+      "doi": "10.2519/jospt.2016.0420",
+      "titulo": "Ultrasound Imaging of Ulnar Collateral Ligament Injury",
+      "autores": [
+        "van Duijn AJ",
+        "Felton SD"
+      ],
+      "primeiro_autor": "van Duijn",
+      "ano": 2016,
+      "revista": "Journal of Orthopaedic & Sports Physical Therapy",
+      "revista_completa": "Journal of Orthopaedic & Sports Physical Therapy",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ],
+      "volume": "46",
+      "fasciculo": "12",
+      "paginas": "1086-1086",
+      "tipo_crossref": "journal-article",
+      "resumo": "The patient was an 18-year-old collegiate baseball pitcher who injured his right throwing elbow during an overhead slider pitch. As a part of a study, preinjury ultrasound images of the throwing arm were obtained 2 weeks prior to the injury. One day postinjury, repeat ultrasound imaging of the medial elbow was performed. The attending team physician ordered a magnetic resonance arthrogram 2 days after injury, which confirmed the presence of a complete tear of the ulnar collateral ligament. J Orthop Sports Phys Ther 2016;46(12):1086. doi:10.2519/jospt.2016.0420",
+      "citacoes_crossref": 3,
+      "licenca": null,
+      "url": "https://doi.org/10.2519/jospt.2016.0420",
+      "relevancia_crossref": 0.0,
+      "blocos_casados": [
+        "condicao"
+      ],
+      "sem_resumo": false
+    },
+    {
+      "fonte": "crossref",
+      "doi": "10.2519/jospt.2017.7117",
+      "titulo": "The Effectiveness of Neural Mobilization for Neuromusculoskeletal Conditions: A Systematic Review and Meta-analysis",
+      "autores": [
+        "Basson A",
+        "Olivier B",
+        "Ellis R",
+        "Coppieters M",
+        "Stewart A",
+        "Mudzi W"
+      ],
+      "primeiro_autor": "Basson",
+      "ano": 2017,
+      "revista": "Journal of Orthopaedic & Sports Physical Therapy",
+      "revista_completa": "Journal of Orthopaedic & Sports Physical Therapy",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ],
+      "volume": "47",
+      "fasciculo": "9",
+      "paginas": "593-615",
+      "tipo_crossref": "journal-article",
+      "resumo": "Study Design Systematic review with meta-analysis. Objectives To determine the efficacy of neural mobilization (NM) for musculoskeletal conditions with a neuropathic component. Background Neural mobilization, or neurodynamics, is a movement-based intervention aimed at restoring the homeostasis in and around the nervous system. The current level of evidence for NM is largely unknown. Methods A database search for randomized trials investigating the effect of NM on neuromusculoskeletal conditions was conducted, using standard methods for article identification, selection, and quality appraisal. Where possible, studies were pooled for meta-analysis, with pain, disability, and function as the primary outcomes. Results Forty studies were included in this review, of which 17 had a low risk of bias. Meta-analyses could only be performed on self-reported outcomes. For chronic low back pain, disability (Oswestry Disability Questionnaire [0–50]: mean difference, −9.26; 95% confidence interval [CI]: −14.50, −4.01; P<.001) and pain (intensity [0–10]: mean difference, −1.78; 95% CI: −2.55, −1.01; P<.001) improved following NM. For chronic neck-arm pain, pain improved (intensity: mean difference, −1.89; 95% CI: −3.14, −0.64; P<.001) following NM. For most of the clinical outcomes in individuals with carpal tunnel syndrome, NM was not effective (P>.11) but showed some positive neurophysiological effects (eg, reduced intraneural edema). Due to a scarcity of studies or conflicting results, the effect of NM remains uncertain for various conditions, such as postoperative low back pain, cubital tunnel syndrome, and lateral epicondylalgia. Conclusion This review reveals benefits of NM for back and neck pain, but the effect of NM on other conditions remains unclear. Due to the limited evidence and varying methodological quality, conclusions may change over time. Level of Evidence Therapy, level 1a. J Orthop Sports Phys Ther 2017;47(9):593–615. Epub 13 Jul 2017. doi:10.2519/jospt.2017.7117",
+      "citacoes_crossref": 208,
+      "licenca": null,
+      "url": "https://doi.org/10.2519/jospt.2017.7117",
+      "relevancia_crossref": 0.0,
+      "blocos_casados": [
+        "condicao",
+        "dx_tx"
+      ],
+      "sem_resumo": false
+    },
+    {
+      "fonte": "crossref",
+      "doi": "10.2519/jospt.2018.7359",
+      "titulo": "Refractory Ulnar Nerve Symptoms in an Adolescent Pitcher With Medial Apophysitis",
+      "autores": [
+        "Hellem AR",
+        "Jelsing EJ",
+        "Hurd WJ"
+      ],
+      "primeiro_autor": "Hellem",
+      "ano": 2018,
+      "revista": "Journal of Orthopaedic & Sports Physical Therapy",
+      "revista_completa": "Journal of Orthopaedic & Sports Physical Therapy",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ],
+      "volume": "48",
+      "fasciculo": "5",
+      "paginas": "419-419",
+      "tipo_crossref": "journal-article",
+      "resumo": "A 16-year-old high school baseball pitcher with a 3-week history of acute-onset pain in his medial elbow during throwing presented to physical therapy. Following examination, physical therapy was initiated and the patient was referred for imaging, with suspicion of ulnar collateral ligament (UCL) injury. Radiographs were noncontributory. Ultrasound imaging, however, was performed by a physiatrist and was suggestive of a partial-thickness tear of the UCL and ulnar nerve enlargement. The physiatrist ordered magnetic resonance imaging, which confirmed a medial apophyseal stress reaction, a mild UCL sprain, and reactive ulnar nerve edema. J Orthop Sports Phys Ther 2018;48(5):419. doi:10.2519/jospt.2018.7359",
+      "citacoes_crossref": 1,
+      "licenca": null,
+      "url": "https://doi.org/10.2519/jospt.2018.7359",
+      "relevancia_crossref": 0.0,
+      "blocos_casados": [
+        "condicao",
+        "dx_tx"
+      ],
+      "sem_resumo": false
+    },
+    {
+      "fonte": "crossref",
+      "doi": "10.2519/jospt.2019.8215",
+      "titulo": "Repair of the Ulnar Collateral Ligament of the Elbow: Rehabilitation Following Internal Brace Surgery",
+      "autores": [
+        "Wilk KE",
+        "Arrigo CA",
+        "Bagwell MS",
+        "Rothermich MA",
+        "Dugas JR"
+      ],
+      "primeiro_autor": "Wilk",
+      "ano": 2019,
+      "revista": "Journal of Orthopaedic & Sports Physical Therapy",
+      "revista_completa": "Journal of Orthopaedic & Sports Physical Therapy",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ],
+      "volume": "49",
+      "fasciculo": "4",
+      "paginas": "253-261",
+      "tipo_crossref": "journal-article",
+      "resumo": "Synopsis Injuries to the elbow in athletes who play overhead sports, especially in baseball pitchers, continue to increase in frequency. The anterior band of the ulnar collateral ligament (UCL), the primary restraint to valgus stress, is commonly injured from throwing. Historically, such injuries have been treated with surgical reconstruction techniques, using a tendon autograft. A recently developed UCL repair procedure with an internal brace, utilizing collagen tape, is gaining popularity. The primary goal of this surgery is to enhance elbow joint stability while the ligament is healing and to allow earlier return to sport after UCL reconstruction. The rehabilitation program following UCL repair with internal brace progresses through a different time frame than after UCL reconstruction. The purpose of this commentary, based on our experience with more than 350 cases, including 79 patients with at least a 1-year postsurgical follow-up, was to describe and provide the rationale for the rehabilitation process following UCL repair with internal brace. J Orthop Sports Phys Ther 2019;49(4):253–261. doi:10.2519/jospt.2019.8215",
+      "citacoes_crossref": 48,
+      "licenca": null,
+      "url": "https://doi.org/10.2519/jospt.2019.8215",
+      "relevancia_crossref": 0.0,
+      "blocos_casados": [
+        "condicao",
+        "dx_tx"
+      ],
+      "sem_resumo": false
+    },
+    {
+      "fonte": "crossref",
+      "doi": "10.2519/jospt.2021.9417",
+      "titulo": "Sensory Processing in People With and Without Tendinopathy: A Systematic Review With Meta-analysis of Local, Regional, and Remote Sites in Upper- and Lower-Limb Conditions",
+      "autores": [
+        "Rio E",
+        "Sandler J",
+        "Cheng K",
+        "Moseley GL",
+        "Cook J",
+        "Girdwood M"
+      ],
+      "primeiro_autor": "Rio",
+      "ano": 2021,
+      "revista": "Journal of Orthopaedic & Sports Physical Therapy",
+      "revista_completa": "Journal of Orthopaedic & Sports Physical Therapy",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ],
+      "volume": "51",
+      "fasciculo": "1",
+      "paginas": "12-26",
+      "tipo_crossref": "journal-article",
+      "resumo": "Objective To synthesize results of somatosensory processing tests in people with upper- and lower-limb tendinopathy, compared to controls. Design Systematic review with meta-analysis. Literature Search Four electronic databases (MEDLINE, CINAHL Plus, SPORTDiscus, and Embase) were searched. Study Selection Criteria Included studies measured a domain of sensory processing and compared a tendinopathy group to a healthy control group. Data Synthesis Meta-analysis was conducted for outcomes with homogeneous data from at least 2 studies. Upper- and lower-limb conditions were compared and outcomes were examined by measurement site (local, regional, or remote to location of pain). Results Of the 30 studies included, 18 investigated lateral elbow tendinopathy. The most commonly assessed outcome measures were pressure pain threshold (PPT) and thermal pain threshold. There was moderate evidence for local and regional reduction of PPT in upper-limb tendinopathies, but not at remote sites. In lower-limb tendinopathies, there was conflicting evidence regarding reduced PPT at local sites and limited evidence of normal PPT at remote sites. There was moderate evidence of sensitization of thermal pain threshold at local sites in upper-limb tendinopathies and limited evidence of no difference in thermal pain threshold in lower-limb tendinopathies. Findings across other domains were variable. Conclusion Sensory processing was different between upper-limb tendinopathy and lower-limb tendinopathy. Upper-limb tendinopathies showed signs consistent with primary and secondary hyperalgesia, but lower-limb tendinopathies did not. There was mixed evidence for primary hyperalgesia and limited evidence against secondary hyperalgesia. J Orthop Sports Phys Ther 2021;51(1):12–26. doi:10.2519/jospt.2021.9417",
+      "citacoes_crossref": 27,
+      "licenca": null,
+      "url": "https://doi.org/10.2519/jospt.2021.9417",
+      "relevancia_crossref": 0.0,
+      "blocos_casados": [
+        "condicao"
+      ],
+      "sem_resumo": false
+    },
+    {
+      "fonte": "crossref",
+      "doi": "10.2519/jospt.2022.11211",
+      "titulo": "Low-Load Resistance Training With Blood Flow Restriction Is Effective for Managing Lateral Elbow Tendinopathy: A Randomized, Sham-Controlled Trial",
+      "autores": [
+        "Karanasios S",
+        "Korakakis V",
+        "Moutzouri M",
+        "Xergia SA",
+        "Tsepis E",
+        "Gioftsos G"
+      ],
+      "primeiro_autor": "Karanasios",
+      "ano": 2022,
+      "revista": "Journal of Orthopaedic & Sports Physical Therapy",
+      "revista_completa": "Journal of Orthopaedic & Sports Physical Therapy",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ],
+      "volume": "52",
+      "fasciculo": "12",
+      "paginas": "803-825",
+      "tipo_crossref": "journal-article",
+      "resumo": "OBJECTIVE: To evaluate the effect of low-load resistance training with blood flow restriction (LLRT-BFR) when compared to LLRT with sham-BFR in patients with lateral elbow tendinopathy (LET). DESIGN: Randomized controlled trial. METHODS: Forty-six patients with LET were randomly assigned to a LLRT-BFR or a LLRT with sham-BFR treatment group. All patients received soft tissue massage, supervised exercises with BFR or sham intervention (twice a week for 6 weeks), advice, and a home exercise program. The primary outcome measures were pain intensity, patient-rated tennis elbow evaluation (PRTEE) score, pain-free grip strength, and global rating of change, measured at baseline, 6 weeks, and 12 weeks. Between-group differences were evaluated using mixed-effects models with participant-specific random effects for continuous data. Global rating of change was analyzed using logistic regression. RESULTS: Statistically significant between-group differences were found in favor of LLRT-BFR compared to LLRT with sham-BFR in pain intensity at 12-week follow-up (−1.54, 95% CI: −2.89 to −0.18; P = .026), pain-free grip strength ratio at 6-week follow-up (0.20, 95% CI: 0.06 to 0.34; P = .005), and PRTEE at 6- and 12-week follow-up (−11.92, 95% CI: −20.26 to −3.59; P = .006, and −15.23, 95% CI: −23.57 to −6.9; P<.001, respectively). At 6- and 12-weeks, patients in the LLRT-BFR group had greater odds of reporting complete recovery or significant improvement (OR = 6.0, OR = 4.09, respectively). CONCLUSION: Low-load resistance training with blood flow restriction produced significantly better results compared to the LLRT with sham-BFR for all primary outcomes. Considering the clinically significant between-group improvement in function (>11 points in PRTEE) and the better success rates in the LLRT-BFR group, this intervention may improve recovery in LET. J Orthop Sports Phys Ther 2022;52(12):803–825. Epub: 14 September 2022. doi:10.2519/jospt.2022.11211",
+      "citacoes_crossref": 32,
+      "licenca": null,
+      "url": "https://doi.org/10.2519/jospt.2022.11211",
+      "relevancia_crossref": 0.0,
+      "blocos_casados": [
+        "condicao",
+        "dx_tx"
+      ],
+      "sem_resumo": false
+    },
+    {
+      "fonte": "crossref",
+      "doi": "10.2519/jospt.2022.0302",
+      "titulo": "Lateral Elbow Pain and Muscle Function Impairments: Clinical Practice Guidelines Linked to the International Classification of Functioning, Disability and Health from the Academy of Hand and Upper Extremity Physical Therapy and the Academy of Orthopaedic Physical Therapy of the American Physical Therapy Association",
+      "autores": [
+        "Lucado AM",
+        "Day JM",
+        "Vincent JI",
+        "MacDermid JC",
+        "Fedorczyk J",
+        "Grewal R",
+        "Martin RL"
+      ],
+      "primeiro_autor": "Lucado",
+      "ano": 2022,
+      "revista": "Journal of Orthopaedic & Sports Physical Therapy",
+      "revista_completa": "Journal of Orthopaedic & Sports Physical Therapy",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ],
+      "volume": "52",
+      "fasciculo": "12",
+      "paginas": "CPG1-CPG111",
+      "tipo_crossref": "journal-article",
+      "resumo": "Although often described as a self-limiting condition and likely to resolve on its own, high recurrence rates and extended sick leave frame a need for effective non-surgical treatment for people with lateral elbow tendinopathy. The interrelationship of histological and structural changes to the tendon, the associated impairments in motor control, and potential changes in pain processing may all drive symptoms. This clinical practice guideline covers the epidemiology, functional anatomy and pathophysiology, risk factors, clinical course, prognosis, differential diagnosis, tests and measures, and interventions for managing lateral elbow tendinopathy in the physical therapy clinic. J Orthop Sports Phys Ther 2022;52(12):CPG1–CPG111. doi:10.2519/jospt.2022.0302",
+      "citacoes_crossref": 78,
+      "licenca": null,
+      "url": "https://doi.org/10.2519/jospt.2022.0302",
+      "relevancia_crossref": 0.0,
+      "blocos_casados": [
+        "condicao",
+        "dx_tx"
+      ],
+      "sem_resumo": false
+    },
+    {
+      "fonte": "crossref",
+      "doi": "10.2519/jospt.2023.0501",
+      "titulo": "Physical Therapy for People with Lateral Elbow Tendinopathy: Using the Evidence to Guide Musculoskeletal Rehabilitation Clinical Practice",
+      "autores": [],
+      "primeiro_autor": "",
+      "ano": 2023,
+      "revista": "Journal of Orthopaedic & Sports Physical Therapy",
+      "revista_completa": "Journal of Orthopaedic & Sports Physical Therapy",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ],
+      "volume": "53",
+      "fasciculo": "1",
+      "paginas": "5-6",
+      "tipo_crossref": "journal-article",
+      "resumo": "Lateral elbow tendinopathy (LET) is an overuse injury of the common extensor tendon that occurs in active people. Modifiable risk factors include repetitive movements of the elbow, forearm, and hand, and tasks like handling heavy tools, which may overload the tendon. The clinical course of LET varies considerably. Some people experience a single, brief episode of symptoms, whereas others have persistent or recurring episodes of LET. J Orthop Sports Phys Ther 2023;53(1):5–6. doi:10.2519/jospt.2023.0501",
+      "citacoes_crossref": 2,
+      "licenca": null,
+      "url": "https://doi.org/10.2519/jospt.2023.0501",
+      "relevancia_crossref": 0.0,
+      "blocos_casados": [
+        "condicao",
+        "dx_tx"
+      ],
+      "sem_resumo": false
+    },
+    {
+      "fonte": "crossref",
+      "doi": "10.2519/jospt.2023.0504",
+      "titulo": "Tennis Elbow: What Is It? How Do I Get Back to My Regular Activities?",
+      "autores": [],
+      "primeiro_autor": "",
+      "ano": 2023,
+      "revista": "Journal of Orthopaedic & Sports Physical Therapy",
+      "revista_completa": "Journal of Orthopaedic & Sports Physical Therapy",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ],
+      "volume": "53",
+      "fasciculo": "4",
+      "paginas": "235-235",
+      "tipo_crossref": "journal-article",
+      "resumo": "You do not have to play tennis to get tennis elbow—a very common problem for people who do lots of repetitive movements of the wrist, forearm and elbow, such as carpentry, painting or racquet sports. Most people with tennis elbow feel pain on the outside of their elbow and upper forearm. Experts in managing elbow pain developed a guideline for rehabilitation clinicians to use to help you understand more about tennis elbow. Here, we explain what the guidelines say about how to diagnose tennis elbow (sometimes called lateral elbow pain or lateral elbow tendinopathy), the specific treatments your physical therapist might offer you to help manage pain and improve the mobility of your elbow, and the types of exercises you could do to strengthen the muscles in your wrist and forearm. J Orthop Sports Phys Ther 2023; 53(4):235. doi:10.2519/jospt.2023.0504",
+      "citacoes_crossref": 0,
+      "licenca": null,
+      "url": "https://doi.org/10.2519/jospt.2023.0504",
+      "relevancia_crossref": 0.0,
+      "blocos_casados": [
+        "condicao",
+        "dx_tx"
+      ],
+      "sem_resumo": false
+    }
+  ]
+}

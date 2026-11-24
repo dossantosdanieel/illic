@@ -13,13 +13,17 @@
 
 <ECR paralelo, superioridade, 1 centro, registro NCT... prospectivo | revisão sistemática com meta-análise de N ECR | ...>
 
+## Análise
+
+<ITT ou por protocolo · cálculo amostral (para que diferença) · modelo · ajuste para confundidores · correção para múltiplos desfechos · em meta-análise: modelo, nº de estudos, peso concentrado, amostras repetidas>
+
 ## Amostra
 
 - Randomizados/incluídos: <n total; n por grupo> (p.<x>)
 - Quem são: <idade, sexo, tempo de sintoma, nível de atividade, tratamento prévio> (p.<x>, Tab. <n>)
 - Perdas: <n por grupo e motivo> (p.<x>, Fig. <n>)
 
-## Intervenção (com dose)
+## Intervenção (com dose) — em estudo de prognóstico: exposição (teste, ponto de corte, mês, quem aplicou)
 
 - <tipo de exercício/procedimento>
 - Carga: <% 1RM | RPE | dor permitida até x/10> · Volume: <séries × repetições> · Frequência: <x/semana>
@@ -38,6 +42,7 @@
 ## Resultado principal
 
 - Diferença entre grupos: <estimativa> (IC 95% <li> a <ls>; p = <p>) em <tempo> (p.<x>, Tab./Fig. <n>)
+- Desfecho binário: eventos/n em cada grupo, risco absoluto e diferença de risco no tempo do seguimento (p.<x>)
 - DMCI adotada: <valor e fonte> → leitura: <IC acima | cruza | abaixo da DMCI>
 - Dentro de cada grupo (contexto, não é efeito): <...>
 - Secundários que importam: <...>
@@ -71,6 +76,11 @@ Global: <...>
 | Rótulo | Página | O que ensina | Como usar |
 |---|---|---|---|
 | Fig. <n> | <p> | <uma frase> | <inteira | só o painel A | redesenhar "Adaptado de"> |
+
+## Para a aula em camadas
+
+- Âncora para iniciante: <o conceito que precisa estar claro para acompanhar o slide>
+- Desafio avançado: <a falha de método ou a pergunta que o artigo não responde>
 
 ## Citações textuais
 

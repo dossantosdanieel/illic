@@ -138,6 +138,10 @@ def bloco_pubmed(bloco: dict, avisos: list[str]) -> str:
         if "?" in t:
             avisos.append(f"Bloco '{bloco['id']}': '{t}' usa '?', que o PubMed não entende (só o Scopus). "
                           f"Escreva as grafias por extenso.")
+        if re.search(r"[^\x00-\x7f]", t):
+            avisos.append(f"Bloco '{bloco['id']}': '{t}' tem acento ou letra fora do inglês. Se não for nome próprio, "
+                          f"troque pelo termo em inglês: PubMed e Scopus indexam título e resumo em inglês (idioma "
+                          f"se limita em 'limites.idiomas').")
         partes.append(termo_pubmed(t, bloco["campo"]))
     for p in bloco["proximidade"]:
         partes.extend(proximidade_pubmed(p, bloco["campo"], avisos, bloco["id"]))
@@ -402,6 +406,16 @@ def verificar_mesh(conceitos: dict, email: str | None = None) -> list[dict]:
             item["ok"] = None
         saida.append(item)
     return saida
+
+
+def _ano_mesh(ano: str | None) -> str:
+    """O NLM grava '2026 (1966)' para descritor revisado em 2026 e criado em 1966: mostra os dois por extenso."""
+    if not ano:
+        return ""
+    anos = re.findall(r"\d{4}", str(ano))
+    if len(anos) > 1:
+        return f" (existe desde {min(anos)}; revisado ou renomeado em {max(anos)})"
+    return f" (ano no MeSH: {anos[0]})" if anos else ""
 
 
 # --------------------------------------------------------------------------- estrategia.md
@@ -676,11 +690,16 @@ def main(argv=None) -> int:
         problemas = [v for v in verificacao if v["ok"] is False]
         for v in verificacao:
             marca = "ok " if v["ok"] else ("?? " if v["ok"] is None else "ERRO")
-            print(f"  {marca} [{v['bloco']}] {v['termo']}: {v['detalhe']}" + (f" (desde {v['ano']})" if v["ano"] else ""))
+            print(f"  {marca} [{v['bloco']}] {v['termo']}: {v['detalhe']}" + _ano_mesh(v["ano"]))
         strings["mesh_verificado"] = verificacao
         if problemas:
             print(f"\nATENÇÃO: {len(problemas)} termo(s) MeSH com problema. No PubMed, um MeSH inexistente devolve "
                   f"zero sem avisar e enfraquece o bloco. Corrija conceitos.json.")
+        nao_conferidos = [v for v in verificacao if v["ok"] is None]
+        if nao_conferidos:
+            print(f"\nATENÇÃO: {len(nao_conferidos)} descritor(es) NÃO CONFERIDO(S) (falha de rede). As strings foram "
+                  f"geradas, mas diga ao usuário que os MeSH não foram verificados, ou use só descritores de "
+                  f"references/vocabulario-fisioterapia.md.")
 
     pasta = Path(args.saida) if args.saida else Path(args.conceitos).resolve().parent
     print(f"\nTema: {conceitos['tema']}")
@@ -711,7 +730,7 @@ def main(argv=None) -> int:
     print(f"Gravado: {pasta / 'strings.json'}")
     print(f"Variantes recomendadas para o recorte '{conceitos['recorte']}': "
           f"{', '.join(strings['variantes_do_recorte'])}")
-    if verificacao and any(v["ok"] is False for v in verificacao):
+    if verificacao and any(v["ok"] is not True for v in verificacao):
         return 1
     return 0
 

@@ -147,6 +147,18 @@ class Cliente:
         return self.pedir("POST", url, dados=dados, **kw)
 
 
+def json_com(resp, chave: str, servico: str) -> dict:
+    """JSON da resposta, exigindo a chave esperada. Corpo vazio, HTML de erro ou '{}' viram ErroRede: sem isso
+    uma resposta quebrada passava por 'zero resultados' e o script terminava como se tudo estivesse certo."""
+    try:
+        dados = resp.json()
+    except ValueError:
+        raise ErroRede(f"{servico} devolveu uma resposta que não é JSON (vazia ou página de erro).") from None
+    if not isinstance(dados, dict) or chave not in dados:
+        raise ErroRede(f"{servico} devolveu uma resposta incompleta (sem '{chave}').")
+    return dados
+
+
 # --------------------------------------------------------------------------- arquivos
 
 def ler_json(caminho: str | Path, padrao=None):

@@ -1,0 +1,224 @@
+{
+  "tema": "Ramo 1b. Diagnóstico diferencial da dor medial do cotovelo: neuropatia ulnar e insuficiência do LCU no arremessador",
+  "pergunta": {
+    "P": "Adultos e atletas arremessadores com dor medial no cotovelo por neuropatia ulnar no cotovelo ou lesão/insuficiência do ligamento colateral ulnar",
+    "I": "Testes clínicos (moving valgus stress test, milking, estresse em valgo, flexão do cotovelo, Tinel, scratch collapse) e manejo conservador/encaminhamento",
+    "C": "Fora da string: padrão de referência (eletroneuromiografia, RM, US, artroscopia)",
+    "O": "Fora da string: sensibilidade, especificidade, razões de verossimilhança; desfechos de tratamento",
+    "nota": "Comparador e desfecho ficam fora da string (muitos resumos não os citam) e entram como critério de triagem. O segundo bloco reúne diagnóstico e tratamento porque a aula cobre os dois; termos genéricos como 'treatment*', 'therap*' e 'diagnos*' ficaram de fora de propósito (casariam com quase tudo). Limite 1990+ para alcançar os clássicos de acurácia e os ensaios antigos de corticoide; citações da aula base anteriores a 1990 entram por PMID (pubmed_busca.py --pmids). Este ramo existe porque o diferencial não usa o vocabulário da tendinopatia medial: sem ele, o teste de estresse em valgo em movimento e a revisão Cochrane da neuropatia ulnar ficariam fora. Volta 2: 'Ulnar Neuropathies'[Mesh] e 'ulnar neuropath*' acrescentados (Goldman 2009 perdido: indexado só como Ulnar Neuropathies). Volta 3: 'valgus instability' solto trazia joelho (138 registros sem cotovelo); trocado por proximidade com 'elbow'."
+  },
+  "recorte": "topo_mecanismos",
+  "blocos": [
+    {
+      "id": "condicao",
+      "rotulo": "Neuropatia ulnar no cotovelo e insuficiência do LCU do cotovelo",
+      "papel": "P",
+      "mesh": [
+        "Cubital Tunnel Syndrome",
+        "Ulnar Nerve Compression Syndromes",
+        "Ulnar Neuropathies"
+      ],
+      "livres": [
+        "cubital tunnel",
+        "ulnar neuropathy at the elbow",
+        "ulnar neuropathy at elbow",
+        "ulnar nerve entrapment",
+        "ulnar nerve compression",
+        "ulnar neuritis",
+        "ulnar nerve subluxation",
+        "ulnar nerve instability",
+        "medial collateral ligament of the elbow",
+        "elbow ulnar collateral ligament",
+        "elbow medial collateral ligament",
+        "valgus extension overload",
+        "medial elbow instability",
+        "medial elbow pain",
+        "throwing elbow",
+        "thrower's elbow",
+        "throwers elbow",
+        "ulnar neuropath*"
+      ],
+      "proximidade": [
+        {
+          "a": [
+            "ulnar collateral ligament",
+            "medial collateral ligament",
+            "UCL"
+          ],
+          "b": [
+            "elbow",
+            "throwing",
+            "throwers",
+            "pitcher",
+            "pitchers",
+            "baseball",
+            "overhead"
+          ],
+          "n": 5
+        },
+        {
+          "a": [
+            "valgus instability",
+            "valgus insufficiency",
+            "valgus laxity"
+          ],
+          "b": [
+            "elbow",
+            "elbows"
+          ],
+          "n": 4
+        }
+      ],
+      "simples": [
+        "cubital tunnel",
+        "ulnar neuropathy",
+        "ulnar collateral ligament elbow"
+      ]
+    },
+    {
+      "id": "dx_tx",
+      "rotulo": "Testes clínicos e acurácia, ou manejo conservador",
+      "papel": "I",
+      "mesh": [
+        "Sensitivity and Specificity",
+        "Predictive Value of Tests",
+        "Physical Examination",
+        "Diagnosis, Differential",
+        "Conservative Treatment",
+        "Exercise Therapy",
+        "Splints",
+        "Orthotic Devices",
+        "Physical Therapy Modalities"
+      ],
+      "livres": [
+        "sensitivity",
+        "specificity",
+        "likelihood ratio*",
+        "diagnostic accuracy",
+        "diagnostic value",
+        "physical exam*",
+        "clinical exam*",
+        "clinical test*",
+        "provocative test*",
+        "elbow flexion test",
+        "Tinel*",
+        "scratch collapse",
+        "moving valgus",
+        "milking maneuver",
+        "milking manoeuvre",
+        "milking test",
+        "valgus stress test*",
+        "differential diagnos*",
+        "conservative",
+        "nonoperative",
+        "non-operative",
+        "nonsurgical",
+        "non-surgical",
+        "rehabilitat*",
+        "physiotherap*",
+        "physical therap*",
+        "splint*",
+        "orthos*"
+      ],
+      "simples": [
+        "diagnosis",
+        "physical examination",
+        "conservative treatment"
+      ]
+    }
+  ],
+  "limites": {
+    "ano_inicio": 1990,
+    "ano_fim": null,
+    "idiomas": [
+      "english",
+      "portuguese",
+      "spanish"
+    ],
+    "somente_humanos": true,
+    "tipos_scopus": [
+      "ar",
+      "re"
+    ]
+  },
+  "revistas_alvo": [
+    {
+      "nome": "J Orthop Sports Phys Ther",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ]
+    },
+    {
+      "nome": "J Hand Ther",
+      "issn": [
+        "0894-1130",
+        "1545-004X"
+      ]
+    },
+    {
+      "nome": "J Hand Surg Am",
+      "issn": [
+        "0363-5023",
+        "1531-6564"
+      ]
+    },
+    {
+      "nome": "J Hand Surg Eur Vol",
+      "issn": [
+        "1753-1934",
+        "2043-6289"
+      ]
+    },
+    {
+      "nome": "J Shoulder Elbow Surg",
+      "issn": [
+        "1058-2746",
+        "1532-6500"
+      ]
+    },
+    {
+      "nome": "Am J Sports Med",
+      "issn": [
+        "0363-5465",
+        "1552-3365"
+      ]
+    },
+    {
+      "nome": "Cochrane Database Syst Rev",
+      "issn": [
+        "1469-493X"
+      ]
+    }
+  ],
+  "sentinelas": [
+    {
+      "pmid": "15701609",
+      "nota": "O'Driscoll 2005 AJSM: moving valgus stress test (acurácia contra artroscopia)"
+    },
+    {
+      "pmid": "7806810",
+      "nota": "Novak 1994: testes provocativos na síndrome do túnel cubital"
+    },
+    {
+      "pmid": "40298125",
+      "nota": "Cochrane 2025 (Caliandro): tratamento da neuropatia ulnar no cotovelo"
+    },
+    {
+      "pmid": "23062797",
+      "nota": "Valdes 2013 J Hand Ther: valor dos testes provocativos de punho e cotovelo"
+    },
+    {
+      "pmid": "19188042",
+      "nota": "Goldman 2009 J Hand Ther: testes e sinais clínicos da neuropatia ulnar"
+    },
+    {
+      "pmid": "36796550",
+      "nota": "Erickson 2023: consenso sobre lesões do LCU do cotovelo"
+    },
+    {
+      "pmid": "12860556",
+      "nota": "Cain 2003 AJSM: lesões do cotovelo no arremessador (citado na aula base, slide 138)"
+    }
+  ]
+}

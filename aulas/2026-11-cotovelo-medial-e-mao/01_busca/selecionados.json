@@ -1,0 +1,1802 @@
+[
+ {
+  "chave": "Caliandro2025",
+  "titulo": "Treatment for ulnar neuropathy at the elbow",
+  "autores": [
+   "Caliandro P",
+   "La Torre G",
+   "Padua R",
+   "Giannini F",
+   "Reale G",
+   "Padua L"
+  ],
+  "primeiro_autor": "Caliandro",
+  "ano": 2025,
+  "revista": "Cochrane Database Syst Rev",
+  "issn": [
+   "1469-493X",
+   "1361-6137"
+  ],
+  "doi": "10.1002/14651858.cd006839.pub5",
+  "pmid": "40298125",
+  "pmcid": "PMC12038884",
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: Ulnar neuropathy at the elbow (UNE) is the second most common entrapment neuropathy after carpal tunnel syndrome. Treatment may be conservative or surgical, but optimal management remains controversial. This is an update of a review first published in 2011 and previously updated in 2012 and 2016.\nOBJECTIVES: To determine the effectiveness and safety of conservative and surgical treatment for ulnar neuropathy at the elbow (UNE). We intended to test whether: - surgical treatment is effective in reducing symptoms and signs and in increasing nerve function; - conservative treatment is effective in reducing symptoms and signs and in increasing nerve function; - it is possible to identify the best treatment on the basis of clinical, neurophysiological, or nerve imaging assessment.\nSEARCH METHODS: We searched the Cochrane Neuromuscular Specialised Register, the Cochrane Central Register of Controlled Trials (CENTRAL), MEDLINE, Embase, four other databases, ClinicalTrials.gov, and the World Health Organization International Clinical Trials Registry Platform to July 2022.\nSELECTION CRITERIA: The review included only randomised controlled clinical trials (RCTs) or quasi-RCTs evaluating people with clinical symptoms suggesting the presence of UNE. We included trials evaluating all forms of surgical and conservative treatments. We considered studies regarding therapy of UNE with or without neurophysiological evidence of entrapment.\nDATA COLLECTION AND ANALYSIS: Two review authors independently reviewed titles and abstracts of references retrieved from the searches and selected all potentially relevant studies. The review authors independently extracted data from included trials and assessed risk of bias. We contacted trial investigators for any missing information. The primary outcome was clinically relevant improvement in function compared to baseline. The secondary outcomes of interest were change in neurological impairment, change from baseline of the motor nerve conduction velocity across the elbow, change from baseline in the nerve diameter/cross-sectional area at the elbow, evaluated by ultrasound or MRI, change in quality of life and adverse events. We used GRADE methodology to assess the certainty of evidence.\nMAIN RESULTS: We included 15 RCTs (970 participants), of which six studies were new for this update. Sequence generation was inadequate in one study and not described in six studies; other studies had a low risk of selection bias. We evaluated the clinical outcomes (3 trials, 261 participants) and neurophysiological outcomes (2 trials, 101 participants) of simple decompression versus decompression with submuscular or subcutaneous transposition. Moreover, we evaluated the clinical outcomes of endoscopic versus open decompression surgery (2 trials, 99 participants). We found there was probably little to no difference in clinical improvement in function for simple decompression versus subcutaneous transposition (risk ratio (RR) 0.92, 95% confidence interval (CI) 0.74 to 1.14; 1 study, 147 participants) and simple decompression versus submuscular transposition (RR 0.95, 95% CI 0.77 to 1.17; 2 studies, 114 participants). Compared to simple decompression, we found little to no difference in wound infections for subcutaneous transposition (RR 0.29, 95% CI 0.06 to 1.35; 1 study, 147 participants) and submuscular transposition (RR 0.35, 95% CI 0.10 to 1.21; 2 studies, 114 participants). We found no difference between endoscopic and open decompression in terms of postoperative clinical improvement measured by the Bishop score (RR 0.98, 95% CI 0.84 to 1.14; 2 studies, 99 participants). Among surgical treatments, further single trials investigated postsurgical electrical stimulation after open decompression, nerve decompression and transposition with supercharged end-to-side anterior interosseous nerve-to-ulnar motor nerve transfer. Among conservative treatments for mild or moderate UNE, single trials explored the efficacy of participants' education, night splinting, nerve gliding exercises, corticosteroid and dextrose perineural injection.\nAUTHORS' CONCLUSIONS: Low- to moderate-certainty evidence indicates that there is little to no difference in terms of improvement in function or surgical complications between simple decompression and decompression with subcutaneous or submuscular transposition in idiopathic UNE, including when the nerve impairment is severe. Moderate-certainty evidence indicates that there is little to no difference between endoscopic and open decompression in improving clinical function and in terms of procedural complications. Very low-certainty evidence indicates that it is unclear if steroid injections have an effect on clinical improvement, compared to placebo, and if written instructions have an effect on clinical improvement, compared to surgical decompression. Findings from a small RCT on conservative treatment showed that in mild cases, information on movements or positions to avoid may reduce subjective discomfort. One RCT showed that dextrose injection might reduce pain at either short-term (four months) or long-term follow-up (12 months), compared to placebo. Another RCT did not show differences in clinically relevant improvement between dextrose and corticosteroid injection. In clinically severe UNE, findings from a small RCT showed that postsurgical electrical stimulation improves intrinsic muscle reinnervation and strength at 12 months' follow-up.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Systematic Review",
+   "Meta-Analysis"
+  ],
+  "mesh": [
+   "Humans",
+   "Randomized Controlled Trials as Topic",
+   "Ulnar Neuropathies",
+   "Bias",
+   "Elbow",
+   "Conservative Treatment",
+   "Decompression, Surgical",
+   "Ulnar Nerve Compression Syndromes",
+   "Ulnar Nerve"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 15,
+  "acesso_aberto": true,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed"
+  ],
+  "pontuacao": 95.3,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2025, 1 ano(s) (+20,0 de 20)",
+   "Citações: 15 (15,0/ano, OpenAlex) (+12,8 de 15)",
+   "Revista-alvo: Cochrane Database Syst Rev (+10)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 1 de 2 blocos no título, 1 só no resumo/MeSH (+7,5 de 10)"
+  ],
+  "revista_completa": "The Cochrane database of systematic reviews",
+  "volume": "4",
+  "fasciculo": "4",
+  "paginas": "CD006839",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "1b_diferencial_medial:rs",
+   "1b_diferencial_medial:ecr",
+   "1b_diferencial_medial:base",
+   "1b_diferencial_medial:revistas"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 1,
+  "criterios_dedup": [],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "green",
+  "url_oa": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12038884/",
+  "desenho_motivo": "tipo de publicação PubMed: Meta-Analysis, Systematic Review",
+  "citacoes_por_ano": 15.0,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "Revisão Cochrane (atualização 2025) do tratamento da neuropatia ulnar no cotovelo: conservador x cirurgia e entre técnicas; sustenta orientação, órtese noturna e o momento de encaminhar.",
+  "aula": "3",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Arevalo2023",
+  "titulo": "Surgical Techniques and Clinical Outcomes for Medial Epicondylitis: A Systematic Review",
+  "autores": [
+   "Arevalo A",
+   "Rao S",
+   "Willier DP",
+   "Schrock CI",
+   "Erickson BJ",
+   "Jack RA",
+   "Cohen SB",
+   "Ciccotti MG"
+  ],
+  "primeiro_autor": "Arevalo",
+  "ano": 2023,
+  "revista": "Am J Sports Med",
+  "issn": [
+   "1552-3365",
+   "0363-5465"
+  ],
+  "doi": "10.1177/03635465221095565",
+  "pmid": "35658623",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: Medial epicondylitis (ME) is a pathological condition that arises in laborers and athletes secondary to repetitive wrist flexion and forearm pronation causing degeneration of the common flexor tendon. Although nonoperative management has demonstrated high rates of success, no standardized surgical technique has been established for situations when operative management is indicated.\nPURPOSE/HYPOTHESIS: The purpose of this study was to perform a systematic review of the surgical treatment options for ME and evaluate the associated patient-reported outcomes (PROs). We hypothesized that surgical management of ME would vary across studies but no technique would prove to be superior.\nSTUDY DESIGN: Systematic review; Level of evidence, 4.\nMETHODS: Searches were conducted using PubMed, EMBASE, Cumulative Index of Nursing Allied Health Literature (CINAHL), SPORTDiscus, and Cochrane databases between 1980 and April 2020. All level 1 to 4 studies were identified that focused on surgical management and PROs in the setting of ME. Description of surgical technique and PROs were required for inclusion. Investigators independently dually abstracted and reviewed the studies for eligibility. Weighted means were calculated for demographic characteristics and available PROs.\nRESULTS: Overall, 851 studies were identified according to the search criteria. A total of 16 studies met the inclusion and exclusion criteria and therefore were evaluated. Three surgical techniques were found: open (13 studies), arthroscopic (2 studies), and percutaneous (1 study). Descriptions of the open technique were subdivided into those with (7 studies) and without (6 studies) common flexor tendon repair. Analysis included 479 elbows; patients were primarily male (58.3%) with a weighted mean age of 47.2 years. Weighted mean follow-up was 4.6 years. Tennis and manual laborer were the most common sport and occupation, respectively. Surgical success ranged from 63% to 100%, with a low complication rate of 4.3%. Success rates for return to sports and work were 81%-100% and 66.7%-100%, respectively, and only 1 study reported a return to work rate <90%.\nCONCLUSION: This systematic review demonstrates that surgical intervention for refractory ME often has a high success rate. Regardless of surgical technique performed, patients generally demonstrated an improvement in PROs, and an encouraging number returned to work with limited complications. Further investigation is necessary to determine superiority among open, arthroscopic, and percutaneous techniques.",
+  "tipos_publicacao": [
+   "Systematic Review",
+   "Journal Article"
+  ],
+  "mesh": [
+   "Humans",
+   "Male",
+   "Middle Aged",
+   "Elbow Tendinopathy",
+   "Sports",
+   "Tennis Elbow",
+   "Athletes",
+   "Tendons"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 23,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "crossref"
+  ],
+  "pontuacao": 93.4,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2023, 3 ano(s) (+18,5 de 20)",
+   "Citações: 23 (7,7/ano, OpenAlex) (+9,9 de 15)",
+   "Revista-alvo: Am J Sports Med (+10)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "The American journal of sports medicine",
+  "volume": "51",
+  "fasciculo": "9",
+  "paginas": "2506-2515",
+  "palavras_chave": [
+   "elbow",
+   "medial epicondylitis",
+   "outcome",
+   "surgery",
+   "systematic review",
+   "technique"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "1a_cotovelo_medial:rs",
+   "1a_cotovelo_medial:base",
+   "1a_cotovelo_medial:revistas"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "tipo de publicação PubMed: Systematic Review",
+  "citacoes_por_ano": 7.7,
+  "decisao": "incluir",
+  "papel": "aplicação clínica",
+  "observacoes": "RS das técnicas cirúrgicas e desfechos na epicondilite medial: cirurgia como desfecho e critério de encaminhamento depois do conservador; nenhuma técnica padronizada (resumo).",
+  "aula": "3",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Fiorini2018",
+  "titulo": "Surgery for trigger finger",
+  "autores": [
+   "Fiorini HJ",
+   "Tamaoki MJ",
+   "Lenza M",
+   "Gomes Dos Santos JB",
+   "Faloppa F",
+   "Belloti JC"
+  ],
+  "primeiro_autor": "Fiorini",
+  "ano": 2018,
+  "revista": "Cochrane Database Syst Rev",
+  "issn": [
+   "1469-493X",
+   "1361-6137"
+  ],
+  "doi": "10.1002/14651858.cd009860.pub2",
+  "pmid": "29460276",
+  "pmcid": "PMC6491286",
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: Trigger finger is a common clinical disorder, characterised by pain and catching as the patient flexes and extends digits because of disproportion between the diameter of flexor tendons and the A1 pulley. The treatment approach may include non-surgical or surgical treatments. Currently there is no consensus about the best surgical treatment approach (open, percutaneous or endoscopic approaches).\nOBJECTIVES: To evaluate the effectiveness and safety of different methods of surgical treatment for trigger finger (open, percutaneous or endoscopic approaches) in adults at any stage of the disease.\nSEARCH METHODS: We searched CENTRAL, MEDLINE, Embase and LILACS up to August 2017.\nSELECTION CRITERIA: We included randomised or quasi-randomised controlled trials that assessed adults with trigger finger and compared any type of surgical treatment with each other or with any other non-surgical intervention. The major outcomes were the resolution of trigger finger, pain, hand function, participant-reported treatment success or satisfaction, recurrence of triggering, adverse events and neurovascular injury.\nDATA COLLECTION AND ANALYSIS: Two review authors independently selected the trial reports, extracted the data and assessed the risk of bias. Measures of treatment effect for dichotomous outcomes calculated risk ratios (RRs), and mean differences (MDs) or standardised mean differences (SMD) for continuous outcomes, with 95% confidence intervals (CIs). When possible, the data were pooled into meta-analysis using the random-effects model. GRADE was used to assess the quality of evidence for each outcome.\nMAIN RESULTS: Fourteen trials were included, totalling 1260 participants, with 1361 trigger fingers. The age of participants included in the studies ranged from 16 to 88 years; and the majority of participants were women (approximately 70%). The average duration of symptoms ranged from three to 15 months, and the follow-up after the procedure ranged from eight weeks to 23 months.The studies reported nine types of comparisons: open surgery versus steroid injections (two studies); percutaneous surgery versus steroid injection (five studies); open surgery versus steroid injection plus ultrasound-guided hyaluronic acid injection (one study); percutaneous surgery plus steroid injection versus steroid injection (one study); percutaneous surgery versus open surgery (five studies); endoscopic surgery versus open surgery (one study); and three comparisons of types of incision for open surgery (transverse incision of the skin in the distal palmar crease, transverse incision of the skin about 2-3 mm distally from distal palmar crease, and longitudinal incision of the skin) (one study).Most studies had significant methodological flaws and were considered at high or unclear risk of selection bias, performance bias, detection bias and reporting bias. The primary comparison was open surgery versus steroid injections, because open surgery is the oldest and the most widely used treatment method and considered as standard surgery, whereas steroid injection is the least invasive control treatment method as reported in the studies in this review and is often used as first-line treatment in clinical practice.Compared with steroid injection, there was low-quality evidence that open surgery provides benefits with respect to less triggering recurrence, although it has the disadvantage of being more painful. Evidence was downgraded due to study design flaws and imprecision.Based on two trials (270 participants) from six up to 12 months, 50/130 (or 385 per 1000) individuals had recurrence of trigger finger in the steroid injection group compared with 8/140 (or 65 per 1000; range 35 to 127) in the open surgery group, RR 0.17 (95% CI 0.09 to 0.33), for an absolute risk difference that 29% fewer people had recurrence of symptoms with open surgery (60% fewer to 3% more individuals); relative change translates to improvement of 83% in the open surgery group (67% to 91% better).At one week, 9/49 (184 per 1000) people had pain on the palm of the hand in the steroid injection group compared with 38/56 (or 678 per 1000; ranging from 366 to 1000) in the open surgery group, RR 3.69 (95% CI 1.99 to 6.85), for an absolute risk difference that 49% more had pain with open surgery (33% to 66% more); relative change translates to worsening of 269% (585% to 99% worse) (one trial, 105 participants).Because of very low quality evidence from two trials we are uncertain whether open surgery improve resolution of trigger finger in the follow-up at six to 12 months, when compared with steroid injection (131/140 observed in the open surgery group compared with 80/130 in the control group; RR 1.48, 95% CI 0.79 to 2.76); evidence was downgraded due to study design flaws, inconsistency and imprecision. Low-quality evidence from two trials and few event rates (270 participants) from six up to 12 months of follow-up, we are uncertain whether open surgery increased the risk of adverse events (incidence of infection, tendon injury, flare, cutaneous discomfort and fat necrosis) (18/140 observed in the open surgery group compared with 17/130 in the control group; RR 1.02, 95% CI 0.57 to 1.84) and neurovascular injury (9/140 observed in the open surgery group compared with 4/130 in the control group; RR 2.17, 95% CI 0.7 to 6.77). Twelve participants (8 versus 4) did not complete the follow-up, and it was considered that they did not have a positive outcome in the data analysis. We are uncertain whether open surgery was more effective than steroid injection in improving hand function or participant satisfaction as studies did not report these outcomes.\nAUTHORS' CONCLUSIONS: Low-quality evidence indicates that, compared with steroid injection, open surgical treatment in people with trigger finger, may result in a less recurrence rate from six up to 12 months following the treatment, although it increases the incidence of pain during the first follow-up week. We are uncertain about the effect of open surgery with regard to the resolution rate in follow-up at six to 12 months, compared with steroid injections, due high heterogeneity and few events occurred in the trials; we are uncertain too about the risk of adverse events and neurovascular injury because of a few events occurred in the studies. Hand function or participant satisfaction were not reported.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Meta-Analysis",
+   "Research Support, Non-U.S. Gov't",
+   "Systematic Review"
+  ],
+  "mesh": [
+   "Adult",
+   "Aged",
+   "Aged, 80 and over",
+   "Female",
+   "Humans",
+   "Hyaluronic Acid",
+   "Injections, Intra-Articular",
+   "Male",
+   "Middle Aged",
+   "Postoperative Pain",
+   "Recurrence",
+   "Steroids",
+   "Treatment Outcome",
+   "Trigger Finger Disorder"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 105,
+  "acesso_aberto": true,
+  "licenca": null,
+  "url_pdf_aberto": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD009860.pub2/pdf/full",
+  "fontes": [
+   "pubmed"
+  ],
+  "pontuacao": 88.0,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2018, 8 ano(s) (+10,8 de 20)",
+   "Citações: 105 (13,1/ano, OpenAlex) (+12,2 de 15)",
+   "Revista-alvo: Cochrane Database Syst Rev (+10)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "The Cochrane database of systematic reviews",
+  "volume": "2",
+  "fasciculo": "2",
+  "paginas": "CD009860",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "2_dedo_gatilho:rs",
+   "2_dedo_gatilho:ecr",
+   "2_dedo_gatilho:base",
+   "2_dedo_gatilho:revistas"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 1,
+  "criterios_dedup": [],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "bronze",
+  "url_oa": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD009860.pub2/pdf/full",
+  "desenho_motivo": "tipo de publicação PubMed: Meta-Analysis, Systematic Review",
+  "citacoes_por_ano": 13.1,
+  "decisao": "incluir",
+  "papel": "aplicação clínica",
+  "observacoes": "Revisão Cochrane de cirurgia no dedo em gatilho (aberta x percutânea x injeção): sustenta o encaminhamento e o que esperar da cirurgia; acesso aberto.",
+  "aula": "3",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Challoumas2023",
+  "titulo": "Management of de Quervain Tenosynovitis: A Systematic Review and Network Meta-Analysis",
+  "autores": [
+   "Challoumas D",
+   "Ramasubbu R",
+   "Rooney E",
+   "Seymour-Jackson E",
+   "Putti A",
+   "Millar NL"
+  ],
+  "primeiro_autor": "Challoumas",
+  "ano": 2023,
+  "revista": "JAMA Netw Open",
+  "issn": [
+   "2574-3805"
+  ],
+  "doi": "10.1001/jamanetworkopen.2023.37001",
+  "pmid": "37889490",
+  "pmcid": "PMC10611995",
+  "scopus_eid": null,
+  "resumo": "IMPORTANCE: There is a plethora of treatment options for patients with de Quervain tenosynovitis (DQT), but there are limited data on their effectiveness and no definitive management guidelines.\nOBJECTIVE: To assess and compare the effectiveness associated with available treatment options for DQT to guide musculoskeletal practitioners and inform guidelines.\nDATA SOURCES: Medline, Embase, PubMed, Cochrane Central, Scopus, OpenGrey.eu, and WorldCat.org were searched for published studies, and the World Health Organization International Clinical Trials Registry Platform, ClinicalTrials.gov, The European Union Clinical Trials Register, and the ISRCTN registry were searched for unpublished and ongoing studies from inception to August 2022.\nSTUDY SELECTION: All randomized clinical trials assessing the effectiveness of any intervention for the management of DQT.\nDATA EXTRACTION AND SYNTHESIS: This study was prospectively registered on PROSPERO and conducted and reported per Preferred Reporting Items for Systematic Reviews and Meta-Analyses Extension Statement for Reporting of Systematic Reviews Incorporating Network Meta-analyses of Health Care Interventions (PRISMA-NMA) and PRISMA in Exercise, Rehabilitation, Sport Medicine and Sports Science (PERSIST) guidance. The Cochrane Risk of Bias tool and the Grading of Recommendations, Assessment, Development, and Evaluations tool were used for risk of bias and certainty of evidence assessment for each outcome.\nMAIN OUTCOMES AND MEASURES: Pairwise and network meta-analyses were performed for patient-reported pain using a visual analogue scale (VAS) and for function using the quick disabilities of the arm, shoulder, and hand (Q-DASH) scale. Mean differences (MD) with their 95% CIs were calculated for the pairwise meta-analyses.\nRESULTS: A total of 30 studies with 1663 patients (mean [SD] age, 46 [7] years; 80% female) were included, of which 19 studies were included in quantitative analyses. From the pairwise meta-analyses, based on evidence of moderate certainty, adding thumb spica immobilization for 3 to 4 weeks to a corticosteroid injection (CSI) was associated with statistically but not clinically significant functional benefits in the short-term (MD, 10.5 [95% CI, 6.8-14.1] points) and mid-term (MD, 9.4 [95% CI, 7.0-11.9] points). In the network meta-analysis, interventions that included ultrasonography-guided CSI ranked at the top for pain. CSI with thumb spica immobilization had the highest probability of being the most effective intervention for short- and mid-term function.\nCONCLUSIONS AND RELEVANCE: This network meta-analysis found that adding a short period of thumb spica immobilization to CSI was associated with statistically but not clinically significant short- and mid-term benefits. These findings suggest that administration of CSI followed by 3 to 4 weeks immobilization should be considered as a first-line treatment for patients with DQT.",
+  "tipos_publicacao": [
+   "Systematic Review",
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't",
+   "Network Meta-Analysis"
+  ],
+  "mesh": [
+   "Humans",
+   "Female",
+   "Middle Aged",
+   "Male",
+   "Tenosynovitis",
+   "Bias",
+   "Exercise",
+   "Pain"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 63,
+  "acesso_aberto": true,
+  "licenca": "cc-by",
+  "url_pdf_aberto": "https://jamanetwork.com/journals/jamanetworkopen/articlepdf/2811119/challoumas_2023_oi_231079_1697662039.63331.pdf",
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 85.2,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2023, 3 ano(s) (+18,5 de 20)",
+   "Citações: 63 (21,0/ano, OpenAlex) (+14,2 de 15)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 1 de 2 blocos no título, 1 só no resumo/MeSH (+7,5 de 10)"
+  ],
+  "revista_completa": "JAMA network open",
+  "volume": "6",
+  "fasciculo": "10",
+  "paginas": "e2337001",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "review",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "3_de_quervain:rs",
+   "3_de_quervain:ecr",
+   "3_de_quervain:base"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "24700135",
+    "relacao": "cita o sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "gold",
+  "url_oa": "https://jamanetwork.com/journals/jamanetworkopen/articlepdf/2811119/challoumas_2023_oi_231079_1697662039.63331.pdf",
+  "desenho_motivo": "tipo de publicação PubMed: Network Meta-Analysis, Systematic Review",
+  "citacoes_por_ano": 21.0,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "RS com meta-análise em rede de ECRs no manejo da De Quervain (JAMA Netw Open): compara injeção, órtese, terapias e combinações; acesso aberto (PMC).",
+  "aula": "3",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Chiang2026",
+  "titulo": "Evidence-based management strategies for adult trigger digits: a systematic review and network meta-analysis of randomized controlled trials",
+  "autores": [
+   "Chiang CH",
+   "Liu WC",
+   "Wu ZH",
+   "Wang JH",
+   "Shih CL"
+  ],
+  "primeiro_autor": "Chiang",
+  "ano": 2026,
+  "revista": "Ann Phys Rehabil Med",
+  "issn": [
+   "1877-0665",
+   "1877-0657"
+  ],
+  "doi": "10.1016/j.rehab.2025.102074",
+  "pmid": "41691955",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: The trigger digit is a mechanical condition in which the finger snaps, triggers, or locks due to a thickened retinacular sheath at the A1 pulley.\nOBJECTIVE: To evaluate the effectiveness of different treatment options for the trigger finger and thumb.\nMETHODS: We searched PubMed, Embase, and Cochrane Library for randomized controlled trials (RCTs) with treatments for trigger digits from their inception to July 29, 2025. This protocol was registered with PROSPERO. We conducted a network meta-analysis to compare outcomes across treatments. Treatment success was pooled as an odds ratio (OR) with a 95% confidence interval (CI), and pain level was pooled as the mean difference (MD) with 95% CI.\nRESULTS: We included 27 RCTs (2099 participants) examining 12 different treatments for trigger digits. In the network meta-analysis, percutaneous release had the highest probability of treatment success and significantly higher odds ratio than steroid injection (OR = 22.82; 95% CI, 7.69-67.72). These similar results were obtained from the pain level after excluding an RCT with an extreme pain score in which percutaneous release had significant pain relief compared with steroid injection (MD = -0.94; 95% CI, -1.49 to -0.38). Among non-surgical treatments, steroid injections (OR = 7.49; 95% CI, 2.18-25.71), non-steroidal anti-inflammatory drugs (NSAIDs) injections (OR = 5.38; 95% CI, 1.19-24.34), and extracorporeal shock wave therapy (ESWT) (OR = 7.49; 95% CI, 1.02-55.26) each demonstrated significantly higher odds of success compared with placebo injection. No significant differences in success were observed among these 3 treatments. Severe complications were not observed with any of these treatments.\nCONCLUSION: Surgical interventions demonstrated superior efficacy compared to non-surgical therapies or placebo. Among non-surgical options, in addition to steroid injections, NSAID injections and ESWT are viable choices for treating the trigger digit.\nPROSPERO REGISTRATION NUMBER: CRD420251000661.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Network Meta-Analysis",
+   "Systematic Review"
+  ],
+  "mesh": [
+   "Humans",
+   "Trigger Finger Disorder",
+   "Randomized Controlled Trials as Topic",
+   "Evidence-Based Medicine",
+   "Adult",
+   "Treatment Outcome"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 2,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed"
+  ],
+  "pontuacao": 81.0,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2026, 0 ano(s) (+20,0 de 20)",
+   "Citações: 2 (2,0/ano, OpenAlex) (+6,0 de 15)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "Annals of physical and rehabilitation medicine",
+  "volume": "69",
+  "fasciculo": "4",
+  "paginas": "102074",
+  "palavras_chave": [
+   "Extracorporeal shockwave therapy",
+   "Hyaluronic acid",
+   "Nonsteroidal anti-inflammatory agents",
+   "Steroid",
+   "Tenosynovitis",
+   "Trigger Finger Disorder"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "2_dedo_gatilho:rs",
+   "2_dedo_gatilho:ecr",
+   "2_dedo_gatilho:base"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 1,
+  "criterios_dedup": [],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "tipo de publicação PubMed: Network Meta-Analysis, Systematic Review",
+  "citacoes_por_ano": 2.0,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "Meta-análise em rede de 27 ECRs (2.099 participantes, 12 tratamentos) no dedo em gatilho do adulto (resumo): situa órtese, injeção e liberação percutânea/aberta numa mesma escala.",
+  "aula": "3",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "See2026",
+  "titulo": "Eccentric exercise therapy for medial epicondylitis: A systematic review of clinical outcomes",
+  "autores": [
+   "See ZH",
+   "Loo CE",
+   "Jaafar Z"
+  ],
+  "primeiro_autor": "See",
+  "ano": 2026,
+  "revista": "Complement Ther Med",
+  "issn": [
+   "1873-6963",
+   "0965-2299"
+  ],
+  "doi": "10.1016/j.ctim.2026.103364",
+  "pmid": "41887339",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: Medial epicondylitis, a tendinopathy of the flexor-pronator origin, remains less studied than lateral epicondylitis, especially regarding exercise-based interventions. Eccentric exercise has demonstrated benefits in other tendinopathies, but its role in medial epicondylitis has not been systematically evaluated.\nOBJECTIVE: To synthesize clinical evidence on the effectiveness of eccentric exercise in reducing pain and improving function in medial epicondylitis.\nMETHODS: Following PRISMA guidelines, five databases (PubMed, Web of Science, Scopus, SPORTDiscus, Google Scholar) were searched from inception to January 2025. Clinical studies evaluating eccentric loading of the wrist flexor-pronator musculature as a primary intervention component for medial epicondylitis were included. Two reviewers independently screened the records, extracted the data, and assessed the risk of bias.\nRESULTS: Five studies (n = 143 patients) were included, comprising randomized controlled trials (RCT), pre-post studies, and comparative analyses. Eccentric exercise was associated with significant within-group reductions in pain and improvements in functional outcomes across included studies. Between-group superiority was demonstrated in one RCT. Combined interventions showed superior outcomes compared with ultrasound in one trial, while other comparative studies demonstrated significant within-group improvements without clear between-group differences. Sustained pain relief and functional improvement at 11-year follow-up were reported in a single uncontrolled study. Heterogeneity in intervention protocols and small sample sizes precluded meta-analysis.\nCONCLUSION: Current evidence suggests that eccentric exercise may reduce pain and improve function in medial epicondylitis, particularly when incorporated into multimodal conservative management. However, the overall certainty of evidence remains low, and larger high-quality randomized trials are required to confirm these findings.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Systematic Review"
+  ],
+  "mesh": [
+   "Humans",
+   "Tennis Elbow",
+   "Exercise Therapy",
+   "Treatment Outcome",
+   "Randomized Controlled Trials as Topic"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 0,
+  "acesso_aberto": true,
+  "licenca": "cc-by-nc-nd",
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 81.0,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2026, 0 ano(s) (+20,0 de 20)",
+   "Citações: 0 (0,0/ano, OpenAlex) (+6,0 de 15)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "Complementary therapies in medicine",
+  "volume": "98",
+  "fasciculo": "",
+  "paginas": "103364",
+  "palavras_chave": [
+   "Eccentric exercise",
+   "Golfer’s elbow",
+   "Medial epicondylitis",
+   "Rehabilitation",
+   "Tendinopathy"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "review",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "1a_cotovelo_medial:rs",
+   "1a_cotovelo_medial:ecr",
+   "1a_cotovelo_medial:base"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "26001427",
+    "relacao": "cita o sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "gold",
+  "url_oa": "https://doi.org/10.1016/j.ctim.2026.103364",
+  "desenho_motivo": "tipo de publicação PubMed: Systematic Review",
+  "citacoes_por_ano": 0.0,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "RS de exercício excêntrico na tendinopatia medial: só 5 estudos e 143 pacientes, desenhos mistos (resumo). É o retrato da evidência escassa e a base da extrapolação explícita a partir da tendinopatia lateral.",
+  "aula": "3",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "PetersVeluthamaningal2009",
+  "titulo": "Corticosteroid injection for trigger finger in adults",
+  "autores": [
+   "Peters-Veluthamaningal C",
+   "van der Windt DA",
+   "Winters JC",
+   "Meyboom-de Jong B"
+  ],
+  "primeiro_autor": "Peters-Veluthamaningal",
+  "ano": 2009,
+  "revista": "Cochrane Database Syst Rev",
+  "issn": [
+   "1469-493X",
+   "1361-6137",
+   "1464-780X",
+   "1465-184X",
+   "1465-1858"
+  ],
+  "doi": "10.1002/14651858.cd005617.pub2",
+  "pmid": "19160256",
+  "pmcid": "PMC12671840",
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: Trigger finger is a disease of the tendons of the hand leading to triggering (locking) of affected fingers, dysfunction and pain. Available treatments include local injection with corticosteroids, surgery, or splinting.\nOBJECTIVES: To summarize the evidence on the efficacy and safety of corticosteroid injections for trigger finger in adults using the following endpoints: treatment success, frequency of triggering or locking, functional status of the affected fingers, and severity of pain of the fingers.\nSEARCH STRATEGY: The databases CENTRAL, DARE, MEDLINE (1966 to November 2007), EMBASE (1956 to November 2007), CINAHL (1982 to November 2007), AMED (1985 to November 2007) and PEDro (a physiotherapy evidence database) were searched.\nSELECTION CRITERIA: We selected randomized and controlled clinical trials evaluating efficacy and safety of corticosteroid injections for trigger finger in adults.\nDATA COLLECTION AND ANALYSIS: The databases were searched for titles of eligible studies. After screening abstracts of these studies, full text articles of studies which fulfilled the selection criteria were obtained. Data were extracted using a predefined electronic form. The methodological quality of included trials was assessed by using items from the checklist developed by Jadad and the Delphi list. We planned to extract data regarding information on the primary outcome measures: treatment success, frequency of triggering or locking, and functional impairment of fingers, severity of the trigger finger; and the secondary outcome measures: proportion of patients with side effects, types of side effects, and patient satisfaction with injection.\nMAIN RESULTS: Two randomized controlled studies were found that involved 63 participants: 34 were allocated to corticosteroids and lidocaine, and 29 were allocated to lidocaine alone. Corticosteroid injection with lidocaine was more effective than lidocaine alone on treatment success at four weeks (relative risk 3.15, 95% CI 1.34 to 7.40). The number needed to treat to benefit was 3. No adverse events or side effects were reported.\nAUTHORS' CONCLUSIONS: The effectiveness of local corticosteroid injections was studied in only two small randomized controlled trials of poor methodological quality. Both studies showed better short-term effects of corticosteroid injection combined with lidocaine compared to lidocaine alone on the treatment success outcome. In one study the effects of corticosteroid injections lasted up to four months. No adverse effects were observed. The available evidence for the effectiveness of intra-tendon sheath corticosteroid injection for trigger finger can be graded as a silver level evidence for superiority of corticosteroid injections combined with lidocaine over injections with lidocaine alone.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Systematic Review"
+  ],
+  "mesh": [
+   "Adrenal Cortex Hormones",
+   "Adult",
+   "Anesthetics, Local",
+   "Humans",
+   "Lidocaine",
+   "Randomized Controlled Trials as Topic",
+   "Trigger Finger Disorder"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 114,
+  "acesso_aberto": true,
+  "licenca": "other-oa",
+  "url_pdf_aberto": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD005617.pub2/pdf/full",
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 74.4,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2009, 17 ano(s) (+0,0 de 20)",
+   "Citações: 114 (6,7/ano, OpenAlex) (+9,4 de 15)",
+   "Revista-alvo: Cochrane Database Syst Rev (+10)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "The Cochrane database of systematic reviews",
+  "volume": "2009",
+  "fasciculo": "1",
+  "paginas": "CD005617",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "review",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "2_dedo_gatilho:rs",
+   "2_dedo_gatilho:ecr",
+   "2_dedo_gatilho:base",
+   "2_dedo_gatilho:revistas"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "24810861",
+    "relacao": "citado pelo sentinela"
+   },
+   {
+    "sentinela": "24700135",
+    "relacao": "citado pelo sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "hybrid",
+  "url_oa": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD005617.pub2/pdf/full",
+  "desenho_motivo": "tipo de publicação PubMed: Systematic Review",
+  "citacoes_por_ano": 6.7,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "Revisão Cochrane de injeção de corticoide no dedo em gatilho: os números de resolução de curto prazo que o paciente pergunta; acesso aberto.",
+  "aula": "3",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Minkhorst2025",
+  "titulo": "Does Orthosis Improve Outcomes of Conservative Treatment in Trigger Fingers? A 3-Arm Prospective Randomized Controlled Trial",
+  "autores": [
+   "Minkhorst K",
+   "Munn A",
+   "MacDermid J",
+   "Grewal R"
+  ],
+  "primeiro_autor": "Minkhorst",
+  "ano": 2025,
+  "revista": "Arch Phys Med Rehabil",
+  "issn": [
+   "1532-821X",
+   "0003-9993"
+  ],
+  "doi": "10.1016/j.apmr.2025.05.015",
+  "pmid": "40449569",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "OBJECTIVE: To evaluate whether the addition of an orthosis improved the efficacy of cortisone injection for the nonoperative management of trigger finger.\nDESIGN: Block randomized controlled trial.\nSETTING: Outpatient hand clinic.\nPARTICIPANTS: Individuals presenting to our center with Green severity grade 1-3 trigger finger, aged 18-80, were eligible for inclusion (N=226). Exclusion criteria were previous treatment with either a splint or cortisone injection, trigger thumb, >2 digits involved, grade 4 trigger, or an allergy to cortisone (N=118).\nINTERVENTIONS: Patients' hands were randomized to nighttime extension orthosis, cortisone injection, or combined treatment, stratified by the Green severity score and comorbid diabetes.\nMAIN OUTCOME MEASURES: Patient-reported outcome measures and the number of triggering occurrences with 10 repeated grips were collected at 6 weeks and 3, 6, and 12 months.\nRESULTS: The study included 104 patients representing 122 trigger fingers in 115 hands, with an average follow-up of 29 months. At 6 weeks, there was no significant difference in the incidence of triggering, symptom relief, or the Patient-Reported Wrist and Hand Evaluation score between injection or combined treatment groups. The overall success rate with conservative treatment was high, with 68.9% experiencing resolution or improvement of their symptoms. Grade 3 trigger fingers had a significantly higher rate of surgical release compared with lower-grade trigger fingers (39.1% vs 22.4%, P=.05).\nCONCLUSIONS: Our study shows no significant benefit of adding an orthosis to cortisone injection in all trigger grades. Overall success with conservative treatment was high (68.9%) in this cohort. Conservative management of grade 1 and 2 triggers is successful in about 75% of patients, regardless of whether treatment is an orthosis, injection, or both, compared with a 60% success rate for grade 3.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Randomized Controlled Trial",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Humans",
+   "Female",
+   "Male",
+   "Middle Aged",
+   "Adult",
+   "Trigger Finger Disorder",
+   "Aged",
+   "Conservative Treatment",
+   "Prospective Studies",
+   "Orthotic Devices",
+   "Cortisone",
+   "Treatment Outcome",
+   "Aged, 80 and over",
+   "Adolescent",
+   "Young Adult",
+   "Patient Reported Outcome Measures",
+   "Severity of Illness Index",
+   "Combined Modality Therapy"
+  ],
+  "desenho": "ECR",
+  "citacoes": 5,
+  "acesso_aberto": true,
+  "licenca": "cc-by",
+  "url_pdf_aberto": "https://www.archives-pmr.org/action/showPdf?pii=S0003999325007233",
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 72.0,
+  "motivos_pontuacao": [
+   "Desenho: ECR (+29,8 de 35)",
+   "Atualidade: 2025, 1 ano(s) (+20,0 de 20)",
+   "Citações: 5 (5,0/ano, OpenAlex) (+8,2 de 15)",
+   "Ligado por citação a 1 sentinela(s) (+4,0 de 10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "Archives of physical medicine and rehabilitation",
+  "volume": "106",
+  "fasciculo": "12",
+  "paginas": "1798-1806",
+  "palavras_chave": [
+   "Clinical trial",
+   "Cortisone injection",
+   "Nonsurgical management",
+   "Orthosis",
+   "Rehabilitation",
+   "Trigger finger"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "article",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "2_dedo_gatilho:ecr",
+   "2_dedo_gatilho:base"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "24810861",
+    "relacao": "cita o sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": false,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "hybrid",
+  "url_oa": "https://www.archives-pmr.org/action/showPdf?pii=S0003999325007233",
+  "desenho_motivo": "desenho declarado pelos autores no resumo: 'Block randomized controlled trial'",
+  "citacoes_por_ano": 5.0,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "ECR de 3 braços (órtese noturna x injeção x combinação) estratificado pelo grau de Green e diabetes (resumo): a pergunta exata do fisioterapeuta sobre órtese; acesso aberto.",
+  "aula": "3",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Avci2002",
+  "titulo": "Comparison of nonsurgical treatment measures for de Quervain's disease of pregnancy and lactation",
+  "autores": [
+   "Avci S",
+   "Yilmaz C",
+   "Sayli U"
+  ],
+  "primeiro_autor": "Avci",
+  "ano": 2002,
+  "revista": "J Hand Surg Am",
+  "issn": [
+   "0363-5023"
+  ],
+  "doi": "10.1053/jhsu.2002.32084",
+  "pmid": "11901392",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "de Quervain's disease of pregnancy and lactation is usually self-limited and responds well to nonsurgical treatment. We conducted a randomized prospective study on 19 wrists of 18 patients with de Quervain's disease who were either pregnant or breast-feeding. One group had a cortisone injection into the tendon sheath and the other group used thumb spica splints. All 9 patients with injections had complete pain relief with only one late recurrence. None of the patients with splints had complete pain relief; however, at the end of the lactation period, 8 had spontaneous resolution of symptoms and 1 received a cortisone injection. de Quervain's disease of pregnancy and lactation is self-limited and can be treated successfully with cortisone injection. Splinting does not provide satisfactory pain relief.",
+  "tipos_publicacao": [
+   "Clinical Trial",
+   "Comparative Study",
+   "Journal Article",
+   "Randomized Controlled Trial"
+  ],
+  "mesh": [
+   "Adult",
+   "Anti-Inflammatory Agents",
+   "Female",
+   "Humans",
+   "Injections, Intra-Articular",
+   "Lactation",
+   "Methylprednisolone",
+   "Patient Satisfaction",
+   "Pregnancy",
+   "Pregnancy Complications",
+   "Prospective Studies",
+   "Severity of Illness Index",
+   "Splints",
+   "Tenosynovitis",
+   "Treatment Outcome",
+   "Wrist Joint"
+  ],
+  "desenho": "ECR",
+  "citacoes": 164,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "crossref"
+  ],
+  "pontuacao": 69.2,
+  "motivos_pontuacao": [
+   "Desenho: ECR (+29,8 de 35)",
+   "Atualidade: 2002, 24 ano(s) (+0,0 de 20)",
+   "Citações: 164 (6,8/ano, OpenAlex) (+9,5 de 15)",
+   "Revista-alvo: J Hand Surg Am (+10)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "The Journal of hand surgery",
+  "volume": "27",
+  "fasciculo": "2",
+  "paginas": "322-4",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "3_de_quervain:ecr",
+   "3_de_quervain:base",
+   "3_de_quervain:revistas"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "tipo de publicação PubMed: Randomized Controlled Trial",
+  "citacoes_por_ano": 6.8,
+  "decisao": "incluir",
+  "papel": "aplicação clínica",
+  "observacoes": "ECR em gestantes e lactantes: injeção com alívio completo em 9/9; órtese sem alívio completo, resolução espontânea ao fim da lactação em 8 (resumo). Base da conduta no puerpério; amostra de 19 punhos.",
+  "aula": "3",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Goubau2014",
+  "titulo": "The wrist hyperflexion and abduction of the thumb (WHAT) test: a more specific and sensitive test to diagnose de Quervain tenosynovitis than the Eichhoff's Test",
+  "autores": [
+   "Goubau JF",
+   "Goubau L",
+   "Van Tongel A",
+   "Van Hoonacker P",
+   "Kerckhove D",
+   "Berghs B"
+  ],
+  "primeiro_autor": "Goubau",
+  "ano": 2014,
+  "revista": "J Hand Surg Eur Vol",
+  "issn": [
+   "2043-6289",
+   "0266-7681",
+   "1753-1934"
+  ],
+  "doi": "10.1177/1753193412475043",
+  "pmid": "23340762",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "De Quervain's disease has different clinical features. Different tests have been described in the past, the most popular test being the Eichhoff's test, often wrongly named as the Finkelstein's test. Over the years, a misinterpretation has occurred between these two tests, the latter being confused with the first. To compare the Eichhoff's test with a new test, the wrist hyperflexion and abduction of the thumb test, we set up a prospective study over a period of three years for a cohort of 100 patients (88 women, 12 men) presenting spontaneous pain over the radial side of the styloid of the radius (de Quervain tendinopathy). The purpose of the study was to compare the accuracy of the Eichhoff's test and wrist hyperflexion and abduction of the thumb test to diagnose correctly de Quervain's disease by comparing clinical findings using those tests with the results on ultrasound. The wrist hyperflexion and abduction of the thumb test revealed greater sensitivity (0.99) and an improved specificity (0.29) together with a slightly better positive predictive value (0.95) and an improved negative predictive value (0.67). Moreover, the study showed us that the wrist hyperflexion and abduction of the thumb test is very valuable in diagnosing dynamic instability after successful decompression of the first extensor compartment. Our results support that the wrist hyperflexion and abduction of the thumb test is a more precise tool for the diagnosis of de Quervain's disease than the Eichhoff's test and thus could be adopted to guide clinical diagnosis in the early stages of de Quervain's tendinopathy.",
+  "tipos_publicacao": [
+   "Comparative Study",
+   "Journal Article"
+  ],
+  "mesh": [
+   "Adolescent",
+   "Adult",
+   "Aged",
+   "Aged, 80 and over",
+   "De Quervain Disease",
+   "Female",
+   "Humans",
+   "Male",
+   "Middle Aged",
+   "Physical Examination",
+   "Prospective Studies",
+   "Range of Motion, Articular",
+   "Sensitivity and Specificity",
+   "Young Adult"
+  ],
+  "desenho": "Estudo de acuracia diagnostica",
+  "citacoes": 115,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "crossref"
+  ],
+  "pontuacao": 66.5,
+  "motivos_pontuacao": [
+   "Desenho: Estudo de acuracia diagnostica (+21,0 de 35)",
+   "Atualidade: 2014, 12 ano(s) (+4,6 de 20)",
+   "Citações: 115 (9,6/ano, OpenAlex) (+10,9 de 15)",
+   "Revista-alvo: J Hand Surg Eur Vol (+10)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "The Journal of hand surgery, European volume",
+  "volume": "39",
+  "fasciculo": "3",
+  "paginas": "286-92",
+  "palavras_chave": [
+   "Eichhoff’s test",
+   "Tenosynovitis",
+   "comparative study",
+   "de Quervain",
+   "prospective",
+   "wrist hyperflexion and abduction of the thumb test"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "3_de_quervain:base",
+   "3_de_quervain:revistas"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "título/MeSH indicam acurácia diagnóstica",
+  "citacoes_por_ano": 9.6,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "WHAT test x Eichhoff: sensibilidade 0,99 e especificidade 0,29 do WHAT (resumo). Dado central do bloco 'diagnóstico sem falso positivo' (especificidade baixa também para o WHAT: discutir).",
+  "aula": "3",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Huisstede2014",
+  "titulo": "Consensus on a multidisciplinary treatment guideline for de Quervain disease: results from the European HANDGUIDE study",
+  "autores": [
+   "Huisstede BM",
+   "Coert JH",
+   "Fridén J",
+   "Hoogvliet P",
+   "European HANDGUIDE Group"
+  ],
+  "primeiro_autor": "Huisstede",
+  "ano": 2014,
+  "revista": "Phys Ther",
+  "issn": [
+   "1538-6724",
+   "0031-9023"
+  ],
+  "doi": "10.2522/ptj.20130069",
+  "pmid": "24700135",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: De Quervain disease is a common pathology resulting in pain caused by resisted gliding of the abductor pollicis longus and extensor pollicis brevis tendons in the fibro-osseous canal. In a situation of wavering assumptions and expanding medical knowledge, a treatment guideline is useful because it can aid in implementation of best practices, the education of health care professionals, and the identification of gaps in existing knowledge.\nOBJECTIVE: The aim of this study was to achieve consensus on a multidisciplinary treatment guideline for de Quervain disease.\nDESIGN: A Delphi consensus strategy was used.\nMETHODS: A European Delphi consensus strategy was initiated. A systematic review reporting on the effectiveness of surgical and nonsurgical interventions was conducted and published and was used as an evidence-based starting point for this study. In total, 35 experts (hand therapists and hand surgeons selected by the national member associations of their European federations and physical medicine and rehabilitation physicians) participated in the Delphi consensus strategy. Each Delphi round consisted of a questionnaire, an analysis, and a feedback report.\nRESULTS: Consensus was achieved on the description, symptoms, and diagnosis of de Quervain disease. The experts agreed that patients with this disorder should always receive instructions and that these instructions should be combined with another form of treatment and should not be used as a sole treatment. Instructions combined with nonsteroidal anti-inflammatory drugs (NSAIDs), splinting, NSAIDs plus splinting, corticosteroid injection, corticosteroid injections plus splinting, or surgery were considered suitable treatment options. Details on the use of instructions, NSAIDs, splinting, corticosteroid injections, and surgery were described. Main factors for selecting one of these treatment options (ie, severity and duration of the disorder, previous treatments given) were identified. A relationship between the severity and duration of the disorder and the choice of therapy was indicated by the experts and reported in the guideline.\nLIMITATIONS: One of the limitations of a Delphi method is its inability to forecast future developments. It investigated current opinions of the treatment of people with de Quervain disease.\nCONCLUSIONS: This multidisciplinary treatment guideline may help in the treatment of and research on de Quervain disease.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't",
+   "Systematic Review"
+  ],
+  "mesh": [
+   "Consensus",
+   "De Quervain Disease",
+   "Delphi Technique",
+   "Europe",
+   "Humans",
+   "Practice Guidelines as Topic"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 78,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed"
+  ],
+  "pontuacao": 66.4,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2014, 12 ano(s) (+4,6 de 20)",
+   "Citações: 78 (6,5/ano, OpenAlex) (+9,3 de 15)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 1 de 2 blocos no título, 1 só no resumo/MeSH (+7,5 de 10)"
+  ],
+  "revista_completa": "Physical therapy",
+  "volume": "94",
+  "fasciculo": "8",
+  "paginas": "1095-110",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "3_de_quervain:rs",
+   "3_de_quervain:diretriz",
+   "3_de_quervain:base"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 1,
+  "criterios_dedup": [],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "tipo de publicação PubMed: Systematic Review",
+  "citacoes_por_ano": 6.5,
+  "decisao": "incluir",
+  "papel": "âncora da aula",
+  "observacoes": "Diretriz de consenso multidisciplinar europeia (HANDGUIDE) para De Quervain: orientação, AINE, órtese, injeção e cirurgia escolhidos por gravidade e duração (resumo). Âncora do caso da De Quervain.",
+  "aula": "3",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Zwerus2018",
+  "titulo": "Physical examination of the elbow, what is the evidence? A systematic literature review",
+  "autores": [
+   "Zwerus EL",
+   "Somford MP",
+   "Maissan F",
+   "Heisen J",
+   "Eygendaal D",
+   "van den Bekerom MP"
+  ],
+  "primeiro_autor": "Zwerus",
+  "ano": 2018,
+  "revista": "Br J Sports Med",
+  "issn": [
+   "1473-0480",
+   "0306-3674"
+  ],
+  "doi": "10.1136/bjsports-2016-096712",
+  "pmid": "28249855",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "OBJECTIVE: Primary to provide an overview of diagnostic accuracy for clinical tests for common elbow (sport) injuries, secondary accompanied by reproducible instructions to perform these tests.\nDESIGN: A systematic literature review according to the PRISMA statement.\nDATA SOURCES: A comprehensive literature search was performed in MEDLINE via PubMed and EMBASE.\nELIGIBILITY CRITERIA: We included studies reporting diagnostic accuracy and a description on the performance for elbow tests, targeting the following conditions: distal biceps rupture, triceps rupture, posteromedial impingement, medial collateral ligament (MCL) insufficiency, posterolateral rotatory instability (PLRI), lateral epicondylitis and medial epicondylitis. After identifying the articles, the methodological quality was assessed using the QUADAS-2 checklist.\nRESULTS: Our primary literature search yielded 1144 hits. After assessment 10 articles were included: six for distal biceps rupture, one for MCL insufficiency, two for PLRI and one for lateral epicondylitis. No articles were selected for triceps rupture, posteromedial impingement and medial epicondylitis. Quality assessment showed high or unclear risk of bias in nine studies. We described 24 test procedures of which 14 tests contained data on diagnostic accuracy.\nCONCLUSIONS: Numerous clinical tests for the elbow were described in literature, seldom accompanied with data on diagnostic accuracy. None of the described tests can provide adequate certainty to rule in or rule out a disease based on sufficient diagnostic accuracy.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Systematic Review"
+  ],
+  "mesh": [
+   "Humans",
+   "Joint Instability",
+   "Observational Studies as Topic",
+   "Physical Examination",
+   "Rupture",
+   "Tennis Elbow",
+   "Elbow Injuries"
+  ],
+  "desenho": "Revisao sistematica/meta-analise",
+  "citacoes": 114,
+  "acesso_aberto": true,
+  "licenca": "other-oa",
+  "url_pdf_aberto": "https://pure.amsterdamumc.nl/files/158378414/Physical-examination-of-the-elbow-what-is-the-evidence-a-systematic-literature-review.pdf",
+  "fontes": [
+   "pubmed"
+  ],
+  "pontuacao": 65.8,
+  "motivos_pontuacao": [
+   "Desenho: Revisao sistematica/meta-analise (+35,0 de 35)",
+   "Atualidade: 2018, 8 ano(s) (+10,8 de 20)",
+   "Citações: 114 (14,2/ano, OpenAlex) (+12,5 de 15)",
+   "Aderência ao tema: 1 de 2 blocos no título, 1 só no resumo/MeSH (+7,5 de 10)"
+  ],
+  "revista_completa": "British journal of sports medicine",
+  "volume": "52",
+  "fasciculo": "19",
+  "paginas": "1253-1260",
+  "palavras_chave": [
+   "diagnosis",
+   "elbow",
+   "examination",
+   "sporting injuries",
+   "testing"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "1a_cotovelo_medial:rs",
+   "1a_cotovelo_medial:base"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": false,
+  "registros_fundidos": 1,
+  "criterios_dedup": [],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "green",
+  "url_oa": "https://pure.amsterdamumc.nl/files/158378414/Physical-examination-of-the-elbow-what-is-the-evidence-a-systematic-literature-review.pdf",
+  "desenho_motivo": "tipo de publicação PubMed: Systematic Review",
+  "citacoes_por_ano": 14.2,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "RS de acurácia dos testes do cotovelo: nenhum estudo elegível para epicondilite medial e um só para insuficiência do LCM (resumo). Mostra que o diagnóstico da dor medial se apoia em poucos dados; acesso aberto.",
+  "aula": "3",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Fukunaga2023",
+  "titulo": "Flexor-Pronator Mass Training Exercises Selectively Activate Forearm Musculature",
+  "autores": [
+   "Fukunaga T",
+   "Fedge C",
+   "Tyler T",
+   "Mullaney M",
+   "Schmitt B",
+   "Orishimo K",
+   "McHugh M",
+   "Nicholas S"
+  ],
+  "primeiro_autor": "Fukunaga",
+  "ano": 2023,
+  "revista": "Int J Sports Phys Ther",
+  "issn": [
+   "2159-2896"
+  ],
+  "doi": "10.26603/001c.68073",
+  "pmid": "36793573",
+  "pmcid": "PMC9897040",
+  "scopus_eid": null,
+  "resumo": "PURPOSE/HYPOTHESIS: The flexor-pronator mass of the forearm contributes dynamic stability to the medial elbow. Training this muscle group is essential for overhead athletes, however, there is lack of evidence supporting use of training exercises. The purpose of this study was to measure the extent of EMG activity of the flexor pronator musculature during two distinct forearm strengthening exercises using resistance bands. It was hypothesized that two exercises would elicit at least moderate level of muscle activity, but the activation would be different in the pronator versus the flexor muscles.\nMATERIALS/METHODS: 10 healthy subjects (all males, age 36±12 years) were included. Surface EMG activity was measured on three muscles of the dominant-side forearm: flexor carpi ulnaris (FCP), flexor digitorum superficialis (FDS), and pronator teres (PT). After measurement of maximal voluntary contraction (MVC) for each muscle, subjects performed wrist ulnar deviation and forearm pronation exercises using elastic band resistance. Resistance was set to elicit moderate exertion (5/10 on the Borg CR10 scale). Order of exercise was randomized and three repetitions of each exercise were performed. Mean peak EMG activity in each muscle across repetitions during the eccentric phase of each exercise was calculated and expressed as a percentage of MVC. Moderate level of activity was defined as 21% of MVC or higher. Peak normalized EMG activity in each muscle was compared using two-way (exercise x muscle) repeated-measures ANOVA with post-hoc pairwise comparisons if a significant interaction was found.\nRESULTS: There was an exercise by muscle interaction effect (p<0.001). The ulnar deviation exercise selectively activated FCU (40.3%) versus FDS (19.5%, p=0.009) and PT (21.5%, p=0.022). Conversely, the pronation exercise selectively activated FDS (63.8%, p=0.002) and PT (73.0%, p=0.001) versus FDS (27.4%).\nCONCLUSION: The ulnar deviation and pronation exercises using elastic band resistance studied targeted and activated the flexor-pronator mass musculature. The ulnar deviation and pronation exercises using elastic band resistance are practical and effective means of training the flexor-pronator mass. These exercises can be readily prescribed to athletes and patients as part of their arm care program.",
+  "tipos_publicacao": [
+   "Journal Article"
+  ],
+  "mesh": [],
+  "desenho": "ECR",
+  "citacoes": 10,
+  "acesso_aberto": true,
+  "licenca": "cc-by-nc",
+  "url_pdf_aberto": "https://ijspt.scholasticahq.com/article/68073.pdf",
+  "fontes": [
+   "pubmed"
+  ],
+  "pontuacao": 65.0,
+  "motivos_pontuacao": [
+   "Desenho: ECR (+29,8 de 35)",
+   "Atualidade: 2023, 3 ano(s) (+18,5 de 20)",
+   "Citações: 10 (3,3/ano, OpenAlex) (+6,8 de 15)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "International journal of sports physical therapy",
+  "volume": "18",
+  "fasciculo": "1",
+  "paginas": "208-214",
+  "palavras_chave": [
+   "elbow",
+   "emg",
+   "forearm",
+   "overhead athlete",
+   "rehabilitation"
+  ],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "PubMed-not-MEDLINE",
+  "variantes_pubmed": [
+   "1a_cotovelo_medial:ecr",
+   "1a_cotovelo_medial:base"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": false,
+  "registros_fundidos": 1,
+  "criterios_dedup": [],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "diamond",
+  "url_oa": "https://ijspt.scholasticahq.com/article/68073.pdf",
+  "desenho_motivo": "resumo: 'was randomized'",
+  "citacoes_por_ano": 3.3,
+  "decisao": "incluir",
+  "papel": "mecanismo",
+  "observacoes": "EMG de dois exercícios com faixa elástica para a massa flexora-pronadora (FUC, FSD, pronador redondo) (resumo): base mecânica para prescrever carga ao cotovelo medial e ao arremessador; acesso aberto (PMC).",
+  "aula": "3",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "ODriscoll2005",
+  "titulo": "The \"moving valgus stress test\" for medial collateral ligament tears of the elbow",
+  "autores": [
+   "O'Driscoll SW",
+   "Lawton RL",
+   "Smith AM"
+  ],
+  "primeiro_autor": "O'Driscoll",
+  "ano": 2005,
+  "revista": "Am J Sports Med",
+  "issn": [
+   "0363-5465",
+   "1552-3365"
+  ],
+  "doi": "10.1177/0363546504267804",
+  "pmid": "15701609",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: The diagnosis of a painful partial tear of the medial collateral ligament in overhead-throwing athletes is challenging, even for experienced elbow surgeons and despite the use of sophisticated imaging techniques.\nHYPOTHESIS: The \"moving valgus stress test\" is an accurate physical examination technique for diagnosis of medial collateral ligament attenuation in the elbow.\nSTUDY DESIGN: Cohort study (diagnosis); Level of evidence, 2.\nMETHODS: Twenty-one patients underwent surgical intervention for medial elbow pain due to medial collateral ligament insufficiency or other abnormality of chronic valgus overload, and they were assessed preoperatively with an examination called the moving valgus stress test. To perform the moving valgus stress test, the examiner applies and maintains a constant moderate valgus torque to the fully flexed elbow and then quickly extends the elbow. The test is positive if the medial elbow pain is reproduced at the medial collateral ligament and is at maximum between 120 degrees and 70 degrees.\nRESULTS: The moving valgus stress test was highly sensitive (100%, 17 of 17 patients) and specific (75%, 3 of 4 patients) when compared to assessment of the medial collateral ligament by surgical exploration or arthroscopic valgus stress testing. The mean shear range (ie, the arc within which pain was produced with the moving valgus stress test) was 120 degrees to 70 degrees. The mean angle at which pain was at a maximum was 90 degrees of elbow flexion.\nCONCLUSIONS: The moving valgus stress test is an accurate physical examination technique that, when performed and interpreted correctly, is highly sensitive for medial elbow pain arising from the medial collateral ligament.",
+  "tipos_publicacao": [
+   "Journal Article"
+  ],
+  "mesh": [
+   "Adolescent",
+   "Adult",
+   "Arthroscopy",
+   "Athletic Injuries",
+   "Baseball",
+   "Biomechanical Phenomena",
+   "Collateral Ligaments",
+   "Female",
+   "Humans",
+   "Joint Instability",
+   "Male",
+   "Middle Aged",
+   "Physical Examination",
+   "Sensitivity and Specificity",
+   "Elbow Injuries"
+  ],
+  "desenho": "Estudo de acuracia diagnostica",
+  "citacoes": 343,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "crossref"
+  ],
+  "pontuacao": 64.1,
+  "motivos_pontuacao": [
+   "Desenho: Estudo de acuracia diagnostica (+21,0 de 35)",
+   "Atualidade: 2005, 21 ano(s) (+0,0 de 20)",
+   "Citações: 343 (16,3/ano, OpenAlex) (+13,1 de 15)",
+   "Revista-alvo: Am J Sports Med (+10)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "The American journal of sports medicine",
+  "volume": "33",
+  "fasciculo": "2",
+  "paginas": "231-9",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "1a_cotovelo_medial:base",
+   "1a_cotovelo_medial:revistas",
+   "1b_diferencial_medial:base",
+   "1b_diferencial_medial:revistas"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "título/MeSH indicam acurácia diagnóstica",
+  "citacoes_por_ano": 16.3,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "Teste de estresse em valgo em movimento contra exploração cirúrgica/artroscopia: sensibilidade 100% (17/17) e especificidade 75% (3/4) (resumo). Amostra minúscula de não lesionados: discutir o IC largo na aula.",
+  "aula": "3",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Patel1992",
+  "titulo": "Trigger fingers and thumb: when to splint, inject, or operate",
+  "autores": [
+   "Patel MR",
+   "Bassini L"
+  ],
+  "primeiro_autor": "Patel",
+  "ano": 1992,
+  "revista": "J Hand Surg Am",
+  "issn": [
+   "0363-5023"
+  ],
+  "doi": "10.1016/0363-5023(92)90124-8",
+  "pmid": "1538090",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "Fifty trigger fingers were treated by splinting of the metacarpophalangeal joint at 10 to 15 degrees of flexion for an average of 6 weeks (range, 3 to 9 weeks). Another 50 trigger fingers were injected with 0.5 ml of betamethasone sodium phosphate and acetate suspension (Celestone) and 0.5 ml of lidocaine. All patients were followed up for a minimum of 1 year (range, 1 to 4 years). Treatment was successful in 33 (66%) of the splinted digits and 42 (84%) of the injected digits. Fifty percent of the 10 splinted thumbs and 70% of the 40 splinted fingers had a successful outcome. Of the 17 unsuccessfully treated digits in the splinted group, 15 were later cured with injections and 2 required surgery. All of the 7 unsuccessfully treated digits in the injected group were cured with surgery. Patients with marked triggering, symptoms of more than 6 months' duration, and multiple involved digits had a higher rate of failure in both groups. Splinting offers an alternative for patients who have a strong objection to cortisone injection.",
+  "tipos_publicacao": [
+   "Comparative Study",
+   "Journal Article"
+  ],
+  "mesh": [
+   "Cortisone",
+   "Finger Joint",
+   "Follow-Up Studies",
+   "Humans",
+   "Injections",
+   "Joint Deformities, Acquired",
+   "Splints",
+   "Thumb",
+   "Treatment Outcome"
+  ],
+  "desenho": "Coorte",
+  "citacoes": 221,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "crossref"
+  ],
+  "pontuacao": 60.3,
+  "motivos_pontuacao": [
+   "Desenho: Coorte (+21,0 de 35)",
+   "Atualidade: 1992, 34 ano(s) (+0,0 de 20)",
+   "Citações: 221 (6,5/ano, OpenAlex) (+9,3 de 15)",
+   "Revista-alvo: J Hand Surg Am (+10)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "The Journal of hand surgery",
+  "volume": "17",
+  "fasciculo": "1",
+  "paginas": "110-3",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "2_dedo_gatilho:base",
+   "2_dedo_gatilho:revistas"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "resumo/MeSH indicam estudo longitudinal ou retrospectivo",
+  "citacoes_por_ano": 6.5,
+  "decisao": "incluir",
+  "papel": "aplicação clínica",
+  "observacoes": "Clássico de quando imobilizar, injetar ou operar: órtese da MCF com 66% de sucesso, injeção 84%; travamento marcado, >6 meses e vários dedos predizem falha da órtese (resumo). Liga graduação a decisão.",
+  "aula": "3",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Huisstede2014b",
+  "titulo": "Multidisciplinary consensus guideline for managing trigger finger: results from the European HANDGUIDE Study",
+  "autores": [
+   "Huisstede BM",
+   "Hoogvliet P",
+   "Coert JH",
+   "Fridén J",
+   "European HANDGUIDE Group"
+  ],
+  "primeiro_autor": "Huisstede",
+  "ano": 2014,
+  "revista": "Phys Ther",
+  "issn": [
+   "1538-6724",
+   "0031-9023"
+  ],
+  "doi": "10.2522/ptj.20130135",
+  "pmid": "24810861",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: Trigger finger is characterized by sometimes painful snapping or locking when flexing the finger. Although trigger finger is frequently seen in clinical practice, no standard treatment protocol has been established as \"best practice.\"\nOBJECTIVE: The aim of this study was to achieve consensus on a multidisciplinary treatment guideline for trigger finger.\nDESIGN: A European Delphi consensus strategy was initiated. Systematic reviews reporting on the effectiveness of surgical and nonsurgical interventions were conducted and used as an evidence-based starting point for this study.\nSETTING: In total, 35 experts (hand therapists and hand surgeons selected by the national member associations of their European federations and physical medicine and rehabilitation physicians) participated in the Delphi consensus strategy.\nMEASUREMENTS: Each Delphi round consisted of a questionnaire, an analysis, and a feedback report.\nRESULTS: After 4 Delphi rounds, consensus was achieved on the description, symptoms, and diagnosis of trigger finger. The experts agreed that use of orthoses (splinting), corticosteroid injections, corticosteroid injections plus use of orthoses, and surgery are suitable treatment options. Relevant details for the use of orthoses, corticosteroid injections, and surgery were described. Main factors for selecting one of these treatment options were identified as severity and duration of the disease and previous treatments received. A relationship between the severity and duration of the disorder and the choice of therapy was indicated by the experts and reported on in the guideline.\nLIMITATIONS: The results represent a group's opinion at a given point in time. When the evidence for the effectiveness of interventions increases, experts' opinions will change, and the guideline should be re-evaluated and adjusted in view of these new insights.\nCONCLUSIONS: This multidisciplinary treatment guideline may help involved therapists and physicians in the treatment of trigger finger and indicate areas needing additional research.",
+  "tipos_publicacao": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Consensus",
+   "Delphi Technique",
+   "Europe",
+   "Humans",
+   "Patient Care Team",
+   "Practice Guidelines as Topic",
+   "Professional Competence",
+   "Trigger Finger Disorder"
+  ],
+  "desenho": "Consenso/Delphi",
+  "citacoes": 166,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed"
+  ],
+  "pontuacao": 59.0,
+  "motivos_pontuacao": [
+   "Desenho: Consenso/Delphi (+24,5 de 35)",
+   "Atualidade: 2014, 12 ano(s) (+4,6 de 20)",
+   "Citações: 166 (13,8/ano, OpenAlex) (+12,4 de 15)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 1 de 2 blocos no título, 1 só no resumo/MeSH (+7,5 de 10)"
+  ],
+  "revista_completa": "Physical therapy",
+  "volume": "94",
+  "fasciculo": "10",
+  "paginas": "1421-33",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "2_dedo_gatilho:diretriz",
+   "2_dedo_gatilho:base"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 1,
+  "criterios_dedup": [],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "desenho declarado pelos autores no resumo: 'A European Delphi consensus strategy was initiated'",
+  "citacoes_por_ano": 13.8,
+  "decisao": "incluir",
+  "papel": "âncora da aula",
+  "observacoes": "Diretriz de consenso multidisciplinar europeia (HANDGUIDE) para dedo em gatilho: escolha do tratamento pela gravidade, duração e tratamentos prévios (resumo). Âncora do caso do gatilho; Phys Ther.",
+  "aula": "3",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Stahl1997c",
+  "titulo": "The efficacy of an injection of steroids for medial epicondylitis. A prospective study of sixty elbows",
+  "autores": [
+   "Stahl S",
+   "Kaufman T"
+  ],
+  "primeiro_autor": "Stahl",
+  "ano": 1997,
+  "revista": "J Bone Joint Surg Am",
+  "issn": [
+   "0021-9355",
+   "1058-2436",
+   "1535-1386"
+  ],
+  "doi": "10.2106/00004623-199711000-00006",
+  "pmid": "9384424",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "We report the details of a prospective, randomized, double-blind study that was undertaken to analyze the short-term and long-term effects of the local injection of methylprednisolone to treat medial epicondylitis. Fifty-eight patients (sixty elbows) were assigned to receive a single injection of 1 per cent lidocaine with either forty milligrams of methylprednisolone (experimental group) or saline solution (control group); both groups were also managed with physical therapy and the use of non-steroidal anti-inflammatory drugs. The two groups were not significantly different with regard to the age and gender of the patients, the duration of the symptoms, the degree of pain before the injection, or the number of dominant upper limbs involved. Six weeks after the injection, the experimental group had significantly less pain than the control group (p < 0.03), as determined with a modification of the grading system of Nirschl and Pettrone. However, the groups did not differ with regard to pain at three months and at one year. The intensity of pain, as measured on a visual-analog scale, did not differ between the two groups six weeks and one year after the injection. We believe that the improvement observed in both groups primarily reflects the natural history of the disorder, and we conclude that the local injection of steroids provides only short-term benefits in the treatment of medial epicondylitis.",
+  "tipos_publicacao": [
+   "Clinical Trial",
+   "Journal Article",
+   "Randomized Controlled Trial"
+  ],
+  "mesh": [
+   "Adult",
+   "Age Factors",
+   "Anesthetics, Local",
+   "Anti-Inflammatory Agents",
+   "Anti-Inflammatory Agents, Non-Steroidal",
+   "Double-Blind Method",
+   "Elbow Joint",
+   "Female",
+   "Follow-Up Studies",
+   "Glucocorticoids",
+   "Humans",
+   "Humerus",
+   "Injections, Intra-Articular",
+   "Joint Diseases",
+   "Lidocaine",
+   "Longitudinal Studies",
+   "Male",
+   "Methylprednisolone",
+   "Pain",
+   "Pain Measurement",
+   "Physical Therapy Modalities",
+   "Placebos",
+   "Prospective Studies",
+   "Range of Motion, Articular",
+   "Sex Factors",
+   "Sodium Chloride"
+  ],
+  "desenho": "ECR",
+  "citacoes": 182,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 58.9,
+  "motivos_pontuacao": [
+   "Desenho: ECR (+29,8 de 35)",
+   "Atualidade: 1997, 29 ano(s) (+0,0 de 20)",
+   "Citações: 182 (6,3/ano, OpenAlex) (+9,1 de 15)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "The Journal of bone and joint surgery. American volume",
+  "volume": "79",
+  "fasciculo": "11",
+  "paginas": "1648-52",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "article",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "1a_cotovelo_medial:ecr",
+   "1a_cotovelo_medial:base"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "26001427",
+    "relacao": "citado pelo sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "tipo de publicação PubMed: Randomized Controlled Trial",
+  "citacoes_por_ano": 6.3,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "Único ECR de corticoide na tendinopatia medial: benefício só às 6 semanas, sem diferença em 3 meses e 1 ano (resumo); os autores atribuem a melhora ao curso natural. Âncora da decisão 'injetar ou não' no caso do cotovelo medial.",
+  "aula": "3",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Descatha2003",
+  "titulo": "Medial epicondylitis in occupational settings: prevalence, incidence and associated risk factors",
+  "autores": [
+   "Descatha A",
+   "Leclerc A",
+   "Chastang JF",
+   "Roquelaure Y",
+   "Study Group on Repetitive Work"
+  ],
+  "primeiro_autor": "Descatha",
+  "ano": 2003,
+  "revista": "J Occup Environ Med",
+  "issn": [
+   "1076-2752",
+   "1536-5948"
+  ],
+  "doi": "10.1097/01.jom.0000085888.37273.d9",
+  "pmid": "14506342",
+  "pmcid": "PMC4850209",
+  "scopus_eid": null,
+  "resumo": "Because medial epicondylitis has not been studied alone, we investigated its links between personal and occupational factors in repetitive work and its course. A total of 1757 workers were examined by an occupational health physician in 1993-1994. Five hundred ninety-eight of them were reexamined 3 years later. Prevalence was between 4% and 5%, with an annual incidence estimate at 1.5%. Forceful work was a risk factor (odds ratio [OR], 1.95; confidence interval [CI] = 1.15-3.32), but not exposure to repetitive work (OR, 1.11; CI = 0.59-2.10). Workers with medial epicondylitis had a significantly higher prevalence of other work-related upper-limb musculoskeletal disorders (WRMD). Risk factors differed for medial and lateral epicondylitis. The prognosis for medial epicondylitis in this population was good with a 3-year recovery rate at 81%. Medial epicondylitis was clearly associated with forceful work and other upper-limb WRMD, and its prognosis was good.",
+  "tipos_publicacao": [
+   "Comparative Study",
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Adult",
+   "Age Distribution",
+   "Confidence Intervals",
+   "Cross-Sectional Studies",
+   "Cumulative Trauma Disorders",
+   "Female",
+   "Follow-Up Studies",
+   "France",
+   "Humans",
+   "Male",
+   "Middle Aged",
+   "Occupational Diseases",
+   "Occupational Health",
+   "Odds Ratio",
+   "Pain Measurement",
+   "Prevalence",
+   "Probability",
+   "Risk Factors",
+   "Severity of Illness Index",
+   "Sex Distribution",
+   "Surveys and Questionnaires",
+   "Tennis Elbow"
+  ],
+  "desenho": "Transversal",
+  "citacoes": 144,
+  "acesso_aberto": true,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed",
+   "openalex"
+  ],
+  "pontuacao": 40.6,
+  "motivos_pontuacao": [
+   "Desenho: Transversal (+14,0 de 35)",
+   "Atualidade: 2003, 23 ano(s) (+0,0 de 20)",
+   "Citações: 144 (6,3/ano, OpenAlex) (+9,1 de 15)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 1 de 2 blocos no título, 1 só no resumo/MeSH (+7,5 de 10)"
+  ],
+  "revista_completa": "Journal of occupational and environmental medicine",
+  "volume": "45",
+  "fasciculo": "9",
+  "paginas": "993-1001",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "article",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "1a_cotovelo_medial:base",
+   "manual"
+  ],
+  "origem_citacao": [
+   {
+    "sentinela": "26001427",
+    "relacao": "citado pelo sentinela"
+   }
+  ],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 2,
+  "criterios_dedup": [
+   "doi",
+   "pmid"
+  ],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "green",
+  "url_oa": "https://www.ncbi.nlm.nih.gov/pmc/articles/4850209",
+  "desenho_motivo": "título ou MeSH: transversal",
+  "citacoes_por_ano": 6.3,
+  "decisao": "incluir",
+  "papel": "contexto",
+  "observacoes": "Citado na aula base (slide 141): prevalência ocupacional 4-5%, incidência 1,5%/ano, trabalho com força como fator de risco e 81% de recuperação em 3 anos (resumo); sustenta o curso natural favorável e o exame do membro inteiro (comorbidades).",
+  "aula": "3",
+  "origem": "aula base"
+ },
+ {
+  "chave": "Beekman2009",
+  "titulo": "The diagnostic value of provocative clinical tests in ulnar neuropathy at the elbow is marginal",
+  "autores": [
+   "Beekman R",
+   "Schreuder AH",
+   "Rozeman CA",
+   "Koehler PJ",
+   "Uitdehaag BM"
+  ],
+  "primeiro_autor": "Beekman",
+  "ano": 2009,
+  "revista": "J Neurol Neurosurg Psychiatry",
+  "issn": [
+   "1468-330X",
+   "0022-3050"
+  ],
+  "doi": "10.1136/jnnp.2009.180844",
+  "pmid": "19553231",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "BACKGROUND: Provocative clinical tests are often performed in the diagnosis of ulnar neuropathy at the elbow (UNE) although the evidence for the usefulness of these tests is limited. The aim of this study was to determine the diagnostic value of provocative clinical tests in the diagnosis of UNE in a relevant spectrum of patients and controls.\nMETHODS: A prospective cohort study was performed in consecutive patients clinically suspected of having UNE. All patients underwent a neurological examination and four commonly used provocative clinical tests (Tinel's test, flexion compression test, palpating for local ulnar nerve tenderness and nerve thickening). Subsequently, in all patients a reference standard test comprising electrophysiological studies and neurosonography was independently assessed.\nRESULTS: 192 eligible patients completed the study protocol. UNE was diagnosed in 137 and an alternative diagnosis was made in 55 patients. The sensitivity, specificity, and positive and negative predictive values were as follows: Tinel's test 62%, 53%, 77% and 30%; flexion compression test 61%, 40%, 72% and 29%; palpating for nerve thickening 28%, 87%, 84% and 33%; and palpating for nerve tenderness 32%, 80%, 80% and 32%. Logistic regression and receiver operating characteristic curves showed that the added value of one or more provocative tests over routine clinical examination is minimal.\nCONCLUSION: The diagnostic value of provocative clinical tests in UNE is poor.",
+  "tipos_publicacao": [
+   "Journal Article"
+  ],
+  "mesh": [
+   "Adult",
+   "Aged",
+   "Aged, 80 and over",
+   "Diagnosis, Differential",
+   "Elbow",
+   "False Negative Reactions",
+   "False Positive Reactions",
+   "Female",
+   "Humans",
+   "Male",
+   "Middle Aged",
+   "Motor Neurons",
+   "Neural Conduction",
+   "Palpation",
+   "Prospective Studies",
+   "ROC Curve",
+   "Sensitivity and Specificity",
+   "Ulnar Nerve",
+   "Ulnar Nerve Compression Syndromes",
+   "Ulnar Neuropathies",
+   "Ultrasonography",
+   "Young Adult"
+  ],
+  "desenho": "Estudo de acuracia diagnostica",
+  "citacoes": 86,
+  "acesso_aberto": true,
+  "licenca": "other-oa",
+  "url_pdf_aberto": "https://pure.amsterdamumc.nl/files/111171880/237958.pdf",
+  "fontes": [
+   "pubmed"
+  ],
+  "pontuacao": 39.3,
+  "motivos_pontuacao": [
+   "Desenho: Estudo de acuracia diagnostica (+21,0 de 35)",
+   "Atualidade: 2009, 17 ano(s) (+0,0 de 20)",
+   "Citações: 86 (5,1/ano, OpenAlex) (+8,3 de 15)",
+   "Aderência ao tema: 2 de 2 blocos no título, 0 só no resumo/MeSH (+10,0 de 10)"
+  ],
+  "revista_completa": "Journal of neurology, neurosurgery, and psychiatry",
+  "volume": "80",
+  "fasciculo": "12",
+  "paginas": "1369-74",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "1b_diferencial_medial:base"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": false,
+  "registros_fundidos": 1,
+  "criterios_dedup": [],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "green",
+  "url_oa": "https://pure.amsterdamumc.nl/files/111171880/237958.pdf",
+  "desenho_motivo": "título/MeSH indicam acurácia diagnóstica",
+  "citacoes_por_ano": 5.1,
+  "decisao": "incluir",
+  "papel": "evidência principal",
+  "observacoes": "Coorte diagnóstica prospectiva (192 pacientes) dos testes provocativos na neuropatia ulnar no cotovelo contra ENMG e ultrassom: valor marginal (resumo). Ensina a não confiar no Tinel isolado e quando pedir exame.",
+  "aula": "3",
+  "origem": "atualizacao"
+ },
+ {
+  "chave": "Elliott1992",
+  "titulo": "Finkelstein's test: a descriptive error that can produce a false positive",
+  "autores": [
+   "Elliott BG"
+  ],
+  "primeiro_autor": "Elliott",
+  "ano": 1992,
+  "revista": "J Hand Surg Br",
+  "issn": [
+   "0266-7681"
+  ],
+  "doi": "10.1016/s0266-7681(05)80280-3",
+  "pmid": "1402284",
+  "pmcid": null,
+  "scopus_eid": null,
+  "resumo": "Over the last three decades an error in performing Finkelstein's test has crept into the English literature in both text books and journals. This error can produce a false-positive, and if relied upon, a wrong diagnosis can be made, leading to inappropriate surgery.",
+  "tipos_publicacao": [
+   "Journal Article"
+  ],
+  "mesh": [
+   "False Positive Reactions",
+   "Humans",
+   "Physical Examination",
+   "Tenosynovitis"
+  ],
+  "desenho": "Outro",
+  "citacoes": 89,
+  "acesso_aberto": false,
+  "licenca": null,
+  "url_pdf_aberto": null,
+  "fontes": [
+   "pubmed"
+  ],
+  "pontuacao": 26.2,
+  "motivos_pontuacao": [
+   "Desenho: Outro (+5,2 de 35)",
+   "Atualidade: 1992, 34 ano(s) (+0,0 de 20)",
+   "Citações: 89 (2,6/ano, OpenAlex) (+5,9 de 15)",
+   "Artigo-sentinela (+10)",
+   "Aderência ao tema: 1 de 2 blocos no título, 0 só no resumo/MeSH (+5,0 de 10)"
+  ],
+  "revista_completa": "Journal of hand surgery (Edinburgh, Scotland)",
+  "volume": "17",
+  "fasciculo": "4",
+  "paginas": "481-2",
+  "palavras_chave": [],
+  "tipo_scopus": "",
+  "tipo_openalex": "",
+  "situacao_indexacao": "MEDLINE",
+  "variantes_pubmed": [
+   "3_de_quervain:base"
+  ],
+  "origem_citacao": [],
+  "retratado": false,
+  "sentinela": true,
+  "registros_fundidos": 1,
+  "criterios_dedup": [],
+  "citacoes_fonte": "OpenAlex",
+  "status_oa": "closed",
+  "url_oa": null,
+  "desenho_motivo": "desenho não identificado pelos metadados; confira no resumo",
+  "citacoes_por_ano": 2.6,
+  "decisao": "incluir",
+  "papel": "mecanismo",
+  "observacoes": "Mostra que o 'Finkelstein' dos livros é na verdade o Eichhoff (polegar fechado na mão + desvio ulnar), que produz falso positivo e cirurgia inadequada (resumo). Explica o porquê do falso positivo.",
+  "aula": "3",
+  "origem": "atualizacao"
+ }
+]

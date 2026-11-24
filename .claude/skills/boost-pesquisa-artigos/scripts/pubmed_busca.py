@@ -43,6 +43,18 @@ def parametros_base(cliente: Cliente) -> dict:
 
 # --------------------------------------------------------------------------- esearch
 
+def checar_sintaxe(consulta: str) -> list[str]:
+    """Erros que o PubMed conserta em silêncio (e às vezes do jeito errado)."""
+    avisos = []
+    sem_frases = re.sub(r'"[^"]*"', '""', consulta)
+    if consulta.count('"') % 2:
+        avisos.append("número ímpar de aspas na consulta: uma frase ficou aberta")
+    elif sem_frases.count("(") != sem_frases.count(")"):
+        avisos.append(f"parênteses desbalanceados ({sem_frases.count('(')} abertos, {sem_frases.count(')')} "
+                      f"fechados): o PubMed completa sozinho e a lógica pode não ser a que você quis")
+    return avisos
+
+
 def esearch(cliente: Cliente, consulta: str, ordem: str = "relevance", historico: bool = True,
             retmax: int = 0) -> dict:
     """Devolve total, tradução, avisos e as chaves do history server."""
@@ -54,9 +66,11 @@ def esearch(cliente: Cliente, consulta: str, ordem: str = "relevance", historico
         r = cliente.post(EUTILS + "esearch.fcgi", dados).json()
     except ValueError:
         raise ErroRede("O PubMed devolveu uma resposta que não é JSON (provável erro de sintaxe na consulta).")
-    res = r.get("esearchresult", {})
+    res = r.get("esearchresult", {}) if isinstance(r, dict) else {}
     if "ERROR" in res:
         raise ErroRede(f"O PubMed recusou a consulta: {res['ERROR']}")
+    if "count" not in res:
+        raise ErroRede("O PubMed devolveu uma resposta incompleta (sem contagem); tente de novo em alguns minutos.")
     avisos = []
     for origem in ("warninglist", "errorlist"):
         for chave, itens in (res.get(origem) or {}).items():
@@ -67,6 +81,7 @@ def esearch(cliente: Cliente, consulta: str, ordem: str = "relevance", historico
                      "fieldsnotfound": "campo inexistente"}
             for item in itens or []:
                 avisos.append(f"{nomes.get(chave, chave)}: {item}")
+    avisos += checar_sintaxe(consulta)
     traducao = res.get("querytranslation", "")
     if re.search(r"\[All Fields\]", traducao) and not re.search(r"\[(all fields|all)\]", consulta, re.I):
         avisos.append("há termo sem etiqueta de campo: o PubMed aplicou o mapeamento automático "
@@ -225,6 +240,8 @@ def efetch_ids(cliente: Cliente, pmids: list[str], lote: int = 200):
         novos, erros_lote = analisar_xml(xml)
         registros += novos
         erros += erros_lote
+        if len(pmids) > lote:
+            print(f"  baixados {min(inicio + lote, len(pmids))}/{len(pmids)}", file=sys.stderr)
     return registros, erros
 
 
@@ -526,8 +543,26 @@ def main(argv=None) -> int:
                      f"por '{args.ordem}'. Estreite a busca ou aumente --max.")
             print(f"  AVISO: {aviso}")
             execucao["avisos"].append(aviso)
-        registros, erros = efetch_historico(cliente, res["webenv"], res["query_key"], res["total"], args.max,
-                                            args.lote)
+        if res["total"] > args.max:
+            # O efetch pelo history server devolve na ordem padrão do PubMed (data), e não na ordem pedida
+            # no esearch: com corte, o "top 1000 por relevância" virava "os 1000 mais recentes" e os artigos
+            # clássicos ficavam de fora. Com corte, pega a lista de PMIDs já ordenada e baixa por ID.
+            limite = min(args.max, 9999)
+            if args.max > 9999:
+                print("  AVISO: a API do PubMed entrega no máximo 9.999 PMIDs por busca; baixando 9.999.")
+            try:
+                ids = esearch(cliente, consulta, ordem=args.ordem, historico=False, retmax=limite)["ids"]
+            except ErroRede as exc:
+                ids, erros_ids = [], [f"lote 1-{limite}: lista de PMIDs não veio ({exc})"]
+            else:
+                erros_ids = []
+            registros, erros = efetch_ids(cliente, ids, args.lote) if ids else ([], [])
+            erros = erros_ids + erros
+            ordem_ids = {p: i for i, p in enumerate(ids)}
+            registros.sort(key=lambda r: ordem_ids.get(r.get("pmid"), len(ordem_ids)))
+        else:
+            registros, erros = efetch_historico(cliente, res["webenv"], res["query_key"], res["total"], args.max,
+                                                args.lote)
         execucao["baixados"] = len(registros)
         execucao["novos"] = fundir(saida, registros, variante)
         execucao["avisos"] += erros
@@ -536,7 +571,8 @@ def main(argv=None) -> int:
               f"total acumulado: {len(saida['registros'])}")
         for e in erros:
             print(f"  aviso: {e}")
-        if len(registros) < min(res["total"], args.max):
+        # livro ignorado é esperado; lote que não veio ou XML ilegível deixam a variante incompleta
+        if any("de livro ignorado" not in e for e in erros) or (res["total"] and not registros):
             falhas += 1
             falharam.append(variante)
 
@@ -546,8 +582,9 @@ def main(argv=None) -> int:
     gravar_json(destino, saida)
     print(f"\nGravado: {destino} ({len(saida['registros'])} registros únicos, {len(saida['execucoes'])} execuções)")
     if falharam:
+        refazer = (f"--variante {','.join(falharam)}" if conceitos else "o mesmo comando")
         print(f"ATENÇÃO: variante(s) incompleta(s) por falha de rede: {', '.join(falharam)}. O arquivo está parcial. "
-              f"Rode de novo só o que faltou: --variante {','.join(falharam)} (o resultado se soma ao que já existe).")
+              f"Rode de novo {refazer} (o resultado se soma ao que já existe).")
     return 1 if falhas else 0
 
 

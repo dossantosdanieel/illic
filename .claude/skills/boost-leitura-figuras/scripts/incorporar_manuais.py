@@ -64,10 +64,19 @@ def casar(arquivo: Path, registros: list[dict]) -> tuple[dict | None, str, list[
         return None, "PDF sem camada de texto (digitalizado): não dá para identificar sozinho", []
     notas = []
     alvo = C.normalizar_texto(texto)
+    palavras = set(alvo.split())
     for r in registros:
-        cob = C.cobertura_titulo(r.get("titulo") or "", texto)
+        titulo = r.get("titulo") or ""
         autor = C.normalizar_texto(str(r.get("primeiro_autor") or "")).split()
-        bonus = 0.05 if autor and autor[-1] in alvo.split() else 0.0
+        tem_autor = bool(autor) and all(a in palavras for a in autor)
+        if C.titulo_curto(titulo):
+            # título curto: só a frase inteira conta (palavras soltas aparecem em qualquer artigo do tema)
+            cob = 1.0 if C.titulo_exato(titulo, texto) else 0.5 * C.cobertura_titulo(titulo, texto)
+            if cob == 1.0 and tem_autor:
+                return r, "título curto completo + sobrenome do primeiro autor na primeira página", []
+        else:
+            cob = C.cobertura_titulo(titulo, texto)
+        bonus = 0.05 if tem_autor else 0.0
         notas.append((min(cob + bonus, 1.0), r["chave"]))
     notas.sort(reverse=True)
     if notas:
@@ -77,7 +86,9 @@ def casar(arquivo: Path, registros: list[dict]) -> tuple[dict | None, str, list[
         if melhor[0] >= 0.85 and n_pal >= 4 and melhor[0] - segundo[0] >= 0.12:
             reg = next(r for r in registros if r["chave"] == melhor[1])
             return reg, f"título aproximado ({melhor[0]:.0%} das palavras do título na primeira página)", notas[:3]
-    return None, "nem DOI nem título bateram com segurança", notas[:3]
+    dois = C.achar_dois(inicio)
+    pista = f" (o PDF traz o DOI {dois[0]}, que não está nos registros)" if dois else ""
+    return None, "nem DOI nem título bateram com segurança" + pista, notas[:3]
 
 
 def main() -> int:
@@ -106,6 +117,10 @@ def main() -> int:
             C.sair(f"--forcar espera ARQUIVO=CHAVE, recebi: {item}")
         arq, chave = item.rsplit("=", 1)
         forcados[Path(arq.strip()).name] = chave.strip()
+    invalidas = sorted({c for c in forcados.values() if c not in por_chave})
+    if invalidas:  # chave digitada errada criaria um artigo órfão no manifest
+        C.sair(f"--forcar: chave(s) que não existem nos registros: {', '.join(invalidas)}. "
+               f"Chaves válidas: {', '.join(sorted(por_chave))}")
 
     arquivos = sorted(p for p in aula.manual.rglob("*") if p.is_file() and not p.name.startswith("."))
     if not arquivos:
@@ -123,8 +138,8 @@ def main() -> int:
         ranking: list[tuple[float, str]] = []
         if arq.name in forcados:
             chave = forcados[arq.name]
-            reg = por_chave.get(chave) or {"chave": chave, "titulo": None}
-            como = "forçado pelo usuário" + ("" if chave in por_chave else " (chave sem registro em selecionados.json)")
+            reg = por_chave[chave]
+            como = "forçado pelo usuário"
         else:
             try:
                 reg, como, ranking = casar(arq, registros)

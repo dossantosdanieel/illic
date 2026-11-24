@@ -1,0 +1,1153 @@
+[
+  {
+    "chave": "Karanasios2022",
+    "titulo": "Diagnostic accuracy of examination tests for lateral elbow tendinopathy (LET) - A systematic review",
+    "doi": "10.1016/j.jht.2021.02.002",
+    "pmid": "33814224",
+    "revista": "J Hand Ther",
+    "ano": 2022,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "35",
+    "numero": "4",
+    "paginas_artigo": "541-551",
+    "editora": "Elsevier (ScienceDirect)"
+  },
+  {
+    "chave": "Karanasios2021",
+    "titulo": "Exercise interventions in lateral elbow tendinopathy have better outcomes than passive interventions, but the effects are small: a systematic review and meta-analysis of 2123 subjects in 30 trials",
+    "doi": "10.1136/bjsports-2020-102525",
+    "pmid": "33148599",
+    "revista": "Br J Sports Med",
+    "ano": 2021,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "55",
+    "numero": "9",
+    "paginas_artigo": "477-485",
+    "editora": "BMJ"
+  },
+  {
+    "chave": "Wallis2024",
+    "titulo": "Manual therapy and exercise for lateral elbow pain",
+    "doi": "10.1002/14651858.cd013042.pub2",
+    "pmid": "38802121",
+    "pmcid": "PMC11129914",
+    "revista": "Cochrane Database Syst Rev",
+    "ano": 2024,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "há versão aberta, mas o download automático falhou nesta rede",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "artigo não está no repositório aberto do PMC"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://europepmc.org/articles/PMC11129914?pdf=render",
+        "resultado": "HTTP 403: o site exige navegador (desafio anti-robô); não contornado"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC11129914&blobtype=pdf",
+        "resultado": "o site exige navegador (desafio anti-robô); não contornado"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11129914/pdf/CD013042.pdf",
+        "resultado": "HTTP 403"
+      }
+    ],
+    "url_gratuita": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11129914/",
+    "volume": "5",
+    "numero": "7",
+    "paginas_artigo": "CD013042",
+    "editora": "Wiley"
+  },
+  {
+    "chave": "Lowdon2024",
+    "titulo": "Comparison of Interventions for Lateral Elbow Tendinopathy: A Systematic Review and Network Meta-Analysis for Patient-Rated Tennis Elbow Evaluation Pain Outcome",
+    "doi": "10.1016/j.jhsa.2024.03.007",
+    "pmid": "38678448",
+    "revista": "J Hand Surg Am",
+    "ano": 2024,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "nenhuma versão aberta encontrada",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "49",
+    "numero": "7",
+    "paginas_artigo": "639-648",
+    "editora": "Elsevier (ScienceDirect)"
+  },
+  {
+    "chave": "Karanasios2021b",
+    "titulo": "Clinical effectiveness of shockwave therapy in lateral elbow tendinopathy: systematic review and meta-analysis",
+    "doi": "10.1177/02692155211006860",
+    "pmid": "33813913",
+    "revista": "Clin Rehabil",
+    "ano": 2021,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "35",
+    "numero": "10",
+    "paginas_artigo": "1383-1398",
+    "editora": "SAGE"
+  },
+  {
+    "chave": "Lucado2019",
+    "titulo": "Do joint mobilizations assist in the recovery of lateral elbow tendinopathy? A systematic review and meta-analysis",
+    "doi": "10.1016/j.jht.2018.01.010",
+    "pmid": "29705077",
+    "revista": "J Hand Ther",
+    "ano": 2019,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "32",
+    "numero": "2",
+    "paginas_artigo": "262-276.e1",
+    "editora": "Elsevier (ScienceDirect)"
+  },
+  {
+    "chave": "Zwerus2018",
+    "titulo": "Physical examination of the elbow, what is the evidence? A systematic literature review",
+    "doi": "10.1136/bjsports-2016-096712",
+    "pmid": "28249855",
+    "revista": "Br J Sports Med",
+    "ano": 2018,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "há versão aberta, mas o download automático falhou nesta rede",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": "https://pure.amsterdamumc.nl/files/158378414/Physical-examination-of-the-elbow-what-is-the-evidence-a-systematic-literature-review.pdf",
+        "resultado": "pure.amsterdamumc.nl inacessível pelo proxy desta rede"
+      }
+    ],
+    "url_gratuita": "https://pure.amsterdamumc.nl/files/158378414/Physical-examination-of-the-elbow-what-is-the-evidence-a-systematic-literature-review.pdf",
+    "volume": "52",
+    "numero": "19",
+    "paginas_artigo": "1253-1260",
+    "editora": "BMJ"
+  },
+  {
+    "chave": "Ikonen2022",
+    "titulo": "Persistent Tennis Elbow Symptoms Have Little Prognostic Value: A Systematic Review and Meta-analysis",
+    "doi": "10.1097/corr.0000000000002058",
+    "pmid": "34874323",
+    "pmcid": "PMC8923574",
+    "revista": "Clin Orthop Relat Res",
+    "ano": 2022,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "há versão aberta, mas o download automático falhou nesta rede",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "artigo não está no repositório aberto do PMC"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://europepmc.org/articles/PMC8923574?pdf=render",
+        "resultado": "o site exige navegador (desafio anti-robô); não contornado"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC8923574&blobtype=pdf",
+        "resultado": "o site exige navegador (desafio anti-robô); não contornado"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "url_gratuita": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8923574/",
+    "volume": "480",
+    "numero": "4",
+    "paginas_artigo": "647-660",
+    "editora": "Wolters Kluwer (LWW)"
+  },
+  {
+    "chave": "Ma2024",
+    "titulo": "Therapeutic Effects of Dry Needling on Lateral Epicondylitis: An Updated Systematic Review and Meta-analysis",
+    "doi": "10.1016/j.apmr.2024.02.713",
+    "pmid": "38484834",
+    "revista": "Arch Phys Med Rehabil",
+    "ano": 2024,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "105",
+    "numero": "11",
+    "paginas_artigo": "2184-2197",
+    "editora": "Elsevier (ScienceDirect)"
+  },
+  {
+    "chave": "Vuvan2020",
+    "titulo": "Unsupervised Isometric Exercise versus Wait-and-See for Lateral Elbow Tendinopathy",
+    "doi": "10.1249/mss.0000000000002128",
+    "pmid": "31425384",
+    "revista": "Med Sci Sports Exerc",
+    "ano": 2020,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "52",
+    "numero": "2",
+    "paginas_artigo": "287-295",
+    "editora": "Wolters Kluwer (LWW) · ACSM"
+  },
+  {
+    "chave": "Rio2021",
+    "titulo": "Sensory Processing in People With and Without Tendinopathy: A Systematic Review With Meta-analysis of Local, Regional, and Remote Sites in Upper- and Lower-Limb Conditions",
+    "doi": "10.2519/jospt.2021.9417",
+    "pmid": "33383996",
+    "revista": "J Orthop Sports Phys Ther",
+    "ano": 2021,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "51",
+    "numero": "1",
+    "paginas_artigo": "12-26",
+    "editora": "JOSPT (Journal of Orthopaedic & Sports Physical Therapy)"
+  },
+  {
+    "chave": "Shahabi2020",
+    "titulo": "The effects of counterforce brace on pain in subjects with lateral elbow tendinopathy: A systematic review and meta-analysis of randomized controlled trials",
+    "doi": "10.1177/0309364620930618",
+    "pmid": "32635812",
+    "revista": "Prosthet Orthot Int",
+    "ano": 2020,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "44",
+    "numero": "5",
+    "paginas_artigo": "341-354",
+    "editora": "SAGE"
+  },
+  {
+    "chave": "Karjalainen2021",
+    "titulo": "Autologous blood and platelet-rich plasma injection therapy for lateral elbow pain",
+    "doi": "10.1002/14651858.cd010951.pub2",
+    "pmid": "34590307",
+    "pmcid": "PMC8481072",
+    "revista": "Cochrane Database Syst Rev",
+    "ano": 2021,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "há versão aberta, mas o download automático falhou nesta rede",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "artigo não está no repositório aberto do PMC"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://europepmc.org/articles/PMC8481072?pdf=render",
+        "resultado": "o site exige navegador (desafio anti-robô); não contornado"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC8481072&blobtype=pdf",
+        "resultado": "o site exige navegador (desafio anti-robô); não contornado"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "url_gratuita": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8481072/",
+    "volume": "9",
+    "numero": "9",
+    "paginas_artigo": "CD010951",
+    "editora": "Wiley"
+  },
+  {
+    "chave": "Bretschneider2022",
+    "titulo": "Work-relatedness of lateral epicondylitis: Systematic review including meta-analysis and GRADE work-relatedness of lateral epicondylitis",
+    "doi": "10.1002/ajim.23303",
+    "pmid": "34674287",
+    "pmcid": "PMC9297967",
+    "revista": "Am J Ind Med",
+    "ano": 2022,
+    "status": "ok",
+    "origem": "pmc",
+    "licenca": "cc-by-nc-nd",
+    "url_origem": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9297967.1/PMC9297967.1.pdf",
+    "arquivo": "pdf/Bretschneider2022.pdf",
+    "bytes": 1187559,
+    "paginas": 10,
+    "sha256": "7563a61a7cd7949fab563c95e192424cc160f178e9f52cc95c8899bceccab04c",
+    "confere_artigo": true,
+    "baixado_em": "2026-11-24T13:23:15+00:00",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9297967.1/PMC9297967.1.pdf",
+        "resultado": "ok"
+      }
+    ],
+    "volume": "65",
+    "numero": "1",
+    "paginas_artigo": "41-50",
+    "editora": "Wiley",
+    "texto": "texto/Bretschneider2022.md",
+    "texto_caracteres": 39989,
+    "figuras_detectadas": 5
+  },
+  {
+    "chave": "Couppe2022",
+    "titulo": "Effects of Heavy Slow Resistance Training Combined With Corticosteroid Injections or Tendon Needling in Patients With Lateral Elbow Tendinopathy: A 3-Arm Randomized Double-Blinded Placebo-Controlled Study",
+    "doi": "10.1177/03635465221110214",
+    "pmid": "35867777",
+    "revista": "Am J Sports Med",
+    "ano": 2022,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "50",
+    "numero": "10",
+    "paginas_artigo": "2787-2796",
+    "editora": "SAGE"
+  },
+  {
+    "chave": "Coombes2013",
+    "titulo": "Effect of corticosteroid injection, physiotherapy, or both on clinical outcomes in patients with unilateral lateral epicondylalgia: a randomized controlled trial",
+    "doi": "10.1001/jama.2013.129",
+    "pmid": "23385272",
+    "revista": "JAMA",
+    "ano": 2013,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "309",
+    "numero": "5",
+    "paginas_artigo": "461-469",
+    "editora": "JAMA Network"
+  },
+  {
+    "chave": "Coombes2010",
+    "titulo": "Efficacy and safety of corticosteroid injections and other injections for management of tendinopathy: a systematic review of randomised controlled trials",
+    "doi": "10.1016/s0140-6736(10)61160-9",
+    "pmid": "20970844",
+    "revista": "Lancet",
+    "ano": 2010,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "há versão aberta, mas o download automático falhou nesta rede",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": "http://www.thelancet.com/article/S0140673610611609/pdf",
+        "resultado": "www.thelancet.com inacessível pelo proxy desta rede"
+      }
+    ],
+    "url_gratuita": "http://www.thelancet.com/article/S0140673610611609/pdf",
+    "volume": "376",
+    "numero": "9754",
+    "paginas_artigo": "1751-1767",
+    "editora": "Elsevier (ScienceDirect)"
+  },
+  {
+    "chave": "Coombes2015b",
+    "titulo": "Management of Lateral Elbow Tendinopathy: One Size Does Not Fit All",
+    "doi": "10.2519/jospt.2015.5841",
+    "pmid": "26381484",
+    "revista": "J Orthop Sports Phys Ther",
+    "ano": 2015,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "http://www.jospt.org/doi/pdf/10.2519/jospt.2015.5841",
+        "resultado": "o JOSPT só entrega o PDF pelo navegador; baixar com a assinatura"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "45",
+    "numero": "11",
+    "paginas_artigo": "938-949",
+    "editora": "JOSPT (Journal of Orthopaedic & Sports Physical Therapy)"
+  },
+  {
+    "chave": "Bisset2006b",
+    "titulo": "Mobilisation with movement and exercise, corticosteroid injection, or wait and see for tennis elbow: randomised trial",
+    "doi": "10.1136/bmj.38961.584653.ae",
+    "pmid": "17012266",
+    "pmcid": "PMC1633771",
+    "revista": "BMJ",
+    "ano": 2006,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "há versão aberta, mas o download automático falhou nesta rede",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "artigo não está no repositório aberto do PMC"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://europepmc.org/articles/PMC1633771?pdf=render",
+        "resultado": "o site exige navegador (desafio anti-robô); não contornado"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC1633771&blobtype=pdf",
+        "resultado": "o site exige navegador (desafio anti-robô); não contornado"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": "https://www.bmj.com/content/bmj/333/7575/939.full.pdf",
+        "resultado": "www.bmj.com inacessível pelo proxy desta rede"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1633771/pdf/bmj33300939.pdf",
+        "resultado": "HTTP 403"
+      }
+    ],
+    "url_gratuita": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1633771/",
+    "volume": "333",
+    "numero": "7575",
+    "paginas_artigo": "939",
+    "editora": "BMJ"
+  },
+  {
+    "chave": "Smidt2002",
+    "titulo": "Corticosteroid injections, physiotherapy, or a wait-and-see policy for lateral epicondylitis: a randomised controlled trial",
+    "doi": "10.1016/s0140-6736(02)07811-x",
+    "pmid": "11879861",
+    "revista": "Lancet",
+    "ano": 2002,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "nenhuma versão aberta encontrada",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "359",
+    "numero": "9307",
+    "paginas_artigo": "657-662",
+    "editora": "Elsevier (ScienceDirect)"
+  },
+  {
+    "chave": "Lucado2022",
+    "titulo": "Lateral Elbow Pain and Muscle Function Impairments",
+    "doi": "10.2519/jospt.2022.0302",
+    "pmid": "36453071",
+    "revista": "J Orthop Sports Phys Ther",
+    "ano": 2022,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "52",
+    "numero": "12",
+    "paginas_artigo": "CPG1-CPG111",
+    "editora": "JOSPT (Journal of Orthopaedic & Sports Physical Therapy)"
+  },
+  {
+    "chave": "Expert2022",
+    "titulo": "ACR Appropriateness Criteria® Chronic Elbow Pain",
+    "doi": "10.1016/j.jacr.2022.09.022",
+    "pmid": "36436956",
+    "revista": "J Am Coll Radiol",
+    "ano": 2022,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "19",
+    "numero": "11S",
+    "paginas_artigo": "S256-S265",
+    "editora": "Elsevier (ScienceDirect)"
+  },
+  {
+    "chave": "Coombes2015",
+    "titulo": "Cold hyperalgesia associated with poorer prognosis in lateral epicondylalgia: a 1-year prognostic study of physical and psychological factors",
+    "doi": "10.1097/ajp.0000000000000078",
+    "pmid": "24480912",
+    "revista": "Clin J Pain",
+    "ano": 2015,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://research-repository.griffith.edu.au/bitstreams/fd8ba444-b77e-4a6d-8957-f4e3c2fc9787/download",
+        "resultado": "research-repository.griffith.edu.au inacessível pelo proxy desta rede"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "31",
+    "numero": "1",
+    "paginas_artigo": "30-35",
+    "editora": "Wolters Kluwer (LWW)"
+  },
+  {
+    "chave": "Waugh2004",
+    "titulo": "Factors associated with prognosis of lateral epicondylitis after 8 weeks of physical therapy",
+    "doi": "10.1016/s0003-9993(03)00480-5",
+    "pmid": "14966719",
+    "revista": "Arch Phys Med Rehabil",
+    "ano": 2004,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "85",
+    "numero": "2",
+    "paginas_artigo": "308-318",
+    "editora": "Elsevier (ScienceDirect)"
+  },
+  {
+    "chave": "Day2019",
+    "titulo": "A COMPREHENSIVE REHABILITATION PROGRAM FOR TREATING LATERAL ELBOW TENDINOPATHY",
+    "doi": "10.26603/ijspt20190818",
+    "pmid": "31598419",
+    "pmcid": "PMC6769266",
+    "revista": "Int J Sports Phys Ther",
+    "ano": 2019,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "há versão aberta, mas o download automático falhou nesta rede",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "artigo não está no repositório aberto do PMC"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://europepmc.org/articles/PMC6769266?pdf=render",
+        "resultado": "o site exige navegador (desafio anti-robô); não contornado"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC6769266&blobtype=pdf",
+        "resultado": "o site exige navegador (desafio anti-robô); não contornado"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "url_gratuita": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6769266/",
+    "volume": "14",
+    "numero": "5",
+    "paginas_artigo": "818-829",
+    "editora": "IJSPT"
+  },
+  {
+    "chave": "Krogh2020",
+    "titulo": "Clinical Value of Ultrasonographic Assessment in Lateral Epicondylitis Versus Asymptomatic Healthy Controls",
+    "doi": "10.1177/0363546520921949",
+    "pmid": "32484714",
+    "revista": "Am J Sports Med",
+    "ano": 2020,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "48",
+    "numero": "8",
+    "paginas_artigo": "1873-1883",
+    "editora": "SAGE"
+  },
+  {
+    "chave": "Bunata2007",
+    "titulo": "Anatomic factors related to the cause of tennis elbow",
+    "doi": "10.2106/jbjs.f.00727",
+    "pmid": "17768192",
+    "revista": "J Bone Joint Surg Am",
+    "ano": 2007,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "89",
+    "numero": "9",
+    "paginas_artigo": "1955-1963",
+    "editora": "JBJS"
+  },
+  {
+    "chave": "Smidt2006",
+    "titulo": "Lateral epicondylitis in general practice: course and prognostic indicators of outcome",
+    "pmid": "16881095",
+    "revista": "J Rheumatol",
+    "ano": 2006,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "nenhuma versão aberta encontrada",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "33",
+    "numero": "10",
+    "paginas_artigo": "2053-2059",
+    "editora": "Editora não identificada"
+  },
+  {
+    "chave": "Poltawski2011",
+    "titulo": "Measuring clinically important change with the Patient-rated Tennis Elbow Evaluation",
+    "doi": "10.1258/ht.2011.011013",
+    "revista": "Hand Therapy",
+    "ano": 2011,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "há versão aberta, mas o download automático falhou nesta rede",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": "https://uhra.herts.ac.uk/id/eprint/2674/1/Measuring_PRTEE_clinically_Important_Change_submission_revised.pdf",
+        "resultado": "uhra.herts.ac.uk inacessível pelo proxy desta rede"
+      }
+    ],
+    "url_gratuita": "https://uhra.herts.ac.uk/id/eprint/2674/1/Measuring_PRTEE_clinically_Important_Change_submission_revised.pdf",
+    "volume": "16",
+    "numero": "3",
+    "paginas_artigo": "52-57",
+    "editora": "SAGE"
+  },
+  {
+    "chave": "Vicenzino2009",
+    "titulo": "Development of a clinical prediction rule to identify initial responders to mobilisation with movement and exercise for lateral epicondylalgia",
+    "doi": "10.1016/j.math.2008.08.004",
+    "pmid": "18838330",
+    "revista": "Man Ther",
+    "ano": 2009,
+    "status": "pendente",
+    "origem": null,
+    "licenca": null,
+    "motivo_pendencia": "sem versão de acesso aberto (artigo pago)",
+    "tentativas": [
+      {
+        "fonte": "pmc",
+        "url": null,
+        "resultado": "sem PMCID (artigo não está no PMC)"
+      },
+      {
+        "fonte": "europepmc",
+        "url": "https://research-repository.griffith.edu.au/bitstreams/dcd24db1-3f06-58bb-98c7-553762bcd261/download",
+        "resultado": "research-repository.griffith.edu.au está bloqueado nesta rede (pulado)"
+      },
+      {
+        "fonte": "unpaywall",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      },
+      {
+        "fonte": "openalex",
+        "url": null,
+        "resultado": "nenhuma versão aberta em PDF"
+      }
+    ],
+    "volume": "14",
+    "numero": "5",
+    "paginas_artigo": "550-554",
+    "editora": "Elsevier (ScienceDirect)"
+  }
+]

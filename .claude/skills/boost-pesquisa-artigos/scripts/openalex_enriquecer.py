@@ -22,7 +22,7 @@ import argparse
 import os
 import re
 
-from _comum import (Cliente, ErroRede, agora_iso, autor_curto, carregar_conceitos, gravar_json, ler_json,
+from _comum import (Cliente, ErroRede, json_com, agora_iso, autor_curto, carregar_conceitos, gravar_json, ler_json,
                     limpar_texto, lista_issn, normalizar_doi, normalizar_pmid, passa_filtro_local, sair)
 
 API = "https://api.openalex.org/works"
@@ -131,8 +131,8 @@ def buscar_por_ids(cliente: Cliente, campo: str, valores: list[str], campos: str
     for inicio in range(0, len(valores), lote):
         grupo = valores[inicio:inicio + lote]
         try:
-            r = cliente.get(API, _params(cliente, filter=f"{campo}:{'|'.join(grupo)}", select=campos,
-                                         **{"per-page": str(lote)})).json()
+            r = json_com(cliente.get(API, _params(cliente, filter=f"{campo}:{'|'.join(grupo)}", select=campos,
+                                                  **{"per-page": str(lote)})), "results", "o OpenAlex")
             obras += r.get("results") or []
         except ErroRede as exc:
             erros.append(f"lote de {len(grupo)} {campo}(s) a partir de '{grupo[0]}': {exc}")
@@ -152,8 +152,8 @@ def listar_paginado(cliente: Cliente, filtro: str, maximo: int, ordem: str = "ci
     while len(obras) < maximo:
         extra = {"cursor": cursor} if com_chave else {"page": str(pagina_n)}
         try:
-            r = cliente.get(API, _params(cliente, filter=filtro, select=CAMPOS_REG, sort=ordem,
-                                         **{"per-page": str(por_pagina)}, **extra)).json()
+            r = json_com(cliente.get(API, _params(cliente, filter=filtro, select=CAMPOS_REG, sort=ordem,
+                                                  **{"per-page": str(por_pagina)}, **extra)), "results", "o OpenAlex")
         except ErroRede as exc:
             erros.append(str(exc))
             break

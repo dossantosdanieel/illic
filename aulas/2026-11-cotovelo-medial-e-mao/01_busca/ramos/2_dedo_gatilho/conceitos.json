@@ -1,0 +1,224 @@
+{
+  "tema": "Ramo 2. Dedo em gatilho (tenossinovite estenosante dos flexores): graduação, órtese, injeção, cirurgia",
+  "pergunta": {
+    "P": "Adultos com dedo ou polegar em gatilho",
+    "I": "Graduação da gravidade (Quinnell/Green e variações); órtese, injeção de corticoide, exercício/terapia da mão, cirurgia (aberta, percutânea)",
+    "C": "Fora da string",
+    "O": "Fora da string: resolução do gatilho, recidiva, dor, função, necessidade de cirurgia",
+    "nota": "Comparador e desfecho ficam fora da string (muitos resumos não os citam) e entram como critério de triagem. O segundo bloco reúne diagnóstico e tratamento porque a aula cobre os dois; termos genéricos como 'treatment*', 'therap*' e 'diagnos*' ficaram de fora de propósito (casariam com quase tudo). Limite 1990+ para alcançar os clássicos de acurácia e os ensaios antigos de corticoide; citações da aula base anteriores a 1990 entram por PMID (pubmed_busca.py --pmids). Trigger finger pediátrico entra na busca e sai na triagem (população diferente)."
+  },
+  "recorte": "topo_mecanismos",
+  "blocos": [
+    {
+      "id": "condicao",
+      "rotulo": "Dedo em gatilho",
+      "papel": "P",
+      "mesh": [
+        "Trigger Finger Disorder"
+      ],
+      "livres": [
+        "trigger finger*",
+        "trigger digit*",
+        "trigger thumb*",
+        "stenosing tenosynovitis",
+        "stenosing flexor tenosynovitis",
+        "stenosing tenovaginitis",
+        "flexor tenosynovitis",
+        "A1 pulley"
+      ],
+      "simples": [
+        "trigger finger",
+        "trigger digit",
+        "stenosing tenosynovitis"
+      ]
+    },
+    {
+      "id": "dx_tx",
+      "rotulo": "Diagnóstico (testes, acurácia, graduação) ou tratamento",
+      "papel": "I",
+      "mesh": [
+        "Diagnosis, Differential",
+        "Physical Examination",
+        "Sensitivity and Specificity",
+        "Predictive Value of Tests",
+        "Severity of Illness Index",
+        "Orthotic Devices",
+        "Splints",
+        "Braces",
+        "Injections",
+        "Glucocorticoids",
+        "Adrenal Cortex Hormones",
+        "Exercise Therapy",
+        "Physical Therapy Modalities",
+        "Musculoskeletal Manipulations",
+        "Conservative Treatment",
+        "Orthopedic Procedures",
+        "Remission, Spontaneous"
+      ],
+      "livres": [
+        "differential diagnos*",
+        "physical exam*",
+        "clinical exam*",
+        "clinical test*",
+        "provocative test*",
+        "sensitivity",
+        "specificity",
+        "likelihood ratio*",
+        "diagnostic accuracy",
+        "classification",
+        "grading",
+        "conservative",
+        "nonoperative",
+        "non-operative",
+        "nonsurgical",
+        "non-surgical",
+        "splint*",
+        "orthos*",
+        "orthotic*",
+        "brace*",
+        "immobili*",
+        "corticosteroid*",
+        "steroid*",
+        "glucocorticoid*",
+        "triamcinolone",
+        "methylprednisolone",
+        "injection*",
+        "exercis*",
+        "eccentric*",
+        "physiotherap*",
+        "physical therap*",
+        "hand therap*",
+        "manual therap*",
+        "mobilization",
+        "mobilisation",
+        "massage",
+        "surgery",
+        "surgical",
+        "release",
+        "natural history",
+        "spontaneous resolution",
+        "randomized",
+        "randomised",
+        "Quinnell",
+        "Green classification",
+        "severity",
+        "percutaneous",
+        "A1 pulley release"
+      ],
+      "simples": [
+        "diagnosis",
+        "treatment",
+        "injection",
+        "orthosis",
+        "exercise",
+        "surgery"
+      ]
+    }
+  ],
+  "limites": {
+    "ano_inicio": 1990,
+    "ano_fim": null,
+    "idiomas": [
+      "english",
+      "portuguese",
+      "spanish"
+    ],
+    "somente_humanos": true,
+    "tipos_scopus": [
+      "ar",
+      "re"
+    ]
+  },
+  "revistas_alvo": [
+    {
+      "nome": "J Orthop Sports Phys Ther",
+      "issn": [
+        "0190-6011",
+        "1938-1344"
+      ]
+    },
+    {
+      "nome": "J Hand Ther",
+      "issn": [
+        "0894-1130",
+        "1545-004X"
+      ]
+    },
+    {
+      "nome": "J Hand Surg Am",
+      "issn": [
+        "0363-5023",
+        "1531-6564"
+      ]
+    },
+    {
+      "nome": "J Hand Surg Eur Vol",
+      "issn": [
+        "1753-1934",
+        "2043-6289"
+      ]
+    },
+    {
+      "nome": "J Shoulder Elbow Surg",
+      "issn": [
+        "1058-2746",
+        "1532-6500"
+      ]
+    },
+    {
+      "nome": "Am J Sports Med",
+      "issn": [
+        "0363-5465",
+        "1552-3365"
+      ]
+    },
+    {
+      "nome": "Cochrane Database Syst Rev",
+      "issn": [
+        "1469-493X"
+      ]
+    }
+  ],
+  "sentinelas": [
+    {
+      "pmid": "24810861",
+      "nota": "Diretriz de consenso HANDGUIDE para dedo em gatilho (Huisstede 2014, Phys Ther)"
+    },
+    {
+      "pmid": "19160256",
+      "nota": "Cochrane 2009: injeção de corticoide no dedo em gatilho"
+    },
+    {
+      "pmid": "29460276",
+      "nota": "Cochrane 2018: cirurgia no dedo em gatilho"
+    },
+    {
+      "pmid": "33849080",
+      "nota": "Cochrane 2021: AINE no dedo em gatilho"
+    },
+    {
+      "pmid": "21816888",
+      "nota": "ECR Salim 2012: corticoide x fisioterapia no gatilho leve"
+    },
+    {
+      "pmid": "22039269",
+      "nota": "ECR Sato 2012: injeção x liberação percutânea x cirurgia aberta"
+    },
+    {
+      "pmid": "1538090",
+      "nota": "Patel 1992: quando imobilizar, injetar ou operar (graduação clássica)"
+    },
+    {
+      "pmid": "29290504",
+      "nota": "RS Lunsford 2019 J Hand Ther: manejo conservador"
+    },
+    {
+      "pmid": "37391318",
+      "nota": "RS Leong 2023 J Hand Ther: órteses"
+    },
+    {
+      "pmid": "41691955",
+      "nota": "RS com meta-análise em rede Chiang 2026: manejo do dedo em gatilho em adultos"
+    }
+  ]
+}

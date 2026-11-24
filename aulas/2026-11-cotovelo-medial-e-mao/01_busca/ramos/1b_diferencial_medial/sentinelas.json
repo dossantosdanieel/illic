@@ -1,0 +1,145 @@
+{
+  "data": "2026-11-24T13:19:54",
+  "variante": "base",
+  "variantes": {
+    "base": {
+      "recuperados": [
+        "12860556",
+        "15701609",
+        "19188042",
+        "23062797",
+        "36796550",
+        "40298125",
+        "7806810"
+      ],
+      "testaveis": 7
+    },
+    "rs": {
+      "recuperados": [
+        "40298125"
+      ],
+      "testaveis": 7
+    },
+    "ecr": {
+      "recuperados": [
+        "40298125",
+        "7806810"
+      ],
+      "testaveis": 7
+    },
+    "diretriz": {
+      "recuperados": [
+        "36796550"
+      ],
+      "testaveis": 7
+    }
+  },
+  "total": 7,
+  "recuperados": 7,
+  "resultados": [
+    {
+      "pmid": "15701609",
+      "doi": "10.1177/0363546504267804",
+      "titulo": "The \"moving valgus stress test\" for medial collateral ligament tears of the elbow",
+      "nota": "O'Driscoll 2005 AJSM: moving valgus stress test (acurácia contra artroscopia)",
+      "primeiro_autor": "O'Driscoll",
+      "ano": 2005,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "7806810",
+      "doi": "10.1016/0363-5023(94)90193-7",
+      "titulo": "Provocative testing for cubital tunnel syndrome",
+      "nota": "Novak 1994: testes provocativos na síndrome do túnel cubital",
+      "primeiro_autor": "Novak",
+      "ano": 1994,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "40298125",
+      "doi": "10.1002/14651858.cd006839.pub5",
+      "titulo": "Treatment for ulnar neuropathy at the elbow",
+      "nota": "Cochrane 2025 (Caliandro): tratamento da neuropatia ulnar no cotovelo",
+      "primeiro_autor": "Caliandro",
+      "ano": 2025,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "23062797",
+      "doi": "10.1016/j.jht.2012.08.005",
+      "titulo": "The value of provocative tests for the wrist and elbow: a literature review",
+      "nota": "Valdes 2013 J Hand Ther: valor dos testes provocativos de punho e cotovelo",
+      "primeiro_autor": "Valdes",
+      "ano": 2013,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "19188042",
+      "doi": "10.1016/j.jht.2008.10.010",
+      "titulo": "A review of clinical tests and signs for the assessment of ulnar neuropathy",
+      "nota": "Goldman 2009 J Hand Ther: testes e sinais clínicos da neuropatia ulnar",
+      "primeiro_autor": "Goldman",
+      "ano": 2009,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "36796550",
+      "doi": "10.1016/j.arthro.2022.12.033",
+      "titulo": "Elbow Ulnar Collateral Ligament Tears: A Modified Consensus Statement",
+      "nota": "Erickson 2023: consenso sobre lesões do LCU do cotovelo",
+      "primeiro_autor": "Erickson",
+      "ano": 2023,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    },
+    {
+      "pmid": "12860556",
+      "doi": "10.1177/03635465030310042601",
+      "titulo": "Elbow injuries in throwing athletes: a current concepts review",
+      "nota": "Cain 2003 AJSM: lesões do cotovelo no arremessador (citado na aula base, slide 138)",
+      "primeiro_autor": "Cain",
+      "ano": 2003,
+      "situacao": "recuperado",
+      "indexacao": "MEDLINE",
+      "presente_em_brutos": [],
+      "blocos_falhos": [],
+      "falhas": [],
+      "sugestoes": {}
+    }
+  ],
+  "fora_de_todos_os_filtros": [
+    "15701609",
+    "23062797",
+    "19188042",
+    "12860556"
+  ]
+}
