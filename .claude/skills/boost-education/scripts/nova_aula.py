@@ -178,7 +178,7 @@ def montar_briefing(a: argparse.Namespace, pasta: Path, raiz: Path, anteriores: 
                 linhas.append(f"- {P}: o que a turma precisa lembrar da aula anterior")
             linhas.append("")
     linhas += ["## Decisões e perguntas em aberto", "",
-               f"- {C.hoje()} · briefing criado. Campos com \"{P}\" ainda dependem do usuário ou da busca.", ""]
+               f"- {C.hoje()} · briefing criado por nova_aula.py; os campos marcados para preencher dependem do usuário ou da busca.", ""]
     return "\n".join(linhas)
 
 
@@ -195,7 +195,7 @@ def main() -> int:
     if not re.fullmatch(r"\d{4}-\d{2}", mes):
         print(f"ERRO: --mes deve ser AAAA-MM (recebi {mes!r}).", file=sys.stderr)
         return 2
-    slug = C.fazer_slug(a.slug or a.tema)
+    slug = C.fazer_slug(a.slug, literal=True) if a.slug else C.fazer_slug(a.tema)
     raiz = Path(a.raiz or os.environ.get("BOOST_AULAS") or "aulas").expanduser()
     pasta = raiz / f"{mes}-{slug}"
     formatos, ruins = interacoes_validas(a.formatos)
@@ -273,7 +273,8 @@ def main() -> int:
             if not a.simular:
                 trilha.parent.mkdir(parents=True, exist_ok=True)
                 corpo = modelo.read_text(encoding="utf-8") if modelo.exists() else "# Trilha\n"
-                trilha.write_text(corpo.replace("<nome da trilha>", a.tema), encoding="utf-8")
+                nome = trilha.stem.removeprefix("trilha-").replace("-", " ").strip() or a.tema
+                trilha.write_text(corpo.replace("<nome da trilha>", nome), encoding="utf-8")
             feitos.append(f"plano da trilha criado do modelo: {trilha}")
         else:
             feitos.append(f"plano da trilha: {trilha} (existente; acrescente esta aula nele)")
@@ -281,10 +282,11 @@ def main() -> int:
     print(("SIMULAÇÃO: nada foi gravado.\n" if a.simular else "") + f"Aula: {pasta}")
     for f in feitos:
         print(f"  · {f}")
-    faltam = [n for n, v in (("objetivos", a.objetivo), ("P", a.P), ("I", a.I), ("C", a.C), ("O", a.O)) if not v]
+    atual = brief.read_text(encoding="utf-8", errors="replace") if brief.exists() and not a.simular else texto
+    faltam = atual.count(C.MARCA_PREENCHER)
     if faltam:
-        print(f"Campos do briefing ainda a preencher: {', '.join(faltam)} "
-              f"(procure \"{C.MARCA_PREENCHER}\" em 00_briefing.md).")
+        print(f"00_briefing.md tem {faltam} campo(s) \"{C.MARCA_PREENCHER}\": pergunte ao usuário ou preencha "
+              "com o que o pedido já diz.")
     for av in avisos:
         print(f"AVISO: {av}")
     print(f"Próximo passo: {C.cmd_proprio('situacao.py')} {pasta}")

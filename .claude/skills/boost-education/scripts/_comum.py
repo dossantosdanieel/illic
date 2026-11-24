@@ -43,7 +43,7 @@ CHECAGENS = {
     1: "Estratégia de busca aprovada e string do Scopus entregue",
     2: "Lista de artigos aprovada e pagos pedidos (pendentes.md)",
     3: "Roteiro com linha do tempo aprovado",
-    4: "Deck revisado pelo Daniel",
+    4: "Deck revisado pelo usuário",
 }
 
 MARCA_PREENCHER = "A PREENCHER"
@@ -57,10 +57,13 @@ def sem_acento(s: str) -> str:
     return "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c))
 
 
-def fazer_slug(texto: str, limite: int = 48) -> str:
+def fazer_slug(texto: str, limite: int = 48, literal: bool = False) -> str:
+    """Slug sem acento. literal=True só limpa (para --slug dado pelo usuário)."""
     s = sem_acento(texto).lower()
     s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
-    vazias = {"de", "da", "do", "das", "dos", "e", "em", "na", "no", "a", "o", "as", "os", "para", "com", "sobre", "apos"}
+    if literal:
+        return s[:80].strip("-") or "aula"
+    vazias = {"de", "da", "do", "das", "dos", "e", "em", "na", "no", "nas", "nos", "a", "o", "as", "os", "ao", "aos", "um", "uma", "para", "por", "pela", "pelo", "com", "sobre", "apos"}
     partes = [p for p in s.split("-") if p and p not in vazias] or [p for p in s.split("-") if p]
     saida = ""
     for p in partes:
