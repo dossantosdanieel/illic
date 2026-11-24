@@ -10,26 +10,24 @@
 
 ## Pontos-chave
 
-1. Nenhum teste do cotovelo, sozinho, confirma ou exclui a tendinopatia lateral: 9 de 10 estudos com risco de viés alto ou incerto (Zwerus 2018, resumo).
-2. Cozen: sensibilidade de 91%, especificidade não informada no resumo; serve mais para afastar quando negativo. Queda de 5% a 10% da preensão ao estender o cotovelo: sensibilidade de 78% a 83% e especificidade de 80% a 90%, razão de verossimilhança positiva de 3,9 a 8,3 (calculada; Karanasios 2022, resumo).
-3. O mesmo teste positivo vale menos quando a probabilidade antes do teste já é alta: de 50% vai a 80%–89%; de 79% vai a 94%–97%, e um teste negativo ainda deixa 42%–51% (cálculo a partir de Karanasios 2022 e Vuvan 2020).
-4. Esporão no epicôndilo aparece em 50% da população sem dor e em 78% dos cotovelos doentes (razão de verossimilhança positiva de cerca de 1,6, calculada); nenhum achado do ultrassom se correlacionou com dor, PRTEE ou duração (Krogh 2020, resumo).
-5. Sem tratamento ativo, 89% estão muito melhores ou recuperados em 1 ano (IC 95% 80% a 97%), e metade dos que ainda têm sintoma melhora a cada 2,5 a 3 meses, qualquer que seja o tempo de dor (Ikonen 2022, resumo).
-6. Mudança importante no PRTEE é proporcional ao escore inicial: 22% ('um pouco melhor') e 37% ('muito melhor') (Poltawski 2011, resumo). Sintomas de nervo, sexo feminino, dor cervical e hiperalgesia ao frio se associam a pior evolução, com certeza baixa (Waugh 2004; Smidt 2006; Coombes 2015).
+1. Nenhum teste do cotovelo, sozinho, confirma ou exclui a tendinopatia lateral (Zwerus 2018).
+2. Cozen: sensibilidade de 91%, especificidade não informada. Queda de 5% a 10% da preensão ao estender o cotovelo: RV+ de 3,9 a 8,3 e RV− de 0,19 a 0,28 (calculadas; Karanasios 2022).
+3. Com suspeita alta (79%), a preensão positiva leva a 94%–97% e a negativa ainda deixa 42%–51%: o teste vale mais na dúvida (cálculo com Karanasios 2022 e Vuvan 2020).
+4. Esporão no epicôndilo: 50% da população sem dor (RV+ ≈ 1,6, calculada); nenhum achado do ultrassom acompanhou dor, PRTEE ou duração (Krogh 2020).
+5. Sem tratamento ativo, 89% muito melhores ou recuperados em 1 ano (IC 80% a 97%); meia-vida de 2,5 a 3 meses, independente do tempo de dor (Ikonen 2022).
+6. Meta do PRTEE: 22% da linha de base ('um pouco melhor') e 37% ('muito melhor') (Poltawski 2011). Nervo, sexo feminino, dor cervical e frio pioram a previsão, com certeza baixa (Waugh 2004; Smidt 2006; Coombes 2015).
 
 ## Algoritmo de decisão
 
-1. Dor lateral no cotovelo? Some história, Cozen e preensão fletido × estendido; nenhum teste isolado fecha o diagnóstico.
-2. Dor cervical, parestesia, dor distal ao epicôndilo, estalo ou falseio? Reabra o diferencial e examine cervical, nervo radial e estabilidade (proposta clínica).
-3. Laudo de imagem na mão? Explique cada achado pela frequência em quem não tem dor; não use o ultrassom para medir a melhora.
-4. Sem sinal atípico? Não peça imagem agora; combine prazo e meta, e peça se não houver melhora ou se surgir algo novo.
-5. Defina a meta do PRTEE: 22% da linha de base para 'um pouco melhor' e 37% para 'muito melhor'; reavalie em 4 a 6 semanas.
-6. Sinais de pior prognóstico (nervo, cervical, dor intensa, sexo feminino, frio)? Ajuste a expectativa de velocidade, não o destino de 1 ano.
+1. Dor lateral? Some história, Cozen e preensão fletido × estendido; nenhum teste fecha sozinho.
+2. Dor cervical, parestesia, dor distal, estalo ou falseio? Reabra o diferencial e examine (proposta clínica).
+3. Laudo na mão? Explique cada achado pela frequência em quem não tem dor.
+4. Sem sinal atípico? Sem imagem agora; peça se não melhorar no prazo ou surgir algo novo.
+5. Escreva a meta do PRTEE (22% e 37% da linha de base) e reavalie em 4 a 6 semanas.
 
 ## Para praticar nesta semana
 
 - No próximo paciente com dor lateral, meça a preensão sem dor nos dois lados e com o cotovelo fletido e estendido, e aplique o PRTEE.
-- Escreva no prontuário a meta do PRTEE em pontos (22% e 37% da linha de base) e a data da reavaliação.
 - Quando o paciente trouxer laudo, explique um achado pela frequência em quem não tem dor.
 
 ## O que é proposta clínica (sem ensaio que teste)

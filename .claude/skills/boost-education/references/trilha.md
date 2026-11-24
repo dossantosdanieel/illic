@@ -64,7 +64,9 @@ python3 -I <skill>/scripts/nova_aula.py --tema "..." --trilha aulas/trilha-x.md 
 - A seleção (`selecionados.json`) é a soma das duas aulas e pode passar de 12 artigos; o roteiro de cada aula usa só
   os seus. Diga isso ao usuário na checagem 2.
 - Figuras aprovadas valem para as duas aulas; não repita a mesma figura nas duas sem motivo.
-- `situacao.py` mostra "Compartilhado: ..." e acompanha o estado da pasta dona.
+- `situacao.py` mostra "Compartilhado: ..." e acompanha o estado da pasta dona. As checagens 1 e 2 (busca e
+  lista de artigos) são da aula dona: registre lá (`situacao.py <aula dona> --marcar 2`), e as aulas que usam a
+  busca dela passam a ver a checagem feita.
 - No claude.ai ou em sistema sem link simbólico, copie as pastas em vez de ligar.
 
 Busca própria quando a pergunta clínica muda de condição (ex.: aula 3 sobre cotovelo medial e mão).

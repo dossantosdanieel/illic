@@ -2,19 +2,15 @@
 name: boost-aula-slides
 description: >-
   Desenha e monta a aula online da Boost Education (30 a 35 minutos, nível técnico alto, aprendizagem
-  ativa) e gera o PowerPoint .pptx na marca illic ACADEMY · BOOST Education, idêntica ao deck de
-  referência "Caso Marina": roteiro com linha do tempo, deck.json, slides de pergunta, enquete,
-  revelação, salas, figura recortada do artigo com destaques, gráficos nativos, tabela, síntese,
-  bilhete de saída e referências, notas do apresentador com tempo acumulado, validação pedagógica,
-  render em PNG para conferir, e os materiais de apoio (enquetes para o Google Meet, pré e pós-teste
-  para o Google Forms, resumo de 1 a 2 páginas para o aluno, verificação do que foi conferido). Use
-  SEMPRE que o pedido envolver montar, fazer, criar, desenhar, revisar ou ajustar aula, slides,
-  apresentação, PowerPoint, pptx, deck, roteiro de aula, plano de aula, enquete, quiz, pré-teste,
-  pós-teste, questões, resumo para o aluno ou notas do apresentador da Boost ou da illic ACADEMY; quando
-  o usuário disser "agora monta a aula", "transforma isso em slides", "faz a apresentação com as
-  figuras", "ajusta o tempo da aula", "deixa mais interativo"; e logo depois da skill
-  boost-leitura-figuras. Não improvise slides fora desta skill: a marca, o tempo e a interação só saem
-  certos com os scripts dela.
+  ativa) e gera o PowerPoint .pptx na marca illic ACADEMY · BOOST Education, idêntica ao deck "Caso
+  Marina": roteiro, deck.json, slides de pergunta, enquete, revelação, salas, figura do artigo com
+  destaques, gráficos nativos, notas do apresentador com tempo acumulado, validação pedagógica, render
+  em PNG e materiais de apoio (enquetes do Google Meet, pré e pós-teste, resumo do aluno, verificação).
+  Use SEMPRE que o pedido for montar os slides a partir das fichas e figuras já prontas, ou revisar ou
+  ajustar aula, slides, apresentação, PowerPoint, pptx, deck, roteiro, enquete, quiz, pré ou pós-teste,
+  resumo do aluno ou notas do apresentador da Boost ("transforma isso em slides", "ajusta o tempo da
+  aula", "deixa mais interativo"), e logo depois da boost-leitura-figuras. Pedido de aula inteira a
+  partir de um tema vai antes para boost-education. Não improvise slides fora desta skill.
 ---
 
 # Aula Boost: do artigo ao .pptx

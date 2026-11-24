@@ -1,0 +1,151 @@
+{
+  "questoes": [
+    {
+      "id": "q1",
+      "objetivo": 1,
+      "nivel": "análise",
+      "cenario": "Cabeleireiro de 38 anos com dor medial no cotovelo esquerdo e formigamento intermitente no 5º dedo. Pela história, você estima 50% de chance de neuropatia ulnar no cotovelo. O sinal de Tinel no sulco ulnar é negativo. Num estudo com 192 pacientes, o Tinel teve sensibilidade de 62% e especificidade de 53% (caso fictício; números de Beekman 2009).",
+      "pergunta": "Qual é a probabilidade aproximada de neuropatia ulnar depois do Tinel negativo?",
+      "opcoes": {
+        "A": "Cerca de 10%: Tinel negativo afasta a neuropatia.",
+        "B": "Cerca de 42%: cai pouco.",
+        "C": "Cerca de 25%: cai pela metade.",
+        "D": "Continua 50%: o Tinel não informa nada."
+      },
+      "gabarito": "B",
+      "comentario": "RV− = (1 − 0,62) ÷ 0,53 = 0,72. Chance pré = 50 ÷ 50 = 1,0; chance pós = 1,0 × 0,72 = 0,72; probabilidade = 0,72 ÷ 1,72 = 42%. O teste mexe pouco nos dois sentidos (RV+ 1,32). Se os sintomas persistem, piorarem ou surgir fraqueza, o próximo passo é eletrofisiologia com ultrassom, não repetir testes. Limite: razões calculadas a partir das porcentagens arredondadas do resumo, sem intervalo de confiança.",
+      "distratores": {
+        "A": "Tratar o teste negativo como se descartasse, sem olhar a sensibilidade de 62%.",
+        "C": "Achar que todo teste negativo corta a probabilidade pela metade, sem calcular a razão de verossimilhança.",
+        "D": "Confundir “muda pouco” com “não muda nada”: RV− de 0,72 ainda move a probabilidade alguns pontos."
+      },
+      "referencia": ["Beekman2009"]
+    },
+    {
+      "id": "q2",
+      "objetivo": 1,
+      "nivel": "aplicação",
+      "cenario": "Goleiro de handebol de 22 anos com dor medial ao arremessar há 3 semanas, sem trauma. Você estima 20% de chance de lesão do ligamento colateral ulnar. O teste de estresse em valgo em movimento reproduz a dor entre 110° e 80°. No estudo original (21 operados), o teste teve sensibilidade de 17/17 e especificidade de 3/4 (caso fictício; números de O'Driscoll 2005).",
+      "pergunta": "Qual leitura do resultado é a mais correta?",
+      "opcoes": {
+        "A": "Lesão confirmada: a especificidade é de 75%.",
+        "B": "Sobe para cerca de 50%: investigar, sem concluir.",
+        "C": "Não muda nada: o estudo é pequeno demais.",
+        "D": "Quase 100%: a sensibilidade do teste é de 100%."
+      },
+      "gabarito": "B",
+      "comentario": "RV+ = 1,00 ÷ (1 − 0,75) = 4. Chance pré = 20 ÷ 80 = 0,25; chance pós = 0,25 × 4 = 1,0; probabilidade de 50%. O teste foi validado para descartar melhor do que para confirmar, e a especificidade vem de 4 pessoas (IC 95% de 19% a 99%, calculado): o positivo pede investigação e encaminhamento, não diagnóstico. Limite: só resumo, espectro cirúrgico, teste avaliado pelo autor.",
+      "distratores": {
+        "A": "Ler especificidade como valor preditivo positivo.",
+        "C": "Tratar estudo pequeno como sem informação: a direção existe, a precisão é que é baixa.",
+        "D": "Confundir sensibilidade com probabilidade de doença depois de um teste positivo."
+      },
+      "referencia": ["ODriscoll2005"]
+    },
+    {
+      "id": "q3",
+      "objetivo": 2,
+      "nivel": "aplicação",
+      "cenario": "Homem de 55 anos, sem diabetes, com dedo anelar em gatilho que ele corrige sozinho (grau 2 de Green) há 2 meses. Ele vai decidir entre injeção de corticoide e cirurgia aberta e pergunta: “Qual a chance de voltar a travar?” (caso fictício).",
+      "pergunta": "Qual resposta os dados sustentam melhor para 6 a 12 meses?",
+      "opcoes": {
+        "A": "A mesma nas duas: o intervalo da resolução cruza o 1.",
+        "B": "A injeção resolve 3 vezes mais, então trava menos.",
+        "C": "Cerca de 4 em 10 após injeção; menos de 1 em 10 após cirurgia.",
+        "D": "A cirurgia corta a recidiva em 83%: quase ninguém trava."
+      },
+      "gabarito": "C",
+      "comentario": "Na revisão Cochrane de Fiorini (2 ensaios, 270 participantes), a recidiva em 6 a 12 meses foi de 385 por 1000 após injeção e 65 por 1000 após cirurgia aberta (RR 0,17; IC 0,09 a 0,33; certeza baixa). A cirurgia doeu mais na primeira semana (678 x 184 por 1000 com dor na palma). O intervalo da diferença absoluta do próprio resumo vai de 60% a menos a 3% a mais: diga a ordem de grandeza, não um número exato.",
+      "distratores": {
+        "A": "Misturar desfechos: o RR que cruza 1 é o da resolução, não o da recidiva.",
+        "B": "Usar o RR 3,15 da injeção contra lidocaína (outra comparação, 4 semanas) como se fosse contra cirurgia.",
+        "D": "Ler a redução relativa (83%) como se fosse absoluta e esquecer o risco de base."
+      },
+      "referencia": ["Fiorini2018", "PetersVeluthamaningal2009"]
+    },
+    {
+      "id": "q4",
+      "objetivo": 2,
+      "nivel": "análise",
+      "cenario": "Uma meta-análise em rede relata, para o dedo em gatilho, liberação percutânea x injeção de corticoide: OR 22,8 (IC 95% 7,7 a 67,7) para sucesso. Na sua clínica, a injeção resolve cerca de 50% dos casos (valor hipotético).",
+      "pergunta": "Qual estimativa da chance de sucesso com a percutânea é a mais coerente com esses números?",
+      "opcoes": {
+        "A": "Cerca de 100%: OR 22,8 é 22 vezes mais sucesso.",
+        "B": "Cerca de 96%: RR em torno de 1,9.",
+        "C": "Cerca de 73%: somam-se 22,8 pontos percentuais.",
+        "D": "Não dá para estimar: OR não se converte em risco."
+      },
+      "gabarito": "B",
+      "comentario": "Chance de base = 50 ÷ 50 = 1,0; chance com a percutânea = 1,0 × 22,8 = 22,8; probabilidade = 22,8 ÷ 23,8 = 96%. RR = 0,96 ÷ 0,50 ≈ 1,9. Quando o evento é comum, o OR exagera muito o RR. A taxa de base de 50% é hipotética: a taxa real de sucesso do corticoide na rede de Chiang está no texto completo, ainda não conferido.",
+      "distratores": {
+        "A": "Ler OR como risco relativo.",
+        "C": "Tratar o OR como diferença absoluta em pontos percentuais.",
+        "D": "Achar que OR não tem tradução clínica: com a taxa de base, converte-se em probabilidade."
+      },
+      "referencia": ["Chiang2026"]
+    },
+    {
+      "id": "q5",
+      "objetivo": 3,
+      "nivel": "análise",
+      "cenario": "Mulher de 51 anos, digitadora, com dor no lado radial do punho e na base do polegar. Você estima 40% de chance de De Quervain. O WHAT test (hiperflexão do punho com abdução do polegar contra resistência) é negativo. No estudo de referência, sensibilidade de 0,99 e especificidade de 0,29 (caso fictício; números de Goubau 2014).",
+      "pergunta": "Qual conduta os números sustentam melhor?",
+      "opcoes": {
+        "A": "Cerca de 2%: procurar outra causa, como rizartrose.",
+        "B": "Cerca de 28%: especificidade baixa muda pouco.",
+        "C": "Continua 40%: um teste só não decide.",
+        "D": "Repetir com o polegar fechado na mão para confirmar."
+      },
+      "gabarito": "A",
+      "comentario": "RV− = (1 − 0,99) ÷ 0,29 = 0,034. Chance pré = 40 ÷ 60 = 0,67; chance pós = 0,67 × 0,034 = 0,023; probabilidade de cerca de 2% (entre 1% e 3% pelo arredondamento da sensibilidade). Teste muito sensível vale pelo negativo. Limite: amostra com cerca de 93% de doentes (2×2 reconstruída do resumo) e só resumo; fora desse espectro a sensibilidade pode cair.",
+      "distratores": {
+        "B": "Usar a especificidade para interpretar um resultado negativo: quem manda no negativo é a sensibilidade.",
+        "C": "Ignorar a razão de verossimilhança: um teste muito sensível negativo decide.",
+        "D": "Usar o Eichhoff (o “Finkelstein” dos livros), que pode dar falso positivo, para “confirmar” contra um negativo de teste sensível."
+      },
+      "referencia": ["Goubau2014", "Elliott1992"]
+    },
+    {
+      "id": "q6",
+      "objetivo": 3,
+      "nivel": "avaliação",
+      "cenario": "Paciente de 44 anos com De Quervain recebeu injeção de corticoide. O médico pergunta se vale prescrever órtese de polegar por 4 semanas. Uma meta-análise em rede (30 ECR) mostra, para injeção + órtese de 3 a 4 semanas x só injeção, diferença de 10,5 pontos no QuickDASH (0 a 100; IC 95% 6,8 a 14,1), certeza moderada; os autores chamam a diferença de “não clinicamente significativa”.",
+      "pergunta": "Qual leitura é a mais correta?",
+      "opcoes": {
+        "A": "Não há efeito: não é clinicamente significativo.",
+        "B": "Efeito grande: o intervalo exclui o zero.",
+        "C": "Inconclusivo: o intervalo é largo demais.",
+        "D": "Efeito real e pequeno: oferecer, pesando o custo de imobilizar."
+      },
+      "gabarito": "D",
+      "comentario": "O intervalo exclui o zero (efeito real) e, segundo os autores, fica abaixo da diferença mínima importante (efeito pequeno). A decisão passa pela preferência e pelo custo de imobilizar (trabalho, cuidado de bebê). A diferença mínima adotada pelos autores e o sentido exato da diferença ainda vão ser conferidos no texto completo (só resumo).",
+      "distratores": {
+        "A": "Confundir “não clinicamente significativo” com “sem efeito”.",
+        "B": "Confundir significância estatística com tamanho do efeito.",
+        "C": "Chamar de largo um intervalo de 7 pontos inteiro do mesmo lado: é preciso o bastante para decidir."
+      },
+      "referencia": ["Challoumas2023"]
+    },
+    {
+      "id": "q7",
+      "objetivo": 4,
+      "nivel": "avaliação",
+      "cenario": "Tenista amador de 47 anos com tendinopatia medial do cotovelo há 4 meses. Um colega quer prescrever o protocolo excêntrico da tendinopatia lateral “porque a evidência mostra que funciona na medial”. Uma revisão de 2026 achou 5 estudos (143 pacientes) na medial, sem meta-análise, com superioridade entre grupos em 1 ensaio e certeza baixa.",
+      "pergunta": "Qual posição é a mais defensável?",
+      "opcoes": {
+        "A": "Usar a dose como proposta extrapolada da lateral e medir a cada 2 a 4 semanas.",
+        "B": "Seguir o protocolo: todos os estudos da medial mostraram melhora.",
+        "C": "Não prescrever exercício até haver ensaio bom na medial.",
+        "D": "Preferir a infiltração: é a única opção com ECR na medial."
+      },
+      "gabarito": "A",
+      "comentario": "Melhora dentro dos grupos não é efeito do tratamento (curso natural, regressão à média). Na medial não há estimativa de efeito do exercício; o único ECR de corticoide mostrou alívio só em 6 semanas, igual em 3 meses e 1 ano. A conduta de nível alto é dizer de onde vem a dose (lateral e mecanismo), chamá-la de proposta clínica e medir a resposta individual (dor em 24 horas, PRTEE adaptada, preensão sem dor).",
+      "distratores": {
+        "B": "Ler melhora dentro do grupo como efeito do tratamento.",
+        "C": "Confundir ausência de evidência com evidência de ausência e deixar o paciente sem carga.",
+        "D": "Escolher pelo desenho e ignorar o resultado: o ECR mostrou benefício só em 6 semanas."
+      },
+      "referencia": ["See2026", "Stahl1997c"]
+    }
+  ]
+}

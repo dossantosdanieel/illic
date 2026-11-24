@@ -9,38 +9,37 @@
     "duracao_alvo_min": 32,
     "caso_ficticio": true,
     "objetivos": [
-      "Interpretar Tinel, flexão-compressão, espessamento do nervo ulnar e valgo em movimento pela razão de verossimilhança e decidir, com a probabilidade pós-teste, entre tratar a tendinopatia medial, investigar neuropatia ulnar ou lesão do LCU e encaminhar",
-      "Escolher entre órtese, injeção de corticoide e encaminhamento cirúrgico no dedo em gatilho a partir do grau de Green, justificando com sucesso, recidiva e dor pós-operatória",
-      "Interpretar o WHAT test e o teste de Eichhoff (o “Finkelstein” dos livros) sem confirmar De Quervain por um teste positivo, e decidir orientação de carga, órtese e encaminhamento para injeção no puerpério",
-      "Justificar a conduta na tendinopatia medial dizendo o que vem de ensaio, de mecanismo e de extrapolação da tendinopatia lateral, com a proposta clínica declarada e medida a cada 2 a 4 semanas"
+      "Interpretar Tinel, flexão-compressão, espessamento do nervo e valgo em movimento pela razão de verossimilhança e decidir entre tratar a tendinopatia medial, investigar e encaminhar",
+      "Escolher entre órtese, injeção e encaminhamento cirúrgico no dedo em gatilho pelo grau de Green, com sucesso, recidiva e dor pós-operatória",
+      "Interpretar WHAT test e Eichhoff sem confirmar De Quervain por um teste positivo e decidir carga, órtese e encaminhamento no puerpério",
+      "Justificar a conduta na tendinopatia medial dizendo o que vem de ensaio, de mecanismo e de extrapolação da lateral (proposta clínica)"
     ],
     "propostas_clinicas": [
-      "dose e progressão dos exercícios da massa flexora-pronadora na tendinopatia medial (desvio ulnar e pronação com faixa, começando abaixo de Borg 5/10 e subindo pela dor em 24 horas), extrapoladas da tendinopatia lateral e de um estudo de EMG em saudáveis",
-      "usar a PRTEE adaptada e a força de preensão sem dor para acompanhar a tendinopatia medial, com as metas de mudança da tendinopatia lateral",
-      "critério de encaminhamento para ENMG e ultrassom na dor medial com formigamento: piora, sintoma diário, fraqueza ou atrofia intrínseca",
-      "combinar com a paciente, antes da segunda injeção no dedo em gatilho, o critério de encaminhamento para cirurgia",
-      "no De Quervain do puerpério, orientar a carga (pegar o bebê com o punho neutro, apoio do antebraço para amamentar) e usar a órtese como proteção, sem promessa de alívio"
+      "dose e progressão dos exercícios da massa flexora-pronadora na tendinopatia medial, extrapoladas da lateral e de EMG em saudáveis",
+      "PRTEE adaptada e preensão sem dor como medidas da tendinopatia medial",
+      "encaminhar para ENMG e ultrassom se o formigamento piorar, ficar diário ou houver fraqueza",
+      "combinar o critério de cirurgia antes da segunda injeção no dedo em gatilho",
+      "no puerpério, orientar a carga e usar a órtese como proteção, sem promessa de alívio"
     ],
     "resumo": {
       "pontos_chave": [
-        "Os testes provocativos da neuropatia ulnar no cotovelo quase não mudam a probabilidade: Tinel RV+ 1,32 e RV− 0,72; flexão-compressão RV+ 1,02 e RV− 0,97; o espessamento palpável do nervo é o que mais pesa (RV+ 2,15), mas falta em 72% dos casos (Beekman 2009, resumo; RV calculadas). Com pré-teste de 30%, um Tinel positivo leva a 36%.",
-        "O teste de estresse em valgo em movimento teve sensibilidade de 17/17 (IC 80,5% a 100%) e especificidade de 3/4 (IC 19% a 99%) em 21 operados (O'Driscoll 2005, resumo; IC calculados): serve para descartar lesão do LCU, com a ressalva de um estudo minúsculo. Não há estudo de acurácia de teste clínico para a tendinopatia medial (Zwerus 2018, resumo).",
-        "Na tendinopatia medial quase todo o tratamento é extrapolação: excêntrico com 5 estudos e 143 pacientes, certeza baixa (See 2026); um ECR de corticoide com benefício só em 6 semanas e igual em 3 meses e 1 ano (Stahl 1997); cirurgia só com séries de casos (Arevalo 2023). No trabalho, força pesa (OR 1,95) e repetição não (OR 1,11; IC 0,59 a 2,10) (Descatha 2003).",
-        "Para a massa flexora-pronadora são precisos dois exercícios: o desvio ulnar com faixa recrutou o flexor ulnar do carpo (40,3% da CVM) e a pronação recrutou o flexor superficial dos dedos e o pronador redondo (63,9% e 73,0%), a Borg 5/10, em 10 homens saudáveis (Fukunaga 2023, Tab. 2).",
-        "Dedo em gatilho: graus 1 e 2 de Green tiveram cerca de 75% de sucesso com órtese, injeção ou ambas; grau 3, cerca de 60%, com 39,1% operados contra 22,4% (Minkhorst 2025, resumo). Depois da injeção, 385 em 1000 voltaram a travar em 6 a 12 meses; depois da cirurgia aberta, 65 em 1000, com mais dor na palma na 1ª semana (678 x 184 em 1000) (Fiorini 2018).",
-        "De Quervain: o WHAT test teve sensibilidade 0,99 e especificidade 0,29 (RV+ 1,4; RV− 0,03, calculadas): positivo quase não informa, negativo descarta (Goubau 2014, resumo). O teste com o polegar fechado na mão é o de Eichhoff (Elliott 1992). No puerpério, injeção deu alívio completo em 9 de 9 e órtese sozinha em 0 de 9; 8 de 9 resolveram ao fim da lactação (Avci 2002, n = 18)."
+        "Neuropatia ulnar: Tinel RV+ 1,32 e flexão-compressão RV+ 1,02 quase não mudam a probabilidade; espessamento palpável RV+ 2,15 (Beekman 2009; RV calculadas).",
+        "Valgo em movimento: sensibilidade 17/17, especificidade 3/4 em 21 operados; descarta melhor que confirma (O'Driscoll 2005). Tendinopatia medial: nenhum estudo de acurácia (Zwerus 2018).",
+        "Tendinopatia medial: excêntrico com 5 estudos e certeza baixa (See 2026); corticoide melhor só em 6 semanas (Stahl 1997). Força no trabalho pesa (OR 1,95); repetição não (Descatha 2003).",
+        "Desvio ulnar com faixa recruta o flexor ulnar do carpo (40% da CVM); pronação, o flexor superficial e o pronador redondo (64% e 73%) (Fukunaga 2023, Tab. 2).",
+        "Gatilho: graus 1–2 com ~75% de sucesso conservador, grau 3 com ~60% e 39,1% operados (Minkhorst 2025). Recidiva em 6–12 meses: 385 por 1000 após injeção, 65 após cirurgia aberta (Fiorini 2018).",
+        "De Quervain: WHAT RV+ 1,4 e RV− 0,03; positivo quase não informa (Goubau 2014). No puerpério, órtese sozinha 0 de 9 com alívio completo; 8 de 9 resolveram ao fim da lactação (Avci 2002)."
       ],
       "algoritmo": [
-        "Dor medial no cotovelo com formigamento no 4º e 5º dedos? Estime a probabilidade de neuropatia ulnar antes dos testes; Tinel e flexão-compressão não confirmam nem afastam. Fraqueza, atrofia ou piora: ENMG + ultrassom.",
-        "Arremessador com dor medial? Valgo em movimento negativo baixa muito a suspeita de LCU; positivo pede investigação.",
-        "Tendinopatia medial provável? Reduza força no trabalho, carga progressiva com desvio ulnar e pronação (proposta clínica), monitore dor em 24 horas, PRTEE e preensão sem dor a cada 2 a 4 semanas.",
-        "Dedo em gatilho? Gradue (Green 1 a 4) antes de prometer. Graus 1–2: órtese ou injeção, conforme preferência; grau 3 ou recidiva: combine o critério de encaminhamento.",
-        "Dor radial no punho com WHAT ou Eichhoff positivo? Feche pela palpação do 1º compartimento e pelo diferencial; WHAT negativo praticamente descarta.",
-        "De Quervain no puerpério? Oriente a carga, ofereça órtese como proteção, explique o curso favorável e encaminhe para discutir injeção se a dor impedir os cuidados com o bebê."
+        "Dor medial com formigamento no 5º dedo? Tinel não decide; piora ou fraqueza: ENMG + ultrassom.",
+        "Arremessador? Valgo em movimento negativo baixa a suspeita de LCU; positivo, investigar.",
+        "Tendinopatia medial? Menos força no trabalho, carga com dois exercícios, medir a cada 2 a 4 semanas.",
+        "Gatilho? Gradue; graus 1–2: órtese ou injeção; grau 3 ou recidiva: combinar o encaminhamento.",
+        "De Quervain? WHAT negativo descarta; no puerpério, orientar e proteger."
       ],
       "para_praticar": [
-        "No próximo Tinel positivo, escreva no prontuário a probabilidade antes e depois do teste.",
-        "No próximo dedo em gatilho, registre o grau de Green e combine com o paciente o critério de encaminhamento."
+        "No próximo Tinel positivo, anote a probabilidade antes e depois do teste.",
+        "Registre o grau de Green do próximo gatilho."
       ]
     }
   },

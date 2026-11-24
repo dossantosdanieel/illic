@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import subprocess
 import sys
@@ -76,39 +77,150 @@ def mais_velho(arq: Path, *fontes: Path) -> bool:
 def tema_de(pasta: Path) -> str:
     brief = pasta / "00_briefing.md"
     if brief.exists():
-        m = re.search(r"^#\s*(?:Briefing\s*[·:-]\s*)?(.+)$", brief.read_text(encoding="utf-8", errors="replace"), re.M)
+        texto = brief.read_text(encoding="utf-8", errors="replace")
+        m = re.search(r"^#(?!#)\s*(?:Briefing\s*[·:-]\s*)?(.+)$", texto, re.M)
         if m:
-            return m.group(1).strip()
+            tema = m.group(1).strip()
+            # briefing escrito à mão: "# Briefing · Aula 3 da trilha" seguido do tema real em negrito
+            seg = re.match(r"\s*\*\*([^*\n]{8,200})\*\*\s*$", texto[m.end():].lstrip("\n").split("\n", 1)[0])
+            if seg and seg.group(1).strip().lower() not in tema.lower():
+                tema = f"{tema} · {seg.group(1).strip()}"
+            return tema
     return pasta.name
 
 
+def execucoes_pubmed(pub: Path) -> tuple[int, list[dict]]:
+    """(nº de registros, execuções) de brutos/pubmed.json."""
+    d = C.ler_json(pub, {})
+    if not isinstance(d, dict) or "__erro__" in d:
+        return 0, []
+    return len(d.get("registros") or []), [e for e in d.get("execucoes") or [] if isinstance(e, dict)]
+
+
+def pubmed_desatualizado(conceitos: Path, strings: Path, pub: Path) -> bool:
+    """A busca rodada no PubMed difere da string atual? Compara a consulta gravada com strings.json;
+    sem como comparar (variantes de outro formato, arquivo antigo), cai na data de modificação."""
+    _, execs = execucoes_pubmed(pub)
+    atuais = (C.ler_json(strings, {}) or {}).get("pubmed") if strings.exists() else None
+    ultimas = {}
+    for e in execs:
+        if not e.get("so_contagem") and e.get("consulta"):
+            ultimas[str(e.get("variante"))] = e["consulta"]
+    if isinstance(atuais, dict) and not mais_velho(strings, conceitos):
+        comparaveis = {v: q for v, q in ultimas.items() if v in atuais}
+        if comparaveis:
+            return any(atuais[v] != q for v, q in comparaveis.items())
+    return mtime(conceitos) > mtime(pub) + 2
+
+
+def truncadas_pubmed(pub: Path) -> list[tuple[str, int, int]]:
+    """Variantes cuja última execução baixou menos que o total (corte por --max)."""
+    _, execs = execucoes_pubmed(pub)
+    ult = {}
+    for e in execs:
+        if not e.get("so_contagem"):
+            ult[str(e.get("variante"))] = e
+    saida = []
+    for v, e in ult.items():
+        tot, baix = e.get("total") or 0, e.get("baixados") or 0
+        if isinstance(tot, int) and isinstance(baix, int) and tot > (e.get("max") or 0) and baix < tot:
+            saida.append((v, tot, baix))
+    return saida
+
+
+def pmids_manuais(*pubs: Path) -> set[str]:
+    """PMIDs acrescentados à mão (pubmed_busca.py --pmids): execuções 'manual' e registros marcados 'manual'."""
+    saida: set[str] = set()
+    for pub in pubs:
+        d = C.ler_json(pub, {}) if pub.exists() else {}
+        if not isinstance(d, dict) or "__erro__" in d:
+            continue
+        for e in d.get("execucoes") or []:
+            if isinstance(e, dict) and e.get("variante") == "manual" and str(e.get("consulta", "")).startswith("PMIDs:"):
+                saida |= set(re.findall(r"\d+", str(e["consulta"])))
+        for r in d.get("registros") or []:
+            if isinstance(r, dict) and "manual" in (r.get("variantes") or []) and r.get("pmid"):
+                saida.add(str(r["pmid"]))
+    return saida
+
+
+def ler_sentinelas(sj: Path, manuais: set[str] | None = None) -> tuple[int, int, list[str], list[str]]:
+    """(recuperados pela string base, testáveis, acrescentados à mão por --pmids, perdidos de fato).
+
+    Só conta como acrescentado o sentinela que entrou por --pmids (o caminho do passo 6 da pesquisa para sentinela
+    mais amplo que a pergunta). Estar nos brutos porque outra variante ou outra base o trouxe não basta: a meta é
+    100% na variante base."""
+    manuais = manuais or set()
+    d = C.ler_json(sj, {}) or {}
+    if not isinstance(d, dict) or "__erro__" in d:
+        return 0, 0, [], []
+    base = (d.get("variantes") or {}).get("base") or {}
+    rec_ids = {str(x) for x in base.get("recuperados") or []}
+    rec = len(rec_ids) if base else (d.get("recuperados") or 0)
+    tot = base.get("testaveis") or d.get("total") or 0
+    acresc, perd = [], []
+    for r in d.get("resultados") or []:
+        if not isinstance(r, dict) or str(r.get("situacao", "")).lower() in ("ok", "recuperado") \
+                or str(r.get("pmid")) in rec_ids or not r.get("pmid"):
+            continue   # sem PMID: fora do PubMed, não conta nos testáveis da base
+        nome = f"{r.get('primeiro_autor') or ''}{r.get('ano') or ''}".strip() or str(r.get("pmid") or r.get("doi"))
+        (acresc if str(r.get("pmid")) in manuais else perd).append(nome)
+    if not d.get("resultados") and rec < tot:
+        perd = [f"{tot - rec} sem detalhe"]
+    return rec, tot, acresc, perd
+
+
 def analisar(pasta: Path, validar: bool = True) -> Situacao:
-    pasta = pasta.expanduser()
+    pasta = Path(os.path.abspath(pasta.expanduser()))   # absoluto: os comandos impressos valem de qualquer pasta
     and_ = C.ler_andamento(pasta)
     sem_parar = and_["modo"] == "sem parar"
-    S = Situacao(pasta=str(pasta), tema=tema_de(pasta), modo=and_["modo"], checagens=and_["checagens"])
+    S = Situacao(pasta=str(pasta), tema=tema_de(pasta), modo=and_["modo"], checagens=dict(and_["checagens"]))
     P = S.passos
     A = str(pasta)
     B = pasta / "01_busca"
     for grupo in ("01_busca", "02_artigos", "03_figuras"):
         if (pasta / grupo).is_symlink():
             S.compartilhado[grupo] = str((pasta / grupo).resolve())
+    # Aula que usa a busca de outra (--compartilhar-de): as checagens 1 e 2 são da aula dona.
+    dona = Path(S.compartilhado["01_busca"]).parent if "01_busca" in S.compartilhado else None
+    and_dona = C.ler_andamento(dona) if dona else None
+    dona_avancou = bool(dona) and ((dona / "04_aula" / "roteiro.md").exists() or (dona / "04_aula" / "deck.json").exists()
+                                   or bool(and_dona["checagens"].get(3)))
 
     def add(ordem, chave, texto, estado, comando=None, detalhe=None, bloqueia_de=None):
         P.append(Passo(ordem, chave, texto, estado, comando, detalhe, bloqueia_de))
 
     def checagem(n: int, ordem: float, bloqueia_de: float, como: str):
         feito = and_["checagens"].get(n)
+        alvo, onde = A, ""
+        if n in (1, 2) and dona is not None:
+            alvo, onde = str(dona), f" (na aula dona, {dona.name})"
+            if not feito and and_dona["checagens"].get(n):
+                feito = and_dona["checagens"][n] + onde
+                S.checagens[n] = feito
+        marcar = f"{C.cmd_proprio('situacao.py')} {alvo} --marcar {n} --nota"
         if feito:
             add(ordem, f"checagem{n}", f"Checagem {n}: {C.CHECAGENS[n]}", "ok",
                 detalhe=feito.replace(C.CHECAGENS[n], "").strip(" —-") or None)
         elif sem_parar:
             add(ordem, f"checagem{n}", f"Checagem {n} pulada (modo sem parar)", "ok",
                 detalhe="registre no fim o que o usuário precisa revisar")
+        elif onde and dona_avancou:
+            add(ordem, f"checagem{n}", f"Checagem {n} não registrada{onde}, mas a aula dona já passou dela", "aviso",
+                comando=f"{marcar} \"aprovada antes (registro retroativo)\"",
+                detalhe="busca e artigos são compartilhados: confirme com o usuário e registre na aula dona")
         else:
             add(ordem, f"checagem{n}", f"CHECAGEM {n}: {C.CHECAGENS[n]}", "usuario",
-                comando=f"{C.cmd_proprio('situacao.py')} {A} --marcar {n} --nota \"...\"  (depois que o usuário aprovar)",
+                comando=f"{marcar} \"...\"  (depois que o usuário aprovar)" + (f"  · registre{onde}" if onde else ""),
                 detalhe=como, bloqueia_de=bloqueia_de)
+
+    quebrados = [g for g in S.compartilhado if not (pasta / g).exists()]
+    if quebrados:
+        # 'fazer' e não aviso: sem o link, as etapas abaixo parecem vazias e mandariam refazer a busca inteira.
+        add(0.3, "links", f"Consertar o link simbólico quebrado: {', '.join(quebrados)} (não refaça a busca)", "fazer",
+            detalhe=f"aponta para {S.compartilhado[quebrados[0]]}; a aula dona mudou de lugar ou a pasta foi copiada sem "
+                    "ela. Refaça o link (ln -sfn ../<aula dona>/<pasta> <pasta>) ou copie as pastas da aula dona; "
+                    "as etapas seguintes só valem depois disso")
 
     # ---------------------------------------------------------------- 0 briefing
     brief = pasta / "00_briefing.md"
@@ -141,6 +253,11 @@ def analisar(pasta: Path, validar: bool = True) -> Situacao:
     pesq = lambda s: C.cmd_irma("pesquisa", s)  # noqa: E731
     conceitos = B / "conceitos.json"
     brutos = B / "brutos"
+    reg = B / "registros.json"
+    sel = B / "selecionados.json"
+    # Busca por ramos (01_busca/ramos/<ramo>/ com conceitos, strings, sentinelas e brutos próprios; a raiz guarda a união).
+    ramos = sorted(d for d in (B / "ramos").iterdir() if d.is_dir() and (d / "conceitos.json").exists()) \
+        if (B / "ramos").is_dir() else []
     if not conceitos.exists():
         add(1.0, "conceitos", "Escolher sentinelas e montar 01_busca/conceitos.json", "fazer",
             detalhe="boost-pesquisa-artigos, passos 2 e 3 (sentinelas conferidos no PubMed, blocos MeSH + texto livre)")
@@ -150,9 +267,12 @@ def analisar(pasta: Path, validar: bool = True) -> Situacao:
             add(1.0, "conceitos", "conceitos.json não abre", "fazer", detalhe=conc["__erro__"])
             conc = {}
         else:
-            add(1.0, "conceitos", "conceitos.json", "ok", detalhe=f"recorte {conc.get('recorte', 'topo_mecanismos')}")
+            det = f"recorte {conc.get('recorte', 'topo_mecanismos')}"
+            if ramos:
+                det += f"; busca em {len(ramos)} ramos ({', '.join(r.name for r in ramos)}), união na raiz de 01_busca"
+            add(1.0, "conceitos", "conceitos.json", "ok", detalhe=det)
         n_sent = len(conc.get("sentinelas") or []) if isinstance(conc, dict) else 0
-        if n_sent == 0:
+        if n_sent == 0 and not ramos:
             add(1.05, "sentinelas_lista", "Nenhum artigo-sentinela em conceitos.json: a busca fica sem teste de sensibilidade",
                 "aviso")
         if mais_velho(B / "strings.json", conceitos):
@@ -161,36 +281,67 @@ def analisar(pasta: Path, validar: bool = True) -> Situacao:
         else:
             add(1.1, "strings", "Strings geradas (estrategia.md, strings.json)", "ok")
         pub = brutos / "pubmed.json"
-        if not pub.exists():
-            add(1.2, "pubmed", "Rodar o PubMed (contar, diagnosticar, baixar)", "fazer",
+        n_pub, execs = execucoes_pubmed(pub) if pub.exists() else (0, [])
+        pub_ok = pub.exists() and n_pub > 0
+        if not pub_ok:
+            add(1.2, "pubmed", "Rodar o PubMed (contar, diagnosticar, baixar)" +
+                (" — pubmed.json só tem contagem, sem registros" if pub.exists() else ""), "fazer",
                 f"{pesq('pubmed_busca.py')} --conceitos {conceitos} --variante base --so-contar  &&  "
                 f"{pesq('pubmed_busca.py')} --conceitos {conceitos}")
         else:
-            dados = C.ler_json(pub, {})
-            det = None
-            if isinstance(dados, dict):
-                n = len(dados.get("registros") or [])
-                det = f"{n} registros"
-            add(1.2, "pubmed", "PubMed", "ok", detalhe=det)
-            if mtime(conceitos) > mtime(pub) + 2:
-                add(1.21, "pubmed_velho", "conceitos.json mudou depois da busca no PubMed", "aviso",
-                    f"{pesq('pubmed_busca.py')} --conceitos {conceitos} --substituir",
+            add(1.2, "pubmed", "PubMed", "ok", detalhe=f"{n_pub} registros" + (" (união dos ramos)" if ramos else ""))
+            # Ramos: cada um é comparado com a própria string; a raiz é a união e não roda no PubMed.
+            alvos = [(r.name, r / "conceitos.json", r / "strings.json", r / "brutos" / "pubmed.json") for r in ramos
+                     if (r / "brutos" / "pubmed.json").exists()] if ramos else \
+                    [("", conceitos, B / "strings.json", pub)]
+            velhos = [nome or "raiz" for nome, c, st, pb in alvos if pubmed_desatualizado(c, st, pb)]
+            if velhos:
+                add(1.21, "pubmed_velho", "A string mudou depois da busca no PubMed" +
+                    (f" (ramos: {', '.join(velhos)})" if ramos else ""), "aviso",
+                    f"{pesq('pubmed_busca.py')} --conceitos {conceitos} --substituir" if not ramos else None,
                     detalhe="se os blocos mudaram, rode de novo (strings, PubMed, sentinelas)")
-        if n_sent:
-            sj = B / "sentinelas.json"
-            if not sj.exists():
+            cortes = [(nome, v, tot, baix) for nome, _c, _s, pb in alvos for v, tot, baix in truncadas_pubmed(pb)]
+            if cortes:
+                nome, v, tot, baix = cortes[0]
+                cabe = all(tot <= 5000 for *_x, tot, _b in cortes)
+                conc_alvo = (B / "ramos" / nome / "conceitos.json") if nome else conceitos
+                cedo = cabe and not and_["checagens"].get(1) and not reg.exists()   # antes da triagem: corrigir já
+                add(1.22, "pubmed_corte", "PubMed cortado por --max: " + "; ".join(
+                    f"{(n + ':') if n else ''}{vv} {b} de {t}" for n, vv, t, b in cortes[:4]), "fazer" if cedo else "aviso",
+                    f"{pesq('pubmed_busca.py')} --conceitos {conc_alvo} --variante {v} --max 5000" if cabe else None,
+                    detalhe="relevância do PubMed não é importância: até uns 5.000, baixe tudo; acima, aperte a busca "
+                            "(passo 5 da pesquisa)")
+        # sentinelas: na raiz ou em cada ramo
+        arqs_sent = [r / "sentinelas.json" for r in ramos if (r / "sentinelas.json").exists()] if ramos \
+            else [B / "sentinelas.json"] if (B / "sentinelas.json").exists() else []
+        teste_feito = bool(arqs_sent)
+        if n_sent or ramos:
+            if not arqs_sent:
                 add(1.3, "teste_sentinela", "Testar os artigos-sentinela", "fazer",
-                    f"{pesq('teste_sentinela.py')} --conceitos {conceitos} --variante base,rs,ecr,diretriz")
+                    f"{pesq('teste_sentinela.py')} --conceitos {conceitos} --variante base,rs,ecr,diretriz" if not ramos
+                    else None, detalhe="um teste por ramo (ramos/<ramo>/conceitos.json)" if ramos else None)
             else:
-                d = C.ler_json(sj, {}) or {}
-                base = (d.get("variantes") or {}).get("base") or {}
-                rec = len(base.get("recuperados") or []) if base else d.get("recuperados")
-                tot = base.get("testaveis") or d.get("total")
-                est = "ok" if rec is not None and tot and rec >= tot else "aviso"
+                rec = tot = 0
+                acresc: list[str] = []
+                perd: list[str] = []
+                for sj in arqs_sent:
+                    r_, t_, a_, p_ = ler_sentinelas(sj, pmids_manuais(sj.parent / "brutos" / "pubmed.json", pub))
+                    rec, tot = rec + r_, tot + t_
+                    acresc += a_
+                    perd += p_
+                est = "ok" if tot and not perd else "aviso"
+                det = []
+                if ramos:
+                    det.append(f"soma de {len(arqs_sent)} ramo(s)")
+                if acresc:
+                    det.append(f"fora da string, mas acrescentado(s) por --pmids nos brutos: {', '.join(acresc[:6])}")
+                if perd:
+                    det.append(f"perdido(s): {', '.join(perd[:6])}; meta é 100% na base, veja o relatório de perdas "
+                               "(passo 6 da pesquisa)")
                 add(1.3, "teste_sentinela", f"Sentinelas na variante base: {rec}/{tot}", est,
-                    None if est == "ok" else f"{pesq('teste_sentinela.py')} --conceitos {conceitos} --variante base,rs,ecr,diretriz",
-                    detalhe=None if est == "ok" else "meta é 100% na base; veja o relatório de perdas (passo 6 da pesquisa)")
-                S.resumo["sentinelas"] = f"{rec}/{tot}"
+                    f"{pesq('teste_sentinela.py')} --conceitos {conceitos} --variante base,rs,ecr,diretriz"
+                    if perd and not ramos else None, detalhe="; ".join(det) or None)
+                S.resumo["sentinelas"] = f"{rec}/{tot}" + (f" (+{len(acresc)} por PMID)" if acresc else "")
         if not (brutos / "crossref.json").exists():
             add(1.4, "crossref", "Crossref (JOSPT e revistas-alvo)", "fazer",
                 f"{pesq('crossref_busca.py')} --conceitos {conceitos}")
@@ -201,26 +352,38 @@ def analisar(pasta: Path, validar: bool = True) -> Situacao:
                 f"{pesq('openalex_enriquecer.py')} --pasta {B} --perseguir sentinelas --de-ano 2018")
         else:
             add(1.5, "openalex", "OpenAlex", "ok")
-        checagem(1, 1.6, 2.1, "mostre estrategia.md em poucas linhas (blocos, contagens, sentinelas) e a string "
-                              "Scopus 'base' em bloco de código, com o passo a passo de exportação (passo 8 da pesquisa)")
+        # A checagem 1 só aparece quando há o que mostrar: sentinelas testados (ou trabalho já depois dela).
+        # Contagens em estrategia.md logo depois dos sentinelas (1.35), antes da Crossref: assim a checagem 1 sai
+        # cedo e a Crossref e o OpenAlex rodam enquanto o usuário vai ao Scopus (references/checagens.md).
+        pronto_c1 = teste_feito or (pub_ok and n_sent == 0 and not ramos) or reg.exists() or sel.exists()
+        estr = B / "estrategia.md"
+        contagens_pendentes = False
+        if pronto_c1 and not ramos and not and_["checagens"].get(1) and not sel.exists() and estr.exists() and \
+                mais_velho(estr, pub, B / "sentinelas.json"):
+            add(1.35, "estrategia_contagens", "Registrar contagens e sentinelas em estrategia.md (antes de mostrar a checagem 1)",
+                "fazer", f"{pesq('montar_strings.py')} {conceitos}")
+            contagens_pendentes = True
+        if pronto_c1 and not contagens_pendentes:
+            checagem(1, 1.6, 2.1, "mostre estrategia.md em poucas linhas (blocos, contagens, sentinelas) e a string "
+                                  "Scopus 'base' em bloco de código, com o passo a passo de exportação (passo 8 da pesquisa)")
         exports = [p for p in brutos.glob("scopus*") if p.suffix.lower() in (".csv", ".ris", ".bib", ".txt")] \
             if brutos.is_dir() else []
         sjson = brutos / "scopus.json"
+        c1_feita = S.checagens.get(1)
         if exports:
             if mais_velho(sjson, *exports):
                 add(1.7, "scopus", "Importar a exportação do Scopus", "fazer",
                     f"{pesq('importar_scopus.py')} --pasta {B}")
             else:
                 add(1.7, "scopus", f"Scopus importado ({len(exports)} arquivo(s))", "ok")
-        elif and_["checagens"].get(1) and not sem_parar:
-            add(1.7, "scopus", "Exportação do Scopus ainda não chegou", "usuario",
-                detalhe=f"siga sem ela; quando chegar, salve em {brutos}/scopus.csv e rode importar + consolidar de novo")
         elif sem_parar:
             add(1.7, "scopus", "Scopus fora desta rodada (modo sem parar)", "aviso",
                 detalhe="registre em estrategia.md; a string fica pronta para o usuário colar depois")
+        elif c1_feita or reg.exists():
+            add(1.7, "scopus", "Exportação do Scopus ainda não chegou", "usuario",
+                detalhe=f"siga sem ela; quando chegar, salve em {brutos.resolve()}/scopus.csv e rode importar + consolidar de novo")
 
     # ---------------------------------------------------------------- 2 seleção
-    reg = B / "registros.json"
     brutos_json = list(brutos.glob("*.json")) if brutos.is_dir() else []
     if conceitos.exists():
         if not reg.exists() or mais_velho(reg, *brutos_json):
@@ -231,29 +394,35 @@ def analisar(pasta: Path, validar: bool = True) -> Situacao:
             det = f"{fl.get('unicos', '?')} únicos de {fl.get('identificados', '?')}" if isinstance(fl, dict) else None
             add(2.0, "consolidar", "Registros consolidados", "ok", detalhe=det)
             S.resumo["registros"] = det
-    sel = B / "selecionados.json"
     planilha = B / "triagem.xlsx"
     decis = B / "decisoes.json"
     if reg.exists() or sel.exists():
         if not sel.exists():
             if not decis.exists():
                 add(2.1, "triagem", "Triar título e resumo (triagem_lote.md) e gravar decisoes.json", "fazer",
-                    detalhe="6 a 12 artigos: 1-2 âncoras, 3-5 evidência principal, 2-3 mecanismo, 1 contraponto")
+                    detalhe="boost-pesquisa-artigos, passo 10: 6 a 12 artigos (1-2 âncoras, 3-5 evidência principal, "
+                            "2-3 mecanismo, 1 contraponto), cada um com papel e uma frase de por que entra")
             else:
                 add(2.1, "triagem", "Aplicar as decisões e exportar os selecionados", "fazer",
-                    f"{pesq('consolidar.py')} --pasta {B} --decisoes {decis}  &&  {pesq('exportar_selecionados.py')} --pasta {B}")
+                    f"{pesq('consolidar.py')} --pasta {B} --decisoes {decis}  &&  {pesq('exportar_selecionados.py')} --pasta {B}"
+                    + ("" if ramos else f"  &&  {pesq('montar_strings.py')} {conceitos}"),
+                    detalhe="o último comando atualiza estrategia.md com contagens, sentinelas e fluxo (passo 11)")
         elif planilha.exists() and mtime(planilha) > mtime(sel) + 2:
-            add(2.1, "triagem", "A planilha mudou depois de selecionados.json (o usuário pode ter editado)", "fazer",
+            add(2.1, "triagem", "A planilha é mais nova que selecionados.json (edição do usuário ou nova consolidação)", "fazer",
                 f"{pesq('exportar_selecionados.py')} --pasta {B}")
         else:
             itens = C.lista_de(C.ler_json(sel, []), "selecionados", "registros")
             sem_papel = [i.get("chave") for i in itens if not i.get("papel")]
             n = len(itens)
-            est = "ok" if 6 <= n <= 12 and not sem_papel else "aviso"
-            det = f"{n} artigos"
+            # seleção compartilhada por várias aulas (--compartilhar-de): o teto é 12 por aula
+            dona_b = B.resolve()
+            n_aulas = max(1, sum(1 for d in pasta.parent.iterdir() if d.is_dir() and (d / "01_busca").is_dir()
+                                 and (d / "01_busca").resolve() == dona_b))
+            est = "ok" if 6 <= n <= 12 * n_aulas and not sem_papel else "aviso"
+            det = f"{n} artigos" + (f", seleção de {n_aulas} aulas (cada roteiro usa só os seus)" if n_aulas > 1 else "")
             if sem_papel:
                 det += f"; sem papel: {', '.join(map(str, sem_papel[:6]))}"
-            if not 6 <= n <= 12:
+            if not 6 <= n <= 12 * n_aulas:
                 det += " (o recomendado para uma aula é 6 a 12)"
             add(2.1, "triagem", "Selecionados", est, detalhe=det)
             S.resumo["selecionados"] = n
@@ -281,8 +450,9 @@ def analisar(pasta: Path, validar: bool = True) -> Situacao:
                 add(3.0, "baixar", f"PDFs: {len(ok_chaves)} com PDF, {len(pend)} pendente(s)", "ok")
             S.resumo["pdfs"] = f"{len(ok_chaves)} ok, {len(pend)} pendentes"
         if man_arq.exists():
+            real = art.resolve()
             checagem(2, 3.05, 5.0, "tabela curta dos selecionados (chave, desenho, ano, revista, papel, aberto/pago) "
-                                   f"e o conteúdo de {art}/pendentes.md, com a pasta exata para salvar: {art}/manual/")
+                                   f"e o conteúdo de {real}/pendentes.md, com a pasta exata para salvar: {real}/manual/")
     elif not sel.exists() and man_arq.exists():
         add(3.0, "baixar", "Há manifest.json sem selecionados.json", "aviso",
             detalhe="o download foi feito a partir de registros.json? Confira; baixar sem seleção baixa a busca inteira")
@@ -291,13 +461,6 @@ def analisar(pasta: Path, validar: bool = True) -> Situacao:
     if soltos:
         add(3.1, "incorporar", f"{len(soltos)} arquivo(s) em manual/ para incorporar", "fazer",
             f"{leit('incorporar_manuais.py')} {A}")
-    if pend and man_arq.exists():
-        if sem_parar:
-            add(3.15, "pendentes", f"{len(pend)} PDF(s) pendente(s): entram como 'só resumo' (modo sem parar)", "aviso",
-                detalhe=", ".join(pend[:10]))
-        else:
-            add(3.15, "pendentes", f"{len(pend)} PDF(s) pagos ou recusados esperando o usuário (pendentes.md)", "usuario",
-                detalhe=", ".join(pend[:10]) + " · siga com os que já têm PDF; o que não chegar entra como 'só resumo'")
     sem_texto = [k for k in ok_chaves if not (art / "texto" / f"{k}.md").exists()]
     if sem_texto:
         add(3.2, "texto", f"Extrair o texto de {len(sem_texto)} PDF(s)", "fazer", f"{leit('extrair_texto.py')} {A}",
@@ -319,13 +482,41 @@ def analisar(pasta: Path, validar: bool = True) -> Situacao:
             so_resumo.append(k)
         elif not m:
             so_resumo.append(k)
+    if pend and man_arq.exists():
+        ja_resumo = [k for k in pend if k in so_resumo]
+        extra = (f" · {len(ja_resumo)} já com ficha só do resumo; quando o PDF chegar: incorporar, extrair e reler"
+                 if ja_resumo else "")
+        if sem_parar:
+            add(3.15, "pendentes", f"{len(pend)} PDF(s) pendente(s): entram como 'só resumo' (modo sem parar)", "aviso",
+                detalhe=", ".join(pend[:10]) + extra)
+        else:
+            add(3.15, "pendentes", f"{len(pend)} PDF(s) pagos ou recusados esperando o usuário (pendentes.md)", "usuario",
+                detalhe=", ".join(pend[:10]) + (extra or " · siga com os que já têm PDF; o que não chegar entra como "
+                                                         "'só resumo'"))
+    reler = [k for k in ok_chaves if k in so_resumo and (art / "texto" / f"{k}.md").exists()]
+    if reler:
+        add(3.32, "reler", f"{len(reler)} ficha(s) só do resumo, mas o PDF já está na pasta: releia no texto completo",
+            "aviso", detalhe=", ".join(reler[:10]) + " · atualize 'Texto lido' e os números com página")
+    # Os candidatos de figura saem antes das fichas: quem lê o artigo já escolhe e recorta as figuras dele.
+    fig = pasta / "03_figuras"
+    cat_arq = fig / "catalogo.json"
+    if ok_chaves:
+        sem_det = [k for k in ok_chaves if not (fig / "paginas" / k).is_dir()]
+        if not cat_arq.exists() or sem_det:
+            add(3.25, "detectar", "Gerar miniaturas e candidatos de recorte" +
+                (f" ({len(sem_det)} artigo(s) sem detecção)" if cat_arq.exists() else ""), "fazer",
+                f"{leit('detectar_figuras.py')} {A}" + (f" --apenas {' '.join(sem_det)}" if cat_arq.exists() else ""),
+                detalhe="uma vez, no principal, antes de distribuir as fichas (references/subagentes.md)")
+        else:
+            add(3.25, "detectar", "Candidatos de recorte gerados", "ok")
     if alvos_ficha and (ok_chaves or sel.exists()) and man_arq.exists():
         if sem_ficha:
             com_pdf = [k for k in sem_ficha if k in ok_chaves]
             add(3.3, "fichas", f"Escrever {len(sem_ficha)} ficha(s) de leitura crítica "
                 f"({len(com_pdf)} com PDF, {len(sem_ficha) - len(com_pdf)} só resumo)", "fazer",
-                detalhe="uma por artigo, de preferência em paralelo (subagentes); modelo em "
-                        "boost-leitura-figuras/assets/ficha_leitura_modelo.md · faltam: " + ", ".join(sem_ficha[:10]))
+                detalhe="uma por artigo, de preferência em paralelo (subagentes; modelo de pedido em "
+                        "references/subagentes.md); ficha em boost-leitura-figuras/assets/ficha_leitura_modelo.md · "
+                        "faltam: " + ", ".join(sem_ficha[:10]))
         if incompletas:
             add(3.31, "fichas_incompletas", f"{len(incompletas)} ficha(s) com campos do modelo ainda abertos", "aviso",
                 detalhe=", ".join(incompletas[:10]))
@@ -335,21 +526,17 @@ def analisar(pasta: Path, validar: bool = True) -> Situacao:
     S.resumo["so_resumo"] = so_resumo
 
     # ---------------------------------------------------------------- 4 figuras
-    fig = pasta / "03_figuras"
-    cat_arq = fig / "catalogo.json"
     catalogo = C.lista_de(C.ler_json(cat_arq, []), "figuras")
     aprovadas = [e for e in catalogo if e.get("aprovada") is True]
-    if ok_chaves:
-        sem_det = [k for k in ok_chaves if not (fig / "paginas" / k).is_dir()]
-        if not cat_arq.exists() or sem_det:
-            add(4.0, "detectar", "Gerar miniaturas e candidatos de recorte" +
-                (f" ({len(sem_det)} artigo(s) sem detecção)" if cat_arq.exists() else ""), "fazer",
-                f"{leit('detectar_figuras.py')} {A}" + (f" --apenas {' '.join(sem_det)}" if cat_arq.exists() else ""))
-        else:
-            add(4.0, "detectar", "Candidatos de recorte gerados", "ok")
+    aula4 = pasta / "04_aula"
+    rot = aula4 / "roteiro.md"
+    deck_arq = aula4 / "deck.json"
+    if ok_chaves or aprovadas:
         if cat_arq.exists():
             if not aprovadas:
-                add(4.1, "recortar", "Olhar, recortar e aprovar as figuras (nenhuma aprovada)", "fazer",
+                adiante = rot.exists() or deck_arq.exists()
+                add(4.1, "recortar", "Nenhuma figura aprovada" + (": a aula segue sem figura de artigo" if adiante else
+                    "; olhar, recortar e aprovar"), "aviso" if adiante else "fazer",
                     detalhe="ciclo olhar → recortar → conferir da boost-leitura-figuras (passo 5); "
                             "parta das figuras apontadas nas fichas; 3 a 5 entram na aula")
             else:
@@ -373,13 +560,22 @@ def analisar(pasta: Path, validar: bool = True) -> Situacao:
     S.resumo["figuras_aprovadas"] = len(aprovadas)
 
     # ---------------------------------------------------------------- 5 roteiro
-    aula4 = pasta / "04_aula"
-    rot = aula4 / "roteiro.md"
     tem_leitura = bool(fichas) and not sem_ficha
     mapa = pasta / "00_mapa_evidencias.md"
     if mapa.exists():
         add(4.9, "mapa", "Mapa de evidências (00_mapa_evidencias.md)", "ok")
-    if tem_leitura or rot.exists():
+    if not rot.exists() and deck_arq.exists():
+        # pasta em que o deck foi escrito direto (sem roteiro.md): não manda voltar ao roteiro
+        add(5.0, "roteiro", "Sem 04_aula/roteiro.md: o deck foi escrito direto", "aviso",
+            detalhe="a linha do tempo está no deck (validar_aula.py mostra); se quiser o roteiro para a gravação, "
+                    "escreva-o a partir do deck")
+        if and_["checagens"].get(3):
+            add(5.1, "checagem3", f"Checagem 3: {C.CHECAGENS[3]}", "ok")
+        elif not sem_parar:
+            add(5.1, "checagem3", "Checagem 3 sem roteiro para aprovar", "aviso",
+                f"{C.cmd_proprio('situacao.py')} {A} --marcar 3 --nota \"linha do tempo aprovada junto com o deck\"",
+                detalhe="mostre os objetivos, o caso e a linha do tempo do deck junto com a checagem 4")
+    elif tem_leitura or rot.exists():
         if not rot.exists():
             add(5.0, "roteiro", "Escrever 04_aula/roteiro.md com a linha do tempo", "fazer",
                 detalhe="boost-aula-slides, passos 1 a 3 (objetivos, caso, 3 blocos, tempos); modelo em assets/roteiro_modelo.md")
@@ -392,7 +588,6 @@ def analisar(pasta: Path, validar: bool = True) -> Situacao:
 
     # ---------------------------------------------------------------- 6 deck e materiais
     sl = lambda s: C.cmd_irma("slides", s)  # noqa: E731
-    deck_arq = aula4 / "deck.json"
     if rot.exists() or deck_arq.exists():
         if not deck_arq.exists():
             add(6.0, "deck", "Escrever deck.json e questoes.json", "fazer",
@@ -450,7 +645,10 @@ def analisar(pasta: Path, validar: bool = True) -> Situacao:
                 ab = len(PLACEHOLDER.findall(ver.read_text(encoding="utf-8", errors="replace")))
                 add(6.5, "verificacao", "verificacao.md" + (f" ({ab} campo(s) do modelo abertos)" if ab else ""),
                     "aviso" if ab else "ok")
-            if pptx.exists():
+            # A checagem 4 só aparece com o deck pronto para revisar: montado, renderizado, conferido, materiais e
+            # verificacao.md feitos (ou já com a entrega gerada, para o registro retroativo).
+            falta6 = any(p.estado == "fazer" and 6.0 <= p.ordem < 6.6 for p in P)
+            if pptx.exists() and (not falta6 or (aula4 / "entrega.md").exists() or and_["checagens"].get(4)):
                 checagem(4, 6.6, 7.0, "caminho do .pptx, duração e linha do tempo resumida, folha de contato do deck, "
                                       "o que não foi conferido e os avisos que ficaram de pé")
 
@@ -464,16 +662,22 @@ def analisar(pasta: Path, validar: bool = True) -> Situacao:
         else:
             add(7.0, "entrega", "Relatório de entrega gerado (04_aula/entrega.md)", "ok")
 
+    # O próximo passo é o primeiro 'fazer' na ordem do pipeline, não na ordem em que o código acrescentou.
+    P.sort(key=lambda p: p.ordem)
+
     # Checagem não registrada, mas com trabalho já feito depois dela (pasta de outra sessão, aprovação só na
     # conversa): não trava; vira aviso para confirmar e registrar.
     for p in P:
         if p.estado == "usuario" and p.chave.startswith("checagem") and p.bloqueia_de is not None:
             if any(q.estado == "ok" and q.ordem >= p.bloqueia_de and not q.chave.startswith("checagem") for q in P):
                 n = p.chave[-1]
+                # checagens 1 e 2 de aula com busca compartilhada se registram na aula dona (references/trilha.md)
+                alvo = str(dona) if dona is not None and n in ("1", "2") else A
                 p.estado = "aviso"
                 p.texto = f"Checagem {n} não registrada, mas o trabalho já passou dela"
-                p.detalhe = "confirme com o usuário se ele aprovou; se sim, registre"
-                p.comando = f"{C.cmd_proprio('situacao.py')} {A} --marcar {n} --nota \"aprovada antes (registro retroativo)\""
+                p.detalhe = "confirme com o usuário se ele aprovou; se sim, registre" + \
+                    (f" na aula dona ({dona.name})" if alvo != A else "")
+                p.comando = f"{C.cmd_proprio('situacao.py')} {alvo} --marcar {n} --nota \"aprovada antes (registro retroativo)\""
                 p.bloqueia_de = None
     return S
 

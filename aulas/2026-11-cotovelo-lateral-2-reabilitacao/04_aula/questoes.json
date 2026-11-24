@@ -1,0 +1,130 @@
+{
+  "questoes": [
+    {
+      "id": "q1",
+      "objetivo": 1,
+      "nivel": "aplicação",
+      "cenario": "Carlos, 38 anos, mecânico, tem tendinopatia lateral do cotovelo direito há 10 semanas, com dor de 5 em 10 no trabalho que persiste horas depois (irritabilidade moderada). A contração voluntária máxima (CVM) de extensão do punho direito, no dinamômetro manual, é de 12 kg. Ele vai fazer o exercício em casa.",
+      "pergunta": "Qual prescrição inicial é a mais defensável?",
+      "opcoes": {
+        "A": "Isométrico de extensores do punho com 2,4 kg, 4 × 30 s, todo dia; +5% da CVM a cada 2 semanas.",
+        "B": "Excêntrico de punho com 8 kg, 3 × 15 até a falha, 3 vezes por semana, ignorando a dor.",
+        "C": "Repouso do punho por 4 semanas e, depois, isotônico com 5 kg, 3 × 10 por dia.",
+        "D": "Isométrico com 2,4 kg, 4 × 30 s, só nos dias sem dor; parar se doer durante a série."
+      },
+      "gabarito": "A",
+      "comentario": "A dose do isométrico do ensaio de Vuvan 2020 (pelas tabelas redigitadas da aula de capacitação, a conferir) começa em 20% da CVM (12 kg × 0,20 = 2,4 kg), 4 × 30 s ou 3 × 45 s, diário, subindo 5% da CVM a cada 2 semanas até 35%. A regra de progressão pela dor de 24 h é opinião de especialista (Day 2019). O isométrico sozinho, sem supervisão, teve sucesso percebido de 29% contra 26% de quem esperou: na clínica, ele vem junto de outras medidas.",
+      "distratores": {
+        "B": "Copiar uma dose de excêntrico de alta carga até a falha para um quadro moderadamente irritável e ignorar a resposta da dor.",
+        "C": "Achar que repouso resolve a tendinopatia e depois pular direto para carga alta e diária.",
+        "D": "Exigir dor zero e treinar só em dias sem dor: a regra de Day 2019 tolera dor que não sobe mais de 1 ponto e sem dor tardia em 24 h."
+      },
+      "referencia": ["Vuvan2020", "Day2019"]
+    },
+    {
+      "id": "q2",
+      "objetivo": 1,
+      "nivel": "análise",
+      "cenario": "Um colega mostra um ensaio com 60 pacientes com tendinopatia lateral: todos fizeram treino de força pesado e lento (HSR) em casa por 12 semanas, somado a corticoide, agulhamento do tendão ou agulhamento placebo. Em 12 semanas, o DASH caiu cerca de 20 pontos e a dor 2,5 pontos, igual nos três braços.",
+      "pergunta": "Qual leitura do resultado é a mais correta?",
+      "opcoes": {
+        "A": "O HSR reduz cerca de 20 pontos no DASH em 12 semanas.",
+        "B": "Corticoide e agulhamento nada somaram; o efeito do HSR em si não foi testado.",
+        "C": "O HSR não funciona, porque os três braços terminaram iguais.",
+        "D": "O agulhamento placebo funcionou tanto quanto o real; logo, o placebo é o tratamento."
+      },
+      "gabarito": "B",
+      "comentario": "Couppé 2022 (resumo): os três braços melhoraram igualmente (DASH Δ20, QuickDASH Δ21, dor Δ2,5), e em 52 semanas o QuickDASH ficou 15 pontos pior com corticoide (desfecho secundário). Como não há braço sem HSR, a melhora dentro dos grupos mistura o exercício, o curso natural (89% muito melhores em 1 ano nos braços controle de ensaios, Ikonen 2022), a regressão à média e a expectativa.",
+      "distratores": {
+        "A": "Atribuir a mudança dentro do grupo ao tratamento, sem comparador.",
+        "C": "Confundir ausência de diferença entre braços que receberam o mesmo HSR com ausência de efeito do HSR.",
+        "D": "Ler a igualdade entre os braços de agulhamento como prova de efeito placebo, esquecendo o curso natural."
+      },
+      "referencia": ["Couppe2022", "Ikonen2022"]
+    },
+    {
+      "id": "q3",
+      "objetivo": 2,
+      "nivel": "avaliação",
+      "cenario": "Paula, 52 anos, violinista, tem dor lateral no cotovelo esquerdo há 3 meses. Ela tem um concerto em 3 semanas e pede a infiltração de corticoide. Já entendeu o programa de exercício e quer fazê-lo.",
+      "pergunta": "Qual resposta é a mais defensável?",
+      "opcoes": {
+        "A": "Recusar: o corticoide rompe o tendão com frequência e não deve ser usado.",
+        "B": "Indicar sem ressalvas: com a fisioterapia junto, o risco de recidiva desaparece.",
+        "C": "Explicar que alivia mais rápido, mas piora o ano e tem recidiva alta, e decidir com ela.",
+        "D": "Trocar por PRP, que regenera o tendão e não tem recidiva."
+      },
+      "gabarito": "C",
+      "comentario": "Corticoide: 92% de sucesso em 6 semanas contra 47% com fisioterapia, mas 69% contra 91% em 1 ano (Smidt 2002); recidiva de 54% contra 12% com placebo, e a fisioterapia junto não a reduziu de forma demonstrada (29% x 38%, P = 0,25) (Coombes 2013). Ruptura de tendão foi rara: 1 em 991 (Coombes 2010). Com uma data importante e os números na mesa, a injeção pode ser uma escolha razoável dela; a decisão é compartilhada. PRP não superou a injeção placebo em 3 meses (0,16 ponto em 10, certeza moderada; Karjalainen 2021).",
+      "distratores": {
+        "A": "Superestimar o risco imediato (0,1% de ruptura) e ignorar a preferência e o objetivo da paciente.",
+        "B": "Achar que a fisioterapia protege da recidiva: não houve diferença demonstrada.",
+        "D": "Acreditar no marketing do PRP: igual à injeção placebo em 3, 6 e 12 meses."
+      },
+      "referencia": ["Smidt2002", "Coombes2013", "Coombes2010", "Karjalainen2021"]
+    },
+    {
+      "id": "q4",
+      "objetivo": 2,
+      "nivel": "análise",
+      "cenario": "No ensaio fatorial de Coombes 2013, em 26 semanas, 55% dos que receberam corticoide e 85% dos que receberam injeção placebo estavam recuperados ou muito melhor.",
+      "pergunta": "A cada quantas injeções de corticoide, aproximadamente, 1 pessoa a menos está bem em 26 semanas?",
+      "opcoes": {
+        "A": "Cerca de 30.",
+        "B": "Cerca de 1,5.",
+        "C": "Cerca de 7.",
+        "D": "Cerca de 3."
+      },
+      "gabarito": "D",
+      "comentario": "Diferença absoluta: 85% − 55% = 30 pontos; NNH = 1 ÷ 0,30 ≈ 3,3, ou seja, cerca de 1 a cada 3 injeções (cálculo com as proporções do resumo; sem intervalo, porque os n por célula estão no texto completo). O resumo traz um risco relativo (0,79) que não fecha com as proporções: por isso a conta usa as proporções.",
+      "distratores": {
+        "A": "Confundir pontos percentuais com o número necessário (30 pontos não são 30 pessoas).",
+        "B": "Dividir as proporções (85 ÷ 55) em vez de usar a diferença absoluta.",
+        "C": "Usar a diferença de 1 ano (96% − 83% = 13 pontos, NNH ≈ 8) em vez da de 26 semanas."
+      },
+      "referencia": ["Coombes2013"]
+    },
+    {
+      "id": "q5",
+      "objetivo": 3,
+      "nivel": "análise",
+      "cenario": "Jorge, 56 anos, tem tendinopatia lateral há 2 meses. Preensão sem dor de 150 N no lado afetado e 300 N no outro. Pela regra de predição de Vicenzino 2009 (idade < 49, afetado > 112 N, não afetado < 336 N), ele só falha no critério da idade. No estudo, 79% melhoraram em 3 semanas com MWM e exercício; para idade < 49, sensibilidade 0,61 e especificidade 0,77 (RV+ 2,6; IC 0,96 a 7,3).",
+      "pergunta": "Qual leitura é a mais correta?",
+      "opcoes": {
+        "A": "Ele não vai responder à MWM: encaminhar para outro tratamento.",
+        "B": "A chance segue em torno de 2 em 3; testar a MWM na sessão e decidir pela resposta.",
+        "C": "A chance cai para perto de zero, porque a regra exige os três critérios.",
+        "D": "A regra também prediz quem melhora sem tratamento, então basta esperar."
+      },
+      "gabarito": "B",
+      "comentario": "RV− da idade = (1 − 0,61) ÷ 0,77 ≈ 0,51. Chance antes do teste: 0,79 ÷ 0,21 = 3,76; depois: 3,76 × 0,51 ≈ 1,9; probabilidade ≈ 66% (cálculo com a Tab. 2 de Vicenzino 2009, print da aula de capacitação). Todas as RV+ da regra têm intervalo que inclui 1, a regra é de derivação, sem validação, e não predisse no braço espera. Testar a resposta na sessão (preensão sem dor antes e depois) é proposta clínica.",
+      "distratores": {
+        "A": "Tratar uma regra de derivação sem validação como critério de exclusão.",
+        "C": "Ignorar a probabilidade antes do teste (79%) e o tamanho da RV−.",
+        "D": "Inverter o achado: a regra não predisse a melhora no braço espera."
+      },
+      "referencia": ["Vicenzino2009"]
+    },
+    {
+      "id": "q6",
+      "objetivo": 3,
+      "nivel": "aplicação",
+      "cenario": "Lúcia, 44 anos, melhorou a preensão sem dor de 130 para 170 N logo depois de uma mobilização com movimento (MWM) de deslizamento lateral. Ela pergunta se seis sessões de MWM resolvem o problema para o ano.",
+      "pergunta": "Qual resposta os dados sustentam melhor?",
+      "opcoes": {
+        "A": "A MWM costuma aliviar nas primeiras semanas; no longo prazo, quem segura é a carga.",
+        "B": "Sim: a MWM corrige a posição da cabeça do rádio e resolve de vez.",
+        "C": "Não: a MWM não tem efeito nem no curto prazo, só placebo.",
+        "D": "Só se somarmos manipulação cervical, que garante o efeito no longo prazo."
+      },
+      "gabarito": "A",
+      "comentario": "Lucado 2019: efeito pequeno a moderado da MWM na dor no curto prazo (0,43; 0,15 a 0,71); nos prints dos prazos de 3 a 12 meses, os intervalos cruzam o zero. Bisset 2006: fisioterapia com MWM e exercício ganhou da espera em 6 semanas e empatou em 52. Wallis 2024: os efeitos de terapia manual e exercício não se mantiveram depois do tratamento. Usar a MWM como janela para carregar é proposta clínica.",
+      "distratores": {
+        "B": "Explicação mecânica sem evidência e promessa de longo prazo que os dados não sustentam.",
+        "C": "Ignorar o efeito de curto prazo, que existe, ainda que pequeno.",
+        "D": "Mobilização regional tem grau C na diretriz; nenhum estudo da seleção mostra efeito de longo prazo."
+      },
+      "referencia": ["Lucado2019", "Bisset2006b", "Wallis2024"]
+    }
+  ]
+}

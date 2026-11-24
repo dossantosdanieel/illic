@@ -23,7 +23,8 @@ Regras gerais:
 tudo. E o Scopus só entra pelas mãos do usuário (não há API): quanto antes ele receber a string, antes a exportação
 volta.
 
-**Quando.** Depois do teste de sentinelas (`sentinelas.json`) e das contagens no PubMed.
+**Quando.** Depois do teste de sentinelas (`sentinelas.json`) e das contagens no PubMed, com `estrategia.md`
+regravado por `montar_strings.py` para trazer as contagens e os sentinelas (`situacao.py` pede esse passo).
 
 **O que mostrar** (de `01_busca/estrategia.md` e `sentinelas.json`):
 

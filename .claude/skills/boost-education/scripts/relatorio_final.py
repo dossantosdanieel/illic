@@ -6,6 +6,7 @@ Só lê arquivos da pasta da aula; não usa rede. Não inventa: o que não estiv
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import sys
 from pathlib import Path
@@ -82,7 +83,7 @@ def main() -> int:
     ap.add_argument("--saida", help="arquivo de saída (padrão: 04_aula/entrega.md)")
     ap.add_argument("--imprimir", action="store_true", help="mostra o relatório em vez de gravar")
     a = ap.parse_args()
-    pasta = Path(a.aula).expanduser()
+    pasta = Path(os.path.abspath(Path(a.aula).expanduser()))   # o mesmo caminho que situacao.analisar usa
     if not pasta.is_dir():
         print(f"ERRO: pasta não encontrada: {pasta}", file=sys.stderr)
         return 2
@@ -147,12 +148,18 @@ def main() -> int:
     L.append("")
 
     # ------------------------------------------------------------ tabela de evidências
+    todas = [str(r.get("chave")) for r in sel if r.get("chave")] or list(manifest)
+    citadas = set(refs) | set(usos)
+    # Com deck, a tabela é a da aula: os selecionados que o deck cita. Os outros (seleção grande, ou dividida
+    # entre aulas de uma trilha) vão numa linha à parte, para não parecerem lacunas desta aula.
+    chaves = [k for k in todas if k in citadas] if refs or usos else todas
+    fora_do_deck = [k for k in todas if k not in chaves]
     L += ["## Tabela de evidências", "",
-          "Artigos selecionados para a aula. \"Texto lido\" vem da ficha de leitura; \"Na aula\" são os slides do "
+          ("Artigos selecionados que o deck cita. " if refs or usos else "Artigos selecionados para a aula. ") +
+          "\"Texto lido\" vem da ficha de leitura; \"Na aula\" são os slides do "
           "deck.json que citam o artigo no rodapé ou na figura; \"Conferido\" é o que o deck declara nas referências.", "",
           "| Chave | Desenho | Ano | Revista | Papel | PDF | Licença | Texto lido | Na aula (slides) | Conferido |",
           "|---|---|---|---|---|---|---|---|---|---|"]
-    chaves = [str(r.get("chave")) for r in sel if r.get("chave")] or list(manifest)
     por_sel = {str(r.get("chave")): r for r in sel}
     for k in chaves:
         r = por_sel.get(k, {})
@@ -166,7 +173,10 @@ def main() -> int:
             slides, conf)) + " |")
     if not chaves:
         L.append("| (nenhum artigo selecionado ainda) | | | | | | | | | |")
-    extras = [k for k in refs if k not in chaves]
+    if fora_do_deck:
+        L += ["", f"Selecionados que o deck não cita ({len(fora_do_deck)}): {', '.join(fora_do_deck)}. "
+                  "Seleção maior que a aula, ou dividida com outra aula da trilha; não entram no que falta conferir abaixo."]
+    extras = [k for k in refs if k not in todas]
     if extras:
         L += ["", f"Referências do deck fora de `selecionados.json`: {', '.join(extras)} "
                   "(entraram depois da triagem; confira se estão em verificacao.md)."]
@@ -216,7 +226,8 @@ def main() -> int:
         nao.append(f"Checagens com o usuário não registradas: {', '.join(abertas)}"
                    + (" (modo sem parar: peça a revisão agora)." if S.modo == "sem parar" else "."))
     for p in S.passos:
-        if p.estado in ("fazer", "aviso") and p.etapa >= 1 and p.chave not in ("entrega", "licencas", "andamento"):
+        if p.estado in ("fazer", "aviso") and p.etapa >= 1 and p.chave not in ("entrega", "licencas", "andamento") \
+                and not p.chave.startswith("checagem"):
             nao.append(f"Etapa {p.etapa} pendente: {p.texto}" + (f" ({p.detalhe})" if p.detalhe else "") + ".")
     if avisos_gerais:
         nao.append("Arquivos que faltam: " + "; ".join(avisos_gerais) + ".")

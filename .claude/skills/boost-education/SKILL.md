@@ -1,15 +1,16 @@
 ---
 name: boost-education
 description: >-
-  Orquestrador das aulas da Boost Education (illic ACADEMY · BOOST Education): leva o pedido "monta uma aula sobre X"
-  até o PowerPoint pronto (busca de artigos no PubMed, Scopus e JOSPT, leitura crítica, recorte de figuras, roteiro,
-  deck .pptx na marca, enquetes, pré e pós-teste, resumo do aluno, relatório do que foi conferido), com quatro pontos
-  de checagem com o usuário. Cria a pasta da aula e diz em que etapa ela parou e qual o próximo passo. Use SEMPRE que
-  o usuário pedir para montar, preparar, criar ou planejar uma aula, curso, módulo, capacitação, treinamento ou trilha
-  de aulas para a equipe ou para a Boost ("monta uma aula sobre...", "prepara a aula de...", "quero uma aula de 30
-  minutos sobre...", "planeja uma sequência de aulas"); quando quiser retomar ou saber em que pé está uma aula ("onde
-  paramos?", "continua a aula do LCA", "o que falta?"); e quando disser "segue sem parar". Para uma etapa isolada
-  bastam as skills boost-pesquisa-artigos, boost-leitura-figuras e boost-aula-slides.
+  Orquestrador das aulas da Boost Education (illic ACADEMY · BOOST Education). Leva "monta uma aula sobre X" do tema
+  ao PowerPoint pronto, chamando em ordem boost-pesquisa-artigos (PubMed, Scopus, JOSPT), boost-leitura-figuras
+  (PDFs, leitura crítica, figuras) e boost-aula-slides (roteiro, deck .pptx, enquetes, pré e pós-teste, resumo),
+  com quatro checagens com o usuário e relatório do que foi conferido. Cria a pasta da aula e diz em que etapa ela
+  parou. Use SEMPRE, e antes das outras três, quando o pedido for a aula inteira ou uma sequência: montar, preparar,
+  criar ou planejar aula, curso, módulo, capacitação, treinamento ou trilha para a equipe ou a Boost ("monta uma
+  aula sobre...", "prepara a aula de...", "quero uma aula de 30 minutos sobre...", "planeja uma sequência de
+  aulas"); retomar ou saber o estado de uma aula ("onde paramos?", "continua a aula do LCA", "o que falta?"); e
+  "segue sem parar". Pedido de uma etapa só (buscar artigos, ler um artigo, ajustar um deck pronto) vai direto
+  para a skill da etapa.
 ---
 
 # Boost Education · orquestrador da aula
@@ -22,23 +23,27 @@ Leia primeiro `references/preferencias.md`. São as respostas que o Daniel já d
 gravada para a equipe, recorte padrão, apresentador). Elas valem como padrão; o pedido da aula ganha delas. Não
 pergunte de novo o que está lá.
 
-Scripts desta skill em `scripts/` (chame com `python3 -I <caminho>/scripts/...`). Nos comandos abaixo:
-`E` = `scripts/` desta skill, `P` = `../boost-pesquisa-artigos/scripts`, `L` = `../boost-leitura-figuras/scripts`,
-`D` = `../boost-aula-slides/scripts`, `AULA` = `aulas/<AAAA-MM>-<slug>`.
+Scripts desta skill em `scripts/` (chame com `python3 -I <caminho>/scripts/...`). Nos comandos abaixo, `E` é a
+pasta `scripts/` desta skill e `AULA` é `aulas/<AAAA-MM>-<slug>`. Os scripts das skills irmãs ficam em
+`.claude/skills/<skill>/scripts/`; não monte esses caminhos à mão: `situacao.py` imprime cada próximo comando com o
+caminho absoluto, pronto para copiar.
 
 ## O pipeline
 
 ```
-pedido ─► 0 briefing ─► 1 busca ─►(C1)─► 2 seleção ─► 3 artigos ─►(C2)─► 4 figuras ─► 5 roteiro ─►(C3)─► 6 deck ─►(C4)─► 7 entrega
+pedido ─► 0 briefing ─► 1 busca ─►(C1)─► 2 seleção ─► 3 artigos ─► 4 figuras ─►(C2)─► 5 roteiro ─►(C3)─► 6 deck ─►(C4)─► 7 entrega
           nova_aula     boost-pesquisa-artigos         boost-leitura-figuras                boost-aula-slides           relatorio_final
 ```
+
+A checagem é apresentada assim que aparece; o que ela trava é o que vem depois da seta. A C2 aparece logo depois do
+download e trava o roteiro, não a leitura.
 
 | Etapa | Skill | Produz (na pasta da aula) |
 |---|---|---|
 | 0 Briefing | esta (`nova_aula.py`) | `00_briefing.md`, `00_andamento.md`, subpastas |
 | 1 Busca | boost-pesquisa-artigos, passos 2 a 8 | `01_busca/conceitos.json`, `estrategia.md`, `brutos/` |
 | 2 Seleção | boost-pesquisa-artigos, passos 9 a 11 | `registros.json`, `triagem.xlsx`, `selecionados.json` |
-| 3 Artigos | boost-leitura-figuras, passos 1 a 4 | `02_artigos/pdf/`, `pendentes.md`, `texto/`, `leitura/` |
+| 3 Artigos | boost-leitura-figuras, passos 1 a 4 e 5a (candidatos de figura, antes das fichas) | `02_artigos/pdf/`, `pendentes.md`, `texto/`, `leitura/` |
 | 4 Figuras | boost-leitura-figuras, passo 5 | `03_figuras/<chave>/*.png`, `catalogo.json`, `folha_contato.png` |
 | 5 Roteiro | boost-aula-slides, passos 1 a 3 | `04_aula/roteiro.md` (opcional antes: `00_mapa_evidencias.md`) |
 | 6 Deck e materiais | boost-aula-slides, passos 4 a 10 | `deck.json`, `<slug>.pptx`, `previa/`, materiais, `verificacao.md` |
@@ -76,13 +81,21 @@ python3 -I E/situacao.py AULA                   # etapas, próximo passo com o c
 
 Rode no início de toda sessão que toque numa aula e depois de cada etapa. Ele lê só arquivos (e roda o validador
 pedagógico se houver `deck.json`), não usa rede e não muda nada, exceto com `--marcar`, `--modo` ou `--registrar`.
-Ele percebe arquivo velho (planilha editada depois de `selecionados.json`, deck mudado depois do .pptx, seleção nova
-sem download) e manda refazer só o que mudou.
+Ele percebe arquivo velho (string mudada depois do PubMed, planilha editada depois de `selecionados.json`, deck
+mudado depois do .pptx, seleção nova sem download, PDF que chegou depois da ficha só do resumo) e manda refazer só o
+que mudou.
+
+Pastas montadas à mão ou antes do orquestrador são lidas como estão, sem mandar refazer o que existe: busca por ramos
+(`01_busca/ramos/<ramo>/` com conceitos, sentinelas e brutos próprios e a união na raiz), `01_busca`, `02_artigos` e
+`03_figuras` ligados a outra aula (as checagens 1 e 2 valem na aula dona), `00_mapa_evidencias.md`, deck escrito sem
+`roteiro.md` e PDFs pendentes com ficha só do resumo. O que pede confirmação vira "Atenção".
 
 Leia a saída assim: "Próximo passo" é o que fazer agora; "Esperando o usuário" são coisas que não travam o trabalho
-(exportação do Scopus, PDFs pagos) a menos que sejam a checagem que bloqueia o passo; "Atenção" são decisões suas
-(sentinela perdido, seleção grande demais, figura sem CC BY). Se uma pasta antiga não tiver checagens registradas mas
-o trabalho já passou delas, ele avisa em vez de travar: confirme com o usuário e registre.
+(exportação do Scopus, PDFs pagos, uma checagem já apresentada) a menos que sejam a checagem que bloqueia o passo;
+"Atenção" são decisões suas (sentinela perdido, busca cortada por `--max`, seleção grande demais, figura sem CC BY).
+Uma checagem só aparece quando já há o que mostrar (sentinelas testados; seleção e download; roteiro; deck
+renderizado, conferido e com materiais). Se uma pasta antiga não tiver checagens registradas mas o trabalho já
+passou delas, ele avisa em vez de travar: confirme com o usuário e registre.
 
 ## Aula nova: perguntas mínimas, depois `nova_aula.py`
 
@@ -125,11 +138,11 @@ regulam. Neles, pare, porque depois de cada um vem trabalho longo construído em
 | # | Quando | O usuário decide | Por que parar aqui |
 |---|---|---|---|
 | 1 | sentinelas testados | aprova a estratégia e cola a string no Scopus, devolvendo a exportação | triagem, leitura e aula saem da busca; e o Scopus só entra pelas mãos dele |
-| 2 | seleção exportada e PDFs abertos baixados | aprova a lista; baixa os pagos de `pendentes.md` para `02_artigos/manual/` (JOSPT com a assinatura dele) | ler o artigo errado é a maior perda do pipeline; só ele acessa os pagos |
+| 2 | seleção exportada e PDFs abertos baixados | aprova a lista; baixa os pagos de `pendentes.md` para `02_artigos/manual/` (JOSPT com a assinatura dele) | ler o artigo errado é a maior perda do pipeline; só ele acessa os pagos. Trava o roteiro, não a leitura: enquanto ele responde, leia primeiro os âncoras e os de evidência principal que já têm PDF |
 | 3 | `roteiro.md` escrito | aprova objetivos, caso e linha do tempo | o deck é longo de montar e refazer o desenho depois custa o dobro |
 | 4 | deck montado, renderizado e conferido | revisa o deck | é a aula dele, gravada; só ele sabe se o caso e o tom soam reais |
 
-Apresente a checagem assim que ela aparecer e continue o que não depende dela (a Crossref enquanto ele vai ao Scopus;
+Apresente a checagem assim que ela aparecer em `situacao.py` e continue o que não depende dela (a Crossref enquanto ele vai ao Scopus;
 as fichas dos abertos enquanto ele baixa os pagos). O que mostrar em cada uma, com modelos de mensagem:
 `references/checagens.md`. Aprovou? Registre na hora, senão a próxima sessão não sabe:
 
@@ -148,7 +161,8 @@ pendências. No fim, as quatro revisões vão juntas com a entrega (o relatório
   consolidação e triagem no principal. Nunca dois scripts que chamam o NCBI juntos (limite de 3 requisições/s).
 - **Leitura:** rode `baixar_artigos.py`, `extrair_texto.py` e `detectar_figuras.py` uma vez no principal (gravam o
   manifest sem trava). Depois, um subagente por artigo escreve a ficha e recorta e aprova as figuras daquela chave
-  (o catálogo tem trava). `conferir_recortes.py` no fim, no principal.
+  (o catálogo tem trava); por isso `situacao.py` pede os candidatos de figura antes das fichas.
+  `conferir_recortes.py` no fim, no principal.
 - **Slides:** em série no principal; um subagente revisor pode olhar o render.
 
 Sem subagentes, a mesma ordem em série, começando pelos artigos âncora e de evidência principal. Modelo de pedido para

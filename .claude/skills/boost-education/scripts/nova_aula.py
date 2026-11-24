@@ -105,14 +105,20 @@ def recuperar_anterior(pasta: Path) -> dict:
     brief = pasta / "00_briefing.md"
     if brief.exists():
         texto = brief.read_text(encoding="utf-8", errors="replace")
-        m = re.search(r"^#\s*(.+)$", texto, re.M)
+        m = re.search(r"^#(?!#)\s*(?:Briefing\s*[·:-]\s*)?(.+)$", texto, re.M)
         if m:
             info["titulo"] = m.group(1).strip()
         sec = re.search(r"^##\s*Objetivos.*?$(.*?)(?=^##\s)", texto, re.M | re.S)
         if sec:
-            info["objetivos"] = [re.sub(r"^\s*(\d+\.|-)\s*", "", l).strip()
-                                 for l in sec.group(1).splitlines()
-                                 if re.match(r"^\s*(\d+\.|-)\s+\S", l) and C.MARCA_PREENCHER not in l]
+            itens: list[str] = []
+            for l in sec.group(1).splitlines():
+                if re.match(r"^\s*(\d+\.|-)\s+\S", l):
+                    itens.append(re.sub(r"^\s*(\d+\.|-)\s*", "", l).strip())
+                elif itens and l.startswith(" ") and l.strip():   # item da lista quebrado em várias linhas
+                    itens[-1] += " " + l.strip()
+                elif not l.strip() and itens and itens[-1]:
+                    itens.append("")                               # linha em branco fecha o item
+            info["objetivos"] = [o for o in itens if o and C.MARCA_PREENCHER not in o]
         info["fonte"] = "00_briefing.md (a aula anterior ainda não tem deck.json)"
     return info
 
@@ -125,7 +131,8 @@ def montar_briefing(a: argparse.Namespace, pasta: Path, raiz: Path, anteriores: 
     linhas.append(f"**Pasta:** `{pasta.name}` · criada em {C.hoje()} por `nova_aula.py` (skill boost-education).")
     if a.trilha:
         pos = f" (aula {a.posicao})" if a.posicao else ""
-        linhas.append(f"**Trilha:**{pos} plano em `{a.trilha}`.")
+        trilha_rel = os.path.relpath(Path(a.trilha).expanduser().absolute(), pasta.absolute())
+        linhas.append(f"**Trilha:**{pos} plano em `{trilha_rel}`.")
     linhas += [
         f"**Público:** {a.publico}",
         f"**Níveis:** {a.nivel}",
@@ -289,7 +296,7 @@ def main() -> int:
               "com o que o pedido já diz.")
     for av in avisos:
         print(f"AVISO: {av}")
-    print(f"Próximo passo: {C.cmd_proprio('situacao.py')} {pasta}")
+    print(f"Próximo passo: {C.cmd_proprio('situacao.py')} {os.path.abspath(pasta)}")
     return 0
 
 
