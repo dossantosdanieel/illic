@@ -16,7 +16,7 @@ Objetivos medidos:
 Enunciado:
 
 ```text
-Carlos, 52 anos, pedreiro, tem dor lateral no cotovelo direito há 2 meses, mas também dor cervical e parestesia no polegar. Antes do exame, você estima em 30% a chance de tendinopatia lateral. A força de preensão cai 8% quando ele estende o cotovelo. Para esse teste, a razão de verossimilhança positiva fica entre 3,9 e 8,3. Qual é, aproximadamente, a probabilidade de tendinopatia lateral depois do teste positivo?
+Carlos, 52 anos, pedreiro, tem dor lateral no cotovelo direito há 2 meses, que às vezes desce pelo antebraço. Sem dor cervical nem parestesia. Antes do exame, você estima em 30% a chance de tendinopatia lateral. A força de preensão cai 12% quando ele estende o cotovelo. Para esse teste (queda de 5% a 10% ou mais), a razão de verossimilhança positiva fica entre 3,9 e 8,3. Qual é, aproximadamente, a probabilidade de tendinopatia lateral depois do teste positivo?
 ```
 
 Opções:
@@ -136,9 +136,9 @@ Pedir ressonância cervical e do cotovelo antes de qualquer outra conduta.
 
 **Resposta:** Entre 63% e 78%.
 
-Chance antes do teste: 0,30 ÷ 0,70 = 0,43. Multiplicada por 3,9 dá 1,67 (63%); por 8,3 dá 3,56 (78%). As razões de verossimilhança foram calculadas a partir das faixas de sensibilidade (78% a 83%) e especificidade (80% a 90%) do resumo de Karanasios 2022; são limites, não pares reais de estudo, e o exame físico teve só 2 estudos com risco de viés alto ou incerto. A probabilidade de 30% é do caso fictício. O teste mexe bastante quando a suspeita é intermediária, e ainda assim não fecha o diagnóstico: a parestesia pede exame cervical.
+Chance antes do teste: 0,30 ÷ 0,70 = 0,43. Multiplicada por 3,9 dá 1,67 (63%); por 8,3 dá 3,56 (78%). As razões de verossimilhança foram calculadas a partir das faixas de sensibilidade (78% a 83%) e especificidade (80% a 90%) do resumo de Karanasios 2022; são limites, não pares reais de estudo, e o exame físico teve só 2 estudos com risco de viés alto ou incerto. Duas ressalvas: o protocolo da revisão (preensão máxima ou sem dor) está a conferir, e, se os estudos compararam doentes com saudáveis, a RV superestima o poder de separar a tendinopatia do túnel radial, justamente o diferencial da dor que desce pelo antebraço. A probabilidade de 30% é do caso fictício. O teste sobe a probabilidade em 33 a 48 pontos e ainda assim não fecha o diagnóstico.
 
-- *Entre 30% e 40%: com suspeita baixa, o teste quase não mexe.* — Achar que teste positivo não muda nada quando a suspeita é baixa; é justamente na dúvida que o teste mais acrescenta.
+- *Entre 30% e 40%: com suspeita baixa, o teste quase não mexe.* — Achar que teste positivo não muda nada quando a suspeita é baixa; com 30% antes, o positivo sobe 33 a 48 pontos.
 - *Perto de 100%: razão de verossimilhança acima de 3 confirma.* — Tratar a razão de verossimilhança como prova; ela multiplica a chance, não a transforma em certeza.
 - *Entre 78% e 83%, que é a sensibilidade do teste.* — Confundir sensibilidade com probabilidade pós-teste (valor preditivo).
 
@@ -148,7 +148,7 @@ Referência: Karanasios S et al. J Hand Ther 2022;35(4):541-51. PMID 33814224. D
 
 **Resposta:** Cai para cerca de 43% a 53%: não exclui; reexaminar os diferenciais.
 
-Chance antes: 0,80 ÷ 0,20 = 4. Multiplicada por 0,19 dá 0,76 (43%); por 0,28 dá 1,12 (53%). A conta usa só a preensão: o Cozen tem sensibilidade de 91%, mas a especificidade não está no resumo de Karanasios 2022, e sem ela não há razão de verossimilhança. Na revisão de Zwerus 2018, nenhum teste do cotovelo, sozinho, confirma ou exclui. Com suspeita alta, o teste negativo reabre a conversa, não fecha o caso.
+Chance antes: 0,80 ÷ 0,20 = 4. Multiplicada por 0,19 dá 0,76 (43%); por 0,28 dá 1,12 (53%): uma queda de 27 a 37 pontos, que derruba a suspeita sem excluir. A conta usa só a preensão: o Cozen tem sensibilidade de 91%, mas a especificidade não está no resumo de Karanasios 2022, e sem ela não há razão de verossimilhança. Na revisão de Zwerus 2018, nenhum teste do cotovelo, sozinho, confirma ou exclui. Com suspeita alta, o teste negativo reabre a conversa, não fecha o caso.
 
 - *Exclui a tendinopatia lateral: dois testes negativos já bastam para isso.* — Somar testes negativos como se cada um excluísse sozinho, sem considerar a probabilidade antes do teste.
 - *Não muda nada: testes de cotovelo não têm valor diagnóstico nenhum.* — Confundir 'não confirma nem exclui sozinho' com 'não vale nada'; a preensão mexe a probabilidade.
