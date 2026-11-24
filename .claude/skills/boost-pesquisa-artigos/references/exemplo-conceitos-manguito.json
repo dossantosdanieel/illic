@@ -1,0 +1,97 @@
+{
+  "tema": "Tendinopatia do manguito rotador: exercício resistido com carga progressiva",
+  "pergunta": {
+    "P": "Adultos com tendinopatia do manguito rotador / dor no ombro relacionada ao manguito (inclui a nomenclatura antiga: impacto subacromial)",
+    "I": "Exercício resistido com carga (fortalecimento progressivo, alta carga, excêntrico, isométrico)",
+    "C": "Fora da string: qualquer comparador (exercício sem carga, orientação, cuidado usual, cirurgia)",
+    "O": "Fora da string: dor, função (SPADI, DASH, Constant), força",
+    "nota": "Comparador e desfecho ficam fora da busca porque muitos resumos não os citam; entram como critério na triagem."
+  },
+  "recorte": "topo_mecanismos",
+  "blocos": [
+    {
+      "id": "condicao",
+      "rotulo": "Tendinopatia do manguito rotador",
+      "papel": "P",
+      "mesh": [
+        "Rotator Cuff Injuries",
+        "Shoulder Impingement Syndrome",
+        {"termo": "Rotator Cuff", "explodir": false},
+        {"termo": "Shoulder Pain", "explodir": false}
+      ],
+      "livres": [
+        "rotator cuff tendinopath*",
+        "rotator cuff tendin*",
+        "rotator cuff related",
+        "rotator cuff disorder*",
+        "rotator cuff disease*",
+        "rotator cuff pain",
+        "subacromial pain",
+        "subacromial impingement",
+        "subacromial shoulder pain",
+        "shoulder impingement",
+        "supraspinatus tendinopath*",
+        "RCRSP"
+      ],
+      "proximidade": [
+        {
+          "a": ["rotator cuff", "supraspinatus", "subacromial"],
+          "b": ["tendinopathy", "tendinitis", "tendinosis", "pain", "impingement"],
+          "n": 3
+        }
+      ],
+      "simples": ["rotator cuff", "subacromial", "shoulder impingement"]
+    },
+    {
+      "id": "exercicio_carga",
+      "rotulo": "Exercício resistido com carga",
+      "papel": "I",
+      "mesh": [
+        "Resistance Training",
+        "Exercise Therapy",
+        {"termo": "Exercise", "explodir": false}
+      ],
+      "livres": [
+        "exercis*",
+        "resistance training",
+        "strength training",
+        "strengthening",
+        "resisted",
+        "loading",
+        "loaded",
+        "heavy load*",
+        "high load*",
+        "eccentric*",
+        "isometric*",
+        "rehabilitation program*"
+      ],
+      "proximidade": [
+        {"a": ["progressive", "graded", "heavy", "high"], "b": ["load", "loading", "resistance"], "n": 2}
+      ],
+      "simples": ["exercise", "strengthening", "loading", "resistance training"]
+    }
+  ],
+  "limites": {
+    "ano_inicio": 2010,
+    "ano_fim": null,
+    "idiomas": ["english", "portuguese", "spanish"],
+    "somente_humanos": true,
+    "tipos_scopus": ["ar", "re"]
+  },
+  "revistas_alvo": [
+    {"nome": "J Orthop Sports Phys Ther", "issn": ["0190-6011", "1938-1344"]},
+    {"nome": "Br J Sports Med", "issn": ["0306-3674", "1473-0480"]}
+  ],
+  "sentinelas": [
+    {"pmid": "40165544", "doi": "10.2519/jospt.2025.13182", "nota": "Diretriz JOSPT 2025 de tendinopatia do manguito (Desmeules)"},
+    {"pmid": "32571081", "nota": "RS/MA: exercício progressivo e resistido vs não progressivo (Naunton 2020)"},
+    {"pmid": "25715230", "nota": "RS de parâmetros de prescrição (Littlewood 2015)"},
+    {"pmid": "31726927", "nota": "Atualização de revisões sistemáticas, JOSPT (Pieters 2020)"},
+    {"pmid": "36796859", "nota": "ECR multiarm: educação com ou sem fortalecimento/controle motor (Dubé 2023)"},
+    {"pmid": "34048281", "nota": "ECR SExSI: grande dose de fortalecimento (Clausen 2021)"},
+    {"pmid": "28875153", "nota": "ECR alta carga vs baixa carga (Ingwersen 2017)"},
+    {"pmid": "22581193", "nota": "ECR excêntrico com carga pesada (Maenhout 2013)"},
+    {"pmid": "34265255", "nota": "ECR GRASP, Lancet: exercício progressivo vs orientação (Hopewell 2021)"},
+    {"pmid": "22349588", "nota": "ECR estratégia específica de exercício e necessidade de cirurgia (Holmgren 2012)"}
+  ]
+}

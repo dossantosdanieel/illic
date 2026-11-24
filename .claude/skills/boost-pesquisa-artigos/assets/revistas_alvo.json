@@ -1,0 +1,706 @@
+[
+ {
+  "nome": "J Orthop Sports Phys Ther",
+  "issn": [
+   "0190-6011",
+   "1938-1344"
+  ],
+  "medline": true,
+  "crossref": [
+   "0190-6011",
+   "1938-1344"
+  ]
+ },
+ {
+  "nome": "JOSPT Open",
+  "issn": [
+   "2832-8280"
+  ],
+  "medline": true,
+  "crossref": [
+   "2832-8280"
+  ]
+ },
+ {
+  "nome": "JOSPT Cases",
+  "issn": [
+   "2767-293X",
+   "2767-2921"
+  ],
+  "medline": false,
+  "crossref": [
+   "2767-2921"
+  ]
+ },
+ {
+  "nome": "Br J Sports Med",
+  "issn": [
+   "0306-3674",
+   "1473-0480"
+  ],
+  "medline": true,
+  "crossref": [
+   "0306-3674",
+   "1473-0480"
+  ]
+ },
+ {
+  "nome": "Phys Ther",
+  "issn": [
+   "0031-9023",
+   "1538-6724"
+  ],
+  "medline": true,
+  "crossref": [
+   "0031-9023",
+   "1538-6724"
+  ]
+ },
+ {
+  "nome": "J Physiother",
+  "issn": [
+   "1836-9553",
+   "1836-9561"
+  ],
+  "medline": true,
+  "crossref": [
+   "1836-9553"
+  ]
+ },
+ {
+  "nome": "Braz J Phys Ther",
+  "issn": [
+   "1413-3555",
+   "1809-9246"
+  ],
+  "medline": true,
+  "crossref": [
+   "1413-3555",
+   "1809-9246"
+  ]
+ },
+ {
+  "nome": "Musculoskelet Sci Pract",
+  "issn": [
+   "2468-8630",
+   "2468-7812"
+  ],
+  "medline": true,
+  "crossref": [
+   "2468-7812"
+  ]
+ },
+ {
+  "nome": "Phys Ther Sport",
+  "issn": [
+   "1466-853X",
+   "1873-1600"
+  ],
+  "medline": true,
+  "crossref": [
+   "1466-853X"
+  ]
+ },
+ {
+  "nome": "Physiotherapy",
+  "issn": [
+   "0031-9406",
+   "1873-1465"
+  ],
+  "medline": true,
+  "crossref": [
+   "0031-9406"
+  ]
+ },
+ {
+  "nome": "Physiother Theory Pract",
+  "issn": [
+   "0959-3985",
+   "1532-5040"
+  ],
+  "medline": true,
+  "crossref": [
+   "0959-3985",
+   "1532-5040"
+  ]
+ },
+ {
+  "nome": "J Man Manip Ther",
+  "issn": [
+   "1066-9817",
+   "2042-6186"
+  ],
+  "medline": true,
+  "crossref": [
+   "1066-9817",
+   "2042-6186"
+  ]
+ },
+ {
+  "nome": "Int J Sports Phys Ther",
+  "issn": [
+   "2159-2896"
+  ],
+  "medline": false,
+  "crossref": [
+   "2159-2896"
+  ]
+ },
+ {
+  "nome": "Arch Phys Med Rehabil",
+  "issn": [
+   "0003-9993",
+   "1532-821X"
+  ],
+  "medline": true,
+  "crossref": [
+   "0003-9993"
+  ]
+ },
+ {
+  "nome": "Clin Rehabil",
+  "issn": [
+   "0269-2155",
+   "1477-0873"
+  ],
+  "medline": true,
+  "crossref": [
+   "0269-2155",
+   "1477-0873"
+  ]
+ },
+ {
+  "nome": "Am J Phys Med Rehabil",
+  "issn": [
+   "0894-9115",
+   "1537-7385"
+  ],
+  "medline": true,
+  "crossref": [
+   "0894-9115",
+   "1537-7385"
+  ]
+ },
+ {
+  "nome": "Disabil Rehabil",
+  "issn": [
+   "0963-8288",
+   "1464-5165"
+  ],
+  "medline": true,
+  "crossref": [
+   "0963-8288",
+   "1464-5165"
+  ]
+ },
+ {
+  "nome": "J Rehabil Med",
+  "issn": [
+   "1650-1977",
+   "1651-2081"
+  ],
+  "medline": true,
+  "crossref": [
+   "1650-1977",
+   "1651-2081"
+  ]
+ },
+ {
+  "nome": "Eur J Phys Rehabil Med",
+  "issn": [
+   "1973-9087",
+   "1973-9095"
+  ],
+  "medline": true,
+  "crossref": [
+   "1973-9087",
+   "1973-9095"
+  ]
+ },
+ {
+  "nome": "Ann Phys Rehabil Med",
+  "issn": [
+   "1877-0657",
+   "1877-0665"
+  ],
+  "medline": true,
+  "crossref": [
+   "1877-0657"
+  ]
+ },
+ {
+  "nome": "Am J Sports Med",
+  "issn": [
+   "0363-5465",
+   "1552-3365"
+  ],
+  "medline": true,
+  "crossref": [
+   "0363-5465",
+   "1552-3365"
+  ]
+ },
+ {
+  "nome": "Sports Med",
+  "issn": [
+   "0112-1642",
+   "1179-2035"
+  ],
+  "medline": true,
+  "crossref": [
+   "0112-1642",
+   "1179-2035"
+  ]
+ },
+ {
+  "nome": "Med Sci Sports Exerc",
+  "issn": [
+   "0195-9131",
+   "1530-0315"
+  ],
+  "medline": true,
+  "crossref": [
+   "0195-9131",
+   "1530-0315"
+  ]
+ },
+ {
+  "nome": "Scand J Med Sci Sports",
+  "issn": [
+   "0905-7188",
+   "1600-0838"
+  ],
+  "medline": true,
+  "crossref": [
+   "0905-7188",
+   "1600-0838"
+  ]
+ },
+ {
+  "nome": "J Sci Med Sport",
+  "issn": [
+   "1440-2440",
+   "1878-1861"
+  ],
+  "medline": true,
+  "crossref": [
+   "1440-2440"
+  ]
+ },
+ {
+  "nome": "J Athl Train",
+  "issn": [
+   "1062-6050",
+   "1938-162X"
+  ],
+  "medline": true,
+  "crossref": [
+   "1062-6050",
+   "1938-162X"
+  ]
+ },
+ {
+  "nome": "Sports Health",
+  "issn": [
+   "1941-7381",
+   "1941-0921"
+  ],
+  "medline": true,
+  "crossref": [
+   "1941-7381",
+   "1941-0921"
+  ]
+ },
+ {
+  "nome": "Orthop J Sports Med",
+  "issn": [
+   "2325-9671"
+  ],
+  "medline": false,
+  "crossref": [
+   "2325-9671"
+  ]
+ },
+ {
+  "nome": "BMJ Open Sport Exerc Med",
+  "issn": [
+   "2055-7647"
+  ],
+  "medline": false,
+  "crossref": [
+   "2055-7647"
+  ]
+ },
+ {
+  "nome": "Clin J Sport Med",
+  "issn": [
+   "1050-642X",
+   "1536-3724"
+  ],
+  "medline": true,
+  "crossref": [
+   "1050-642X",
+   "1536-3724"
+  ]
+ },
+ {
+  "nome": "Int J Sports Med",
+  "issn": [
+   "0172-4622",
+   "1439-3964"
+  ],
+  "medline": true,
+  "crossref": [
+   "0172-4622",
+   "1439-3964"
+  ]
+ },
+ {
+  "nome": "J Strength Cond Res",
+  "issn": [
+   "1064-8011",
+   "1533-4287"
+  ],
+  "medline": true,
+  "crossref": [
+   "1064-8011",
+   "1533-4287"
+  ]
+ },
+ {
+  "nome": "Knee Surg Sports Traumatol Arthrosc",
+  "issn": [
+   "0942-2056",
+   "1433-7347"
+  ],
+  "medline": true,
+  "crossref": [
+   "0942-2056",
+   "1433-7347"
+  ]
+ },
+ {
+  "nome": "J Shoulder Elbow Surg",
+  "issn": [
+   "1058-2746",
+   "1532-6500"
+  ],
+  "medline": true,
+  "crossref": [
+   "1058-2746"
+  ]
+ },
+ {
+  "nome": "Arthroscopy",
+  "issn": [
+   "0749-8063",
+   "1526-3231"
+  ],
+  "medline": true,
+  "crossref": [
+   "0749-8063",
+   "1526-3231"
+  ]
+ },
+ {
+  "nome": "J Bone Joint Surg Am",
+  "issn": [
+   "0021-9355",
+   "1535-1386"
+  ],
+  "medline": true,
+  "crossref": [
+   "0021-9355",
+   "1535-1386"
+  ]
+ },
+ {
+  "nome": "Bone Joint J",
+  "issn": [
+   "2049-4394",
+   "2049-4408"
+  ],
+  "medline": true,
+  "crossref": [
+   "2049-4394",
+   "2049-4408"
+  ]
+ },
+ {
+  "nome": "Osteoarthritis Cartilage",
+  "issn": [
+   "1063-4584",
+   "1522-9653"
+  ],
+  "medline": true,
+  "crossref": [
+   "1063-4584",
+   "1522-9653"
+  ]
+ },
+ {
+  "nome": "Ann Rheum Dis",
+  "issn": [
+   "0003-4967",
+   "1468-2060"
+  ],
+  "medline": true,
+  "crossref": [
+   "0003-4967",
+   "1468-2060"
+  ]
+ },
+ {
+  "nome": "Arthritis Care Res (Hoboken)",
+  "issn": [
+   "2151-464X",
+   "2151-4658"
+  ],
+  "medline": true,
+  "crossref": [
+   "2151-464X",
+   "2151-4658"
+  ]
+ },
+ {
+  "nome": "BMC Musculoskelet Disord",
+  "issn": [
+   "1471-2474"
+  ],
+  "medline": true,
+  "crossref": [
+   "1471-2474"
+  ]
+ },
+ {
+  "nome": "Pain",
+  "issn": [
+   "0304-3959",
+   "1872-6623"
+  ],
+  "medline": true,
+  "crossref": [
+   "0304-3959",
+   "1872-6623"
+  ]
+ },
+ {
+  "nome": "J Pain",
+  "issn": [
+   "1526-5900",
+   "1528-8447"
+  ],
+  "medline": true,
+  "crossref": [
+   "1526-5900"
+  ]
+ },
+ {
+  "nome": "Eur J Pain",
+  "issn": [
+   "1090-3801",
+   "1532-2149"
+  ],
+  "medline": true,
+  "crossref": [
+   "1090-3801",
+   "1532-2149"
+  ]
+ },
+ {
+  "nome": "Clin J Pain",
+  "issn": [
+   "0749-8047",
+   "1536-5409"
+  ],
+  "medline": true,
+  "crossref": [
+   "0749-8047",
+   "1536-5409"
+  ]
+ },
+ {
+  "nome": "Pain Med",
+  "issn": [
+   "1526-2375",
+   "1526-4637"
+  ],
+  "medline": true,
+  "crossref": [
+   "1526-2375",
+   "1526-4637"
+  ]
+ },
+ {
+  "nome": "Spine (Phila Pa 1976)",
+  "issn": [
+   "0362-2436",
+   "1528-1159"
+  ],
+  "medline": true,
+  "crossref": [
+   "0362-2436",
+   "1528-1159"
+  ]
+ },
+ {
+  "nome": "Spine J",
+  "issn": [
+   "1529-9430",
+   "1878-1632"
+  ],
+  "medline": true,
+  "crossref": [
+   "1529-9430"
+  ]
+ },
+ {
+  "nome": "Eur Spine J",
+  "issn": [
+   "0940-6719",
+   "1432-0932"
+  ],
+  "medline": true,
+  "crossref": [
+   "0940-6719",
+   "1432-0932"
+  ]
+ },
+ {
+  "nome": "J Electromyogr Kinesiol",
+  "issn": [
+   "1050-6411",
+   "1873-5711"
+  ],
+  "medline": true,
+  "crossref": [
+   "1050-6411"
+  ]
+ },
+ {
+  "nome": "Clin Biomech (Bristol)",
+  "issn": [
+   "0268-0033",
+   "1879-1271"
+  ],
+  "medline": true,
+  "crossref": [
+   "0268-0033"
+  ]
+ },
+ {
+  "nome": "J Biomech",
+  "issn": [
+   "0021-9290",
+   "1873-2380"
+  ],
+  "medline": true,
+  "crossref": [
+   "0021-9290"
+  ]
+ },
+ {
+  "nome": "Gait Posture",
+  "issn": [
+   "0966-6362",
+   "1879-2219"
+  ],
+  "medline": true,
+  "crossref": [
+   "0966-6362"
+  ]
+ },
+ {
+  "nome": "J Appl Physiol (1985)",
+  "issn": [
+   "8750-7587",
+   "1522-1601"
+  ],
+  "medline": true,
+  "crossref": [
+   "8750-7587",
+   "1522-1601"
+  ]
+ },
+ {
+  "nome": "Eur J Appl Physiol",
+  "issn": [
+   "1439-6319",
+   "1439-6327"
+  ],
+  "medline": true,
+  "crossref": [
+   "1439-6319",
+   "1439-6327"
+  ]
+ },
+ {
+  "nome": "J Hand Ther",
+  "issn": [
+   "0894-1130",
+   "1545-004X"
+  ],
+  "medline": true,
+  "crossref": [
+   "0894-1130"
+  ]
+ },
+ {
+  "nome": "Cochrane Database Syst Rev",
+  "issn": [
+   "1469-493X"
+  ],
+  "medline": true,
+  "crossref": [
+   "1469-493X"
+  ]
+ },
+ {
+  "nome": "BMJ",
+  "issn": [
+   "0959-8138",
+   "1756-1833"
+  ],
+  "medline": true,
+  "crossref": [
+   "0959-8138",
+   "1756-1833"
+  ]
+ },
+ {
+  "nome": "JAMA",
+  "issn": [
+   "0098-7484",
+   "1538-3598"
+  ],
+  "medline": true,
+  "crossref": [
+   "0098-7484",
+   "1538-3598"
+  ]
+ },
+ {
+  "nome": "Lancet",
+  "issn": [
+   "0140-6736",
+   "1474-547X"
+  ],
+  "medline": true,
+  "crossref": [
+   "0140-6736",
+   "1474-547X"
+  ]
+ },
+ {
+  "nome": "N Engl J Med",
+  "issn": [
+   "0028-4793",
+   "1533-4406"
+  ],
+  "medline": true,
+  "crossref": [
+   "0028-4793",
+   "1533-4406"
+  ]
+ }
+]
