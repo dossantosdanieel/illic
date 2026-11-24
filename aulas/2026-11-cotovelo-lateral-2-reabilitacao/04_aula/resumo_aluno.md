@@ -10,20 +10,20 @@
 
 ## Pontos-chave
 
-1. Infiltração de corticoide: 92% de sucesso em 6 semanas contra 47% com fisioterapia; em 1 ano, 69% contra 91% (Smidt 2002). Recidiva em 1 ano de 54% contra 12% com placebo: 1 recidiva a mais a cada 3 injeções (cálculo com Coombes 2013).
-2. Somar fisioterapia ao corticoide não protegeu da recidiva (29% x 38%, P = 0,25) (Coombes 2013).
-3. Exercício e terapia manual contra nada: dor 0,53 ponto menor em 10 (0,14 a 0,92), sem se manter (Wallis 2024, certeza baixa). Contra o corticoide, o exercício vence em quase tudo, menos a dor no curto prazo (Karanasios 2021a).
-4. Isométrico diário em casa, sozinho: o PRTEE melhorou, mas o sucesso percebido foi 29% contra 26% de quem esperou (Vuvan 2020). Dose do ensaio: 20% a 35% da CVM, 4 × 30 s ou 3 × 45 s, todo dia; subir a carga pela dor de 24 h é opinião (Day 2019).
-5. MWM: efeito pequeno a moderado no curto prazo; em 3 a 12 meses o intervalo cruza o zero (Lucado 2019). A regra de predição tem quatro razões de verossimilhança com intervalo que inclui 1 (Vicenzino 2009).
-6. PRP = injeção placebo em 3 meses (0,16 ponto em 10; certeza moderada); ondas de choque sem benefício clínico; nada acelerou a dor nas 6 primeiras semanas (Karjalainen 2021; Karanasios 2021b; Lowdon 2024).
+1. Corticoide: 92% de sucesso em 6 semanas contra 47% com fisioterapia; em 1 ano, 69% contra 91% (Smidt 2002). Recidiva em 1 ano de 54% contra 12% com placebo (Coombes 2013; denominador a conferir): de cada 2 que melhoram com a injeção, cerca de 1 volta a doer. Em 1 ano, 1 a menos recuperado a cada 8 injeções (calc.).
+2. Fazer fisioterapia não mostrou reduzir a recidiva (29% x 38%, P = 0,25; efeito principal, IC largo) (Coombes 2013).
+3. Exercício e terapia manual contra nada: dor 0,53 ponto menor em 10 (0,14 a 0,92), sem se manter; eventos adversos leves, 313 x 85 por 1000, impreciso (Wallis 2024). Contra o corticoide, o exercício vence em quase tudo, menos a dor no curto prazo (Karanasios 2021a).
+4. Isométrico diário em casa, sozinho: PRTEE melhor, mas sucesso percebido de 29% contra 26%, e 3 de 21 pioraram (Vuvan 2020). Dose: 20% a 35% da CVM, 4 × 30 s ou 3 × 45 s, todo dia; subir sem dor tardia de 24 h ou com dor que não sobe mais de 1 ponto é opinião (Day 2019).
+5. MWM: efeito pequeno a moderado no curto prazo; em 3 a 12 meses o intervalo cruza o zero (Lucado 2019). A regra de predição vale para o início do tratamento e não demonstrou separar quem responde (RV+ 2,1 a 2,6, IC incluem 1) (Vicenzino 2009).
+6. PRP = injeção placebo em 3 meses (0,16 em 10; moderada); ondas de choque sem benefício clínico (Karjalainen 2021; Karanasios 2021b). Na rede de Lowdon 2024, nada foi estatisticamente melhor que controle até 6 semanas (rede esparsa).
 
 ## Algoritmo de decisão
 
 1. Pediu infiltração? Diga os dois números: rápida em 6 semanas, pior no ano e com recidiva de cerca de metade; decida junto.
 2. Irritabilidade moderada ou alta? Fase 1: isométrico de extensores do punho, 20% a 35% da CVM, todo dia; converta a carga em kg.
-3. Sem dor tardia em 24 h e a dor não subiu mais de 1 ponto? Suba a carga; senão, mantenha ou recue.
+3. Sem dor tardia em 24 h ou a dor não subiu mais de 1 ponto (Day 2019, opinião)? Suba a carga; senão, mantenha ou recue, mesmo que o calendário do ensaio mande subir (proposta clínica).
 4. Preensão sem dor subiu na hora com a MWM? Use como janela para carregar; não negue a quem falha na regra.
-5. Recidiva ou crise no trabalho? Recue de fase pela irritabilidade de hoje, ajuste as horas de rotação e reavalie em 3 semanas.
+5. Recidiva ou crise no trabalho? Recue de fase pela irritabilidade de hoje, ajuste as horas de rotação, reexamine pescoço e nervo se houver formigamento e reavalie a cada 3 semanas (proposta clínica).
 
 ## Para praticar nesta semana
 
@@ -36,7 +36,9 @@
 - Manter a MWM só quando a preensão sem dor sobe na hora, como janela para carregar.
 - Limitar a rotação de antebraço no trabalho a menos de 4 h por dia (extrapolação de estudo de incidência em quem não tinha dor).
 - Depois da recidiva pós-injeção, recuar de fase pela irritabilidade de hoje, sem parar o exercício.
-- Examinar e mobilizar cervical e torácica quando há rigidez cervical e formigamento sem déficit (grau C na diretriz).
+- A regra de dor de 24 h passa por cima do calendário de carga do ensaio (manter ou recuar mesmo quando o calendário manda subir).
+- Reavaliar a irritabilidade a cada 3 semanas no plano por fases (a diretriz manda reavaliar, sem prazo).
+- Examinar e mobilizar cervical e torácica quando há rigidez cervical e formigamento sem déficit (grau C na diretriz); reexaminar o formigamento a cada recaída.
 
 ## Referências
 
@@ -60,5 +62,6 @@
 - Vicenzino B et al. Man Ther 2009;14(5):550-4. PMID 18838330. DOI 10.1016/j.math.2008.08.004.
 - Vuvan V et al. Med Sci Sports Exerc 2020;52(2):287-95. PMID 31425384. DOI 10.1249/MSS.0000000000002128.
 - Wallis JA et al. Cochrane Database Syst Rev 2024;5:CD013042. PMID 38802121. DOI 10.1002/14651858.CD013042.pub2.
+- Waugh EJ et al. Arch Phys Med Rehabil 2004;85(2):308-18. PMID 14966719. DOI 10.1016/S0003-9993(03)00480-5.
 
 *O paciente do caso e seus dados são fictícios.*

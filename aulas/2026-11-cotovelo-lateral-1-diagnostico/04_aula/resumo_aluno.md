@@ -10,18 +10,17 @@
 
 ## Pontos-chave
 
-1. Nenhum teste do cotovelo, sozinho, confirma ou exclui a tendinopatia lateral (Zwerus 2018).
-2. Cozen: sensibilidade de 91%, especificidade não informada (e provável viés de incorporação). Queda de 5% a 10% da preensão ao estender o cotovelo: RV+ de 3,9 a 8,3 e RV− de 0,19 a 0,28 (calculadas; Karanasios 2022). Protocolo (máxima ou sem dor) e espectro dos estudos a conferir.
-3. Com suspeita alta (até 79%), a preensão positiva quase não acrescenta (94%–97%) e a negativa derruba 28 a 37 pontos (42%–51%), mas não exclui. O que decide é o limiar de ação: tratar como tendinopatia ou investigar outra causa (cálculo com Karanasios 2022 e Vuvan 2020; 79% é teto).
-4. Esporão no epicôndilo: 50% da população sem dor (RV+ ≈ 1,6, calculada); nenhum achado do ultrassom acompanhou dor, PRTEE ou duração (Krogh 2020).
-5. Sem tratamento ativo, 89% muito melhores ou recuperados em 1 ano (IC 80% a 97%); meia-vida de 2,5 a 3 meses, independente do tempo de dor (Ikonen 2022).
-6. DMCI do PRTEE: 'um pouco melhor' = 7 pontos ou 22% da linha de base; 'muito melhor' = 11 pontos ou 37% (Poltawski 2011; n = 57, certeza baixa). Com escore inicial alto, a régua proporcional é a mais exigente. Nervo, sexo feminino, dor cervical e frio pioram a previsão, com certeza baixa (Waugh 2004; Smidt 2006; Coombes 2015).
-7. Trabalho: rotação do antebraço > 4 h/dia (OR 1,85) e força com duração (Strain Index, OR 1,75) se associaram à incidência; repetição isolada ficou inconclusiva (OR 0,71; 0,42 a 1,20), nas mesmas 2 coortes (Bretschneider 2022).
+1. Cozen: sensibilidade de 91%, especificidade não informada. Queda de 5% a 10% da preensão ao estender o cotovelo: RV+ de 3,9 a 8,3 e RV− de 0,19 a 0,28 (calculadas; Karanasios 2022); protocolo e espectro a conferir.
+2. Com suspeita alta (até 79%), a preensão positiva quase não acrescenta (94%–97%) e a negativa derruba para 42%–51%, sem excluir: decide o limiar de ação (cálculo com Karanasios 2022 e Vuvan 2020).
+3. Esporão no epicôndilo: 50% da população sem dor (RV+ ≈ 1,6, calculada); nenhum achado do ultrassom acompanhou dor, PRTEE ou duração (Krogh 2020).
+4. Sem tratamento ativo, 89% muito melhores ou recuperados em 1 ano (IC 80% a 97%); meia-vida de 2,5 a 3 meses, independente do tempo de dor (Ikonen 2022).
+5. DMCI do PRTEE: 7 pontos ou 22% ('um pouco melhor'); 11 pontos ou 37% ('muito melhor') (Poltawski 2011; n = 57). Nervo, sexo feminino, dor cervical e frio pioram a previsão, com certeza baixa (Waugh 2004; Smidt 2006; Coombes 2015).
+6. Trabalho: rotação > 4 h/dia (OR 1,85) e força com duração (OR 1,75) se associaram à incidência; repetição isolada, inconclusiva (OR 0,71; 0,42 a 1,20) (Bretschneider 2022).
 
 ## Algoritmo de decisão
 
-1. Sinal de alerta (trauma, febre ou articulação quente, dor noturna constante, déficit neurológico progressivo, câncer ou perda de peso, bloqueio em jovem)? Encaminhe (proposta clínica, a conferir na diretriz).
-2. Dor lateral? Some história, Cozen e preensão fletido × estendido; nenhum teste fecha sozinho.
+1. Sinal de alerta (trauma, febre, dor noturna constante, déficit progressivo, câncer, bloqueio)? Encaminhe (proposta clínica).
+2. Dor lateral? Some história, Cozen e preensão fletido × estendido; nenhum teste fecha sozinho (Zwerus 2018).
 3. Dor cervical, parestesia, dor distal, estalo ou falseio? Reabra o diferencial e examine (proposta clínica).
 4. Laudo na mão? Explique cada achado pela frequência em quem não tem dor.
 5. Sem sinal atípico? Sem imagem agora; peça se não melhorar no prazo ou surgir algo novo.
@@ -34,13 +33,13 @@
 
 ## O que é proposta clínica (sem ensaio que teste)
 
-- As pistas de história e exame de cada diferencial (radiculopatia cervical, túnel radial/NIP, IRPL, plica e condromalácia) e o exame cervical e neural quando surge formigamento: nenhum estudo do lote mede a acurácia desses testes.
-- A triagem de sinais de alerta (trauma ou suspeita de fratura, febre ou articulação quente, dor noturna ou de repouso constante sem relação com carga, déficit neurológico progressivo, perda de peso ou história de câncer, bloqueio mecânico em jovem): nenhuma fonte no lote; a conferir na diretriz de 2022 (Lucado 2022) quando o PDF chegar.
-- Usar até 79% como teto da probabilidade pré-teste: pelo menos 1 em 5 dos voluntários de Vuvan 2020 que se diziam com cotovelo de tenista não tinha a tendinopatia (111 de 533); outros 382 saíram por outros motivos, sem diagnóstico confirmado.
-- Usar a RV da preensão fletido × estendido na preensão sem dor e para separar tendinopatia de radiculopatia ou túnel radial: o protocolo (máxima ou sem dor) e o espectro dos estudos estão a conferir no texto completo.
-- Com PRTEE inicial alto, preferir a régua proporcional da DMCI (22% e 37%) à absoluta (7 e 11 pontos): o resumo de Poltawski 2011 diz que a DMCI foi maior nos mais graves, mas a certeza é baixa.
-- Acompanhar a preensão sem dor pela razão afetado/não afetado no mesmo protocolo, sem diferença mínima importante publicada no lote.
-- Pedir imagem só se não houver melhora no prazo combinado ou se surgir sinal atípico (critério das notas da aula de capacitação, atribuição provável à diretriz de 2022, a conferir).
+- Pistas de cada diferencial e exame cervical e neural quando surge formigamento: nenhum estudo do lote mede a acurácia desses testes.
+- A lista de sinais de alerta do algoritmo: sem fonte no lote; conferir na diretriz de 2022.
+- Usar até 79% como teto do pré-teste (111 de 533 voluntários de Vuvan 2020 não tinham a tendinopatia).
+- Usar a RV da preensão na preensão sem dor e contra radiculopatia ou túnel radial: protocolo e espectro a conferir.
+- Com PRTEE inicial alto, preferir a régua proporcional da DMCI (certeza baixa).
+- Acompanhar a preensão sem dor pela razão afetado/não afetado, sem DMCI publicada no lote.
+- Imagem só se não melhorar no prazo ou surgir sinal atípico (notas da aula de capacitação, a conferir na diretriz).
 
 ## Referências
 

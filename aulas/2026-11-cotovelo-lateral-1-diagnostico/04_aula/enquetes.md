@@ -113,3 +113,8 @@ D) 9 em 10
 - Salas temáticas configuradas com 3 pessoas por sala e tempo limite ligado.
 - Cronômetro visível para você; chat aberto numa segunda tela ou com um colega acompanhando.
 - Gravação ligada (a aula fica para a equipe).
+## Salas: gravação e plano B (acrescentado à mão; o materiais.py não tem campo para isto)
+
+- **A gravação não pega as salas.** Antes de abrir as salas do slide 18, diga em voz alta: "quem assiste à gravação, pause o vídeo e faça a tarefa em 4 minutos". O slide traz a mesma instrução na faixa de entrega. Na edição, corte o trecho de sala principal vazia (cerca de 4 min).
+- **O chat da sala não volta para a sala principal.** Peça ao porta-voz que escreva a entrega num bloco de notas (ou no celular) e cole no chat principal ao voltar.
+- **Plano B, se a conta não tiver salas temáticas:** chat em cascata com a conta, 2 minutos. Cada um escreve "pela régua absoluta (7 pontos): ...; pela proporcional (22% de 58): ..." e um diferencial com o exame; todos enviam no 3. Leia as duas réguas em voz alta e siga para o slide 19. O bloco encolhe de 6 para cerca de 3 min; use a sobra para o debate da régua.

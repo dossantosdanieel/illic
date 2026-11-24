@@ -9,7 +9,7 @@
     "duracao_alvo_min": 32,
     "caso_ficticio": true,
     "objetivos": [
-      "Interpretar Tinel, flexão-compressão, espessamento do nervo e valgo em movimento pela razão de verossimilhança e decidir entre tratar a tendinopatia medial, investigar e encaminhar",
+      "Interpretar Tinel, flexão-compressão, espessamento do nervo e valgo em movimento pela razão de verossimilhança, com a incerteza do estudo, e decidir entre tratar a tendinopatia medial, investigar e encaminhar",
       "Escolher entre órtese, injeção e encaminhamento cirúrgico no dedo em gatilho pelo grau de Green, com sucesso, recidiva e dor pós-operatória",
       "Interpretar WHAT test e Eichhoff sem confirmar De Quervain por um teste positivo e decidir carga, órtese e encaminhamento no puerpério",
       "Justificar a conduta na tendinopatia medial dizendo o que vem de ensaio, de mecanismo e de extrapolação da lateral (proposta clínica)"
@@ -17,29 +17,30 @@
     "propostas_clinicas": [
       "dose e progressão dos exercícios da massa flexora-pronadora na tendinopatia medial, extrapoladas da lateral e de EMG em saudáveis",
       "PRTEE adaptada e preensão sem dor como medidas da tendinopatia medial",
+      "mapa da sensibilidade (metade do 4º dedo, dorso ulnar da mão) e exame cervical e do desfiladeiro para localizar o formigamento ulnar (anatomia, sem acurácia no lote)",
       "encaminhar para ENMG e ultrassom se o formigamento piorar, ficar diário ou houver fraqueza",
-      "combinar o critério de cirurgia antes da segunda injeção no dedo em gatilho",
+      "combinar, antes da segunda injeção no dedo em gatilho, que nova recidiva leva à avaliação cirúrgica",
       "no puerpério, orientar a carga e usar a órtese como proteção, sem promessa de alívio"
     ],
     "resumo": {
       "pontos_chave": [
-        "Neuropatia ulnar: Tinel RV+ 1,32 e flexão-compressão RV+ 1,02 quase não mudam a probabilidade; espessamento palpável RV+ 2,15 (Beekman 2009; RV calculadas).",
-        "Valgo em movimento: sensibilidade 17/17, especificidade 3/4 em 21 operados; descarta melhor que confirma (O'Driscoll 2005). Tendinopatia medial: nenhum estudo de acurácia (Zwerus 2018).",
-        "Tendinopatia medial: excêntrico com 5 estudos e certeza baixa (See 2026); corticoide melhor só em 6 semanas (Stahl 1997). Força no trabalho pesa (OR 1,95); repetição não (Descatha 2003).",
+        "Neuropatia ulnar: Tinel RV+ 1,32 e flexão-compressão RV+ 1,02 quase não mudam a probabilidade; espessamento palpável RV+ 2,15 (Beekman 2009; RV calculadas). Antes, localize: metade do 4º dedo e dorso da mão apontam para o nervo acima do punho, não para a raiz C8 (anatomia).",
+        "Valgo em movimento: sensibilidade 17/17, especificidade 3/4 em 21 operados (O'Driscoll 2005). O negativo baixa a suspeita, mas com as duas medidas no limite do IC um pré-teste de 15% fica em 15% (calc.). Tendinopatia medial e impacto posteromedial: nenhum estudo de acurácia (Zwerus 2018).",
+        "Tendinopatia medial: excêntrico com 5 estudos e certeza baixa (See 2026); corticoide melhor só em 6 semanas (Stahl 1997). Força no trabalho pesa (OR 1,95); repetição não mostrou associação numa amostra em que todos repetiam (Descatha 2003).",
         "Desvio ulnar com faixa recruta o flexor ulnar do carpo (40% da CVM); pronação, o flexor superficial e o pronador redondo (64% e 73%) (Fukunaga 2023, Tab. 2).",
-        "Gatilho: graus 1–2 com ~75% de sucesso conservador, grau 3 com ~60% e 39,1% operados (Minkhorst 2025). Recidiva em 6–12 meses: 385 por 1000 após injeção, 65 após cirurgia aberta (Fiorini 2018).",
-        "De Quervain: WHAT RV+ 1,4 e RV− 0,03; positivo quase não informa (Goubau 2014). No puerpério, órtese sozinha 0 de 9 com alívio completo; 8 de 9 resolveram ao fim da lactação (Avci 2002)."
+        "Gatilho, sem tratamento prévio: graus 1–2 com ~75% de sucesso conservador, grau 3 com ~60% e 39,1% operados (Minkhorst 2025). Recidiva em 6–12 meses: 385 por 1000 após injeção, 65 após cirurgia aberta (Fiorini 2018). Depois de recidiva, não há número para a 2ª injeção.",
+        "De Quervain: WHAT RV+ 1,4: positivo quase não informa. Negativo: RV− 0,03 pela estimativa pontual, ~0,2 com a sensibilidade no limite do IC (Goubau 2014; calc.). No puerpério, órtese sozinha 0 de 9 com alívio completo; 8 de 9 resolveram ao fim da lactação (Avci 2002)."
       ],
       "algoritmo": [
-        "Dor medial com formigamento no 5º dedo? Tinel não decide; piora ou fraqueza: ENMG + ultrassom.",
-        "Arremessador? Valgo em movimento negativo baixa a suspeita de LCU; positivo, investigar.",
+        "Dor medial com formigamento no 5º dedo? Mapeie a sensibilidade e examine pescoço e desfiladeiro; Tinel não decide; piora, sintoma diário ou fraqueza: ENMG + ultrassom.",
+        "Arremessador? Valgo em movimento negativo baixa a suspeita de LCU, num estudo de 21 operados; positivo, investigar.",
         "Tendinopatia medial? Menos força no trabalho, carga com dois exercícios, medir a cada 2 a 4 semanas.",
-        "Gatilho? Gradue; graus 1–2: órtese ou injeção; grau 3 ou recidiva: combinar o encaminhamento.",
-        "De Quervain? WHAT negativo descarta; no puerpério, orientar e proteger."
+        "Gatilho? Gradue; graus 1–2: órtese ou injeção, pela preferência; grau 3 ou recidiva: combinar o critério de avaliação cirúrgica.",
+        "De Quervain? WHAT negativo pesa contra, se o paciente parece o do estudo; no puerpério, orientar e proteger."
       ],
       "para_praticar": [
         "No próximo Tinel positivo, anote a probabilidade antes e depois do teste.",
-        "Registre o grau de Green do próximo gatilho."
+        "Registre o grau de Green do próximo gatilho e se ele já foi tratado."
       ]
     }
   },
@@ -74,7 +75,7 @@
       "texto": "Bretschneider SF et al. Am J Ind Med 2022;65(1):41-50",
       "pmid": "34674287",
       "doi": "10.1002/ajim.23303",
-      "conferido": "texto completo (p.7, Tab. 3), pela ficha da aula 1"
+      "conferido": "texto completo (p.6 Fig. 2; p.7 Tab. 3), pela ficha da aula 1"
     },
     {
       "id": "Caliandro2025",
@@ -138,7 +139,7 @@
       "texto": "Goubau JF et al. J Hand Surg Eur Vol 2014;39(3):286-92",
       "pmid": "23340762",
       "doi": "10.1177/1753193412475043",
-      "conferido": "só resumo (PubMed); RV, pós-teste e 2×2 reconstruída calc.; PDF pago pendente"
+      "conferido": "só resumo (PubMed); RV, pós-teste, 2×2 reconstruída e IC exato da sensibilidade (92/93) calc.; PDF pago pendente"
     },
     {
       "id": "Huisstede2014",
@@ -157,20 +158,12 @@
       "conferido": "só resumo (PubMed); consenso Delphi; PDF pago pendente"
     },
     {
-      "id": "Ikonen2022",
-      "curta": "Ikonen et al. 2022",
-      "texto": "Ikonen J et al. Clin Orthop Relat Res 2022;480(4):647-60",
-      "pmid": "34874323",
-      "doi": "10.1097/CORR.0000000000002058",
-      "conferido": "só resumo (PubMed), pela ficha da aula 1"
-    },
-    {
       "id": "Minkhorst2025",
       "curta": "Minkhorst et al. 2025",
       "texto": "Minkhorst K et al. Arch Phys Med Rehabil 2025;106(12):1798-806",
       "pmid": "40449569",
       "doi": "10.1016/j.apmr.2025.05.015",
-      "conferido": "só resumo (PubMed); definição dos graus de Green a conferir; PDF gratuito pendente"
+      "conferido": "só resumo (PubMed); definição dos graus de Green a conferir; excluiu tratamento prévio; PDF gratuito pendente"
     },
     {
       "id": "ODriscoll2005",
@@ -178,7 +171,7 @@
       "texto": "O'Driscoll SW et al. Am J Sports Med 2005;33(2):231-9",
       "pmid": "15701609",
       "doi": "10.1177/0363546504267804",
-      "conferido": "só resumo (PubMed); IC exatos e pós-teste calc.; PDF pago pendente"
+      "conferido": "só resumo (PubMed); IC exatos e pós-teste (pontual e com os limites do IC) calc.; PDF pago pendente"
     },
     {
       "id": "Patel1992",
@@ -226,14 +219,14 @@
       "tipo": "capa",
       "bloco": "abertura",
       "tempo_s": 25,
-      "notas": "Aula 3 da trilha cotovelo e mão, 32 minutos. Antes de abrir a sala: cadastrar as cinco enquetes no Meet (Atividades, Enquetes, salvar sem lançar), configurar as salas temáticas com 3 pessoas e limite de 4 minutos, deixar um cronômetro visível e, se possível, um colega lendo o chat. Entrar 5 minutos antes e receber as pessoas pelo nome. Dizer em uma frase o combinado: hoje são três pacientes curtos, da mesma família, e uma decisão por paciente. Pedir câmera aberta: a turma decide, não assiste. A evidência desta versão vem quase toda de resumos; os PDFs ainda estão chegando, e a aula diz isso onde importa."
+      "notas": "Aula 3 da trilha cotovelo e mão, 32 minutos. Antes de abrir a sala: cadastrar as cinco enquetes no Meet (Atividades, Enquetes, salvar sem lançar), configurar salas temáticas de 3 pessoas com limite de 4 minutos e deixar um cronômetro visível. Pausar a gravação ao abrir as salas do slide 18: o Meet não grava as salas. Entrar 5 minutos antes e receber as pessoas pelo nome. Dizer em uma frase: hoje são três pacientes da mesma família e uma decisão por paciente; câmera aberta, porque a turma decide. A evidência desta versão vem quase toda de resumos, e a aula diz isso onde importa."
     },
     {
       "tipo": "cartoes",
       "bloco": "abertura",
       "olho": "Hoje",
       "titulo": "Três pessoas, uma **família**",
-      "tempo_s": 35,
+      "tempo_s": 45,
       "origem": "caso",
       "colunas": 3,
       "interacao": {
@@ -245,20 +238,20 @@
       "itens": [
         {
           "titulo": "Sérgio, 44 anos",
-          "texto": "Dor no cotovelo medial. Mecânico; armador de handebol aos sábados."
+          "texto": "Marido da Renata. Mecânico; armador de handebol aos sábados."
         },
         {
-          "titulo": "Cláudia, 46 anos",
-          "texto": "A paciente das aulas 1 e 2. Agora, um dedo que estala.",
+          "titulo": "Renata, 46 anos",
+          "texto": "A cabeleireira das aulas 1 e 2. Agora, um dedo que trava.",
           "destaque": true
         },
         {
           "titulo": "Júlia, 26 anos",
-          "texto": "Filha da Cláudia. Dor no punho, 7 semanas depois do parto."
+          "texto": "Filha da Renata. Dor no punho, 7 semanas depois do parto."
         }
       ],
       "faixa": "**Combinado:** a mesma pergunta nos três casos: o teste muda a probabilidade? Pacientes fictícios; decisões reais.",
-      "notas": "O mapa da aula em 35 segundos. Apresentar os três sem detalhes: o marido da paciente das aulas 1 e 2, ela mesma, e a filha. Dizer que cada caso tem uma decisão central e que a pergunta que costura os três é se o teste muda a probabilidade. Não adiantar nenhum número. Interação: mão na câmera, 15 segundos, para aquecer a câmera. Contar o que se vê, sem julgar: “uns dois terços para cima”. Chamar uma pessoa de cada lado pelo nome, se houver tempo."
+      "notas": "O mapa da aula. Apresentar os três sem detalhes: o Sérgio, marido da Renata; a própria Renata, a cabeleireira das aulas 1 e 2; e a Júlia, filha dela. Cada caso tem uma decisão central, e a pergunta que costura os três é se o teste muda a probabilidade. Não adiantar números. Interação: mão na câmera, 15 segundos, para aquecer a câmera. Contar o que se vê, sem julgar: “uns dois terços para cima”."
     },
     {
       "tipo": "pergunta",
@@ -267,23 +260,23 @@
       "olho": "Aulas 1 e 2 · Sem voltar os slides",
       "titulo": "Da tendinopatia **lateral** para a medial: o que se transfere e o que não se transfere?",
       "instrucao": "Uma linha: “transfere: ...; não transfere: ...”. Envie quando eu contar até 3.",
-      "ancora": "pense em curso natural, trabalho, testes e exercício.",
+      "ancora": "pense em trabalho, testes, diferencial e exercício.",
       "desafio": "qual número das aulas 1 e 2 você não levaria para a medial sem avisar?",
       "tempo_s": 85,
       "interacao": {
         "tipo": "chat_cascata",
-        "duracao_s": 60,
+        "duracao_s": 45,
         "pedido": "Escrever em uma linha uma coisa que se transfere da tendinopatia lateral para a medial e uma que não se transfere."
       },
-      "notas": "Prática de recuperação das aulas 1 e 2, antes de qualquer conteúdo novo. Ler a pergunta uma vez. Interação: chat em cascata, 60 segundos de silêncio para escrever, contar 3, 2, 1 e pedir que enviem juntos. Ler as respostas em voz alta, agrupando as repetidas e citando os nomes: curso natural, trabalho, testes, exercício. Perguntar qual grupo quase ninguém escolheu. Não corrigir agora: o próximo slide confere. Para quem está começando, a âncora basta; para quem já domina, cobrar o desafio: o número da aula 2 que não viaja sem aviso."
+      "notas": "Prática de recuperação das aulas 1 e 2, antes de qualquer conteúdo novo. Ler a pergunta uma vez. Interação: chat em cascata, 45 segundos de silêncio para escrever; contar 3, 2, 1 e pedir que enviem juntos. Ler quatro ou cinco respostas em voz alta, agrupando as repetidas e citando os nomes. Não corrigir agora: o próximo slide confere. Para quem está começando, a âncora basta; de quem já domina, cobrar o desafio: o número da aula 2 que não viaja sem aviso."
     },
     {
       "tipo": "tabela",
       "bloco": "abertura",
       "papel": "conferir",
       "olho": "Aulas 1 e 2 · Conferindo",
-      "titulo": "A lógica **transfere**; os testes e os ensaios, não",
-      "tempo_s": 50,
+      "titulo": "A **força** transfere; o diferencial, não",
+      "tempo_s": 60,
       "colunas": [
         "Tema",
         "Lateral (aulas 1 e 2)",
@@ -296,37 +289,25 @@
       ],
       "linhas": [
         [
-          "Curso",
-          "89% muito melhor em 1 ano",
-          "81% recuperados em 3 anos"
-        ],
-        [
           "Trabalho",
-          "Rotação OR 1,85; repetição 0,71",
-          "Força OR 1,95; repetição 1,11"
+          "Força com duração 1,75; rotação 1,85; repetição 0,71",
+          "Força 1,95; repetição 1,11, numa amostra em que todos repetiam"
         ],
         [
           "Diferencial",
-          "Cervical, nervo radial",
-          "Nervo ulnar e LCU, lado a lado"
-        ],
-        [
-          "Tratamento",
-          "Vários ensaios",
-          "Poucos: o caso A mostra"
+          "Cervical e nervo radial",
+          "Cervical, nervo ulnar e, no arremessador, LCU"
         ]
       ],
       "destaque_linhas": [
-        2,
-        3
+        1
       ],
-      "nota": "Em cinza: não se transfere sem aviso.",
+      "nota": "Em cinza: não se transfere. A aula de capacitação dizia “preensão repetitiva e vigorosa”: o que pesa é a força.",
       "fonte": [
-        "Ikonen2022",
         "Bretschneider2022",
         "Descatha2003"
       ],
-      "notas": "Uma resposta possível, para comparar com o chat. Curso: na lateral, 89% estavam muito melhor ou recuperados em 1 ano nos braços sem tratamento ativo, pela revisão de Ikonen; na medial, 81% dos trabalhadores estavam recuperados em 3 anos, no estudo de Descatha, só resumo. Trabalho: na lateral, rotação de antebraço com OR 1,85 e repetição com OR 0,71, intervalo de 0,42 a 1,20, na revisão de Bretschneider; na medial, força com OR 1,95, intervalo de 1,15 a 3,32, e repetição com OR 1,11, intervalo de 0,59 a 2,10. É a força, não a repetição isolada. O que não se transfere: o diferencial muda, porque o nervo ulnar e o ligamento colateral ulnar estão ao lado, e a quantidade de ensaios cai muito. Não dizer quantos: o caso A revela. Voltar a quem escreveu “o exercício transfere” e perguntar com que dose."
+      "notas": "Uma resposta possível, para comparar com o chat. Trabalho: na lateral, a revisão de Bretschneider achou força com duração, o Strain Index alto, com OR 1,75, e rotação do antebraço com 1,85; a repetição isolada, 0,71, não se associou. Na medial, no estudo de Descatha, força com OR 1,95, intervalo de 1,15 a 3,32, e repetição 1,11, só resumo. O que transfere é a força. Desafio: por que a repetição não poderia aparecer nesse estudo? A amostra inteira era de trabalhadores expostos a trabalho repetitivo; sem contraste, a falta de associação não quer dizer que a repetição não pese. O que não transfere: o diferencial, com o nervo ulnar e o ligamento colateral ao lado, e os ensaios, que o caso A vai mostrar."
     },
     {
       "tipo": "citacao",
@@ -334,21 +315,21 @@
       "papel": "gancho",
       "olho": "Caso A · Sérgio",
       "titulo": "Dor medial e formigamento no **5º dedo**",
-      "tempo_s": 45,
+      "tempo_s": 55,
       "origem": "caso",
       "rotulo": "Na avaliação, semana 10",
       "fala": "“Dói para apertar a chave e para arremessar. De manhã o mindinho formiga. Infiltração me faz voltar mais rápido?”",
-      "fala2": "Sérgio, 44 anos, destro. Mecânico de manutenção; armador de handebol amador.",
+      "fala2": "44 anos, destro, mecânico; armador de handebol.",
       "cartao": {
-        "olho": "O que você achou",
+        "olho": "Exame",
         "itens": [
-          "Dor 1 cm distal e anterior ao epicôndilo medial",
-          "Dor à flexão do punho e pronação resistidas",
-          "Tinel positivo; nervo sem espessamento",
-          "Força intrínseca normal; valgo em movimento negativo"
+          "Dor distal ao epicôndilo à flexão e pronação resistidas",
+          "Tinel positivo; nervo sem espessamento, não subluxa",
+          "Formiga o 5º dedo e metade do 4º, palma e dorso",
+          "Pescoço, desfiladeiro, força intrínseca e valgo em movimento: normais"
         ]
       },
-      "notas": "O primeiro caso. Ler a fala devagar, com a dúvida de quem quer voltar a jogar no sábado. Apresentar os achados sem interpretar. Dados do caso, fictícios: dor há 10 semanas, preensão sem dor de 200 newtons do lado direito e 440 do esquerdo, razão de 45%, e PRTEE adaptada de 48 em 100. Dizer que a PRTEE não foi validada para a medial: usar como na lateral é extrapolação. Não comentar o Tinel nem o valgo em movimento: a turma vai pôr número neles agora. Não responder à pergunta da infiltração: ela volta no fim do caso."
+      "notas": "O primeiro caso. Ler a fala devagar, com a dúvida de quem quer jogar no sábado. Apresentar os achados sem interpretar. Dados do caso, fictícios: dor há 10 semanas, preensão sem dor de 200 newtons à direita e 440 à esquerda, PRTEE adaptada de 48, extrapolada da lateral. O mapa do formigamento já localiza, pela anatomia: metade do 4º dedo aponta para o nervo, não para a raiz C8, que pega o dedo inteiro e o antebraço medial; o dorso da mão vem do ramo cutâneo dorsal, que sai antes do canal de Guyon, então a lesão está acima do punho. Pescoço e desfiladeiro foram examinados, como na aula 1. Isso é anatomia: não há acurácia no nosso lote. Não comentar o Tinel nem o valgo: a turma vai pôr número neles agora."
     },
     {
       "tipo": "enquete",
@@ -356,7 +337,7 @@
       "papel": "prever",
       "olho": "Caso A · Prever",
       "titulo": "Quanto o Tinel **sobe**?",
-      "tempo_s": 75,
+      "tempo_s": 95,
       "interacao": {
         "tipo": "enquete",
         "duracao_s": 60
@@ -369,7 +350,7 @@
         "D": "Cerca de 80%: o Tinel positivo confirma."
       },
       "gabarito": "B",
-      "notas": "A primeira previsão com número. O 30% é um pré-teste ilustrativo, escolhido para a conta: não há estudo da prevalência de neuropatia ulnar entre pacientes de fisioterapia com dor medial. Ler a pergunta uma vez e não comentar as opções. Interação: enquete 1, aberta por 1 minuto. Aos 45 segundos, avisar que faltam 15. Mostrar o resultado e chamar uma pessoa da opção menos votada e uma da mais votada, pelo nome, para justificar em 15 segundos. Não dar a resposta: o próximo slide mostra quanto cada teste vale. Para quem está começando: probabilidade pós-teste é a chance depois do resultado do teste."
+      "notas": "A primeira previsão com número. O 30% é um pré-teste ilustrativo: não há estudo da prevalência de neuropatia ulnar entre pacientes de fisioterapia com dor medial. Ler a pergunta uma vez, sem comentar as opções. Interação: enquete 1, aberta por 1 minuto; aos 45 segundos, avisar que faltam 15. Fechar, mostrar a contagem e perguntar quem votou na opção menos votada e topa defender o voto em 15 segundos, de microfone aberto: durante a aula o Meet mostra só a contagem, não quem votou em quê. Não dar a resposta. Para quem está começando: probabilidade pós-teste é a chance depois do resultado."
     },
     {
       "tipo": "barras",
@@ -377,7 +358,7 @@
       "papel": "evidencia",
       "olho": "Caso A · A evidência",
       "titulo": "Nenhum teste provocativo mexe muito; o espessamento é o que mais **pesa**",
-      "tempo_s": 75,
+      "tempo_s": 60,
       "orientacao": "horizontal",
       "rotulo": "RV+ de cada teste (192 pacientes com suspeita)",
       "categorias": [
@@ -411,22 +392,22 @@
         },
         {
           "estilo": "claro",
-          "texto": "**Leitura:** RV+ abaixo de 2 quase não muda a decisão."
+          "texto": "**Aula de capacitação:** Tinel e flexão como sinais de neuropatia. **Hoje:** RV+ perto de 1."
         }
       ],
       "fonte": [
         "Beekman2009",
         "RV e pós-teste: calc. do resumo"
       ],
-      "notas": "Conferir a enquete. Ler o eixo: cada barra é a razão de verossimilhança positiva de um teste; 1 quer dizer que o positivo não muda nada. No estudo de Beekman, 192 pacientes consecutivos com suspeita, 137 com neuropatia confirmada por eletrofisiologia e ultrassom: Tinel com sensibilidade de 62% e especificidade de 53%, RV+ 1,32 e RV− 0,72; flexão-compressão 61% e 40%, RV+ 1,02 e RV− 0,97; espessamento palpável 28% e 87%, RV+ 2,15, ausente em 72% de quem tinha a doença. Os autores concluem que o valor somado ao exame de rotina é mínimo. As razões são calculadas por nós das porcentagens do resumo, sem intervalo. Voltar à enquete: a B era a sustentada; quem votou D, o que mudaria o voto? Desafio: com pré-teste de 71%, como na amostra, um Tinel negativo ainda deixa 64%."
+      "notas": "Conferir a enquete. Ler o eixo: cada barra é a razão de verossimilhança positiva de um teste; 1 quer dizer que o positivo não muda nada. No estudo de Beekman, 192 pacientes consecutivos com suspeita, 137 com neuropatia confirmada por eletrofisiologia e ultrassom: Tinel com sensibilidade de 62% e especificidade de 53%, RV positiva 1,32; flexão-compressão 1,02; espessamento palpável 2,15, mas ausente em 72% de quem tinha a doença. Razões calculadas por nós das porcentagens do resumo, sem intervalo. A B era a sustentada. A aula de capacitação ensinava Tinel e flexão como sinais de neuropatia; hoje, eles quase não mexem. Desafio: com pré-teste de 71%, como na amostra, um Tinel negativo ainda deixa 64%."
     },
     {
       "tipo": "numeros",
       "bloco": "caso A · cotovelo medial",
       "papel": "evidencia",
       "olho": "Caso A · E o ligamento?",
-      "titulo": "Valgo em movimento: bom para descartar, num estudo **minúsculo**",
-      "tempo_s": 55,
+      "titulo": "Valgo em movimento: o negativo ajuda, num estudo **minúsculo**",
+      "tempo_s": 60,
       "itens": [
         {
           "numero": "17/17",
@@ -437,21 +418,21 @@
           "rotulo": "especificidade 75% (IC 19% a 99%)"
         },
         {
-          "numero": "4,4%",
-          "rotulo": "LCU no Sérgio após teste negativo (pré 15%, cenário pessimista)",
+          "numero": "0–15%",
+          "rotulo": "LCU no Sérgio após negativo (pré 15%), só pela incerteza",
           "destaque": true
         }
       ],
       "linhas": [
         "**Quem:** 21 operados, 81% com lesão do LCU; teste avaliado por quem o criou.",
-        "**E a tendinopatia medial?** Zero estudos de acurácia de teste clínico na revisão de 2018."
+        "**Sem acurácia estudada:** tendinopatia medial e impacto posteromedial (revisão de 2018)."
       ],
       "fonte": [
         "ODriscoll2005",
         "Zwerus2018",
         "IC e pós-teste: calc."
       ],
-      "notas": "O segundo diferencial: o ligamento colateral ulnar no arremessador. No estudo de O'Driscoll, torque em valgo constante com o cotovelo em flexão completa até extensão rápida; positivo se reproduz a dor medial, com o máximo entre 120 e 70 graus. Sensibilidade de 17 em 17 e especificidade de 3 em 4; os intervalos são calculados por nós. Com pré-teste ilustrativo de 15% e o cenário pessimista, sensibilidade de 80,5%, o negativo leva a 4,4%; um positivo levaria a 41%. A especificidade vem de 4 pessoas: não usar para confirmar. Para a tendinopatia medial, a revisão de Zwerus não achou nenhum estudo de acurácia: o diagnóstico é por padrão e exclusão. Valgo a 30 graus e milking, da aula de capacitação, não têm acurácia no nosso lote."
+      "notas": "O segundo diferencial: o ligamento colateral ulnar no arremessador. No estudo de O'Driscoll, torque em valgo constante da flexão completa até a extensão rápida; positivo se reproduz a dor medial entre 120 e 70 graus. Sensibilidade de 17 em 17, especificidade de 3 em 4; intervalos calculados por nós. Com pré-teste ilustrativo de 15%, o negativo leva a quase zero pela estimativa pontual; com a sensibilidade no limite inferior, a 4,4%; com as duas medidas no limite inferior, fica em 15%. Então o negativo baixa a suspeita num estudo de 21 operados, espectro que infla a sensibilidade; não descarta. O positivo não confirma: a especificidade vem de 4 pessoas. Para tendinopatia medial e impacto posteromedial, a revisão de Zwerus não achou nenhum estudo de acurácia."
     },
     {
       "tipo": "enquete",
@@ -459,7 +440,7 @@
       "papel": "decidir",
       "olho": "Caso A · Decidir",
       "titulo": "A decisão do **Sérgio**",
-      "tempo_s": 75,
+      "tempo_s": 90,
       "interacao": {
         "tipo": "enquete",
         "duracao_s": 60
@@ -472,7 +453,7 @@
         "D": "Tratar a tendinopatia, orientar posições para o nervo e reavaliar."
       },
       "gabarito": "D",
-      "notas": "A decisão central do caso A. Ler a pergunta e não comentar as opções. Interação: enquete 2, aberta por 1 minuto. Mostrar o resultado e chamar pelo nome uma pessoa de cada opção, começando pela menos votada, para justificar em 15 segundos. Perguntar a quem votou B o que o exame mudaria hoje na conduta. Não revelar ainda a resposta sobre a infiltração: o slide depois da revelação mostra o que existe. Desafio para quem já domina: que achado faria você encaminhar amanhã?"
+      "notas": "A decisão central do caso A. Ler a pergunta, sem comentar as opções. Interação: enquete 2, aberta por 1 minuto. Fechar, mostrar a contagem e perguntar quem votou na opção menos votada e topa defender o voto em 15 segundos, de microfone aberto: durante a aula o Meet mostra só a contagem, não quem votou em quê. Se ninguém defender a B, perguntar à turma o que a ENMG mudaria hoje na conduta. Não revelar: o próximo slide confere. Desafio para quem já domina: que achado faria você encaminhar amanhã?"
     },
     {
       "tipo": "enquete",
@@ -480,7 +461,7 @@
       "papel": "conferir",
       "olho": "Caso A · Conferindo o voto",
       "titulo": "Hipótese principal: **tendinopatia**; o nervo, em observação",
-      "tempo_s": 40,
+      "tempo_s": 50,
       "pergunta": "Tinel positivo, formigamento ao acordar, sem espessamento, força intrínseca normal, valgo em movimento negativo. O que fazer agora?",
       "opcoes": {
         "A": "Tratar como neuropatia ulnar: o Tinel positivo confirma.",
@@ -489,12 +470,12 @@
         "D": "Tratar a tendinopatia, orientar posições para o nervo e reavaliar."
       },
       "revela": "D",
-      "justificativa": "**O que sustenta:** os testes não confirmam nem afastam a neuropatia (RV de 1,0 a 2,2). No caso leve, orientar posições a evitar é o conservador com algum sinal; piora, fraqueza ou atrofia → ENMG + ultrassom.",
+      "justificativa": "**O que sustenta:** os testes não confirmam nem afastam (RV de 1,0 a 2,2); no caso leve, orientar posições tem algum sinal. **Encaminhar:** piora, sintoma diário, fraqueza ou atrofia → ENMG + ultrassom.",
       "fonte": [
         "Beekman2009",
         "Caliandro2025"
       ],
-      "notas": "A resposta que a evidência sustenta é a D. Os testes provocativos têm razões perto de 1, pelo estudo de Beekman. Na revisão Cochrane de Caliandro, 15 ensaios e 970 participantes: no caso leve, um ensaio pequeno sugere que orientar movimentos e posições a evitar, como flexão sustentada e apoio no cotovelo, reduz o desconforto; o resto do conservador tem certeza muito baixa. O quadro grave, com fraqueza e atrofia, não foi testado no conservador: é encaminhamento. O critério de encaminhar por piora ou sintoma diário é proposta clínica. Voltar a quem votou A: o que mudaria o voto?"
+      "notas": "A sustentada é a D. Os testes têm razões perto de 1. Na revisão Cochrane de Caliandro, 15 ensaios e 970 participantes: no caso leve, um ensaio pequeno sugere que orientar posições a evitar, como flexão sustentada e apoio no cotovelo, reduz o desconforto; o resto do conservador tem certeza muito baixa. O quadro com fraqueza ou atrofia não foi testado no conservador: é encaminhamento. O critério de piora ou sintoma diário é proposta clínica. Resposta ao desafio: fraqueza intrínseca, atrofia ou formigamento que fica diário."
     },
     {
       "tipo": "tabela",
@@ -502,13 +483,7 @@
       "papel": "evidencia",
       "olho": "Caso A · E a infiltração?",
       "titulo": "Na medial, quase todo o tratamento é **extrapolação**",
-      "tempo_s": 70,
-      "interacao": {
-        "tipo": "mao_camera",
-        "duracao_s": 15,
-        "inicio_s": 50,
-        "pedido": "Polegar para cima: já prescreveu para a medial a dose da lateral sem dizer que era extrapolação. Para baixo: nunca."
-      },
+      "tempo_s": 50,
       "colunas": [
         "Pergunta",
         "O que existe",
@@ -551,7 +526,7 @@
         "Arevalo2023",
         "Fukunaga2023"
       ],
-      "notas": "A resposta à pergunta do Sérgio, e o ponto onde a evidência é escassa. Excêntrico: revisão de See, 5 estudos e 143 pacientes, sem meta-análise, melhora dentro dos grupos em todos e superioridade entre grupos em um único ensaio, certeza baixa. Corticoide: o ensaio de Stahl, 58 pacientes e 60 cotovelos, metilprednisolona contra lidocaína, os dois com fisioterapia; menos dor em 6 semanas numa escala e não na outra, sem diferença em 3 meses e 1 ano; os dois grupos melhoraram, e os autores atribuem ao curso natural. Cirurgia: 16 séries de casos, sucesso de 63% a 100%, sem comparação com continuar o conservador. Tudo só resumo. Dizer ao Sérgio: a infiltração pode aliviar por 6 semanas, não acelera o retorno em 3 meses. Interação: mão na câmera aos 50 segundos; contar o que se vê, sem julgar."
+      "notas": "A resposta à pergunta do Sérgio, e onde a evidência é escassa. Excêntrico: revisão de See, 5 estudos e 143 pacientes, sem meta-análise, superioridade entre grupos em um único ensaio, certeza baixa. Corticoide: ensaio de Stahl, 60 cotovelos, metilprednisolona contra lidocaína, os dois com fisioterapia: menos dor em 6 semanas numa escala, nada em 3 meses e 1 ano. Cirurgia: 16 séries de casos, sem comparação. Tudo só resumo. A aula de capacitação dizia que não havia ensaio na medial; hoje há pouco. Ao Sérgio: a infiltração pode aliviar por 6 semanas, não acelera o retorno em 3 meses."
     },
     {
       "tipo": "barras",
@@ -559,13 +534,7 @@
       "papel": "evidencia",
       "olho": "Caso A · Mecanismo para escolher o exercício",
       "titulo": "Um exercício não cobre a massa **flexora-pronadora**",
-      "tempo_s": 70,
-      "interacao": {
-        "tipo": "mao_camera",
-        "duracao_s": 15,
-        "inicio_s": 50,
-        "pedido": "Polegar para cima: prescreve pronação com faixa na dor medial. Para baixo: só flexão de punho."
-      },
+      "tempo_s": 45,
       "rotulo": "EMG em % da CVM (média), Borg 5/10, 10 homens saudáveis",
       "categorias": [
         "Flexor ulnar do carpo",
@@ -608,7 +577,7 @@
       "fonte": [
         "Fukunaga2023"
       ],
-      "notas": "O único texto completo do caso A, usado como mecanismo. Ler o eixo: atividade elétrica em porcentagem da contração voluntária máxima, pico de três repetições. No desvio ulnar com faixa, o flexor ulnar do carpo chegou a 40,3%, mais que o flexor superficial dos dedos, 19,5, e o pronador redondo, 21,5. Na pronação com faixa, sentado, o flexor superficial chegou a 63,9 e o pronador redondo a 73,0, contra 27,4 do flexor ulnar. Tabela 2, página 5. São 10 homens saudáveis: diz qual músculo cada exercício pega, não se trata a tendinopatia. Não chamar de excêntrico: o estudo mede o exercício inteiro. Desafio: 73% da máxima com esforço 5 de 10 é carga altíssima ou medida frágil? As duas: normalização por teste manual e risco de sinal de músculo vizinho. Interação: mão na câmera aos 50 segundos."
+      "notas": "O único texto completo do caso A, usado como mecanismo. Ler o eixo: atividade em porcentagem da contração voluntária máxima. No desvio ulnar com faixa, o flexor ulnar do carpo chegou a 40,3%; na pronação com faixa, o flexor superficial a 63,9 e o pronador redondo a 73,0. Tabela 2, página 5. São 10 homens saudáveis: diz qual músculo cada exercício pega, não se trata a tendinopatia. Desafio: 73% da máxima com esforço 5 de 10 é carga altíssima ou medida frágil? As duas: normalização por teste manual e sinal de músculo vizinho."
     },
     {
       "tipo": "figura",
@@ -616,7 +585,7 @@
       "papel": "decidir",
       "olho": "Caso A · Para prescrever amanhã",
       "titulo": "Desvio ulnar com faixa: o exercício que mais pegou o **flexor ulnar**",
-      "tempo_s": 50,
+      "tempo_s": 65,
       "figura": {
         "id": "Fukunaga2023_fig2"
       },
@@ -648,19 +617,19 @@
           "cor": "alerta"
         }
       ],
-      "notas": "Da evidência para a prescrição do Sérgio. Mostrar a montagem do estudo de Fukunaga, figura 2, página 3: cotovelos estendidos, palmas para baixo, braços na altura dos ombros, faixa enrolada duas vezes nas mãos. Demonstrar na câmera, junto, a pronação sentado com a faixa presa sob o pé, que pegou pronador redondo e flexor superficial; a figura dela no artigo tem resolução baixa demais para o slide. A dose e a progressão no paciente são proposta clínica: vêm da tendinopatia lateral, da aula 2, isométrico de 20% a 25% da máxima na fase irritável e isotônico 3 séries de 10, subindo quando não há dor tardia de 24 horas. Dizer em voz alta de onde vem cada parte, o que se perde na extrapolação e o que medir: dor em 24 horas, PRTEE e preensão sem dor a cada 2 a 4 semanas. No trabalho, reduzir força, não só repetição."
+      "notas": "Da evidência para a prescrição do Sérgio. Mostrar a montagem do estudo de Fukunaga, figura 2: cotovelos estendidos, palmas para baixo, faixa enrolada nas mãos. Demonstrar na câmera, junto, a pronação sentado com a faixa presa sob o pé, que pegou pronador e flexor superficial; a figura dela no artigo tem resolução baixa demais. A dose no paciente é proposta clínica, vinda da lateral, na aula 2: isométrico na fase irritável e isotônico de 3 séries de 10, subindo quando não há dor tardia em 24 horas. Medir dor em 24 horas, PRTEE e preensão sem dor a cada 2 a 4 semanas. No trabalho, reduzir força, não só repetição."
     },
     {
       "tipo": "citacao",
       "bloco": "caso B · dedo em gatilho",
       "papel": "gancho",
-      "olho": "Caso B · Cláudia",
+      "olho": "Caso B · Renata",
       "titulo": "“Outra infiltração, **não**”",
-      "tempo_s": 35,
+      "tempo_s": 45,
       "origem": "caso",
-      "rotulo": "Na reavaliação do cotovelo, semana 12",
-      "fala": "“O dedo do meio estala de manhã; eu mesma desdobro. No cotovelo já me ofereceram infiltração. Agora, não quero.”",
-      "fala2": "Cláudia, 46 anos, a paciente das aulas 1 e 2. Há 3 meses; só o dedo médio direito; sem diabetes.",
+      "rotulo": "Semana 26, na alta do cotovelo",
+      "fala": "“O dedo do meio trava de manhã e com a tesoura; eu mesma desdobro. No cotovelo fiz infiltração e voltou tudo. Outra, não.”",
+      "fala2": "Renata, 46 anos, cabeleireira, a paciente das aulas 1 e 2. Há 3 meses; só o dedo médio direito; sem diabetes.",
       "cartao": {
         "olho": "Exame",
         "itens": [
@@ -669,7 +638,7 @@
           "Grau 2 de Green"
         ]
       },
-      "notas": "O segundo caso, a paciente das aulas 1 e 2. Dizer que o cotovelo dela melhorou e que a queixa nova é a mão. Ler a fala com firmeza: ela não quer injeção. Graus de Green, para quem está começando: 1, dor sem gatilho; 2, gatilho que o paciente corrige; 3, precisa da outra mão; 4, travado. A definição exata usada no ensaio de Minkhorst ainda vai ser conferida no texto completo. Sem diabetes, menos de 6 meses e um dedo só: os fatores que pioraram o resultado no estudo de Patel estão ausentes. Não adiantar números."
+      "notas": "O segundo caso. Dizer que o cotovelo dela teve alta na semana 26 e que a queixa nova é a mão: trava com a tesoura. Ler a fala com firmeza: depois da recidiva no cotovelo, ela não quer injeção. Graus de Green, para quem está começando: 1, dor sem gatilho; 2, gatilho que o paciente corrige; 3, precisa da outra mão; 4, travado. A definição exata do ensaio de Minkhorst vai ser conferida no texto completo. Menos de 6 meses e um dedo só: os fatores de falha da órtese no estudo de Patel estão ausentes. Não adiantar números."
     },
     {
       "tipo": "enquete",
@@ -677,7 +646,7 @@
       "papel": "prever",
       "olho": "Caso B · Prever",
       "titulo": "Quantos resolvem **sem cirurgia**?",
-      "tempo_s": 70,
+      "tempo_s": 90,
       "interacao": {
         "tipo": "enquete",
         "duracao_s": 60
@@ -690,7 +659,7 @@
         "D": "4 em 4"
       },
       "gabarito": "C",
-      "notas": "Previsão do prognóstico antes da escolha. Ler a pergunta uma vez, sem comentar. Interação: enquete 3, aberta por 1 minuto. Mostrar o resultado e chamar uma pessoa da opção menos votada. Não revelar: o próximo slide mostra o ensaio. Para quem está começando: sucesso aqui é resolver ou melhorar sem precisar operar."
+      "notas": "Previsão do prognóstico antes da escolha. Ler a pergunta uma vez, sem comentar. Interação: enquete 3, aberta por 1 minuto. Fechar, mostrar a contagem e perguntar quem votou na opção menos votada e topa defender o voto em 15 segundos, de microfone aberto: durante a aula o Meet mostra só a contagem, não quem votou em quê. Não revelar: o próximo slide mostra o ensaio. Para quem está começando: sucesso aqui é resolver ou melhorar sem operar."
     },
     {
       "tipo": "barras",
@@ -698,8 +667,8 @@
       "papel": "evidencia",
       "olho": "Caso B · A evidência",
       "titulo": "O grau prevê mais do que a escolha entre órtese e **injeção**",
-      "tempo_s": 60,
-      "rotulo": "% dos dedos, seguimento médio de 29 meses (122 dedos)",
+      "tempo_s": 50,
+      "rotulo": "% dos dedos sem tratamento prévio, 29 meses (122 dedos)",
       "categorias": [
         "Graus 1 e 2",
         "Grau 3"
@@ -737,7 +706,7 @@
       "fonte": [
         "Minkhorst2025"
       ],
-      "notas": "Conferir a enquete: a C. Ensaio de três braços de Minkhorst, 104 pacientes e 122 dedos, órtese, injeção ou as duas, seguimento médio de 29 meses. Sucesso global de 68,9%; graus 1 e 2 em torno de 75%, grau 3 em torno de 60%, qualquer que fosse o tratamento. O resumo dá os valores arredondados. No grau 3, 39,1% acabaram operados contra 22,4%, P de 0,05: diferença de 16,7 pontos, cerca de uma cirurgia a mais a cada 6 dedos, conta nossa. É comparação entre subgrupos, não sorteio: prognóstico, não efeito de tratamento. Somar órtese noturna à injeção não mudou nada em 6 semanas. O braço só órtese não tem número no resumo."
+      "notas": "Conferir a enquete: a C. Ensaio de três braços de Minkhorst, 104 pacientes e 122 dedos, órtese, injeção ou as duas, 29 meses. Graus 1 e 2 em torno de 75% de sucesso, grau 3 em torno de 60%, qualquer que fosse o tratamento; valores arredondados no resumo. No grau 3, 39,1% operados contra 22,4%: cerca de uma cirurgia a mais a cada 6 dedos, conta nossa. É comparação entre subgrupos: prognóstico, não efeito de tratamento. Somar órtese noturna à injeção não mudou nada em 6 semanas. Guardar um detalhe: o ensaio excluiu quem já tinha feito órtese ou injeção."
     },
     {
       "tipo": "tabela",
@@ -745,12 +714,12 @@
       "papel": "decidir",
       "olho": "Caso B · As opções",
       "titulo": "Cada opção tem um **preço**",
-      "tempo_s": 75,
+      "tempo_s": 85,
       "interacao": {
         "tipo": "mao_camera",
         "duracao_s": 15,
         "inicio_s": 55,
-        "pedido": "Polegar para cima: órtese primeiro para a Cláudia. Para baixo: injeção primeiro."
+        "pedido": "Polegar para cima: a injeção que falhou no cotovelo é argumento contra injetar o dedo. Para baixo: não é."
       },
       "colunas": [
         "Opção",
@@ -782,56 +751,56 @@
       "fonte": [
         "Patel1992",
         "PetersVeluthamaningal2009",
-        "Fiorini2018"
+        "Fiorini2018",
+        "Minkhorst2025"
       ],
-      "notas": "A primeira decisão do caso B, com os números de cada opção. Órtese: no estudo de Patel, órtese com a metacarpofalângica em 10 a 15 graus de flexão por cerca de 6 semanas resolveu 28 de 40 dedos e 5 de 10 polegares; das 17 falhas, 15 resolveram depois com injeção. Comparativo antigo, alocação não descrita. Injeção: revisão Cochrane de Peters-Veluthamaningal, 2 ensaios e 63 pessoas, sucesso em 4 semanas com risco relativo de 3,15 contra lidocaína, número necessário para tratar 3. Recidiva: na revisão de Fiorini, 385 em 1000 após injeção contra 65 em 1000 após cirurgia aberta, em 6 a 12 meses, certeza baixa; dor na palma na primeira semana, 678 contra 184 em 1000. Interação: mão na câmera aos 55 segundos. Para a Cláudia, órtese primeiro é defensável pela preferência, grau 2, menos de 6 meses e um dedo."
+      "notas": "A primeira decisão do caso B. Órtese: no estudo de Patel, órtese da metacarpofalângica em 10 a 15 graus por cerca de 6 semanas resolveu 28 de 40 dedos e 5 de 10 polegares; das 17 falhas, 15 resolveram depois com injeção. Injeção: Cochrane de Peters-Veluthamaningal, 2 ensaios e 63 pessoas, sucesso em 4 semanas com risco relativo de 3,15, NNT 3. Recidiva, na revisão de Fiorini: 385 em 1000 após injeção contra 65 após cirurgia aberta; dor na palma na primeira semana, 678 contra 184. Interação: mão na câmera aos 55 segundos. A resposta sustentada é para baixo: a recidiva do cotovelo é outra doença e outra evidência; no dedo, a injeção funciona no curto prazo. Mesmo assim, órtese primeiro é defensável: grau 2, menos de 6 meses, um dedo, e no ensaio de Minkhorst os graus 1 e 2 foram parecidos com órtese, injeção ou as duas."
     },
     {
       "tipo": "tarefa",
       "bloco": "caso B · dedo em gatilho",
       "papel": "decidir",
       "olho": "Caso B · Revés",
-      "titulo": "Decidam com a **Cláudia**",
-      "tempo_s": 270,
+      "titulo": "Decidam com a **Renata**",
+      "tempo_s": 310,
       "interacao": {
         "tipo": "salas",
-        "duracao_s": 210,
-        "pedido": "Em salas de 3, decidir entre segunda injeção e encaminhamento para cirurgia, com um número de cada lado e a frase para a paciente."
+        "duracao_s": 200,
+        "pedido": "Em salas de 3, decidir entre segunda injeção e encaminhamento para cirurgia, com o número que vale para ela e a frase para a paciente."
       },
       "dado": "**Mês 5:** órtese ajudou pouco; injeção na semana 7. Agora o gatilho voltou e ela precisa da outra mão.",
       "itens": [
         "Que grau é agora?",
-        "Segunda injeção ou encaminhar? Um número de cada lado.",
+        "Segunda injeção ou encaminhar? Com que número?",
         "A frase para ela."
       ],
-      "entrega": "o porta-voz cola no chat decisão, números e frase.",
+      "entrega": "o porta-voz cola no chat decisão, número e frase.",
       "ancora": "comece pelo grau de Green.",
-      "desafio": "percutânea x injeção, OR 22,8: quantas vezes mais sucesso, se a injeção resolve 60%?",
+      "desafio": "os números da aula são de quem nunca foi tratado: qual vale para a 2ª injeção?",
       "fonte": [
         "Minkhorst2025",
-        "Fiorini2018",
-        "Chiang2026"
+        "Fiorini2018"
       ],
-      "notas": "O revés do caso B, e a decisão que pede discussão. Ler o revés em voz alta. Interação: salas de 3 por 3 minutos e meio. Antes de abrir, dizer que o porta-voz é quem fez aniversário mais recentemente e que a entrega é escrita no chat: a decisão, um número de cada lado e a frase para ela. Entrar em duas salas para ouvir, sem resolver. Aviso de 1 minuto. Na volta, pedir a três porta-vozes que colem e comparar duas respostas diferentes. Cobrar o desafio, que as salas costumam pular: o OR de 22,8 da meta-análise em rede de Chiang, percutânea contra injeção, não é 22 vezes mais sucesso quando o sucesso é comum."
+      "notas": "O revés do caso B. Ler o revés em voz alta. Interação: salas de 3 por 3 minutos e 20 segundos. Antes de abrir, dizer que o porta-voz é quem fez aniversário mais recentemente e que a entrega é escrita no chat: decisão, número e frase para ela. Pausar a gravação ao abrir as salas, porque o Meet não grava as salas. Entrar em duas salas para ouvir, sem resolver. Aviso de 1 minuto. Na volta, retomar a gravação e ler em voz alta três entregas do chat, com os nomes, comparando duas diferentes. Cobrar o desafio, que as salas costumam pular: não há número no lote para a segunda injeção depois de recidiva; os 39,1% e os 38 em 100 vêm de quem nunca tinha sido tratado. O que isso muda: a promessa fica menor, e o critério de encaminhar é combinado antes."
     },
     {
       "tipo": "topicos",
       "bloco": "caso B · dedo em gatilho",
       "papel": "conferir",
       "olho": "Caso B · Uma resposta possível",
-      "titulo": "Grau 3 depois de injeção: **combinar** o critério",
-      "tempo_s": 55,
+      "titulo": "Grau 3 após recidiva: números de quem **nunca** foi tratado",
+      "tempo_s": 60,
       "itens": [
-        "**Grau:** 3. Nesse grau, 39,1% acabaram operados.",
-        "**Segunda injeção:** defensável; ~38 em 100 travam de novo.",
-        "**Encaminhar:** a recidiva cai para ~6 em 100; a 1ª semana dói mais.",
-        "**Com ela:** se travar de novo, cirurgia (proposta clínica)."
+        "**Grau:** 3; 39,1% dos grau 3 acabaram operados.",
+        "**2ª injeção:** ~38 em 100 travam após a 1ª; após recidiva, sem número.",
+        "**Encaminhar:** ~6 em 100 travam após cirurgia aberta; 1ª semana dói mais.",
+        "**Com ela:** se travar de novo, avaliação cirúrgica (proposta clínica)."
       ],
       "lateral": [
         {
           "estilo": "escuro",
-          "olho": "O desafio",
-          "texto": "Se a injeção resolve 60%, OR 22,8 dá ~97%: RR 1,6, não 22.",
+          "olho": "E a percutânea?",
+          "texto": "OR 22,8 x injeção, com 60% de base: ~97%. RR 1,6, não 22.",
           "nota": "calc.; base de 60% hipotética"
         }
       ],
@@ -841,7 +810,7 @@
         "Chiang2026",
         "Huisstede2014b"
       ],
-      "notas": "Uma resposta possível, para comparar com as salas. Grau 3 pelo critério de Green; no ensaio de Minkhorst, 39,1% dos dedos grau 3 foram operados. As duas opções são defensáveis: o consenso europeu HANDGUIDE, de Huisstede, aceita injeção, órtese, as duas ou cirurgia, conforme gravidade, duração e tratamentos prévios. O que é proposta clínica: combinar com ela, antes da segunda injeção, que uma nova recidiva leva à cirurgia. O desafio: odds de base de 60% é 1,5; vezes 22,8 dá 34,2, probabilidade de 97%; risco relativo 1,6. A taxa real de sucesso do corticoide na rede de Chiang está no texto completo, ainda pendente. Dor, percutânea contra injeção: diferença de menos de 1 ponto, só depois de excluir um ensaio."
+      "notas": "Uma resposta possível, para comparar com as salas. Grau 3 pelo critério de Green. Os dois números da decisão vêm de populações em que ela não entraria: o ensaio de Minkhorst excluiu quem já tinha feito órtese ou injeção, e os 38 em 100 de Fiorini são recidiva depois da primeira injeção. Depois de uma recidiva em 5 meses, a segunda deve falhar mais, e não temos número para dizer quanto. As duas opções são defensáveis pelo consenso HANDGUIDE, de Huisstede, que escolhe por gravidade, duração e tratamentos prévios. Proposta clínica: combinar, antes da segunda injeção, que nova recidiva leva à avaliação cirúrgica. Percutânea: OR 22,8 na rede de Chiang; com base hipotética de 60%, chance 1,5 vezes 22,8 dá 97%, risco relativo 1,6. A taxa real do corticoide na rede está no texto completo."
     },
     {
       "tipo": "citacao",
@@ -853,7 +822,7 @@
       "origem": "caso",
       "rotulo": "Avaliação, 7 semanas pós-parto",
       "fala": "“Dói para pegar o bebê e para amamentar. Posso tomar infiltração amamentando? A tala resolve?”",
-      "fala2": "Júlia, 26 anos, filha da Cláudia. Amamentando, destra. Dor radial no punho direito há 4 semanas.",
+      "fala2": "Júlia, 26 anos, filha da Renata. Amamentando, destra. Dor radial no punho direito há 4 semanas.",
       "cartao": {
         "olho": "Exame",
         "itens": [
@@ -863,7 +832,7 @@
           "Dor leve à compressão da base do polegar"
         ]
       },
-      "notas": "O terceiro caso. Ler a fala com o cansaço de quem dorme pouco. Para quem está começando, o WHAT test é a hiperflexão do punho com abdução do polegar contra resistência. Não dar nome ao teste do polegar fechado na mão: a turma vai descobrir no próximo slide. A dor na base do polegar abre o diferencial com rizartrose, sem teste com acurácia no nosso lote. Não adiantar números."
+      "notas": "O terceiro caso. Ler a fala com o cansaço de quem dorme pouco. Para quem está começando, o WHAT test é a hiperflexão do punho com abdução do polegar contra resistência. Não dar nome ao teste do polegar fechado na mão: a turma descobre adiante. A dor na base do polegar abre o diferencial com rizartrose, sem teste com acurácia no nosso lote. Não adiantar números."
     },
     {
       "tipo": "enquete",
@@ -871,7 +840,7 @@
       "papel": "prever",
       "olho": "Caso C · Prever",
       "titulo": "Teste positivo **confirma**?",
-      "tempo_s": 70,
+      "tempo_s": 95,
       "interacao": {
         "tipo": "enquete",
         "duracao_s": 60
@@ -884,29 +853,23 @@
         "D": "Cerca de 99%: sensibilidade de 0,99 confirma."
       },
       "gabarito": "B",
-      "notas": "A mesma pergunta do caso A, agora na mão. O pré-teste de 70% é ilustrativo. Ler uma vez e não comentar as opções. Interação: enquete 4, aberta por 1 minuto. Mostrar o resultado e chamar pelo nome quem votou D: é o erro mais comum, ler sensibilidade como se confirmasse. Não revelar: o próximo slide faz a conta. Desafio para quem já domina: calcular a razão de verossimilhança positiva antes de ver."
+      "notas": "A mesma pergunta do caso A, agora na mão. Pré-teste de 70%, ilustrativo. Ler uma vez, sem comentar as opções. Interação: enquete 4, aberta por 1 minuto. Fechar, mostrar a contagem e perguntar quem votou D e topa defender em 15 segundos: é o erro mais comum, ler sensibilidade como se confirmasse. Não revelar. Desafio para quem já domina: calcular a razão positiva antes de ver."
     },
     {
       "tipo": "numeros",
       "bloco": "caso C · De Quervain",
       "papel": "evidencia",
       "olho": "Caso C · A evidência",
-      "titulo": "WHAT positivo quase não informa; negativo **descarta**",
-      "tempo_s": 75,
-      "interacao": {
-        "tipo": "mao_camera",
-        "duracao_s": 15,
-        "inicio_s": 55,
-        "pedido": "Polegar para cima: chamava de Finkelstein o teste com o polegar fechado na mão. Para baixo: já chamava de Eichhoff."
-      },
+      "titulo": "WHAT positivo quase não informa; o negativo **ajuda**, com 1 falso negativo",
+      "tempo_s": 65,
       "itens": [
         {
           "numero": "1,4",
           "rotulo": "RV+: de 70% para 76% com WHAT positivo"
         },
         {
-          "numero": "0,03",
-          "rotulo": "RV−: de 70% para 7% com WHAT negativo",
+          "numero": "7–32%",
+          "rotulo": "após WHAT negativo (pré 70%), pontual a pessimista",
           "destaque": true
         },
         {
@@ -915,15 +878,15 @@
         }
       ],
       "linhas": [
-        "**Quem:** 100 pacientes com dor no estiloide radial; ultrassom como referência.",
-        "**Nome certo:** polegar fechado na mão + desvio ulnar é o Eichhoff, chamado de Finkelstein nos livros; sozinho, dá falso positivo."
+        "**Quem:** 100 pacientes com dor espontânea no estiloide radial; ultrassom como referência.",
+        "**Nome certo:** polegar fechado + desvio ulnar é o Eichhoff, chamado de Finkelstein nos livros."
       ],
       "fonte": [
         "Goubau2014",
         "Elliott1992",
         "RV, pós-teste e 2×2: calc. do resumo"
       ],
-      "notas": "Conferir a enquete: a B. No estudo de Goubau, sensibilidade de 0,99 e especificidade de 0,29: razão positiva de 1,39 e negativa de 0,034, calculadas por nós. De 70% para 76% com o positivo; de 70% para 7% com o negativo, entre 4% e 11% pelo arredondamento. Por que especificidade de 0,29 convive com valor preditivo de 0,95: a única tabela de inteiros que reproduz os quatro números é 92, 1, 5 e 2; 93 de 100 tinham a doença e a especificidade vem de 2 em 7. É reconstrução nossa, a conferir no PDF. O teste com o polegar fechado é o de Eichhoff, segundo Elliott e Goubau; a descrição exata das manobras ainda vai ser conferida. Não há números do Eichhoff no resumo. Interação: mão na câmera aos 55 segundos."
+      "notas": "Conferir a enquete: a B. No estudo de Goubau, sensibilidade de 0,99 e especificidade de 0,29: razão positiva de 1,4, calculada por nós; de 70% para 76%. O negativo, pela estimativa pontual: razão de 0,03, e 70% vira 7%. Mas a única tabela de inteiros que reproduz o resumo é 92, 1, 5 e 2: um falso negativo, 93 de 100 doentes, e a especificidade vem de 2 em 7. Com a sensibilidade no limite inferior do intervalo, 94%, a razão negativa vai a 0,2 e os 70% ficam em 32%. Então o negativo pesa contra, se o paciente parece o do estudo: dor espontânea no estiloide radial. Reconstrução nossa, a conferir no PDF. O teste do polegar fechado é o de Eichhoff, segundo Elliott e Goubau; a aula de capacitação não tinha número de teste no De Quervain."
     },
     {
       "tipo": "enquete",
@@ -931,7 +894,7 @@
       "papel": "decidir",
       "olho": "Caso C · Decidir",
       "titulo": "O que oferecer à **Júlia**?",
-      "tempo_s": 70,
+      "tempo_s": 85,
       "interacao": {
         "tipo": "enquete",
         "duracao_s": 60
@@ -944,7 +907,7 @@
         "D": "Injeção já e tala por 4 semanas: é o topo do ranking."
       },
       "gabarito": "A",
-      "notas": "A decisão central do caso C. Ler a pergunta e não comentar as opções. Interação: enquete 5, aberta por 1 minuto. Chamar pelo nome uma pessoa da opção menos votada e uma da mais votada. Perguntar a quem votou D quem decide a injeção na lactação. Não revelar: o próximo slide mostra o ensaio das gestantes e lactantes."
+      "notas": "A decisão central do caso C. Ler a pergunta, sem comentar as opções. Interação: enquete 5, aberta por 1 minuto. Fechar, mostrar a contagem e perguntar quem votou na opção menos votada e topa defender o voto em 15 segundos, de microfone aberto: durante a aula o Meet mostra só a contagem, não quem votou em quê. Se houver votos em D, perguntar: quem decide a injeção na lactação? Não revelar: o próximo slide mostra o ensaio das gestantes e lactantes."
     },
     {
       "tipo": "barras",
@@ -952,7 +915,7 @@
       "papel": "conferir",
       "olho": "Caso C · Conferindo o voto",
       "titulo": "A tala sozinha não aliviou nenhuma; o tempo resolveu **quase todas**",
-      "tempo_s": 70,
+      "tempo_s": 65,
       "rotulo": "Pacientes de 9 por grupo, gestação e lactação (n = 18)",
       "categorias": [
         "Injeção: alívio completo",
@@ -987,60 +950,14 @@
         "Challoumas2023",
         "Huisstede2014"
       ],
-      "notas": "A resposta sustentada é a A. No ensaio de Avci, 18 gestantes e lactantes: injeção com alívio completo em 9 de 9, com uma recidiva tardia; órtese sozinha, nenhuma com alívio completo, e 8 de 9 resolveram sozinhas ao fim da lactação. A contagem 9 e 9 é inferida do resumo. Para a Júlia: curso favorável, a tala protege mas não promete alívio, e a injeção é para discutir com o médico se a dor impedir os cuidados com o bebê. Se injetar, a meta-análise em rede de Challoumas mostra que somar órtese de 3 a 4 semanas muda o QuickDASH em cerca de 10 pontos, intervalo de 6,8 a 14,1, certeza moderada; o sentido da diferença ainda vai ser conferido no forest plot; os autores chamam de não clinicamente significativo, e a diferença mínima que usaram ainda vai ser conferida. Orientar a carga sempre, nunca sozinha, pelo consenso de Huisstede. Como pegar o bebê com o punho neutro é proposta clínica, sem ensaio."
-    },
-    {
-      "tipo": "tabela",
-      "bloco": "fechamento",
-      "papel": "conferir",
-      "olho": "O que mudou",
-      "titulo": "O que mudou desde a aula de **capacitação**",
-      "tempo_s": 55,
-      "colunas": [
-        "A aula de capacitação dizia",
-        "A evidência hoje diz"
-      ],
-      "larguras": [
-        5,
-        6
-      ],
-      "linhas": [
-        [
-          "Tinel e flexão indicam neuropatia",
-          "RV+ 1,3 e 1,0: quase nada"
-        ],
-        [
-          "Nenhum ECR na medial",
-          "1 ECR de corticoide; 5 estudos de excêntrico"
-        ],
-        [
-          "Até 84% com outros distúrbios",
-          "Não está no resumo: fora até conferir"
-        ],
-        [
-          "Preensão repetitiva e vigorosa",
-          "Força pesa (OR 1,95); repetição, não"
-        ],
-        [
-          "Gatilho e De Quervain sem números",
-          "Grau, opções e acurácia medidos"
-        ]
-      ],
-      "fonte": [
-        "Beekman2009",
-        "See2026",
-        "Stahl1997c",
-        "Descatha2003",
-        "aula base s141, s143–s145"
-      ],
-      "notas": "O que mudou desde a aula de capacitação, em uma tela, para fechar o que a turma viu nos três casos. Ler só a coluna da direita. Tinel e flexão do cotovelo, que a aula de capacitação apresentava como sinais de neuropatia ulnar, têm razões perto de 1. Onde ela dizia que não havia revisão nem ensaio na medial, hoje há um ensaio de corticoide e uma revisão de excêntrico, de certeza baixa. O “até 84% com outros distúrbios”, atribuído a Descatha, não está no resumo: fica fora até conferir no texto completo. Na associação com o trabalho, força pesou e repetição não. Gatilho e De Quervain não tinham nenhum número; agora têm. Perguntar, se houver tempo, qual linha surpreendeu mais."
+      "notas": "A sustentada é a A. No ensaio de Avci, 18 gestantes e lactantes: injeção com alívio completo em 9 de 9, com uma recidiva tardia; órtese sozinha, nenhuma com alívio completo, e 8 de 9 resolveram ao fim da lactação. A contagem 9 e 9 é inferida do resumo. Para a Júlia: curso favorável, a tala protege mas não promete alívio, e a injeção é para discutir com o médico se a dor impedir os cuidados com o bebê. Se injetar, a rede de Challoumas mostra diferença de cerca de 10 pontos de QuickDASH ao somar órtese de 3 a 4 semanas, certeza moderada, que os autores chamam de não clinicamente significativa; o sentido e a diferença mínima usada ainda vão ser conferidos. Orientar a carga sempre, pelo consenso de Huisstede. Pegar o bebê com o punho neutro é proposta clínica."
     },
     {
       "tipo": "cartoes",
       "bloco": "fechamento",
       "olho": "Desfecho",
       "titulo": "O que aconteceu com os **três**",
-      "tempo_s": 35,
+      "tempo_s": 40,
       "origem": "caso",
       "colunas": 3,
       "itens": [
@@ -1049,8 +966,8 @@
           "texto": "Semana 6: PRTEE 48 → 41 e formigamento diário. ENMG + ultrassom; seguiu com a carga."
         },
         {
-          "titulo": "Cláudia",
-          "texto": "Segunda injeção, com critério combinado. Travou no mês 9; operou e voltou em 3 semanas."
+          "titulo": "Renata",
+          "texto": "Escolheu a 2ª injeção, com critério combinado. Travou no mês 9: avaliação cirúrgica."
         },
         {
           "titulo": "Júlia",
@@ -1058,7 +975,7 @@
           "destaque": true
         }
       ],
-      "notas": "O desfecho, em 30 segundos, dados fictícios. Sérgio: na semana 6 a PRTEE caiu só 7 pontos, 15%, abaixo da meta de 22% da lateral, e o formigamento ficou diário: encaminhado para eletroneuromiografia e ultrassom, sem parar a carga. Cláudia: segunda injeção com o critério combinado; travou de novo no mês 9 e foi operada. Júlia: orientação de carga e tala de proteção, sem injeção, quase sem dor ao fim da amamentação, como 8 de 9 no ensaio de Avci. Não comentar: o próximo slide pede que a turma lembre sem olhar."
+      "notas": "O desfecho, em 30 segundos, dados fictícios. Sérgio: na semana 6 a PRTEE caiu só 7 pontos, 15%, abaixo da meta de 22% da lateral, e o formigamento ficou diário: ENMG e ultrassom, sem parar a carga. Renata: escolheu a segunda injeção com o critério combinado; travou de novo no mês 9 e foi para a avaliação cirúrgica. Júlia: orientação e tala, sem injeção, quase sem dor ao fim da amamentação, como 8 de 9 no ensaio de Avci. Não comentar: o próximo slide pede que a turma lembre sem olhar."
     },
     {
       "tipo": "pergunta",
@@ -1067,13 +984,13 @@
       "olho": "Sem voltar os slides",
       "titulo": "Qual teste da aula **descarta** melhor do que confirma, e qual quase não mexe em nada?",
       "instrucao": "Dois nomes de teste. Escreva e só envie quando eu contar até 3.",
-      "tempo_s": 60,
+      "tempo_s": 85,
       "interacao": {
         "tipo": "chat_cascata",
-        "duracao_s": 45,
+        "duracao_s": 40,
         "pedido": "Escrever, sem voltar os slides, o teste que descarta melhor do que confirma e o que quase não muda a probabilidade."
       },
-      "notas": "Recuperação antes da síntese. Interação: chat em cascata, 45 segundos de silêncio, contar 3, 2, 1 e pedir que enviem juntos. Ler em voz alta, agrupando e citando os nomes. Respostas sustentadas: descartam melhor, o WHAT test e o valgo em movimento, com a ressalva do tamanho do estudo; quase não mexe, a flexão-compressão, e o Tinel logo atrás. Perguntar a quem escreveu outro teste por quê, em uma frase."
+      "notas": "Recuperação antes da síntese. Interação: chat em cascata, 40 segundos de silêncio, contar 3, 2, 1 e pedir que enviem juntos. Ler três ou quatro em voz alta, com os nomes. Respostas sustentadas: descartam melhor, o WHAT test e o valgo em movimento, os dois com a ressalva dita em voz alta: estudos pequenos, de espectro estreito, em que o negativo pesa contra mas não zera; quase não mexe, a flexão-compressão, e o Tinel logo atrás."
     },
     {
       "tipo": "sintese",
@@ -1081,29 +998,30 @@
       "papel": "conferir",
       "olho": "Fechamento",
       "titulo": "Três coisas para **levar**",
-      "tempo_s": 55,
+      "tempo_s": 45,
       "pontos": [
         {
           "titulo": "RV perto de 1 não decide",
-          "texto": "Tinel RV+ 1,3. WHAT negativo descarta (RV− 0,03)."
+          "texto": "Tinel RV+ 1,3. Teste sensível negativo pesa contra em paciente como o do estudo."
         },
         {
           "titulo": "Gradue o gatilho antes de prometer",
-          "texto": "Graus 1–2: ~3 em 4 sem cirurgia; após injeção, ~4 em 10 travam."
+          "texto": "Graus 1–2: ~3 em 4 sem cirurgia; após recidiva, sem número."
         },
         {
           "titulo": "Na medial, diga de onde vem a conduta",
-          "texto": "Ensaio, mecanismo ou extrapolação; meça a cada 2 a 4 semanas."
+          "texto": "Ensaio, mecanismo ou extrapolação; medir a cada 2 a 4 semanas."
         }
       ],
-      "faixa": "**Para segunda-feira:** no próximo Tinel positivo, anote a probabilidade antes e depois.",
+      "faixa": "**Desde a capacitação:** Tinel não confirma; a medial tem um ECR; a mão ganhou números.",
       "fonte": [
         "Beekman2009",
+        "Stahl1997c",
         "Goubau2014",
         "Minkhorst2025",
         "Fiorini2018"
       ],
-      "notas": "Comparar com o que a turma escreveu no chat. Três pontos, cada um com o número que o sustenta. Primeiro: razão de verossimilhança perto de 1 não muda a decisão, e o teste com sensibilidade alta vale pelo negativo. Segundo: o grau do gatilho prevê o resultado, e a injeção cobra com recidiva. Terceiro: quando não há ensaio, a conduta de nível alto é dizer de onde ela vem e medir a resposta do paciente, chamando de proposta clínica o que é proposta clínica. Ler a faixa para segunda-feira."
+      "notas": "Comparar com o chat. Três pontos, cada um com o número que o sustenta. Primeiro: razão perto de 1 não muda a decisão; o teste sensível vale pelo negativo, se o paciente parece o do estudo. Segundo: o grau do gatilho prevê o resultado, a injeção cobra com recidiva, e depois de recidiva não temos número. Terceiro: quando não há ensaio, diga de onde vem a conduta e meça a resposta, chamando de proposta clínica o que é proposta clínica. Ler a faixa: o que mudou desde a aula de capacitação. Para segunda-feira: no próximo Tinel positivo, anotar a probabilidade antes e depois."
     },
     {
       "tipo": "pergunta",
@@ -1113,13 +1031,13 @@
       "titulo": "O que você vai **mudar** no próximo paciente com dor medial, gatilho ou De Quervain?",
       "instrucao": "Uma frase no chat. Quem enviar, está liberado.",
       "bilhete_saida": true,
-      "tempo_s": 70,
+      "tempo_s": 75,
       "interacao": {
         "tipo": "chat",
-        "duracao_s": 60,
+        "duracao_s": 45,
         "pedido": "Uma frase sobre o que vai mudar no próximo paciente com dor medial, dedo em gatilho ou De Quervain."
       },
-      "notas": "Bilhete de saída. Interação: uma frase no chat, e só sai quem enviar. Ler cinco em voz alta, com os nomes. Copiar as respostas do chat antes de encerrar: servem para abrir a próxima aula e para saber o que ficou. Agradecer pelo nome quem mais participou. Avisar que o pós-teste chega em 7 a 14 dias e que os números marcados como resumo serão conferidos quando os PDFs chegarem."
+      "notas": "Bilhete de saída. Interação: uma frase no chat, e só sai quem enviar. Ler três ou quatro em voz alta, com os nomes. Copiar as respostas do chat antes de encerrar: abrem a próxima aula. Avisar que o pós-teste chega em 7 a 14 dias e que os números marcados como resumo serão conferidos quando os PDFs chegarem. Parar a gravação."
     },
     {
       "tipo": "referencias",

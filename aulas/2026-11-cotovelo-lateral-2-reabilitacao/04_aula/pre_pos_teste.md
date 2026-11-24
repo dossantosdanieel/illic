@@ -23,8 +23,8 @@ Opções:
 
 ```text
 Isométrico de extensores do punho com 2,4 kg, 4 × 30 s, todo dia; +5% da CVM a cada 2 semanas.
-Excêntrico de punho com 8 kg, 3 × 15 até a falha, 3 vezes por semana, ignorando a dor.
-Repouso do punho por 4 semanas e, depois, isotônico com 5 kg, 3 × 10 por dia.
+Isométrico com 4,2 kg (35% da CVM), 4 × 30 s, todo dia, para não subdosar desde o início.
+Excêntrico de punho 3 × 15, todo dia, com a carga que leve a dor até 5 de 10 na série.
 Isométrico com 2,4 kg, 4 × 30 s, só nos dias sem dor; parar se doer durante a série.
 ```
 
@@ -56,10 +56,10 @@ Paula, 52 anos, violinista, tem dor lateral no cotovelo esquerdo há 3 meses. El
 Opções:
 
 ```text
-Recusar: o corticoide rompe o tendão com frequência e não deve ser usado.
-Indicar sem ressalvas: com a fisioterapia junto, o risco de recidiva desaparece.
+Desaconselhar: em 3 semanas a injeção ainda não alivia, e a ruptura do tendão não compensa.
+Indicar e manter a fisioterapia junto, que anula a perda no ano e a recidiva.
 Explicar que alivia mais rápido, mas piora o ano e tem recidiva alta, e decidir com ela.
-Trocar por PRP, que regenera o tendão e não tem recidiva.
+Sugerir PRP no lugar: alívio parecido em 3 semanas, sem a perda de 1 ano do corticoide.
 ```
 
 ### Questão 4
@@ -84,16 +84,16 @@ Cerca de 3.
 Enunciado:
 
 ```text
-Jorge, 56 anos, tem tendinopatia lateral há 2 meses. Preensão sem dor de 150 N no lado afetado e 300 N no outro. Pela regra de predição de Vicenzino 2009 (idade < 49, afetado > 112 N, não afetado < 336 N), ele só falha no critério da idade. No estudo, 79% melhoraram em 3 semanas com MWM e exercício; para idade < 49, sensibilidade 0,61 e especificidade 0,77 (RV+ 2,6; IC 0,96 a 7,3). Qual leitura é a mais correta?
+Jorge, 56 anos, tem tendinopatia lateral há 2 meses e está na primeira consulta, antes de começar MWM e exercício. Preensão sem dor de 150 N no lado afetado e 300 N no outro. Pela regra de predição de Vicenzino 2009 (idade < 49, afetado > 112 N, não afetado < 336 N), ele só falha no critério da idade. No estudo, 79% melhoraram em 3 semanas com MWM e exercício; para idade < 49, sensibilidade 0,61 e especificidade 0,77 (RV+ 2,6; IC 0,96 a 7,3). Qual leitura é a mais correta?
 ```
 
 Opções:
 
 ```text
-Ele não vai responder à MWM: encaminhar para outro tratamento.
-A chance segue em torno de 2 em 3; testar a MWM na sessão e decidir pela resposta.
-A chance cai para perto de zero, porque a regra exige os três critérios.
-A regra também prediz quem melhora sem tratamento, então basta esperar.
+Cerca de 21%: quem falha num critério fica com o complemento do pré-teste.
+Cerca de 66%: testar a MWM na sessão e decidir pela resposta dele.
+Cerca de 59%: com o critério negativo, a razão vira 1 ÷ 2,6.
+Cerca de 90%: os outros dois critérios dão pós-teste de 89% e 90%.
 ```
 
 ### Questão 6
@@ -108,9 +108,26 @@ Opções:
 
 ```text
 A MWM costuma aliviar nas primeiras semanas; no longo prazo, quem segura é a carga.
-Sim: a MWM corrige a posição da cabeça do rádio e resolve de vez.
-Não: a MWM não tem efeito nem no curto prazo, só placebo.
-Só se somarmos manipulação cervical, que garante o efeito no longo prazo.
+Sim, se o ganho imediato se repetir nas sessões: ganho acima de 25% prediz a resposta.
+Não: contra placebo há 1 ensaio de 23 pessoas, então o ganho dela foi placebo.
+Sim, somando a mobilização cervical, que tem grau B para o efeito de longo prazo.
+```
+
+### Questão 7
+
+Enunciado:
+
+```text
+Marcos, 41 anos, pedreiro, fez infiltração de corticoide no cotovelo direito há 10 semanas. Ficou quase sem dor por 5 semanas, parou o programa de exercícios e voltou à obra em tempo integral. Hoje a dor é de 6 em 10 no trabalho e dura o resto do dia; preensão sem dor de 150 N (era 230 N há 4 semanas); sem formigamento e com exame neurológico normal. Ele pede outra infiltração. Qual conduta é a mais defensável hoje?
+```
+
+Opções:
+
+```text
+Segunda infiltração agora e retomar o exercício quando a dor ceder, em 2 semanas.
+Retomar do ponto em que parou (isotônico 3 × 10 com 2 kg), já que ele passou da fase 1.
+Recuar à fase da irritabilidade de hoje, ajustar a obra e explicar a recidiva.
+Ultrassom do tendão antes de qualquer carga, porque a injeção pode tê-lo enfraquecido.
 ```
 
 ## Parte 2 — Gabarito comentado (professor e feedback do Forms)
@@ -119,11 +136,11 @@ Só se somarmos manipulação cervical, que garante o efeito no longo prazo.
 
 **Resposta:** Isométrico de extensores do punho com 2,4 kg, 4 × 30 s, todo dia; +5% da CVM a cada 2 semanas.
 
-A dose do isométrico do ensaio de Vuvan 2020 (pelas tabelas redigitadas da aula de capacitação, a conferir) começa em 20% da CVM (12 kg × 0,20 = 2,4 kg), 4 × 30 s ou 3 × 45 s, diário, subindo 5% da CVM a cada 2 semanas até 35%. A regra de progressão pela dor de 24 h é opinião de especialista (Day 2019). O isométrico sozinho, sem supervisão, teve sucesso percebido de 29% contra 26% de quem esperou: na clínica, ele vem junto de outras medidas.
+A dose do isométrico do ensaio de Vuvan 2020 (pelas tabelas redigitadas da aula de capacitação, a conferir) começa em 20% da CVM (12 kg × 0,20 = 2,4 kg), 4 × 30 s ou 3 × 45 s, diário, subindo 5% da CVM a cada 2 semanas até 35%. A regra de progressão pela dor é opinião de especialista (Day 2019): subir quando não há dor tardia em 24 h ou quando a dor não sobe mais de 1 ponto. O isométrico sozinho, sem supervisão, teve sucesso percebido de 29% contra 26% de quem esperou: na clínica, ele vem junto de outras medidas.
 
-- *Excêntrico de punho com 8 kg, 3 × 15 até a falha, 3 vezes por semana, ignorando a dor.* — Copiar uma dose de excêntrico de alta carga até a falha para um quadro moderadamente irritável e ignorar a resposta da dor.
-- *Repouso do punho por 4 semanas e, depois, isotônico com 5 kg, 3 × 10 por dia.* — Achar que repouso resolve a tendinopatia e depois pular direto para carga alta e diária.
-- *Isométrico com 2,4 kg, 4 × 30 s, só nos dias sem dor; parar se doer durante a série.* — Exigir dor zero e treinar só em dias sem dor: a regra de Day 2019 tolera dor que não sobe mais de 1 ponto e sem dor tardia em 24 h.
+- *Isométrico com 4,2 kg (35% da CVM), 4 × 30 s, todo dia, para não subdosar desde o início.* — Começar no teto da faixa do ensaio (35%) num quadro moderadamente irritável: o ensaio começa em 20% e sobe pelo calendário.
+- *Excêntrico de punho 3 × 15, todo dia, com a carga que leve a dor até 5 de 10 na série.* — Usar uma dose de excêntrico que não vem de nenhum ensaio da seleção e tolerar dor alta na série, sem regra de 24 h.
+- *Isométrico com 2,4 kg, 4 × 30 s, só nos dias sem dor; parar se doer durante a série.* — Exigir dor zero e treinar só em dias sem dor: a regra de Day 2019 sobe a carga sem dor tardia em 24 h ou com dor que não sobe mais de 1 ponto, e não pede dor zero.
 
 Referência: Vuvan V et al. Med Sci Sports Exerc 2020;52(2):287-95. PMID 31425384. DOI 10.1249/MSS.0000000000002128.; Day JM et al. Int J Sports Phys Ther 2019;14(5):818-29. PMID 31598419. DOI 10.26603/ijspt20190818.
 
@@ -143,11 +160,11 @@ Referência: Couppé C et al. Am J Sports Med 2022;50(10):2787-96. PMID 35867777
 
 **Resposta:** Explicar que alivia mais rápido, mas piora o ano e tem recidiva alta, e decidir com ela.
 
-Corticoide: 92% de sucesso em 6 semanas contra 47% com fisioterapia, mas 69% contra 91% em 1 ano (Smidt 2002); recidiva de 54% contra 12% com placebo, e a fisioterapia junto não a reduziu de forma demonstrada (29% x 38%, P = 0,25) (Coombes 2013). Ruptura de tendão foi rara: 1 em 991 (Coombes 2010). Com uma data importante e os números na mesa, a injeção pode ser uma escolha razoável dela; a decisão é compartilhada. PRP não superou a injeção placebo em 3 meses (0,16 ponto em 10, certeza moderada; Karjalainen 2021).
+Corticoide: 92% de sucesso em 6 semanas contra 47% com fisioterapia, mas 69% contra 91% em 1 ano (Smidt 2002); recidiva de 54% contra 12% com placebo, e fazer fisioterapia não mostrou reduzir a recidiva (29% x 38%, P = 0,25, efeito principal com IC largo) (Coombes 2013). Ruptura de tendão foi rara: 1 em 991 (Coombes 2010). Com uma data importante e os números na mesa, a injeção pode ser uma escolha razoável dela; a decisão é compartilhada. PRP não superou a injeção placebo em 3 meses (0,16 ponto em 10, certeza moderada; Karjalainen 2021).
 
-- *Recusar: o corticoide rompe o tendão com frequência e não deve ser usado.* — Superestimar o risco imediato (0,1% de ruptura) e ignorar a preferência e o objetivo da paciente.
-- *Indicar sem ressalvas: com a fisioterapia junto, o risco de recidiva desaparece.* — Achar que a fisioterapia protege da recidiva: não houve diferença demonstrada.
-- *Trocar por PRP, que regenera o tendão e não tem recidiva.* — Acreditar no marketing do PRP: igual à injeção placebo em 3, 6 e 12 meses.
+- *Desaconselhar: em 3 semanas a injeção ainda não alivia, e a ruptura do tendão não compensa.* — Errar a velocidade (o alívio do corticoide aparece nas primeiras semanas: 92% em 6 semanas) e superestimar a ruptura (0,1%), ignorando o objetivo dela.
+- *Indicar e manter a fisioterapia junto, que anula a perda no ano e a recidiva.* — Achar que a fisioterapia protege: a perda no ano com o corticoide não muda, e a proteção contra a recidiva não foi demonstrada.
+- *Sugerir PRP no lugar: alívio parecido em 3 semanas, sem a perda de 1 ano do corticoide.* — Acreditar que o PRP alivia rápido: não superou a injeção placebo em 3 meses (certeza moderada).
 
 Referência: Smidt N et al. Lancet 2002;359(9307):657-62. PMID 11879861. DOI 10.1016/S0140-6736(02)07811-X.; Coombes BK et al. JAMA 2013;309(5):461-9. PMID 23385272. DOI 10.1001/jama.2013.129.; Coombes BK et al. Lancet 2010;376(9754):1751-67. PMID 20970844. DOI 10.1016/S0140-6736(10)61160-9.; Karjalainen T et al. Cochrane Database Syst Rev 2021;9:CD010951. PMID 34590307. DOI 10.1002/14651858.CD010951.pub2.
 
@@ -165,13 +182,13 @@ Referência: Coombes BK et al. JAMA 2013;309(5):461-9. PMID 23385272. DOI 10.100
 
 ### Questão 5 · nível: análise · objetivo 3
 
-**Resposta:** A chance segue em torno de 2 em 3; testar a MWM na sessão e decidir pela resposta.
+**Resposta:** Cerca de 66%: testar a MWM na sessão e decidir pela resposta dele.
 
 RV− da idade = (1 − 0,61) ÷ 0,77 ≈ 0,51. Chance antes do teste: 0,79 ÷ 0,21 = 3,76; depois: 3,76 × 0,51 ≈ 1,9; probabilidade ≈ 66% (cálculo com a Tab. 2 de Vicenzino 2009, print da aula de capacitação). Todas as RV+ da regra têm intervalo que inclui 1, a regra é de derivação, sem validação, e não predisse no braço espera. Testar a resposta na sessão (preensão sem dor antes e depois) é proposta clínica.
 
-- *Ele não vai responder à MWM: encaminhar para outro tratamento.* — Tratar uma regra de derivação sem validação como critério de exclusão.
-- *A chance cai para perto de zero, porque a regra exige os três critérios.* — Ignorar a probabilidade antes do teste (79%) e o tamanho da RV−.
-- *A regra também prediz quem melhora sem tratamento, então basta esperar.* — Inverter o achado: a regra não predisse a melhora no braço espera.
+- *Cerca de 21%: quem falha num critério fica com o complemento do pré-teste.* — Tratar a regra como binária e usar 1 − 0,79: a probabilidade depois do teste vem da RV−, não do complemento do pré-teste.
+- *Cerca de 59%: com o critério negativo, a razão vira 1 ÷ 2,6.* — Inverter a RV+ (1 ÷ 2,6 ≈ 0,38) no lugar de calcular a RV− = (1 − sensibilidade) ÷ especificidade ≈ 0,51.
+- *Cerca de 90%: os outros dois critérios dão pós-teste de 89% e 90%.* — Ignorar o critério que falhou e somar critérios como se fossem independentes; o pós-teste da Tab. 2 é de cada critério isolado.
 
 Referência: Vicenzino B et al. Man Ther 2009;14(5):550-4. PMID 18838330. DOI 10.1016/j.math.2008.08.004.
 
@@ -181,8 +198,20 @@ Referência: Vicenzino B et al. Man Ther 2009;14(5):550-4. PMID 18838330. DOI 10
 
 Lucado 2019: efeito pequeno a moderado da MWM na dor no curto prazo (0,43; 0,15 a 0,71); nos prints dos prazos de 3 a 12 meses, os intervalos cruzam o zero. Bisset 2006: fisioterapia com MWM e exercício ganhou da espera em 6 semanas e empatou em 52. Wallis 2024: os efeitos de terapia manual e exercício não se mantiveram depois do tratamento. Usar a MWM como janela para carregar é proposta clínica.
 
-- *Sim: a MWM corrige a posição da cabeça do rádio e resolve de vez.* — Explicação mecânica sem evidência e promessa de longo prazo que os dados não sustentam.
-- *Não: a MWM não tem efeito nem no curto prazo, só placebo.* — Ignorar o efeito de curto prazo, que existe, ainda que pequeno.
-- *Só se somarmos manipulação cervical, que garante o efeito no longo prazo.* — Mobilização regional tem grau C na diretriz; nenhum estudo da seleção mostra efeito de longo prazo.
+- *Sim, se o ganho imediato se repetir nas sessões: ganho acima de 25% prediz a resposta.* — O ganho imediato acima de 25% teve especificidade de 0,5 e RV+ de 1,5 com IC que inclui 1 (Vicenzino 2009), e o efeito não se sustenta em 3 a 12 meses.
+- *Não: contra placebo há 1 ensaio de 23 pessoas, então o ganho dela foi placebo.* — Confundir evidência escassa contra placebo com ausência de efeito; o curto prazo tem efeito pequeno a moderado.
+- *Sim, somando a mobilização cervical, que tem grau B para o efeito de longo prazo.* — Mobilização regional tem grau C na diretriz, e nenhum estudo da seleção mostra efeito de longo prazo.
 
 Referência: Lucado AM et al. J Hand Ther 2019;32(2):262-76. PMID 29705077. DOI 10.1016/j.jht.2018.01.010.; Bisset L et al. BMJ 2006;333(7575):939. PMID 17012266. DOI 10.1136/bmj.38961.584653.AE.; Wallis JA et al. Cochrane Database Syst Rev 2024;5:CD013042. PMID 38802121. DOI 10.1002/14651858.CD013042.pub2.
+
+### Questão 7 · nível: avaliação · objetivo 2
+
+**Resposta:** Recuar à fase da irritabilidade de hoje, ajustar a obra e explicar a recidiva.
+
+A dor que volta depois de uma injeção que funcionou é o padrão do ensaio de Coombes 2013: recidiva em 1 ano de 54% com corticoide contra 12% com placebo (resumo); mesmo assim, 83% estavam recuperados ou muito melhores em 1 ano. A diretriz manda progredir e regredir pelo estágio de irritabilidade reavaliado, não pelo calendário nem pela fase anterior (Lucado 2022, print do algoritmo, atribuição provável); recuar de fase sem parar é proposta clínica. Ruptura de tendão foi 1 em 991 que receberam corticoide (Coombes 2010): a imagem não muda a conduta de hoje. Nenhum estudo da seleção testou uma segunda injeção.
+
+- *Segunda infiltração agora e retomar o exercício quando a dor ceder, em 2 semanas.* — Repetir o que piorou o ano e adiar a carga: a primeira injeção já trouxe recidiva de 54% x 12%, e nenhum estudo da seleção testou a segunda.
+- *Retomar do ponto em que parou (isotônico 3 × 10 com 2 kg), já que ele passou da fase 1.* — Progredir pela fase anterior e não pela irritabilidade de hoje: dor que dura o resto do dia pede recuar de fase.
+- *Ultrassom do tendão antes de qualquer carga, porque a injeção pode tê-lo enfraquecido.* — Superestimar a ruptura (0,1%) e pedir um exame que não muda a conduta, atrasando a carga.
+
+Referência: Coombes BK et al. JAMA 2013;309(5):461-9. PMID 23385272. DOI 10.1001/jama.2013.129.; Coombes BK et al. Lancet 2010;376(9754):1751-67. PMID 20970844. DOI 10.1016/S0140-6736(10)61160-9.; Lucado AM et al. J Orthop Sports Phys Ther 2022;52(12):CPG1-CPG111. PMID 36453071. DOI 10.2519/jospt.2022.0302.
