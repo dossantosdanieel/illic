@@ -1,6 +1,6 @@
 # Verificação — Dor lateral no cotovelo: diagnóstico e prognóstico
 
-Data: 2026-11-24. Deck: `04_aula/cotovelo-lateral-1-diagnostico.pptx` (27 slides, 26 cronometrados, 33:40 min; revisão independente aplicada em 24/11/2026, seção 9).
+Data: 2026-11-24. Deck: `04_aula/cotovelo-lateral-1-diagnostico.pptx` (27 slides, 26 cronometrados, 33:55 min; tempo estimado pela fala das notas + interações: 32:06; revisão independente aplicada em 24/11/2026, seções 9 e 10).
 Versão 1: montada com 1 artigo lido no texto completo (Bretschneider 2022) e o resto em resumo ou em print da aula
 de capacitação. Quando os PDFs pendentes chegarem (`02_artigos/pendentes.md`), faça a passada da seção 8.
 
@@ -16,7 +16,7 @@ minha, com a conta escrita ao lado; **caso** = dado fictício.
 | Strain Index alto: OR 1,75 (1,11 a 2,78); I² 0% | 21, 22 | Bretschneider2022 | p.6 Fig. 2 (painel 5); p.7 Tab. 3; p.8 Tab. 4 |
 | Repetição > 15/min: OR 0,71 (0,42 a 1,20); eixo rotulado ao contrário | 21, 22 | Bretschneider2022 | p.6 Fig. 2 (painel 4) |
 | Nenhum OR > 2,5 | 21 (cartão "Leitura") | Bretschneider2022 | p.8 Tab. 4, coluna "Effect size OR > 2.5" |
-| ~1 caso a mais a cada 25 a 30 expostos (só na fala) | 21, notas | Bretschneider2022 | **calc.** a partir da p.6 Fig. 2: SI p0 = 26/432, OR 1,75 → NNH ≈ 25 (IC 11 a 162); rotação p0 = 31/717, OR 1,85 → NNH ≈ 30 (IC 13 a 243) |
+| ~1 caso a mais a cada 25 (SI) e 30 (rotação) expostos, com IC (notas, com a conta) | 21, notas | Bretschneider2022 | **calc.** a partir da p.6 Fig. 2: SI p0 = 26/432, OR 1,75 → NNH ≈ 25 (IC 11 a 162); rotação p0 = 31/717, OR 1,85 → NNH ≈ 30 (IC 13 a 243) |
 
 ## 2. Veio só do resumo (ou de print da aula de capacitação)
 
@@ -38,10 +38,16 @@ minha, com a conta escrita ao lado; **caso** = dado fictício.
 | Nenhuma correlação do US com dor, incapacidade, PRTEE ou duração | 11, 13, 24 | Krogh2020 | resumo |
 | Corticoide: −2251 pixels de Power Doppler em 12 sem; QuickDASH +15 pior em 52 sem | 13 (notas) | Couppe2022 | resumo; secundário entre vários |
 | 89% muito melhor/recuperado em 1 ano (IC 80% a 97%); meia-vida 2,5–3 meses; duração prévia sem efeito | 14, 15, 22, 24 | Ikonen2022 | resumo; PDF gratuito no PMC (pendente item 4) |
-| Curva 0, 50, 75, 88, 94 de 100 | 15 | Ikonen2022 | **calc.** ilustrativa: fração não melhorada = 0,5^(t/3); dito no slide e nas notas |
+| Curva 0, 50, 75, 88 de 100 (tracejada) e ponto observado 89 com barra de 80 a 97 em 12 meses | 15 | Ikonen2022 | **calc.** ilustrativa: fração não melhorada = 0,5^(t/3), em linha tracejada sem rótulos; o único dado observado é o ponto de 12 meses com barra de erro (IC do resumo) |
+| Razão afetado/não afetado da preensão sem dor: 38% → 44% | 3, 19 (notas) | — | **calc.** (caso): 120/320 = 37,5%; 140/320 = 43,8%; sem DMCI no lote (mapa 2.6) |
+| ECRB atrita no capítulo à medida que o cotovelo estende (vulnerabilidade, não causa) | 13 (notas) | Bunata2007 | resumo (85 cotovelos de cadáver) |
+| Hiperalgesia local e regional (evidência moderada), não remota, no membro superior | 13 (notas) | Rio2021 | resumo (30 estudos, 18 de cotovelo lateral); sem tamanho de efeito |
+| Irritabilidade moderada (nível IV: dor leve a moderada na atividade, persiste > 6 h, limita) | 3 (notas), resumo | Lucado2022 | print s042 da aula base (Tab. 8, atribuição provável à diretriz); mapa 3.2 |
+| q7: prognóstico de Roberto (nervo, cervical, duração) | pós-teste | Waugh2004, Smidt2006, Ikonen2022 | resumo; sem conta |
+| q8: 75% → 92% a 96% (positivo) e 36% a 46% (negativo) | pós-teste | Karanasios2022 | **calc.**: chance 3 × 3,9 = 11,7 (92,1%); × 8,3 = 24,9 (96,1%); × 0,19 = 0,57 (36,3%); × 0,28 = 0,84 (45,7%) |
 | Espera: 32% em 6 sem; 83% em 52 sem | 15 (notas) | Smidt2002 | resumo |
 | Dor cervical, dor intensa e duração longa → pior em 12 meses | 16 | Smidt2006 | resumo (sem tamanho) |
-| Sintomas de nervo +15,08 na dor (4,67 a 25,50); sexo feminino +8,92 no DASH (3,32 a 14,52) | 16 | Waugh2004 | resumo + print s40 (Tab. 5) |
+| Sintomas de nervo +15,08 na EVA de dor (4,67 a 25,50); sexo feminino +8,92 no DASH (3,32 a 14,52) | 16, q7 | Waugh2004 | resumo + print s40 (Tab. 5); **escala da EVA a conferir** (o eixo do print vai até 50): o slide diz "EVA" sem "0–100" e a nota diz "escala a conferir" |
 | Limiar ao frio único preditor consistente; modelo explica 9% do PRTEE em 1 ano | 16 | Coombes2015 | resumo + print s21 (Tab. 3) |
 | PRTEE: 22% (7 pontos) e 37% (11 pontos); DMCI maior nos mais graves; n = 57, intervalo de 3 semanas | 18, 19, 24 | Poltawski2011 | resumo (Crossref); manuscrito aberto no repositório (pendente item 6); IC da DMCI desconhecido |
 | Metas da Renata pelas duas réguas: absoluta 7 (≤ 51) e 11 (≤ 47); proporcional ≈ 13 (≤ 45) e ≈ 21 (≤ 36); queda de 9 = 16% → passa a absoluta de 7, não a proporcional de 22% | 18, 19 | Poltawski2011 | **calc.**: 0,22 × 58 = 12,8; 0,37 × 58 = 21,46 → 58 − 21,46 = 36,5, então ≤ 36 (com 37 a queda seria 21/58 = 36,2%, abaixo de 37%); 9/58 = 15,5% |
@@ -49,7 +55,8 @@ minha, com a conta escrita ao lado; **caso** = dado fictício.
 | Pré-teste abaixo do qual o negativo leva a < 50%: cerca de 78% a 84% | 8 (notas, desafio) | — | **calc.**: chance × RV− < 1 → chance < 1/0,28 = 3,57 (78,1%) ou < 1/0,19 = 5,26 (84,0%) |
 | q1: 30% → 63% a 78% (queda de 12%) ; q2: 80% → 43% a 53% | pós-teste | Karanasios2022 | **calc.**: 0,43 × 3,9 = 1,67 (63%); × 8,3 = 3,56 (78%); 4 × 0,19 = 0,76 (43%); × 0,28 = 1,12 (53%) |
 | 3,4 por 1000 ao ano; 9,0 por 1000 aos 40–49 | 22 | Sanders2015 | print s2 (Tab. 2, "per 1000 People"); recorrência de 8,5% em 2 anos (notas) do resumo |
-| Recidiva 54% corticoide × 12% placebo em 1 ano | 22 | Coombes2013 | resumo (o RR relatado no resumo, 0,23, está na direção inversa das proporções: conferir a definição) |
+| "Recorrência de até 54%": o único 54% do lote responde a outra pergunta | 22 | — | o número (recidiva após corticoide, Coombes 2013) **não aparece nesta aula**: é a revelação da aula 2 (auditoria da trilha). Coombes2013 saiu da fonte do slide, das referências e do resumo da aula 1 |
+| Recorrência de 8,5% em 2 anos | 22 (notas) | Sanders2015 | resumo |
 | Lista de diferenciais | 9 | Lucado2022 | notas da aula base s43, atribuição provável à diretriz; o resumo da diretriz não tem números |
 
 ## 3. Proposta clínica (sem ensaio que teste)
@@ -60,7 +67,8 @@ minha, com a conta escrita ao lado; **caso** = dado fictício.
 - Sinais de alerta (trauma ou suspeita de fratura, febre ou articulação quente, dor noturna ou de repouso constante sem relação com carga, déficit neurológico progressivo, perda de peso ou história de câncer, bloqueio mecânico em jovem/OCD do capítulo) e "déficit motor ou sensitivo progressivo = encaminhar" — slides 9 (última linha, rodapé "pistas e alertas: proposta clínica da equipe") e 19. **Nenhuma fonte no lote**; a conferir na diretriz (Lucado 2022).
 - Aplicar a RV da preensão à preensão sem dor (protocolo da revisão desconhecido) e para separar de radiculopatia/túnel radial (espectro desconhecido) — slides 6–7 e q1, com a ressalva escrita.
 - Com PRTEE inicial alto, preferir a régua proporcional da DMCI — slide 19 (notas), apoiado só na frase do resumo de Poltawski de que a DMCI foi maior nos mais graves.
-- Acompanhar a preensão sem dor pela razão afetado/não afetado, sem DMCI publicada no lote — slide 19, notas.
+- Acompanhar a preensão sem dor pela razão afetado/não afetado (38% → 44%), sem DMCI publicada no lote — slide 19, notas.
+- Classificar a irritabilidade pela tabela da aula de capacitação atribuída à diretriz (nível IV, moderada, na Renata) — slide 3, notas; algoritmo do resumo. Atribuição provável, a conferir no PDF de Lucado 2022.
 - Imagem só se não melhorar no prazo ou surgir sinal atípico — slides 12 e 13 (critério das notas da aula base s44, atribuição provável à diretriz; o ACR 2022, Expert2022, só em resumo e sem recomendação).
 
 ## 4. Dados do caso fictício
@@ -100,14 +108,22 @@ pedir permissão ao editor da Fig. 2 de Bretschneider (ND) ou redesenhar os cinc
   slide 19 com quebra "E / o diferencial" (encurtado), "40–60" partido na tabela do slide 22 (larguras e "dos 40 aos 60"),
   etiquetas da Fig. 2 que cobriam os quadrados dos estudos e o rótulo do eixo invertido (movidas para a esquerda), título do
   slide 21 em duas linhas (encurtado para a figura crescer).
-- `materiais.py`: nenhum aviso na versão final (o resumo passou de 900 palavras na primeira geração; pontos e propostas
-  encurtados para 898). `enquetes.md` recebeu à mão, depois do script, a seção "Salas: gravação e plano B" (o script não
-  tem campo para isso; não rode o `materiais.py` de novo sem recolocá-la).
+- `materiais.py` (segunda rodada, skill corrigida): nenhum aviso. Resumo com 836 palavras de texto corrido (a contagem
+  nova exclui a lista de referências, DOI, PMID e URLs). `enquetes.md` agora sai inteiro do script: a seção "Plano B e
+  gravação" vem de `interacao.gravacao` e `interacao.plano_b` do slide 18 (a seção escrita à mão na primeira rodada foi
+  substituída), e a condução das enquetes diz que o Meet mostra só a contagem. `pre_pos_teste.md` com 8 questões.
+- Segunda rodada (24/11/2026): `validar_aula.py` APROVADA com avisos, 0 erros; 33:55; tempo estimado 32:06; 12 interações
+  em 5 formatos; primeira aos 0:30; 32% do tempo em atividade; linha `●·●●●·●●··●●●●·●●···●●●●···●··●●●●`. Avisos que
+  ficaram: só palavras visíveis (slides 3, 6, 8, 9, 13, 16, 18, 19, 21, 22 e 24, de 73 a 97). `montar_deck.py`: nenhum texto
+  reduzido. `conferir_pptx.py`: nenhum problema (26 notas, 2 gráficos nativos, 57 partes XSD). Render olhado em tamanho
+  cheio: slides 3, 4, 5, 12, 13, 15, 16, 18, 22 e 27 e as três folhas; corrigido no caminho: nota do slide 15 quebrando o
+  IC em duas linhas (encurtada), slide 22 com 99–100 palavras (linha 4 encurtada para 97).
 
 ## 7. Pendências antes da aula
 
 - Daniel: conferir a fala das revelações (slides 13, 15, 21 e 22) — o texto diz "eu ensinei assim, seguindo a diretriz".
-- Confirmar no Meet que a conta tem enquetes e salas temáticas; se não tiver salas, plano B em `enquetes.md`.
+- Confirmar no Meet que a conta tem enquetes e salas temáticas; se não tiver salas, plano B em `enquetes.md` (seção "Plano B e gravação").
+- Combinar com quem grava a aula 2: o slide 22 desta aula deixa o "54%" em aberto e promete a resposta na aula 2.
 - Daniel: revisar a lista de sinais de alerta (proposta clínica, sem fonte no lote) antes de gravar.
 - Na edição da gravação: cortar o trecho das salas (cerca de 4 min de sala principal vazia).
 - Tudo da seção 8 é conferência de número; nenhum número do deck depende de PDF que contradiga o resumo, mas os da
@@ -126,10 +142,12 @@ pedir permissão ao editor da Fig. 2 de Bretschneider (ND) ou redesenhar os cinc
 | 13 | Couppe2022 (24) | Estimativas e IC do Doppler e do QuickDASH; n por braço | — |
 | 14, 15, 24 | Ikonen2022 (4) | Números observados em 1, 3 e 6 meses (plotar como pontos observados ao lado do ponto de 12 meses; hoje a linha cinza é conta); como a meia-vida foi estimada; coeficiente da metarregressão da duração; GRADE dos autores | **Curva de decaimento de Ikonen** no lugar da linha calculada do slide 15 (licença do PMC a conferir) |
 | 15 (notas) | Smidt2002 (13) | n por grupo e definição de sucesso no braço de espera | — |
-| 16 | Smidt2006 (19), Waugh2004 (15), Coombes2015 (14) | Coeficientes e IC de duração, dor cervical e dor intensa (Smidt); conferir Tab. 5 de Waugh no PDF (intercepto incoerente no print); Tab. 2 de Coombes (modelo do PRTEE) e método do limiar ao frio; origem dos 41 | Tab. 5 de Waugh ou Tab. 3 de Coombes em 300 dpi, se aprovadas; senão manter a tabela nativa |
+| 16, q7 | Smidt2006 (19), Waugh2004 (15), Coombes2015 (14) | Coeficientes e IC de duração, dor cervical e dor intensa (Smidt); conferir Tab. 5 de Waugh no PDF (intercepto incoerente no print) e **a escala da EVA** (0–100 mm? o eixo do print vai até 50): se for 0–100, devolver "0–100" ao slide; se for outra, ajustar a fala; Tab. 2 de Coombes (modelo do PRTEE) e método do limiar ao frio; origem dos 41 | Tab. 5 de Waugh ou Tab. 3 de Coombes em 300 dpi, se aprovadas; senão manter a tabela nativa |
 | 18, 19, 24, q6 | Poltawski2011 (6) | IC e AUC da DMCI; DMCI por gravidade (a Renata começa alto: confirma que a régua proporcional é a certa para PRTEE 58?) e por lado dominante; se o subgrupo grave tiver DMCI absoluta própria, trocar o veredito do s19 | Tabela nativa de DMCI por critério e gravidade "Adaptado de" |
 | 21, 22 | Bretschneider2022, apêndices 1 a 3 (material suplementar aberto) | Tempo de seguimento de cada coorte e estimativas ajustadas (o NNH da fala usa riscos brutos) | Fig. 2 já aprovada |
-| 22 | Sanders2015 (aberto, PMC4517446; não está em `pendentes.md`) e Coombes2013 (22) | Tab. 2 de Sanders no PDF (substitui o print s2); definição de recidiva e o RR invertido de Coombes; se a ref. 134 da diretriz é Coombes 2013 — se não for, trocar a linha 4 do s22 (hoje "a conferir") | Barras de incidência por faixa etária "Adaptado de Sanders" (opcional) |
+| 22 | Sanders2015 (aberto, PMC4517446; não está em `pendentes.md`) e Lucado2022 (1) | Tab. 2 de Sanders no PDF (substitui o print s2) e a recorrência de 8,5% em 2 anos; na diretriz, de onde vem "recorrência de até 54% em 2 anos" (ref. 134): se for outro estudo, trocar a linha 4 do s22 (hoje "a conferir" e "resposta na aula 2") e avisar a aula 2 | Barras de incidência por faixa etária "Adaptado de Sanders" (opcional) |
+| 3 (notas), resumo | Lucado2022 (1) | Tabela de irritabilidade (níveis I a VII) e de distribuição, com a página; trocar "atribuição provável" pela citação | — |
+| 13 (notas) | Bunata2007 (20), Rio2021 (9) | Bunata: n de doadores, método, e se o contato depende da rotação (Tab. I); Rio: tamanhos de efeito local e regional só do cotovelo, frio ou calor no limiar térmico (liga a Coombes 2015) | Tab. I de Bunata como gráfico nativo de 3 linhas (opcional) |
 | Notas da ponte (25) e aula 2 | Bisset2006b (7), Coombes2013 (22), Smidt2002 (13) | Percentuais de sucesso por grupo e recidiva após corticoide | — |
 | Referências (27) | todos | Trocar o campo `conferido` de "resumo" para "texto completo (p. N)" artigo a artigo e remontar | — |
 
@@ -153,6 +171,32 @@ catálogo (o original fica em `midia/`); este deck não usa nenhuma delas.
 | s15: conta parece dado | sim | curva cinza sem rótulos, sem o ponto de 12 meses; observado de 12 meses como ponto vermelho com o IC na legenda e na nota (o esquema do gráfico nativo não tem barra de erro nem linha tracejada) |
 | s21: figura pequena, painéis sem nome, números fora de ordem, retângulos sobre "Total" | sim (texto do achado chegou cortado no fim) | etiquetas de fator, renumeração 1-2-3 de cima para baixo, retângulos começando fora do rótulo, título em uma linha; a figura continua pequena (ver seção 5) |
 
+
+## 10. Segunda rodada (24/11/2026): achados que a primeira correção não recebeu e auditoria da trilha
+
+A primeira correção recebeu a revisão cortada no achado do s21. Conferi achado por achado no deck.json.
+
+| Achado | Procede? | O que mudou |
+|---|---|---|
+| Objetivos da trilha fora do deck: irritabilidade, razão afetado/não afetado, mecanismo | sim | notas do s3 (irritabilidade IV e distribuição; a aula 2 usa a palavra); notas do s19 (38% → 44%, calc.); notas do s13 (Bunata 2007 e Rio 2021, duas frases, só resumo); algoritmo e propostas do resumo |
+| Distratores espantalho (E1 D, E2 C, E3 D) | sim | E1 D "Ultrassom de controle em 4 semanas antes de decidir"; E2 C "Confirma se Cozen, Mill e Maudsley forem positivos juntos" (soma sem acurácia no lote); E3 D "Não precisa: o Doppler grau 3 do laudo já mostra a gravidade" (o "ultrassom com Doppler para graduar" proposto não servia: ela já tem o laudo) |
+| Enquete 1, opção C "fechar o diagnóstico" | sim | "Diagnóstico clínico de trabalho, prognóstico com números e meta combinada" |
+| NNH sem conta e sem IC nas notas | sim | notas do s21 com risco basal, NNH e IC |
+| s16 "dor 0–100" sem conferir a escala | sim | "EVA" no slide, "escala a conferir" na nota e na fala; seção 8 |
+| s6 e s8: tabelas com metade de baixo vazia | não aplicado | a tabela nativa não tem campo de tamanho de fonte; um gráfico de barras "antes → depois" exigiria um ponto central inventado para faixas calculadas (80% a 89%). Ficou a tabela |
+| q7 quase clone do revés da Renata | sim | caso novo (Roberto, 60 anos, tenista recreativo, 8 meses, PRTEE 70, parestesia no polegar) |
+| Pós-teste sem o raciocínio do s8 | sim | q8 nova: pré-teste de 75%, o que a preensão acrescenta (conta na seção 2) |
+| Resumo: "frio piora a previsão" | sim | "limiar de dor ao frio medido em laboratório (não a queixa)" |
+| s15: tracejado e barra de IC (não feitos na primeira rodada por falta de campo) | sim | a skill corrigida tem `tracejado` e `intervalo`: conta tracejada, observado de 12 meses com barra de 80 a 97 |
+| s21: figura maior | não aplicado | igual à primeira rodada: Fig. 2 quase quadrada, limitada pela altura, licença ND sem recorte de painel |
+| Auditoria: s22 revela 54% × 12% que a aula 2 constrói | sim | linha 4: "Recorrência de até 54% em 2 anos / a conferir / O único 54% do lote responde a outra pergunta: aula 2"; notas só com os 8,5% de Sanders; Coombes2013 fora da fonte, das referências e do resumo |
+| Auditoria: "chamar quem votou A" nas enquetes | sim | notas dos s4, s5, s12, s14 e s15: o Meet mostra só a contagem; voluntário da opção menos votada, de microfone aberto; roteiro e `enquetes.md` (agora gerado pela skill) |
+| Auditoria: cartão do s3 sem a posição da preensão | sim | "Preensão sem dor, cotovelo estendido: 120 N (direita) e 320 N (esquerda)" |
+| Auditoria: bilhetes de saída | sim (parte da aula 1) | notas do s1: "volta na aula 2 e na aula 3"; s26 continua "abrem a aula 2" |
+| Auditoria: DMCI sem expansão | sim | dado do s18 "PRTEE, DMCI (diferença mínima clinicamente importante)"; objetivo 3 com DMCI |
+| Auditoria: mecanismo e sensibilização sem aula | sim (aula 1) | duas frases nas notas do s13; o resto do mecanismo fica fora da v1 (roteiro, "O que fica de fora") |
+| Skill: plano B e gravação em campo; tempo estimado entre 30 e 35 | sim | `interacao.gravacao` e `interacao.plano_b` no s18; estimado 32:06 (s3 de 60 para 75 s, s13 de 80 para 90 s, s25 de 35 para 25 s) |
+
 ---
 
 ## Apêndice. O que mudou desde a aula de capacitação
@@ -164,15 +208,15 @@ nova). Na coluna "Nesta aula", onde a mudança aparece no deck.
 |---|---|---|---|---|
 | s2 | Incidência anual de 3%; 7% a 10% entre 40 e 60 anos | **corrige** | 3,4 por 1000 (0,34%); 9 por 1000 aos 40–49 — a Tab. 2 no próprio slide diz "per 1000" (Sanders 2015, print s2) | slide 22 |
 | s2/s3 | Resolução incompleta ou recorrência em 6–12 meses: 20% a 38% | matiza | Coerente se "incompleta" inclui sintoma residual; 89% muito melhor em 1 ano (Ikonen 2022), 83% na espera (Smidt 2002) | slide 15 |
-| s2 | Recorrência de até 54% em 2 anos | matiza (a conferir) | O único 54% do lote é recidiva após corticoide × 12% no placebo (Coombes 2013); recorrência populacional de 8,5% em 2 anos (Sanders 2015, resumo) | slide 22 ("a conferir") |
+| s2 | Recorrência de até 54% em 2 anos | matiza (a conferir) | O único 54% do lote é recidiva após corticoide × 12% no placebo (Coombes 2013); recorrência populacional de 8,5% em 2 anos (Sanders 2015, resumo) | slide 22 ("a conferir"; o 54% do corticoide fica para a aula 2) |
 | s3 | 29% em trabalhadores manuais | matiza | "Até 29%" em ocupações de alta demanda (teto, não prevalência típica) | não usado |
 | s3 | Hereditariedade de 40% (citação de Walker 2004) | corrige (citação) | Referência provavelmente trocada; não projetar | não usado |
-| s9, s11, s14 | Abrasão do ECRB "durante pronação e supinação" | matiza | O que mais aumenta o contato é estender o cotovelo; vulnerabilidade, não causa (Bunata 2007, print s13) | fora (aula 2) |
+| s9, s11, s14 | Abrasão do ECRB "durante pronação e supinação" | matiza | O que mais aumenta o contato é estender o cotovelo; vulnerabilidade, não causa (Bunata 2007, print s13) | slide 13 (notas, duas frases) |
 | s18 | Sobrecarga repetitiva aumenta o risco | matiza | Repetição isolada OR 0,71 (0,42–1,20), inconclusiva, não protetora; força com duração (SI, que inclui a frequência) OR 1,75 e rotação OR 1,85, nas mesmas 2 coortes (Bretschneider 2022, TC) | slides 20–22 (s22: "matiza") |
 | s19–s20 | Sem inflamação consistente; mediadores | confirma (indireto) | Corticoide reduz Doppler sem ganho clínico (Couppé 2022); PRP sem efeito (Karjalainen 2021) | slide 13 (notas) |
 | s21 | Tab. 3 de Coombes 2015 no bloco de patoanatomia | matiza (reposiciona) | É prognóstico: frio único preditor consistente, 9% do PRTEE explicado, n = 41 | slide 16 |
-| s22 | "Evidências preliminares de sensibilização" (Plinsinga 2015) | matiza (atualiza) | Hiperalgesia local e regional moderada; sem remota no membro superior (Rio 2021, resumo) | caso (algometria) e notas da aula 2 |
-| s27–s28 | Avaliar intensidade, irritabilidade e distribuição | confirma | Classificar o caso nos eixos (print s42, atribuição provável) | roteiro/caso (irritabilidade IV, tipo 1) |
+| s22 | "Evidências preliminares de sensibilização" (Plinsinga 2015) | matiza (atualiza) | Hiperalgesia local e regional moderada; sem remota no membro superior (Rio 2021, resumo) | slide 13 (notas); caso (algometria) |
+| s27–s28 | Avaliar intensidade, irritabilidade e distribuição | confirma | Classificar o caso nos eixos (print s42, atribuição provável) | slide 3 (notas: irritabilidade IV, tipo 1); resumo |
 | s29 | Exposição combinada OR 2,6 (Descatha 2016) | matiza | Fator a fator, só SI e rotação passam de 1, com OR < 2; nenhum > 2,5 (Bretschneider 2022) | slide 21 |
 | s30–s31 | Dobrar o punho > 2 h/dia OR 5,6 (homens) | matiza | Flexo-extensão combinada OR 1,61 (0,47–5,52), I² 85%, certeza muito baixa | slide 21 (painel 1, na fala) |
 | s32 | Park: feminino 2,47; dominante 3,21; manual 2,25 | confirma com ressalva | Caso-controle (associação, não risco) | não usado |

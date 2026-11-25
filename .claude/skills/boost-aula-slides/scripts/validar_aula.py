@@ -50,6 +50,57 @@ RE_CITACAO_LIVRE = re.compile(r"^[A-ZÀ-Ý][^;]*\b(19|20)\d{2}[a-z]?\b")
 VERBOS_FRACOS = ("conhecer", "entender", "compreender", "saber", "aprender", "listar", "definir", "descrever",
                  "identificar", "citar", "familiarizar", "revisar", "apresentar")
 
+# notas de enquete que pressupõem saber quem votou em quê (o Meet mostra só a contagem ao vivo)
+RE_NOME_POR_VOTO = re.compile(
+    r"(cham\w*|ped\w*|pergunt\w*|cit\w*)\b[^.]{0,90}\bpelo nome|pelo nome[^.]{0,60}\b(op[cç][aã]o|votou|votaram)|"
+    r"\b(votou|votaram|op[cç][aã]o)\b[^.]{0,60}\bpelo nome", re.I)
+
+# ----------------------------------------------------------------------------- tempo estimado pela fala
+# O validador soma 'tempo_s'; esta estimativa confere se as notas cabem nele: palavras faladas das notas
+# a ~130 por minuto mais a duração declarada da interação. É aviso, nunca erro: a nota é roteiro, não
+# texto decorado, e o ritmo de cada apresentador muda.
+FALA_PALAVRAS_MIN = 130
+ESTIMADO_FOLGA = 1.5          # aviso quando o estimado passa de 1,5 × tempo_s ...
+ESTIMADO_FOLGA_MIN_S = 30     # ... e de pelo menos 30 s a mais
+RE_FRASE = re.compile(r"(?<=[.!?])\s+(?=[\"“(]?[A-ZÀ-Ý])")
+# frases que são instrução ao apresentador, não fala: a rubrica "Interação: ..." (o tempo dela já está
+# em 'duracao_s') e as ordens de condução que ninguém diz em voz alta
+RE_INSTRUCAO = re.compile(
+    r"^(Intera[cç][aã]o\s*:|Tempo\s*:|"
+    r"N[aã]o (comentar|dar|corrigir|antecipar|interpretar|resolver|explicar|julgar|revelar|mostrar|ler|"
+    r"responder|abrir|preencher|apressar)\b|"
+    r"(Mostrar|Projetar) o resultado|Lan[cç]ar a enquete|Fechar (a enquete|as salas|no tempo)|Abrir as salas|"
+    r"Entrar (em|nas|na|\d)|Copiar|Esperar|Dar \d+ segundos|Deixar \d+ segundos|Contar 3|Cronometrar|"
+    r"Ter (a|o|um|uma) )", re.I)
+# na capa, a logística de antes da aula não é falada: conta só o que se diz à turma ao abrir
+RE_FALA_CAPA = re.compile(r"^(Dizer|Pedir|Perguntar|Explicar|Apresentar|Contar|Ler|Come[cç]ar|Abrir com|"
+                          r"Lembrar|Avisar)\b", re.I)
+
+
+def palavras_faladas(notas: str, capa: bool = False) -> int:
+    """Palavras das notas que viram fala: sem a linha 'Tempo: ...', sem a rubrica 'Interação:' e as
+    ordens de condução, e, na capa, sem a logística de pré-aula."""
+    t = re.sub(r"^\s*Tempo\s*:[^\n]*?\(acumulado[^)]*\)\.?\s*", "", str(notas or ""), flags=re.I)
+    n = 0
+    for fr in RE_FRASE.split(t.strip()):
+        fr = fr.strip()
+        if not fr or RE_INSTRUCAO.match(fr):
+            continue
+        if capa and not RE_FALA_CAPA.match(fr):
+            continue
+        n += contar_palavras(fr)
+    return n
+
+
+def tempo_estimado(s: dict) -> tuple[int, int]:
+    """(segundos de fala estimados, segundos de interação declarados) de um slide."""
+    fala = palavras_faladas(s.get("notas") or "", capa=s.get("tipo") == "capa") * 60 / FALA_PALAVRAS_MIN
+    inter = s.get("interacao") if isinstance(s.get("interacao"), dict) else None
+    d = 0
+    if inter and inter.get("tipo") in M.INTERACOES:
+        d = int(inter.get("duracao_s") or M.INTERACOES[inter["tipo"]]["padrao_s"])
+    return int(round(fala)), d
+
 
 def contar_palavras(texto: str) -> int:
     return len(RE_PALAVRA.findall(M.sem_marcacao(texto)))
@@ -132,9 +183,22 @@ def validar(deck: dict, base: Path) -> dict:
                        "rotulo": M.rotulo_interacao(inter)}
                 interacoes.append(reg)
                 item["interacao"] = reg
+        if not apoio:
+            fala_s, inter_s = tempo_estimado(s)
+            item["estimado"] = fala_s + inter_s
+            item["estimado_fala"] = fala_s
+            if dur > 0 and item["estimado"] >= ESTIMADO_FOLGA * dur and item["estimado"] - dur >= ESTIMADO_FOLGA_MIN_S:
+                A(n, f"tempo estimado de {M.tempo_extenso(item['estimado'])} (fala das notas a ~{FALA_PALAVRAS_MIN} "
+                  f"palavras/min: {M.tempo_extenso(fala_s)}; interação: {M.tempo_extenso(inter_s)}) para "
+                  f"{M.tempo_extenso(dur)} de 'tempo_s'. Corte a fala ou aumente o tempo do slide.")
         linha.append(item)
         t += dur
     total = t
+    estimado_total = sum(it.get("estimado", 0) for it in linha)
+    if estimado_total > DURACAO_MAX_S:
+        A(0, f"tempo estimado da aula: {M.relogio(estimado_total)} min (fala das notas a ~{FALA_PALAVRAS_MIN} "
+          f"palavras/min mais as interações declaradas), acima de 35 min, embora 'tempo_s' some "
+          f"{M.relogio(total)}. As notas falam mais do que o tempo previsto: corte fala ou slides.")
 
     if total > DURACAO_MAX_S:
         E(0, f"a aula soma {M.relogio(total)} min: passa do teto de 35 min. Corte conteúdo, não corte interação.")
@@ -218,6 +282,11 @@ def validar(deck: dict, base: Path) -> dict:
                     A(n, "as notas já começam com 'Tempo:'; o script escreve essa linha sozinho. Apague do deck.json.")
                 if inter and "intera" not in notas.lower():
                     A(n, "slide com interação, mas as notas não dizem 'Interação: ...' nem como conduzi-la.")
+                if ((inter and inter.get("tipo") == "enquete") or (tipo == "enquete" and s.get("revela"))) \
+                        and RE_NOME_POR_VOTO.search(notas):
+                    A(n, "as notas mandam chamar pelo nome quem votou em uma opção, mas a enquete do Google Meet "
+                      "não mostra ao vivo quem votou em quê. Peça um voluntário de cada opção (microfone ou mão "
+                      "na câmera) e chame pelo nome quem se apresentar (ver references/interacoes.md).")
             if dur > 240 and not inter:
                 A(n, f"{M.tempo_extenso(dur)} no mesmo slide sem interação: divida ou encurte.")
             if 0 < dur < 20:
@@ -246,6 +315,30 @@ def validar(deck: dict, base: Path) -> dict:
                     A(n, "enquete sem 'gabarito' (letra sustentada pela evidência). Se for de opinião, marque \"sem_gabarito\": true.")
         if tipo == "tarefa" and inter and inter.get("tipo") == "salas" and not s.get("entrega"):
             E(n, "tarefa de salas sem 'entrega': sem produto escrito no chat a sala vira conversa solta.")
+
+        # graficos: series tracejadas e intervalos (barras de erro)
+        if tipo in ("barras", "linha"):
+            ncat = len(M.como_lista(s.get("categorias")))
+            for k, se in enumerate(M.como_lista(s.get("series")), 1):
+                if not isinstance(se, dict):
+                    continue
+                nome = f"série {k} ({M.sem_marcacao(se.get('nome') or '')[:30]})"
+                if se.get("tracejado") and tipo != "linha":
+                    A(n, f"{nome}: 'tracejado' só vale no gráfico de linha; nas barras ele é ignorado.")
+                iv = se.get("intervalo")
+                if iv is None:
+                    continue
+                vals = M.como_lista(se.get("valores"))
+                if not isinstance(iv, list) or len(iv) != len(vals) or len(iv) != ncat:
+                    E(n, f"{nome}: 'intervalo' precisa de uma entrada por categoria ({ncat}), null ou [inferior, superior].")
+                    continue
+                for j, (v, par_) in enumerate(zip(vals, iv)):
+                    if par_ is None:
+                        continue
+                    ok = isinstance(par_, list) and len(par_) == 2 and all(isinstance(x, (int, float)) for x in par_)
+                    if not ok or v is None or not (par_[0] <= v <= par_[1]):
+                        E(n, f"{nome}, categoria {j + 1}: intervalo {par_!r} não contém o valor {v!r} "
+                          "(use [inferior, superior] em valores absolutos, com o ponto dentro).")
 
         # fonte e evidencia
         fontes = [str(f) for f in M.como_lista(s.get("fonte"))]
@@ -372,6 +465,7 @@ def validar(deck: dict, base: Path) -> dict:
         "interacoes": len(interacoes), "formatos": sorted({i["tipo"] for i in interacoes}),
         "tempo_em_interacao_s": sum(i["duracao"] for i in interacoes),
         "primeira_interacao_s": interacoes[0]["inicio"] if interacoes else None, "figuras": n_figuras,
+        "duracao_estimada_s": estimado_total,
     }
     return {"erros": erros, "avisos": avisos, "linha": linha, "interacoes": interacoes, "resumo": resumo}
 
@@ -427,6 +521,9 @@ def imprimir(rel: dict, linha_do_tempo: bool = True) -> None:
         pct = (r["tempo_em_interacao_s"] / r["duracao_s"]) if r["duracao_s"] else 0
         print(f"Interações: {r['interacoes']} em {len(r['formatos'])} formato(s) ({', '.join(r['formatos']) or '—'}) | "
               f"primeira aos {pi} | {pct:.0%} do tempo em atividade")
+        if r.get("duracao_estimada_s") is not None:
+            print(f"Tempo estimado pela fala das notas (~{FALA_PALAVRAS_MIN} palavras/min) + interações: "
+                  f"{M.relogio(r['duracao_estimada_s'])} min (estimativa; quem manda é tempo_s)")
     if linha_do_tempo and rel["linha"]:
         print()
         print(texto_linha_do_tempo(rel))

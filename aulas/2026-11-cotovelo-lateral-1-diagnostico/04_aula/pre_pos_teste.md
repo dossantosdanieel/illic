@@ -7,7 +7,7 @@
 Objetivos medidos:
 1. Interpretar quanto vale cada teste na dor lateral no cotovelo (sensibilidade, especificidade e razões de verossimilhança) e calcular a probabilidade pós-teste antes de fechar o diagnóstico ou reabrir o diferencial
 2. Decidir quando a imagem acrescenta algo e explicar ao paciente o que um laudo de ultrassom significa, usando a frequência dos achados em quem não tem dor
-3. Estimar o prognóstico com o curso natural e os sinais de pior evolução, e calcular a meta individual do PRTEE pela diferença mínima importante
+3. Estimar o prognóstico com o curso natural e os sinais de pior evolução, e calcular a meta individual do PRTEE pela DMCI (diferença mínima clinicamente importante)
 
 ## Parte 1 — Questões (para colar)
 
@@ -118,7 +118,7 @@ Não dá para dizer sem um teste estatístico com valor de p abaixo de 0,05.
 Enunciado:
 
 ```text
-Sandra, 44 anos, trabalha numa linha de montagem e tem dor lateral no cotovelo há 3 meses, PRTEE de 62. Relata dor cervical frequente e formigamento no dorso do antebraço no fim do turno. Pergunta quanto tempo vai levar. Qual expectativa é a mais defensável?
+Roberto, 60 anos, contador e tenista recreativo, tem dor lateral no cotovelo direito há 8 meses, PRTEE de 70. Relata dor cervical que vai e volta e parestesia no polegar direito depois de digitar por horas. Pergunta quanto tempo vai levar. Qual expectativa é a mais defensável?
 ```
 
 Opções:
@@ -128,6 +128,23 @@ Prognóstico ruim pelo conjunto: o melhor é encaminhar logo para cirurgia.
 Curto prazo mais lento; a maioria melhora em 1 ano. Examinar cervical e nervo.
 Nenhuma diferença: fatores prognósticos não têm peso no indivíduo.
 Pedir ressonância cervical e do cotovelo antes de qualquer outra conduta.
+```
+
+### Questão 8
+
+Enunciado:
+
+```text
+Helena, 50 anos, costureira, tem dor no epicôndilo lateral direito há 3 meses, pior ao carregar sacolas, sem dor cervical nem parestesia. Cozen positivo. Pela história e pelo exame, você estima em 75% a chance de tendinopatia lateral. Uma colega sugere medir a preensão com o cotovelo fletido e estendido "para confirmar" (razão de verossimilhança positiva de 3,9 a 8,3; negativa de 0,19 a 0,28). O que esse teste acrescenta, neste caso?
+```
+
+Opções:
+
+```text
+Muito: sem o teste positivo, o diagnóstico não está confirmado.
+Pouco se der positivo (92% a 96%); se der negativo, cai para 36% a 46% e pede reexame.
+Nada: com 75% antes, nenhum resultado muda a probabilidade.
+Se der negativo, exclui a tendinopatia; o próximo passo é a ressonância.
 ```
 
 ## Parte 2 — Gabarito comentado (professor e feedback do Forms)
@@ -208,10 +225,22 @@ Referência: Poltawski L, Watson T. Hand Therapy 2011;16(3):52-7. DOI 10.1258/ht
 
 **Resposta:** Curto prazo mais lento; a maioria melhora em 1 ano. Examinar cervical e nervo.
 
-Com o mesmo escore inicial, quem relata sintomas de nervo terminou 8 semanas de fisioterapia com 15 pontos a mais de dor (0 a 100; IC 4,7 a 25,5) e mulheres com 8,9 pontos a mais de DASH (Waugh 2004, resumo e tabela reproduzida na aula de capacitação). Dor cervical concomitante se associou a pior resultado em 12 meses (Smidt 2006, resumo). Todos com certeza baixa e sem validação. O curso de 1 ano continua favorável para a maioria (Ikonen 2022). O exame cervical e do nervo radial é proposta clínica: não há acurácia desses testes no material da aula.
+Com o mesmo escore inicial, quem relata sintomas de nervo terminou 8 semanas de fisioterapia com 15 pontos a mais na escala visual de dor (IC 4,7 a 25,5; escala a conferir) (Waugh 2004, resumo e tabela reproduzida na aula de capacitação). Dor cervical concomitante e duração longa se associaram a pior resultado em 12 meses (Smidt 2006, resumo); na meta-análise de braços controle, o tempo de dor não mudou a trajetória, e 89% estavam muito melhores ou recuperados em 1 ano (Ikonen 2022, resumo). Todos com certeza baixa e sem validação. Parestesia no polegar com dor cervical pede exame cervical e neural antes de atribuir tudo ao cotovelo; esse exame é proposta clínica: não há acurácia desses testes no material da aula.
 
-- *Prognóstico ruim pelo conjunto: o melhor é encaminhar logo para cirurgia.* — Transformar fator de pior prognóstico em indicação cirúrgica, sem dado que sustente.
-- *Nenhuma diferença: fatores prognósticos não têm peso no indivíduo.* — Ignorar fatores com associação consistente, ainda que de certeza baixa.
+- *Prognóstico ruim pelo conjunto: o melhor é encaminhar logo para cirurgia.* — Transformar fatores de pior prognóstico em indicação cirúrgica, sem dado que sustente.
+- *Nenhuma diferença: fatores prognósticos não têm peso no indivíduo.* — Ignorar fatores com associação consistente, ainda que de certeza baixa, e o sinal que reabre o diferencial.
 - *Pedir ressonância cervical e do cotovelo antes de qualquer outra conduta.* — Pedir imagem antes do exame clínico, quando ela não muda a primeira conduta.
 
 Referência: Waugh EJ et al. Arch Phys Med Rehabil 2004;85(2):308-18. PMID 14966719. DOI 10.1016/S0003-9993(03)00480-5.; Smidt N et al. J Rheumatol 2006;33(10):2053-9. PMID 16881095.; Ikonen J et al. Clin Orthop Relat Res 2022;480(4):647-60. PMID 34874323. DOI 10.1097/CORR.0000000000002058.
+
+### Questão 8 · nível: avaliação · objetivo 1
+
+**Resposta:** Pouco se der positivo (92% a 96%); se der negativo, cai para 36% a 46% e pede reexame.
+
+Chance antes: 0,75 ÷ 0,25 = 3. Positivo: 3 × 3,9 = 11,7 (92%); 3 × 8,3 = 24,9 (96%), uma subida de 17 a 21 pontos. Negativo: 3 × 0,19 = 0,57 (36%); 3 × 0,28 = 0,84 (46%), uma queda de 29 a 39 pontos. Com suspeita alta, o positivo quase não acrescenta e o negativo derruba sem excluir: o resultado que muda a conduta é o negativo, e o que decide é o limiar de ação (tratar como tendinopatia ou investigar outra causa). As razões de verossimilhança foram calculadas dos limites das faixas do resumo de Karanasios 2022 (protocolo e espectro a conferir); os 75% são do caso fictício.
+
+- *Muito: sem o teste positivo, o diagnóstico não está confirmado.* — Achar que o diagnóstico clínico precisa de um teste positivo para valer; com 75% antes, o positivo sobe só 17 a 21 pontos.
+- *Nada: com 75% antes, nenhum resultado muda a probabilidade.* — Exagerar na direção oposta: o negativo derruba a probabilidade em 29 a 39 pontos.
+- *Se der negativo, exclui a tendinopatia; o próximo passo é a ressonância.* — Tratar o negativo como exclusão e pular para a imagem; ele deixa 36% a 46%, o que pede reexame dos diferenciais, não ressonância.
+
+Referência: Karanasios S et al. J Hand Ther 2022;35(4):541-51. PMID 33814224. DOI 10.1016/j.jht.2021.02.002.

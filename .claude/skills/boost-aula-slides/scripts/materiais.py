@@ -7,7 +7,8 @@ Uso:
 
 Gera, na pasta do deck (ou em --saida):
     enquetes.md        enquetes prontas para cadastrar no Google Meet antes da aula,
-                       com gabarito para o professor e o roteiro das outras interações
+                       com gabarito para o professor, o roteiro das outras interações e o
+                       plano B e a gravação de cada interação (interacao.plano_b, .gravacao)
     pre_pos_teste.md   questões de aplicação/análise em formato de colar no Google Forms,
                        com gabarito comentado e a referência de cada resposta
     resumo_aluno.md    1 a 2 páginas: objetivos, pontos-chave, algoritmo de decisão, referências
@@ -29,9 +30,18 @@ NIVEIS_ALTOS = ("aplicacao", "aplicação", "analise", "análise", "avaliacao", 
 RE_PROIBIDAS = re.compile(r"todas as (alternativas|anteriores)|nenhuma das (alternativas|anteriores)|"
                           r"\bsempre\b|\bnunca\b|\bexceto\b", re.I)
 RE_NAO_CAIXA_ALTA = re.compile(r"\bNÃO\b")
-PALAVRAS_RESUMO_MAX = 900
+PALAVRAS_RESUMO_MAX = 900     # palavras de texto corrido (sem a lista de referências, DOI, PMID e URLs)
+RE_URL = re.compile(r"(https?://|www\.)\S+", re.I)
+RE_DOI = re.compile(r"\b(doi\s*:?\s*)?10\.\d{4,9}/\S+", re.I)
+RE_PMID = re.compile(r"\b(PMID|PMCID)\s*:?\s*(PMC)?\d+", re.I)
 LIM_PERGUNTA_ENQUETE = 300    # caracteres; pergunta longa demais não se lê em 1 minuto
 LIM_OPCAO_ENQUETE = 100
+# No Google Meet o apresentador vê ao vivo só a contagem de cada opção, não quem votou em quê: a
+# justificativa vem de voluntários de cada opção, nunca de alguém chamado pelo voto.
+CONDUCAO_ENQUETE = ("O Meet não mostra ao vivo quem votou em quê: peça um voluntário de cada opção, começando "
+                    "pela menos votada (\"quem votou B, abre o microfone ou levanta a mão na câmera e defende "
+                    "em 15 segundos\"), e chame pelo nome quem se apresentar. Se ninguém vier, dê voz à opção: "
+                    "\"o que faria alguém votar B?\".")
 
 
 def limpo(t) -> str:
@@ -133,7 +143,7 @@ def gerar_enquetes(deck: dict, avisos: list[str]) -> str:
         else:
             avisos.append(f"enquete {n_enq} (slide {i + 1}): sem 'gabarito' nem slide de revelação.")
         d = int(inter.get("duracao_s") or 60)
-        out.append(f"- **Aberta por:** {M.tempo_extenso(d)}. Feche, mostre o resultado e chame uma pessoa de cada opção pelo nome.")
+        out.append(f"- **Aberta por:** {M.tempo_extenso(d)}. Feche e mostre o resultado. {CONDUCAO_ENQUETE}")
         out.append("")
     if n_enq == 0:
         out.append("*Esta aula não tem enquetes.*")
@@ -153,15 +163,75 @@ def gerar_enquetes(deck: dict, avisos: list[str]) -> str:
             o_que = "Entrega: " + limpo(s["entrega"])
         out.append(f"| {M.relogio(quando)} | {i + 1} | {M.rotulo_interacao(inter)} | {o_que.replace('|', '/')} |")
     out.append("")
+    out += secao_plano_b(slides, ini, avisos)
+    tem_salas = any((s.get("interacao") or {}).get("tipo") == "salas" for s in slides if isinstance(s.get("interacao"), dict))
     out.append("## Antes de abrir a sala")
     out.append("")
-    out.append("- Enquetes criadas e salvas no Meet, sem lançar.")
-    if any((s.get("interacao") or {}).get("tipo") == "salas" for s in slides if isinstance(s.get("interacao"), dict)):
+    if n_enq:
+        out.append("- Enquetes criadas e salvas no Meet, sem lançar.")
+    if tem_salas:
         out.append("- Salas temáticas configuradas com 3 pessoas por sala e tempo limite ligado.")
     out.append("- Cronômetro visível para você; chat aberto numa segunda tela ou com um colega acompanhando.")
-    out.append("- Gravação ligada (a aula fica para a equipe).")
+    out.append("- Gravação ligada (a aula fica para a equipe)." +
+               (" Ela registra só a sala principal: veja \"Plano B e gravação\" acima." if tem_salas else ""))
     out.append("")
     return "\n".join(out)
+
+
+def tempo_falado(seg: int) -> str:
+    """240 -> '4 minutos'; 90 -> '1 minuto e 30 segundos' (para frases ditas em voz alta)."""
+    m, s = divmod(int(seg), 60)
+    partes = ([f"{m} minuto" + ("s" if m > 1 else "")] if m else []) + ([f"{s} segundos"] if s else [])
+    return " e ".join(partes) or "0 segundos"
+
+
+def _textos(v) -> list[str]:
+    return [limpo(x) for x in M.como_lista(v) if limpo(x)]
+
+
+def secao_plano_b(slides: list[dict], ini: list[int], avisos: list[str]) -> list[str]:
+    """Seção 'Plano B e gravação', gerada de interacao.plano_b e interacao.gravacao (ver
+    references/deck-json.md). Salas sempre entram, com o que vale para qualquer sala do Meet; o texto
+    específico da aula vem do deck.json, para não se perder quando o script roda de novo."""
+    out = ["## Plano B e gravação", "",
+           "Gerado de `interacao.plano_b` e `interacao.gravacao` no deck.json: corrija lá, não aqui "
+           "(este arquivo é reescrito a cada execução do materiais.py).", ""]
+    n = 0
+    for i, s in enumerate(slides):
+        inter = s.get("interacao") if isinstance(s.get("interacao"), dict) else None
+        if not inter or inter.get("tipo") not in M.INTERACOES:
+            continue
+        plano, grav = _textos(inter.get("plano_b")), _textos(inter.get("gravacao"))
+        salas = inter["tipo"] == "salas"
+        if not (plano or grav or salas):
+            continue
+        n += 1
+        quando = ini[i] + int(inter.get("inicio_s") or 0)
+        out.append(f"### Slide {i + 1} · {M.rotulo_interacao(inter)} · aos {M.relogio(quando)}")
+        out.append("")
+        if salas:
+            d = int(inter.get("duracao_s") or M.INTERACOES["salas"]["padrao_s"])
+            if not grav:
+                grav = [f"Antes de abrir as salas, diga em voz alta: \"quem assiste à gravação, pause o vídeo e faça "
+                        f"a tarefa em {tempo_falado(d)}\". Na edição, corte o trecho de sala principal vazia."]
+                avisos.append(f"slide {i + 1}: salas sem 'interacao.gravacao'; o enquetes.md usou o texto padrão. "
+                              "Escreva o que quem assiste à gravação deve fazer (ver references/interacoes.md).")
+            if not plano:
+                avisos.append(f"slide {i + 1}: salas sem 'interacao.plano_b' (o que fazer se a sala não abrir ou a "
+                              "conta não tiver salas temáticas). Sem ele, o enquetes.md não tem plano B para a sala.")
+            out.append("- **A gravação do Meet registra só a sala principal:** o que acontece nas salas não fica "
+                       "no vídeo. " + " ".join(grav))
+            out.append("- **Na volta, leia as entregas em voz alta:** assim elas entram na gravação. O chat da "
+                       "sala pode não voltar para a sala principal; peça ao porta-voz que escreva a entrega num bloco de notas e cole "
+                       "no chat principal ao voltar.")
+        elif grav:
+            out.append("- **Na gravação:** " + " ".join(grav))
+        if plano:
+            out.append("- **Plano B:** " + " ".join(plano))
+        out.append("")
+    if n == 0:
+        return []
+    return out
 
 
 # ----------------------------------------------------------------------------- pre/pos-teste
@@ -379,6 +449,7 @@ def gerar_resumo(deck: dict, avisos: list[str]) -> str:
         for p in props:
             out.append(f"- {limpo(p)[0:1].upper() + limpo(p)[1:]}.".replace("..", "."))
         out.append("")
+    corrido = list(out)          # texto corrido: tudo menos a lista de referências
     if refs:
         out.append("## Referências")
         out.append("")
@@ -388,11 +459,24 @@ def gerar_resumo(deck: dict, avisos: list[str]) -> str:
     if meta.get("caso_ficticio"):
         out.append("*O paciente do caso e seus dados são fictícios.*")
         out.append("")
+        corrido.append(out[-2])
     txt = "\n".join(out)
-    n = len(re.findall(r"\w+", M.sem_marcacao(txt)))
+    n = palavras_corridas("\n".join(corrido))
     if n > PALAVRAS_RESUMO_MAX:
-        avisos.append(f"resumo do aluno com {n} palavras: passa de 2 páginas. Corte pontos-chave ou referências.")
+        avisos.append(f"resumo do aluno com {n} palavras de texto corrido (contagem sem a lista de referências e "
+                      f"sem DOI, PMID e URLs; o limite é {PALAVRAS_RESUMO_MAX} para caber em 2 páginas com as "
+                      f"{len(refs)} referências). Corte pontos-chave, algoritmo ou propostas.")
     return txt
+
+
+def palavras_corridas(texto: str) -> int:
+    """Palavras de texto corrido, para o limite de páginas: DOI, PMID e URLs não contam (viram dezenas de
+    'palavras' na contagem ingênua e não são o que o aluno lê)."""
+    t = M.sem_marcacao(texto)
+    t = RE_URL.sub(" ", t)
+    t = RE_DOI.sub(" ", t)
+    t = RE_PMID.sub(" ", t)
+    return len(re.findall(r"[0-9A-Za-zÀ-ÿ]+(?:[.,/'’-][0-9A-Za-zÀ-ÿ]+)*", t))
 
 
 def main(argv=None) -> int:
@@ -427,7 +511,7 @@ def main(argv=None) -> int:
     for nome, txt in arquivos.items():
         p = saida / nome
         p.write_text(txt.rstrip() + "\n", encoding="utf-8")
-        print(f"  {p}  ({len(re.findall(r'[0-9A-Za-zÀ-ÿ]+', txt))} palavras)")
+        print(f"  {p}  ({palavras_corridas(txt)} palavras, sem DOI, PMID e URLs)")
     if avisos:
         print(f"\nAVISOS ({len(avisos)}):")
         for x in avisos:

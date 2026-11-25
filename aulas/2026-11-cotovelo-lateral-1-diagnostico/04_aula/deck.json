@@ -10,7 +10,7 @@
     "objetivos": [
       "Interpretar quanto vale cada teste na dor lateral no cotovelo (sensibilidade, especificidade e razões de verossimilhança) e calcular a probabilidade pós-teste antes de fechar o diagnóstico ou reabrir o diferencial",
       "Decidir quando a imagem acrescenta algo e explicar ao paciente o que um laudo de ultrassom significa, usando a frequência dos achados em quem não tem dor",
-      "Estimar o prognóstico com o curso natural e os sinais de pior evolução, e calcular a meta individual do PRTEE pela diferença mínima importante"
+      "Estimar o prognóstico com o curso natural e os sinais de pior evolução, e calcular a meta individual do PRTEE pela DMCI (diferença mínima clinicamente importante)"
     ],
     "propostas_clinicas": [
       "pistas de cada diferencial e exame cervical e neural quando surge formigamento: nenhum estudo do lote mede a acurácia desses testes",
@@ -18,6 +18,7 @@
       "usar até 79% como teto do pré-teste (111 de 533 voluntários de Vuvan 2020 não tinham a tendinopatia)",
       "usar a RV da preensão na preensão sem dor e contra radiculopatia ou túnel radial: protocolo e espectro a conferir",
       "com PRTEE inicial alto, preferir a régua proporcional da DMCI (certeza baixa)",
+      "classificar a irritabilidade pela tabela que a aula de capacitação atribui à diretriz de 2022 (atribuição provável, a conferir no PDF)",
       "acompanhar a preensão sem dor pela razão afetado/não afetado, sem DMCI publicada no lote",
       "imagem só se não melhorar no prazo ou surgir sinal atípico (notas da aula de capacitação, a conferir na diretriz)"
     ],
@@ -27,13 +28,14 @@
         "Com suspeita alta (até 79%), a preensão positiva quase não acrescenta (94%–97%) e a negativa derruba para 42%–51%, sem excluir: decide o limiar de ação (cálculo com Karanasios 2022 e Vuvan 2020).",
         "Esporão no epicôndilo: 50% da população sem dor (RV+ ≈ 1,6, calculada); nenhum achado do ultrassom acompanhou dor, PRTEE ou duração (Krogh 2020).",
         "Sem tratamento ativo, 89% muito melhores ou recuperados em 1 ano (IC 80% a 97%); meia-vida de 2,5 a 3 meses, independente do tempo de dor (Ikonen 2022).",
-        "DMCI do PRTEE: 7 pontos ou 22% ('um pouco melhor'); 11 pontos ou 37% ('muito melhor') (Poltawski 2011; n = 57). Nervo, sexo feminino, dor cervical e frio pioram a previsão, com certeza baixa (Waugh 2004; Smidt 2006; Coombes 2015).",
+        "DMCI do PRTEE: 7 pontos ou 22% ('um pouco melhor'); 11 pontos ou 37% ('muito melhor') (Poltawski 2011; n = 57). Sintomas de nervo, sexo feminino, dor cervical e limiar de dor ao frio medido em laboratório (não a queixa) pioram a previsão, com certeza baixa (Waugh 2004; Smidt 2006; Coombes 2015).",
         "Trabalho: rotação > 4 h/dia (OR 1,85) e força com duração (OR 1,75) se associaram à incidência; repetição isolada, inconclusiva (OR 0,71; 0,42 a 1,20) (Bretschneider 2022)."
       ],
       "algoritmo": [
         "Sinal de alerta (trauma, febre, dor noturna constante, déficit progressivo, câncer, bloqueio)? Encaminhe (proposta clínica).",
         "Dor lateral? Some história, Cozen e preensão fletido × estendido; nenhum teste fecha sozinho (Zwerus 2018).",
         "Dor cervical, parestesia, dor distal, estalo ou falseio? Reabra o diferencial e examine (proposta clínica).",
+        "Classifique a irritabilidade (quanto dói, quanto dura depois, quanto limita): na Renata, moderada; ela guia a dose na aula 2 (classificação da diretriz, a conferir).",
         "Laudo na mão? Explique cada achado pela frequência em quem não tem dor.",
         "Sem sinal atípico? Sem imagem agora; peça se não melhorar no prazo ou surgir algo novo.",
         "Escreva a meta do PRTEE pelas duas réguas (7 pontos e 22%; 11 pontos e 37%) e reavalie em 4 a 6 semanas."
@@ -156,12 +158,20 @@
       "conferido": "resumo (PubMed) + print da aula base s2 (Tab. 2)"
     },
     {
-      "id": "Coombes2013",
-      "curta": "Coombes et al. 2013",
-      "texto": "Coombes BK et al. JAMA 2013;309(5):461-9",
-      "pmid": "23385272",
-      "doi": "10.1001/jama.2013.129",
-      "conferido": "resumo (PubMed)"
+      "id": "Bunata2007",
+      "curta": "Bunata et al. 2007",
+      "texto": "Bunata RE et al. J Bone Joint Surg Am 2007;89(9):1955-63",
+      "pmid": "17768192",
+      "doi": "10.2106/JBJS.F.00727",
+      "conferido": "resumo (PubMed); só nas notas do slide 13"
+    },
+    {
+      "id": "Rio2021",
+      "curta": "Rio et al. 2021",
+      "texto": "Rio E et al. J Orthop Sports Phys Ther 2021;51(1):12-26",
+      "pmid": "33383996",
+      "doi": "10.2519/jospt.2021.9417",
+      "conferido": "resumo (PubMed); só nas notas do slide 13"
     }
   ],
   "slides": [
@@ -169,7 +179,7 @@
       "tipo": "capa",
       "bloco": "abertura",
       "tempo_s": 30,
-      "notas": "Aula online de 32 minutos, a primeira de três da trilha de cotovelo e mão. A paciente é fictícia e volta na aula 2. Antes de abrir a sala: deixar as quatro enquetes salvas no Meet, as salas temáticas configuradas com 3 pessoas e 4 minutos, um cronômetro visível e, se possível, um colega acompanhando o chat. Ter a calculadora do celular à mão. As salas não são gravadas: o slide 18 traz a instrução para quem assiste depois, e o trecho das salas sai na edição. Entrar 5 minutos antes e receber as pessoas pelo nome. Pedir câmera aberta logo no início: hoje ninguém assiste, todo mundo decide. Dizer em uma frase que esta aula parte da nossa aula de capacitação e mostra o que mudou desde então, inclusive números que eu mesmo ensinei de outro jeito."
+      "notas": "Aula online de 32 minutos, a primeira de três da trilha de cotovelo e mão. A paciente é fictícia e volta na aula 2 e na aula 3. Antes de abrir a sala: deixar as quatro enquetes salvas no Meet, as salas temáticas configuradas com 3 pessoas e 4 minutos, um cronômetro visível e, se possível, um colega acompanhando o chat. Ter a calculadora do celular à mão. As salas não são gravadas: o slide 18 traz a instrução para quem assiste depois; plano B e gravação em enquetes.md. Entrar 5 minutos antes e receber as pessoas pelo nome. Pedir câmera aberta logo no início: hoje ninguém assiste, todo mundo decide. Dizer em uma frase que esta aula parte da nossa aula de capacitação e mostra o que mudou desde então, inclusive números que eu mesmo ensinei de outro jeito."
     },
     {
       "tipo": "cartoes",
@@ -208,21 +218,21 @@
       "bloco": "abertura",
       "olho": "O caso",
       "titulo": "Renata quer a **infiltração** ou a ressonância",
-      "tempo_s": 60,
+      "tempo_s": 75,
       "origem": "caso",
       "rotulo": "Primeira consulta",
       "fala": "“Já são quatro meses. O ultrassom mostrou tendinose e esporão. Não é melhor fazer a infiltração, ou pelo menos a ressonância?”",
-      "fala2": "Renata, 46 anos, cabeleireira, destra. Dor no cotovelo direito; seis horas por dia de secador e escova.",
+      "fala2": "Renata, 46 anos, cabeleireira, destra, cotovelo direito; seis horas por dia de secador e escova.",
       "cartao": {
         "olho": "O que você mediu",
         "itens": [
           "PRTEE: 58 de 100",
-          "Preensão sem dor: 120 N (direita) e 320 N (esquerda)",
+          "Preensão sem dor, cotovelo estendido: 120 N (direita) e 320 N (esquerda)",
           "Cozen positivo; dor 6 de 10 no trabalho",
           "Laudo: espessamento, Doppler grau 3, entesófito"
         ]
       },
-      "notas": "Começar pela pessoa. Renata tem 46 anos, é cabeleireira autônoma, destra, e passa seis horas por dia com secador e escova. A dor no cotovelo direito começou há quatro meses; tomou anti-inflamatório por três semanas. A dor chega a 6 em 10 no trabalho, dura mais de seis horas depois e já a faz recusar clientes; não acorda à noite. Comenta que o pescoço fica duro no fim do dia. Ler a fala dela em voz alta, com a pressa de quem está perdendo trabalho. Depois dizer os dados do cartão, sem interpretar: PRTEE 58, preensão sem dor de 120 newtons do lado doente e 320 do outro, Cozen positivo, laudo com espessamento, Doppler grau 3 e entesófito. Não comentar. A turma decide no próximo slide."
+      "notas": "Começar pela pessoa. Renata tem 46 anos, é cabeleireira autônoma, destra, e passa seis horas por dia com secador e escova. A dor no cotovelo direito começou há quatro meses; tomou anti-inflamatório por três semanas. A dor chega a 6 em 10 no trabalho, dura mais de seis horas depois e já a faz recusar clientes; não acorda à noite. Comenta que o pescoço fica duro no fim do dia. Ler a fala dela em voz alta, com pressa. Depois dizer os dados do cartão, sem interpretar: PRTEE 58, preensão sem dor com o cotovelo estendido de 120 newtons do lado doente e 320 do outro, razão de 38%, Cozen positivo, laudo com espessamento, Doppler grau 3 e entesófito. Uma classificação só, porque a aula 2 depende dela: dor de 6 em 10 no trabalho, que dura mais de 6 horas e já limita, é irritabilidade moderada, nível IV da tabela que a aula de capacitação atribui à diretriz de 2022, atribuição a conferir no PDF; e a distribuição é unilateral e localizada, com a bandeira do pescoço. Na aula 2, a irritabilidade escolhe a dose. Não comentar o resto. A turma decide no próximo slide."
     },
     {
       "tipo": "enquete",
@@ -239,11 +249,11 @@
       "opcoes": {
         "A": "Infiltração agora: quatro meses é crônico e o laudo mostra lesão.",
         "B": "Ressonância antes de decidir: o ultrassom não basta.",
-        "C": "Fechar o diagnóstico no exame, dar o prognóstico com números e combinar uma meta.",
-        "D": "Afastar do trabalho até o Doppler normalizar."
+        "C": "Diagnóstico clínico de trabalho, prognóstico com números e meta combinada.",
+        "D": "Ultrassom de controle em 4 semanas antes de decidir."
       },
       "gabarito": "C",
-      "notas": "A primeira decisão da turma, antes de qualquer conteúdo. Interação: enquete 1, aberta por 45 segundos, sem comentar as opções. Mostrar o resultado e chamar duas pessoas pelo nome, 15 segundos cada: uma da opção menos votada e uma da mais votada. Não dar a resposta: a turma confere o voto nos blocos do exame, do laudo e do tempo. A opção C é a que a evidência vai sustentar."
+      "notas": "A primeira decisão da turma, antes de qualquer conteúdo. Interação: enquete 1, aberta por 45 segundos, sem comentar as opções. Mostrar o resultado: o Meet mostra só a contagem, não quem votou em quê. Perguntar quem votou na opção menos votada e topa defender em 15 segundos, de microfone aberto; depois, alguém da mais votada. Dizer o nome de quem se apresentar. Não dar a resposta: a turma confere o voto nos blocos do exame, do laudo e do tempo. A opção C é a que a evidência vai sustentar."
     },
     {
       "tipo": "enquete",
@@ -260,11 +270,11 @@
       "opcoes": {
         "A": "Confirma a tendinopatia lateral: é o teste clássico.",
         "B": "Pouco: é um teste sensível, que serve mais para afastar quando negativo.",
-        "C": "Nada: teste de provocação não tem valor diagnóstico.",
+        "C": "Confirma se Cozen, Mill e Maudsley forem positivos juntos.",
         "D": "Confirma, desde que a dor seja exatamente no epicôndilo."
       },
       "gabarito": "B",
-      "notas": "A previsão do bloco 1. Interação: enquete 2, 50 segundos, sem comentar. Mostrar o resultado e chamar uma pessoa que votou A, 15 segundos. A confusão que interessa é entre teste clássico e teste que confirma. Não corrigir ainda: o próximo slide traz os números. Para quem está começando: sensibilidade é, entre os que têm a doença, quantos dão positivo; diz pouco sobre quem dá positivo sem ter a doença."
+      "notas": "A previsão do bloco 1. Interação: enquete 2, 50 segundos, sem comentar. Mostrar o resultado; o Meet mostra só a contagem. Perguntar quem votou A ou C e topa defender em 15 segundos, de microfone aberto. A confusão que interessa é entre teste clássico e teste que confirma; a C soma três testes de provocação do mesmo tendão, e nenhum estudo do nosso lote mede a acurácia dessa soma. Não corrigir ainda: o próximo slide traz os números. Para quem está começando: sensibilidade é, entre os que têm a doença, quantos dão positivo; diz pouco sobre quem dá positivo sem ter a doença."
     },
     {
       "tipo": "tabela",
@@ -508,10 +518,10 @@
         "A": "Peço: a RM tem sensibilidade e especificidade de até 100% e mostra a gravidade.",
         "B": "Agora não: o diagnóstico é clínico; peço se não melhorar no prazo ou surgir algo novo.",
         "C": "Peço ultrassom de controle em 6 semanas para ver se o Doppler baixou.",
-        "D": "Peço radiografia, para medir o esporão."
+        "D": "Não precisa: o Doppler grau 3 do laudo já mostra a gravidade."
       },
       "gabarito": "B",
-      "notas": "A decisão do bloco 2. Interação: enquete 3, 45 segundos, sem comentar as opções. Mostrar o resultado e chamar uma pessoa que votou A ou C, 15 segundos. A opção A tem um número verdadeiro usado para a pergunta errada; a C usa o ultrassom para medir melhora, que o estudo de Krogh não sustenta. Não revelar: o próximo slide explica o laudo dela linha a linha."
+      "notas": "A decisão do bloco 2. Interação: enquete 3, 45 segundos, sem comentar as opções. Mostrar o resultado; o Meet mostra só a contagem. Perguntar quem votou A, C ou D e topa defender em 15 segundos, de microfone aberto. A opção A tem um número verdadeiro usado para a pergunta errada; a C usa o ultrassom para medir melhora, que o estudo de Krogh não sustenta; a D recusa a ressonância pelo motivo errado: o Doppler não mede gravidade. Não revelar: o próximo slide explica o laudo dela linha a linha."
     },
     {
       "tipo": "tabela",
@@ -519,7 +529,7 @@
       "papel": "conferir",
       "olho": "Bloco 2 · O laudo da Renata",
       "titulo": "O laudo descreve o tendão; não mede a **dor**",
-      "tempo_s": 80,
+      "tempo_s": 90,
       "colunas": [
         "Achado",
         "O que significa",
@@ -551,9 +561,11 @@
       "fonte": [
         "Krogh2020",
         "Karanasios2022",
-        "Couppe2022"
+        "Couppe2022",
+        "Bunata2007",
+        "Rio2021"
       ],
-      "notas": "Conferir o voto: a resposta que a evidência sustenta é a B. Linha a linha. Espessamento: em Krogh, o tendão doente tem 0,40 a 0,70 milímetro a mais; pela conta, a referência fica perto de 5,1. Compare com o outro lado e não chame de gravidade. Doppler 3: típico de quem tem dor. Mas menos vaso não é melhora: no ensaio de Couppé, o corticoide reduziu o Power Doppler em 12 semanas sem ganho clínico, e o QuickDASH em 52 semanas ficou 15 pontos pior que o placebo, num desfecho secundário. Entesófito: metade de quem não tem dor. Ressonância: faixas de 81% a 100% com viés alto. A aula de capacitação dizia 90% a 100%; o número responde se a RM vê o tendão, não se muda a conduta da Renata hoje. Imagem entra se não houver melhora no prazo ou surgir sinal novo: critério das notas da aula de capacitação, a conferir na diretriz."
+      "notas": "Conferir o voto: a resposta que a evidência sustenta é a B. Linha a linha. Espessamento: em Krogh, o tendão doente tem 0,40 a 0,70 milímetro a mais; pela conta, a referência fica perto de 5,1. Compare com o outro lado e não chame de gravidade. Doppler 3: típico de quem tem dor. Mas menos vaso não é melhora: no ensaio de Couppé, o corticoide reduziu o Power Doppler em 12 semanas sem ganho clínico, e o QuickDASH em 52 semanas ficou 15 pontos pior que o placebo, num desfecho secundário. Entesófito: metade de quem não tem dor. Por que a imagem não mede a dor: no cadáver, o extensor radial curto atrita no capítulo quando o cotovelo estende, vulnerabilidade, não causa provada, segundo Bunata; e a revisão de Rio achou hiperalgesia local e regional, não a distância: parte da dor está no processamento, que nenhum laudo mostra. Só resumo; volta na aula 2. Ressonância: faixas de 81% a 100% com viés alto. A aula de capacitação dizia 90% a 100%; o número responde se a RM vê o tendão, não se muda a conduta da Renata hoje. Imagem entra se não houver melhora no prazo ou surgir sinal novo: critério das notas da aula de capacitação, a conferir na diretriz."
     },
     {
       "tipo": "enquete",
@@ -574,7 +586,7 @@
         "D": "9 em 10"
       },
       "gabarito": "D",
-      "notas": "A previsão do bloco 3. Interação: enquete 4, 45 segundos, sem comentar. Mostrar o resultado e chamar alguém que votou A ou B. Quem estudou pela nossa aula de capacitação tem motivo para votar baixo: ela dizia que mais da metade continua com sintomas depois de um ano. O próximo slide põe essa frase ao lado do número novo."
+      "notas": "A previsão do bloco 3. Interação: enquete 4, 45 segundos, sem comentar. Mostrar o resultado; o Meet mostra só a contagem. Perguntar quem votou A ou B e topa defender em 15 segundos, de microfone aberto. Quem estudou pela nossa aula de capacitação tem motivo para votar baixo: ela dizia que mais da metade continua com sintomas depois de um ano. O próximo slide põe essa frase ao lado do número novo."
     },
     {
       "tipo": "linha",
@@ -601,7 +613,8 @@
             88,
             null
           ],
-          "cor": "cinza_grafico"
+          "cor": "cinza_grafico",
+          "tracejado": true
         },
         {
           "nome": "Observado em 1 ano: 89 (IC 80 a 97)",
@@ -612,7 +625,17 @@
             null,
             89
           ],
-          "cor": "alerta"
+          "cor": "alerta",
+          "intervalo": [
+            null,
+            null,
+            null,
+            null,
+            [
+              80,
+              97
+            ]
+          ]
         }
       ],
       "minimo": 0,
@@ -637,8 +660,8 @@
         "Ikonen2022",
         "Smidt2002"
       ],
-      "notas": "Conferir o voto: a resposta é a D. Na meta-análise de Ikonen, com os braços controle de 24 ensaios, 89% estavam muito melhores ou recuperados em um ano, intervalo de 80% a 97%: é o ponto vermelho, o único dado observado no gráfico. A linha cinza é a minha conta com meia-vida de 3 meses, para mostrar o conceito: a cada três meses, metade dos que ainda têm sintoma melhora. Triangular: no braço de espera de Smidt, 32% de sucesso em 6 semanas e 83% em 52. O tempo de dor antes da inclusão não mudou a trajetória. A frase da aula de capacitação: as duas podem ser verdade, porque algum sintoma não é o mesmo que não melhorou. Perguntar a quem votou B: o que muda no que você diz à Renata?",
-      "nota": "Linha cinza: conta ilustrativa. Ponto vermelho: único dado observado (IC 80% a 97%).",
+      "notas": "Conferir o voto: a resposta é a D. Na meta-análise de Ikonen, com os braços controle de 24 ensaios, 89% estavam muito melhores ou recuperados em um ano, intervalo de 80% a 97%: é o ponto vermelho, com a barra do intervalo, o único dado observado no gráfico. A linha cinza tracejada é a minha conta com meia-vida de 3 meses, para mostrar o conceito: a cada três meses, metade dos que ainda têm sintoma melhora. Triangular: no braço de espera de Smidt, 32% de sucesso em 6 semanas e 83% em 52. O tempo de dor antes da inclusão não mudou a trajetória. A frase da aula de capacitação: as duas podem ser verdade, porque algum sintoma não é o mesmo que não melhorou. Perguntar quem votou A ou B e topa dizer, em 15 segundos, o que muda no que diria à Renata.",
+      "nota": "Tracejado: conta ilustrativa. Ponto vermelho com barra: único dado observado.",
       "rotulos": false
     },
     {
@@ -658,7 +681,7 @@
         [
           "Sintomas de nervo",
           "8 semanas",
-          "+15 na dor 0–100 (IC 4,7 a 25,5)",
+          "+15 na EVA de dor (IC 4,7 a 25,5)",
           "não"
         ],
         [
@@ -686,14 +709,14 @@
         3.9,
         1.9
       ],
-      "nota": "Certeza baixa, sem validação. Duração longa: pior em Smidt 2006, sem efeito em Ikonen 2022.",
+      "nota": "Certeza baixa, sem validação. Escala da EVA de Waugh a conferir. Duração longa: pior em Smidt 2006, sem efeito em Ikonen 2022.",
       "fonte": [
         "Waugh2004",
         "Smidt2006",
         "Coombes2015",
         "Ikonen2022"
       ],
-      "notas": "Os modificadores, com o tamanho. Em Waugh, 83 pacientes depois de 8 semanas de fisioterapia: com o mesmo escore inicial, quem relata sintomas de nervo termina com 15 pontos a mais de dor de 0 a 100, e as mulheres com 8,9 pontos a mais de DASH; resumo e tabela reproduzida na aula de capacitação. Em Smidt, 349 pacientes da atenção primária: dor cervical junto, dor intensa e duração longa associadas a pior resultado em 12 meses, sem tamanho no resumo. A duração é a controvérsia: Ikonen não viu efeito; uma meta-regressão por ensaio e uma coorte individual podem as duas estar certas. Coombes: o limiar de dor ao frio foi o único preditor consistente em um ano, mas explicou 9% do PRTEE, e foi medido com equipamento: a queixa da Renata com água fria não é esse teste. Na aula de capacitação, essa tabela estava na patoanatomia; o lugar dela é aqui."
+      "notas": "Os modificadores, com o tamanho. Em Waugh, 83 pacientes depois de 8 semanas de fisioterapia: com o mesmo escore inicial, quem relata sintomas de nervo termina com 15 pontos a mais na escala visual de dor; a escala parece ser de 0 a 100, mas no print o eixo vai até 50, então confiro no PDF; e as mulheres com 8,9 pontos a mais de DASH; resumo e tabela reproduzida na aula de capacitação. Em Smidt, 349 pacientes da atenção primária: dor cervical junto, dor intensa e duração longa associadas a pior resultado em 12 meses, sem tamanho no resumo. A duração é a controvérsia: Ikonen não viu efeito; uma meta-regressão por ensaio e uma coorte individual podem as duas estar certas. Coombes: o limiar de dor ao frio foi o único preditor consistente em um ano, mas explicou 9% do PRTEE, e foi medido com equipamento: a queixa da Renata com água fria não é esse teste. Na aula de capacitação, essa tabela estava na patoanatomia; o lugar dela é aqui."
     },
     {
       "tipo": "citacao",
@@ -725,11 +748,19 @@
       "tempo_s": 360,
       "interacao": {
         "tipo": "salas",
-        "duracao_s": 240
+        "duracao_s": 240,
+        "gravacao": [
+          "Antes de abrir as salas, dizer em voz alta: \"quem assiste à gravação, pause o vídeo e faça a tarefa em 4 minutos\"; a faixa de entrega do slide traz a mesma instrução.",
+          "Na edição, cortar o trecho de sala principal vazia (cerca de 4 minutos)."
+        ],
+        "plano_b": [
+          "Sem salas temáticas na conta: chat em cascata com a conta, 2 minutos. Cada um escreve \"pela régua absoluta (7 pontos): ...; pela proporcional (22% de 58): ...\" e um diferencial com o exame; todos enviam no 3.",
+          "Ler as duas réguas em voz alta e seguir para o slide 19. O bloco encolhe de 6 para cerca de 3 minutos; usar a sobra para o debate da régua."
+        ]
       },
-      "dado": "**PRTEE:** “um pouco melhor” = 7 pontos ou 22% da linha de base; “muito melhor” = 11 pontos ou 37%.",
+      "dado": "**PRTEE, DMCI (diferença mínima clinicamente importante):** “um pouco melhor” = 7 pontos ou 22% da linha de base; “muito melhor” = 11 pontos ou 37%.",
       "itens": [
-        "PRTEE de 58 para 49: melhorou o suficiente? Faça a conta pelas duas réguas.",
+        "PRTEE de 58 para 49: melhorou o suficiente pelas duas réguas?",
         "O formigamento reabre quais diferenciais? O que examinar hoje?"
       ],
       "entrega": "ao voltar, o porta-voz cola no chat principal a conta e dois diferenciais com o exame (escreva num bloco de notas). **Na gravação:** pause e faça em 4 min.",
@@ -738,7 +769,7 @@
       "fonte": [
         "Poltawski2011"
       ],
-      "notas": "Interação: salas de 3 por 4 minutos; o bloco inteiro, com instrução e volta, leva 6. Antes de abrir: avisar a gravação de que as salas não são gravadas e que quem assiste depois deve pausar; o trecho sai na edição. Porta-voz: quem fez aniversário mais recentemente. O chat da sala não volta para a sala principal: escrever num bloco de notas e colar ao voltar. O dado do cartão vem de Poltawski e Watson. Entrar em uma sala para ouvir, sem resolver. Aviso de 1 minuto. Na volta, pedir a dois porta-vozes que colem e comparar as duas réguas. Para quem está começando, a âncora faz a primeira conta. Desafio: qual régua usar com quem começa alto. Se a conta do Meet não tiver salas: chat em cascata com a conta, 2 minutos."
+      "notas": "Interação: salas de 3 por 4 minutos; o bloco inteiro, com instrução e volta, leva 6. Antes de abrir: avisar a gravação de que as salas não são gravadas e que quem assiste depois deve pausar (roteiro em enquetes.md, Plano B e gravação). Porta-voz: quem fez aniversário mais recentemente. O chat da sala não volta para a sala principal: escrever num bloco de notas e colar ao voltar. O dado do cartão vem de Poltawski e Watson. Entrar em uma sala para ouvir, sem resolver. Aviso de 1 minuto. Na volta, pedir a dois porta-vozes que colem e comparar as duas réguas. Para quem está começando, a âncora faz a primeira conta. Desafio: qual régua usar com quem começa alto."
     },
     {
       "tipo": "tabela",
@@ -782,7 +813,7 @@
         "Waugh2004",
         "exame: proposta clínica da equipe"
       ],
-      "notas": "Uma resposta possível, para comparar com as salas. Pela régua absoluta, 7 pontos, a queda de 9 já é melhora mínima: quem usou os 7 pontos diria que sim. Pela proporcional, 22% de 58 dá cerca de 13 pontos, meta de 45 ou menos; ela caiu 16%: ainda não. Muito melhor pede 11 pontos ou 37%, cerca de 21, PRTEE de 36 ou menos. Qual régua? Com quem começa alto, a proporcional é a mais exigente, e o resumo diz que a DMCI foi maior nos mais graves; mas a certeza é baixa: 57 pacientes, intervalo de 3 semanas, intervalo de confiança desconhecido. O formigamento reabre radiculopatia e túnel radial; déficit motor ou sensitivo progressivo encaminha. O exame é proposta clínica. O sintoma de nervo muda a velocidade esperada, não o destino de um ano. Agora a frase para ela, da última linha: pedir a uma pessoa que diga a sua. A preensão sem dor subiu de 120 para 140 newtons, sem diferença mínima publicada no lote."
+      "notas": "Uma resposta possível, para comparar com as salas. Pela régua absoluta, 7 pontos, a queda de 9 já é melhora mínima: quem usou os 7 pontos diria que sim. Pela proporcional, 22% de 58 dá cerca de 13 pontos, meta de 45 ou menos; ela caiu 16%: ainda não. Muito melhor pede 11 pontos ou 37%, cerca de 21, PRTEE de 36 ou menos. Qual régua? Com quem começa alto, a proporcional é a mais exigente, e o resumo diz que a DMCI foi maior nos mais graves; mas a certeza é baixa: 57 pacientes, intervalo de 3 semanas, intervalo de confiança desconhecido. O formigamento reabre radiculopatia e túnel radial; déficit motor ou sensitivo progressivo encaminha. O exame é proposta clínica. O sintoma de nervo muda a velocidade esperada, não o destino de um ano. Agora a frase para ela, da última linha: pedir a uma pessoa que diga a sua. A preensão sem dor, cotovelo estendido, subiu de 120 para 140 newtons: a razão afetado sobre não afetado foi de 38% para 44%, pela conta 120 e 140 sobre 320, sem diferença mínima publicada no lote; é proposta clínica acompanhar por ela."
     },
     {
       "tipo": "pergunta",
@@ -879,7 +910,7 @@
           "cor": "marinho"
         }
       ],
-      "notas": "Conferir os palpites. Meta-análise de Bretschneider, 2022, lida no texto completo: cinco fatores, cada um com duas coortes. Cada painel é um fator, com o nome na etiqueta azul; à direita de 1 é mais risco. A letra é pequena: os números estão no cartão. Na ordem da figura: 1, girar o antebraço mais de 4 horas por dia, razão de chances de 1,85, de 1,10 a 3,10. 2, repetição acima de 15 por minuto, 0,71, de 0,42 a 1,20: inconclusivo, não protetor, e não exclui aumento de 20%; nesse painel o eixo está rotulado ao contrário. 3, força com duração, o Strain Index, 1,75, de 1,11 a 2,78. O Strain Index e a repetição vêm das mesmas duas coortes, e o índice inclui a frequência de esforços: repetir com força pesa. Pela minha conta, cerca de 1 caso a mais a cada 25 a 30 expostos. Desafio: os autores dão certeza alta ao Strain Index, com AMSTAR 2 criticamente baixa e duas coortes; eu daria moderada a baixa. Quem escreveu girar, citar o nome.",
+      "notas": "Conferir os palpites. Meta-análise de Bretschneider, 2022, lida no texto completo: cinco fatores, cada um com duas coortes. Cada painel é um fator, com o nome na etiqueta azul; à direita de 1 é mais risco. A letra é pequena: os números estão no cartão. Na ordem da figura: 1, girar o antebraço mais de 4 horas por dia, razão de chances de 1,85, de 1,10 a 3,10. 2, repetição acima de 15 por minuto, 0,71, de 0,42 a 1,20: inconclusivo, não protetor, e não exclui aumento de 20%; nesse painel o eixo está rotulado ao contrário. 3, força com duração, o Strain Index, 1,75, de 1,11 a 2,78. O Strain Index e a repetição vêm das mesmas duas coortes, e o índice inclui a frequência de esforços: repetir com força pesa. Pela minha conta, com o risco bruto dos não expostos, 6,0% (26 de 432) e 4,3% (31 de 717): cerca de 1 caso a mais a cada 25 expostos à força com duração, intervalo de 11 a 162, e a cada 30 à rotação, de 13 a 243, em um ano ou mais. Dizer os intervalos: são enormes. Desafio: os autores dão certeza alta ao Strain Index, com AMSTAR 2 criticamente baixa e duas coortes; eu daria moderada a baixa. Quem escreveu girar no chat, citar o nome.",
       "lateral": [
         {
           "estilo": "escuro",
@@ -922,7 +953,7 @@
         [
           "Recorrência de até 54% em 2 anos",
           "a conferir",
-          "Recidiva em 1 ano após corticoide: 54% (12% no placebo)"
+          "O único 54% do lote responde a outra pergunta: aula 2"
         ]
       ],
       "larguras": [
@@ -933,10 +964,9 @@
       "fonte": [
         "Sanders2015",
         "Bretschneider2022",
-        "Ikonen2022",
-        "Coombes2013"
+        "Ikonen2022"
       ],
-      "notas": "As revelações reunidas, sem drama: quem escreveu a aula de capacitação fui eu, seguindo a diretriz. Primeira linha, corrige: a tabela de Sanders que estava no nosso próprio slide diz por mil; 3,4 por mil ao ano, 9 por mil entre 40 e 49 anos. Li por mil como por cento, um erro de dez vezes. Segunda, matiza: a repetição isolada ficou inconclusiva; força com duração e rotação se associaram, nas mesmas duas coortes. Terceira, matiza: o desfecho é diferente, algum sintoma contra muito melhor. Quarta, a conferir: o único 54% que achamos é recidiva depois do corticoide no ensaio de Coombes, contra 12% no placebo; o risco relativo do resumo está invertido e ainda não sei se é a referência da diretriz. No resumo de Sanders, a recorrência em 2 anos foi de 8,5%. Perguntar: quem já repetiu um desses números para um paciente? Eu repeti.",
+      "notas": "As revelações reunidas, sem drama: quem escreveu a aula de capacitação fui eu, seguindo a diretriz. Primeira linha, corrige: a tabela de Sanders que estava no nosso próprio slide diz por mil; 3,4 por mil ao ano, 9 por mil entre 40 e 49 anos. Li por mil como por cento, um erro de dez vezes. Segunda, matiza: a repetição isolada ficou inconclusiva; força com duração e rotação se associaram, nas mesmas duas coortes. Terceira, matiza: o desfecho é diferente, algum sintoma contra muito melhor. Quarta, a conferir: no resumo de Sanders, a recorrência em 2 anos foi de 8,5%. O único 54% do nosso lote responde a outra pergunta, e essa resposta fica para a aula 2; não adiantar o número. Perguntar: quem já repetiu um desses números para um paciente? Eu repeti.",
       "destaque_linhas": [
         0
       ]
@@ -991,7 +1021,7 @@
       "fundo": "escuro",
       "olho": "Na próxima aula",
       "titulo": "Renata quer a **infiltração**",
-      "tempo_s": 35,
+      "tempo_s": 25,
       "origem": "caso",
       "contexto": "No fim da consulta de seis semanas, ela volta à pergunta do primeiro dia:",
       "fala": "“Uma cliente minha tomou a infiltração e ficou boa em uma semana. Por que eu não?”",
@@ -1023,9 +1053,9 @@
     {
       "tipo": "referencias",
       "outras": [
-        "pistas dos diferenciais, sinais de alerta, exame do formigamento, uso da probabilidade pré-teste de até 79% e escolha da régua da DMCI marcados como proposta clínica da equipe"
+        "pistas dos diferenciais, sinais de alerta, exame do formigamento, pré-teste de até 79%, régua da DMCI, razão afetado/não afetado da preensão e classificação da irritabilidade marcados como proposta clínica da equipe"
       ],
-      "notas": "Estado da conferência nesta versão 1. Texto completo: só Bretschneider 2022 (Fig. 2 na p.6, Tab. 3 na p.7 e Tab. 4 na p.8). Só resumo: Karanasios 2022, Zwerus 2018, Krogh 2020, Couppé 2022, Ikonen 2022, Smidt 2002, Smidt 2006, Poltawski e Watson 2011, Coombes 2013 e Lucado 2022 (o resumo da diretriz não tem números). Resumo mais print da aula de capacitação: Vuvan 2020 (fluxograma, slide 50), Waugh 2004 (Tab. 5, slide 40), Coombes 2015 (Tab. 3, slide 21) e Sanders 2015 (Tab. 2, slide 2). Calculados por mim, com a conta nas notas de cada slide: razões de verossimilhança, probabilidades pós-teste, 79% de pré-teste, curva de meia-vida, espessura de referência e metas do PRTEE da paciente. Propostas clínicas: pistas dos diferenciais, sinais de alerta (sem fonte no lote), exame do formigamento, uso do pré-teste de até 79% (teto), régua da DMCI com escore alto e critério para pedir imagem. A paciente e seus dados são fictícios. Quando os PDFs chegarem, a lista do que trocar está em verificacao.md."
+      "notas": "Estado da conferência nesta versão 1. Texto completo: só Bretschneider 2022 (Fig. 2 na p.6, Tab. 3 na p.7 e Tab. 4 na p.8). Só resumo: Karanasios 2022, Zwerus 2018, Krogh 2020, Couppé 2022, Ikonen 2022, Smidt 2002, Smidt 2006, Poltawski e Watson 2011, Bunata 2007 e Rio 2021 (só nas notas do slide 13) e Lucado 2022 (o resumo da diretriz não tem números). Resumo mais print da aula de capacitação: Vuvan 2020 (fluxograma, slide 50), Waugh 2004 (Tab. 5, slide 40), Coombes 2015 (Tab. 3, slide 21) e Sanders 2015 (Tab. 2, slide 2). Calculados por mim, com a conta nas notas de cada slide: razões de verossimilhança, probabilidades pós-teste, 79% de pré-teste, curva de meia-vida, espessura de referência e metas do PRTEE da paciente. Propostas clínicas: pistas dos diferenciais, sinais de alerta (sem fonte no lote), exame do formigamento, uso do pré-teste de até 79% (teto), régua da DMCI com escore alto, razão afetado/não afetado da preensão, classificação da irritabilidade e critério para pedir imagem. A paciente e seus dados são fictícios. Quando os PDFs chegarem, a lista do que trocar está em verificacao.md."
     }
   ]
 }

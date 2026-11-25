@@ -24,6 +24,7 @@ try:
     from pptx import Presentation
     from pptx.chart.data import CategoryChartData
     from pptx.dml.color import RGBColor
+    from pptx.enum.dml import MSO_LINE_DASH_STYLE
     from pptx.enum.chart import XL_CHART_TYPE, XL_LABEL_POSITION, XL_LEGEND_POSITION, XL_TICK_MARK, XL_MARKER_STYLE
     from pptx.enum.shapes import MSO_CONNECTOR, MSO_SHAPE
     from pptx.enum.text import MSO_ANCHOR, MSO_AUTO_SIZE, PP_ALIGN
@@ -848,11 +849,17 @@ class Construtor:
             cor = se.get("cor") or M.CORES_SERIES[i % len(M.CORES_SERIES)]
             nome = str(se.get("nome", ""))
             w = self.med.largura(nome, 12) + 0.1
-            if x > x0 and x + 0.25 + w > x0 + largura:
+            amostra = 0.4 if se.get("tracejado") else 0.167   # serie tracejada: amostra de linha
+            if x > x0 and x + amostra + 0.083 + w > x0 + largura:
                 x, y, linhas = x0, y + 0.3, linhas + 1
-            self.caixa(sl, x, y + 0.035, 0.167, 0.167, fill=cor, forma="cartao", raio=0.028)
-            self.caixa(sl, x + 0.25, y, w, 0.24, [par(nome, 12, "texto", ls=15.6)])
-            x += 0.25 + w + 0.25
+            if se.get("tracejado"):
+                cn = self.linha(sl, x, y + 0.12, x + amostra, y + 0.12, cor=cor, esp=2.5)
+                if cn is not None:
+                    cn.line.dash_style = MSO_LINE_DASH_STYLE.DASH
+            else:
+                self.caixa(sl, x, y + 0.035, 0.167, 0.167, fill=cor, forma="cartao", raio=0.028)
+            self.caixa(sl, x + amostra + 0.083, y, w, 0.24, [par(nome, 12, "texto", ls=15.6)])
+            x += amostra + 0.083 + w + 0.25
         return 0.24 + 0.3 * (linhas - 1)
 
     def _grafico(self, sl, s, x, y, w, h, tipo):
@@ -929,6 +936,11 @@ class Construtor:
             dl.number_format = fmt
             dl.number_format_is_linked = False
             dl.position = XL_LABEL_POSITION.ABOVE if tipo == "linha" else XL_LABEL_POSITION.OUTSIDE_END
+            if tipo != "linha" and any(isinstance(se, dict) and se.get("intervalo") for se in series):
+                # a barra de erro sai do topo da coluna: o rótulo vai para a base, em branco, para não
+                # ficar embaixo do traço
+                dl.position = XL_LABEL_POSITION.INSIDE_BASE
+                dl.font.color.rgb = rgb("branco")
         dest = set(int(i) for i in M.como_lista(s.get("destaque_categorias")))
         for i, se in enumerate(plot.series):
             cor = series[i].get("cor") or M.CORES_SERIES[i % len(M.CORES_SERIES)]
@@ -936,11 +948,21 @@ class Construtor:
                 se.smooth = False
                 se.format.line.color.rgb = rgb(cor)
                 se.format.line.width = Pt(2.5)
-                se.marker.style = XL_MARKER_STYLE.CIRCLE
-                se.marker.size = 8
-                se.marker.format.fill.solid()
-                se.marker.format.fill.fore_color.rgb = rgb(cor)
-                se.marker.format.line.color.rgb = rgb(cor)
+                tracejado = bool(series[i].get("tracejado"))
+                if tracejado:
+                    # conta ilustrativa, projeção, modelo: linha tracejada e marcador vazado, para não
+                    # ser lida como dado observado
+                    se.format.line.dash_style = MSO_LINE_DASH_STYLE.DASH
+                if series[i].get("marcadores") is False:
+                    se.marker.style = XL_MARKER_STYLE.NONE
+                else:
+                    se.marker.style = XL_MARKER_STYLE.CIRCLE
+                    se.marker.size = 8
+                    se.marker.format.fill.solid()
+                    se.marker.format.fill.fore_color.rgb = rgb("branco" if tracejado else cor)
+                    se.marker.format.line.color.rgb = rgb(cor)
+                    if tracejado:
+                        se.marker.format.line.width = Pt(1.75)
                 for j in dest:
                     if j < len(cats):
                         pto = se.points[j]
@@ -964,6 +986,56 @@ class Construtor:
                             pto = se.points[j]
                             pto.format.fill.solid()
                             pto.format.fill.fore_color.rgb = rgb("alerta")
+            if series[i].get("intervalo"):
+                self._barras_erro(se, series[i], cor,
+                                  series[i].get("cor_intervalo") or ("texto" if tipo != "linha" else cor))
+
+    @staticmethod
+    def _barras_erro(se, serie: dict, cor: str, cor_barra: str) -> None:
+        """Barras de erro personalizadas (IC) a partir de 'intervalo': uma entrada por categoria, null ou
+        [inferior, superior] em valores absolutos. Grava c:errBars com valores literais (numLit) antes de
+        c:cat, na ordem do esquema; o PowerPoint e o LibreOffice desenham, e o PowerPoint deixa editar em
+        Formatar barras de erro. Os limites não vão para a planilha embutida."""
+        vals = M.como_lista(serie.get("valores"))
+        mais, menos = {}, {}
+        for j, iv in enumerate(M.como_lista(serie.get("intervalo"))):
+            if not iv or j >= len(vals) or vals[j] is None:
+                continue
+            v, lo, hi = float(vals[j]), float(iv[0]), float(iv[1])
+            mais[j], menos[j] = max(hi - v, 0.0), max(v - lo, 0.0)
+        if not mais:
+            return
+        n = len(vals)
+
+        def fonte(tag, d):
+            el = etree.Element(qn(f"c:{tag}"))
+            lit = etree.SubElement(el, qn("c:numLit"))
+            etree.SubElement(lit, qn("c:formatCode")).text = "General"
+            etree.SubElement(lit, qn("c:ptCount")).set("val", str(n))
+            for j in sorted(d):
+                pt = etree.SubElement(lit, qn("c:pt"))
+                pt.set("idx", str(j))
+                etree.SubElement(pt, qn("c:v")).text = repr(round(d[j], 6))
+            return el
+
+        eb = etree.Element(qn("c:errBars"))
+        etree.SubElement(eb, qn("c:errBarType")).set("val", "both")
+        etree.SubElement(eb, qn("c:errValType")).set("val", "cust")
+        etree.SubElement(eb, qn("c:noEndCap")).set("val", "0")
+        eb.append(fonte("plus", mais))
+        eb.append(fonte("minus", menos))
+        sppr = etree.SubElement(eb, qn("c:spPr"))
+        ln = etree.SubElement(sppr, qn("a:ln"))
+        ln.set("w", str(int(Pt(1.75))))
+        ln.set("cap", "flat")
+        sf = etree.SubElement(ln, qn("a:solidFill"))
+        etree.SubElement(sf, qn("a:srgbClr")).set("val", str(rgb(cor_barra)))
+        etree.SubElement(ln, qn("a:round"))
+        ser = se._element
+        antes = ser.find(qn("c:cat"))
+        if antes is None:
+            antes = ser.find(qn("c:val"))
+        antes.addprevious(eb)
 
     def _t_grafico(self, sl, s, r, tipo):
         y0 = self.cabecalho(sl, s, r=r)
@@ -982,6 +1054,8 @@ class Construtor:
         mostra_leg = len(series) > 1 or s.get("legenda_destaque")
         if mostra_leg:
             leg = list(series) if len(series) > 1 else []
+            if tipo != "linha":
+                leg = [{k: v for k, v in se.items() if k != "tracejado"} for se in leg if isinstance(se, dict)]
             if s.get("legenda_destaque"):
                 leg.append({"nome": s["legenda_destaque"], "cor": "alerta"})
             y += self._legenda_manual(sl, leg, M.ME, y, w) + 0.1

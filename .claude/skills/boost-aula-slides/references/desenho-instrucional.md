@@ -123,7 +123,9 @@ Ferramentas que funcionam e o porquê:
   que dá força à instrução por pares (Crouch & Mazur 2001; Smith et al. 2009).
 - **Chamar pelo nome**, com respeito e sem expor quem errou. Chamar alunos regularmente aumentou a
   participação voluntária e o conforto para falar (Dallimore et al. 2013, graduação presencial). Na
-  prática: "Quem votou B, Ana, defende em 15 segundos?" — nunca "Quem errou?".
+  prática: na enquete do Meet, que mostra só a contagem, "Quem votou B abre o microfone e defende em 15
+  segundos?" e depois "Obrigado, Ana"; no chat e na mão na câmera, em que o nome aparece, chame direto.
+  Nunca "Quem errou?".
 - **Caso que evolui com revés**: a mesma pessoa do começo ao fim, e um momento em que a conduta certa
   até ali encontra um problema novo. O caso dá contexto para o dado e o revés reabre a atenção. O
   ensino baseado em casos é bem aceito e tem evidência favorável, porém heterogênea e de baixa

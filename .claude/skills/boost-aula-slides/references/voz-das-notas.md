@@ -46,7 +46,8 @@ protege o ciclo prever → ver.
 ### 4. A interação é marcada com "Interação:" e tem roteiro completo
 
 > "Interação: enquete 1, aberta por 1 minuto. Não comentar as opções antes do voto. Mostrar o resultado
-> na tela e pedir a uma pessoa de cada opção que justifique em 20 segundos, chamando pelo nome."
+> na tela e pedir um voluntário de cada opção, começando pela menos votada: quem votou nela abre o
+> microfone ou levanta a mão na câmera e justifica em 20 segundos."
 >
 > "Interação: chat em cascata. Dar 60 segundos de silêncio para escrever, contar 3, 2, 1 e pedir que
 > enviem juntos. Ler as hipóteses em voz alta agrupando as repetidas e citando os nomes."
@@ -57,6 +58,10 @@ protege o ciclo prever → ver.
 
 Sempre: formato, duração, o que a turma faz, como o professor fecha. O validador avisa quando o slide
 tem interação e a nota não diz "Interação:".
+
+Na enquete do Google Meet o apresentador vê só a contagem de cada opção, não quem votou em quê: a nota
+nunca manda "chamar pelo nome quem votou B" (o validador avisa). Pelo nome se chama quem se apresentou
+como voluntário, quem escreveu no chat ou quem está com a mão na câmera.
 
 ### 5. Os números são ditos por inteiro, com unidade e origem
 

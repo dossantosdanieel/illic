@@ -66,7 +66,7 @@ Uma entrada por artigo citado em qualquer slide.
 | `tipo` | Um dos 16 tipos abaixo. |
 | `tempo_s` | Tempo previsto do slide em segundos, **incluindo** a interação. Obrigatório, exceto em slides de apoio. |
 | `notas` | O que falar e como conduzir, na voz de `voz-das-notas.md`. Não escreva a linha "Tempo:": o script põe `Tempo: 1 min 30 s (acumulado 12:00).` na frente. |
-| `interacao` | `{"tipo": "...", "duracao_s": 60}`. Tipos: `enquete`, `chat_cascata`, `salas`, `mao_camera`, `chat`. Opcionais: `inicio_s` (segundos depois do início do slide em que a interação começa), `pedido` (o que a turma faz, em uma frase, para o roteiro de `enquetes.md`), `tamanho` (salas de 2, 3, 4...), `rotulo` (troca o texto da pílula). A pílula aparece sozinha no canto superior direito. |
+| `interacao` | `{"tipo": "...", "duracao_s": 60}`. Tipos: `enquete`, `chat_cascata`, `salas`, `mao_camera`, `chat`. Opcionais: `inicio_s` (segundos depois do início do slide em que a interação começa), `pedido` (o que a turma faz, em uma frase, para o roteiro de `enquetes.md`), `tamanho` (salas de 2, 3, 4...), `rotulo` (troca o texto da pílula), `gravacao` (o que quem assiste à gravação faz nesse trecho; as salas não aparecem no vídeo do Meet) e `plano_b` (o que fazer se o formato falhar no Meet: sala que não abre, conta sem enquete). Os dois últimos são texto ou lista de frases e geram a seção "Plano B e gravação" do `enquetes.md`; o `materiais.py` avisa quando uma sala não tem os dois (ver `interacoes.md`, salas). A pílula aparece sozinha no canto superior direito. |
 | `olho` | Linha pequena em caixa alta acima do título ("Bloco 2 · A evidência"). Uma linha só, antes da pílula: se não couber, é erro de layout (a segunda linha cai em cima do título). |
 | `titulo` | Título do slide. Em slides de evidência, a **conclusão** em uma frase, não o assunto. |
 | `fonte` | Lista de `id` de referência e/ou textos livres ("degraus: proposta clínica da equipe"). Sai no rodapé, à direita. Texto livre que parece citação (Sobrenome ... 2021) precisa estar em `referencias`. |
@@ -191,7 +191,9 @@ Lista numerada (números 22 pt petróleo) + faixa marinho "Entrega:", para salas
   "tempo_s": 300,
   "interacao": {
     "tipo": "salas",
-    "duracao_s": 240
+    "duracao_s": 240,
+    "gravacao": "Antes de abrir, dizer: \"quem assiste à gravação, pause e faça a tarefa em 4 minutos\". Na edição, cortar o trecho de sala vazia.",
+    "plano_b": "Sem salas: chat em cascata com as 4 medidas e o corte, 2 minutos, todos enviam no 3. Ler duas baterias diferentes em voz alta."
   },
   "itens": [
     "Quais 4 medidas entram na liberação dele, e com que ponto de corte?",
@@ -478,6 +480,13 @@ lavanda), `formato` (formato numérico do Excel: `"0"`, `"0.0"`, `"0\"%\""`), `r
 gráfico, em uma linha; o script avisa se quebrar), `destaque_categorias` (índices pintados em vermelho-alerta, só com uma série),
 `legenda_destaque`, `minimo`, `maximo`, `rotulos` (`false` tira os valores), `vao`, `altura`, `nota`, `lateral`.
 
+Na série, `intervalo` desenha **barras de erro** (IC, faixa observada): uma entrada por categoria, `null`
+ou `[inferior, superior]` em valores absolutos (`"intervalo": [null, [70, 84], null]`). O validador
+reprova lista do tamanho errado ou intervalo que não contém o valor. Nas colunas o traço sai em cinza
+escuro (`cor_intervalo` troca) e, com intervalo, os rótulos de valor vão para a base da coluna, em
+branco, para não ficar sob o traço. Os limites ficam no XML do gráfico (editáveis em *Formatar barras de
+erro* no PowerPoint), não na planilha embutida: anote a fonte do IC nas notas.
+
 ```json
 {
   "tipo": "barras",
@@ -538,6 +547,21 @@ gráfico, em uma linha; o script avisa se quebrar), `destaque_categorias` (índi
 
 Gráfico nativo de linha com marcadores, linhas de grade cinza claras e eixo de valores à esquerda.
 Mesmos campos de `barras`; `destaque_categorias` aumenta e pinta de vermelho o ponto daquele índice (no PowerPoint; no render do LibreOffice o ponto sai maior, mas na cor da série: isso é esperado).
+
+Campos da série só da linha: `tracejado` (`true`: linha tracejada, marcador vazado e amostra tracejada na
+legenda) e `marcadores` (`false` tira os pontos). **Conta ilustrativa, projeção ou modelo vai sempre
+tracejada**, e o dado observado em linha cheia ou ponto com `intervalo` (barras de erro na cor da
+série): quem olha o gráfico precisa separar o que foi medido do que foi calculado sem ler a nota. No
+render do LibreOffice o marcador vazado sai cheio; o tracejado e as barras de erro saem certos.
+
+```json
+"series": [
+  {"nome": "Conta: meia-vida de 3 meses (não é dado)", "valores": [0, 50, 75, 88, null],
+   "cor": "cinza_grafico", "tracejado": true},
+  {"nome": "Observado em 1 ano: 89 (IC 80 a 97)", "valores": [null, null, null, null, 89],
+   "cor": "alerta", "intervalo": [null, null, null, null, [80, 97]]}
+]
+```
 
 ```json
 {

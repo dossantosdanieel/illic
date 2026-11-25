@@ -1,172 +1,195 @@
 {
-  "questoes": [
-    {
-      "id": "q1",
-      "objetivo": 1,
-      "nivel": "análise",
-      "cenario": "Carlos, 52 anos, pedreiro, tem dor lateral no cotovelo direito há 2 meses, que às vezes desce pelo antebraço. Sem dor cervical nem parestesia. Antes do exame, você estima em 30% a chance de tendinopatia lateral. A força de preensão cai 12% quando ele estende o cotovelo. Para esse teste (queda de 5% a 10% ou mais), a razão de verossimilhança positiva fica entre 3,9 e 8,3.",
-      "pergunta": "Qual é, aproximadamente, a probabilidade de tendinopatia lateral depois do teste positivo?",
-      "opcoes": {
-        "A": "Entre 30% e 40%: com suspeita baixa, o teste quase não mexe.",
-        "B": "Entre 63% e 78%.",
-        "C": "Perto de 100%: razão de verossimilhança acima de 3 confirma.",
-        "D": "Entre 78% e 83%, que é a sensibilidade do teste."
-      },
-      "gabarito": "B",
-      "comentario": "Chance antes do teste: 0,30 ÷ 0,70 = 0,43. Multiplicada por 3,9 dá 1,67 (63%); por 8,3 dá 3,56 (78%). As razões de verossimilhança foram calculadas a partir das faixas de sensibilidade (78% a 83%) e especificidade (80% a 90%) do resumo de Karanasios 2022; são limites, não pares reais de estudo, e o exame físico teve só 2 estudos com risco de viés alto ou incerto. Duas ressalvas: o protocolo da revisão (preensão máxima ou sem dor) está a conferir, e, se os estudos compararam doentes com saudáveis, a RV superestima o poder de separar a tendinopatia do túnel radial, justamente o diferencial da dor que desce pelo antebraço. A probabilidade de 30% é do caso fictício. O teste sobe a probabilidade em 33 a 48 pontos e ainda assim não fecha o diagnóstico.",
-      "distratores": {
-        "A": "Achar que teste positivo não muda nada quando a suspeita é baixa; com 30% antes, o positivo sobe 33 a 48 pontos.",
-        "C": "Tratar a razão de verossimilhança como prova; ela multiplica a chance, não a transforma em certeza.",
-        "D": "Confundir sensibilidade com probabilidade pós-teste (valor preditivo)."
-      },
-      "referencia": [
-        "Karanasios2022"
-      ]
-    },
-    {
-      "id": "q2",
-      "objetivo": 1,
-      "nivel": "avaliação",
-      "cenario": "Joana, 49 anos, digitadora, tem dor no epicôndilo lateral há 6 semanas. Pela história, você estima em 80% a chance de tendinopatia lateral. No exame, o Cozen é negativo e a preensão não cai ao estender o cotovelo (razão de verossimilhança negativa entre 0,19 e 0,28 para a preensão).",
-      "pergunta": "Qual leitura do exame é a mais defensável?",
-      "opcoes": {
-        "A": "Exclui a tendinopatia lateral: dois testes negativos já bastam para isso.",
-        "B": "Não muda nada: testes de cotovelo não têm valor diagnóstico nenhum.",
-        "C": "Cai para cerca de 43% a 53%: não exclui; reexaminar os diferenciais.",
-        "D": "Confirma radiculopatia cervical como causa da dor."
-      },
-      "gabarito": "C",
-      "comentario": "Chance antes: 0,80 ÷ 0,20 = 4. Multiplicada por 0,19 dá 0,76 (43%); por 0,28 dá 1,12 (53%): uma queda de 27 a 37 pontos, que derruba a suspeita sem excluir. A conta usa só a preensão: o Cozen tem sensibilidade de 91%, mas a especificidade não está no resumo de Karanasios 2022, e sem ela não há razão de verossimilhança. Na revisão de Zwerus 2018, nenhum teste do cotovelo, sozinho, confirma ou exclui. Com suspeita alta, o teste negativo reabre a conversa, não fecha o caso.",
-      "distratores": {
-        "A": "Somar testes negativos como se cada um excluísse sozinho, sem considerar a probabilidade antes do teste.",
-        "B": "Confundir 'não confirma nem exclui sozinho' com 'não vale nada'; a preensão mexe a probabilidade.",
-        "D": "Trocar a ausência de um diagnóstico pela presença de outro, sem nenhum achado cervical."
-      },
-      "referencia": [
-        "Karanasios2022",
-        "Zwerus2018"
-      ]
-    },
-    {
-      "id": "q3",
-      "objetivo": 2,
-      "nivel": "aplicação",
-      "cenario": "Marcos, 55 anos, tem dor lateral no cotovelo há 3 meses. Traz um laudo de ultrassom: \"entesófito no epicôndilo lateral; tendão extensor comum de espessura normal; sem sinal ao Doppler\". Ele diz: \"Então é o esporão que dói?\"",
-      "pergunta": "Qual explicação os dados sustentam melhor?",
-      "opcoes": {
-        "A": "Não confirma: esporão é comum sem dor, e Doppler ausente pede outra causa.",
-        "B": "O esporão explica a dor; o melhor é avaliar a retirada cirúrgica.",
-        "C": "O laudo normal exclui qualquer problema no tendão; a dor é muscular.",
-        "D": "Pedir ressonância para graduar a gravidade da lesão antes de qualquer conduta."
-      },
-      "gabarito": "A",
-      "comentario": "Em Krogh 2020 (resumo), o esporão estava em 50% da população sem dor e em 45% dos cotovelos contralaterais sem dor; como teste, a razão de verossimilhança positiva fica perto de 1,6 (calculada), que quase não muda a probabilidade. O Doppler médio foi de 3,47 (escala 0 a 4) nos cotovelos doentes, e os autores escrevem que Doppler ausente em suspeita de epicondilite deve levantar outros diagnósticos. Desenho de duas portas, só resumo: certeza baixa para acurácia.",
-      "distratores": {
-        "B": "Tomar um achado comum em quem não tem dor como causa da dor.",
-        "C": "Ler laudo 'normal' como exclusão: o ultrassom tem sensibilidade de 53% a 100% (Karanasios 2022), e a dor pode vir de outra estrutura.",
-        "D": "Achar que a imagem mede gravidade; nenhum achado do ultrassom se correlacionou com dor, PRTEE ou duração em Krogh 2020."
-      },
-      "referencia": [
-        "Krogh2020",
-        "Karanasios2022"
-      ]
-    },
-    {
-      "id": "q4",
-      "objetivo": 2,
-      "nivel": "avaliação",
-      "cenario": "Lúcia, 47 anos, está em reabilitação para tendinopatia lateral. Em 10 semanas, o PRTEE caiu de 50 para 25. Por conta própria, refez o ultrassom: o espessamento é o mesmo e o Doppler passou de grau 3 para grau 2. Ela pergunta se o tendão \"não sarou\" e se deveria fazer algo para \"apagar\" o Doppler.",
-      "pergunta": "Qual resposta é a mais defensável?",
-      "opcoes": {
-        "A": "Manter o tratamento até o Doppler zerar, porque o vaso é a lesão ativa.",
-        "B": "Fazer uma injeção de corticoide para reduzir o Doppler.",
-        "C": "Repetir o ultrassom a cada 4 semanas para guiar a progressão.",
-        "D": "O desfecho é a melhora clínica; o ultrassom não acompanha a dor."
-      },
-      "gabarito": "D",
-      "comentario": "Ela caiu 25 pontos, 50% do PRTEE inicial, acima dos 37% de 'muito melhor' de Poltawski e Watson 2011 (resumo; meta calculada). Em Krogh 2020, nenhum achado de ultrassom se correlacionou com dor, incapacidade, PRTEE ou duração. Em Couppé 2022, o corticoide reduziu a área de Power Doppler em 12 semanas sem ganho clínico, e o QuickDASH em 52 semanas ficou 15 pontos pior que o placebo (desfecho secundário, só resumo).",
-      "distratores": {
-        "A": "Tratar o Doppler como alvo terapêutico, sem dado de que reduzi-lo melhore o paciente.",
-        "B": "Escolher um tratamento por mudar a imagem; o corticoide reduziu o Doppler e não melhorou a função em 1 ano.",
-        "C": "Usar como guia uma medida que não acompanha os sintomas."
-      },
-      "referencia": [
-        "Krogh2020",
-        "Couppe2022",
-        "Poltawski2011"
-      ]
-    },
-    {
-      "id": "q5",
-      "objetivo": 3,
-      "nivel": "análise",
-      "cenario": "Paulo, 41 anos, analista de sistemas, tem dor lateral no cotovelo há 10 meses. Fez anti-inflamatório e repouso. Não tem dor cervical, sintomas de nervo nem dor intensa. Ele pergunta: \"Já passou tanto tempo; agora não melhora mais, certo?\"",
-      "pergunta": "Qual resposta os dados sustentam melhor?",
-      "opcoes": {
-        "A": "Depois de 6 meses o curso é ruim: a maioria não melhora mais.",
-        "B": "Depois de 6 meses, só melhora com injeção ou cirurgia.",
-        "C": "A chance de melhorar parece não depender do tempo de dor.",
-        "D": "O tempo de dor não importa: nenhum estudo achou associação."
-      },
-      "gabarito": "C",
-      "comentario": "Na meta-análise dos braços controle de 24 ensaios (Ikonen 2022, resumo), a melhora seguiu uma meia-vida de 2,5 a 3 meses, 89% estavam muito melhores ou recuperados em 1 ano (IC 95% 80% a 97%), e o tempo de sintoma antes da inclusão não mudou a trajetória. Há uma ressalva: na coorte de Smidt 2006 (resumo), duração longa se associou a mais dor em 12 meses. A meta-regressão compara médias de ensaios e a coorte compara pessoas; as duas leituras podem conviver. Por isso a resposta é 'parece', não 'nunca'.",
-      "distratores": {
-        "A": "Aplicar a ideia de 'cronificou' sem número; o curso observado é favorável mesmo em quem já tem meses de dor.",
-        "B": "Transformar a duração em indicação de procedimento, sem dado que sustente.",
-        "D": "Exagerar na direção oposta: Smidt 2006 associou duração longa a pior resultado em 12 meses."
-      },
-      "referencia": [
-        "Ikonen2022",
-        "Smidt2006"
-      ]
-    },
-    {
-      "id": "q6",
-      "objetivo": 3,
-      "nivel": "análise",
-      "cenario": "Teresa, 58 anos, começou com PRTEE de 30 (de 0 a 100). Depois de 8 semanas, está com 22. A mudança importante do PRTEE foi de 22% da linha de base para 'um pouco melhor' e 37% para 'muito melhor' (ou 7 e 11 pontos absolutos).",
-      "pergunta": "Qual leitura da mudança é a mais correta?",
-      "opcoes": {
-        "A": "Um pouco melhor: caiu 8, mais que 22% de 30; 'muito melhor' pediria 11.",
-        "B": "Sem mudança importante: abaixo de 11 pontos não conta.",
-        "C": "Muito melhor: passou dos 7 pontos da mudança mínima.",
-        "D": "Não dá para dizer sem um teste estatístico com valor de p abaixo de 0,05."
-      },
-      "gabarito": "A",
-      "comentario": "22% de 30 = 6,6 pontos; 37% de 30 = 11,1 pontos (cálculo a partir dos percentuais de Poltawski e Watson 2011, resumo; n = 57, certeza baixa). Ela caiu 8 pontos (27%): passa de 'um pouco melhor', não chega a 'muito melhor'. Em quem começa baixo, os percentuais e os pontos absolutos quase coincidem; em quem começa alto (PRTEE 58 a 60), 'muito melhor' exige mais de 20 pontos.",
-      "distratores": {
-        "B": "Usar o ponto absoluto de 'muito melhor' como se fosse o limiar mínimo.",
-        "C": "Confundir os dois critérios: 7 pontos é 'um pouco melhor', não 'muito melhor'.",
-        "D": "Confundir significância estatística com mudança importante para o indivíduo."
-      },
-      "referencia": [
-        "Poltawski2011"
-      ]
-    },
-    {
-      "id": "q7",
-      "objetivo": 3,
-      "nivel": "avaliação",
-      "cenario": "Sandra, 44 anos, trabalha numa linha de montagem e tem dor lateral no cotovelo há 3 meses, PRTEE de 62. Relata dor cervical frequente e formigamento no dorso do antebraço no fim do turno. Pergunta quanto tempo vai levar.",
-      "pergunta": "Qual expectativa é a mais defensável?",
-      "opcoes": {
-        "A": "Prognóstico ruim pelo conjunto: o melhor é encaminhar logo para cirurgia.",
-        "B": "Curto prazo mais lento; a maioria melhora em 1 ano. Examinar cervical e nervo.",
-        "C": "Nenhuma diferença: fatores prognósticos não têm peso no indivíduo.",
-        "D": "Pedir ressonância cervical e do cotovelo antes de qualquer outra conduta."
-      },
-      "gabarito": "B",
-      "comentario": "Com o mesmo escore inicial, quem relata sintomas de nervo terminou 8 semanas de fisioterapia com 15 pontos a mais de dor (0 a 100; IC 4,7 a 25,5) e mulheres com 8,9 pontos a mais de DASH (Waugh 2004, resumo e tabela reproduzida na aula de capacitação). Dor cervical concomitante se associou a pior resultado em 12 meses (Smidt 2006, resumo). Todos com certeza baixa e sem validação. O curso de 1 ano continua favorável para a maioria (Ikonen 2022). O exame cervical e do nervo radial é proposta clínica: não há acurácia desses testes no material da aula.",
-      "distratores": {
-        "A": "Transformar fator de pior prognóstico em indicação cirúrgica, sem dado que sustente.",
-        "C": "Ignorar fatores com associação consistente, ainda que de certeza baixa.",
-        "D": "Pedir imagem antes do exame clínico, quando ela não muda a primeira conduta."
-      },
-      "referencia": [
-        "Waugh2004",
-        "Smidt2006",
-        "Ikonen2022"
-      ]
-    }
-  ]
+ "questoes": [
+  {
+   "id": "q1",
+   "objetivo": 1,
+   "nivel": "análise",
+   "cenario": "Carlos, 52 anos, pedreiro, tem dor lateral no cotovelo direito há 2 meses, que às vezes desce pelo antebraço. Sem dor cervical nem parestesia. Antes do exame, você estima em 30% a chance de tendinopatia lateral. A força de preensão cai 12% quando ele estende o cotovelo. Para esse teste (queda de 5% a 10% ou mais), a razão de verossimilhança positiva fica entre 3,9 e 8,3.",
+   "pergunta": "Qual é, aproximadamente, a probabilidade de tendinopatia lateral depois do teste positivo?",
+   "opcoes": {
+    "A": "Entre 30% e 40%: com suspeita baixa, o teste quase não mexe.",
+    "B": "Entre 63% e 78%.",
+    "C": "Perto de 100%: razão de verossimilhança acima de 3 confirma.",
+    "D": "Entre 78% e 83%, que é a sensibilidade do teste."
+   },
+   "gabarito": "B",
+   "comentario": "Chance antes do teste: 0,30 ÷ 0,70 = 0,43. Multiplicada por 3,9 dá 1,67 (63%); por 8,3 dá 3,56 (78%). As razões de verossimilhança foram calculadas a partir das faixas de sensibilidade (78% a 83%) e especificidade (80% a 90%) do resumo de Karanasios 2022; são limites, não pares reais de estudo, e o exame físico teve só 2 estudos com risco de viés alto ou incerto. Duas ressalvas: o protocolo da revisão (preensão máxima ou sem dor) está a conferir, e, se os estudos compararam doentes com saudáveis, a RV superestima o poder de separar a tendinopatia do túnel radial, justamente o diferencial da dor que desce pelo antebraço. A probabilidade de 30% é do caso fictício. O teste sobe a probabilidade em 33 a 48 pontos e ainda assim não fecha o diagnóstico.",
+   "distratores": {
+    "A": "Achar que teste positivo não muda nada quando a suspeita é baixa; com 30% antes, o positivo sobe 33 a 48 pontos.",
+    "C": "Tratar a razão de verossimilhança como prova; ela multiplica a chance, não a transforma em certeza.",
+    "D": "Confundir sensibilidade com probabilidade pós-teste (valor preditivo)."
+   },
+   "referencia": [
+    "Karanasios2022"
+   ]
+  },
+  {
+   "id": "q2",
+   "objetivo": 1,
+   "nivel": "avaliação",
+   "cenario": "Joana, 49 anos, digitadora, tem dor no epicôndilo lateral há 6 semanas. Pela história, você estima em 80% a chance de tendinopatia lateral. No exame, o Cozen é negativo e a preensão não cai ao estender o cotovelo (razão de verossimilhança negativa entre 0,19 e 0,28 para a preensão).",
+   "pergunta": "Qual leitura do exame é a mais defensável?",
+   "opcoes": {
+    "A": "Exclui a tendinopatia lateral: dois testes negativos já bastam para isso.",
+    "B": "Não muda nada: testes de cotovelo não têm valor diagnóstico nenhum.",
+    "C": "Cai para cerca de 43% a 53%: não exclui; reexaminar os diferenciais.",
+    "D": "Confirma radiculopatia cervical como causa da dor."
+   },
+   "gabarito": "C",
+   "comentario": "Chance antes: 0,80 ÷ 0,20 = 4. Multiplicada por 0,19 dá 0,76 (43%); por 0,28 dá 1,12 (53%): uma queda de 27 a 37 pontos, que derruba a suspeita sem excluir. A conta usa só a preensão: o Cozen tem sensibilidade de 91%, mas a especificidade não está no resumo de Karanasios 2022, e sem ela não há razão de verossimilhança. Na revisão de Zwerus 2018, nenhum teste do cotovelo, sozinho, confirma ou exclui. Com suspeita alta, o teste negativo reabre a conversa, não fecha o caso.",
+   "distratores": {
+    "A": "Somar testes negativos como se cada um excluísse sozinho, sem considerar a probabilidade antes do teste.",
+    "B": "Confundir 'não confirma nem exclui sozinho' com 'não vale nada'; a preensão mexe a probabilidade.",
+    "D": "Trocar a ausência de um diagnóstico pela presença de outro, sem nenhum achado cervical."
+   },
+   "referencia": [
+    "Karanasios2022",
+    "Zwerus2018"
+   ]
+  },
+  {
+   "id": "q3",
+   "objetivo": 2,
+   "nivel": "aplicação",
+   "cenario": "Marcos, 55 anos, tem dor lateral no cotovelo há 3 meses. Traz um laudo de ultrassom: \"entesófito no epicôndilo lateral; tendão extensor comum de espessura normal; sem sinal ao Doppler\". Ele diz: \"Então é o esporão que dói?\"",
+   "pergunta": "Qual explicação os dados sustentam melhor?",
+   "opcoes": {
+    "A": "Não confirma: esporão é comum sem dor, e Doppler ausente pede outra causa.",
+    "B": "O esporão explica a dor; o melhor é avaliar a retirada cirúrgica.",
+    "C": "O laudo normal exclui qualquer problema no tendão; a dor é muscular.",
+    "D": "Pedir ressonância para graduar a gravidade da lesão antes de qualquer conduta."
+   },
+   "gabarito": "A",
+   "comentario": "Em Krogh 2020 (resumo), o esporão estava em 50% da população sem dor e em 45% dos cotovelos contralaterais sem dor; como teste, a razão de verossimilhança positiva fica perto de 1,6 (calculada), que quase não muda a probabilidade. O Doppler médio foi de 3,47 (escala 0 a 4) nos cotovelos doentes, e os autores escrevem que Doppler ausente em suspeita de epicondilite deve levantar outros diagnósticos. Desenho de duas portas, só resumo: certeza baixa para acurácia.",
+   "distratores": {
+    "B": "Tomar um achado comum em quem não tem dor como causa da dor.",
+    "C": "Ler laudo 'normal' como exclusão: o ultrassom tem sensibilidade de 53% a 100% (Karanasios 2022), e a dor pode vir de outra estrutura.",
+    "D": "Achar que a imagem mede gravidade; nenhum achado do ultrassom se correlacionou com dor, PRTEE ou duração em Krogh 2020."
+   },
+   "referencia": [
+    "Krogh2020",
+    "Karanasios2022"
+   ]
+  },
+  {
+   "id": "q4",
+   "objetivo": 2,
+   "nivel": "avaliação",
+   "cenario": "Lúcia, 47 anos, está em reabilitação para tendinopatia lateral. Em 10 semanas, o PRTEE caiu de 50 para 25. Por conta própria, refez o ultrassom: o espessamento é o mesmo e o Doppler passou de grau 3 para grau 2. Ela pergunta se o tendão \"não sarou\" e se deveria fazer algo para \"apagar\" o Doppler.",
+   "pergunta": "Qual resposta é a mais defensável?",
+   "opcoes": {
+    "A": "Manter o tratamento até o Doppler zerar, porque o vaso é a lesão ativa.",
+    "B": "Fazer uma injeção de corticoide para reduzir o Doppler.",
+    "C": "Repetir o ultrassom a cada 4 semanas para guiar a progressão.",
+    "D": "O desfecho é a melhora clínica; o ultrassom não acompanha a dor."
+   },
+   "gabarito": "D",
+   "comentario": "Ela caiu 25 pontos, 50% do PRTEE inicial, acima dos 37% de 'muito melhor' de Poltawski e Watson 2011 (resumo; meta calculada). Em Krogh 2020, nenhum achado de ultrassom se correlacionou com dor, incapacidade, PRTEE ou duração. Em Couppé 2022, o corticoide reduziu a área de Power Doppler em 12 semanas sem ganho clínico, e o QuickDASH em 52 semanas ficou 15 pontos pior que o placebo (desfecho secundário, só resumo).",
+   "distratores": {
+    "A": "Tratar o Doppler como alvo terapêutico, sem dado de que reduzi-lo melhore o paciente.",
+    "B": "Escolher um tratamento por mudar a imagem; o corticoide reduziu o Doppler e não melhorou a função em 1 ano.",
+    "C": "Usar como guia uma medida que não acompanha os sintomas."
+   },
+   "referencia": [
+    "Krogh2020",
+    "Couppe2022",
+    "Poltawski2011"
+   ]
+  },
+  {
+   "id": "q5",
+   "objetivo": 3,
+   "nivel": "análise",
+   "cenario": "Paulo, 41 anos, analista de sistemas, tem dor lateral no cotovelo há 10 meses. Fez anti-inflamatório e repouso. Não tem dor cervical, sintomas de nervo nem dor intensa. Ele pergunta: \"Já passou tanto tempo; agora não melhora mais, certo?\"",
+   "pergunta": "Qual resposta os dados sustentam melhor?",
+   "opcoes": {
+    "A": "Depois de 6 meses o curso é ruim: a maioria não melhora mais.",
+    "B": "Depois de 6 meses, só melhora com injeção ou cirurgia.",
+    "C": "A chance de melhorar parece não depender do tempo de dor.",
+    "D": "O tempo de dor não importa: nenhum estudo achou associação."
+   },
+   "gabarito": "C",
+   "comentario": "Na meta-análise dos braços controle de 24 ensaios (Ikonen 2022, resumo), a melhora seguiu uma meia-vida de 2,5 a 3 meses, 89% estavam muito melhores ou recuperados em 1 ano (IC 95% 80% a 97%), e o tempo de sintoma antes da inclusão não mudou a trajetória. Há uma ressalva: na coorte de Smidt 2006 (resumo), duração longa se associou a mais dor em 12 meses. A meta-regressão compara médias de ensaios e a coorte compara pessoas; as duas leituras podem conviver. Por isso a resposta é 'parece', não 'nunca'.",
+   "distratores": {
+    "A": "Aplicar a ideia de 'cronificou' sem número; o curso observado é favorável mesmo em quem já tem meses de dor.",
+    "B": "Transformar a duração em indicação de procedimento, sem dado que sustente.",
+    "D": "Exagerar na direção oposta: Smidt 2006 associou duração longa a pior resultado em 12 meses."
+   },
+   "referencia": [
+    "Ikonen2022",
+    "Smidt2006"
+   ]
+  },
+  {
+   "id": "q6",
+   "objetivo": 3,
+   "nivel": "análise",
+   "cenario": "Teresa, 58 anos, começou com PRTEE de 30 (de 0 a 100). Depois de 8 semanas, está com 22. A mudança importante do PRTEE foi de 22% da linha de base para 'um pouco melhor' e 37% para 'muito melhor' (ou 7 e 11 pontos absolutos).",
+   "pergunta": "Qual leitura da mudança é a mais correta?",
+   "opcoes": {
+    "A": "Um pouco melhor: caiu 8, mais que 22% de 30; 'muito melhor' pediria 11.",
+    "B": "Sem mudança importante: abaixo de 11 pontos não conta.",
+    "C": "Muito melhor: passou dos 7 pontos da mudança mínima.",
+    "D": "Não dá para dizer sem um teste estatístico com valor de p abaixo de 0,05."
+   },
+   "gabarito": "A",
+   "comentario": "22% de 30 = 6,6 pontos; 37% de 30 = 11,1 pontos (cálculo a partir dos percentuais de Poltawski e Watson 2011, resumo; n = 57, certeza baixa). Ela caiu 8 pontos (27%): passa de 'um pouco melhor', não chega a 'muito melhor'. Em quem começa baixo, os percentuais e os pontos absolutos quase coincidem; em quem começa alto (PRTEE 58 a 60), 'muito melhor' exige mais de 20 pontos.",
+   "distratores": {
+    "B": "Usar o ponto absoluto de 'muito melhor' como se fosse o limiar mínimo.",
+    "C": "Confundir os dois critérios: 7 pontos é 'um pouco melhor', não 'muito melhor'.",
+    "D": "Confundir significância estatística com mudança importante para o indivíduo."
+   },
+   "referencia": [
+    "Poltawski2011"
+   ]
+  },
+  {
+   "id": "q7",
+   "objetivo": 3,
+   "nivel": "avaliação",
+   "cenario": "Roberto, 60 anos, contador e tenista recreativo, tem dor lateral no cotovelo direito há 8 meses, PRTEE de 70. Relata dor cervical que vai e volta e parestesia no polegar direito depois de digitar por horas. Pergunta quanto tempo vai levar.",
+   "pergunta": "Qual expectativa é a mais defensável?",
+   "opcoes": {
+    "A": "Prognóstico ruim pelo conjunto: o melhor é encaminhar logo para cirurgia.",
+    "B": "Curto prazo mais lento; a maioria melhora em 1 ano. Examinar cervical e nervo.",
+    "C": "Nenhuma diferença: fatores prognósticos não têm peso no indivíduo.",
+    "D": "Pedir ressonância cervical e do cotovelo antes de qualquer outra conduta."
+   },
+   "gabarito": "B",
+   "comentario": "Com o mesmo escore inicial, quem relata sintomas de nervo terminou 8 semanas de fisioterapia com 15 pontos a mais na escala visual de dor (IC 4,7 a 25,5; escala a conferir) (Waugh 2004, resumo e tabela reproduzida na aula de capacitação). Dor cervical concomitante e duração longa se associaram a pior resultado em 12 meses (Smidt 2006, resumo); na meta-análise de braços controle, o tempo de dor não mudou a trajetória, e 89% estavam muito melhores ou recuperados em 1 ano (Ikonen 2022, resumo). Todos com certeza baixa e sem validação. Parestesia no polegar com dor cervical pede exame cervical e neural antes de atribuir tudo ao cotovelo; esse exame é proposta clínica: não há acurácia desses testes no material da aula.",
+   "distratores": {
+    "A": "Transformar fatores de pior prognóstico em indicação cirúrgica, sem dado que sustente.",
+    "C": "Ignorar fatores com associação consistente, ainda que de certeza baixa, e o sinal que reabre o diferencial.",
+    "D": "Pedir imagem antes do exame clínico, quando ela não muda a primeira conduta."
+   },
+   "referencia": [
+    "Waugh2004",
+    "Smidt2006",
+    "Ikonen2022"
+   ]
+  },
+  {
+   "id": "q8",
+   "objetivo": 1,
+   "nivel": "avaliação",
+   "cenario": "Helena, 50 anos, costureira, tem dor no epicôndilo lateral direito há 3 meses, pior ao carregar sacolas, sem dor cervical nem parestesia. Cozen positivo. Pela história e pelo exame, você estima em 75% a chance de tendinopatia lateral. Uma colega sugere medir a preensão com o cotovelo fletido e estendido \"para confirmar\" (razão de verossimilhança positiva de 3,9 a 8,3; negativa de 0,19 a 0,28).",
+   "pergunta": "O que esse teste acrescenta, neste caso?",
+   "opcoes": {
+    "A": "Muito: sem o teste positivo, o diagnóstico não está confirmado.",
+    "B": "Pouco se der positivo (92% a 96%); se der negativo, cai para 36% a 46% e pede reexame.",
+    "C": "Nada: com 75% antes, nenhum resultado muda a probabilidade.",
+    "D": "Se der negativo, exclui a tendinopatia; o próximo passo é a ressonância."
+   },
+   "gabarito": "B",
+   "comentario": "Chance antes: 0,75 ÷ 0,25 = 3. Positivo: 3 × 3,9 = 11,7 (92%); 3 × 8,3 = 24,9 (96%), uma subida de 17 a 21 pontos. Negativo: 3 × 0,19 = 0,57 (36%); 3 × 0,28 = 0,84 (46%), uma queda de 29 a 39 pontos. Com suspeita alta, o positivo quase não acrescenta e o negativo derruba sem excluir: o resultado que muda a conduta é o negativo, e o que decide é o limiar de ação (tratar como tendinopatia ou investigar outra causa). As razões de verossimilhança foram calculadas dos limites das faixas do resumo de Karanasios 2022 (protocolo e espectro a conferir); os 75% são do caso fictício.",
+   "distratores": {
+    "A": "Achar que o diagnóstico clínico precisa de um teste positivo para valer; com 75% antes, o positivo sobe só 17 a 21 pontos.",
+    "C": "Exagerar na direção oposta: o negativo derruba a probabilidade em 29 a 39 pontos.",
+    "D": "Tratar o negativo como exclusão e pular para a imagem; ele deixa 36% a 46%, o que pede reexame dos diferenciais, não ressonância."
+   },
+   "referencia": [
+    "Karanasios2022"
+   ]
+  }
+ ]
 }

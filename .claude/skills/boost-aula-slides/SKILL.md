@@ -92,6 +92,8 @@ erram:
 - `olho` curto (cabe em uma linha antes da pílula), `numero` só com o número (o intervalo vai no
   `rotulo`), `rotulo` de gráfico em uma linha e destaques com coordenadas entre 0 e 1: o script
   reprova o que passar disso, porque no slide vira texto encavalado;
+- em gráfico de linha, conta ilustrativa ou projeção vai com `"tracejado": true` e o dado observado com
+  `intervalo` (barras de erro), para não desenhar conta igual a dado (`references/deck-json.md`, linha);
 - notas na voz do deck de referência (`references/voz-das-notas.md`): papel do slide, o que dizer com os
   números e a origem, o que não antecipar, "Interação: ..." com o roteiro, e "proposta clínica" onde
   nenhum ensaio testou.
@@ -118,7 +120,13 @@ sem fonte, fonte do rodapé ausente das referências, figura inexistente, sem ci
 resolução, slide sem notas, último slide cronometrado que não é o bilhete de saída (`chat`), falta de
 referências, e figura mostrada antes de qualquer pergunta no bloco. **Avisa**: duração abaixo de 28 min, 6 a 7 min sem interação, 70 a 100
 palavras, menos de 25% do tempo em atividade, objetivos com verbo fraco, figura sem legenda, falta de
-âncora/desafio, referências sem `conferido`. Corrija todo erro; decida conscientemente cada aviso.
+âncora/desafio, referências sem `conferido`, nota de enquete que manda chamar pelo nome quem votou (o
+Meet não mostra o voto de cada um). Corrija todo erro; decida conscientemente cada aviso.
+
+Além da soma de `tempo_s`, o validador **estima o tempo real**: palavras faladas das notas a ~130 por
+minuto (sem "Tempo:", sem a rubrica "Interação:" e as ordens de condução, sem o pré-aula da capa) mais a
+`duracao_s` da interação; avisa (não reprova) se o total passa de 35 min ou um slide passa de 1,5 × o
+seu `tempo_s` com 30 s ou mais de sobra.
 
 ### 6. Renderizar e OLHAR cada slide
 
@@ -160,10 +168,12 @@ python3 SK/scripts/materiais.py aulas/<aula>/04_aula/deck.json            # lê 
 python3 SK/scripts/materiais.py deck.json --questoes outro.json --saida pasta/
 ```
 
-Gera `enquetes.md` (texto pronto para criar e salvar as enquetes no Meet antes da aula, com gabarito e o
-roteiro de todas as interações), `pre_pos_teste.md` (questões em blocos prontos para colar no Google
+Gera `enquetes.md` (texto pronto para criar e salvar as enquetes no Meet antes da aula, com gabarito, o
+roteiro de todas as interações e a seção "Plano B e gravação", feita de `interacao.plano_b` e
+`interacao.gravacao`: escreva esses campos no deck.json, nunca à mão no .md, que é reescrito), `pre_pos_teste.md` (questões em blocos prontos para colar no Google
 Forms, mais o gabarito comentado) e `resumo_aluno.md` (objetivos, pontos-chave com números e fontes,
-algoritmo de decisão, propostas clínicas, referências; a partir de `meta.resumo`). O script também
+algoritmo de decisão, propostas clínicas, referências; a partir de `meta.resumo`; avisa acima de 900
+palavras de texto corrido, sem contar a lista de referências, DOI, PMID e URLs). O script também
 confere a forma das questões (pistas, gabarito concentrado, distrator sem explicação), se cada objetivo
 tem questão e se alguma questão repete uma enquete da aula. Releia os três: o
 script confere a forma, não o conteúdo clínico.

@@ -3,16 +3,16 @@
 **Trilha:** Boost Education · cotovelo e mão, aula 1 de 3 (versão 1, 24/11/2026; passada de conferência quando os PDFs chegarem).
 **Apresentador:** Daniel Santos.
 **Público:** fisioterapeutas da equipe ILLIC, de recém-formados a especialistas em membro superior; aula única em camadas (núcleo exigente, âncora "Para começar", desafio por bloco).
-**Duração-alvo:** 32 min (teto 35). Deck: 26 slides cronometrados + referências, 33:40, já com os debates por nome, a instrução e a volta das salas (revisão de 24/11/2026: a versão anterior marcava 32:00, mas fala e interações somavam cerca de 35 min).
+**Duração-alvo:** 32 min (teto 35). Deck: 26 slides cronometrados + referências, 33:55, já com os debates, a instrução e a volta das salas (revisão de 24/11/2026: a versão anterior marcava 32:00, mas fala e interações somavam cerca de 35 min; segunda rodada: 33:40 → 33:55, com a classificação da irritabilidade no slide 3 e o mecanismo no slide 13).
 **Base:** aula de capacitação "Tendinopatia lateral do cotovelo", slides 1 a 44 (autor: Daniel), com as correções de `00_mapa_evidencias.md`, seção 2, usadas como revelações (slides 6, 13, 15, 16, 21 e 22).
 **Pergunta clínica:** em adultos com dor lateral no cotovelo, quanto valem a história, os testes e a imagem para confirmar a tendinopatia lateral e afastar diferenciais (PIRD); qual o curso natural e que fatores predizem pior evolução em 6 a 12 meses (PECO).
 **Caso:** Renata, 46 anos, cabeleireira, quatro meses de dor, chega querendo infiltração ou ressonância. **Revés** (slide 17): na semana 6 o PRTEE caiu 9 pontos (passa a DMCI absoluta de 7, não a proporcional de 22% ≈ 13) e surgiu formigamento no antebraço. **Ponte** (slide 25): ela volta a pedir a infiltração, que abre a aula 2.
 
 ## Objetivos (aplicação, análise, avaliação)
 
-1. **Interpretar** quanto vale cada teste (sensibilidade, especificidade, razões de verossimilhança) e **calcular** a probabilidade pós-teste antes de fechar o diagnóstico ou reabrir o diferencial → interação: slides 5 (enquete), 7 (chat em cascata com a conta), 8 e 9 · pós-teste: q1, q2.
+1. **Interpretar** quanto vale cada teste (sensibilidade, especificidade, razões de verossimilhança) e **calcular** a probabilidade pós-teste antes de fechar o diagnóstico ou reabrir o diferencial → interação: slides 5 (enquete), 7 (chat em cascata com a conta), 8 e 9 · pós-teste: q1, q2, q8 (suspeita alta: o que o teste acrescenta).
 2. **Decidir** quando a imagem acrescenta algo e **explicar** o laudo pela frequência dos achados em quem não tem dor → interação: slides 10 (chat), 11 (mão na câmera), 12 (enquete), 13 · pós-teste: q3, q4.
-3. **Estimar** o prognóstico com o curso natural e os sinais de pior evolução e **calcular** a meta individual do PRTEE pela diferença mínima importante → interação: slides 14 (enquete), 18 (salas de 3), 19 · pós-teste: q5, q6, q7.
+3. **Estimar** o prognóstico com o curso natural e os sinais de pior evolução e **calcular** a meta individual do PRTEE pela DMCI (diferença mínima clinicamente importante) → interação: slides 14 (enquete), 18 (salas de 3), 19 · pós-teste: q5, q6, q7.
 
 Decisões construídas (4): o diferencial e quanto vale cada teste (bloco 1); o que o laudo significa (bloco 2); prognóstico, curso natural e sinais de pior evolução, com a meta do PRTEE pela DMCI aplicada no revés (bloco 3); e, curto, o que do trabalho dela tem evidência de risco (bloco 4, onde entra a única figura aprovada).
 
@@ -30,12 +30,13 @@ Decisões construídas (4): o diferencial e quanto vale cada teste (bloco 1); o 
 | Ikonen2022 | meta-análise de braços controle (24 ECRs) | 89% (IC 80–97%) muito melhor/recuperado em 1 ano; meia-vida 2,5–3 meses; duração prévia sem efeito | linha nativa (conta de meia-vida, s15) | só resumo |
 | Smidt2002 | ECR (corticoide × fisio × espera) | espera: 32% em 6 sem, 83% em 52 sem | — (fala, s15) | só resumo |
 | Smidt2006 | coorte prognóstica (349) | duração longa, dor cervical e dor intensa → pior em 12 meses (sem tamanho) | — | só resumo |
-| Waugh2004 | coorte prognóstica (83), 8 semanas | nervo +15,08 dor (4,67–25,50); feminino +8,92 DASH (3,32–14,52) | tabela nativa (s16) | resumo + print aula base s40 |
+| Waugh2004 | coorte prognóstica (83), 8 semanas | nervo +15,08 na EVA de dor (4,67–25,50; escala a conferir); feminino +8,92 DASH (3,32–14,52) | tabela nativa (s16) | resumo + print aula base s40 |
 | Coombes2015 | coorte prognóstica (41), 1 ano | limiar de dor ao frio único preditor consistente; modelo explica 9% do PRTEE | tabela nativa (s16) | resumo + print aula base s21 |
 | Poltawski2011 | estudo de DMCI (57) | PRTEE: 22% (7 pontos) "um pouco melhor"; 37% (11 pontos) "muito melhor" | tabela nativa (s18, s19) | só resumo |
 | Bretschneider2022 | revisão sistemática com meta-análise (coortes) | rotação OR 1,85 (1,10–3,10); SI OR 1,75 (1,11–2,78); repetição 0,71 (0,42–1,20); nenhum OR > 2,5 | **Bretschneider2022_fig2** (s21) | **texto completo** (p.6 Fig. 2; p.7 Tab. 3; p.8 Tab. 4) |
 | Sanders2015 | coorte populacional | 3,4 por 1000/ano (3,3–3,5); 40–49 anos 9,0/1000; recorrência em 2 anos 8,5% | — (tabela s22) | resumo + print aula base s2 (Tab. 2) |
-| Coombes2013 | ECR fatorial | recidiva 54% corticoide × 12% placebo em 1 ano | — (tabela s22) | só resumo |
+| Bunata2007 | anatômico em cadáver (85 cotovelos) | o ECRB atrita no capítulo à medida que o cotovelo estende (vulnerabilidade, não causa) | — (só nas notas do s13) | só resumo |
+| Rio2021 | revisão sistemática com meta-análise (30 estudos, 18 de cotovelo lateral) | hiperalgesia local e regional (evidência moderada), não remota, no membro superior | — (só nas notas do s13) | só resumo |
 | Lucado2022 | diretriz JOSPT | lista de diferenciais (via aula base s43, atribuição provável) | — | resumo sem números |
 
 ## Linha do tempo
@@ -44,37 +45,39 @@ Decisões construídas (4): o diferencial e quanto vale cada teste (bloco 1); o 
 |---|---|---|---|---|---|
 | 0:00 | abertura | — | 1 Capa | — | |
 | 0:30 | abertura | — | 2 Combinados (cartoes) | mão na câmera de teste (20 s) | |
-| 1:15 | abertura | — | 3 Renata quer a infiltração ou a ressonância (citacao) | — | |
-| 2:15 | abertura | gancho | 4 A sua primeira resposta (enquete) | enquete 1 (45 s) + 2 pessoas | |
-| 3:55 | diagnóstico | prever | 5 O que o Cozen positivo permite afirmar? (enquete) | enquete 2 (50 s) + 1 pessoa | âncora nas notas: o que é sensibilidade |
-| 5:15 | diagnóstico | evidência | 6 O Cozen é sensível; a preensão estendida é o que inclina (tabela) | — | desafio nas notas: viés de incorporação do Cozen; ressalva de protocolo e espectro |
-| 6:40 | diagnóstico | decidir | 7 Qual é a probabilidade agora? (pergunta) | chat em cascata (45 s) | âncora: receita chance × RV; desafio: e com RV− 0,28? |
-| 8:00 | diagnóstico | conferir | 8 Com suspeita alta, o positivo quase não acrescenta; o negativo derruba, mas não exclui (tabela) | — | desafio nas notas: em que pré-teste o negativo leva abaixo de 50%? |
-| 9:10 | diagnóstico | decidir | 9 O que faria você reabrir o diagnóstico, com sinais de alerta (tabela) | — | |
-| 10:25 | imagem | prever | 10 De cada 10 sem dor, quantos têm entesófito? (pergunta) | chat em cascata (35 s) | âncora nas notas: o que é entesófito |
-| 11:15 | imagem | evidência | 11 Metade de quem não tem dor tem esporão (barras) | mão na câmera (20 s, aos 55 s) | desafio nas notas: RV de duas portas na clínica |
-| 12:40 | imagem | decidir | 12 "E a ressonância?" (enquete) | enquete 3 (45 s) + 1 pessoa | |
-| 13:50 | imagem | conferir | 13 O laudo descreve o tendão; não mede a dor (tabela) | — | revelação: RM 90–100% da aula base × faixas e viés |
-| 15:10 | prognóstico | prever | 14 Quanto o tempo resolve? (enquete) | enquete 4 (45 s) + 1 pessoa | |
-| 16:15 | prognóstico | evidência | 15 Metade dos que ainda têm sintoma melhora a cada 3 meses (linha: conta cinza + observado) | — | revelação: "mais da metade com sintomas em 1 ano" |
-| 17:40 | prognóstico | evidência | 16 Os sinais de pior prognóstico pesam pouco (tabela) | — (mão na câmera retirada) | desafio nas notas: meta-regressão × coorte |
-| 18:55 | prognóstico | — | 17 Revés: melhorou um pouco, e formiga (citacao escura) | — | |
-| 19:35 | prognóstico | decidir | 18 A Renata melhorou o suficiente? (tarefa) | salas de 3 (4 min; bloco de 6 min com instrução e volta) | âncora: 22% de 58 ≈ 13; desafio: qual régua com quem começa alto? |
-| 25:35 | prognóstico | conferir | 19 Pela régua absoluta, melhorou; pela proporcional, ainda não (tabela) | frase para ela, dita por uma pessoa | |
-| 26:55 | trabalho | prever | 20 Repetir, girar ou dobrar? (pergunta) | chat em cascata (30 s) | âncora: OR acima de 1 = mais chance |
-| 27:45 | trabalho | evidência | 21 Repetir sozinho não se associou; força e rotação, sim (figura) | — | desafio no cartão: o SI inclui a frequência; nas notas: certeza alta com AMSTAR 2 criticamente baixa? |
-| 29:15 | trabalho | conferir | 22 O que eu ensinei e o que a evidência diz hoje (tabela com veredito) | — | revelação: incidência por 1000, 54% de recidiva (a conferir) |
-| 30:20 | fechamento | recuperar | 23 Sem voltar os slides: três números (pergunta) | chat em cascata (40 s) | |
-| 31:15 | fechamento | conferir | 24 Três coisas para levar (sintese) | — | |
-| 32:05 | fechamento | — | 25 Ponte: Renata quer a infiltração (citacao escura) | — | |
-| 32:40 | fechamento | saída | 26 Bilhete de saída (pergunta) | chat (45 s) | |
-| 33:40 | — | — | 27 Referências (apoio, fora do tempo) | — | |
+| 1:15 | abertura | — | 3 Renata quer a infiltração ou a ressonância (citacao) | — | notas: irritabilidade moderada (nível IV), distribuição localizada com bandeira cervical |
+| 2:30 | abertura | gancho | 4 A sua primeira resposta (enquete) | enquete 1 (45 s) + 2 voluntários (menos e mais votada) | |
+| 4:10 | diagnóstico | prever | 5 O que o Cozen positivo permite afirmar? (enquete) | enquete 2 (50 s) + 1 voluntário (A ou C) | âncora nas notas: o que é sensibilidade |
+| 5:30 | diagnóstico | evidência | 6 O Cozen é sensível; a preensão estendida é o que inclina (tabela) | — | desafio nas notas: viés de incorporação do Cozen; ressalva de protocolo e espectro |
+| 6:55 | diagnóstico | decidir | 7 Qual é a probabilidade agora? (pergunta) | chat em cascata (45 s) | âncora: receita chance × RV; desafio: e com RV− 0,28? |
+| 8:15 | diagnóstico | conferir | 8 Com suspeita alta, o positivo quase não acrescenta; o negativo derruba, mas não exclui (tabela) | — | desafio nas notas: em que pré-teste o negativo leva abaixo de 50%? |
+| 9:25 | diagnóstico | decidir | 9 O que faria você reabrir o diagnóstico, com sinais de alerta (tabela) | — | |
+| 10:40 | imagem | prever | 10 De cada 10 sem dor, quantos têm entesófito? (pergunta) | chat em cascata (35 s) | âncora nas notas: o que é entesófito |
+| 11:30 | imagem | evidência | 11 Metade de quem não tem dor tem esporão (barras) | mão na câmera (20 s, aos 55 s) | desafio nas notas: RV de duas portas na clínica |
+| 12:55 | imagem | decidir | 12 "E a ressonância?" (enquete) | enquete 3 (45 s) + 1 voluntário (A, C ou D) | |
+| 14:05 | imagem | conferir | 13 O laudo descreve o tendão; não mede a dor (tabela) | — | revelação: RM 90–100% da aula base × faixas e viés; notas: mecanismo em duas frases (Bunata 2007, Rio 2021) |
+| 15:35 | prognóstico | prever | 14 Quanto o tempo resolve? (enquete) | enquete 4 (45 s) + 1 voluntário (A ou B) | |
+| 16:40 | prognóstico | evidência | 15 Metade dos que ainda têm sintoma melhora a cada 3 meses (linha: conta tracejada + observado com barra de IC) | — | revelação: "mais da metade com sintomas em 1 ano" |
+| 18:05 | prognóstico | evidência | 16 Os sinais de pior prognóstico pesam pouco (tabela) | — (mão na câmera retirada) | desafio nas notas: meta-regressão × coorte |
+| 19:20 | prognóstico | — | 17 Revés: melhorou um pouco, e formiga (citacao escura) | — | |
+| 20:00 | prognóstico | decidir | 18 A Renata melhorou o suficiente? (tarefa) | salas de 3 (4 min; bloco de 6 min com instrução e volta) | âncora: 22% de 58 ≈ 13; desafio: qual régua com quem começa alto? |
+| 26:00 | prognóstico | conferir | 19 Pela régua absoluta, melhorou; pela proporcional, ainda não (tabela) | frase para ela, dita por uma pessoa | |
+| 27:20 | trabalho | prever | 20 Repetir, girar ou dobrar? (pergunta) | chat em cascata (30 s) | âncora: OR acima de 1 = mais chance |
+| 28:10 | trabalho | evidência | 21 Repetir sozinho não se associou; força e rotação, sim (figura) | — | desafio no cartão: o SI inclui a frequência; nas notas: certeza alta com AMSTAR 2 criticamente baixa? |
+| 29:40 | trabalho | conferir | 22 O que eu ensinei e o que a evidência diz hoje (tabela com veredito) | — | revelação: incidência por 1000; o 54% fica em aberto ("resposta na aula 2") |
+| 30:45 | fechamento | recuperar | 23 Sem voltar os slides: três números (pergunta) | chat em cascata (40 s) | |
+| 31:40 | fechamento | conferir | 24 Três coisas para levar (sintese) | — | |
+| 32:30 | fechamento | — | 25 Ponte: Renata quer a infiltração (citacao escura) | — | |
+| 32:55 | fechamento | saída | 26 Bilhete de saída (pergunta) | chat (45 s) | |
+| 33:55 | — | — | 27 Referências (apoio, fora do tempo) | — | |
 
-Linha do tempo do validador: `●·●●●·●●··●·●●·●···●●●●●··●●··●·●●` (minutos com e sem interação); 12 interações em 5 formatos, primeira aos 0:30, 33% do tempo em atividade, maior trecho sem interação de cerca de 3 min 40 s (slides 15 a 17).
+Linha do tempo do validador: `●·●●●·●●··●●●●·●●···●●●●···●··●●●●` (minutos com e sem interação); 12 interações em 5 formatos, primeira aos 0:30, 32% do tempo em atividade, maior trecho sem interação de cerca de 3 min 20 s (slides 15 a 17).
 
-Conta do tempo real (revisão de 24/11/2026): notas com 2.810 palavras (incluindo rubricas e o pré-aula da capa) ≈ 21,6 min a 130 palavras/min, cerca de 18,4 min descontando 15% de rubricas; mais 11,0 min de interação declarada e cerca de 2,5 min de debates por nome e logística das salas, já embutidos nos tempos dos slides 4, 5, 12, 14 e 18. Estimativa: 33 a 35 min. Cortes feitos: enquetes de 60 para 45–50 s; 2 pessoas no slide 4 (eram 4) e 1 nos slides 5, 12 e 14; 30 s de silêncio e uma conta só no slide 7; tarefa das salas com 2 itens (a frase foi para o slide 19); mão na câmera do slide 16 retirada (a resposta está na tabela); bilhete de saída com 3 leituras.
+Tempo estimado pelo validador (segunda rodada): fala das notas a 130 palavras/min, sem rubricas, mais as interações declaradas = **32:06** (entre 30 e 35); somando cerca de 2 min de voluntários das enquetes e da frase do slide 19, fica perto de 34 min, dentro do teto. Conta do tempo real (primeira revisão, 24/11/2026): notas com 2.810 palavras (incluindo rubricas e o pré-aula da capa) ≈ 21,6 min a 130 palavras/min, cerca de 18,4 min descontando 15% de rubricas; mais 11,0 min de interação declarada e cerca de 2,5 min de debates por nome e logística das salas, já embutidos nos tempos dos slides 4, 5, 12, 14 e 18. Estimativa: 33 a 35 min. Cortes feitos: enquetes de 60 para 45–50 s; 2 pessoas no slide 4 (eram 4) e 1 nos slides 5, 12 e 14; 30 s de silêncio e uma conta só no slide 7; tarefa das salas com 2 itens (a frase foi para o slide 19); mão na câmera do slide 16 retirada (a resposta está na tabela); bilhete de saída com 3 leituras.
 
-**Salas e gravação:** as salas do Meet não são gravadas. O slide 18 traz "Na gravação: pause e faça em 4 min"; o trecho sai na edição. O porta-voz escreve num bloco de notas e cola no chat principal ao voltar (o chat da sala não volta). Plano B sem salas: chat em cascata com a conta, 2 min (em `enquetes.md`).
+**Salas e gravação:** as salas do Meet não são gravadas. O slide 18 traz "Na gravação: pause e faça em 4 min"; o trecho sai na edição. O porta-voz escreve num bloco de notas e cola no chat principal ao voltar (o chat da sala não volta). Plano B sem salas: chat em cascata com a conta, 2 min. Tudo isso está nos campos `interacao.gravacao` e `interacao.plano_b` do slide 18 e sai sozinho na seção "Plano B e gravação" de `enquetes.md`.
+
+**Enquetes no Meet:** durante a aula o Meet mostra só a contagem, não quem votou em quê. Em todas as enquetes, perguntar quem votou na opção menos votada (ou na opção que interessa) e topa defender em 15 s, de microfone aberto, e dizer o nome de quem se apresentar.
 
 ## Revelações (a aula de capacitação × a evidência hoje)
 
@@ -85,12 +88,12 @@ Ditas sem humilhar a aula base: a fala é "eu ensinei assim, seguindo a diretriz
 - Slide 15: "mais da metade segue com sintomas em 1 ano" × 89% muito melhores: desfechos diferentes.
 - Slide 16: a tabela de Coombes 2015 (frio) estava no bloco de patoanatomia; é estudo prognóstico e explica 9% do PRTEE.
 - Slide 21: "sobrecarga repetitiva" → repetição isolada inconclusiva (IC 0,42 a 1,20 não exclui aumento); força com duração (Strain Index, que inclui a frequência) e rotação, sim; mesmas 2 coortes.
-- Slide 22: incidência de 3% ao ano era 3,4 por 1000 (a própria tabela no slide 2 da aula base dizia "per 1000"); "recorrência de até 54%": o único 54% achado é recidiva em 1 ano após corticoide (matiza, a conferir: a ref. da diretriz e o RR invertido de Coombes 2013 não foram verificados); o slide tem coluna de veredito (corrige / matiza / a conferir) para não contradizer o slide 15.
+- Slide 22: incidência de 3% ao ano era 3,4 por 1000 (a própria tabela no slide 2 da aula base dizia "per 1000"); "recorrência de até 54%": a conferir; o slide diz só que o único 54% do lote responde a outra pergunta e que a resposta vem na aula 2 (o número do corticoide é a revelação da aula 2); nas notas, a recorrência de 8,5% em 2 anos de Sanders 2015. O slide tem coluna de veredito (corrige / matiza / a conferir) para não contradizer o slide 15.
 
 ## O que fica de fora (e vai para o resumo ou para a aula 2)
 
-- Mecanismo (entese com compartilhamento de carga, contato do ECRB com o capítulo de Bunata 2007, hipovascularidade, tendinose, processamento da dor local e regional de Rio 2021): fica para as notas da aula 2, quando a carga for prescrita.
-- Classificação em 6 eixos (print s42 da diretriz, atribuição provável): a faixa de PRTEE-função da aula base se sobrepõe ("> 30" × "21–34"); não projetar antes do PDF. A Renata é irritabilidade IV (moderada) e distribuição tipo 1 com bandeira cervical, dito só nas notas.
+- Mecanismo: entra só em duas frases nas notas do slide 13 (contato do ECRB com o capítulo ao estender, Bunata 2007, vulnerabilidade e não causa; hiperalgesia local e regional, não remota, Rio 2021; os dois só resumo). Entese com compartilhamento de carga, hipovascularidade e tendinose ficam fora da v1 da trilha (sem fonte conferida no lote).
+- Classificação em 6 eixos (print s42 da diretriz, atribuição provável): a faixa de PRTEE-função da aula base se sobrepõe ("> 30" × "21–34"); não projetar antes do PDF. A Renata é irritabilidade IV (moderada) e distribuição tipo 1 com bandeira cervical: dito nas notas do slide 3 e no algoritmo do resumo, porque a aula 2 escolhe a fase pela irritabilidade.
 - Regra de predição de Vicenzino 2009 (idade < 49, preensão > 112 N e < 336 N): a Renata preenche os três critérios, mas todas as +LR têm IC que inclui 1. Bom desafio para a aula 2 (MWM).
 - Incidência por faixa etária (barras de Sanders 2015) e fatores de risco de Park e van Rijn.
 - Curso além de 1 ano ("até 20% em 3 a 5 anos", "até 55% > 2 anos"): sem fonte no lote.
@@ -104,7 +107,8 @@ Ditas sem humilhar a aula base: a fala é "eu ensinei assim, seguindo a diretriz
 - Triagem de sinais de alerta: trauma ou suspeita de fratura, febre ou articulação quente, dor noturna ou de repouso constante sem relação com carga, déficit neurológico progressivo, perda de peso ou história de câncer, bloqueio mecânico em jovem (slide 9; a conferir na diretriz).
 - Usar a RV da preensão na preensão sem dor e para separar de radiculopatia ou túnel radial (slides 6–7; protocolo e espectro a conferir).
 - Com PRTEE inicial alto, preferir a régua proporcional da DMCI (slide 19; o resumo de Poltawski diz que a DMCI foi maior nos mais graves; certeza baixa).
-- Acompanhar a preensão sem dor pela razão afetado/não afetado no mesmo protocolo, sem DMCI publicada (slide 19, notas).
+- Acompanhar a preensão sem dor pela razão afetado/não afetado no mesmo protocolo, sem DMCI publicada (slide 19, notas: 38% → 44%).
+- Classificar a irritabilidade pela tabela que a aula de capacitação atribui à diretriz (slide 3, notas; atribuição provável, a conferir no PDF de Lucado 2022).
 - Imagem só se não melhorar no prazo ou surgir sinal atípico (slides 12 e 13; critério das notas da aula base, atribuição provável à diretriz, a conferir).
 
 ---
@@ -158,4 +162,4 @@ Dados fixos da paciente para a aula 2 reaproveitar (todos **fictícios**, escolh
 - Prognóstico dito com números: cerca de 9 em 10 muito melhores em 1 ano; metade dos que ainda têm sintoma melhora a cada 2,5 a 3 meses (Ikonen 2022).
 - Metas do PRTEE pelas duas réguas: "um pouco melhor" = 7 pontos (≤ 51) ou 22% (≤ 45); "muito melhor" = 11 pontos (≤ 47) ou 37% (≤ 36). Na semana 6 (49), melhora mínima pela régua absoluta, ainda não pela proporcional; a turma discutiu qual régua usar com quem começa alto.
 - Modificadores presentes: sexo feminino, possível componente cervical/neural (sintoma de nervo novo), trabalho com rotação e força sustentada. Mudam a velocidade esperada, não o destino de 1 ano.
-- Números do corticoide reservados para a aula 2 (Smidt 2002: sucesso 92% em 6 semanas e 69% em 52 com corticoide, contra 91% com fisioterapia em 52; Coombes 2013: recidiva 54% × 12%; Bisset 2006: 47 de 65 sucessos com corticoide regrediram, 72% calculado; todos só resumo).
+- Números do corticoide reservados para a aula 2; o slide 22 deixa o "54%" da aula de capacitação em aberto, com "resposta na aula 2" (Smidt 2002: sucesso 92% em 6 semanas e 69% em 52 com corticoide, contra 91% com fisioterapia em 52; Coombes 2013: recidiva 54% × 12%; Bisset 2006: 47 de 65 sucessos com corticoide regrediram, 72% calculado; todos só resumo).

@@ -168,7 +168,7 @@
         "D": "Depende dele: se está confiante, joga."
       },
       "gabarito": "C",
-      "notas": "A primeira decisão da turma, antes de qualquer conteúdo. Interação: enquete 1, aberta por 1 minuto. Não comentar as opções antes do voto. Mostrar o resultado na tela e pedir a uma pessoa de cada opção que justifique em 15 segundos, chamando pelo nome. Não dar a resposta agora: dizer que a turma vai conferir o voto três vezes ao longo da aula. A opção C é a que o caso vai sustentar. Quem votou B acertou o tempo e esqueceu o resto; guardar isso para o bloco 2."
+      "notas": "A primeira decisão da turma, antes de qualquer conteúdo. Interação: enquete 1, aberta por 1 minuto. Não comentar as opções antes do voto. Mostrar o resultado na tela e pedir um voluntário de cada opção, começando pela menos votada: quem votou nela abre o microfone ou levanta a mão na câmera e justifica em 15 segundos; o Meet mostra só a contagem, não quem votou em quê. Não dar a resposta agora: dizer que a turma vai conferir o voto três vezes ao longo da aula. A opção C é a que o caso vai sustentar. Quem votou B acertou o tempo e esqueceu o resto; guardar isso para o bloco 2."
     },
     {
       "tipo": "pergunta",
@@ -480,7 +480,9 @@
       "tempo_s": 300,
       "interacao": {
         "tipo": "salas",
-        "duracao_s": 240
+        "duracao_s": 240,
+        "gravacao": "Antes de abrir, dizer: \"quem assiste à gravação, pause e faça a tarefa em 4 minutos\". Na edição, cortar o trecho de sala vazia.",
+        "plano_b": "Sem salas: chat em cascata com as 4 medidas e o corte, 2 minutos, todos enviam no 3. Ler duas baterias diferentes em voz alta."
       },
       "itens": [
         "Quais 4 medidas entram na liberação, e com que corte?",

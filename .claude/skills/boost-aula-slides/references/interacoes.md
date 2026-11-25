@@ -35,8 +35,13 @@ número ("O que você pode afirmar com este intervalo?").
 1. Leia a pergunta em voz alta, uma vez. **Não comente as opções**: qualquer comentário vira pista.
 2. Lance a enquete e diga o tempo: "1 minuto, ninguém fica sem votar".
 3. Aos 45 s: "faltam 15 segundos". Feche no tempo.
-4. Mostre o resultado na tela. Chame uma pessoa de cada opção pelo nome para justificar em 15 a 20 s.
-   Comece pela opção menos votada: quem está sozinho precisa de espaço.
+4. Mostre o resultado na tela. A enquete do Google Meet mostra ao vivo **só a contagem** de cada opção,
+   não quem votou em quê (conforme a edição do Workspace, um relatório com os nomes pode chegar por e-mail depois da aula). Por isso não
+   se chama pelo voto: peça **um voluntário de cada opção** ("quem votou B, abre o microfone ou levanta
+   a mão na câmera e defende em 15 segundos") e chame pelo nome quem se apresentar. Comece pela opção
+   menos votada: quem está sozinho precisa de espaço. Se ninguém vier, dê voz à opção sem expor
+   ninguém ("o que faria alguém votar B?") ou peça a justificativa em uma linha no chat, que mostra o
+   nome.
 5. **Não dê a resposta ainda** se a evidência vem nos próximos slides. Diga quando a turma vai conferir.
 6. Revele no slide de revelação (`revela`), dizendo o que sustenta a resposta e de onde vem, e volte a
    quem votou nas outras: "o que mudaria seu voto?".
@@ -86,6 +91,28 @@ fechar e ouvir os porta-vozes (o validador avisa se faltar). **Preparar antes:**
 configuradas com 3 pessoas (ou 2 a 4, `"tamanho"` na interação), com tempo limite. Salas também dependem
 da edição do Workspace.
 
+**Gravação e plano B (campos `gravacao` e `plano_b` da interação).** A aula é gravada para a equipe, e
+a gravação do Meet registra só a sala principal: quem assiste depois vê minutos de sala vazia e não
+ouve nada das salas. E a sala pode não abrir (conta sem salas temáticas, alguém que cai). As duas coisas
+se resolvem no deck.json, não à mão no `enquetes.md` (que o `materiais.py` reescreve a cada execução):
+
+```json
+"interacao": {
+  "tipo": "salas", "duracao_s": 240,
+  "gravacao": "Antes de abrir, dizer: \"quem assiste à gravação, pause e faça a tarefa em 4 minutos\". Na edição, cortar o trecho de sala vazia.",
+  "plano_b": "Sem salas: chat em cascata com a mesma entrega, 2 minutos, todos enviam no 3; ler duas respostas diferentes em voz alta. O bloco encolhe de 5 para 3 min."
+}
+```
+
+- `gravacao`: o que quem assiste ao vídeo faz enquanto as salas acontecem (pausar e fazer a tarefa, com o
+  tempo) e o que sai na edição. Vale a pena repetir a instrução na faixa de entrega do slide. Na volta,
+  leia as entregas em voz alta: só assim elas entram na gravação.
+- `plano_b`: o formato que substitui as salas, com a duração e o que acontece com a sobra de tempo.
+  Escreva para a aula concreta (a mesma entrega, em outro formato), não um texto genérico.
+- O `materiais.py` gera a seção "Plano B e gravação" do `enquetes.md` a partir desses campos e avisa
+  quando uma sala não tem `gravacao` ou `plano_b`. Os dois campos valem para qualquer interação (por
+  exemplo, `plano_b` de uma enquete: "sem enquete na conta, letra no chat em cascata").
+
 ## mao_camera
 
 **Quando:** para medir a sala em 15 segundos ("polegar para cima quem mede força de quadríceps com
@@ -115,6 +142,8 @@ a próxima aula e mostram o que ficou: é avaliação formativa (Black & Wiliam 
 - Abrir a enquete e preencher o silêncio falando. Silêncio de 60 s é o tempo de pensar.
 - Dar a resposta antes de a turma ver a evidência: mata o ciclo prever → ver.
 - Chamar só quem acertou, ou perguntar "quem errou?". Chame por opção, não por acerto.
+- Na enquete, chamar pelo nome alguém "que votou B": o Meet não mostra o voto de cada um ao vivo. Peça
+  voluntários por opção (o validador avisa quando a nota de uma enquete manda chamar pelo nome).
 - Sala sem entrega escrita: vira conversa solta e não volta nada.
 - Deixar a interação crescer: o cronômetro é do professor. A discussão boa que não cabe vai para o
   chat ou para a próxima aula.
