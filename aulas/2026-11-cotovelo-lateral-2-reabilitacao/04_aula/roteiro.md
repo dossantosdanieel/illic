@@ -1,12 +1,12 @@
 # Roteiro — Tendinopatia lateral do cotovelo: reabilitação com dose
 
-**Trilha:** Boost Education · cotovelo e mão, aula 2 de 3 (versão 1, 24/11/2026, revisada depois da revisão independente; passada de conferência quando os PDFs chegarem).
+**Trilha:** Boost Education · cotovelo e mão, aula 2 de 3 (versão 1, 25/11/2026, segunda rodada de correção: revisão independente completa e coerência da trilha; passada de conferência quando os PDFs chegarem).
 **Apresentador:** Daniel Santos.
 **Público:** fisioterapeutas da equipe ILLIC, de recém-formados a especialistas em membro superior; aula única em camadas (núcleo exigente, âncora "Para começar", desafio por bloco).
-**Duração-alvo:** 32 min (teto 35). Deck: 24 slides cronometrados + referências, **32:50**, com tempos recalibrados para a condução real (enquetes com duas falas, salas de 6 min com instrução e volta).
+**Duração-alvo:** 32 min (teto 35). Deck: 24 slides cronometrados + referências, **33:25** pela soma de `tempo_s`; tempo estimado pelo validador (fala das notas a ~130 palavras/min + interações) **34:31**, dentro da faixa de 30 a 35 min, mas perto do teto.
 **Base:** aula de capacitação "Tendinopatia lateral do cotovelo", slides 45 a 124 (mais 38, 40, 42, 123 e 124), com as correções de `00_mapa_evidencias.md`, seção 2, usadas como revelações (slides 6, 7, 8, 10, 15, 16 e 20).
 **Pergunta clínica:** em adultos com tendinopatia lateral do cotovelo, que exercício (tipo, carga, volume, frequência, progressão) e que recursos (corticoide, terapia manual, órtese, agulhamento, ondas de choque, PRP) mudam dor, função e recidiva no curto e no longo prazo, contra esperar, placebo ou outro tratamento (PICO do `00_briefing.md`).
-**Caso:** a mesma Renata da aula 1 (46 anos, cabeleireira autônoma, destra, cotovelo direito; PRTEE 58 → 49 na semana 6; preensão sem dor 120 → 140 N, 320 N do outro lado; formigamento novo no fim do dia, sem déficit). Ela volta a pedir a infiltração. **Revés** (slides 17–19): na semana 9 faz a infiltração com o ortopedista, para os exercícios, passa a 8 h/dia no salão e, na semana 16, volta tudo (PRTEE 52), com o formigamento ainda presente, sem déficit. **Desfecho e ponte** (slide 23): semana 26, PRTEE 31; a colega com dor medial e a manicure com dedo travado abrem a aula 3.
+**Caso:** a mesma Renata da aula 1 (46 anos, cabeleireira autônoma, destra, cotovelo direito; PRTEE 58 → 49 na semana 6; preensão sem dor 120 → 140 N, 320 N do outro lado; formigamento novo no fim do dia, sem déficit). Ela volta a pedir a infiltração. **Revés** (slides 17–19): na semana 9 faz a infiltração com o ortopedista, para os exercícios, passa a 8 h/dia no salão e, na semana 16, volta tudo (PRTEE 52), com o formigamento ainda presente, sem déficit. **Desfecho e ponte** (slide 23, "A Renata melhorou. E a família?"): semana 26, PRTEE 31; a família dela abre a aula 3: o Sérgio, marido, com dor medial (tendão, nervo ulnar ou ligamento?), a própria Renata com o dedo do meio travando (dedo em gatilho) e a Júlia, filha, com dor no punho no puerpério (De Quervain).
 
 ## Objetivos (aplicação, análise, avaliação)
 
@@ -42,47 +42,56 @@ Decisões construídas (4): a conversa sobre a infiltração com números de 6 s
 | Bretschneider2022 | MA de coortes | rotação > 4 h/dia OR 1,85 (1,10 a 3,10) | — (s19) | **texto completo** (p.6 Fig. 2; p.7 Tab. 3) |
 | Waugh2004 | coorte de incepção (83) | sintomas de nervo: +15,08 de dor e +7,32 de DASH em 8 semanas | — (notas s18) | resumo + print s40 (Tab. 5) |
 | Ikonen2022, Poltawski2011 | MA braços controle; DMCI | 89% muito melhor em 1 ano; metas ≤ 45 e ≤ 36 (calc. sobre 58, igual à aula 1) | — (s3) | só resumo |
+| Bunata2007, Rio2021 | estudo em cadáver; consenso de dor em tendinopatia | contato do ECRB com o capítulo em extensão (vulnerabilidade, não causa); algometria local e regional como padrão esperado | — (só notas s12, mecanismo) | só resumo, a conferir |
 
 ## Linha do tempo
 
 | Início | Bloco | Papel | Slide (tipo) | Interação | Âncora / desafio |
 |---|---|---|---|---|---|
 | 0:00 | abertura | — | 1 Capa | — | |
-| 0:30 | abertura | recuperar | 2 Sem abrir a aula 1: quantos em 10, e a meta (pergunta) | chat em cascata (1 min) | âncora: meta é fração da base; desafio: por que não a mesma de quem começa em 30 |
-| 1:50 | abertura | — | 3 A Renata volta à infiltração (citacao, com o feedback da aula 1) | — | |
+| 0:30 | abertura | recuperar | 2 Sem abrir a aula 1: quantos em 10, e a meta (pergunta) | chat em cascata (1 min) | âncora: as duas réguas da DMCI (pontos e % da base); desafio: por que não a mesma de quem começa em 30 |
+| 1:50 | abertura | — | 3 A Renata volta à infiltração (citacao, com o feedback da aula 1, irritabilidade moderada no cartão e dois bilhetes de saída da aula 1 lidos) | — | |
 | 2:40 | infiltração | gancho / prever | 4 O que você responde a ela? (enquete) | enquete 1 (1 min) | âncora: 9 em 10 sem nada |
-| 4:20 | infiltração | evidência | 5 A injeção ganha em 6 semanas e perde em 1 ano (barras) | — | |
-| 5:45 | infiltração | evidência | 6 A recidiva passa da metade (números) | mão na câmera (20 s, aos 65 s) | revelação: a aula base não mostrava a recidiva |
-| 7:15 | infiltração | conferir | 7 Rápida no começo, pior no ano (revelação da enquete 1) | — | |
-| 8:30 | infiltração | conferir | 8 O que ela vai pedir depois tem efeito nulo ou curto (tabela) | mão na câmera (20 s, aos 50 s) | desafio: −1,21 "sem benefício clínico"?; por que a rede discorda de Smidt |
-| 9:50 | dose | prever | 9 O escore melhorou. E a paciente? (enquete) | enquete 2 (1 min) | âncora nas notas |
-| 11:15 | dose | evidência | 10 O escore mexeu; "muito melhor" quase não (barras de 4 categorias, "Adaptado de") | — | revelação: "isométrico diminuiu dor e incapacidade" |
-| 12:30 | dose | evidência | 11 Contra nada, meio ponto (tabela) | — | desafio: 4,32 = 8,6% da escala (calc.) |
-| 13:45 | dose | decidir | 12 Prescreva a semana 1 da Renata (tarefa) | salas de 3 (4 min; bloco de 6 min) | âncora: isométrico 20–35% CVM; desafio: ensaio × opinião |
-| 19:45 | dose | conferir | 13 Uma prescrição possível, com a origem (tabela) | — | |
-| 21:00 | terapia manual | prever | 14 Na 1ª consulta, que chance a regra dava? (pergunta) | chat em cascata (40 s) | âncora: sem regra; desafio: um critério negativo |
-| 22:00 | terapia manual | evidência | 15 RV com IC que inclui 1 (figura, print Tab. 2) | — | revelação: a regra como preditor |
-| 23:20 | terapia manual | decidir | 16 MWM no curto prazo; aos 6 meses cruza o zero (figura, Fig. 2B recortada) | mão na câmera (20 s, aos 60 s) | desafio: métrica dentro do grupo?; revelação: "curto e longo prazo" |
-| 24:45 | revés | — | 17 Fez a infiltração. Voltou tudo. (citacao escura, com o formigamento) | — | |
-| 25:35 | revés | decidir | 18 E agora? (enquete) | enquete 3 (55 s) | |
-| 27:15 | revés | conferir | 19 Recuar de fase, sem parar (etapas) | — | |
-| 28:30 | revés | conferir | 20 O que eu ensinei e o que a evidência diz hoje (tabela) | — | quatro revelações |
-| 29:35 | fechamento | recuperar | 21 Sem voltar os slides: dose e dois números (pergunta) | chat em cascata (35 s) | |
-| 30:25 | fechamento | conferir | 22 Três coisas para levar (síntese) | — | |
-| 31:20 | fechamento | — | 23 A Renata melhorou. E o salão? (desfecho + ponte para a aula 3) | — | |
-| 32:00 | fechamento | saída | 24 Bilhete de saída (pergunta) | chat (45 s) | |
-| 32:50 | — | — | 25 Referências (apoio, fora do tempo) | — | |
+| 4:45 | infiltração | evidência | 5 A injeção ganha em 6 semanas e perde em 1 ano (barras) | — | |
+| 6:00 | infiltração | evidência | 6 A recidiva passa da metade (números) | mão na câmera (20 s, aos 65 s) | revelação: a aula base não mostrava a recidiva |
+| 7:30 | infiltração | conferir | 7 Rápida no começo, pior no ano (revelação da enquete 1) | — | |
+| 8:45 | infiltração | conferir | 8 O que ela vai pedir depois tem efeito nulo ou curto (tabela) | mão na câmera (20 s, aos 50 s) | desafio: −1,21 "sem benefício clínico"?; por que a rede discorda de Smidt |
+| 10:05 | dose | prever | 9 O escore melhorou. E a paciente? (enquete) | enquete 2 (1 min) | âncora nas notas |
+| 11:30 | dose | evidência | 10 O escore mexeu; "muito melhor" quase não (barras de 4 categorias, "Adaptado de") | — | revelação: "isométrico diminuiu dor e incapacidade" |
+| 12:45 | dose | evidência | 11 Contra nada, meio ponto (tabela) | — | desafio: 4,32 = 8,6% da escala (calc.) |
+| 14:00 | dose | decidir | 12 Prescreva a semana 1 da Renata (tarefa) | salas de 3 (4 min; bloco de 6 min) | âncora: isométrico 20–35% CVM; desafio: ensaio × opinião; notas: critérios de irritabilidade e mecanismo (Bunata, Rio) |
+| 20:00 | dose | conferir | 13 Uma prescrição possível, com a origem (tabela) | — | |
+| 21:25 | terapia manual | prever | 14 Na 1ª consulta, que chance a regra dava? (pergunta) | chat em cascata (40 s) | âncora: sem regra; desafio: um critério negativo |
+| 22:25 | terapia manual | evidência | 15 RV com IC que inclui 1 (figura, print Tab. 2) | — | revelação: a regra como preditor; aviso: este 79% não é o 79% da aula 1 |
+| 23:45 | terapia manual | decidir | 16 MWM no curto prazo; aos 6 meses cruza o zero (figura, Fig. 2B recortada; cartão com pescoço duro e formigamento, grau C, antes da mão na câmera) | mão na câmera (20 s, aos 60 s) | desafio: métrica dentro do grupo?; revelação: "curto e longo prazo" |
+| 25:10 | revés | — | 17 Fez a infiltração. Voltou tudo. (citacao escura, com o formigamento) | — | |
+| 26:00 | revés | decidir | 18 E agora? (enquete) | enquete 3 (55 s) | âncora (notas): a irritabilidade de hoje; desafio: e se o formigamento piorou? |
+| 28:00 | revés | conferir | 19 Recuar de fase, sem parar (etapas; o cartão diz o que define cada fase: I–III leve, IV–V moderada) | — | |
+| 29:15 | revés | conferir | 20 O que eu ensinei e o que a evidência diz hoje (tabela) | — | quatro revelações |
+| 30:10 | fechamento | recuperar | 21 Sem voltar os slides: dose e dois números (pergunta) | chat em cascata (35 s) | |
+| 31:00 | fechamento | conferir | 22 Três coisas para levar (síntese) | — | |
+| 31:55 | fechamento | — | 23 A Renata melhorou. E a família? (desfecho + ponte para a aula 3) | — | |
+| 32:35 | fechamento | saída | 24 Bilhete de saída (pergunta) | chat (45 s) | |
+| 33:25 | — | — | 25 Referências (apoio, fora do tempo) | — | |
 
-Linha do tempo do validador: `●●●●··●●·●●··●●●●●···●··●●●··●●·●` (33 minutos contados; ● com interação, · sem); 11 interações em 5 formatos, primeira aos 0:30, 33% do tempo em atividade, maior trecho sem interação de cerca de 3 min 15 s (slides 13 a 14). Recuperação da aula 1: 2 min 10 s (slides 2 e 3).
+Linha do tempo do validador: `●●●●···●·●●●··●●●●···●●·●●●···●·●●` (34 minutos contados; ● com interação, · sem); 11 interações em 5 formatos, primeira aos 0:30, 33% do tempo em atividade, maior trecho sem interação de cerca de 3 min 25 s (do fim das salas ao slide 14) e cerca de 3 min 15 s no revés (slides 18 a 21). Recuperação da aula 1: 2 min 10 s (slides 2 e 3).
 
-**Por que 32:50 e não 32:15:** a revisão estimou 34 a 37 min reais para a versão anterior. Os tempos foram recalibrados (enquetes de 85–105 s com duas falas em vez de quatro, salas com 6 min de bloco, revés com 100 s) e o slide de previsão em chat do bloco 1 saiu: a enquete 1 passou a ser a previsão do bloco (o validador aceita, porque ela é pergunta antes da evidência). Se a aula atrasar, o corte de reserva é o slide 11 (tabela "Contra nada"), cujos números estão no resumo do aluno.
+**Tempo:** a revisão estimou 34 a 37 min reais para a versão inicial (32:15). Na primeira correção os tempos foram recalibrados (enquetes com duas falas, salas com 6 min de bloco, revés com 120 s) e o slide de previsão em chat do bloco 1 saiu: a enquete 1 passou a ser a previsão do bloco. Na segunda rodada entraram as recuperações da aula 1 (Smidt, Couppé e Waugh como pergunta), a leitura de dois bilhetes da aula 1, os critérios de irritabilidade e o mecanismo nas notas: 33:25 nominais e 34:31 estimados. Se a aula atrasar, o corte de reserva é o slide 11 (tabela "Contra nada"), cujos números estão no resumo do aluno; a seguir, ler só um bilhete da aula 1 no slide 3.
+
+## Condução no Meet (coerente com as aulas 1 e 3)
+
+- Enquetes (slides 4, 9 e 18): o Meet mostra só a contagem, não quem votou em quê. Perguntar quem votou na opção menos votada e topa defender em 15 s, de microfone aberto; depois, um voluntário da mais votada. Se ninguém vier: "o que faria alguém escolher essa?". Nunca chamar pelo nome quem votou numa letra.
+- Salas (slide 12): plano B e gravação estão no deck.json (`interacao.plano_b` e `interacao.gravacao`) e saem no `enquetes.md`; o porta-voz anota a entrega num bloco de notas, porque o chat da sala pode não voltar para a sala principal.
+- Bilhetes de saída: dois da aula 1 são lidos no slide 3; os desta aula (slide 24) são copiados antes de encerrar para abrir a aula 3.
+- Os dois "79%" da trilha: o do slide 15 é de Vicenzino (melhora em 3 semanas); o da aula 1 é o teto da probabilidade pré-teste do diagnóstico (Vuvan). Coincidência, dita nas notas dos slides 15 e 22.
+- "Corticoide em 1 ano": 69% (Smidt, slide 5) e 83% (Coombes, slides 6 e 18) vêm de ensaios com definições de sucesso diferentes; as notas do slide 18 dizem isso.
 
 ## Revelações (a aula de capacitação × a evidência hoje)
 
 Ditas sem diminuir a aula base: "eu ensinei assim, seguindo a diretriz; o número que encontramos hoje é este".
 
 - Slide 6: a aula base citava o corticoide pior no médio prazo, mas nunca mostrava a recidiva do ensaio de Coombes (54% × 12%).
-- Slide 7 (notas): somar corticoide ao treino pesado não acelera e pode piorar o ano (Couppé 2022, novo).
+- Slide 7 (notas): somar corticoide ao treino pesado não acelera e pode piorar o ano (Couppé 2022). Já estava nas notas da aula 1 (laudo da Renata): aqui entra como recuperação ("Lembram do laudo da Renata?"), não como novidade. O mesmo vale para o braço de espera de Smidt (83% em 1 ano, slide 5, perguntado antes de dito) e para Waugh (+15 de dor com sintoma de nervo, slide 18).
 - Slide 8: PRP, ondas de choque e a rede de 13 ECR (novos); a órtese era "SMD 0,02" (é −0,02, com I² 93%).
 - Slide 10: "isométrico diminuiu dor e incapacidade" é verdade no escore, não na percepção (29% × 26%), e 3 de 21 pioraram.
 - Slide 15: a regra de predição não demonstrou separar quem responde.
@@ -93,9 +102,10 @@ Ditas sem diminuir a aula base: "eu ensinei assim, seguindo a diretriz; o númer
 
 - Excêntrico e HSR como alternativa ao isométrico: nenhuma comparação direta na seleção; as meta-análises de excêntrico das notas da base (s57–s58) não foram conferidas. Dose do HSR de Couppé só no texto completo.
 - Escápula e ombro (grau C; s71 × s74, ambos fora da seleção).
-- Bandagem rígida de descarga (grau B na diretriz, sem estudo na seleção), kinesio, TENS, laser, crioterapia: estudos só da base, não conferidos; ficam no veredito do `verificacao.md`.
+- Bandagem rígida de descarga: só uma linha na tabela do slide 8 (grau B na diretriz, sem estudo na seleção). Kinesio, TENS, laser e crioterapia: estudos só da base, não conferidos; fora desta versão, dito também no ponto 7 do resumo do aluno e no `verificacao.md`. O plano da trilha (`aulas/trilha-cotovelo-e-mao.md`) ainda promete esses recursos na aula 2: atualizar lá (fora da pasta desta aula).
+- Mecanismo e sensibilização (pedido do plano para a aula 1, que mandou para a aula 2): só 2 frases nas notas do slide 12, se perguntarem por que carregar um tendão que dói: contato do ECRB com o capítulo em extensão, em cadáver (Bunata 2007), e algometria local e regional como padrão esperado (Rio 2021); os dois só do resumo, a conferir.
 - Tecidos moles (fricção, instrumental) e manipulação de Mill.
-- Classificação em 6 eixos com faixas de PRTEE (print s42, faixas sobrepostas): a Renata é irritabilidade IV (moderada), dito só nas notas.
+- Classificação em 6 eixos com faixas de PRTEE (print s42, faixas sobrepostas): não projetada. A Renata é irritabilidade IV (moderada): no cartão do slide 3; os critérios (dor no trabalho de 5–6/10 que dura mais de 6 h, recusa clientes, dorme bem; grave = dor em repouso que tira o sono) nas notas do slide 12; os níveis (I–III leve, IV–V moderada) no cartão do slide 19. Atribuição provável, a conferir no PDF da diretriz.
 - Hoogvliet e Zunke (mobilização cervical e torácica, +14,6 kg e +4,6 kg): fora da seleção, não conferidos; a aula diz só "grau C".
 - Ondas de choque: o −1,21 contra simulação não vai ao slide até o limiar clínico dos autores ser conferido (fica como desafio oral).
 - Painel A da Fig. 2 de Lucado 2019 (rótulos de ~4 pt, ilegíveis projetados): entra resumido num cartão do slide 16, sem os valores lidos no olho.
@@ -115,10 +125,10 @@ Ditas sem diminuir a aula base: "eu ensinei assim, seguindo a diretriz; o númer
 | Momento | Dado |
 |---|---|
 | Linha de base (aula 1) | 46 anos, cabeleireira autônoma, destra, cotovelo direito, ~6 h/dia de secador e escova; PRTEE 58; preensão sem dor 120 N (D) e 320 N (E); irritabilidade IV; preenche os 3 critérios da regra (slide 14) |
-| Metas (aula 1) | PRTEE ≤ 45 (um pouco melhor, 22%) e ≤ 36 (muito melhor, 37%: 58 × 0,63 = 36,5) |
+| Metas (aula 1) | DMCI, duas réguas (Poltawski e Watson 2011): proporcional, PRTEE ≤ 45 (um pouco melhor, 22%) e ≤ 36 (muito melhor, 37%: 58 × 0,63 = 36,5), a usada nesta aula; absoluta, ≤ 51 e ≤ 47 (7 e 11 pontos). As duas são aceitas no slide 2 |
 | Semana 6 (abertura) | PRTEE 49; dor 5/10 no trabalho; preensão 140 N; formigamento no dorso do antebraço no fim do dia, sem déficit; pede infiltração |
 | Semana 6 (novos nesta aula) | CVM de extensão do punho D = 8 kg (20% = 1,6 kg; 35% = 2,8 kg, calc.); MWM de deslizamento lateral: preensão 140 → 185 N (+32%) (slide 16) |
 | Semana 9 | infiltração com o ortopedista |
 | Semana 11 | PRTEE 22, dor 1/10; para os exercícios; 8 h/dia no salão |
 | Semana 16 (revés) | PRTEE 52, dor 6/10, preensão 125 N; formigamento todo fim de dia, sem déficit |
-| Semana 26 (desfecho) | PRTEE 31 (abaixo da meta de 36), dor só nos dias cheios |
+| Semana 26 (desfecho) | PRTEE 31 (abaixo da meta de 36), dor só nos dias cheios; mensagem sobre a família (dedo do meio travando, Sérgio com dor medial, Júlia com dor no punho no puerpério): ponte para a aula 3 |

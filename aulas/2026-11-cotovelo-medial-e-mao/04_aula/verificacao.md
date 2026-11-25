@@ -1,7 +1,8 @@
 # Verificação — Cotovelo medial e mão: três decisões
 
-Data: 2026-11-24 (versão 1, revisada depois da revisão independente). Deck: `04_aula/cotovelo-medial-e-mao.pptx`
-(29 slides, 28 cronometrados, 33:35 min; estimativa realista 32:23, ver seção 6). Montada antes da chegada dos PDFs.
+Data: 2026-11-25 (versão 1, segunda rodada de correção: revisão independente completa e auditoria de coerência da
+trilha, seção 10). Deck: `04_aula/cotovelo-medial-e-mao.pptx` (29 slides, 28 cronometrados, 34:00 min; tempo
+estimado pelo validador 32:55, ver seção 6). Montada antes da chegada dos PDFs.
 **Só 1 dos 20 artigos foi lido no texto completo (Fukunaga2023)**, mais Bretschneider2022 pela ficha da aula 1; os
 outros estão em "só resumo" (PubMed) e todos os números deles precisam passar pela conferência da seção 8 antes da aula
 ao vivo. Etiquetas: `resumo` = resumo do PubMed, sem página; `p.N` = texto completo; `calc.` = conta nossa (fórmula ao
@@ -45,15 +46,24 @@ lado); `caso` = dado fictício.
 | Injeção 9/9 alívio completo (1 recidiva); órtese 0/9; 8/9 resolveram ao fim da lactação | 24, 25; q6 | Avci2002 | PDF pago; contagem 9 x 9 inferida do resumo (18 pacientes) |
 | Órtese de 3–4 semanas após injeção: 10,5 pontos de QuickDASH (6,8 a 14,1); "não clinicamente significativo"; certeza moderada | 24; q6 | Challoumas2023 | PDF gratuito (PMC), bloqueado; **sentido da diferença e DMCI dos autores não conferidos** (o slide e a q6 não afirmam o sentido) |
 | Orientação sempre, nunca sozinha (notas) | 24; q6 | Huisstede2014 | PDF pago (OUP) |
+| Lateral, da aula 2: corticoide x fisioterapia 92% x 47% em 6 semanas e 69% x 91% em 52 semanas | 4, 11 (notas), resumo | Smidt2002 | mesmo número e mesma referência do deck da aula 2 (resumo; n por braço inferidos) |
+| Lateral, da aula 2: recidiva 54% x 12% (corticoide x injeção placebo) | 4, 17 (notas) | Coombes2013 | mesmo número do deck da aula 2 (resumo; denominador a conferir lá) |
+| Lateral, da aula 2: isométrico de 20% a 35% da CVM | 4 | Vuvan2020 | dose pelas tabelas redigitadas da aula de capacitação (s51–s53), como na aula 2 |
+| Lateral, da aula 1: DMCI do PRTEE, 7 pontos ou 22% da linha de base ("um pouco melhor") | 4, 25 | Poltawski2011 | mesmo número do deck da aula 1 (resumo, Crossref); **aplicado à medial = extrapolação** |
+| Lateral, da aula 1: 89% muito melhor ou recuperado em 1 ano | 4 | Ikonen2022 | mesmo número do deck da aula 1 (resumo) |
+| Regra de progressão: subir sem dor tardia em 24 h ou com dor ≤ +1 ponto | 13 (o que olhar e notas) | Day2019 | opinião; resumo + prints da aula de capacitação, como na aula 2 |
+| Sérgio: 48 → 41 = 7 pontos (régua absoluta) e 14,6% ≈ 15% (régua proporcional, abaixo de 22%) | 25 | caso + Poltawski2011 | **calc.**: 48 − 41 = 7; 7/48 = 0,146 |
 | "Até 84% com outros distúrbios" **não está no resumo** | — | Descatha2003 | conferência negativa no resumo; fora da aula até ler o PDF |
 
 ## 3. Proposta clínica (sem ensaio que teste)
 
 - Dose e progressão dos exercícios da massa flexora-pronadora na tendinopatia medial (começar abaixo de Borg 5/10,
-  subir pela dor em 24 h; isométrico e isotônico 3 × 10 trazidos da aula 2) — slides 13 (ponto 3 do "o que olhar") e
+  subir sem dor tardia em 24 h ou com dor ≤ +1 ponto, regra de opinião de Day 2019 trazida da aula 2; reavaliar a cada
+  3 semanas, o mesmo intervalo da aula 2; isométrico e isotônico 3 × 10 trazidos da aula 2) — slides 13 (ponto 3 do "o que olhar") e
   11 (linha "Dose"); dito como proposta nas notas.
-- PRTEE adaptada e preensão sem dor como medidas da tendinopatia medial (PRTEE não validada para a medial no lote) —
-  slides 5 e 25 (notas).
+- PRTEE adaptada e preensão sem dor como medidas da tendinopatia medial (PRTEE não validada para a medial no lote), com
+  as duas réguas de DMCI da lateral (7 pontos ou 22%) — slides 5 (cartão) e 25 (cartão, faixa "DMCI da lateral,
+  extrapolada" e notas).
 - Mapa sensitivo (metade do 4º dedo; dorso ulnar da mão pelo ramo cutâneo dorsal, que sai antes do canal de Guyon) e
   exame do pescoço e do desfiladeiro para separar cotovelo, Guyon e raiz C8 — slide 5 (cartão e notas), q1.
   **Anatomia, sem acurácia no lote.**
@@ -70,12 +80,13 @@ lado); `caso` = dado fictício.
 
 - Sérgio, 44 anos, marido da Renata, mecânico e armador de handebol; dor medial direita 10 semanas; Tinel +, sem
   espessamento, nervo não subluxa; formigamento no 5º dedo e metade do 4º, palma e dorso; pescoço, desfiladeiro, força
-  intrínseca e valgo em movimento normais; preensão sem dor 200/440 N (45%); PRTEE adaptada 48 → 41 na semana 6 —
-  slides 2, 5, 9, 10, 25.
+  intrínseca e valgo em movimento normais; preensão sem dor 200/440 N (45%); PRTEE adaptada 48 (no cartão do slide 5).
+  Âncoras: avaliação com **dor há 10 semanas**; desfecho **após 6 semanas de tratamento** (48 → 41) — slides 2, 5, 9, 10, 25.
 - **Renata, 46 anos, cabeleireira, destra** (nome, idade e profissão do deck da aula 1; infiltração no cotovelo na
   semana 9 e recidiva na semana 16, do deck da aula 2), dedo médio direito, Green 2 → 3, sem diabetes, 3 meses, trava
-  com a tesoura; alta do cotovelo na semana 26; órtese, injeção na semana 7, recidiva no mês 5; 2ª injeção e nova
-  recidiva no mês 9 → avaliação cirúrgica — slides 2, 14, 17, 18, 19, 25.
+  com a tesoura. Âncoras: **semana 26 do cotovelo** (contagem das aulas 1 e 2, desde a primeira consulta), **dedo há 3
+  meses**; a partir da consulta do dedo: órtese por 6 semanas, injeção aceita na semana 7, recidiva cerca de 3 meses
+  depois (mês 5, revés do slide 18); 2ª injeção e nova trava no mês 9 → avaliação cirúrgica — slides 2, 14, 17, 18, 19, 25.
 - Júlia, 26 anos, filha da Renata, 7 semanas pós-parto, amamentando; Eichhoff e WHAT + — slides 2, 20, 21, 23, 25.
 - Pré-testes ilustrativos (supostos): NUC 30%, LCU 15%, De Quervain 70%; base de 60% de sucesso da injeção no cartão do
   OR — slides 6, 7, 8, 19, 21, 22. No pós-teste: LCU 20% (q2), De Quervain 40% (q5).
@@ -85,7 +96,7 @@ lado); `caso` = dado fictício.
 
 | Figura | Slide | Licença | Citação completa no rodapé |
 |---|---|---|---|
-| Fukunaga2023_fig2 (catálogo, aprovada; meio slide, ~102 dpi nativos, não ampliada) | 13 | CC BY-NC | sim ("Fukunaga T et al. Int J Sports Phys Ther. 2023;18(1):208-214. Fig. 2.") |
+| Fukunaga2023_fig2 (catálogo, aprovada; meio slide, ~102 dpi nativos, não ampliada), usada pelo recorte `04_aula/figuras/Fukunaga2023_fig2_limpa.png` (linhas 46–691 do original, sem as marcas brancas das bordas; destaques remedidos) | 13 | CC BY-NC | sim, com a licença ("Fukunaga T et al. Int J Sports Phys Ther. 2023;18(1):208-214. Fig. 2 (CC BY-NC)") |
 | Fukunaga2023_tab2 redesenhada como gráfico nativo "Adaptado de Fukunaga et al. 2023, Tab. 2" | 12 | dados de artigo CC BY-NC | rodapé "Fukunaga et al. 2023" + nota "Adaptado de" |
 | Gráficos e tabelas nativos com números de resumo (Beekman, Minkhorst, Avci; tabelas de Patel, Peters-Veluthamaningal, Fiorini, See, Stahl, Arevalo, Bretschneider, Descatha) | 4, 7, 11, 16, 17, 24 | dados (sem imagem do artigo) | rodapé com a referência |
 
@@ -98,37 +109,33 @@ gráficos nativos.
 
 ## 6. Checagens automáticas
 
-- `validar_aula.py`: **APROVADA com avisos, 0 erros** — 33:35; 11 interações em 5 formatos (enquete, chat em cascata,
-  salas, mão na câmera, chat); primeira aos 0:40; 33% do tempo em atividade; maior trecho sem interação ~4 min 45 s
-  (slides 10–14). Avisos de pé, decididos: (a) slides 5, 19 e 27 com 71 a 76 palavras (caso com mapa sensitivo;
-  resposta possível com a ressalva da população; síntese com a faixa "desde a capacitação"); (b) 28 slides
-  cronometrados (> 26): três casos pedem três aberturas e três conferências.
-- **Tempo realista** (o validador só soma `tempo_s`): script próprio
-  (`scratchpad/rev/tempo_real.py`) conta só o texto falado das notas a 130 ppm, tira a rubrica de palco e soma a
-  interação mais folgas (15 s de justificativa por enquete, 20 s de leitura por chat em cascata, 15 s no chat de saída,
-  90 s para abrir, fechar e ouvir as salas, 20 s de demonstração no slide 13, 8 s para ler pergunta ou fala): **32:23**,
-  2.014 palavras faladas (15,5 min) e 2.907 palavras nas notas com rubrica (eram 3.133). Nenhum slide tem `tempo_s`
-  abaixo dessa estimativa por mais de 10 s. Antes da revisão, o mesmo cálculo dava 35:27 para os 31:50 declarados.
+- `validar_aula.py`: **APROVADA com avisos, 0 erros** — 34:00 pela soma de `tempo_s`; tempo estimado pelo validador
+  (fala das notas a 130 ppm + interações) **32:55**, dentro de 30–35 min; com 15 s de justificativa oral por enquete,
+  ~34 min. 11 interações em 5 formatos; primeira aos 0:35; 31% do tempo em atividade. Linha do tempo
+  `●●··●●··●●····●●·●●●●●··●●·●··●●●●`. Avisos de pé, decididos: (a) slides 4 (94), 5 (87), 11 (73), 17 (94), 18 (91),
+  19 (71), 25 (78) e 27 (76) palavras visíveis: o 4 é a tabela de conferência das aulas 1 e 2 (pedida pela auditoria),
+  o 5 traz o exame com PRTEE e preensão, o 17 traz métrica e comparador por linha, o 18 traz a instrução de gravação;
+  nenhum passa de 100 e nada foi reduzido; (b) 28 slides cronometrados (> 26): três casos pedem três aberturas e três
+  conferências.
 - `montar_deck.py`: 0 erros de layout; nenhum texto reduzido ou fora da caixa.
-- Render olhado: folhas 1–3 e, em tamanho cheio, todos os slides alterados (2, 4, 5, 7, 8, 10, 14, 16, 17, 18, 19,
-  22, 25, 27). Corrigido no olho: tópico 2 do slide 19 quebrava e encostava no cartão (encurtado); rodapé do slide 27
-  sem a fonte do ECR citado na faixa (Stahl acrescentado). Os rótulos dos gráficos nativos saem com ponto decimal
-  (1.02, 40.3) porque o LibreOffice daqui não tem locale pt-BR; no PowerPoint em português sai com vírgula.
+- Render: `renderizar.py` rodado com `LANG=pt_BR.UTF-8` (o LibreOffice passa a usar vírgula decimal, como o PowerPoint em
+  português): rótulos dos gráficos 1,02 / 1,32 / 1,60 / 2,15 (s7), 40,3 / 63,9 / 73,0 (s12), 22,4 / 39,1 (s16, formato
+  "General"). Olhados as 3 folhas e, em tamanho cheio, os slides 4, 5, 13, 15, 16, 17, 18, 24 e 25. Corrigido no olho:
+  rodapé do slide 13 repetia Fukunaga; opções da enquete 15 sem justificativa só na correta (pista) viraram só números.
 - `conferir_pptx.py`: nenhum problema; 28 notas com "Tempo: ... (acumulado M:SS)" corretas; 4 gráficos nativos com
   planilha; 63 partes XML validadas contra o XSD ISO/IEC 29500.
-- `materiais.py`: 7 questões, os 4 objetivos cobertos, gabarito distribuído (A 2, B 2, C 2, D 1), nenhuma cópia das
-  enquetes, nenhum aviso de forma. Aviso de pé: resumo do aluno com 1.069 "palavras" pela contagem do script, que conta
-  cada pedaço de DOI e PMID das 21 referências; o texto corrido tem 628 palavras e cabe em 2 páginas. `enquetes.md`
-  corrigido à mão depois do script (o script escreve "chame uma pessoa de cada opção pelo nome", que o Meet não permite
-  durante a aula): agora "quem votou na opção menos votada e topa defender", mais o aviso de pausar a gravação nas salas.
+- `materiais.py`: nenhum aviso. `enquetes.md` gerado inteiro pelo script (a condução de enquete da skill corrigida e a
+  seção "Plano B e gravação" vêm dos campos `interacao.plano_b` e `interacao.gravacao`; nada editado à mão). Resumo do
+  aluno abaixo de 900 palavras de texto corrido, com 27 referências.
 
 ## 7. Pendências
 
 - Conferência no texto completo de todos os números das seções 2 e 8 (19 PDFs; 8 gratuitos: Challoumas2023,
   Minkhorst2025, PetersVeluthamaningal2009, Zwerus2018, Beekman2009, Caliandro2025, Fiorini2018, Descatha2003).
-- **Ponte da aula 2 para a aula 3**: o slide 24 do deck da aula 2 promete "a colega do salão com dor medial e a
-  manicure com o dedo travado"; a aula 3 usa a família (o marido, a própria Renata e a filha). Alinhar uma das duas
-  pontes antes de gravar a aula 2.
+- Ponte da aula 2 para a aula 3: o deck atual da aula 2 (slide 23, lido em 25/11) já anuncia a família (Sérgio, o dedo
+  da Renata, a Júlia) na semana 26; conferir de novo antes de gravar, porque a aula 2 está sendo editada em paralelo.
+- Frase fixa do `materiais.py` no fim do resumo do aluno: "O paciente do caso" (singular). O ponto-chave 1 do resumo
+  diz que os três pacientes são fictícios; a frase do script é da skill.
 - Confirmar na conta Workspace se o relatório das enquetes com os nomes chega por e-mail (durante a aula, só contagem).
 - Gravar ou fotografar na ILLIC: valgo em movimento, Eichhoff x WHAT lado a lado, órtese da MCF, pronação com faixa
   (mapa, [F]); até lá, demonstração ao vivo na câmera.
@@ -143,12 +150,13 @@ Por slide e por questão do pós-teste: qual PDF pendente, o que conferir e que 
 | Slide / questão | PDF pendente | O que conferir | Figura que entra |
 |---|---|---|---|
 | 4 | Descatha2003 (gratuito, PMC4850209) | como "trabalho com força" e "repetitivo" foram medidos e qual era o contraste de repetição dentro de uma amostra toda exposta; ajustes do OR | — (manter tabela) |
+| 4 (linhas Tratamento e Réguas), 25 | PDFs das aulas 1 e 2: Smidt2002, Coombes2013, Vuvan2020, Poltawski2011, Ikonen2022 | os números vêm dos decks das aulas 1 e 2: quando aquelas aulas trocarem algum número na conferência, trocar aqui também (92/47, 69/91, 54/12, 20–35% CVM, 7 pontos ou 22%, 89%) | — |
 | 5 | — | (caso) | foto própria do exame, se houver |
 | 6, 7, q1 | Beekman2009 (gratuito, repositório) | contagens por célula (IC das RV), critério de positivo, duração da flexão-compressão, AUC com e sem testes; refazer as RV com as contagens; se há dado de fraqueza intrínseca ou mapa sensitivo | manter barras nativas; acrescentar IC como barras de erro se houver contagens |
 | 8, q2 | ODriscoll2005 (SAGE); Zwerus2018 (gratuito) | cegamento, prospectivo, espectro; refazer o "0–15%" e a q2 com as contagens reais; se o estudo de LCM de Zwerus é o O'Driscoll; impacto posteromedial: só ausência de estudos? | foto da técnica do artigo (se a licença permitir) ou vídeo próprio |
 | 10, q1 | Caliandro2025 (gratuito, PMC12038884) | n e efeito dos ensaios de órtese noturna e deslizamento neural; GRADE por comparação; como os ensaios definiram leve x grave (sustenta o gabarito da q1) | — |
-| 11, q7 | See2026 (Elsevier); Stahl1997c (JBJS); Arevalo2023 (SAGE) | lista dos 5 estudos e dose do excêntrico; efeito e comparador do único ECR positivo; médias, IC, n por grupo e eventos adversos do Stahl; definição de "sucesso" e "refratário" | curva de Stahl (6 semanas, 3 meses, 1 ano) como linha nativa "Adaptado de" |
-| 12, 13 | — (Fukunaga2023 completo); Mullaney 2021 (não selecionado) | séries, frequência e progressão (remetidas a Mullaney 2021, "Throwers 10 revisited") | — |
+| 11, 27, q7 | See2026 (Elsevier); Stahl1997c (JBJS); Arevalo2023 (SAGE) | lista dos 5 estudos e dose do excêntrico; **ano do único ECR de exercício com superioridade** (se for anterior a 2014, a frase do slide 11 e a faixa do 27 mudam: as revisões da aula de capacitação teriam deixado de fora também esse); efeito e comparador do único ECR positivo; médias, IC, n por grupo e eventos adversos do Stahl; definição de "sucesso" e "refratário" | curva de Stahl (6 semanas, 3 meses, 1 ano) como linha nativa "Adaptado de" |
+| 12, 13 | — (Fukunaga2023 completo); Mullaney 2021 (não selecionado); Day2019 (aula 2) | séries, frequência e progressão (remetidas a Mullaney 2021, "Throwers 10 revisited"); a regra de 24 h e ≤ +1 ponto, como na aula 2 | — |
 | 15, 16, q4 | Minkhorst2025 (gratuito, editor) | definição de sucesso e dos graus de Green; valores exatos por grau (não "~75%", "~60%"); braço só órtese; diabetes por estrato; 108 x 104 incluídos | CONSORT ou figura de resultado por grau (cc-by segundo o registro) |
 | 17, q3 | Patel1992 (Elsevier); PetersVeluthamaningal2009 (gratuito, PMC12671840); Fiorini2018 (gratuito, PMC6491286) | randomização e falhas 7 x 8 (Patel); taxas por grupo para diferença absoluta e IC do NNT (Peters-Veluthamaningal); riscos de base por ensaio, definição de recidiva e se algum ensaio incluiu injeção prévia (Fiorini) | forest plot de recidiva de Fiorini (Cochrane; conferir licença) ou 100 bonecos nativos 38 x 6 |
 | 18, 19 | Fiorini2018; Chiang2026 (Elsevier); Minkhorst2025; Huisstede2014b (OUP) | **taxa de sucesso ou recidiva da 2ª injeção depois de recidiva** (Fiorini, Chiang ou estudos citados por eles); se houver, trocar o "sem número" do slide 19 pelo número com a fonte; **taxa real de sucesso do corticoide na rede de Chiang** (trocar a base hipotética de 60% e refazer OR → RR); escala de gravidade e critério cirúrgico do consenso | gráfico nativo OR x RR conforme a taxa de base |
@@ -156,7 +164,7 @@ Por slide e por questão do pós-teste: qual PDF pendente, o que conferir e que 
 | 23, 24, q6 | Avci2002 (Elsevier); Challoumas2023 (gratuito, PMC10611995); Huisstede2014 (OUP) | contagem por grupo e punho bilateral, fármaco, dose, segurança na lactação (Avci); **DMCI adotada e sentido da DM** (se a DMCI for menor que 14,1, mudar o texto "abaixo da importante" do slide 24 e o gabarito B da q6), curto x médio prazo, se a rede incluiu lactantes (Challoumas); testes aceitos e gestação (Huisstede) | forest plot de Challoumas (cc-by segundo o registro) com a faixa da DMCI |
 | — (fora da aula) | Descatha2003 (gratuito) | **o "até 84%" do s141 da aula base**: se aparecer no texto, decidir se entra, com número e denominador | — |
 
-## 9. Revisão independente aplicada (24/11/2026)
+## 9. Revisão independente aplicada, primeira rodada (24/11/2026)
 
 - Continuidade: "Cláudia" → **Renata**, cabeleireira, em todo o deck, notas, enquetes, roteiro, resumo e verificação;
   a fala do slide 14 retoma a infiltração do cotovelo da aula 2 ("fiz infiltração e voltou tudo") e a tesoura.
@@ -173,6 +181,25 @@ Por slide e por questão do pós-teste: qual PDF pendente, o que conferir e que 
 - Pós-teste: q1 nova (encaminhar com fraqueza e mapa sensitivo), q3 com distrator inequívoco, q4 nova (grau 3 sem
   tratamento prévio), q5 com paciente dentro do espectro e gabarito com a faixa, q6 nova (lactante com injeção; gabarito
   que não depende do sentido da diferença).
+
+## 10. Segunda rodada (25/11/2026): revisão completa e auditoria da trilha
+
+A primeira rodada recebeu a revisão cortada no 11º achado. Conferidos os 21 achados contra o deck.json:
+
+- Achados 12 a 21, aplicados agora: slide 17 com métrica e comparador por linha (órtese sem controle; injeção contra
+  lidocaína; cirurgia x injeção na recidiva e na dor da palma) e fatores de falha numa nota que vale para órtese e
+  injeção; slide 11 e faixa do 27: o ECR de corticoide é de 1997 e ficou fora das revisões citadas; slide 24 em dois
+  grupos (alívio completo x resolução ao fim da lactação), zero rotulado, título sem atribuir a melhora ao tempo; slide
+  16 com 22,4 e 39,1; slides 7 e 12 com vírgula no render; slide 13 sem as marcas brancas e com CC BY-NC no rodapé;
+  enquete 21 com o distrator C reescrito (Eichhoff somado como se fosse independente) e a explicação nas notas; enquete
+  15 trocada pelo contraste graus 1–2 x grau 3; resumo do aluno com a linha de versão e "os três pacientes".
+- Achado 14 (decisão 1 do caso B trivial): mantida a solução da primeira rodada; o revés agora diz que ela aceitou a
+  injeção depois de 6 semanas de órtese.
+- Auditoria da trilha: recuperação da aula 2 no slide 4 (tratamento e réguas) com a resposta ao desafio do slide 3;
+  desfecho do Sérgio pelas duas réguas, com a extrapolação marcada; âncoras de tempo; salas no procedimento das aulas 1
+  e 2 (cortar na edição, "Na gravação: pause e decida em 3 min"); reavaliação a cada 3 semanas e regra de 24 h com o
+  critério de 1 ponto (Day 2019); repetição "inconclusiva" com IC; bilhetes da aula 2 lidos na abertura e bilhetes da
+  aula 3 para o relatório da trilha; recuperação oral nos slides 11 e 17; DMCI e LCU por extenso.
 
 ## Apêndice. O que mudou desde a aula de capacitação
 

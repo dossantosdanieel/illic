@@ -1,7 +1,7 @@
 # Verificação — Tendinopatia lateral do cotovelo: reabilitação com dose
 
-Data: 2026-11-24 (revisada no mesmo dia depois da revisão independente). Deck: `04_aula/cotovelo-lateral-2-reabilitacao.pptx`
-(25 slides, 24 cronometrados, 32:50 min). Versão 1: montada com 1 artigo lido no texto completo (Bretschneider 2022) e o
+Data: 2026-11-24 (revisada no mesmo dia depois da revisão independente; segunda rodada em 2026-11-25, com a revisão completa e a coerência da trilha, seções 9 e 10). Deck: `04_aula/cotovelo-lateral-2-reabilitacao.pptx`
+(25 slides, 24 cronometrados, 33:25 min pela soma de `tempo_s`; 34:31 estimados pela fala das notas + interações). Versão 1: montada com 1 artigo lido no texto completo (Bretschneider 2022) e o
 resto em resumo ou em print da aula de capacitação. Quando os PDFs pendentes chegarem (`02_artigos/pendentes.md`), faça a
 passada da seção 8.
 
@@ -25,7 +25,7 @@ Só este. Todo o resto da aula é resumo, print ou cálculo (seção 2).
 | Afirmação | Slide | Artigo | Origem e por quê |
 |---|---|---|---|
 | 89% muito melhores ou recuperados em 1 ano (braços controle) | 3 | Ikonen2022 | resumo; PDF aberto (PMC), download automático falhou (pendente item 4) |
-| Metas PRTEE ≤ 45 e ≤ 36 para a Renata (iguais às da aula 1) | 3, 23 (notas) | Poltawski2011 | resumo (22% e 37%); **calc.**: 58 × 0,78 = 45,2 → ≤ 45; 58 × 0,63 = 36,5 → ≤ 36 |
+| Metas PRTEE pelas duas réguas da DMCI, iguais às da aula 1: proporcional ≤ 45 e ≤ 36; absoluta ≤ 51 e ≤ 47 | 2, 3, 23 (notas) | Poltawski2011 | resumo (22% e 37%; 7 e 11 pontos); **calc.**: 58 × 0,78 = 45,2 → ≤ 45; 58 × 0,63 = 36,5 → ≤ 36; 58 − 7 = 51; 58 − 11 = 47 |
 | Sucesso 92/47/32% em 6 sem; 69/91/83% em 52 sem | 5, 7, 22 | Smidt2002 | resumo; Lancet, institucional (item 13) |
 | 1 a menos bem em 1 ano a cada 5 que trocam fisioterapia por injeção | 5 | Smidt2002 | **calc.**: 90,6% − 69,4% = 21,2 pontos → 1/0,212 ≈ 4,7 (percentuais com n inferidos: 58/64 e 43/62) |
 | 45 pontos em 6 semanas, ~1 sucesso a mais a cada 2–3 injeções (só na fala) | 5, notas | Smidt2002 | **calc.**: 91,9% − 46,9% = 45 → 1/0,45 ≈ 2,2 |
@@ -57,6 +57,10 @@ Só este. Todo o resto da aula é resumo, print ou cálculo (seção 2).
 | Tab. 2: RV+ 2,6 (0,96–7,3), 2,3 (0,82–6,4), 2,1 (0,76–6,0), 1,5 (0,78–2,9); pós-teste 85–91%; E 0,5; ~13 não respondedores | 15 | Vicenzino2009 | **print s38** (figura do slide); ~13 = **calc.** da ficha (21% de 64) |
 | A regra prediz resposta nas 3 primeiras semanas a partir do início do tratamento: a pergunta do slide 14 usa a linha de base da aula 1 (46 anos, 120 N, 320 N) | 14 | Vicenzino2009 | resumo ("identify initial responders") |
 | ~70% com o critério "> 112 N" negativo (fala, desafio) | 15, notas | Vicenzino2009 | **calc.**: RV− = 0,47/0,77 = 0,61; chance 3,76 × 0,61 = 2,29 → 70% |
+| Irritabilidade da Renata: moderada (nível IV) — cartão do slide 3; critérios nas notas do slide 12 (moderada = dor leve a moderada no trabalho que dura > 6 h e limita; grave = dor em repouso que tira o sono); níveis I–III leve, IV–V moderada no cartão do slide 19 | 3, 12 (notas), 19 | Lucado2022 | **print s42** (provável Tab. 8, classificação de MacDermid e Silbernagel), atribuição provável; a Renata (5–6/10 no salão, > 6 h, recusa clientes, dorme bem) é dado do caso fixado no roteiro da aula 1 |
+| Mecanismo (só se perguntarem): estender o cotovelo aumenta o contato do ECRB com o capítulo, em cadáver (vulnerabilidade, não causa); algometria local e regional como padrão esperado, hiperalgesia a distância pediria outra hipótese | 12 (notas) | Bunata2007, Rio2021 | resumo; a conferir. Pedido do plano da trilha (mecanismo e sensibilização) que a aula 1 mandou para a aula 2 |
+| "Este 79% (Vicenzino, melhora em 3 semanas) não é o 79% da aula 1 (teto do diagnóstico em Vuvan)" | 15, 22 (notas) | Vicenzino2009 | coerência da trilha: coincidência dita em voz alta |
+| Corticoide em 1 ano: 69% (Smidt) × 83% (Coombes), definições de sucesso diferentes | 5, 6, 18 (notas) | Smidt2002, Coombes2013 | resumo; a amarração está nas notas do slide 18 |
 | ~66% com o critério da idade negativo (pós-teste) | q5 | Vicenzino2009 | **calc.**: RV− = 0,39/0,77 = 0,51; 3,76 × 0,51 = 1,9 → 66% |
 | MWM 0,43 (0,15 a 0,71) curto prazo (métrica a conferir: talvez dentro do grupo); IC cruzam zero em 26 semanas; painel A: 4 de 5 IC acima de zero, um estudo contado 2 vezes | 16 | Lucado2019 | resumo + **print s81** (painel B recortado; painel A só resumido, leitura no olho) |
 | Sintomas de nervo: +15,08 de dor e +7,32 de DASH em 8 semanas (fala) | 18, notas | Waugh2004 | resumo + print s40 (Tab. 5); escala da dor no TC |
@@ -101,26 +105,31 @@ Só este. Todo o resto da aula é resumo, print ou cálculo (seção 2).
   interno (aula gravada para a equipe); se a aula for vendida, refazer como tabela nativa (Tab. 2) e gráfico de
   losangos nativo (Fig. 2B), ou pedir permissão ao editor.
 
-## 6. Checagens automáticas (versão revisada)
+## 6. Checagens automáticas (segunda rodada, 2026-11-25)
 
-- `validar_aula.py`: **APROVADA com avisos**, 0 erros. 32:50; 11 interações em 5 formatos (enquete, chat em cascata,
-  salas, mão na câmera, chat); primeira aos 0:30; 33% do tempo em atividade; maior trecho sem interação ~3 min 15 s.
-  Avisos decididos: palavras visíveis entre 76 e 97 nos slides 3, 6, 8, 11, 12, 13, 19, 20 e 22 (tabelas que são o
-  objeto da decisão, o cartão do caso, a tarefa das salas e a síntese; cortei até não perder número e fonte); figuras
-  dos slides 15 e 16 menores que a moldura (prints de baixa resolução, sem ampliar); slides 15 e 16 com direitos
-  reservados (ver seção 5). Na revisão, o slide 13 chegou a 110 palavras (erro) com a regra de Day separada do
-  calendário: cortado para 97.
-- `montar_deck.py`: 0 erros de layout; nenhum texto reduzido ou fora da caixa.
-- Render olhado em tamanho cheio depois da revisão (`previa/s-01.png` a `s-25.png` e as 3 folhas de contato).
-  Corrigido no olho: quebra "P =\n0,25" (slide 6), "125\nN" (slide 17) e "≤ 36\n(muito)" (slide 3) com espaço
-  inseparável; destaque 2 da Fig. 2B estava sobre os números do eixo (medido de novo no PNG: rótulo do eixo em
-  y 322–335 de 366, x 243–395 de 507) e o número do destaque cobria o texto; rodapé do slide 16 duplicava Lucado 2019
-  quando o id entrou em `fonte` (a citação completa da figura já está no rodapé; ver seção 9).
+- `validar_aula.py` (via `montar_deck.py`): **APROVADA com avisos**, 0 erros. 33:25 pela soma de `tempo_s`;
+  **tempo estimado** pelo aviso novo da skill (fala das notas a ~130 palavras/min + interações): **34:31**, dentro de
+  30–35 min, sem slide acima de 1,5 × o seu `tempo_s`. 11 interações em 5 formatos (enquete, chat em cascata, salas,
+  mão na câmera, chat); primeira aos 0:30; 33% do tempo em atividade; minutos `●●●●···●·●●●··●●●●···●●·●●●···●·●●`;
+  maior trecho sem interação ~3 min 25 s (fim das salas ao slide 14).
+  Avisos decididos: palavras visíveis entre 77 e 99 nos slides 3, 6, 8, 11, 12, 13, 16, 19, 20, 22 e 23 (tabelas que são
+  o objeto da decisão, o cartão do caso, a tarefa das salas, a síntese e a ponte da família); o slide 19 passou de 94
+  para 98 porque o cartão agora diz o que define cada fase (I–III leve, IV–V moderada), e chegou a 105 (erro) antes do
+  corte (Waugh2004 saiu do rodapé do slide 19, onde não havia número dele; continua nas notas do 18 e nas referências).
+  Figuras dos slides 15 e 16 menores que a moldura (prints de baixa resolução, sem ampliar) e com direitos reservados.
+- `montar_deck.py`: 0 erros de layout; nenhum texto reduzido ou fora da caixa (o slide 16 chegou a ser reduzido em 1 pt
+  com um terceiro cartão; o dado cervical foi fundido no cartão "Na Renata" e o cartão do painel A encurtado).
+- Render olhado em tamanho cheio: as 3 folhas de contato e os slides 2, 3, 6, 8, 10, 12, 13, 15, 16, 19, 20, 22, 23 e 25.
+  Sem texto cortado, sobreposição ou destaque fora do lugar. Fica de pé: tabelas ocupando a metade de cima do slide
+  (fonte e altura de linha são do montador da skill, não do deck.json) e o texto lavanda sobre marinho na caixa
+  "Alta" do slide 19 (estilo de passo em destaque da marca), legível no render.
 - `conferir_pptx.py`: nenhum problema (24 notas com tempo acumulado certo, 2 gráficos nativos, 53 partes do XML
   validadas contra o esquema ISO/IEC 29500).
-- `materiais.py`: 7 questões, cada objetivo com questão, nenhuma repetindo enquete; 1 aviso de pé — resumo do aluno
-  com ~1170 "palavras" pela contagem do script (a lista de 21 referências com PMID e DOI responde por ~380 delas; o
-  `wc` dá ~1040). O texto corrido cabe em 2 páginas.
+- `materiais.py`: **nenhum aviso**. `enquetes.md` agora sai com a condução nova da enquete no Meet (voluntário de cada
+  opção, a menos votada primeiro, sem chamar pelo nome quem votou) e com a seção "Plano B e gravação" gerada dos campos
+  `interacao.plano_b` e `interacao.gravacao` do deck.json (slides 4, 9, 12 e 18), sem texto manual. Resumo do aluno:
+  a contagem nova (só texto corrido) não acusa mais excesso. 7 questões, cada objetivo com questão, nenhuma repetindo
+  enquete.
 
 ## 7. Pendências antes da aula
 
@@ -130,8 +139,9 @@ Só este. Todo o resto da aula é resumo, print ou cálculo (seção 2).
 - A dose do isométrico (slides 12, 13, 19) vem de tabela redigitada pela aula de capacitação: é o número mais "de
   segunda mão" da aula e o primeiro a conferir quando o PDF de Vuvan 2020 chegar.
 - Desafio do slide 8 (ondas de choque, −1,21) é oral; não projetar o número antes de ver o limiar dos autores.
-- Ensaiar o tempo: a revisão estimou 34–37 min para a versão anterior; esta tem 32:50 previstos com tempos realistas.
-  Corte de reserva se atrasar: slide 11.
+- Ensaiar o tempo: 33:25 previstos e 34:31 estimados pela fala, perto do teto de 35. Cortes de reserva se atrasar:
+  slide 11 (números no resumo) e ler só um bilhete da aula 1 no slide 3.
+- Separar dois bilhetes de saída da aula 1 antes da aula (slide 3) e copiar os desta aula no slide 24 (abrem a aula 3).
 
 ## 8. Trocar ou conferir quando o PDF chegar
 
@@ -155,6 +165,8 @@ Só este. Todo o resto da aula é resumo, print ou cálculo (seção 2).
 | 14, 15; q5 | Vicenzino2009 (16) | Ensaio de origem; dose da MWM; definição de melhora; momento da medida dos preditores (linha de base?); quantos tinham os 3 critérios; n (64 × 62) | Tab. 2 recortada a 300 dpi (substitui o print s38) |
 | 16; q6 | Lucado2019 (25) | **Métrica do efeito** ("change following MWM": dentro do grupo ou × controle?) — se for dentro do grupo, tirar o 0,43 das notas e do resumo e trocar o título do slide 16; dupla contagem do estudo 3; comparadores; mobilização regional | Fig. 2A–C a 300 dpi (substitui o recorte do print s81; com resolução, o painel A volta legível) |
 | 16, 19, 20; q7 | Lucado2022 (1) | Página e grau de cada recomendação (exercício B, 20–40% CVM F, regionais C, órtese F, fita rígida B); algoritmo de reavaliação (há prazo?); critérios de recuperação; conduta com sintoma neural | Quadro de intervenções e algoritmo a 300 dpi (atenção: `detectar_figuras.py` apaga as reservas não aprovadas do catálogo; este deck usa `midia/` e `04_aula/figuras/` direto, então não quebra) |
+| 3, 12 (notas), 19 | Lucado2022 (1) | Classificação de irritabilidade (provável Tab. 8, print s42): número da tabela, página, critérios de cada nível; confirmar que a Renata é nível IV e que leve = I–III e moderada = IV–V, como diz o cartão do slide 19 | Tabela de classificação refeita como tabela nativa "Adaptado de" (eixos de irritabilidade e distribuição) |
+| 12 (notas) | Bunata2007, Rio2021 (fora de `pendentes.md`; pedir) | Bunata: contato do ECRB com o capítulo em extensão (desenho em cadáver, n); Rio: o que o consenso diz sobre algometria local, regional e a distância | — |
 | 18 (notas) | Waugh2004 (15) | Definição de "sintomas de nervo"; escala da dor (os +15,08); n analisados | — |
 | 3 | Ikonen2022 (4), Poltawski2011 (6) | 89% (IC 80–97%); DMCI por gravidade (a Renata começa alto) | — |
 | 19 | Bretschneider2022, apêndices 1–3 | Seguimento de cada coorte e estimativas ajustadas | — (Fig. 2 já aprovada; usada na aula 1) |
@@ -175,8 +187,35 @@ Só este. Todo o resto da aula é resumo, print ou cálculo (seção 2).
 | Meta de PRTEE 37 em vez de 36 | sim (aula 1, slide 19: "PRTEE de 36 ou menos") | ≤ 36 no slide 3, notas dos slides 3 e 23, roteiro e seção 2 |
 | Eventos adversos de Wallis como "dor depois da sessão" | sim (ficha Wallis2024) | Nota do slide 11, notas e resumo: todos os eventos, RR 3,69 (0,98 a 13,97), certeza incerta |
 | Formigamento some no revés | sim | Cartão do slide 17, notas dos slides 17–19 (reexame cervical e radial, encaminhar se déficit progressivo; Waugh 2004), opções B e C da enquete 3, resumo (algoritmo 5) e propostas clínicas. O texto do achado chegou truncado; apliquei o que o veredito resume ("o formigamento desaparece no revés") |
-| Tempo real 34–37 min | sim (enquetes com 4 falas em 85 s; salas em 5 min) | Tempos recalibrados; saiu o slide de previsão em chat do bloco 1 (a enquete 1 virou a previsão); 32:50 previstos |
+| Tempo real 34–37 min | sim (enquetes com 4 falas em 85 s; salas em 5 min) | Tempos recalibrados; saiu o slide de previsão em chat do bloco 1 (a enquete 1 virou a previsão). Na segunda rodada, com as recuperações e as notas novas: 33:25 nominais e 34:31 pelo estimador novo da skill (dentro de 30–35) |
 | Pós-teste sem "decidir quando a dor volta"; distratores fracos | sim | Nova q7 (recidiva pós-injeção, objetivo 2); distratores refeitos em q1, q3, q5 e q6 com erros reais (começar no teto da faixa, excêntrico sem fonte, "fisioterapia anula a perda", PRP "alívio parecido", 1 ÷ RV+ no lugar da RV−, somar critérios, ganho imediato como preditor, grau B inventado) |
+| **Segunda rodada (2026-11-25): achados que a primeira correção não recebeu (revisão cortada) ou recebeu em parte** | | |
+| Distratores caricatos nas enquetes; bloco do revés sem âncora e desafio; desafio do bloco 1 só oral | sim | Enquete 1, C = o erro real da aula de capacitação ("em 1 ano dá no mesmo"); enquete 3, D = "retomar a carga em que parou e só reduzir as horas"; enquete 2 virou escolha de raciocínio (DMP × percepção). O slide 18 é enquete e o esquema só tem `ancora`/`desafio` em pergunta e tarefa: âncora ("a irritabilidade de hoje") e desafio ("e se o formigamento piorou?") ficaram nas notas. O desafio do −1,21 segue oral (limiar dos autores não conferido) |
+| Conteúdo ausente: isométrico × isotônico × excêntrico × HSR; fita rígida; dor durante a série | sim | Notas do slide 13: nenhuma comparação direta na seleção, escolha pela irritabilidade (opinião); durante a série, a diretriz diz só "conforme tolerado". Linha "Fita rígida | — | sem estudo na seleção | grau B (diretriz)" na tabela do slide 8. Resumo, ponto 7 |
+| Slide 20, linhas 1 e 4 (12,15 × 18; recidiva como medida do ano) | sim | "12,15 era o curto prazo; no longo, 18 (unidade não informada): a direção se mantém"; "O corticoide piora o ano: 69% x 91%; recidiva 54% x 12%" (usei o 69 × 91 de Smidt, o mesmo do slide 5, em vez do 83 × 96 sugerido, para a tabela da capacitação bater com o número que a turma acabou de ver) |
+| Revés atribuído só à injeção; secador e escova como rotação | sim | Notas do slide 18: compatível com a recidiva de 54%, somada a parar o exercício e às 8 h no salão; não dá para separar. Slide 19: "medir a rotação do antebraço no dia ... (extrapolação dupla)"; proposta clínica reescrita |
+| Carga "ensaio" sem "a conferir"; certeza de Lowdon | sim | Slide 13: "ensaio (conferir); kg calc."; slides 8 e 11: "baixa a muito baixa (ficha)" |
+| Referências sem o estado da conferência | sim | Slide 25: linha "na versão 1, as referências foram conferidas só no resumo ou em print ..., exceto Bretschneider 2022" e a lista das propostas clínicas; notas com o estado por referência |
+| Tabelas na metade de cima; contraste da caixa "Alta" | não aplicado | Tamanho de fonte das tabelas e cor do passo em destaque são do montador da skill (`_marca.py`/`montar_deck.py`), fora da pasta desta aula; o render mostra o texto legível. Fica como sugestão para a skill |
+| `enquetes.md` chamava "uma pessoa de cada opção"; faltava plano B das salas | sim | Notas das 3 enquetes e `enquetes.md` (gerado pela skill corrigida): voluntário, a menos votada primeiro, o Meet mostra só a contagem. Plano B e gravação das salas no deck.json (`interacao.plano_b`, `interacao.gravacao`), sem texto manual |
+| Cervical sem dado na tela antes da mão na câmera (slide 16) | sim | Cartão "Na Renata" do slide 16: "Pescoço duro e formigamento sem déficit: cervical e torácica têm grau C" |
+| Pós-teste: q2 cobra conteúdo só das notas; pré e pós com as mesmas questões | não aplicado | q2 cobra um raciocínio (mudança dentro do grupo sem braço sem HSR) que a aula treina na tela (slide 10) e Couppé agora é recuperação da aula 1 no slide 7. Pós-teste paralelo: o `materiais.py` não tem formato de pós paralelo, e escrever 7 casos novos com número rastreável fica para quando os PDFs chegarem; o Forms embaralha as opções |
+| Lucado2019 no campo `fonte` do slide 16 | não aplicado (mantido da 1ª rodada) | A citação completa da figura já sai no rodapé; o id duplicava |
+
+## 10. Coerência da trilha (auditoria de 2026-11-25)
+
+| Item | Feito nesta aula | Fica para fora desta pasta |
+|---|---|---|
+| Ponte do slide 23 anunciava a colega e a manicure | Título "A Renata melhorou. E a família?"; fala com o dedo do meio, o Sérgio (medial) e a Júlia (puerpério); cartão "Sérgio: tendão, nervo ulnar ou ligamento? · Renata: dedo em gatilho · Júlia: De Quervain no puerpério"; notas e roteiro (cabeçalho, linha do tempo, dados do caso) | Aula 3, `verificacao.md` (linhas 129–131): trocar "slide 24" por "slide 23" e marcar como resolvido (outra agente) |
+| Irritabilidade usada e não ensinada | Cartão do slide 3 ("Irritabilidade moderada (diretriz; atribuição provável)"); critérios e origem (print s42) nas notas do slide 12; níveis no cartão do slide 19 | Opcional: uma frase classificando a Renata nas notas do slide 19 da aula 1 |
+| Enquetes "chamar quem votou A pelo nome" | Notas dos slides 4, 9 e 18, roteiro e `enquetes.md` | Aula 1 (outra agente) |
+| Dois "79%" | Notas dos slides 15 e 22 | — |
+| Duas réguas da DMCI | Âncora do slide 2, cartão do slide 3 (proporcional ≤ 45 e ≤ 36; absoluta ≤ 51 e ≤ 47), notas aceitam as duas | — |
+| Couppé, braço de espera de Smidt e Waugh repetidos como novidade | Viraram recuperação (slides 7, 5 e 18) | — |
+| 69% × 83% de corticoide em 1 ano | Notas do slide 18 | — |
+| Bilhetes de saída não usados | Notas do slide 1 (separar dois) e do slide 3 (ler dois e perguntar quem já mudou algo); slide 24 diz que abrem a aula 3 | Aula 3, slides 3 e 28; aula 1, slide 1 |
+| Mecanismo e sensibilização; bandagem, TENS, laser, crioterapia | Duas frases nas notas do slide 12 (Bunata 2007, Rio 2021, a conferir); resumo do aluno, ponto 7: fora desta versão | Atualizar `aulas/trilha-cotovelo-e-mao.md` (plano ainda promete esses recursos na aula 2) |
+| Termos e siglas | DMCI nos slides 2 e 3 e nas notas; rótulos "Karanasios 2021 (exercício)" e "(ondas de choque)" nos rodapés, no resumo, nas notas das referências e neste arquivo; "Bisset2006b" só aparece como id interno (o visível é "Bisset et al. 2006") | DMCI e LCU nas aulas 1 e 3 |
 
 ---
 
@@ -187,7 +226,7 @@ Veredito slide a slide, resumido de `00_mapa_evidencias.md`, seção 2 (confirma
 
 | Slide base | A aula de capacitação dizia | Veredito | O que dizer agora (fonte) | Nesta aula |
 |---|---|---|---|---|
-| s60 (notas) | Exercício melhor que corticoide no longo prazo na preensão: DMP 12,15 kg (1,69–22,6) | **corrige** | 12,15 é o curto prazo; longo prazo 18 (11,17–24,84); unidade não informada no resumo (Karanasios 2021a) | slide 20 |
+| s60 (notas) | Exercício melhor que corticoide no longo prazo na preensão: DMP 12,15 kg (1,69–22,6) | **corrige** | 12,15 é o curto prazo; longo prazo 18 (11,17–24,84); unidade não informada no resumo (Karanasios 2021, exercício) | slide 20 |
 | s60 | Exercício melhor que corticoide em dor, incapacidade e preensão; × espera, só alguns desfechos | matiza | Certeza baixa (× corticoide) e muito baixa (× espera); "the effects are small" | slide 11 |
 | s50–s56 | Isométrico sem supervisão diminuiu pior dor e incapacidade; sem diferença na percepção e na preensão | matiza | Autores: "doubtful" como tratamento isolado; sucesso 29% × 26%; 3 de 21 pioraram; 493 de 533 excluídos; tabelas de dose redigitadas, a conferir (Vuvan 2020) | slides 9, 10, 13 |
 | s57–s59 | Excêntrico melhor que outros fortalecimentos no curto prazo (DME −0,63; 1,12; 1,22) | matiza (não conferido) | Nenhuma revisão de excêntrico na seleção; programas heterogêneos e mal descritos; a rede não acha nada estatisticamente melhor que controle até 6 semanas | fora (resumo, roteiro) |
@@ -211,7 +250,7 @@ Veredito slide a slide, resumido de `00_mapa_evidencias.md`, seção 2 (confirma
 | s109–s114 | Crioterapia e TENS burst aumentam limiar e tolerância (Macedo) | matiza | Sessão única em voluntárias de 22 anos, provavelmente sem tendinopatia; gelo grau E, com TENS burst C | fora |
 | s115 | TENS não acrescenta à orientação | confirma | Grau C; nada novo na seleção | fora |
 | s117–s120 | Laser: força e analgesia em 5–26 semanas | matiza | Grau C; perde para ondas de choque (certeza muito baixa); sem revisão de laser na seleção | fora |
-| — | — | **novo** | Ondas de choque sem benefício clínico × simulação e corticoide (Karanasios 2021b) | slide 8 |
+| — | — | **novo** | Ondas de choque sem benefício clínico × simulação e corticoide (Karanasios 2021, ondas de choque) | slide 8 |
 | — | — | **novo** | PRP/sangue = injeção placebo em 3 meses (0,16 em 10, moderada) (Karjalainen 2021) | slide 8 |
 | — | — | **novo** | Na rede de 13 ECR (só dor do PRTEE), nada estatisticamente melhor que controle até 6 semanas, corticoide incluído (rede esparsa); só o exercício no médio prazo (−4,32) (Lowdon 2024) | slides 8, 11 |
 | s122 | "Não há intervenção que se destaque" | confirma e reformula | Verdade, mas esconde que o curso é favorável (89% em 1 ano) e que o corticoide piora o ano | slides 3, 20 |

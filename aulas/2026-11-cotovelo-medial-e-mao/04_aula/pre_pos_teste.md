@@ -125,7 +125,7 @@ Tenista amador de 47 anos com tendinopatia medial do cotovelo há 4 meses. Um co
 Opções:
 
 ```text
-Usar a dose como proposta extrapolada da lateral e medir a cada 2 a 4 semanas.
+Usar a dose como proposta extrapolada da lateral e reavaliar a cada 3 semanas.
 Seguir o protocolo: todos os estudos da medial mostraram melhora.
 Não prescrever exercício até haver ensaio bom na medial.
 Preferir a infiltração: é a única opção com ECR na medial.
@@ -207,7 +207,7 @@ Referência: Challoumas D et al. JAMA Netw Open 2023;6(10):e2337001. PMID 378894
 
 ### Questão 7 · nível: avaliação · objetivo 4
 
-**Resposta:** Usar a dose como proposta extrapolada da lateral e medir a cada 2 a 4 semanas.
+**Resposta:** Usar a dose como proposta extrapolada da lateral e reavaliar a cada 3 semanas.
 
 Melhora dentro dos grupos não é efeito do tratamento (curso natural, regressão à média). Na medial não há estimativa de efeito do exercício; o único ECR de corticoide mostrou alívio só em 6 semanas, igual em 3 meses e 1 ano. A conduta de nível alto é dizer de onde vem a dose (lateral e mecanismo), chamá-la de proposta clínica e medir a resposta individual (dor em 24 horas, PRTEE adaptada, preensão sem dor).
 
