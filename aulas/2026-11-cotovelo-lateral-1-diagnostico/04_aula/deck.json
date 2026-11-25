@@ -6,7 +6,7 @@
   "slug": "cotovelo-lateral-1-diagnostico",
   "formato": "expositiva",
   "publico": "Fisioterapeutas da equipe ILLIC, de recém-formados a especialistas em membro superior",
-  "duracao_alvo_min": 47,
+  "duracao_alvo_min": 48,
   "caso_ficticio": true,
   "partes": [
    {
@@ -37,37 +37,38 @@
    "Estimar o prognóstico com o curso natural e os sinais de pior evolução, e calcular a meta individual do PRTEE pela DMCI (diferença mínima clinicamente importante)"
   ],
   "propostas_clinicas": [
-   "pistas de cada diferencial e exame cervical e do nervo radial quando surge formigamento: nenhum estudo do lote mede a acurácia desses testes",
-   "a lista de sinais de alerta: sem fonte no lote; conferir na diretriz de 2022",
-   "usar até 79% como teto do pré-teste (111 de 533 voluntários de Vuvan 2020 não tinham a tendinopatia)",
+   "pistas de cada diferencial e exame cervical e do nervo radial no formigamento: acurácia sem estudo no lote",
+   "sinais de alerta: sem fonte no lote; conferir na diretriz de 2022",
+   "usar até 79% como teto do pré-teste (Vuvan 2020)",
    "usar a RV da preensão na preensão sem dor e contra radiculopatia ou túnel radial: protocolo e espectro a conferir",
-   "acompanhar a preensão sem dor pela razão afetado/não afetado, sem DMCI publicada no lote",
-   "classificar irritabilidade e distribuição pela tabela que a aula de capacitação atribui à diretriz de 2022 (atribuição provável, a conferir no PDF)",
-   "imagem só se não melhorar no prazo ou surgir sinal atípico (notas da aula de capacitação, a conferir na diretriz)",
+   "acompanhar a preensão sem dor pela razão afetado/não afetado, sem DMCI no lote",
+   "classificar irritabilidade e distribuição pela tabela atribuída à diretriz de 2022 (a conferir no PDF)",
+   "imagem só se não melhorar no prazo ou surgir sinal atípico (da capacitação; a conferir na diretriz)",
    "com PRTEE inicial alto, preferir a régua proporcional da DMCI (certeza baixa)",
-   "reavaliar o PRTEE a cada 3 semanas (intervalo em que a DMCI foi medida; nenhum ensaio testou o calendário)",
-   "a frase de consultório sobre o mecanismo (“tendão alterado e sensível; a dor não mede o dano”): síntese nossa de estudos de mecanismo, não testada como intervenção"
+   "reavaliar o PRTEE a cada 3 semanas (intervalo em que a DMCI foi medida; calendário não testado)",
+   "a frase de consultório sobre o mecanismo (“tendão alterado e sensível; a dor não mede o dano”): síntese nossa, não testada como intervenção"
   ],
   "resumo": {
    "pontos_chave": [
-    "Incidência de 3,4 por 1000 ao ano (média de 2000 a 2012), com pico de 9 por 1000 entre 40 e 49 anos (Sanders 2015). No trabalho, rotação do antebraço por mais de 4 h/dia (OR 1,85; 1,10 a 3,10) e força com duração (Strain Index, OR 1,75; 1,11 a 2,78) se associaram à incidência, cerca de 1 caso a mais a cada 25 a 30 expostos (calc.); a repetição isolada ficou inconclusiva (OR 0,71; 0,42 a 1,20) (Bretschneider 2022).",
+    "Incidência de 3,4 por 1000 ao ano, com pico de 9 por 1000 entre 40 e 49 anos (Sanders 2015). No trabalho, rotação do antebraço por mais de 4 h/dia (OR 1,85; 1,10 a 3,10) e força com duração (Strain Index, OR 1,75; 1,11 a 2,78) se associaram à incidência, cerca de 1 caso a mais a cada 25 a 30 expostos (calc.); a repetição isolada ficou inconclusiva (OR 0,71; 0,42 a 1,20) (Bretschneider 2022).",
     "Mecanismo: tendinose sem inflamação celular consistente; a face profunda do ECRB encosta mais no capítulo quando o cotovelo estende (cadáver, Bunata 2007); hiperalgesia local e regional, não a distância (Rio 2021). A dor não mede o dano.",
-    "Cozen: sensibilidade de 91%, especificidade não informada. Preensão positiva = queda de pelo menos 5% a 10% ao estender o cotovelo: RV+ 3,9 a 8,3 e RV− 0,19 a 0,28 (calc. de Karanasios 2022: RV+ = S ÷ (1 − E); RV− = (1 − S) ÷ E); protocolo e espectro a conferir.",
-    "Com 50% antes, a preensão positiva leva a 80% a 89%; com suspeita alta (até 79%), a negativa derruba para 42% a 51%, sem excluir (cálculo com Karanasios 2022 e Vuvan 2020).",
+    "Cozen: sensibilidade de 91%, especificidade não informada. Preensão positiva = queda de pelo menos 5% a 10% ao estender o cotovelo: RV+ 3,9 a 8,3 e RV− 0,19 a 0,28 (calc. de Karanasios 2022).",
+    "Com 50% antes, a preensão positiva leva a 80% a 89%; com suspeita alta (até 79%), a negativa derruba para 42% a 51%, sem excluir (calc. com Karanasios 2022 e Vuvan 2020).",
+    "Irritabilidade (print s42; atribuída à diretriz, descritiva, não validada). Leve: I, dor leve após o trabalho, < 6 h; II, idem, 7 a 48 h; III, leve durante o trabalho, persiste, não limita. Moderada: IV, leve a moderada durante, > 6 h, limita; V, moderada no geral, intensa em AVD pesada. Grave: VI, moderada a intensa, intensa em atividade leve, intermitente em repouso; VII, constante em repouso, tira o sono. Dor leve ≤ 3/10; moderada 4 a 6; intensa ≥ 7.",
     "Esporão no epicôndilo: 50% da população sem dor (RV+ ≈ 1,6, calculada); nenhum achado do ultrassom acompanhou dor, PRTEE ou duração (Krogh 2020).",
-    "Sem tratamento ativo, 89% muito melhores ou recuperados em 1 ano (189 de 213; IC 80% a 97%), com meia-vida de 2,5 a 3 meses independente do tempo de dor (Ikonen 2022). DMCI do PRTEE: 7 pontos ou 22% (um pouco melhor); 11 pontos ou 37% (muito melhor) (Poltawski 2011)."
+    "Sem tratamento ativo, 89% muito melhores ou recuperados em 1 ano (189 de 213; IC 80% a 97%), com meia-vida de 2,5 a 3 meses, sem efeito do tempo de dor (Ikonen 2022). DMCI do PRTEE: 7 pontos ou 22% (um pouco melhor); 11 pontos ou 37% (muito melhor) (Poltawski 2011)."
    ],
    "algoritmo": [
     "Sinal de alerta (trauma, febre, dor noturna constante, déficit progressivo, câncer, bloqueio)? Encaminhe (proposta clínica).",
-    "Dor no epicôndilo? Diga a sua suspeita em porcentagem, some história, Cozen e preensão fletido × estendido; nenhum teste fecha sozinho (Zwerus 2018).",
+    "Dor no epicôndilo? Diga a suspeita em porcentagem, some história, Cozen e preensão fletido × estendido; nenhum teste fecha sozinho (Zwerus 2018).",
     "Dor cervical, formigamento, dor mais distal, fraqueza dos dedos, estalo ou falseio? Reabra o diferencial e examine (proposta clínica).",
-    "Meça a preensão sem dor nos dois lados (razão afetado ÷ não afetado) e o PRTEE; classifique irritabilidade e distribuição (classificação da diretriz, a conferir).",
-    "Laudo na mão? Explique cada achado pela frequência em quem não tem dor. Sem sinal atípico, sem imagem agora.",
-    "Diga o prognóstico com números (cerca de 9 em 10 muito melhores em 1 ano) e escreva a meta do PRTEE pelas duas réguas; reavalie a cada 3 semanas (proposta clínica)."
+    "Meça a preensão sem dor nos dois lados (razão afetado ÷ não afetado) e o PRTEE; classifique irritabilidade (ponto 5) e distribuição.",
+    "Laudo na mão? Explique cada achado pela frequência em quem não tem dor; sem sinal atípico, sem imagem agora.",
+    "Diga o prognóstico com números (ponto 7); escreva a meta do PRTEE pelas duas réguas; reavalie a cada 3 semanas."
    ],
    "para_praticar": [
-    "No próximo paciente com dor lateral, escreva a sua suspeita em porcentagem antes do exame e refaça a conta depois da preensão fletido × estendido.",
-    "Quando o paciente perguntar por que dói, use a frase da parte 2, sem “inflamação” nem “desgaste”."
+    "No próximo paciente com dor lateral, escreva a suspeita em porcentagem antes do exame e refaça a conta depois da preensão.",
+    "Quando perguntarem por que dói, use a frase da parte 2, sem “inflamação” nem “desgaste”."
    ]
   }
  },
@@ -223,7 +224,7 @@
   {
    "tipo": "capa",
    "tempo_s": 30,
-   "notas": "Aula expositiva de 47 minutos, a primeira de três da trilha de cotovelo e mão, em cinco partes, com checagens rápidas a cada 5 a 7 minutos. A paciente que aparece no fim de cada parte, a Renata, é fictícia e volta nas aulas 2 e 3. Antes de abrir a sala: deixar as duas enquetes salvas no Meet, um cronômetro visível, a calculadora do celular à mão e, se possível, um colega lendo o chat. Entrar 5 minutos antes e receber as pessoas pelo nome. Dizer em uma frase que esta aula substitui, para a equipe, a primeira parte da nossa aula de capacitação: o que continua valendo fica, atualizado, e o que mudou eu mostro na hora, inclusive números que eu mesmo ensinei de outro jeito."
+   "notas": "Aula expositiva de 48 minutos, a primeira de três da trilha de cotovelo e mão, em cinco partes, com checagens rápidas a cada 5 a 7 minutos. A paciente que aparece no fim de cada parte, a Renata, é fictícia e volta nas aulas 2 e 3. Antes de abrir a sala: deixar as duas enquetes salvas no Meet, um cronômetro visível, a calculadora do celular à mão e, se possível, um colega lendo o chat. Entrar 5 minutos antes e receber as pessoas pelo nome. Dizer em uma frase que esta aula substitui, para a equipe, a primeira parte da nossa aula de capacitação: o que continua valendo fica, atualizado, e o que mudou eu mostro na hora, inclusive números que eu mesmo ensinei de outro jeito."
   },
   {
    "tipo": "cartoes",
@@ -472,7 +473,7 @@
    "olho": "Parte 1 · Aplicação",
    "titulo": "Renata, 46 anos, cabeleireira: 6 h por dia de secador e escova. O que no trabalho dela tem **evidência** de risco?",
    "instrucao": "Uma linha no chat: a exposição e o número. Envie no 3.",
-   "tempo_s": 75,
+   "tempo_s": 95,
    "interacao": {
     "tipo": "chat_cascata",
     "duracao_s": 35,
@@ -523,7 +524,7 @@
    "papel": "explicar",
    "olho": "Parte 2 · O mecanismo",
    "titulo": "Quatro peças explicam a dor **lateral**",
-   "tempo_s": 85,
+   "tempo_s": 75,
    "numerar": true,
    "passos": [
     {
@@ -708,7 +709,7 @@
    "papel": "checar",
    "olho": "Parte 2 · Checagem",
    "titulo": "Explique ao **paciente**",
-   "tempo_s": 80,
+   "tempo_s": 90,
    "interacao": {
     "tipo": "enquete",
     "duracao_s": 40,
@@ -719,7 +720,7 @@
    "opcoes": {
     "A": "É inflamação crônica: o anti-inflamatório certo resolve.",
     "B": "O tendão está rompido; a dor mostra o tamanho do dano.",
-    "C": "O tendão mudou e a região do cotovelo ficou mais sensível; a dor não mede o dano.",
+    "C": "O tendão mudou e a região ficou mais sensível; dor não mede dano.",
     "D": "Sensibilização central: o corpo inteiro ficou mais sensível à dor."
    },
    "gabarito": "C",
@@ -820,7 +821,7 @@
    "papel": "explicar",
    "olho": "Parte 3 · Quanto vale cada teste",
    "titulo": "A queda da preensão ao estender é o teste que mais **inclina**",
-   "tempo_s": 95,
+   "tempo_s": 90,
    "colunas": [
     "Teste",
     "S",
@@ -879,7 +880,7 @@
    "papel": "exemplo",
    "olho": "Parte 3 · Exemplo resolvido",
    "titulo": "Da suspeita à **probabilidade** depois do teste",
-   "tempo_s": 100,
+   "tempo_s": 90,
    "dado": {
     "olho": "O problema",
     "texto": "Suspeita de 50% antes do exame. Preensão positiva.",
@@ -915,7 +916,7 @@
    "papel": "checar",
    "olho": "Parte 3 · Exemplo parcialmente resolvido",
    "titulo": "Suspeita alta e preensão **negativa**: quanto sobra?",
-   "tempo_s": 140,
+   "tempo_s": 145,
    "interacao": {
     "tipo": "chat_cascata",
     "duracao_s": 50,
@@ -963,7 +964,7 @@
    "papel": "explicar",
    "olho": "Parte 3 · Como classificar",
    "titulo": "Classifique antes de tratar: **irritabilidade** e distribuição",
-   "tempo_s": 90,
+   "tempo_s": 105,
    "colunas": [
     "Classe",
     "Critério (print s42)"
@@ -991,12 +992,12 @@
     8.2
    ],
    "destaque_linhas": [],
-   "nota": "Descritiva, não validada; atribuição provável à diretriz (print s42).",
+   "nota": "I, III e V: notas e resumo. Descritiva, não validada; atribuição provável (print s42).",
    "fonte": [
     "Lucado2022",
     "classificação: print da aula de capacitação s42"
    ],
-   "notas": "Como classificar, e isso continua valendo da nossa aula de capacitação, que atribui a classificação à diretriz. Dos seis eixos, os dois que mudam a conduta. Irritabilidade, em sete níveis: leve, I a III; moderada, IV e V; grave, VI e VII. Os critérios que registramos do print: nível II, dor leve depois do trabalho, que dura de 7 a 48 horas; nível IV, dor leve a moderada na atividade, que persiste mais de 6 horas e limita; nível VI, dor moderada a intensa em atividade leve, intermitente em repouso; nível VII, dor constante em repouso, que tira o sono. I, III e V não estão no nosso registro: na dúvida, classifique pela faixa. Perguntas: quanto dói, quanto dura, já limita, dói parado, acorda? Intensidade: leve até 3 em 10, moderada de 4 a 6, intensa a partir de 7. Distribuição: tipo 1, um lado; tipo 2, os dois; tipo 3, com dor cervical ou neuropática. Na fala ficam a agudeza, até 6 semanas, até 3 meses ou crônica, e o contexto. A classificação é descritiva, não validada, e as faixas de PRTEE função da aula de capacitação se sobrepõem: ficaram fora até o PDF."
+   "notas": "Como classificar; isso continua valendo da nossa aula de capacitação, que atribui a classificação à diretriz. Dos seis eixos, os dois que mudam a conduta. Irritabilidade em sete níveis, com os critérios do print: I, dor leve depois do trabalho, menos de 6 horas; II, dor leve depois do trabalho, de 7 a 48 horas; III, dor leve durante o trabalho, que continua depois, sem limitar; IV, leve a moderada durante a atividade, mais de 6 horas, e limita; V, moderada no geral, intensa nas atividades pesadas do dia a dia; VI, moderada a intensa no geral, intensa em atividade leve, intermitente em repouso; VII, constante em repouso, intensa na atividade, tira o sono. I a III é leve; IV e V, moderada; VI e VII, grave. No slide ficam II, IV, VI e VII; os outros três estão aqui e no resumo do aluno. Perguntas: quanto dói, quanto dura, já limita, dói parado, acorda? Intensidade: leve até 3 em 10, moderada de 4 a 6, intensa a partir de 7. Distribuição: tipo 1, um lado; tipo 2, os dois; tipo 3, com dor cervical ou neuropática. Agudeza: até 6 semanas, até 3 meses ou crônica; e o contexto. A classificação é descritiva, não validada; as faixas de PRTEE função da capacitação se sobrepõem e ficaram fora até o PDF."
   },
   {
    "tipo": "citacao",
@@ -1004,7 +1005,7 @@
    "papel": "aplicacao",
    "olho": "Parte 3 · Aplicação",
    "titulo": "Renata, primeira consulta: **meça e classifique**",
-   "tempo_s": 110,
+   "tempo_s": 120,
    "origem": "caso",
    "interacao": {
     "tipo": "chat_cascata",
@@ -1070,7 +1071,7 @@
    "papel": "explicar",
    "olho": "Parte 4 · O diferencial",
    "titulo": "O que faz pensar em **outra coisa**",
-   "tempo_s": 85,
+   "tempo_s": 75,
    "colunas": [
     "Diferencial",
     "Pista na história e no exame"
@@ -1121,7 +1122,7 @@
    "papel": "checar",
    "olho": "Parte 4 · Checagem",
    "titulo": "Cozen positivo, mas a dor está **mais abaixo**",
-   "tempo_s": 75,
+   "tempo_s": 90,
    "interacao": {
     "tipo": "enquete",
     "duracao_s": 40,
@@ -1131,12 +1132,12 @@
    "pergunta": "Homem de 50 anos, dor lateral há 2 meses, Cozen positivo. A dor fica 4 cm abaixo do epicôndilo e há fraqueza para estender os dedos. O próximo passo mais defensável?",
    "opcoes": {
     "A": "Fechar tendinopatia lateral: o Cozen é positivo.",
-    "B": "Examinar o nervo radial (túnel radial e NIP) antes de fechar.",
-    "C": "Pedir ressonância para ver o tendão.",
+    "B": "Examinar o nervo radial antes de fechar.",
+    "C": "Pedir ressonância para ver o estado do tendão.",
     "D": "Infiltrar o epicôndilo e reavaliar."
    },
    "gabarito": "B",
-   "notas": "Checagem da parte 4: um paciente novo, com uma pista fora do epicôndilo. Interação: enquete de 40 segundos, sem comentar as opções. Mostrar o resultado e pedir um voluntário da opção menos votada para defender em 15 segundos, de microfone aberto. A resposta é a B: dor mais distal e dedos fracos fazem pensar no nervo radial. A A ignora a pista; a C pede imagem para o que o exame responde; a D trata antes de saber o que é. O exame do nervo é proposta clínica. Se mais da metade errar, voltar 30 segundos à tabela."
+   "notas": "Checagem da parte 4: um paciente novo, com uma pista fora do epicôndilo. Interação: enquete de 40 segundos, sem comentar as opções. Mostrar o resultado e pedir um voluntário da opção menos votada para defender em 15 segundos, de microfone aberto. A resposta é a B: dor mais distal e dedos fracos fazem pensar no nervo radial, no túnel radial ou no interósseo posterior. A A ignora a pista; a C pede imagem para o que o exame responde; a D trata antes de saber o que é. O exame do nervo é proposta clínica. Se mais da metade errar, voltar 30 segundos à tabela."
   },
   {
    "tipo": "barras",
@@ -1241,7 +1242,7 @@
    "papel": "sintese",
    "olho": "Parte 4 · Síntese",
    "titulo": "O que levar sobre o diferencial e a **imagem**",
-   "tempo_s": 45,
+   "tempo_s": 40,
    "pontos": [
     {
      "titulo": "Pista fora do epicôndilo reabre o caso",
@@ -1263,7 +1264,7 @@
    "tipo": "mapa",
    "parte": 5,
    "atual": 5,
-   "tempo_s": 30,
+   "tempo_s": 25,
    "notas": "Onde estamos: parte 5 de 5. Já vimos o que é, por que dói, como diagnosticar e o que não é. Falta o que esperar: o curso natural com número, os sinais de pior evolução e a conta da meta do PRTEE. É a parte em que a nossa aula de capacitação mais mudou."
   },
   {
@@ -1354,7 +1355,7 @@
    "papel": "explicar",
    "olho": "Parte 5 · O que piora a previsão",
    "titulo": "Sinais de pior prognóstico existem, mas pesam **pouco**",
-   "tempo_s": 80,
+   "tempo_s": 95,
    "colunas": [
     "Sinal (coortes)",
     "Quando",
@@ -1395,7 +1396,7 @@
     "Ikonen2022",
     "Sanders2015"
    ],
-   "notas": "Os modificadores, com o tamanho. Waugh, 83 pacientes, 8 semanas de fisioterapia: com o mesmo escore inicial, quem relata sintomas de nervo termina com 15 pontos a mais na escala visual de dor, escala a conferir no PDF; as mulheres, 8,9 pontos a mais de DASH. Smidt, 349 pacientes: dor cervical, dor intensa e duração longa associadas a pior resultado em 12 meses, sem tamanho no resumo. A duração é a ressalva: Ikonen não viu efeito; meta-regressão por ensaio e coorte de pessoas podem as duas estar certas. Coombes, 41 pacientes: o limiar ao frio foi o único preditor consistente em um ano, e o modelo inteiro explicou 9% do PRTEE; não é o tamanho do efeito do frio. Na aula de capacitação, essa tabela estava na patoanatomia. Um dado de prática: em Sanders, cerca de 1 em 10 com sintoma aos 6 meses foi operado; mostra o que se fez, não o que a cirurgia muda. Todos com certeza baixa: mudam a velocidade, não o destino de um ano."
+   "notas": "Os modificadores, com o tamanho. Waugh, 83 pacientes, 8 semanas de fisioterapia: com o mesmo escore inicial, quem relata sintomas de nervo termina com 15 pontos a mais na escala visual de dor, escala a conferir no PDF; as mulheres, 8,9 pontos a mais de DASH. Smidt, 349 pacientes: dor cervical, dor intensa e duração longa associadas a pior resultado em 12 meses, sem tamanho no resumo. A duração é a ressalva: Ikonen não viu efeito; meta-regressão por ensaio e coorte de pessoas podem as duas estar certas. Coombes, 41 pacientes: o limiar ao frio foi o único preditor consistente em um ano, e o modelo inteiro explicou 9% do PRTEE; não é o tamanho do efeito do frio. Na aula de capacitação, essa tabela estava na patoanatomia. Um dado de prática: em Sanders, cerca de 1 em 10 com sintoma aos 6 meses foi operado; mostra o que se fez, não o que a cirurgia muda. Todos com certeza baixa: mudam a velocidade, não o destino de um ano. Lembram da água fria da Renata? É queixa, não limiar medido; para usar o frio como prognóstico é preciso medir o limiar, e ainda assim o modelo inteiro de Coombes explicou só 9% do PRTEE em um ano."
   },
   {
    "tipo": "exemplo",
@@ -1403,7 +1404,7 @@
    "papel": "exemplo",
    "olho": "Parte 5 · Exemplo resolvido",
    "titulo": "A meta do PRTEE da Renata, pelas **duas réguas**",
-   "tempo_s": 95,
+   "tempo_s": 90,
    "dado": {
     "olho": "PRTEE inicial: 58",
     "itens": [
@@ -1441,7 +1442,7 @@
    "fundo": "escuro",
    "olho": "Parte 5 · Aplicação",
    "titulo": "Seis semanas: “Será que **piorou**?”",
-   "tempo_s": 110,
+   "tempo_s": 130,
    "origem": "caso",
    "interacao": {
     "tipo": "chat_cascata",
@@ -1450,7 +1451,7 @@
     "pedido": "Uma linha: melhorou o suficiente, por qual régua? E o que o formigamento muda?",
     "gravacao": "Quem assiste à gravação: pause e escreva a sua linha antes de eu ler as respostas."
    },
-   "contexto": "Na reavaliação de seis semanas, a Renata diz:",
+   "contexto": "Após seis semanas de orientação de carga, sem exercício:",
    "fala2": "No chat, uma linha: melhorou o suficiente, por qual régua? E o que o formigamento muda?",
    "fala": "“Melhorei um pouco, mas agora o antebraço formiga no fim do dia. Será que piorou?”",
    "cartao": {
@@ -1462,7 +1463,7 @@
      "Formigamento no dorso do antebraço"
     ]
    },
-   "notas": "A aplicação da parte 5, sem apoio. A Renata seguiu o plano por seis semanas e continua trabalhando; esta é a reavaliação de 6 semanas, a de 3 semanas não entra na aula. Ler a fala devagar e os dados do cartão. Interação: chat em cascata, uma linha com as duas respostas, 40 segundos, contar 3, 2, 1. Ler quatro respostas com os nomes. A resposta: caiu 9 pontos, 16%. Pela régua absoluta, passou dos 7: um pouco melhor. Pela proporcional, ainda não: precisava de cerca de 13, PRTEE de 45. Muito melhor, por nenhuma. A razão da preensão foi de 38% para 44%. O formigamento é sintoma de nervo novo: reabre o diferencial da parte 4, pede exame cervical e do nervo radial hoje, proposta clínica, e pesa no curto prazo. Déficit progressivo encaminha. A frase para ela: está no caminho, mais devagar; o formigamento pede exame, não ressonância."
+   "notas": "A aplicação da parte 5, sem apoio. Nestas seis semanas a Renata teve orientação de carga no salão e acompanhamento, sem programa de exercício estruturado: o programa começa na aula 2, nesta mesma semana 6. Ela continua trabalhando as mesmas horas; a reavaliação de 3 semanas não entra na aula. Ler a fala devagar e os dados do cartão. Interação: chat em cascata, uma linha com as duas respostas, 40 segundos, contar 3, 2, 1. Ler quatro respostas com os nomes. A resposta: caiu 9 pontos, 16%. Pela régua absoluta, passou dos 7: um pouco melhor. Pela proporcional, ainda não: precisava de cerca de 13, PRTEE de 45. Muito melhor, por nenhuma. A razão da preensão foi de 38% para 44%. O formigamento é sintoma de nervo novo: reabre o diferencial da parte 4, pede exame cervical e do nervo radial hoje, proposta clínica, e pesa no curto prazo. Déficit progressivo encaminha. A frase para ela: está no caminho, mais devagar; o formigamento pede exame, não ressonância."
   },
   {
    "tipo": "sintese",
@@ -1499,7 +1500,7 @@
    "olho": "Fechamento · De memória",
    "titulo": "Sem voltar os slides: uma ideia de cada parte, na **ordem do mapa**",
    "instrucao": "Uma linha no chat, com um número onde houver. Envie no 3.",
-   "tempo_s": 65,
+   "tempo_s": 85,
    "interacao": {
     "tipo": "chat_cascata",
     "duracao_s": 40,
@@ -1514,7 +1515,7 @@
    "olho": "Antes de sair",
    "titulo": "O que você vai **mudar** no próximo paciente com dor lateral no cotovelo?",
    "instrucao": "Uma frase no chat. Quem enviar, está liberado.",
-   "tempo_s": 60,
+   "tempo_s": 75,
    "interacao": {
     "tipo": "chat",
     "duracao_s": 45

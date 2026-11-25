@@ -102,6 +102,23 @@ Depende do tratamento: injeção com órtese noturna resolve quase todos.
 Enunciado:
 
 ```text
+Um colega traz um ensaio de injeção de corticoide x placebo no dedo em gatilho com razão de chances (OR) de sucesso de 7,5, e 40% de sucesso no grupo placebo. Ele vai dizer à paciente que a injeção dá “7,5 vezes mais chance de resolver” (números hipotéticos, só para a conta). Qual é o risco relativo (RR) aproximado de sucesso com o corticoide?
+```
+
+Opções:
+
+```text
+Cerca de 7,5: o OR já diz quantas vezes mais.
+Cerca de 83%: é o RR com o corticoide.
+Cerca de 7,5: o OR é igual ao RR se o evento é raro.
+Cerca de 2,1: 83% com corticoide contra 40%.
+```
+
+### Questão 7
+
+Enunciado:
+
+```text
 Mulher de 51 anos, digitadora, com dor espontânea sobre o estiloide radial há 6 semanas, sem dor na base do polegar. Você estima 40% de chance de De Quervain. O WHAT test (hiperflexão do punho com abdução do polegar contra resistência) é negativo. No estudo de referência, com 100 pacientes com dor espontânea no estiloide radial, a sensibilidade foi de 0,99 e a especificidade de 0,29 (caso fictício; números de Goubau 2014). Qual leitura os números sustentam melhor?
 ```
 
@@ -114,7 +131,7 @@ Repetir com o polegar fechado na mão para confirmar a doença.
 Provavelmente mais baixa (2% a 12%), sem excluir: buscar outra causa e reavaliar.
 ```
 
-### Questão 7
+### Questão 8
 
 Enunciado:
 
@@ -161,11 +178,11 @@ Referência: O'Driscoll SW et al. Am J Sports Med 2005;33(2):231-9. PMID 1570160
 
 **Resposta:** Usar a dose como proposta extrapolada da lateral e reavaliar a cada 3 semanas.
 
-Melhora dentro dos grupos não é efeito do tratamento (curso natural, regressão à média). Na medial não há estimativa de efeito do exercício; o único ECR de corticoide mostrou alívio só em 6 semanas, igual em 3 meses e 1 ano. A conduta de nível alto é dizer de onde vem a dose (lateral e mecanismo), chamá-la de proposta clínica e medir a resposta individual (dor em 24 horas, PRTEE adaptada, preensão sem dor).
+Melhora dentro dos grupos não é efeito do tratamento (curso natural, regressão à média). Na medial não há estimativa de efeito do exercício; o único ECR de corticoide (60 cotovelos) mostrou alívio em 6 semanas numa escala (graduação de Nirschl, p < 0,03), não na EVA, e nada em 3 meses e 1 ano. A conduta de nível alto é dizer de onde vem a dose (lateral e mecanismo), chamá-la de proposta clínica e medir a resposta individual (dor em 24 horas, PRTEE adaptada, preensão sem dor).
 
 - *Seguir o protocolo: todos os estudos da medial mostraram melhora.* — Ler melhora dentro do grupo como efeito do tratamento.
 - *Não prescrever exercício até haver ensaio bom na medial.* — Confundir ausência de evidência com evidência de ausência e deixar o paciente sem carga.
-- *Preferir a infiltração: é a única opção com ECR na medial.* — Escolher pelo desenho e ignorar o resultado: o ECR mostrou benefício só em 6 semanas.
+- *Preferir a infiltração: é a única opção com ECR na medial.* — Escolher pelo desenho e ignorar o resultado: o ECR mostrou alívio só em 6 semanas, numa escala e não na EVA.
 
 Referência: See ZH et al. Complement Ther Med 2026;98:103364. PMID 41887339. DOI 10.1016/j.ctim.2026.103364.; Stahl S, Kaufman T. J Bone Joint Surg Am 1997;79(11):1648-52. PMID 9384424. DOI 10.2106/00004623-199711000-00006.
 
@@ -193,7 +210,19 @@ No ECR de Minkhorst (122 dedos, sem tratamento prévio), o grau 3 teve sucesso c
 
 Referência: Minkhorst K et al. Arch Phys Med Rehabil 2025;106(12):1798-806. PMID 40449569. DOI 10.1016/j.apmr.2025.05.015.; Huisstede BM et al. Phys Ther 2014;94(10):1421-33. PMID 24810861. DOI 10.2522/ptj.20130135.
 
-### Questão 6 · nível: análise · objetivo 4
+### Questão 6 · nível: aplicação · objetivo 3
+
+**Resposta:** Cerca de 2,1: 83% com corticoide contra 40%.
+
+O OR multiplica chances, não probabilidades. Chance no placebo = 0,40 ÷ 0,60 = 0,667; chance com corticoide = 0,667 × 7,5 = 5,0; probabilidade = 5,0 ÷ 6,0 = 83%; RR = 0,83 ÷ 0,40 ≈ 2,1 (com 5/6 exato, 2,08). Quanto mais comum o evento, mais o OR se afasta do RR: com 40% de sucesso, um OR de 7,5 é um RR de cerca de 2. É a mesma conta do slide 26 (OR 22,8 da percutânea x injeção, base de 60%: RR de ~1,6), em números novos. Para a paciente, a frase honesta é “cerca de 8 em 10 com a injeção contra 4 em 10 sem ela”. Números hipotéticos: o lote não traz OR de corticoide x placebo no gatilho (Peters-Veluthamaningal dá RR 3,15 contra lidocaína).
+
+- *Cerca de 7,5: o OR já diz quantas vezes mais.* — Ler razão de chances como risco relativo: “7,5 vezes mais” vale para a chance, não para a probabilidade de resolver.
+- *Cerca de 83%: é o RR com o corticoide.* — Confundir a probabilidade de sucesso com corticoide (83%) com o RR, que é a razão entre as duas probabilidades.
+- *Cerca de 7,5: o OR é igual ao RR se o evento é raro.* — Aplicar a aproximação do evento raro a um evento comum: com 40% no placebo, OR e RR se afastam muito.
+
+Referência: Chiang CH et al. Ann Phys Rehabil Med 2026;69(4):102074. PMID 41691955. DOI 10.1016/j.rehab.2025.102074.; Peters-Veluthamaningal C et al. Cochrane Database Syst Rev 2009;(1):CD005617. PMID 19160256. DOI 10.1002/14651858.CD005617.pub2.
+
+### Questão 7 · nível: análise · objetivo 4
 
 **Resposta:** Provavelmente mais baixa (2% a 12%), sem excluir: buscar outra causa e reavaliar.
 
@@ -205,7 +234,7 @@ Pela estimativa pontual, RV− = (1 − 0,99) ÷ 0,29 = 0,034; chance pré = 40 
 
 Referência: Goubau JF et al. J Hand Surg Eur Vol 2014;39(3):286-92. PMID 23340762. DOI 10.1177/1753193412475043.; Elliott BG. J Hand Surg Br 1992;17(4):481-2. PMID 1402284. DOI 10.1016/s0266-7681(05)80280-3.
 
-### Questão 7 · nível: avaliação · objetivo 4
+### Questão 8 · nível: avaliação · objetivo 4
 
 **Resposta:** Diferença real e abaixo da importante: decidir com ela e orientar a carga.
 

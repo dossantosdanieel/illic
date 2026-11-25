@@ -1,7 +1,7 @@
 # Verificação — Cotovelo medial e mão (aula expositiva com checagens)
 
 Data: 2026-11-25 (versão 1 expositiva). Deck: `04_aula/cotovelo-medial-e-mao.pptx` (40 slides, 39 cronometrados,
-47:30 min; tempo estimado pelo validador 46:29). `meta.formato: "expositiva"`, 4 partes.
+48:45 min; tempo estimado pelo validador 46:40; tempos refeitos na conferência adversarial de 25/11, seção 6c). `meta.formato: "expositiva"`, 4 partes.
 
 Montada antes da chegada dos PDFs. **Só 1 dos 20 artigos do lote foi lido no texto completo (Fukunaga2023)**, mais
 Bretschneider2022 pela ficha da aula 1. Os números, as frases e as fontes vêm da aula de caso (`04_aula_caso/`), que
@@ -36,7 +36,7 @@ Etiquetas: `resumo` = resumo do PubMed, sem página; `p.N` = texto completo; `ca
 | IC 80,5% a 100% e 19% a 99%; 15% → 0–15% após negativo (~0% pontual; 4,4% com a sensibilidade no limite; 15% com as duas no limite) | 11, 14; q2 | ODriscoll2005 | **calc.**: Clopper-Pearson exato; pré-teste de 15% ilustrativo |
 | Orientar posições na NUC leve; grave = encaminhar | 13 (notas), 14; q1 | Caliandro2025 | PDF gratuito (PMC), bloqueado |
 | 5 estudos, 143 pacientes, 1 ECR superior, certeza baixa | 16, 17, 21; q7 | See2026 | PDF pago (Elsevier) |
-| 1 ECR, 60 cotovelos; melhor só em 6 semanas, igual em 3 meses e 1 ano; os dois grupos com fisioterapia e AINE; autores atribuem a melhora à história natural (desafio do s17) | 16, 17, 21; q7 | Stahl1997c | PDF pago (JBJS); certeza "baixa" no s16 é **nossa leitura** (ficha: sem GRADE no resumo) |
+| 1 ECR, 58 pacientes e 60 cotovelos; menos dor em 6 semanas **só na graduação de Nirschl-Pettrone modificada (p < 0,03)**; na EVA, nenhuma diferença em 6 semanas nem em 1 ano; na graduação, nada em 3 meses e 1 ano; os dois grupos com fisioterapia e AINE; autores atribuem a melhora à história natural (desafio do s17) | 16, 17, 21, 38; q7 | Stahl1997c | PDF pago (JBJS); certeza "baixa" no s16 é **nossa leitura** (ficha: sem GRADE no resumo) |
 | 16 séries, 479 cotovelos, sem comparador; sucesso 63% a 100% (notas) | 16 | Arevalo2023 | PDF pago (SAGE); certeza "muito baixa" no s16 é **nossa leitura** (ficha: "Sem GRADE no resumo") |
 | Regra de progressão: subir sem dor tardia em 24 h ou dor ≤ +1 ponto; 3 × 10 | 19 (cartão de dose), 21 | Day2019 | opinião; resumo + prints da Tab. 1 na aula de capacitação (s63–s64), como na aula 2 (`2026-11-cotovelo-lateral-2-reabilitacao/04_aula_caso/verificacao.md`, linha de Day2019) |
 | Isométrico na fase irritável: 20% → 35% da CVM, 4 × 30 s, todo dia | 4 (notas), 19 (cartão de dose) | Vuvan2020 | tabelas redigitadas da aula de capacitação s51–s53, a conferir no PDF, como na aula 2 (semana 1 = 4 × 30 s; semanas pares 3 × 45 s, não posto no slide) |
@@ -48,8 +48,10 @@ Etiquetas: `resumo` = resumo do PubMed, sem página; `p.N` = texto completo; `ca
 | Diferença 16,7 p.p.; "1 cirurgia a mais a cada 6 dedos" | 24 | Minkhorst2025 | **calc.**: 39,1 − 22,4 = 16,7; 1/0,167 = 6,0 (subgrupos não randomizados) |
 | Órtese da MCF 10°–15°, ~6 semanas: 70% dos dedos (28/40), 50% dos polegares (5/10); comparativo com 50 dedos injetados (84%), randomização não clara; 15 de 17 falhas resolvidas com injeção | 25 | Patel1992 | PDF pago (Elsevier); ficha: "Comparative Study", sem "Randomized Controlled Trial" |
 | RR 3,15 (1,34 a 7,40); NNT 3 em 4 semanas; 2 ECR, 63 pessoas | 25, 29 | PetersVeluthamaningal2009 | PDF gratuito (PMC), bloqueado; NNT dos autores |
-| Recidiva 385 x 65 por 1000 (IC 35 a 127) em 6–12 meses, após a 1ª injeção; dor na palma 678 x 184 por 1000 (1 semana) | 25, 28, 29; q3 | Fiorini2018 | PDF gratuito (PMC), bloqueado; "~38 em 100", "~6–7 em 100 (IC 4 a 13)" e "68 x 18 em 100" são arredondamentos |
+| Recidiva 385 x 65 por 1000 (IC 35 a 127) em 6–12 meses, após a 1ª injeção; dor na palma 678 x 184 por 1000 (1 semana); **o resumo não informa se havia tratamento prévio** (só Minkhorst o excluiu) | 25, 28, 29; q3 | Fiorini2018 | PDF gratuito (PMC), bloqueado; "~38 em 100", "~6–7 em 100 (IC 4 a 13)" e "68 x 18 em 100" são arredondamentos |
 | Percutânea x injeção OR 22,8 (7,7 a 67,7) | 26, 29 | Chiang2026 | PDF pago (Elsevier) |
+| q8: OR 7,5 com 40% no placebo → chance 0,40/0,60 = 0,667 × 7,5 = 5,0 → 5,0/6,0 = 83,3% → RR 0,833/0,40 = 2,08 ≈ 2,1 | q8 | — (números **hipotéticos**, ditos no enunciado; método de Chiang2026/s26) | **calc.**; o lote não traz OR de corticoide x placebo no gatilho |
+| Desafio do VPP (resumo do aluno): VPP 92/97 = 0,95 com especificidade 0,29; 93 de 100 doentes | resumo (ponto 5); saiu da fala do s33 | Goubau2014 | **calc.** a partir da 2×2 reconstruída |
 | 60% → chance 1,5 × 22,8 = 34,2 → 97%; RR 0,97/0,60 = 1,6; desafio: 80% → chance 4 × 22,8 = 91,3 → 98,9%; RR 1,24 | 26, 29 | Chiang2026 | **calc.**, base hipotética (a taxa real do corticoide na rede está no texto completo) |
 | Escolha por gravidade, duração e tratamentos prévios | 28 (notas); q4 | Huisstede2014b | PDF pago (OUP); consenso Delphi |
 | 30 ECR, 1.663 pacientes, 80% mulheres, idade média 46 | 31 | Challoumas2023 | PDF gratuito (PMC), bloqueado |
@@ -79,14 +81,15 @@ Etiquetas: `resumo` = resumo do PubMed, sem página; `p.N` = texto completo; `ca
   como proteção — slides 36, 37; q6.
 - Graus de Green como âncora (1 dor; 2 trava e corrige; 3 precisa da outra mão; 4 travado): **conhecimento geral a
   conferir** na definição de Minkhorst2025 — slide 23 (fonte "graus: a conferir em Minkhorst 2025" e notas).
-- "Depois de recidiva pós-injeção, a 2ª injeção deve falhar mais" — slide 28: inferência, **sem número no lote** (dito).
+- Para a 2ª injeção depois de recidiva: **nenhum número no lote** (dito no slide 28). A inferência "a segunda deve falhar
+  mais" saiu das notas na conferência adversarial de 25/11 (seção 6c): não tem fonte.
 
 ## 4. Dados do caso fictício
 
 - Sérgio, 44 anos, marido da Renata, mecânico, armador de handebol amador; dor medial direita há 10 semanas; Tinel +,
   nervo sem espessamento (não subluxa, nas notas da aula de caso); formigamento no 5º dedo e metade do 4º, palma e dorso;
   pescoço, desfiladeiro, força intrínseca e valgo em movimento normais (slide 13). Após 6 semanas de carga: PRTEE
-  adaptada 48 → 41, formigamento diário → ENMG + US (slide 20). Mesmos dados da aula de caso.
+  adaptada 48 → 41, formigamento agora diário, sem fraqueza (no quadro do slide 20 desde 25/11) → ENMG + US (slide 20). Mesmos dados da aula de caso.
 - Renata, 46 anos, cabeleireira (aulas 1 e 2; alta do cotovelo na semana 26); dedo médio direito, grau 2, 3 meses, sem
   diabetes, nunca tratou o dedo (slide 27); órtese 6 semanas, injeção na semana 7, recidiva no mês 5 com grau 3 (slide 28).
 - Júlia, 26 anos, filha da Renata, 7 semanas pós-parto, amamentando, dor radial há 4 semanas; Eichhoff e WHAT +; dor
@@ -110,10 +113,15 @@ aula for vendida, pedir permissão ou manter só os gráficos nativos.
 
 ## 6. Checagens automáticas
 
-- `validar_aula.py`: **APROVADA, nenhum erro e nenhum aviso.** Expositiva em 4 partes; 47:30 pela soma de `tempo_s`;
-  estimado pela fala das notas + interações **46:29**. 17 interações em 4 formatos (16 checagens antes do bilhete);
-  primeira aos 1:00; 18% do tempo em atividade; trecho mais longo sem interação ~5 min 25 s. Linha do tempo
-  `·●●····●····●●●●·●●·●··●·····●●·●●···●··●··●●●●●`. Partes: 11:20, 8:50, 10:05 e 10:10.
+- `validar_aula.py` (rodada atual, depois da conferência adversarial de 25/11, seção 6c): **APROVADA com 2 avisos, 0
+  erros.** Expositiva em 4 partes; **48:45** pela soma de `tempo_s`; estimado pela fala das notas + interações **46:40**.
+  17 interações em 4 formatos (16 checagens antes do bilhete); primeira aos 1:05; 17% do tempo em atividade; trecho mais
+  longo sem interação ~5 min 25 s (s3 → s8). Linha do tempo `·●●····●····●··●··●··●··●····●·●·●●···●·●●··●·●●●`.
+  Partes: 11:25, 9:20, 10:40 e 9:50. Avisos decididos: (a) soma acima de 48 min — o `tempo_s` agora segue o critério
+  da aula 2 (estimado + 10 s de retorno nos slides em que se leem respostas), com 1:15 até o teto; (b) slide 16 com 76
+  palavras visíveis — a linha do corticoide ganhou a ressalva das duas escalas, que é o ponto da correção; a nota de
+  rodapé foi encurtada para compensar.
+  Rodada anterior (antes da conferência): 47:30 por `tempo_s`, 46:29 estimados, nenhum aviso.
   Na primeira validação, a fala das notas dava 54:44 (acima do teto de 50) e 14 slides passavam de 70 palavras
   visíveis: as notas foram cortadas para o tempo de cada slide e o texto visível reduzido (tabelas de 4 e 25, exemplos
   9 e 26, cartão do 13, sínteses).
@@ -129,7 +137,8 @@ aula for vendida, pedir permissão ou manter só os gráficos nativos.
   conferida nos gráficos (1,02 / 1,32 / 1,60 / 2,15; 40,3 / 63,9 / 73,0; 22,4 / 39,1).
 - `conferir_pptx.py`: nenhum problema; 39 notas com "Tempo: ... (acumulado M:SS)" corretas; gráficos nativos com
   planilha (depois da revisão: 3 gráficos, s35 virou cartões de números); 84 partes XML validadas contra o XSD ISO/IEC 29500.
-- `materiais.py`: nenhum aviso. `enquetes.md` (2 enquetes + roteiro das 17 interações + plano B), `pre_pos_teste.md`
+- `materiais.py` (rodada atual): nenhum aviso; `pre_pos_teste.md` com **8 questões** (q8 nova, objetivo 3, OR → RR, seção
+  6c) e enquete 1 com gabarito C. Rodada anterior: `enquetes.md` (2 enquetes + roteiro das 17 interações + plano B), `pre_pos_teste.md`
   (7 questões, as da aula de caso, conferidas em três rodadas, com `objetivo` renumerado para os 4 objetivos desta aula:
   q1, q2 → 1; q7 → 2; q3, q4 → 3; q5, q6 → 4; nenhuma repete as enquetes desta aula) e `resumo_aluno.md` (com "O
   caminho da aula" das 4 partes) gerados pelo script; nada editado à mão.
@@ -167,6 +176,26 @@ Não aplicado: fonte das tabelas 20–25% maior (s4, s16, s23, s25). A tabela sa
 ("Tabela: ... texto ... 12 pt"), sem campo por slide; mudar exigiria editar o `montar_deck.py` da skill, que as outras
 aulas usam agora. Mitigado com tabelas mais curtas (menos palavras e menos quebras); fica como sugestão para a skill.
 Render: com `LOCPATH` no locale do scratchpad (vírgula decimal conferida em 1,02 / 1,32 / 1,60 / 2,15 e 40,3 / 73,0).
+
+## 6c. Conferência adversarial das três aulas, 2026-11-25
+
+A conferência juntou as aulas 1, 2 e 3 e achou 6 problemas importantes e 10 menores, nenhum crítico. Seis tocavam esta aula.
+Conferi cada um na fonte antes de mexer. Todos procedem.
+
+| Achado | Conferido em | O que mudou e por quê |
+|---|---|---|
+| **Stahl 1997 exagerado** (importante): "corticoide melhor só em 6 semanas" sem a ressalva | ficha `Stahl1997c.md`, Resultado principal: menos dor em 6 semanas só na graduação de Nirschl-Pettrone modificada (p < 0,03); EVA sem diferença em 6 semanas e em 1 ano; nada em 3 meses e 1 ano; 58 pacientes, 60 cotovelos (resumo) | s16: linha "1 ECR, 60 cotovelos: menos dor em 6 sem numa escala (Nirschl), não na EVA; nada em 3 e 12 meses"; notas do s16 com o p, as duas escalas e "60 cotovelos de 58 pacientes". s17: resposta "só em 6 semanas, e numa das duas escalas"; a fala ao Sérgio virou "pode aliviar por umas 6 semanas, numa escala só". s21: ponto 1 "corticoide: 6 sem, uma escala" e notas. s38: "corticoide só em 6 semanas, numa escala só". Pós-teste: q7 (a 3ª questão no `pre_pos_teste.md`, a "q3" da conferência) com "alívio em 6 semanas numa escala (graduação de Nirschl, p < 0,03), não na EVA" no comentário e no distrator D. Resumo do aluno (ponto 3), roteiro e seção 2 acima |
+| **Fiorini 2018 além da fonte** (importante): s28 dizia que os dois números vinham de quem nunca foi tratado | ficha `Fiorini2018.md`: o resumo não descreve tratamento prévio (amostra: idade, sexo, duração, seguimento); ficha `Minkhorst2025.md`: excluiu tratamento prévio com órtese ou injeção | s28 notas: "o 39,1% de operados vem de dedos sem tratamento prévio, em Minkhorst; o 38 em 100 que voltam a travar, da Cochrane de Fiorini, não informa tratamento prévio no resumo; para a segunda injeção, nenhum número no lote". Saiu também "a segunda deve falhar mais", que não tinha fonte. Desafio: "qual dos números desta parte vale para quem já fez órtese e injeção?" ("destes" virou "desta parte" porque o slide não mostra número). Resumo do aluno (ponto 4) e roteiro |
+| **Objetivo 3 sem item de OR → RR** (menor) | `questoes.json`: q3 e q4 cobravam recidiva e grau | q8 nova, caso novo com **números hipotéticos** (ditos no enunciado; o lote não traz OR de corticoide x placebo no gatilho). Conta refeita: 0,40 ÷ 0,60 = 0,667; × 7,5 = 5,0; 5,0 ÷ 6,0 = 83,3%; 0,833 ÷ 0,40 = 2,08 ≈ 2,1. Gabarito D ("Cerca de 2,1"); distratores "7,5 vezes mais", "83%" e "igual ao OR quando o evento é raro"; a certa não é a opção mais longa. Gabaritos do pós-teste: A 2, B 2, C 2, D 2 |
+| **Tempo sem a folga de leitura** (menor) | `validar_aula.py --json`: fala + interação passava do `tempo_s` em s12 (+6), s17 (+15), s23 (+6), s28 (+9), s31 (+7) e outros | Critério da aula 2: `tempo_s` = estimado do validador + 10 s nos slides em que se leem respostas (3, 12, 17, 26, 28, 34, 36, 38, 39), arredondado para cima a 5 s; nos demais, o estimado arredondado a 5 s (s5, mapa geral, com 50 s; s33 com 105 s pelos quatro passos de conta). Para compensar, notas cortadas: s7 (lista dos 5 músculos, frase do mecanismo), s9 (abertura e desafio do Tinel negativo, que fica no cartão) e s33 (o desafio do VPP saiu da fala e foi para o resumo do aluno). `inicio_s` da mão na câmera acompanhou o novo tempo em s8, s13, s25 e s32. Soma 47:30 → **48:45**; estimado 46:29 → 46:40; `meta.duracao_alvo_min` e a fala da capa: 47 → 49 min |
+| **s20 sem o gatilho do encaminhamento** (menor) | notas do s20: "o formigamento ficou diário" só na fala | `dado.itens`: "Formigamento: agora diário, sem fraqueza". Para caber em 70 palavras: "Dois exercícios com faixa; menos força no trabalho" e "régua da lateral" na faixa |
+| **Exame do nervo ulnar da capacitação omitido** (menor) | `_base-capacitacao-cotovelo/inventario_MET.md`, slide 144 (notas): discriminação de dois pontos na distribuição ulnar e comparação do volume hipotenar | notas do s8: "A discriminação de dois pontos no território ulnar e o volume hipotenar continuam no exame, mas sem acurácia no lote"; linha nova em "O que fica de fora" do roteiro e no apêndice |
+| **Gabaritos das enquetes concentrados em B** (menor) | enquetes do s12 (B) e do s34 (C) | s12: opções embaralhadas, gabarito **C** ("Cerca de 26%: cai pouco"), notas "A resposta é a C"; `enquetes.md` e plano B regerados pelo `materiais.py` (o plano B não cita letra). s34: a certa (C, 57 caracteres) não é a mais longa (B, 62): sem mudança |
+| **Sérgio repetido na trilha** (menor) | esta aula só tem o Sérgio do caso (s13, s20) | nada a mudar aqui; o paciente do pós-teste da aula 1 vira Valter na pasta da aula 1 |
+
+Checagens desta rodada: `validar_aula.py` (0 erros, 2 avisos decididos na seção 6), `montar_deck.py` (nenhum texto
+reduzido), render com `LANG=pt_BR.UTF-8` (abertos em tamanho cheio os PNG alterados: 12, 16, 20, 21 e 28), `conferir_pptx.py`
+(nenhum problema; 84 partes XML válidas) e `materiais.py` (nenhum aviso).
 
 ## 7. Pendências
 
@@ -226,7 +255,8 @@ a revisão que usamos na época").
 | s141 | "Até 84%" com distúrbios concomitantes | **não confirmado** | fora até conferir; mensagem mantida: examinar o membro inteiro (pescoço, desfiladeiro) | 8, 13 |
 | s141–s142 | Valgo a 30° e milking para o LCU | acrescenta | valgo em movimento 17/17 e 3/4, negativo baixa a suspeita (0–15%); valgo a 30° e milking sem acurácia no lote | 11 |
 | s144 (notas) | Tinel, flexão do cotovelo e outros sinais de neuropatia ulnar | **corrige** | Tinel RV+ 1,32; flexão-compressão 1,02; espessamento 2,15; suspeita mantida → ENMG + US | 9, 10, 12, 13 |
-| s143–s145 | "No reviews or RCTs were found for ME" | **acrescenta e atualiza** | 1 ECR de corticoide (só 6 semanas), RS de 5 estudos de excêntrico (certeza baixa), cirurgia em séries; o resto é extrapolação declarada | 16, 17 |
+| s144 (notas) | Discriminação de dois pontos no território ulnar e volume hipotenar comparado ao outro lado | mantém, sem número | continuam no exame, sem acurácia no lote (frase nas notas do s8, desde 25/11) | 8 (notas) |
+| s143–s145 | "No reviews or RCTs were found for ME" | **acrescenta e atualiza** | 1 ECR de corticoide (só 6 semanas, numa das duas escalas de dor), RS de 5 estudos de excêntrico (certeza baixa), cirurgia em séries; o resto é extrapolação declarada | 16, 17 |
 | s147, s155, s158 (notas) | Notas copiadas do texto de neuropatia ulnar | corrige (erro da base) | notas novas | 23, 31 |
 | s148–s153, s156 | Clínica, polias e exame do gatilho | confirma; acrescenta graduação | mantido nas notas; Green 1–4 prevê o resultado (Minkhorst), em quem nunca foi tratado | 23, 24 |
 | s154 | Etiologia por atividade repetitiva | sem fonte no lote | não afirmado (dito nas notas) | 23 |

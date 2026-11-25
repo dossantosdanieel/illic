@@ -1,6 +1,6 @@
 # Cotovelo medial e mão
 
-*Daniel Santos · Boost Education · aula de 47 min*
+*Daniel Santos · Boost Education · aula de 49 min*
 
 ## Ao fim da aula, você deve conseguir
 
@@ -20,9 +20,9 @@
 
 1. **Versão 1:** números conferidos no resumo (PubMed), exceto Fukunaga 2023 e Bretschneider 2022 (texto completo); RV, pós-testes, IC e conversões são contas nossas. Sérgio, Renata e Júlia são fictícios.
 2. Dor medial: nenhum estudo de acurácia para a tendinopatia medial (Zwerus 2018). Neuropatia ulnar: Tinel RV+ 1,32 (30% vira 36%) e flexão-compressão RV+ 1,02 quase não mudam a probabilidade; espessamento palpável RV+ 2,15, ausente em 72% dos doentes (Beekman 2009; RV calc.). Valgo em movimento: 17/17 e 3/4 em 21 operados (O'Driscoll 2005); com o IC, um pré-teste de 15% fica entre 0% e 15% após o negativo (calc.).
-3. Tratamento da tendinopatia medial: excêntrico com 5 estudos e certeza baixa (See 2026); corticoide melhor só em 6 semanas (Stahl 1997); cirurgia só em séries (Arevalo 2023). Desvio ulnar com faixa recruta o flexor ulnar do carpo (40% da CVM); pronação, o flexor superficial e o pronador redondo (64% e 73%) (Fukunaga 2023, Tab. 2). Dose e réguas vêm da lateral (proposta clínica): na fase irritável, isométrico de 20% a 35% da contração voluntária máxima (CVM), 4 × 30 s, todo dia (Vuvan 2020); depois 3 × 10, subindo sem dor tardia em 24 h ou com dor que não sobe mais de 1 ponto (Day 2019, opinião); reavaliar a cada 3 semanas.
-4. Dedo em gatilho, sem tratamento prévio: graus 1–2 com ~75% de sucesso conservador, grau 3 com ~60% e 39,1% operados (Minkhorst 2025). Injeção x lidocaína: RR 3,15 em 4 semanas, NNT 3 (Peters-Veluthamaningal 2009). Recidiva em 6–12 meses: 385 por 1000 após injeção, 65 após cirurgia aberta, que dói mais na 1ª semana (Fiorini 2018). OR 22,8 da percutânea x injeção é RR de ~1,6 com base de 60% (calc.).
-5. De Quervain: o “Finkelstein” dos livros é o Eichhoff (Elliott 1992; Goubau 2014). WHAT RV+ 1,4: de 70% para 76%. Negativo: 7% pela estimativa pontual, 32% com a sensibilidade no limite e ~79% com a especificidade (2 em 7) também no limite (calc.). No puerpério, órtese sozinha 0 de 9 com alívio completo, injeção 9 de 9; 8 de 9 resolveram ao fim da lactação (Avci 2002).
+3. Tratamento da tendinopatia medial: excêntrico com 5 estudos e certeza baixa (See 2026); corticoide com menos dor só em 6 semanas e numa das duas escalas (graduação de Nirschl; na EVA, nada) (Stahl 1997); cirurgia só em séries (Arevalo 2023). Desvio ulnar com faixa recruta o flexor ulnar do carpo (40% da CVM); pronação, o flexor superficial e o pronador redondo (64% e 73%) (Fukunaga 2023, Tab. 2). Dose e réguas vêm da lateral (proposta clínica): na fase irritável, isométrico de 20% a 35% da contração voluntária máxima (CVM), 4 × 30 s, todo dia (Vuvan 2020); depois 3 × 10, subindo sem dor tardia em 24 h ou com dor que não sobe mais de 1 ponto (Day 2019, opinião); reavaliar a cada 3 semanas.
+4. Dedo em gatilho, sem tratamento prévio: graus 1–2 com ~75% de sucesso conservador, grau 3 com ~60% e 39,1% operados (Minkhorst 2025). Injeção x lidocaína: RR 3,15 em 4 semanas, NNT 3 (Peters-Veluthamaningal 2009). Recidiva em 6–12 meses: 385 por 1000 após injeção (o resumo não diz se havia tratamento prévio), 65 após cirurgia aberta, que dói mais na 1ª semana (Fiorini 2018). OR 22,8 da percutânea x injeção é RR de ~1,6 com base de 60% (calc.).
+5. De Quervain: o “Finkelstein” dos livros é o Eichhoff (Elliott 1992; Goubau 2014). WHAT RV+ 1,4: de 70% para 76%. Negativo: 7% pela estimativa pontual, 32% com a sensibilidade no limite e ~79% com a especificidade (2 em 7) também no limite (calc.). No puerpério, órtese sozinha 0 de 9 com alívio completo, injeção 9 de 9; 8 de 9 resolveram ao fim da lactação (Avci 2002). Desafio: especificidade de 0,29 com VPP de 0,95 (92 de 97 positivos), porque 93 dos 100 tinham a doença (2×2 calc.).
 
 ## Algoritmo de decisão
 

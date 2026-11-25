@@ -1,8 +1,9 @@
 # Verificação — Tendinopatia lateral do cotovelo: reabilitação com dose (expositiva)
 
-Data: 2026-11-25 (atualizada no mesmo dia depois da revisão independente; ver seção 9). Deck:
-`04_aula/cotovelo-lateral-2-reabilitacao.pptx` (41 slides, 40 cronometrados, **48:30** pela soma de `tempo_s`, que já
-inclui o retorno das checagens; **45:15** estimados pelo validador; **46:58** contando todas as palavras das notas a
+Data: 2026-11-25 (atualizada no mesmo dia depois da revisão independente, seção 9, e da conferência adversarial das três
+aulas, seção 10). Deck:
+`04_aula/cotovelo-lateral-2-reabilitacao.pptx` (41 slides, 40 cronometrados, **48:50** pela soma de `tempo_s`, que já
+inclui o retorno das checagens; **45:38** estimados pelo validador; **47:21** contando todas as palavras das notas a
 130/min + interações). Formato: `meta.formato: "expositiva"`, 5 partes, títulos em forma de pergunta.
 
 **Numeração:** nesta versão entrou o slide 35 (exemplo resolvido da parte 5) e saiu o antigo 38 ("O que eu ensinei e o
@@ -23,7 +24,7 @@ conta ao lado; **caso** = dado fictício.
 
 | Número no slide | Slide | Artigo | Onde no artigo |
 |---|---|---|---|
-| Rotação > 4 h/dia (ou ≥ 45° em ≥ 45% do tempo): OR 1,85 (1,10 a 3,10); Strain Index alto: OR 1,75 (1,11 a 2,78); repetição > 15/min: OR 0,71 (0,42 a 1,20) | 34 (figura e "o que olhar"), 35, 38, q8 | Bretschneider2022 | p.6 Fig. 2; p.7 Tab. 3 (a figura do slide é a própria Tab. 3, aprovada no catálogo) |
+| Rotação > 4 h/dia (ou ≥ 45° em ≥ 45% do tempo): OR 1,85 (1,10 a 3,10); Strain Index alto: OR 1,75 (1,11 a 2,78); repetição > 15/min: OR 0,71 (0,42 a 1,20) | 34 (figura e "o que olhar"), 35, 38, q8 | Bretschneider2022 | p.6 Fig. 2; p.7 Tab. 3 (a figura do slide é a própria Tab. 3, aprovada no catálogo, inteira e sem marcas por cima; os três cartões embaixo citam as linhas "Forearm rotation", "Strain Index" e "Repetitive movements") |
 
 Só este artigo. Todo o resto é resumo, print ou cálculo (seção 2).
 
@@ -41,7 +42,7 @@ Só este artigo. Todo o resto é resumo, print ou cálculo (seção 2).
 | Contato do ECRB com o capítulo cresce ao estender (0 → 3,4 mm em neutro) | 6 (cartão e notas) | Bunata2007 | resumo + Tab. I no print s13, como na aula 1 (**novo** nesta aula; mesma leitura da aula 1) |
 | Lógica de carga (descarregar, reintroduzir, ajustar) | 6 | Lucado2022 | **notas s122**, atribuição provável (**novo**) |
 | Graus: exercício B; 20–40% CVM F; regionais C; agulhamento B; fita rígida B; órtese F; kinesio C; gelo E; TENS e laser C; legenda A–F (B moderada, F opinião) | 7 (cartão "grau = força da recomendação"), 14, 26, 28, 30, 33 | Lucado2022 | **print s123** e legenda do **print s124**, atribuição provável, sem página |
-| Irritabilidade I–III leve, IV–V moderada, VI–VII grave; nível III = dor durante o trabalho que persiste e não limita; nível IV = dor no trabalho > 6 h que limita; VI–VII = dor em repouso | 2 (notas), 33 (cartão com o nível IV), 35 | Lucado2022 | **print s42**, atribuição provável (lido de novo nesta revisão) |
+| Irritabilidade I–III leve, IV–V moderada, VI–VII grave; nível III = dor **leve** durante o trabalho que persiste depois e não limita ("Mild pain occurring during exercise/work that persists after activity, but does not limit activity"); nível IV = dor leve a moderada no trabalho que persiste > 6 h e limita; VI–VII = dor em repouso. Intensidade: leve ≤ 3/10, moderada 4–6/10, intensa ≥ 7/10 (a mesma régua da aula 1, slide 22) | 2 (notas), 33 (cartão com o nível IV; notas com a régua de intensidade), 35 (eletricista com dor **3 de 10**, nível III) | Lucado2022 | **print s42** (`midia/s042_cf4de0aa90.png`, os sete níveis legíveis), atribuição provável; régua de intensidade nas **notas s42** da capacitação (`inventario_LET.md`, linha 291). Lido de novo na conferência adversarial: com 4/10 o eletricista não cabia no III; corrigido para 3/10 (seção 10, item 1) |
 | Fases, alta em 6 a 12 meses com dor intermitente tolerável; progredir pela irritabilidade; sem melhora ou piorando: ajustar pelo estágio ou encaminhar | 33 | Lucado2022 | **print s124**, atribuição provável. O que fazer no grave (aliviar e descarregar) é proposta |
 | Isométrico: 29% x 26% (dif. 2,3; −24,5 a 29,1); PRTEE DMP −0,92 (−1,58 a −0,26); preensão −0,33 (−0,97 a 0,30); 3 de 21 pioraram; 40 de 533; "duvidoso como tratamento isolado" | 13 | Vuvan2020 | resumo; barras em 4 categorias pelas contagens do **print s56** (calc. 6/21, 12/21, 0/21, 3/21; 5/19, 7/19, 7/19, 0/19); fluxograma **print s50** |
 | Dose: 20% → 35% da CVM (+5% a cada 2 sem), 4 × 30 s nas semanas ímpares e 3 × 45 s nas pares, 30 s de descanso, diário, sem falha, cotovelo ~90°, pronado, apoiado, punho ~30° de extensão | 12, 14, 15, 16, 33 | Vuvan2020 | **redigitado s51–s53** (não é print do artigo); "ensaio*" com asterisco "a conferir no PDF" no slide 14 |
@@ -51,7 +52,7 @@ Só este artigo. Todo o resto é resumo, print ou cálculo (seção 2).
 | Ruptura de tendão 1 em 991 | 20 (notas), q3, q7 | Coombes2010 | resumo |
 | PRP/sangue x injeção placebo, 3 meses: 0,16/10 (0,60 melhor a 0,29 pior), certeza moderada; 67% x 65%, certeza incerta; sem benefício em 6 e 12 meses | 22 (faixa: "moderada para a dor; incerta para o sucesso"), 24, q3, q9 | Karjalainen2021 | resumo |
 | MWM 0,43 (0,15 a 0,71) na dor e 0,31 (0,11 a 0,51) na preensão, **todos os prazos somados** ("across all time periods", provável dupla contagem de Bisset); IC cruzam zero de 3 a 12 meses; 20 estudos, 7 na meta-análise | 26, 31, q6, resumo ponto 4 | Lucado2019 | resumo + **prints s81–s83**; "métrica a conferir" no slide; "o efeito fica no curto prazo" é leitura dos prints por prazo, dita assim |
-| Regra: idade < 49, afetado > 112 N, não afetado < 336 N; RV+ 2,6 (0,96–7,3), 2,3 (0,82–6,4), 2,1 (0,76–6,0); pré-teste 79%; > 112 N: S 0,53, E 0,77; n 64; 100% com os três (resumo, poucos pacientes) | 27 (os três critérios agora no quadro) | Vicenzino2009 | resumo + **print s38** |
+| Regra: idade < 49, afetado > 112 N, não afetado < 336 N; RV+ 2,6 (0,96–7,3), 2,3 (0,82–6,4), 2,1 (0,76–6,0); pré-teste 79% (melhora em 3 semanas com MWM e exercício; **não é o 79% da aula 1**, teto do diagnóstico em Vuvan, 422 de 533: dito no quadro e nas notas do 27); > 112 N: S 0,53, E 0,77; n 64; 100% com os três (resumo, poucos pacientes) | 27 (os três critérios agora no quadro) | Vicenzino2009 | resumo + **print s38** |
 | Agulhamento seco: dor −0,95 (−1,88 a −0,02), só < 1 sem; incapacidade DMP −1,32 (−2,23 a −0,4) e preensão 0,45 (0,02 a 0,88) com ≥ 1 sem; 17 ECR | 28, 31, q9, resumo ponto 5 | Ma2024 | resumo; certeza "baixa (ficha)" no slide |
 | Órtese x fisioterapia: curto prazo −0,02 (−0,85 a 0,80), I² 92,8% (93% na enquete 2); longo prazo 1,17 (−0,00 a 2,34) a favor da fisioterapia, I² 94,4% | 28 ("I² > 90%"), 29 (notas), resumo ponto 5 | Shahabi2020 | resumo + **print s102**; certeza "muito baixa (ficha)" no slide |
 | Ondas de choque: sem benefício clínico x simulação (baixa a moderada); −1,21 DMP só como distrator D da enquete 2 | 28, 29 | Karanasios2021b | resumo; limiar dos autores não conferido |
@@ -67,6 +68,8 @@ Só este artigo. Todo o resto é resumo, print ou cálculo (seção 2).
 | Kinesio sem efeito imediato | 28 (linha da tabela; detalhe saiu das notas) | notas s106 (Martínez-Beltrán) |
 | TENS diário 6 sem + orientação: −0,33 (−0,96 a 0,31) | fora (saiu das notas do 28 por tempo) | notas s115 (Chesterton) |
 | Gelo + TENS burst: sessão única em 112 voluntárias de 22 anos | fora (saiu das notas do 28 por tempo) | notas s110 (Macedo) |
+| Fortalecimento escapular e do ombro: positivo em um ECR (Mostafee), sem diferença em outro (Day e Lucado: PRTEE-dor 20,50 → 6,79 x 20,78 → 9,41) | fora do deck; o motivo é dito nas notas do 28 e escrito no resumo do aluno (ponto 5): grau C na diretriz, ensaios fora do lote | notas s69–s74; grau C no **print s123** ("incluir ombro e escápula"); ficha Lucado2022 e mapa 1.15 |
+| Mobilização de tecidos moles e fricção profunda (Yi; Cyriax de Akbar; instrumental de Blanchette, sem diferença) | idem | notas s92–s96; grau C no **print s123** ("mobilização de tecidos moles... mais exercício"); ficha Lucado2022 e mapa, "Tecidos moles" |
 
 ### Contas (calc.)
 
@@ -104,13 +107,18 @@ Só este artigo. Todo o resto é resumo, print ou cálculo (seção 2).
 - Da aula 1 (expositiva e de caso): Renata, 46 anos, cabeleireira, destra, cotovelo direito, ~6 h/dia de secador e escova;
   PRTEE 58 → 49 na semana 6; dor 6 → 5 no salão; preensão sem dor 120 → 140 N (D), 320 N (E); irritabilidade moderada
   (nível IV); pescoço duro; formigamento no dorso do antebraço sem déficit — slides 2, 9, 16, 30.
+- Linha do tempo (conferência adversarial, seção 10, item 2): semanas contadas desde a primeira consulta; nas semanas 0 a 6,
+  só orientação de carga no salão e acompanhamento, sem programa de exercício; na semana 6 ela começa o programa, e esta é
+  a semana 1 do isométrico (slides 9, 16 e 30 são a mesma consulta); infiltração na semana 9 (semana 4 do programa).
+  Cartão novo no 9: "Semanas 0 a 6: orientação de carga, sem exercício".
 - Da versão de caso desta aula (mantidos): CVM de extensão do punho 8 kg; MWM 140 → 185 N; infiltração na semana 9;
   semana 11 PRTEE 22, dor 1/10, parou os exercícios, 8 h/dia no salão; semana 16 PRTEE 52, dor 6/10, preensão 125 N,
   formigamento diário sem déficit; semana 26 PRTEE 31 — slides 16, 30, 36, 37, 38 (notas).
 - Novos nesta versão: a fala do slide 9 ("Se passa sozinho, para que exercício?") e o cartão "recusa clientes; quer parar
   de recusar" (coerente com a aula 1, slide 23: "já estou recusando cliente"); "com seis horas de salão, a escova
   alternada entre as mãos e menos de 4 h de rotação do lado direito" no desfecho falado (notas do 38).
-- Exemplo resolvido do slide 35: eletricista com dor 4 de 10 ao parafusar, que passa em 2 h e não limita, 2 h + 2,5 h de
+- Exemplo resolvido do slide 35: eletricista com dor **3 de 10** ao parafusar (antes 4 de 10; corrigido na conferência
+  adversarial, porque 4/10 é dor moderada e o nível III pede dor leve), que passa em 2 h e não limita, 2 h + 2,5 h de
   parafusadeira manual por dia. Paciente inventado para o exemplo (não é a Renata nem caso do pós-teste; q8 usa 5 h e
   pergunta outra coisa: repetição x rotação).
 - Pós-teste: Wagner, Paula, Jorge, Denise e Ricardo (da versão de caso) e **Tânia** (q8, nova). Nenhum desses nomes está
@@ -120,11 +128,13 @@ Só este artigo. Todo o resto é resumo, print ou cálculo (seção 2).
 
 | Figura | Slide | Licença | Citação completa no rodapé |
 |---|---|---|---|
-| `Bretschneider2022_tab3` (aprovada no catálogo, 2173 × 793 px, 300 dpi) | 34 | CC BY-NC-ND (inteira, sem recorte nem tradução) | sim ("Bretschneider SF et al. Am J Ind Med. 2022;65(1):41-50. Tab. 3.") |
+| `Bretschneider2022_tab3` (aprovada no catálogo, 2173 × 793 px, 300 dpi) | 34 | CC BY-NC-ND (inteira, sem recorte, sem tradução e **sem marcas por cima**) | sim ("Bretschneider SF et al. Am J Ind Med. 2022;65(1):41-50. Tab. 3.") |
 
-- Destaques: três retângulos de linha inteira (rotação, Strain Index, repetição) e os números 1–3 em rótulos colocados no
-  espaço vazio entre o nome do fator e a coluna de exposição alta. Primeira versão com o número no canto cobria o IC
-  ("3,10", "1,20", "2,78") e depois o "F" de "Forearm"; corrigido e conferido no render.
+- **Destaques retirados** (conferência adversarial, seção 10, item 4). Decisão da trilha: figura CC BY-NC-ND entra limpa e
+  inteira, sem retângulos nem números desenhados por cima, como a Fig. 2 do mesmo artigo no slide 39 da aula 1. No lugar,
+  os três cartões numerados embaixo da tabela ("o que olhar") citam a linha pelo nome em inglês: 1 "Forearm rotation",
+  2 "Strain Index", 3 "Repetitive movements", com o OR e o IC; as notas dizem por que a tabela fica sem marcas.
+  Conferido no render (s-34.png).
 - Gráficos e tabelas nativos "Adaptado de" (editáveis): barras do slide 13 (Vuvan 2020, contagens do print s56) e do
   slide 19 (Smidt 2002); tabelas dos slides 7, 12, 14 e 28; números dos slides 5, 20, 22 e 26.
 - Nenhuma imagem da aula de capacitação entrou nesta versão (a de caso usava o print s38 de Vicenzino e um recorte do s81
@@ -134,7 +144,30 @@ Só este artigo. Todo o resto é resumo, print ou cálculo (seção 2).
 
 ## 6. Checagens automáticas
 
-Rodada atual (depois da revisão independente, 25/11/2026):
+Rodada atual (depois da conferência adversarial das três aulas, 25/11/2026; seção 10):
+
+- `validar_aula.py` (via `montar_deck.py`): **APROVADA com avisos, 0 erros.** 48:50 por `tempo_s` (era 48:30); 45:38
+  estimados pelo validador; 47:21 contando todas as palavras das notas a 130/min + interações. 17 interações em 4
+  formatos; primeira aos 0:30; 20% do tempo em atividade; minutos `●●··●··●●●●··●●··●····●●●·●····●●●●●●●·●···●●·●●●`.
+  Partes: 8:15, 8:40, 8:50, 9:15, 8:25. Critério de tempo mantido: `tempo_s` = todas as palavras das notas a 130/min +
+  interação + 10 s nos slides em que se leem respostas, arredondado a 5 s. Mudaram: 9 (65 → 70), 16 (115 → 120), 27
+  (130 → 135), 28 (90 → 95); as notas de 30, 33, 34 e 35 foram enxugadas para caber no mesmo `tempo_s`. Folga até o teto:
+  1:10 (dois "voltar 30 s" cabem). Avisos novos decididos: 27 com 97 palavras visíveis (o quadro ganhou "não o da aula 1"
+  e a faixa encolheu); 35 com 96 (o passo 1 cita "(print s42)", como pedido); 36 com 74 (contexto com "três semanas
+  depois de começar o isométrico"). Os demais avisos de palavras são os da rodada anterior.
+- `montar_deck.py`: 0 erros de layout; texto reduzido em 1 pt só nos divisores, no mapa geral e no slide 21, como antes.
+  O 35 chegou a ser reduzido com a âncora longa; a âncora foi encurtada ("nível = quanto e quando dói, duração, limite.")
+  e a redução sumiu.
+- Render (LANG=pt_BR.UTF-8) olhado em tamanho cheio: 8, 9, 16, 27, 29, 34, 35, 36 e 37 (os slides com texto visível
+  alterado; em 28, 30 e 33 só mudaram as notas) e a folha 4. Nada cortado nem encavalado; o 34 mostra a Tab. 3 limpa,
+  com os três cartões citando as linhas.
+- `conferir_pptx.py`: **nenhum problema** (40 notas com tempo acumulado certo, 2 gráficos nativos, 85 partes do XML
+  validadas contra o esquema).
+- `materiais.py`: **nenhum aviso.** Enquetes regeradas com os gabaritos B, D e A; resumo do aluno abaixo de 900 palavras
+  de texto corrido depois de entrar a frase sobre escapular e tecidos moles (enxuguei pontos 2 e 4, o algoritmo 4 e os dois
+  "para praticar"). Pré e pós-teste sem mudança de conteúdo (gabarito A, B, C, D, B, A, C, B, B).
+
+Rodada da revisão independente (antes da conferência adversarial):
 
 - `validar_aula.py` (via `montar_deck.py`): **APROVADA com avisos, 0 erros.** 48:30 por `tempo_s`; 45:15 estimados pelo
   validador; 17 interações em 4 formatos (enquete, chat em cascata, mão na câmera, chat); primeira aos 0:30; 20% do tempo
@@ -167,12 +200,13 @@ Rodada anterior (antes da revisão): 46:40 por `tempo_s`, 49:05 estimados; prime
 
 - Daniel: conferir a fala das correções da própria aula de capacitação, agora ditas dentro das partes (slides 7, 13, 14,
   19, 26 e 28; o slide "o que mudou" saiu): "eu ensinei assim, seguindo a diretriz; o que encontramos hoje é isto".
-- Salvar as 3 enquetes de `enquetes.md` no Meet. **A enquete 1 mudou** (opção D nova: "Muito melhor no ano: 9 em 10 com
-  exercício, contra 5 em 10 esperando"; os números da D são um erro de propósito, não dado).
+- Salvar as 3 enquetes de `enquetes.md` no Meet. **As três mudaram na conferência adversarial:** enquete 1 com opções de
+  comprimento parecido (gabarito B); enquete 2 (slide 29) com gabarito **D**; enquete 3 (slide 37) com gabarito **A**. Os
+  números da opção D da enquete 1 continuam sendo erro de propósito, não dado.
 - A dose do isométrico (slides 12, 14, 15, 16, 33) vem de tabela redigitada: é o primeiro número a conferir quando o PDF
   de Vuvan 2020 chegar.
 - **Ensaio cronometrado ainda não feito** (só pode ser feito pelo Daniel): registrar aqui o tempo real por parte. Previsto:
-  48:30 com retorno incluído. Cortes de reserva se atrasar: ler só uma resposta nos slides 2 e 39; no 26, pular o desafio
+  48:50 com retorno incluído. Cortes de reserva se atrasar: ler só uma resposta nos slides 2 e 39; no 26, pular o desafio
   da dupla contagem; no 34, pular a frase do esporte.
 - Copiar os bilhetes de saída (slide 40): abrem a aula 3.
 - `questoes.json`: q1–q7 vêm da versão de caso (revisadas); q8 e q9 são novas; q6 e q9 corrigidas nesta rodada.
@@ -231,6 +265,22 @@ aula de capacitação. Numeração nova dos slides.
 | 19 | Checagens do 5 e do 13 só de reconhecimento | **Procede** | 5: "um tratamento que chega a 90% em 1 ano provou que funciona?"; 13: "a DMP de −0,92 garante que ela se sente muito melhor?" |
 | 20 | Legibilidade da Tab. 3 e das tabelas nativas | **Procede em parte** | Notas do 34: "não precisam ler a tabela em inglês, olhem os números 1 a 3". Fonte e altura das tabelas nativas são fixas no montador da skill: não alterado (afetaria as outras aulas que estão sendo editadas agora); fica como sugestão para a skill |
 
+
+## 10. Conferência adversarial das três aulas (25/11/2026): o que foi feito nesta aula
+
+Lista em `revisoes/conferencia_expositiva.json` (scratchpad da sessão). Cada achado foi conferido na fonte antes de mexer.
+
+| # | Achado | Conferência na fonte | O que mudou |
+|---|---|---|---|
+| 1 | Eletricista do slide 35 classificado no nível III com dor 4/10 (importante) | **Procede.** Print `midia/s042_cf4de0aa90.png`: nível III = "Mild pain ... during exercise/work that persists after activity, but does not limit activity"; nível IV = leve a moderada, > 6 h, limita. Régua de intensidade nas notas s42 da capacitação (`inventario_LET.md`, l. 291) e na aula 1, slide 22: leve ≤ 3/10, moderada 4–6/10. Com 4/10, 2 h e sem limitar, o quadro não cabia em nenhum nível | Slide 35: dado "Dor 3 de 10 ao parafusar; passa em 2 h; não limita"; passo 1 "dor leve (≤ 3) no trabalho, persiste, não limita = nível III, leve (print s42)"; âncora "nível = quanto e quando dói, duração, limite."; desafio "e se a dor durasse o resto do dia e limitasse?" (IV, fase 1, nas notas). Notas do 35 com 3 em 10 e a régua. Slide 33 (ver também): o cartão do nível IV já batia com o print; as notas ganharam a régua "leve é dor até 3 em 10, moderada de 4 a 6"; a checagem do 33 continua: dor que dura o resto do dia e limita é IV. Seção 2, linha da irritabilidade, e seção 4 corrigidas |
+| 2 | Linha do tempo da Renata (importante) | **Procede.** Na aula 2, a semana 6 era ao mesmo tempo "seguiu o plano por seis semanas" (aula 1) e "semana 1" do isométrico (slide 16), sem dizer o que ela fez antes | Nas semanas 0 a 6, só orientação de carga e acompanhamento, sem programa; na semana 6 ela começa o programa, semana 1 do isométrico. Slide 9: cartão "Semanas 0 a 6: orientação de carga, sem exercício" e notas; 16: título "Escreva a semana 1 do programa" e notas ("Na semana 3 do programa"); 30: notas "na mesma consulta da semana 6, em que o programa começa"; 36: contexto "Na semana 9, três semanas depois de começar o isométrico" e notas "a semana 4 do programa". Roteiro ("Linha do tempo do caso") e seção 4. Conferi todas as outras menções de semana (2, 11, 15, 19, 23, 37, 38): coerentes. A frase da aula 1 (slide 35) é da agente da aula 1 |
+| 3 | Stahl 1997 exagerado (importante) | **Não se aplica a esta aula.** Busquei "Stahl", "Nirschl" e "medial" em deck, roteiro, questões, enquetes, resumo e verificação: nenhuma menção. O corticoide na tendinopatia medial é da aula 3 | Nada |
+| 4 | Tab. 3 de Bretschneider (CC BY-NC-ND) com retângulos e números por cima (importante) | **Procede.** Catálogo: licença CC BY-NC-ND; a aula 1 mostra a Fig. 2 do mesmo artigo sem marcas por esse motivo | Decisão da trilha aplicada: destaques retirados; Tab. 3 limpa e inteira; os três cartões numerados embaixo citam as linhas "Forearm rotation" (OR 1,85; 1,10 a 3,10), "Strain Index" (1,75; 1,11 a 2,78) e "Repetitive movements" (0,71; 0,42 a 1,20), números conferidos em Bretschneider p.7, Tab. 3 (seção 1). Notas dizem por que a tabela fica sem marcas. Seções 1 e 5 |
+| 5 | Escapular e tecidos moles saíram sem motivo dito (menor) | **Procede.** Ficha Lucado2022 (print s123): grau C para "incluir ombro e escápula" e para "mobilização de tecidos moles... mais exercício"; ficha Day2019: o ECR de Day e Lucado (sem diferença) não é o artigo do lote e não foi conferido; mapa 1.15 e "Tecidos moles": estudos só da capacitação | Frase nas notas do 28 ("só ensaios da capacitação, fora do lote conferido; os dois últimos têm grau C na diretriz e estão no resumo"); resumo do aluno, ponto 5: "Escapular e tecidos moles (grau C; Lucado 2022): fora da aula, com ensaios só da capacitação, fora do lote". Preferi as notas a uma linha nova na tabela do 28, que já tem 87 palavras visíveis. Roteiro ("O que fica de fora"), seção 2 (tabela fora do lote) e apêndice |
+| 6 | O mesmo 79% com dois significados (menor) | **Procede.** Ficha Vicenzino2009: 79% de melhora em 3 semanas com MWM e exercício (pré-teste da Tab. 2); na aula 1, 79% é o teto do diagnóstico em Vuvan (422 de 533) | Slide 27: quadro "79% melhoram em 3 sem com MWM e exercício; não o da aula 1"; notas "com a conta da aula 1, mas outro 79%: lá, o teto do diagnóstico em Vuvan; aqui, a melhora em 3 semanas com MWM e exercício". Faixa encurtada para manter o slide abaixo de 100 palavras. Seção 2 e roteiro |
+| 7 | Enquetes com gabarito sempre B; certa a mais longa no 8 (menor) | **Procede.** As três eram B; no 8, a B tinha 72 caracteres contra 50 a 66 | 8: gabarito B mantido, opções equilibradas (64 a 66 caracteres: A ganhou "força moderada", que é a legenda do grau B no print s124; B encurtada; C "não mostrou diferença alguma"). 29: gabarito **D** (opções reordenadas; notas com as letras novas). 37: gabarito **A** (idem). `plano_b` de cada enquete com "Gabarito: X"; `enquetes.md` regerado; roteiro com os gabaritos na linha do tempo |
+| 8 | Critério de tempo | Mantido (`tempo_s` = estimado + interação + 10 s nos slides com leitura de respostas) | Ver seção 6: 48:50 |
+
 ---
 
 ## Apêndice. O que mudou desde a aula de capacitação
@@ -250,7 +300,7 @@ contradiz; **novo** = a capacitação não tinha. A coluna "Nesta aula" diz onde
 | s61 | Revisão de exercício e mobilização (Hoogvliet) | matiza (não conferido) | Fora do lote; os +14,6 kg de cervical/torácica ditos como não conferidos | slide 26 (notas) |
 | s62 | Isotônico/excêntrico 3 × 15 por 6–12 sem, "evidência moderada"; ninguém descreveu progressão | matiza | A única dose com critério de progressão do lote: 3 × 10, regra de 24 h **ou** +1 ponto (Day 2019, opinião) | slides 12, 14 |
 | s63–s69 | Programa por fases com 20–40% da CVM (fases 1–2) e > 40% (fase 3) | matiza | Grau F na própria diretriz; Day usa libras; fases mudam pela irritabilidade | slides 14, 33 |
-| s71–s74 | Treino escapular: positivo em um ECR (Mostafee), sem valor em outro (Day e Lucado) | confirma com ressalva (não conferido) | Grau C; os dois ECR fora do lote | fora (seção "O que fica de fora" do roteiro) |
+| s69–s74 | Treino escapular: positivo em um ECR (Mostafee), sem valor em outro (Day e Lucado) | confirma com ressalva (não conferido) | Grau C; os dois ECR fora do lote | fora do deck; motivo nas notas do 28 e no resumo do aluno (ponto 5) |
 | s75–s77 | Corticoide: benefício em 4–12 sem, pior no médio prazo, sem benefício no longo | confirma e amplia | Pior que fisioterapia em 1 ano: 69% x 91% (Smidt 2002); 83% x 96% x placebo (Coombes 2013); 1 a menos bem a cada 4 a 8 injeções (calc.) | slides 19, 21, 24 |
 | s78 (e notas da aula 1) | Custo-efetividade do ensaio de Coombes; "recorrência de até 54% em 2 anos" | **novo / matiza** | Recidiva em 1 ano 54% x 12%; fisioterapia junto não mostrou proteger (29% x 38%); 72% dos sucessos com injeção regrediram (Bisset); na população, 8,5% em 2 anos (Sanders 2015) | slide 20 |
 | — | — | **novo** | Corticoide somado ao HSR não acelera e piora o QuickDASH em 52 sem (Couppé 2022) | slide 22 |
@@ -262,7 +312,7 @@ contradiz; **novo** = a capacitação não tinha. A coluna "Nesta aula" diz onde
 | s86–s88 | MWM x Cyriax; MWM somada a exercício | matiza (não conferido) | Fora do lote; sem grupo controle em Akbar | fora |
 | s84, s89–s91 | Manipulação cervical/torácica +14,6 kg; T5 +4,6 kg | matiza (não conferido) | Grau C; fora do lote; indicada com pescoço duro e formigamento sem déficit (proposta) | slides 26, 30 |
 | s38 (aula 1, usada aqui) | Regra de predição como preditor de resposta à MWM | matiza | Cada RV+ com IC que inclui 1; pré-teste já 79%; com um critério negativo, ~70% (calc.); testar na sessão | slide 27 |
-| s93–s96 | Fricção profunda + lidocaína; mobilização instrumental sem diferença | matiza (não conferido) | Fora do lote; grau C com exercício | fora |
+| s92–s96 | Fricção profunda + lidocaína; mobilização instrumental sem diferença | matiza (não conferido) | Fora do lote; grau C com exercício | fora do deck; motivo nas notas do 28 e no resumo do aluno (ponto 5) |
 | s98–s100 | Agulhamento seco melhor que corticoide (Uygur) | matiza / atualiza | MA de 17 ECR: na dor, só < 1 semana (−0,95); incapacidade e preensão também ≥ 1 semana; grau B é força, não tamanho (Ma 2024) | slides 28, q9 |
 | s102 | Contraforça sem efeito no curto prazo ("SMD 0,02") e pior que fisioterapia no longo | confirma, **corrige o sinal** | −0,02 (−0,85 a 0,80) no curto; 1,17 (−0,00 a 2,34) a favor da fisioterapia no longo; I² > 90%: estudos discordam; grau F (Shahabi 2020) | slides 28, 29 (notas) |
 | s103 | Contraforça reduz a dor na contração de imediato | matiza | Alívio imediato compatível com "manter nas tarefas que doem"; não muda o curso | slide 29 |

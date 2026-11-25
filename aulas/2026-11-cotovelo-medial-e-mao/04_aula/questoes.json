@@ -60,11 +60,11 @@
         "D": "Preferir a infiltração: é a única opção com ECR na medial."
       },
       "gabarito": "A",
-      "comentario": "Melhora dentro dos grupos não é efeito do tratamento (curso natural, regressão à média). Na medial não há estimativa de efeito do exercício; o único ECR de corticoide mostrou alívio só em 6 semanas, igual em 3 meses e 1 ano. A conduta de nível alto é dizer de onde vem a dose (lateral e mecanismo), chamá-la de proposta clínica e medir a resposta individual (dor em 24 horas, PRTEE adaptada, preensão sem dor).",
+      "comentario": "Melhora dentro dos grupos não é efeito do tratamento (curso natural, regressão à média). Na medial não há estimativa de efeito do exercício; o único ECR de corticoide (60 cotovelos) mostrou alívio em 6 semanas numa escala (graduação de Nirschl, p < 0,03), não na EVA, e nada em 3 meses e 1 ano. A conduta de nível alto é dizer de onde vem a dose (lateral e mecanismo), chamá-la de proposta clínica e medir a resposta individual (dor em 24 horas, PRTEE adaptada, preensão sem dor).",
       "distratores": {
         "B": "Ler melhora dentro do grupo como efeito do tratamento.",
         "C": "Confundir ausência de evidência com evidência de ausência e deixar o paciente sem carga.",
-        "D": "Escolher pelo desenho e ignorar o resultado: o ECR mostrou benefício só em 6 semanas."
+        "D": "Escolher pelo desenho e ignorar o resultado: o ECR mostrou alívio só em 6 semanas, numa escala e não na EVA."
       },
       "referencia": [
         "See2026",
@@ -117,6 +117,30 @@
       "referencia": [
         "Minkhorst2025",
         "Huisstede2014b"
+      ]
+    },
+    {
+      "id": "q8",
+      "objetivo": 3,
+      "nivel": "aplicação",
+      "cenario": "Um colega traz um ensaio de injeção de corticoide x placebo no dedo em gatilho com razão de chances (OR) de sucesso de 7,5, e 40% de sucesso no grupo placebo. Ele vai dizer à paciente que a injeção dá “7,5 vezes mais chance de resolver” (números hipotéticos, só para a conta).",
+      "pergunta": "Qual é o risco relativo (RR) aproximado de sucesso com o corticoide?",
+      "opcoes": {
+        "A": "Cerca de 7,5: o OR já diz quantas vezes mais.",
+        "B": "Cerca de 83%: é o RR com o corticoide.",
+        "C": "Cerca de 7,5: o OR é igual ao RR se o evento é raro.",
+        "D": "Cerca de 2,1: 83% com corticoide contra 40%."
+      },
+      "gabarito": "D",
+      "comentario": "O OR multiplica chances, não probabilidades. Chance no placebo = 0,40 ÷ 0,60 = 0,667; chance com corticoide = 0,667 × 7,5 = 5,0; probabilidade = 5,0 ÷ 6,0 = 83%; RR = 0,83 ÷ 0,40 ≈ 2,1 (com 5/6 exato, 2,08). Quanto mais comum o evento, mais o OR se afasta do RR: com 40% de sucesso, um OR de 7,5 é um RR de cerca de 2. É a mesma conta do slide 26 (OR 22,8 da percutânea x injeção, base de 60%: RR de ~1,6), em números novos. Para a paciente, a frase honesta é “cerca de 8 em 10 com a injeção contra 4 em 10 sem ela”. Números hipotéticos: o lote não traz OR de corticoide x placebo no gatilho (Peters-Veluthamaningal dá RR 3,15 contra lidocaína).",
+      "distratores": {
+        "A": "Ler razão de chances como risco relativo: “7,5 vezes mais” vale para a chance, não para a probabilidade de resolver.",
+        "B": "Confundir a probabilidade de sucesso com corticoide (83%) com o RR, que é a razão entre as duas probabilidades.",
+        "C": "Aplicar a aproximação do evento raro a um evento comum: com 40% no placebo, OR e RR se afastam muito."
+      },
+      "referencia": [
+        "Chiang2026",
+        "PetersVeluthamaningal2009"
       ]
     },
     {

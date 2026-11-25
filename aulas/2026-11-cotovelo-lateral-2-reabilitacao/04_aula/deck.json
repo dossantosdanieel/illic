@@ -50,23 +50,23 @@
   ],
   "resumo": {
    "pontos_chave": [
-    "O comparador é o tempo: com placebo ou nada, 89% estão muito melhor em 1 ano (IC 80% a 97%; Ikonen 2022). Contra nada, terapia manual e exercício tiram 0,53 ponto de dor em 10 (0,14 a 0,92), sem durar (Wallis 2024); contra o corticoide, o exercício vence, menos na dor do curto prazo (certeza baixa; Karanasios 2021). Grau na diretriz é força da recomendação, não tamanho do efeito.",
-    "Nenhum ensaio do lote compara isométrico, isotônico, excêntrico e HSR. Isométrico (a conferir): 20% a 35% da CVM, 4 × 30 s nas semanas ímpares e 3 × 45 s nas pares, todo dia; sucesso de 29% x 26% contra esperar (Vuvan 2020). A regra de dor de 24 h para subir é opinião (Day 2019).",
+    "O comparador é o tempo: com placebo ou nada, 89% estão muito melhor em 1 ano (IC 80% a 97%; Ikonen 2022). Contra nada, terapia manual e exercício tiram 0,53 ponto de dor em 10 (0,14 a 0,92), sem durar (Wallis 2024); contra o corticoide, o exercício vence, menos na dor de curto prazo (certeza baixa; Karanasios 2021). Grau na diretriz é força da recomendação, não tamanho do efeito.",
+    "Nenhum ensaio do lote compara os tipos de exercício. Isométrico (a conferir): 20% a 35% da CVM, 4 × 30 s nas semanas ímpares e 3 × 45 s nas pares, todo dia; sucesso de 29% x 26% contra esperar (Vuvan 2020). A regra de dor de 24 h para subir é opinião (Day 2019).",
     "Corticoide: 92% x 47% de sucesso em 6 semanas e 69% x 91% em 1 ano (Smidt 2002): 1 a menos bem a cada 4 ou 5 injeções (calc.). Recidiva em 1 ano de 54% x 12%, e a fisioterapia junto não mostrou proteger (Coombes 2013); na população, 8,5% em 2 anos (Sanders 2015). PRP = injeção placebo em 3 meses (0,16 em 10, certeza moderada; Karjalainen 2021).",
-    "MWM: 0,43 na dor com todos os prazos somados (0,15 a 0,71; métrica a conferir); nos gráficos por prazo, o efeito fica no curto prazo e de 3 a 12 meses o IC cruza o zero (Lucado 2019). Regra de predição: cada RV+ (2,1 a 2,6) tem IC que inclui 1; com o critério de 112 N negativo, cerca de 70% ainda melhoram (calc.; Vicenzino 2009).",
-    "Agulhamento seco: dor −0,95 em 10 só na 1ª semana; incapacidade e preensão melhoraram também depois (Ma 2024). Órtese: igual à fisioterapia no curto prazo, atrás no longo (1,17; −0,00 a 2,34), estudos discordantes (Shahabi 2020). Ondas de choque sem benefício clínico (Karanasios 2021, ondas de choque). Fita rígida, laser, TENS e gelo: sem estudo no lote.",
+    "MWM: 0,43 na dor com todos os prazos somados (0,15 a 0,71; métrica a conferir): por prazo, o efeito fica no curto prazo; de 3 a 12 meses o IC cruza o zero (Lucado 2019). Regra de predição: cada RV+ (2,1 a 2,6) tem IC que inclui 1; com o critério de 112 N negativo, cerca de 70% ainda melhoram (calc.; Vicenzino 2009).",
+    "Agulhamento seco: dor −0,95 em 10 só na 1ª semana; incapacidade e preensão melhoraram também depois (Ma 2024). Órtese: igual à fisioterapia no curto prazo, atrás no longo (1,17; −0,00 a 2,34), estudos discordantes (Shahabi 2020). Ondas de choque sem benefício clínico (Karanasios 2021, ondas de choque). Fita rígida, laser, TENS, gelo: sem estudo no lote. Escapular e tecidos moles (grau C; Lucado 2022): fora da aula, com ensaios só da capacitação, fora do lote.",
     "No trabalho, rotação do antebraço por mais de 4 h/dia (OR 1,85; 1,10 a 3,10) e esforço com força (OR 1,75; 1,11 a 2,78) se associaram à incidência; a repetição isolada ficou inconclusiva (OR 0,71; 0,42 a 1,20) (Bretschneider 2022)."
    ],
    "algoritmo": [
     "Irritabilidade grave (dor em repouso, VI–VII)? Aliviar e descarregar; piorando, encaminhar.",
     "Moderada? Fase 1: isométrico de extensores do punho, cotovelo a 90°, 20% da CVM em kg, 4 × 30 s, todo dia.",
     "Sem dor tardia de 24 h ou dor que não subiu mais de 1 ponto? Suba 5% da CVM a cada 2 semanas; senão, mantenha ou recue.",
-    "Leve? Fase 2: isotônico 3 × 10 com 0,5 a 2,3 kg. Fez 2,3 kg × 20 sem piora? Fase 3: alavanca longa e a tarefa do trabalho.",
+    "Leve? Fase 2: isotônico 3 × 10 com 0,5 a 2,3 kg. Fez 2,3 kg × 20 sem piora? Fase 3: alavanca longa e tarefa do trabalho.",
     "Recaída? Recue uma fase, ajuste as horas de rotação e reexamine o pescoço se houver formigamento; segunda injeção não foi testada."
    ],
    "para_praticar": [
-    "No próximo paciente com dor lateral, meça a CVM e escreva na ficha a carga em kg, o volume, a frequência e a regra de dor.",
-    "Na próxima pergunta sobre infiltração, diga o número de 6 semanas, o de 1 ano e a recidiva."
+    "No próximo paciente, meça a CVM e escreva na ficha carga em kg, volume, frequência e regra de dor.",
+    "Sobre a infiltração, diga o número de 6 semanas, o de 1 ano e a recidiva."
    ]
   }
  },
@@ -434,13 +434,13 @@
    "interacao": {
     "tipo": "enquete",
     "duracao_s": 40,
-    "plano_b": "Sem enquete na conta: letra no chat em cascata, todos enviam no 3; contar as letras em voz alta."
+    "plano_b": "Sem enquete na conta: letra no chat em cascata, todos enviam no 3; contar as letras em voz alta. Gabarito: B."
    },
    "pergunta": "Paciente com dor lateral há 2 meses: “Fazendo os exercícios, quanto melhor eu fico do que esperando?”. O que os números sustentam?",
    "opcoes": {
-    "A": "Muito melhor: o exercício tem grau B na diretriz.",
-    "B": "Um pouco melhor e mais cedo; em 1 ano, a maioria melhora de todo jeito.",
-    "C": "Igual: contra esperar, o exercício não mostrou diferença.",
+    "A": "Muito melhor: o exercício tem grau B na diretriz, força moderada.",
+    "B": "Um pouco e mais cedo; em 1 ano, a maioria melhora de todo jeito.",
+    "C": "Igual: contra esperar, o exercício não mostrou diferença alguma.",
     "D": "Muito melhor no ano: 9 em 10 com exercício, contra 5 em 10 esperando."
    },
    "gabarito": "B",
@@ -452,7 +452,7 @@
    "papel": "aplicacao",
    "olho": "Parte 1 · Aplicação",
    "titulo": "Renata: “Se passa sozinho, para que **exercício**?”",
-   "tempo_s": 65,
+   "tempo_s": 70,
    "origem": "caso",
    "interacao": {
     "tipo": "mao_camera",
@@ -466,13 +466,14 @@
    "cartao": {
     "olho": "O que você sabe",
     "itens": [
+     "Semanas 0 a 6: orientação de carga, sem exercício",
      "PRTEE: 58 → 49",
      "Dor no salão: 5 de 10",
      "Irritabilidade moderada",
      "Recusa clientes; quer parar de recusar"
     ]
    },
-   "notas": "A aplicação da parte 1. Ler a fala com a desconfiança de quem está perdendo dinheiro. Os dados: na semana 6, PRTEE de 58 para 49, dor 5 em 10 no salão, irritabilidade moderada, e ela recusa clientes. Interação: mão na câmera. Polegar para cima quem usaria o argumento de velocidade e trabalho; para baixo, um ano diferente. A resposta é para cima. Uma frase possível: a maioria melhora com o tempo; o exercício ajuda a melhorar um pouco mais cedo e a atender sem recusar cliente, e a gente mede de 3 em 3 semanas."
+   "notas": "A aplicação da parte 1. Ler a fala com a desconfiança de quem está perdendo dinheiro. Os dados: seis semanas só com orientação de carga no salão e acompanhamento, sem exercício; hoje, semana 6, PRTEE de 58 para 49, dor 5 em 10 no salão, irritabilidade moderada, e ela recusa clientes. O programa começa agora. Interação: mão na câmera. Polegar para cima quem usaria o argumento de velocidade e trabalho; para baixo, um ano diferente. A resposta é para cima. Uma frase possível: a maioria melhora com o tempo; o exercício ajuda a melhorar um pouco mais cedo e a voltar a atender; medimos a cada 3 semanas."
   },
   {
    "tipo": "sintese",
@@ -719,9 +720,9 @@
    "papel": "aplicacao",
    "olho": "Parte 2 · Aplicação",
    "origem": "caso",
-   "titulo": "Renata: CVM de **8 kg**, irritabilidade moderada. Escreva a semana 1 e a regra para subir.",
+   "titulo": "Renata: CVM de **8 kg**, irritabilidade moderada. Escreva a semana 1 do programa e a regra para subir.",
    "instrucao": "Uma linha no chat: exercício, kg, volume, frequência e regra. Envie no 3.",
-   "tempo_s": 115,
+   "tempo_s": 120,
    "interacao": {
     "tipo": "chat_cascata",
     "duracao_s": 50,
@@ -729,7 +730,7 @@
    },
    "ancora": "use o exemplo: carga = CVM × 20%.",
    "desafio": "qual número da sua linha é de ensaio e qual é opinião?",
-   "notas": "A aplicação da parte 2, sem apoio: a Renata na semana 6, CVM de extensão do punho direito de 8 quilos, irritabilidade moderada. Interação: chat em cascata, 50 segundos, contar 3, 2, 1. Ler duas respostas com os nomes e dizer o que faltou nas outras: quilos, frequência ou regra. A resposta: isométrico de extensores do punho, cotovelo a 90 graus, pronado; 20% de 8 quilos, 1,6 quilo; 4 de 30 segundos; todo dia. Na semana 3, 25%, 2 quilos, se não houver dor tardia em 24 horas ou a dor não subir mais de 1 ponto. Desafio: tipo, carga e volume vêm de ensaio, a conferir; a regra é opinião; o quilo é conta nossa."
+   "notas": "A aplicação da parte 2, sem apoio. Até a semana 6, a Renata teve só orientação de carga; agora começa o programa: esta é a semana 1 do isométrico. CVM de 8 quilos no punho direito, irritabilidade moderada. Interação: chat em cascata, 50 segundos, contar 3, 2, 1. Ler duas respostas com os nomes; dizer o que faltou: quilos, frequência ou regra. A resposta: isométrico de extensores do punho, cotovelo a 90 graus, pronado; 20% de 8 quilos, 1,6 quilo; 4 de 30 segundos; todo dia. Na semana 3 do programa, 25%, 2 quilos, se não houver dor tardia em 24 horas ou a dor não subir mais de 1 ponto. Desafio: tipo, carga e volume vêm de ensaio, a conferir; a regra é opinião; o quilo é conta nossa."
   },
   {
    "tipo": "sintese",
@@ -1029,7 +1030,7 @@
    "papel": "checar",
    "olho": "Parte 4 · Exemplo parcialmente resolvido",
    "titulo": "Falhou num critério da regra: ainda vale **testar** a MWM?",
-   "tempo_s": 130,
+   "tempo_s": 135,
    "interacao": {
     "tipo": "chat_cascata",
     "duracao_s": 45,
@@ -1040,7 +1041,7 @@
     "olho": "A regra de Vicenzino",
     "texto": "Idade < 49; afetado > 112 N; não afetado < 336 N. RV+ 2,1 a 2,6, IC inclui 1; 100% com os três (poucos).",
     "itens": [
-     "Sem regra: 79% melhoram em 3 sem",
+     "79% melhoram em 3 sem com MWM e exercício; não o da aula 1",
      "Critério > 112 N: S 0,53; E 0,77"
     ]
    },
@@ -1061,14 +1062,14 @@
    "lacunas": [
     3
    ],
-   "resposta": "**Leitura:** a regra não fecha a porta; teste na sessão.",
+   "resposta": "**Leitura:** não fecha a porta; teste na sessão.",
    "ancora": "probabilidade = chance ÷ (1 + chance).",
    "desafio": "por que “100% com os três” não vira certeza?",
    "fonte": [
     "Vicenzino2009",
     "contas: calc. a partir de Vicenzino 2009"
    ],
-   "notas": "Exemplo parcialmente resolvido, com a conta da aula 1. A regra de Vicenzino, 2009, derivada em 64 pessoas, prevê quem melhora em 3 semanas com MWM e exercício: idade abaixo de 49, preensão sem dor do lado afetado acima de 112 newtons e do lado bom abaixo de 336. Cada critério tem RV positiva de 2,1 a 2,6, e todos os intervalos incluem 1; sem regra, 79% já melhoram. Passo 1: a chance antes, 0,79 dividido por 0,21, 3,76. Passo 2: o critério de 112 newtons tem sensibilidade de 0,53 e especificidade de 0,77; a RV negativa é 0,47 dividido por 0,77, 0,61. Interação: chat em cascata depois do passo 2; a turma faz o passo 3 em 45 segundos, contar 3, 2, 1. A resposta: 3,76 vezes 0,61 dá 2,29; dividido por 3,29, cerca de 70%. Quem falha num critério ainda tem 7 em 10; a resposta na sessão decide, proposta clínica. Desafio: os 100% vêm de poucos pacientes, num modelo sem validação."
+   "notas": "Exemplo parcialmente resolvido, com a conta da aula 1, mas outro 79%: lá, o teto do diagnóstico em Vuvan; aqui, a melhora em 3 semanas com MWM e exercício em Vicenzino, 2009. A regra, derivada em 64 pessoas: idade abaixo de 49, preensão sem dor do lado afetado acima de 112 newtons e do lado bom abaixo de 336. Cada critério tem RV positiva de 2,1 a 2,6, e todos os intervalos incluem 1. Passo 1: a chance antes, 0,79 dividido por 0,21, 3,76. Passo 2: o critério de 112 newtons tem sensibilidade de 0,53 e especificidade de 0,77; a RV negativa é 0,47 dividido por 0,77, 0,61. Interação: chat em cascata depois do passo 2; a turma faz o passo 3 em 45 segundos, contar 3, 2, 1. A resposta: 3,76 vezes 0,61 dá 2,29; dividido por 3,29, cerca de 70%. Quem falha num critério ainda tem 7 em 10; a resposta na sessão decide, proposta clínica. Desafio: os 100% vêm de poucos pacientes, num modelo sem validação."
   },
   {
    "tipo": "tabela",
@@ -1076,7 +1077,7 @@
    "papel": "explicar",
    "olho": "Parte 4 · Os complementares",
    "titulo": "Complementares: alguns abrem uma janela curta; nenhum muda o **ano**",
-   "tempo_s": 90,
+   "tempo_s": 95,
    "interacao": {
     "tipo": "mao_camera",
     "duracao_s": 20,
@@ -1129,7 +1130,7 @@
     "Karanasios2021b",
     "Lucado2022"
    ],
-   "notas": "Os complementares, do mais ao menos sustentado. Agulhamento seco, Ma, 2024, 17 ensaios: dor 0,95 ponto menor em 10 só na primeira semana; incapacidade e preensão melhoraram também depois; comparadores misturados; certeza baixa pela nossa ficha; grau B. Fita rígida de descarga: grau B, nenhum estudo no lote. Órtese, Shahabi, 2020: contra fisioterapia, menos 0,02 no curto prazo, de menos 0,85 a 0,80; no longo, 1,17 a favor da fisioterapia, com o intervalo tocando o zero; I² acima de 90%, os estudos discordam; certeza muito baixa pela ficha, grau F. A capacitação escrevia 0,02 positivo: o sinal é negativo. Ondas de choque, Karanasios, 2021: sem benefício clínico contra simulação. Laser, TENS, gelo e kinesio: só estudos da capacitação, fora do lote. Interação: mão na câmera, com a pergunta do selo. A resposta é para baixo: grau é força de recomendação, e na dor o efeito do agulhamento durou uma semana."
+   "notas": "Agulhamento seco, Ma, 2024, 17 ensaios: dor 0,95 ponto menor em 10 só na primeira semana; incapacidade e preensão também depois; comparadores misturados; certeza baixa pela ficha; grau B. Fita rígida: grau B, sem estudo no lote. Órtese, Shahabi, 2020: contra fisioterapia, menos 0,02 no curto prazo, de menos 0,85 a 0,80; no longo, 1,17 a favor da fisioterapia, com o intervalo tocando o zero; I² acima de 90%, os estudos discordam; certeza muito baixa pela ficha, grau F. Na capacitação, o sinal estava trocado. Ondas de choque, Karanasios, 2021: sem benefício clínico contra simulação. Laser, TENS, gelo e kinesio, e o que saiu da aula, fortalecimento escapular e do ombro e mobilização de tecidos moles: só ensaios da capacitação, fora do lote conferido; os dois últimos têm grau C na diretriz e estão no resumo. Interação: mão na câmera, com a pergunta do selo. A resposta é para baixo: grau é força de recomendação, e na dor o efeito do agulhamento durou uma semana."
   },
   {
    "tipo": "enquete",
@@ -1141,17 +1142,17 @@
    "interacao": {
     "tipo": "enquete",
     "duracao_s": 40,
-    "plano_b": "Sem enquete na conta: letra no chat em cascata, todos enviam no 3; contar as letras em voz alta."
+    "plano_b": "Sem enquete na conta: letra no chat em cascata, todos enviam no 3; contar as letras em voz alta. Gabarito: D."
    },
    "pergunta": "Paciente diz que a órtese de contraforça alivia no trabalho. Contra fisioterapia: −0,02 (−0,85 a 0,80), I² 93%. O que fazer?",
    "opcoes": {
     "A": "Tirar: o losango no zero mostra que ela não faz nada.",
-    "B": "Manter nas tarefas que doem, sem prometer mudar o curso.",
-    "C": "Manter como tratamento: vale tanto quanto a fisioterapia.",
-    "D": "Trocar por ondas de choque, que reduziram a dor em 1,21 DP."
+    "B": "Manter como tratamento: vale tanto quanto a fisioterapia.",
+    "C": "Trocar por ondas de choque, que reduziram a dor em 1,21 DP.",
+    "D": "Manter nas tarefas que doem, sem prometer mudar o curso."
    },
-   "gabarito": "B",
-   "notas": "Checagem da parte 4: um número de meta-análise num paciente real. Interação: enquete de 40 segundos, sem comentar as opções; pedir um voluntário da opção menos votada. A resposta é a B: a órtese não mostrou mudar o curso, e os estudos discordam; se alivia, fica uns dois dedos abaixo da área dolorosa, só nas atividades que doem, como no programa de Day, e o exercício segue; proposta clínica. O longo prazo reforça a B: a fisioterapia fica à frente, 1,17, com o intervalo tocando o zero; a órtese não a substitui. A A lê o losango no zero como prova de nada; a C, como prova de igualdade; a D usa um número que os autores chamaram de sem benefício clínico."
+   "gabarito": "D",
+   "notas": "Checagem da parte 4: um número de meta-análise num paciente real. Interação: enquete de 40 segundos, sem comentar as opções; pedir um voluntário da opção menos votada. A resposta é a D: a órtese não mostrou mudar o curso, e os estudos discordam; se alivia, fica uns dois dedos abaixo da área dolorosa, só nas atividades que doem, como no programa de Day, e o exercício segue; proposta clínica. O longo prazo reforça a D: a fisioterapia fica à frente, 1,17, com o intervalo tocando o zero; a órtese não a substitui. A A lê o losango no zero como prova de nada; a B, como prova de igualdade; a C usa um número que os autores chamaram de sem benefício clínico."
   },
   {
    "tipo": "citacao",
@@ -1178,7 +1179,7 @@
      "Exame neurológico sem déficit"
     ]
    },
-   "notas": "A aplicação da parte 4. Ler a fala. Os dados: na semana 6, a preensão sem dor do lado direito foi de 140 para 185 newtons com a MWM, 32% a mais, na hora; o esquerdo tem 320. Pescoço duro desde a primeira consulta e o formigamento sem déficit da aula 1. Interação: mão na câmera, com a pergunta do selo. A leitura: a MWM abriu uma janela de curto prazo para carregar logo em seguida; não é o plano do ano. Pescoço duro e formigamento sem déficit: examinar e, se houver achado, mobilizar, grau C, proposta clínica; déficit progressivo encaminha."
+   "notas": "A aplicação da parte 4. Ler a fala. Os dados: na mesma consulta da semana 6, em que o programa começa, a preensão sem dor do lado direito foi de 140 para 185 newtons com a MWM, 32% a mais, na hora; o esquerdo tem 320. Interação: mão na câmera, com a pergunta do selo. A leitura: a MWM abriu uma janela de curto prazo para carregar logo em seguida; não é o plano do ano. Pescoço duro e formigamento sem déficit: examinar e, se houver achado, mobilizar, grau C, proposta clínica; déficit progressivo encaminha."
   },
   {
    "tipo": "sintese",
@@ -1265,7 +1266,7 @@
     "Poltawski2011",
     "grave, prazo e recuo: proposta clínica"
    ],
-   "notas": "O plano pela irritabilidade da aula 1. Grave, níveis VI e VII, dor em repouso: o algoritmo da diretriz, no print da capacitação, manda ajustar pelo estágio ou encaminhar; aliviar e descarregar antes de carregar é proposta nossa. Fase 1, moderada, níveis IV e V: o isométrico da parte 2. Fase 2, leve, I a III: isotônico 3 de 10, de 0,5 a 2,3 quilos, de Day. Por que a carga cai de 3,5 quilos para meio quilo? Fontes diferentes: o isométrico segura parado uma porcentagem da CVM; o isotônico de Day move a carga pela amplitude e começa leve; a explicação é opinião. Fase 3, quando cumpre a meta da fase 2 de Day, 2,3 quilos 20 vezes sem compensação nem piora: alavanca longa, tarefa e pliometria. Reavaliar a cada 3 semanas é proposta, o intervalo em que a diferença mínima do PRTEE foi medida. Interação: mão na câmera, com a pergunta do selo. A resposta é para cima: dor no trabalho que dura o resto do dia e limita é nível IV, moderada.",
+   "notas": "O plano pela irritabilidade. Grave, níveis VI e VII, dor em repouso: o algoritmo da diretriz, no print da capacitação, manda ajustar pelo estágio ou encaminhar; aliviar e descarregar antes de carregar é proposta nossa. Fase 1, moderada, níveis IV e V: o isométrico da parte 2. Fase 2, leve, I a III; leve é dor até 3 em 10, moderada de 4 a 6: isotônico 3 de 10, de 0,5 a 2,3 quilos, de Day. Por que a carga cai de 3,5 quilos para meio quilo? Fontes diferentes: o isométrico segura parado; o isotônico de Day move a carga pela amplitude e começa leve; opinião nossa. Fase 3, quando cumpre a meta da fase 2 de Day, 2,3 quilos 20 vezes sem compensação nem piora: alavanca longa, tarefa e pliometria. Reavaliar a cada 3 semanas é proposta, o intervalo em que a diferença mínima do PRTEE foi medida. Interação: mão na câmera, com a pergunta do selo. A resposta é para cima: dor no trabalho que dura o resto do dia e limita é nível IV, moderada.",
    "interacao": {
     "tipo": "mao_camera",
     "duracao_s": 20,
@@ -1286,54 +1287,11 @@
    },
    "legenda": "Exposição alta e baixa em cada fator, com o OR e o IC 95% das meta-análises de coortes de trabalhadores sem dor no início.",
    "o_que_olhar": [
-    "Rotação do antebraço > 4 h/dia (ou ≥ 45° em ≥ 45% do tempo): OR 1,85 (1,10 a 3,10).",
-    "Strain Index alto, força com duração: OR 1,75 (1,11 a 2,78).",
-    "Repetição > 15 esforços/min: OR 0,71 (0,42 a 1,20), inconclusiva."
+    "Linha “Forearm rotation”: > 4 h/dia (ou ≥ 45° em ≥ 45% do tempo), OR 1,85 (1,10 a 3,10).",
+    "Linha “Strain Index”, força com duração: OR 1,75 (1,11 a 2,78).",
+    "Linha “Repetitive movements”, > 15 esforços/min: OR 0,71 (0,42 a 1,20), inconclusiva."
    ],
-   "destaques": [
-    {
-     "tipo": "retangulo",
-     "x": 0.012,
-     "y": 0.355,
-     "w": 0.975,
-     "h": 0.19
-    },
-    {
-     "tipo": "retangulo",
-     "x": 0.012,
-     "y": 0.84,
-     "w": 0.975,
-     "h": 0.12
-    },
-    {
-     "tipo": "retangulo",
-     "x": 0.012,
-     "y": 0.7,
-     "w": 0.975,
-     "h": 0.12,
-     "cor": "marinho"
-    },
-    {
-     "tipo": "rotulo",
-     "x": 0.19,
-     "y": 0.45,
-     "texto": "1"
-    },
-    {
-     "tipo": "rotulo",
-     "x": 0.19,
-     "y": 0.9,
-     "texto": "2"
-    },
-    {
-     "tipo": "rotulo",
-     "x": 0.19,
-     "y": 0.76,
-     "texto": "3",
-     "cor": "marinho"
-    }
-   ],
-   "notas": "A carga que não é exercício: a do trabalho. Esta é a tabela 3 de Bretschneider, 2022, lida no texto completo. Não precisam ler a tabela em inglês: olhem os números 1 a 3. Retângulo 1: rodar o antebraço mais de 4 horas por dia, ou 45 graus por 45% do tempo, razão de chances de 1,85, intervalo de 1,10 a 3,10. Retângulo 2: o Strain Index alto, que junta força, duração e frequência do esforço, 1,75, de 1,11 a 2,78. Retângulo 3: a repetição isolada, mais de 15 esforços por minuto, 0,71, de 0,42 a 1,20, inconclusiva. É o que muda a anamnese: perguntar quantas horas por dia o paciente gira o antebraço e quanto tempo segura com força, não só quantas vezes repete. O limite: são coortes de trabalhadores sem dor no início. Usar isso para ajustar o trabalho de quem já tem dor é extrapolação, proposta clínica. Para o esporte, o lote não tem estudo: o programa de Day prevê retreino específico do esporte, e a fase 3 treina a própria tarefa."
+   "notas": "A carga que não é exercício: a do trabalho. A tabela 3 de Bretschneider, 2022, lida no texto completo, inteira e sem marcas: a licença CC BY-NC-ND não permite alterá-la. Os cartões citam as linhas. Cartão 1, Forearm rotation: rodar o antebraço mais de 4 horas por dia, ou 45 graus por 45% do tempo, razão de chances de 1,85, intervalo de 1,10 a 3,10. Cartão 2: o Strain Index alto, que junta força, duração e frequência do esforço, 1,75, de 1,11 a 2,78. Cartão 3, Repetitive movements: a repetição isolada, mais de 15 esforços por minuto, 0,71, de 0,42 a 1,20, inconclusiva. Muda a anamnese: perguntar quantas horas por dia gira o antebraço e quanto tempo segura com força, não só quantas vezes repete. O limite: são coortes de trabalhadores sem dor no início. Usar isso para ajustar o trabalho de quem já tem dor é extrapolação, proposta clínica. Para o esporte, o lote não tem estudo: o programa de Day prevê retreino específico do esporte, e a fase 3 treina a própria tarefa."
   },
   {
    "tipo": "exemplo",
@@ -1346,14 +1304,14 @@
     "olho": "O problema",
     "texto": "Eletricista, dor lateral há 3 meses.",
     "itens": [
-     "Dor 4 de 10 ao parafusar; passa em 2 h; não limita",
+     "Dor 3 de 10 ao parafusar; passa em 2 h; não limita",
      "Parafusa 2 h de manhã e 2,5 h à tarde"
     ]
    },
    "passos": [
     {
      "titulo": "Irritabilidade",
-     "conta": "no trabalho, passa, não limita = **nível III, leve**"
+     "conta": "dor leve (≤ 3) no trabalho, persiste, não limita = **nível III, leve** (print s42)"
     },
     {
      "titulo": "Fase",
@@ -1365,15 +1323,15 @@
     }
    ],
    "resposta": "**Leitura:** fase pela irritabilidade; ajuste pelas horas (proposta).",
-   "ancora": "nível = quando dói, quanto dura e se limita.",
-   "desafio": "e se a dor durasse o resto do dia?",
+   "ancora": "nível = quanto e quando dói, duração, limite.",
+   "desafio": "e se a dor durasse o resto do dia e limitasse?",
    "fonte": [
     "Lucado2022",
     "Day2019",
     "Bretschneider2022",
     "limite de 4 h: proposta clínica"
    ],
-   "notas": "Exemplo resolvido da parte 5: eu faço, a turma acompanha. O problema: um eletricista com dor lateral há 3 meses; dói 4 em 10 enquanto parafusa, passa em umas 2 horas e não o impede de trabalhar; parafusa 2 horas de manhã e 2 e meia à tarde. Passo 1: dor durante o trabalho, que persiste depois mas não limita, é o nível III, leve. Passo 2: leve vai para a fase 2, o isotônico 3 de 10 de Day. Passo 3: 2 mais 2,5 dá 4,5 horas de rotação, acima das 4 horas de Bretschneider; tirar meia hora a uma hora por dia, ou alternar com outra tarefa, é proposta clínica, extrapolada de estudo de incidência. Para quem está começando: o nível sai de quando dói, quanto dura e se limita. Desafio: se a dor durasse o resto do dia e limitasse, seria nível IV, moderada, e ele começaria na fase 1."
+   "notas": "Exemplo resolvido: eu faço, a turma acompanha. O problema: um eletricista com dor lateral há 3 meses; dói 3 em 10 enquanto parafusa, passa em umas 2 horas e não o impede de trabalhar; parafusa 2 horas de manhã e 2 e meia à tarde. Passo 1: dor leve, até 3 em 10, durante o trabalho, que persiste depois mas não limita, é o nível III, leve, pelo print s42. Passo 2: leve vai para a fase 2, o isotônico 3 de 10 de Day. Passo 3: 2 mais 2,5 dá 4,5 horas de rotação, acima das 4 horas de Bretschneider; tirar meia hora a uma hora por dia, ou alternar tarefas, é proposta clínica, extrapolada de incidência. Para quem está começando: o nível sai de quanto e quando dói, quanto dura e se limita. Desafio: se a dor durasse o resto do dia e limitasse, seria nível IV, moderada, e ele começaria na fase 1."
   },
   {
    "tipo": "citacao",
@@ -1384,7 +1342,7 @@
    "titulo": "Fez a infiltração. **Voltou tudo.**",
    "tempo_s": 50,
    "origem": "caso",
-   "contexto": "Na semana 9 ela fez a infiltração com o ortopedista. Na semana 16, chega dizendo:",
+   "contexto": "Na semana 9, três semanas depois de começar o isométrico, ela fez a infiltração. Na semana 16, chega dizendo:",
    "fala": "“Fiquei ótima por um mês, parei os exercícios e peguei mais clientes. Agora voltou tudo. A infiltração não pegou?”",
    "cartao": {
     "olho": "O que você mediu",
@@ -1396,7 +1354,7 @@
      "Oito horas por dia no salão"
     ]
    },
-   "notas": "A aplicação da parte 5, e o revés: o plano encontra a vida real. Contar que, na semana 9, a Renata decidiu fazer a infiltração com o ortopedista; a decisão era dela. Na semana 11 estava com PRTEE 22 e dor 1 em 10, parou o isométrico e passou a atender oito horas por dia para recuperar as clientes. Na semana 16, PRTEE 52, dor 6 em 10 no salão, preensão sem dor de 125 newtons, e o formigamento agora aparece todo fim de dia, ainda sem déficit. Ler a fala devagar, com frustração. Fazer uma pausa. Não interpretar: a turma decide no próximo slide."
+   "notas": "A aplicação da parte 5, e o revés: o plano encontra a vida real. Contar que, na semana 9, a semana 4 do programa, a Renata decidiu fazer a infiltração com o ortopedista; a decisão era dela. Na semana 11 estava com PRTEE 22 e dor 1 em 10, parou o isométrico e passou a atender oito horas por dia para recuperar as clientes. Na semana 16, PRTEE 52, dor 6 em 10 no salão, preensão sem dor de 125 newtons, e o formigamento agora aparece todo fim de dia, ainda sem déficit. Ler a fala devagar, com frustração. Fazer uma pausa. Não interpretar: a turma decide no próximo slide."
   },
   {
    "tipo": "enquete",
@@ -1408,17 +1366,17 @@
    "interacao": {
     "tipo": "enquete",
     "duracao_s": 45,
-    "plano_b": "Sem enquete na conta: letra no chat em cascata, todos enviam no 3."
+    "plano_b": "Sem enquete na conta: letra no chat em cascata, todos enviam no 3. Gabarito: A."
    },
    "pergunta": "Semana 16, dor de volta depois da infiltração. Qual conduta é a mais defensável?",
    "opcoes": {
-    "A": "Segunda infiltração, já que a primeira funcionou por um mês.",
-    "B": "Voltar à fase 1, cortar horas de secador e reexaminar o pescoço.",
+    "A": "Voltar à fase 1, cortar horas de secador e reexaminar o pescoço.",
+    "B": "Segunda infiltração, já que a primeira funcionou por um mês.",
     "C": "Ressonância e eletroneuromiografia: dor de volta com formigamento.",
     "D": "Retomar a carga em que parou e só reduzir as horas de salão."
    },
-   "gabarito": "B",
-   "notas": "A decisão do revés, que usa as cinco partes. Interação: enquete de 45 segundos, sem comentar as opções; pedir um voluntário da opção menos votada. Âncora: a irritabilidade de hoje, não a fase em que ela estava. A resposta é a B. O revés é compatível com a recidiva de 54% de Coombes, somada a parar o exercício e às oito horas no salão; não dá para separar. A A repete o que piorou o ano, e nenhum estudo testou uma segunda infiltração. A C pede exames que não mudam a conduta sem déficit; reexaminar cervical e nervo radial e encaminhar se houver déficit progressivo é proposta clínica. A D retoma a carga de antes. O formigamento, na coorte de Waugh, somou uns 15 pontos de dor em 8 semanas: muda a velocidade, não a conduta. Dizer a ela, sem culpa: em 1 ano, mesmo com a injeção, 83% ficam bem.",
+   "gabarito": "A",
+   "notas": "A decisão do revés, que usa as cinco partes. Interação: enquete de 45 segundos, sem comentar as opções; pedir um voluntário da opção menos votada. Âncora: a irritabilidade de hoje, não a fase em que ela estava. A resposta é a A. O revés é compatível com a recidiva de 54% de Coombes, somada a parar o exercício e às oito horas no salão; não dá para separar. A B repete o que piorou o ano, e nenhum estudo testou uma segunda infiltração. A C pede exames que não mudam a conduta sem déficit; reexaminar cervical e nervo radial e encaminhar se houver déficit progressivo é proposta clínica. A D retoma a carga de antes. O formigamento, na coorte de Waugh, somou uns 15 pontos de dor em 8 semanas: muda a velocidade, não a conduta. Dizer a ela, sem culpa: em 1 ano, mesmo com a injeção, 83% ficam bem.",
    "fonte": [
     "Coombes2013",
     "Waugh2004"

@@ -27,7 +27,7 @@
    "id": "q2",
    "objetivo": 1,
    "nivel": "aplicação",
-   "cenario": "Sérgio, 45 anos, entregador, tem tendinopatia lateral do cotovelo direito há 3 meses. Ele conta que dói mais quando carrega caixas com o braço esticado do que com o cotovelo dobrado, e pergunta se isso quer dizer que o tendão \"rasga mais\" quando o cotovelo estica.",
+   "cenario": "Valter, 45 anos, entregador, tem tendinopatia lateral do cotovelo direito há 3 meses. Ele conta que dói mais quando carrega caixas com o braço esticado do que com o cotovelo dobrado, e pergunta se isso quer dizer que o tendão \"rasga mais\" quando o cotovelo estica.",
    "pergunta": "Qual explicação os dados sustentam melhor?",
    "opcoes": {
     "A": "Esticado, o tendão encosta mais no osso; é vulnerabilidade, não prova de lesão.",
@@ -107,7 +107,7 @@
     "D": "Razão de 70%; irritabilidade leve (I–III), porque dói só no trabalho."
    },
    "gabarito": "A",
-   "comentario": "Razão: lado afetado dividido pelo não afetado, 90 ÷ 300 = 0,30, ou 30% (calc.; acompanhar pela razão é proposta clínica, sem DMCI nem valor de referência no lote). Irritabilidade pela classificação que a aula de capacitação atribui à diretriz (print s42, atribuição provável, descritiva e não validada): nível IV é dor leve a moderada durante a atividade, que persiste mais de 6 horas e limita; é o quadro do Rui (5 de 10 ao pintar, cerca de 8 horas depois, já recusa obra). Grave (VI e VII) pede dor forte em atividade leve, dor em repouso ou que atrapalha o sono, que ele não tem. Leve inclui o nível II, dor leve depois do trabalho que dura de 7 a 48 horas, sem limitar a atividade.",
+   "comentario": "Razão: lado afetado dividido pelo não afetado, 90 ÷ 300 = 0,30, ou 30% (calc.; acompanhar pela razão é proposta clínica, sem DMCI nem valor de referência no lote). Irritabilidade pela classificação que a aula de capacitação atribui à diretriz (print s42, atribuição provável, descritiva e não validada): nível IV é dor leve a moderada durante a atividade, que persiste mais de 6 horas e limita; é o quadro do Rui (5 de 10 ao pintar, cerca de 8 horas depois, já recusa obra). Grave (VI e VII) pede dor forte em atividade leve, dor em repouso ou que atrapalha o sono, que ele não tem. Leve (I a III) é dor leve: depois do trabalho, por menos de 6 horas (I) ou de 7 a 48 horas (II), ou durante o trabalho, persistindo depois sem limitar (III); a limitação aparece no IV, e o Rui já deixa de pegar obra.",
    "distratores": {
     "B": "Inverter a razão (não afetado ÷ afetado) e classificar só pela ausência de dor em repouso, ignorando a duração e a limitação.",
     "C": "Confundir dor que persiste horas depois da atividade com dor em repouso; grave pede dor forte em atividade leve ou dor constante em repouso.",

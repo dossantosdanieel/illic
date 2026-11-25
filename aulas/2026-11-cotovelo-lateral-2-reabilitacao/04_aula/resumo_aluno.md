@@ -19,11 +19,11 @@
 
 ## Pontos-chave
 
-1. O comparador é o tempo: com placebo ou nada, 89% estão muito melhor em 1 ano (IC 80% a 97%; Ikonen 2022). Contra nada, terapia manual e exercício tiram 0,53 ponto de dor em 10 (0,14 a 0,92), sem durar (Wallis 2024); contra o corticoide, o exercício vence, menos na dor do curto prazo (certeza baixa; Karanasios 2021). Grau na diretriz é força da recomendação, não tamanho do efeito.
-2. Nenhum ensaio do lote compara isométrico, isotônico, excêntrico e HSR. Isométrico (a conferir): 20% a 35% da CVM, 4 × 30 s nas semanas ímpares e 3 × 45 s nas pares, todo dia; sucesso de 29% x 26% contra esperar (Vuvan 2020). A regra de dor de 24 h para subir é opinião (Day 2019).
+1. O comparador é o tempo: com placebo ou nada, 89% estão muito melhor em 1 ano (IC 80% a 97%; Ikonen 2022). Contra nada, terapia manual e exercício tiram 0,53 ponto de dor em 10 (0,14 a 0,92), sem durar (Wallis 2024); contra o corticoide, o exercício vence, menos na dor de curto prazo (certeza baixa; Karanasios 2021). Grau na diretriz é força da recomendação, não tamanho do efeito.
+2. Nenhum ensaio do lote compara os tipos de exercício. Isométrico (a conferir): 20% a 35% da CVM, 4 × 30 s nas semanas ímpares e 3 × 45 s nas pares, todo dia; sucesso de 29% x 26% contra esperar (Vuvan 2020). A regra de dor de 24 h para subir é opinião (Day 2019).
 3. Corticoide: 92% x 47% de sucesso em 6 semanas e 69% x 91% em 1 ano (Smidt 2002): 1 a menos bem a cada 4 ou 5 injeções (calc.). Recidiva em 1 ano de 54% x 12%, e a fisioterapia junto não mostrou proteger (Coombes 2013); na população, 8,5% em 2 anos (Sanders 2015). PRP = injeção placebo em 3 meses (0,16 em 10, certeza moderada; Karjalainen 2021).
-4. MWM: 0,43 na dor com todos os prazos somados (0,15 a 0,71; métrica a conferir); nos gráficos por prazo, o efeito fica no curto prazo e de 3 a 12 meses o IC cruza o zero (Lucado 2019). Regra de predição: cada RV+ (2,1 a 2,6) tem IC que inclui 1; com o critério de 112 N negativo, cerca de 70% ainda melhoram (calc.; Vicenzino 2009).
-5. Agulhamento seco: dor −0,95 em 10 só na 1ª semana; incapacidade e preensão melhoraram também depois (Ma 2024). Órtese: igual à fisioterapia no curto prazo, atrás no longo (1,17; −0,00 a 2,34), estudos discordantes (Shahabi 2020). Ondas de choque sem benefício clínico (Karanasios 2021, ondas de choque). Fita rígida, laser, TENS e gelo: sem estudo no lote.
+4. MWM: 0,43 na dor com todos os prazos somados (0,15 a 0,71; métrica a conferir): por prazo, o efeito fica no curto prazo; de 3 a 12 meses o IC cruza o zero (Lucado 2019). Regra de predição: cada RV+ (2,1 a 2,6) tem IC que inclui 1; com o critério de 112 N negativo, cerca de 70% ainda melhoram (calc.; Vicenzino 2009).
+5. Agulhamento seco: dor −0,95 em 10 só na 1ª semana; incapacidade e preensão melhoraram também depois (Ma 2024). Órtese: igual à fisioterapia no curto prazo, atrás no longo (1,17; −0,00 a 2,34), estudos discordantes (Shahabi 2020). Ondas de choque sem benefício clínico (Karanasios 2021, ondas de choque). Fita rígida, laser, TENS, gelo: sem estudo no lote. Escapular e tecidos moles (grau C; Lucado 2022): fora da aula, com ensaios só da capacitação, fora do lote.
 6. No trabalho, rotação do antebraço por mais de 4 h/dia (OR 1,85; 1,10 a 3,10) e esforço com força (OR 1,75; 1,11 a 2,78) se associaram à incidência; a repetição isolada ficou inconclusiva (OR 0,71; 0,42 a 1,20) (Bretschneider 2022).
 
 ## Algoritmo de decisão
@@ -31,13 +31,13 @@
 1. Irritabilidade grave (dor em repouso, VI–VII)? Aliviar e descarregar; piorando, encaminhar.
 2. Moderada? Fase 1: isométrico de extensores do punho, cotovelo a 90°, 20% da CVM em kg, 4 × 30 s, todo dia.
 3. Sem dor tardia de 24 h ou dor que não subiu mais de 1 ponto? Suba 5% da CVM a cada 2 semanas; senão, mantenha ou recue.
-4. Leve? Fase 2: isotônico 3 × 10 com 0,5 a 2,3 kg. Fez 2,3 kg × 20 sem piora? Fase 3: alavanca longa e a tarefa do trabalho.
+4. Leve? Fase 2: isotônico 3 × 10 com 0,5 a 2,3 kg. Fez 2,3 kg × 20 sem piora? Fase 3: alavanca longa e tarefa do trabalho.
 5. Recaída? Recue uma fase, ajuste as horas de rotação e reexamine o pescoço se houver formigamento; segunda injeção não foi testada.
 
 ## Para praticar nesta semana
 
-- No próximo paciente com dor lateral, meça a CVM e escreva na ficha a carga em kg, o volume, a frequência e a regra de dor.
-- Na próxima pergunta sobre infiltração, diga o número de 6 semanas, o de 1 ano e a recidiva.
+- No próximo paciente, meça a CVM e escreva na ficha carga em kg, volume, frequência e regra de dor.
+- Sobre a infiltração, diga o número de 6 semanas, o de 1 ano e a recidiva.
 
 ## O que é proposta clínica (sem ensaio que teste)
 

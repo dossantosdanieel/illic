@@ -6,8 +6,9 @@ reaproveitados de lá (três rodadas de revisão em `04_aula_caso/verificacao.md
 
 **Público:** fisioterapeutas da equipe ILLIC, de recém-formados a especialistas em membro superior; aula única em camadas
 (âncora "Para começar" e "Desafio" em cada parte).
-**Duração-alvo:** 48 min. Soma de `tempo_s`: **48:30**; estimativa do validador (fala das notas sem as rubricas +
-interações): **45:15**; contando todas as palavras das notas a 130/min + interações: **46:58**. O `tempo_s` de cada slide
+**Duração-alvo:** 48 min. Soma de `tempo_s`: **48:50**; estimativa do validador (fala das notas sem as rubricas +
+interações): **45:38**; contando todas as palavras das notas a 130/min + interações: **47:21** (conferência
+adversarial de 25/11/2026: +20 s pelas correções dos slides 9, 16, 27 e 28). O `tempo_s` de cada slide
 é essa contagem completa mais 10 s nos slides em que se leem respostas ou se ouve um voluntário (2, 8, 16, 21, 23, 27,
 29, 37, 39, 40), arredondada a 5 s (revisão independente de 25/11/2026). Teto: 50.
 **Pergunta clínica:** em adultos com tendinopatia lateral do cotovelo, que exercício (tipo e dose), que terapia manual e
@@ -30,8 +31,8 @@ eles cobriam, atualiza o que continua valendo, corrige com respeito o que mudou 
 5. **Como montar e ajustar o plano?** — fases pela irritabilidade (inclusive a grave), critério para passar à fase 3,
    alavanca, horas de rotação e esforço com força (com exemplo resolvido); recaída depois da infiltração.
 
-Os títulos das partes são perguntas (revisão independente), para o mapa "Cinco perguntas" ser literal. Partes: 8:10,
-8:35, 8:50, 9:05 e 8:25 (todas entre 8 e 12 min). Para isso a parte 5 ganhou um exemplo resolvido (slide 35: classificar a
+Os títulos das partes são perguntas (revisão independente), para o mapa "Cinco perguntas" ser literal. Partes: 8:15,
+8:40, 8:50, 9:15 e 8:25 (todas entre 8 e 12 min). Para isso a parte 5 ganhou um exemplo resolvido (slide 35: classificar a
 irritabilidade e somar as horas de rotação) e o slide "O que eu ensinei e o que a evidência diz hoje" saiu do deck: cada
 correção da capacitação é dita na parte em que o tema aparece (7: 12,15 kg; 14: 20–40% grau F; 19: "nenhuma se
 destaca"; 26: MWM no longo prazo) e a lista completa fica no apêndice de `verificacao.md`. O deck fica em 40 slides
@@ -45,8 +46,12 @@ avisa a partir de 6 partes). A recuperação da aula 1 entrou como checagem na a
 
 **Caso de aplicação:** a Renata da aula 1 (46 anos, cabeleireira, destra, 6 h/dia de secador e escova; PRTEE 58 → 49 na
 semana 6; preensão sem dor 120 → 140 N, esquerda 320 N; irritabilidade moderada; pescoço duro e formigamento sem déficit).
-Entra só no fim de cada parte: parte 1, "se passa sozinho, para que exercício?"; parte 2, a prescrição da semana 1 com
-CVM de 8 kg; parte 3, a infiltração da cliente; parte 4, a MWM que abriu a janela (140 → 185 N); parte 5, o revés da
+**Linha do tempo do caso** (semanas contadas desde a primeira consulta): nas primeiras seis semanas, só orientação de
+carga no salão e acompanhamento, sem programa de exercício; na semana 6 ela começa o programa, e esta é a semana 1 do
+isométrico (slides 9, 16 e 30 são a mesma consulta da semana 6); semana 9 (semana 4 do programa), infiltração; semana 11,
+para o isométrico; semana 16, revés; semana 26, desfecho.
+Entra só no fim de cada parte: parte 1, "se passa sozinho, para que exercício?"; parte 2, a prescrição da semana 1 do
+programa com CVM de 8 kg; parte 3, a infiltração da cliente; parte 4, a MWM que abriu a janela (140 → 185 N); parte 5, o revés da
 semana 16 depois da infiltração. Desfecho falado na síntese da parte 5 (semana 26, PRTEE 31, abaixo da meta de cerca de
 36, calc. com Poltawski: 37% a menos de 58; seis horas de salão com a escova alternada entre as mãos e menos de 4 h de
 rotação do lado direito, proposta) e ponte para a aula 3 no bilhete de saída.
@@ -85,7 +90,7 @@ quem responde (27); grau B não é tamanho de efeito (7, cartão escuro, e 28); 
 | 1 | Karanasios2021 | RS/MA, 30 ECR, 2123 | x corticoide: vence, exceto dor no curto prazo (baixa); x esperar: muito baixa | tabela nativa (7) | só resumo |
 | 1, 3 | Lowdon2024 | MA em rede, 13 ECR | nada > controle até 6 sem; exercício −4,32 (−7,58 a −1,07) na dor do PRTEE (0–50?) no médio prazo; corticoide, agulhamento e sangue com "efeitos possíveis"; certeza da ficha | — | só resumo |
 | 1 | Bunata2007 | cadáver, 85 cotovelos | contato ECRB-capítulo cresce ao estender (0 → 3,4 mm em neutro) | — | resumo + print s13 |
-| 1, 5 | Lucado2022 | diretriz JOSPT | lógica de carga (notas s122); graus B, C, E, F (print s123); fases e alta (s124); irritabilidade (s42) | — | prints, atribuição provável |
+| 1, 5 | Lucado2022 | diretriz JOSPT | lógica de carga (notas s122); graus B, C, E, F (print s123); fases e alta (s124); irritabilidade (s42: III = dor leve, ≤ 3/10, durante o trabalho, que persiste e não limita; IV = > 6 h e limita); grau C para escápula e tecidos moles (s123) | — | prints, atribuição provável |
 | 2 | Vuvan2020 | ECR, n 40 | 29% x 26%; DMP PRTEE −0,92; 3 de 21 pioraram; dose 20 → 35% CVM, 4 × 30 s / 3 × 45 s | barras nativas (13) | resumo + prints s50, s56; dose redigitada s51–s53 |
 | 2, 5 | Day2019 | programa descrito | 3 × 10, 1–5 lb; regra 24 h **ou** +1 ponto; baixar a carga ao alongar a alavanca; órtese 2 dedos abaixo | — | resumo + prints s63–s66 |
 | 2 | Couppe2022 | ECR, n 60 | HSR 12 sem com faixa; corticoide somado: QuickDASH 15 pior em 52 sem | — | só resumo |
@@ -93,11 +98,11 @@ quem responde (27); grau B não é tamanho de efeito (7, cartão escuro, e 28); 
 | 3 | Coombes2010 | RS | ruptura de tendão 1 em 991 | — | só resumo |
 | 3 | Karjalainen2021 | Cochrane | PRP x injeção placebo: 0,16/10 (0,60 melhor a 0,29 pior), moderada; 67% x 65% | — | só resumo |
 | 4 | Lucado2019 | RS/MA | MWM 0,43 (0,15–0,71) dor e 0,31 preensão, todos os prazos somados; IC cruzam zero de 3 a 12 meses (prints) | — | resumo + prints s81–s83 |
-| 4 | Vicenzino2009 | regra de predição, n 64 | RV+ 2,6 / 2,3 / 2,1 com IC que inclui 1; pré-teste 79%; S 0,53 e E 0,77 (> 112 N) | — | resumo + print s38 |
+| 4 | Vicenzino2009 | regra de predição, n 64 | RV+ 2,6 / 2,3 / 2,1 com IC que inclui 1; pré-teste 79% (melhora em 3 sem com MWM e exercício; não é o 79% da aula 1, teto do diagnóstico em Vuvan); S 0,53 e E 0,77 (> 112 N) | — | resumo + print s38 |
 | 4 | Ma2024 | MA, 17 ECR | agulhamento: dor −0,95 (−1,88 a −0,02), só < 1 sem; incapacidade (−1,32) e preensão (0,45) também ≥ 1 sem | tabela nativa (28) | só resumo |
 | 4 | Shahabi2020 | MA, 17 estudos | órtese x fisioterapia −0,02 (−0,85 a 0,80) no curto prazo; 1,17 (−0,00 a 2,34) a favor da fisioterapia no longo; I² > 90% | tabela nativa (28) | resumo + print s102 |
 | 4 | Karanasios2021b | MA, 27 ECR | ondas de choque sem benefício clínico x simulação | tabela nativa (28) | só resumo |
-| 5 | Bretschneider2022 | MA de coortes | rotação > 4 h/dia OR 1,85 (1,10–3,10); SI OR 1,75 (1,11–2,78); repetição 0,71 (0,42–1,20) | **Tab. 3 (aprovada)**, slide 34 | **texto completo** (p.6, p.7) |
+| 5 | Bretschneider2022 | MA de coortes | rotação > 4 h/dia OR 1,85 (1,10–3,10); SI OR 1,75 (1,11–2,78); repetição 0,71 (0,42–1,20) | **Tab. 3 (aprovada)**, slide 34, inteira e sem marcas por cima (CC BY-NC-ND); três cartões citam as linhas | **texto completo** (p.6, p.7) |
 | 5 | Waugh2004 | coorte, n 83 | sintomas de nervo: +15,08 de dor em 8 sem | — | resumo + print s40 |
 | 5 | Poltawski2011 | DMCI | intervalo de 3 semanas (justifica a reavaliação); meta ≈ 36 (calc.: 37% a menos de 58) | — | só resumo |
 
@@ -115,51 +120,53 @@ Números da aula de capacitação que entram só como "fora do lote, não confer
 | 3:20 | 1 | explicar | 5 Com placebo ou nada, quase 9 em 10 (numeros) | mão na câmera (inferir: 90% sem comparador prova?) | |
 | 4:45 | 1 | explicar | 6 Exercício é carga dosada (etapas) | — | |
 | 5:55 | 1 | explicar | 7 Contra o quê (tabela + cartão "grau = força da recomendação") | — | âncora no cartão escuro |
-| 7:30 | 1 | checar | 8 O que prometer (enquete 1) | enquete 40 s | |
+| 7:30 | 1 | checar | 8 O que prometer (enquete 1, gabarito B; opções de comprimento parecido) | enquete 40 s | |
 | 9:15 | 1 | aplicacao | 9 Renata: para que exercício? (citacao) | mão na câmera | |
-| 10:20 | 1 | sintese | 10 Síntese da parte 1 | — | |
-| 11:00 | 2 | — | 11 Onde estamos (mapa, atual 2) | — | |
-| 11:30 | 2 | explicar | 12 Quatro jeitos de carregar (tabela) | — | âncora e desafio nas notas |
-| 12:45 | 2 | explicar | 13 Isométrico sozinho (barras, âncora da DMP no cartão) | mão na câmera (DMP −0,92 garante "muito melhor"?) | âncora no cartão |
-| 14:20 | 2 | explicar | 14 A dose com a origem (tabela) | — | |
-| 15:40 | 2 | exemplo | 15 Da % da CVM ao quilo (exemplo resolvido, semanas 1 a 8) | — | âncora e desafio no slide |
-| 17:00 | 2 | aplicacao | 16 Renata: semana 1 com 8 kg (pergunta) | chat em cascata 50 s | âncora e desafio no slide |
-| 18:55 | 2 | sintese | 17 Síntese da parte 2 | — | âncora nas notas |
-| 19:35 | 3 | — | 18 Onde estamos (mapa, atual 3) | — | |
-| 20:05 | 3 | explicar | 19 Ganha em 6 sem, perde em 1 ano (barras) | — | |
-| 21:15 | 3 | explicar | 20 Recidiva passa da metade (numeros) | mão na câmera | |
-| 22:50 | 3 | checar | 21 Quantas injeções para 1 a menos (exemplo parcialmente resolvido) | chat em cascata 45 s | âncora e desafio no slide |
-| 25:00 | 3 | explicar | 22 PRP empata com placebo (numeros) | — | |
-| 25:55 | 3 | aplicacao | 23 Renata e a cliente da infiltração (pergunta) | chat em cascata 45 s | âncora e desafio no slide |
-| 27:35 | 3 | sintese | 24 Síntese da parte 3 | — | âncora nas notas |
-| 28:25 | 4 | — | 25 Onde estamos (mapa, atual 4) | — | |
-| 28:55 | 4 | explicar | 26 MWM: o efeito fica no curto prazo (numeros) | — | âncora e desafio nas notas |
-| 30:25 | 4 | checar | 27 Falhou num critério da regra (exemplo parcialmente resolvido, com os três critérios) | chat em cascata 45 s | âncora e desafio no slide |
-| 32:35 | 4 | explicar | 28 Complementares (tabela) | mão na câmera | |
-| 34:05 | 4 | checar | 29 A órtese que alivia (enquete 2) | enquete 40 s | |
-| 35:50 | 4 | aplicacao | 30 Renata: a MWM abriu a janela (citacao) | mão na câmera | |
-| 36:55 | 4 | sintese | 31 Síntese da parte 4 | — | |
-| 37:30 | 5 | — | 32 Onde estamos (mapa, atual 5) | — | |
-| 38:00 | 5 | explicar | 33 Fases pela irritabilidade: do grave à alta (etapas, âncora do nível IV) | mão na câmera | |
-| 39:40 | 5 | explicar | 34 Carga no trabalho (figura Bretschneider Tab. 3) | — | |
-| 41:00 | 5 | exemplo | 35 Da queixa à fase e às horas de rotação (exemplo resolvido) | — | âncora e desafio no slide |
-| 42:10 | 5 | aplicacao | 36 Revés: voltou tudo (citacao, fundo escuro) | — | |
-| 43:00 | 5 | aplicacao | 37 E agora? (enquete 3) | enquete 45 s | âncora nas notas |
-| 45:05 | 5 | sintese | 38 Síntese da parte 5 (+ desfecho falado) | — | |
-| 45:55 | — | recuperar | 39 Um número de cada parte, na ordem do mapa (pergunta) | chat em cascata 45 s | |
-| 47:10 | — | saida | 40 Bilhete de saída (pergunta) | chat 40 s | |
+| 10:25 | 1 | sintese | 10 Síntese da parte 1 | — | |
+| 11:05 | 2 | — | 11 Onde estamos (mapa, atual 2) | — | |
+| 11:35 | 2 | explicar | 12 Quatro jeitos de carregar (tabela) | — | âncora e desafio nas notas |
+| 12:50 | 2 | explicar | 13 Isométrico sozinho (barras, âncora da DMP no cartão) | mão na câmera (DMP −0,92 garante "muito melhor"?) | âncora no cartão |
+| 14:25 | 2 | explicar | 14 A dose com a origem (tabela) | — | |
+| 15:45 | 2 | exemplo | 15 Da % da CVM ao quilo (exemplo resolvido, semanas 1 a 8) | — | âncora e desafio no slide |
+| 17:05 | 2 | aplicacao | 16 Renata: semana 1 do programa com 8 kg (pergunta) | chat em cascata 50 s | âncora e desafio no slide |
+| 19:05 | 2 | sintese | 17 Síntese da parte 2 | — | âncora nas notas |
+| 19:45 | 3 | — | 18 Onde estamos (mapa, atual 3) | — | |
+| 20:15 | 3 | explicar | 19 Ganha em 6 sem, perde em 1 ano (barras) | — | |
+| 21:25 | 3 | explicar | 20 Recidiva passa da metade (numeros) | mão na câmera | |
+| 23:00 | 3 | checar | 21 Quantas injeções para 1 a menos (exemplo parcialmente resolvido) | chat em cascata 45 s | âncora e desafio no slide |
+| 25:10 | 3 | explicar | 22 PRP empata com placebo (numeros) | — | |
+| 26:05 | 3 | aplicacao | 23 Renata e a cliente da infiltração (pergunta) | chat em cascata 45 s | âncora e desafio no slide |
+| 27:45 | 3 | sintese | 24 Síntese da parte 3 | — | âncora nas notas |
+| 28:35 | 4 | — | 25 Onde estamos (mapa, atual 4) | — | |
+| 29:05 | 4 | explicar | 26 MWM: o efeito fica no curto prazo (numeros) | — | âncora e desafio nas notas |
+| 30:35 | 4 | checar | 27 Falhou num critério da regra (exemplo parcialmente resolvido, com os três critérios) | chat em cascata 45 s | âncora e desafio no slide |
+| 32:50 | 4 | explicar | 28 Complementares (tabela) | mão na câmera | |
+| 34:25 | 4 | checar | 29 A órtese que alivia (enquete 2, gabarito D) | enquete 40 s | |
+| 36:10 | 4 | aplicacao | 30 Renata: a MWM abriu a janela (citacao) | mão na câmera | |
+| 37:15 | 4 | sintese | 31 Síntese da parte 4 | — | |
+| 37:50 | 5 | — | 32 Onde estamos (mapa, atual 5) | — | |
+| 38:20 | 5 | explicar | 33 Fases pela irritabilidade: do grave à alta (etapas, âncora do nível IV) | mão na câmera | |
+| 40:00 | 5 | explicar | 34 Carga no trabalho (figura Bretschneider Tab. 3, sem marcas; cartões citam as linhas) | — | |
+| 41:20 | 5 | exemplo | 35 Da queixa à fase e às horas de rotação (exemplo resolvido) | — | âncora e desafio no slide |
+| 42:30 | 5 | aplicacao | 36 Revés: voltou tudo (citacao, fundo escuro) | — | |
+| 43:20 | 5 | aplicacao | 37 E agora? (enquete 3, gabarito A) | enquete 45 s | âncora nas notas |
+| 45:25 | 5 | sintese | 38 Síntese da parte 5 (+ desfecho falado) | — | |
+| 46:15 | — | recuperar | 39 Um número de cada parte, na ordem do mapa (pergunta) | chat em cascata 45 s | |
+| 47:30 | — | saida | 40 Bilhete de saída (pergunta) | chat 40 s | |
 | — | — | — | 41 Referências (apoio) | — | |
 
 17 interações em 4 formatos (enquete, chat em cascata, mão na câmera, chat); primeira aos 0:30; maior trecho sem
 interação: cerca de 3 min. Salas: não usadas (o tempo foi para a explicação e as checagens). Dois exemplos resolvidos
 (15, 35) e dois parcialmente resolvidos (21, 27). Retorno das checagens: ler duas respostas (não quatro) e ouvir um
 voluntário por enquete; os 10 s de cada retorno já estão no `tempo_s`. Se mais da metade errar uma checagem, voltar 30 s
-(slides 8 e 21): isso come a folga de 1:30 até o teto.
+(slides 8 e 21): isso come a folga de 1:10 até o teto.
 
 ## O que fica de fora (e vai para o resumo do aluno ou para as notas)
 
 - Excêntrico isolado e a dose 3 × 15 (s57–s62): só como linha "fora do lote, não conferido" no slide 12.
-- Fortalecimento escapular (s71–s74, grau C) e mobilização de tecidos moles (s92–s96): fora; ficam na verificação.
+- Fortalecimento escapular e do ombro (s69–s74) e mobilização de tecidos moles e fricção (s92–s96): fora do deck, com o
+  motivo dito nas notas do slide 28 e escrito no resumo do aluno (ponto 5): grau C na diretriz (print s123) e ensaios só
+  da aula de capacitação (Mostafee; Day e Lucado; Yi; Akbar; Blanchette), fora do lote conferido.
 - Detalhe de laser, TENS, gelo e kinesio (s105–s120): uma linha no slide 28; o detalhe saiu das notas (tempo) e fica
   na verificação.
 - Slide "O que eu ensinei e o que a evidência diz hoje": saiu do deck; as correções são ditas nos slides 7, 14, 19 e 26

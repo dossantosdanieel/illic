@@ -2,7 +2,7 @@
 
 Entre na chamada do Google Meet 10 minutos antes, crie as enquetes em Atividades → Enquetes e use *Salvar* (não *Lançar*). Na aula, lance cada uma no slide indicado. Se a sua conta não tiver enquetes, use a votação por letra no chat em cascata (todo mundo escreve a letra e envia no 3). O gabarito é só para o professor: não comente as opções antes do voto.
 
-## Enquete 1 · slide 14 · aos 14:20
+## Enquete 1 · slide 14 · aos 14:30
 
 *No slide:* Explique ao paciente
 
@@ -17,14 +17,14 @@ Um paciente pergunta: “Se não é inflamação, por que dói tanto, e até no 
 ```text
 A) É inflamação crônica: o anti-inflamatório certo resolve.
 B) O tendão está rompido; a dor mostra o tamanho do dano.
-C) O tendão mudou e a região do cotovelo ficou mais sensível; a dor não mede o dano.
+C) O tendão mudou e a região ficou mais sensível; dor não mede dano.
 D) Sensibilização central: o corpo inteiro ficou mais sensível à dor.
 ```
 
-- **Gabarito (só professor):** C) O tendão mudou e a região do cotovelo ficou mais sensível; a dor não mede o dano.
+- **Gabarito (só professor):** C) O tendão mudou e a região ficou mais sensível; dor não mede dano.
 - **Aberta por:** 40 s. Feche e mostre o resultado. O Meet não mostra ao vivo quem votou em quê: peça um voluntário de cada opção, começando pela menos votada ("quem votou B, abre o microfone ou levanta a mão na câmera e defende em 15 segundos"), e chame pelo nome quem se apresentar. Se ninguém vier, dê voz à opção: "o que faria alguém votar B?".
 
-## Enquete 2 · slide 27 · aos 31:00
+## Enquete 2 · slide 27 · aos 31:25
 
 *No slide:* Cozen positivo, mas a dor está mais abaixo
 
@@ -38,12 +38,12 @@ Homem de 50 anos, dor lateral há 2 meses, Cozen positivo. A dor fica 4 cm abaix
 
 ```text
 A) Fechar tendinopatia lateral: o Cozen é positivo.
-B) Examinar o nervo radial (túnel radial e NIP) antes de fechar.
-C) Pedir ressonância para ver o tendão.
+B) Examinar o nervo radial antes de fechar.
+C) Pedir ressonância para ver o estado do tendão.
 D) Infiltrar o epicôndilo e reavaliar.
 ```
 
-- **Gabarito (só professor):** B) Examinar o nervo radial (túnel radial e NIP) antes de fechar.
+- **Gabarito (só professor):** B) Examinar o nervo radial antes de fechar.
 - **Aberta por:** 40 s. Feche e mostre o resultado. O Meet não mostra ao vivo quem votou em quê: peça um voluntário de cada opção, começando pela menos votada ("quem votou B, abre o microfone ou levanta a mão na câmera e defende em 15 segundos"), e chame pelo nome quem se apresentar. Se ninguém vier, dê voz à opção: "o que faria alguém votar B?".
 
 ## Roteiro de todas as interações
@@ -53,16 +53,16 @@ D) Infiltrar o epicôndilo e reavaliar.
 | 0:30 | 2 | MÃO NA CÂMERA | Polegar para cima: atendeu alguém com dor lateral no cotovelo neste mês. Para baixo: não atendeu. |
 | 5:30 | 6 | MÃO NA CÂMERA | Polegar para cima: 9 por 1000 é cerca de 1 em cada 100 por ano. Para baixo: é cerca de 1 em cada 10. |
 | 7:40 | 8 | CHAT EM CASCATA · 35 S | Uma linha no chat: a exposição e o número. Envie no 3. |
-| 14:20 | 14 | ENQUETE · 40 S | Um paciente pergunta: “Se não é inflamação, por que dói tanto, e até no antebraço?” Qual explicação a evidência sustenta melhor? |
-| 16:20 | 15 | MÃO NA CÂMERA | Polegar para cima: o padrão dela é o esperado na tendinopatia lateral. Para baixo: pede outra hipótese. |
-| 23:20 | 21 | CHAT EM CASCATA · 50 S | Completar os passos 2 e 3 da conta e enviar o resultado em %. |
-| 27:10 | 23 | CHAT EM CASCATA · 50 S | Uma linha: queda ao estender, razão afetado ÷ não afetado, irritabilidade e distribuição. |
-| 31:00 | 27 | ENQUETE · 40 S | Homem de 50 anos, dor lateral há 2 meses, Cozen positivo. A dor fica 4 cm abaixo do epicôndilo e há fraqueza para estender os dedos. O próximo passo mais defensável? |
-| 35:05 | 29 | MÃO NA CÂMERA | Polegar para cima: pediria a ressonância da Renata hoje. Para baixo: não pediria. |
-| 38:05 | 32 | MÃO NA CÂMERA | Polegar para cima: quem tem dor há 4 meses tem a mesma chance de melhorar nos próximos 3 que quem tem há 1 mês. Para baixo: menor. |
-| 42:10 | 35 | CHAT EM CASCATA · 50 S | Uma linha: melhorou o suficiente, por qual régua? E o que o formigamento muda? |
-| 44:05 | 37 | CHAT EM CASCATA · 40 S | Uma linha no chat, com um número onde houver. Envie no 3. |
-| 45:10 | 38 | CHAT · 45 S | Uma frase no chat. Quem enviar, está liberado. |
+| 14:30 | 14 | ENQUETE · 40 S | Um paciente pergunta: “Se não é inflamação, por que dói tanto, e até no antebraço?” Qual explicação a evidência sustenta melhor? |
+| 16:40 | 15 | MÃO NA CÂMERA | Polegar para cima: o padrão dela é o esperado na tendinopatia lateral. Para baixo: pede outra hipótese. |
+| 23:25 | 21 | CHAT EM CASCATA · 50 S | Completar os passos 2 e 3 da conta e enviar o resultado em %. |
+| 27:35 | 23 | CHAT EM CASCATA · 50 S | Uma linha: queda ao estender, razão afetado ÷ não afetado, irritabilidade e distribuição. |
+| 31:25 | 27 | ENQUETE · 40 S | Homem de 50 anos, dor lateral há 2 meses, Cozen positivo. A dor fica 4 cm abaixo do epicôndilo e há fraqueza para estender os dedos. O próximo passo mais defensável? |
+| 35:45 | 29 | MÃO NA CÂMERA | Polegar para cima: pediria a ressonância da Renata hoje. Para baixo: não pediria. |
+| 38:35 | 32 | MÃO NA CÂMERA | Polegar para cima: quem tem dor há 4 meses tem a mesma chance de melhorar nos próximos 3 que quem tem há 1 mês. Para baixo: menor. |
+| 42:50 | 35 | CHAT EM CASCATA · 50 S | Uma linha: melhorou o suficiente, por qual régua? E o que o formigamento muda? |
+| 45:05 | 37 | CHAT EM CASCATA · 40 S | Uma linha no chat, com um número onde houver. Envie no 3. |
+| 46:30 | 38 | CHAT · 45 S | Uma frase no chat. Quem enviar, está liberado. |
 
 ## Plano B e gravação
 
@@ -72,29 +72,29 @@ Gerado de `interacao.plano_b` e `interacao.gravacao` no deck.json: corrija lá, 
 
 - **Na gravação:** Quem assiste à gravação: pause e escreva a sua linha antes de eu ler as respostas.
 
-### Slide 14 · ENQUETE · 40 S · aos 14:20
+### Slide 14 · ENQUETE · 40 S · aos 14:30
 
 - **Na gravação:** Antes de abrir, dizer: quem assiste à gravação, pause o vídeo e escolha a sua letra antes de eu mostrar o resultado.
 - **Plano B:** Sem enquete na conta: cada um escreve a letra no chat e envia no 3; contar as letras em voz alta.
 
-### Slide 21 · CHAT EM CASCATA · 50 S · aos 23:20
+### Slide 21 · CHAT EM CASCATA · 50 S · aos 23:25
 
 - **Na gravação:** Quem assiste à gravação: pause, faça a conta no papel e só então siga para a resposta.
 
-### Slide 23 · CHAT EM CASCATA · 50 S · aos 27:10
+### Slide 23 · CHAT EM CASCATA · 50 S · aos 27:35
 
 - **Na gravação:** Quem assiste à gravação: pause e escreva a sua linha antes de eu ler as respostas.
 
-### Slide 27 · ENQUETE · 40 S · aos 31:00
+### Slide 27 · ENQUETE · 40 S · aos 31:25
 
 - **Na gravação:** Antes de abrir, dizer: quem assiste à gravação, pause o vídeo e escolha a sua letra antes de eu mostrar o resultado.
 - **Plano B:** Sem enquete na conta: cada um escreve a letra no chat e envia no 3; contar as letras em voz alta.
 
-### Slide 35 · CHAT EM CASCATA · 50 S · aos 42:10
+### Slide 35 · CHAT EM CASCATA · 50 S · aos 42:50
 
 - **Na gravação:** Quem assiste à gravação: pause e escreva a sua linha antes de eu ler as respostas.
 
-### Slide 37 · CHAT EM CASCATA · 40 S · aos 44:05
+### Slide 37 · CHAT EM CASCATA · 40 S · aos 45:05
 
 - **Na gravação:** Quem assiste à gravação: pause e escreva as cinco ideias antes de eu completar.
 
