@@ -9,13 +9,21 @@ as notas citam as referências pela numeração dela.
 
 Pedido do Daniel: "monta em cima dessa aula, usa como base e incrementa". Decisões dele:
 trilha de 3 aulas; esta trilha é o piloto das skills (no lugar do LCA). Preferências gerais em
-`.claude/skills/boost-education/references/preferencias.md` (Google Meet, 30–35 min, aula única em camadas,
-nível técnico alto, aulas gravadas para a equipe, marca Boost).
+`.claude/skills/boost-education/references/preferencias.md` (Google Meet, aula expositiva com checagens de 45–50 min,
+aula única em camadas, nível técnico alto, aulas gravadas para a equipe, marca Boost).
+
+**Mudança de formato (25/11/2026).** A trilha foi montada primeiro no formato guiado por caso (deck "Caso Marina").
+Depois de ver o resultado, o Daniel pediu aulas expositivas que deem base à equipe: "nesse formato a equipe tem
+dificuldade de seguir uma linha de raciocínio". As aulas atuais (`04_aula/`) seguem a linha do tema, com mapa da aula,
+"onde estamos" em cada parte, checagens rápidas a cada 5–7 min e o caso clínico só como aplicação no fim de cada parte.
+As versões de caso, já revisadas, ficam em `04_aula_caso/` de cada pasta, como opção para uma aula de discussão de casos.
 
 ## O que "incrementar" significa aqui
 
-1. **De exposição para decisão.** A aula base é expositiva (texto e print de artigo). Cada aula nova gira em torno de
-   um caso clínico com decisões da turma, revés e conferência com a evidência, no padrão do deck "Caso Marina".
+1. **Exposição com linha de raciocínio e checagem.** A aula base é expositiva em texto e print de artigo. A nova
+   continua expositiva, mas organizada pela lógica do tema (o que é → por que acontece → como diagnosticar → o que esperar
+   → como tratar), com uma ideia por slide, exemplos resolvidos, perguntas de checagem que pedem recuperar e não só
+   reconhecer, síntese por parte e o caso clínico como aplicação no fim de cada parte.
 2. **Evidência atualizada.** Manter o que a aula base tem de bom (a diretriz de 2022 como espinha dorsal) e acrescentar o
    que saiu depois ou ficou de fora: ensaios, revisões e meta-análises de 2021 a 2026, e estudos clássicos que mudam
    conduta e não estão na base (ex.: ensaios de corticoide x fisioterapia x espera; curso natural).
@@ -26,10 +34,10 @@ nível técnico alto, aulas gravadas para a equipe, marca Boost).
 4. **Figuras de verdade.** Recortes em alta resolução dos artigos (no lugar dos prints de baixa resolução da aula base),
    com destaques e "o que olhar". Quando o PDF for pago e não estiver disponível, a imagem da aula base em `midia/`
    serve de reserva, avisando a resolução.
-5. **Continuidade.** O mesmo paciente atravessa as aulas 1 e 2; a aula 2 abre recuperando a aula 1; a aula 3 abre
+5. **Continuidade.** A mesma paciente (Renata, 46 anos, cabeleireira) atravessa as aulas 1 e 2 como aplicação; a aula 2 abre recuperando a aula 1; a aula 3 abre
    recuperando as duas.
 
-## As três aulas (30–35 min cada)
+## As três aulas (45–50 min cada, expositivas com checagens)
 
 ### Aula 1. Dor lateral no cotovelo: raciocínio diagnóstico e prognóstico
 Pasta: `aulas/2026-11-cotovelo-lateral-1-diagnostico/` (dona de 01_busca, 02_artigos e 03_figuras do cotovelo lateral)
@@ -69,4 +77,5 @@ Objetivos:
 - diagnosticar De Quervain sem o falso positivo clássico (Finkelstein, Eichhoff, WHAT test) e conduzir órtese, injeção e
   carga, inclusive no puerpério;
 - reconhecer onde a evidência é escassa (ex.: tratamento da tendinopatia medial) e raciocinar por extrapolação explícita.
-Formato sugerido: três casos curtos que se cruzam, com uma decisão central por caso.
+Estrutura: três partes com a mesma sequência (o que é → diagnóstico → tratamento → o que a evidência não diz), com a
+família da Renata (Sérgio, o marido; Júlia, a filha no puerpério) como aplicação no fim de cada parte.
