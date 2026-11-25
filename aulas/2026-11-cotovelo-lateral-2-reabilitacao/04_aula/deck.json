@@ -805,7 +805,7 @@
         "ref": "Lucado2019",
         "licenca": "todos os direitos reservados"
       },
-      "legenda": "Mudança na dor (EVA) depois da MWM, 3 a 6 meses, por estudo. Métrica a conferir: pode ser dentro do grupo, não contra controle.",
+      "legenda": "Mudança na dor (EVA) depois da MWM, 3 a 6 meses, por estudo. Métrica a conferir: talvez dentro do grupo, não contra controle.",
       "o_que_olhar": [
         "26 semanas: os 2 intervalos cruzam o zero.",
         "Eixo “change following MWM”: talvez não seja contra controle."
@@ -833,18 +833,18 @@
       "lateral": [
         {
           "estilo": "claro",
-          "texto": "**< 3 meses (painel A, s81):** 4 de 5 intervalos acima de zero; um estudo entra 2 vezes."
+          "texto": "**< 3 meses (painel A):** 4 de 5 intervalos acima de zero."
         },
         {
           "estilo": "escuro",
-          "texto": "**Na Renata:** semana 6, preensão sem dor de 140 para 185 N (+32%) com a MWM: janela para carregar."
+          "texto": "**Na Renata:** preensão sem dor de 140 para 185 N (+32%) com a MWM: janela para carregar. Pescoço duro e formigamento sem déficit: cervical e torácica têm grau C."
         }
       ],
       "fonte": [
         "Bisset2006b",
         "Lucado2022"
       ],
-      "notas": "O que a MWM faz e o que não faz. Meta-análise de Lucado, 2019, print da aula de capacitação; trago só o painel de 3 a 6 meses, porque o de curto prazo fica ilegível projetado. Retângulo 1: em 26 semanas, os dois estudos cruzam o zero. No curto prazo, quatro de cinco intervalos acima de zero, leitura no olho, e o mesmo estudo entra duas vezes; o efeito combinado do resumo é 0,43. Retângulo 2, desafio: o eixo diz “mudança depois da MWM”; se for dentro do grupo, o 0,43 não é efeito contra controle. Em Bisset, fisioterapia com MWM e exercício ganhou da espera em 6 semanas e empatou em 52. Revelação: a aula de capacitação dizia curto e longo prazo; o longo não se sustenta. Na Renata, a MWM levou a preensão sem dor de 140 para 185 newtons, 32%: janela para carregar, não o plano do ano. Cervical e torácica: grau C na diretriz, e ela tem rigidez cervical e formigamento. Interação: mão na câmera aos 60 segundos, um de cada lado.",
+      "notas": "O que a MWM faz e o que não faz. Meta-análise de Lucado, 2019, print da aula de capacitação; trago só o painel de 3 a 6 meses, porque o de curto prazo fica ilegível projetado. Retângulo 1: em 26 semanas, os dois estudos cruzam o zero. No curto prazo, quatro de cinco intervalos acima de zero, leitura no olho, e o mesmo estudo entra duas vezes; o efeito combinado do resumo é 0,43. Retângulo 2, desafio: o eixo diz “mudança depois da MWM”; se for dentro do grupo, o 0,43 não é efeito contra controle. Em Bisset, fisioterapia com MWM e exercício ganhou da espera em 6 semanas e empatou em 52. Revelação: a aula de capacitação dizia curto e longo prazo; o longo não se sustenta. Na Renata, a MWM levou a preensão sem dor de 140 para 185 newtons, 32%: janela para carregar, não o plano do ano. Cervical e torácica, no cartão escuro: grau C na diretriz, e ela tem pescoço duro e formigamento sem déficit; a rotação cervical reproduz a rigidez, não o formigamento. Interação: mão na câmera aos 60 segundos, um de cada lado.",
       "layout": "meia"
     },
     {
@@ -919,11 +919,11 @@
       ],
       "cartoes_baixo": [
         {
-          "texto": "**Muda de fase:** pela irritabilidade, reavaliada a cada 3 semanas (proposta). **Sobe a carga:** sem dor tardia em 24 h ou dor ≤ +1 ponto (opinião)."
+          "texto": "**Muda de fase:** pela irritabilidade (I–III leve; IV–V moderada), reavaliada a cada 3 semanas (proposta). **Sobe a carga:** sem dor tardia de 24 h ou dor ≤ +1 (opinião)."
         },
         {
           "estilo": "escuro",
-          "texto": "**No salão:** medir quanto do dia é rotação do antebraço; acima de 4 h/dia, OR 1,85 em quem não tinha dor (extrapolação dupla)."
+          "texto": "**No salão:** medir a rotação do antebraço no dia; acima de 4 h/dia, OR 1,85 em quem não tinha dor (extrapolação dupla)."
         }
       ],
       "fonte": [
@@ -931,10 +931,9 @@
         "Day2019",
         "Lucado2022",
         "Bretschneider2022",
-        "Waugh2004",
         "fases, prazo e salão: proposta clínica"
       ],
-      "notas": "Uma resposta possível ao revés, em forma de plano. Fase 1 agora, pela irritabilidade de hoje: o isométrico de Vuvan, com a carga dela em quilos. Fase 2, quando a irritabilidade cair para leve, níveis II e III da classificação: concêntrico e excêntrico, até 3 × 10, de 1 a 5 libras, 0,5 a 2,3 quilos, da tabela de Day, 2019. Fase 3: alavanca longa, reduzindo a carga ao alongar a alavanca, e a tarefa do salão. Subir a carga pela dor de 24 horas é opinião de Day; reavaliar a cada 3 semanas é proposta nossa, porque a diretriz não dá prazo. Alta em 6 a 12 meses, com dor intermitente tolerável; graus e algoritmo pelos prints da aula de capacitação, atribuição provável. Reexaminar pescoço e nervo a cada recaída. No salão: rotação do antebraço por mais de 4 horas por dia, razão de chances de 1,85, de 1,10 a 3,10, em Bretschneider, lido no texto completo; mas é incidência em quem não tinha dor, e secador e escova são sobretudo punho e ombro. Medir quanto do dia dela é rotação: extrapolação dupla, proposta clínica."
+      "notas": "Uma resposta possível ao revés, em forma de plano. Fase 1 agora, pela irritabilidade de hoje: o isométrico de Vuvan, com a carga dela em quilos. Fase 2, quando a irritabilidade cair para leve, níveis I a III da classificação; moderada é IV e V, a dela hoje: concêntrico e excêntrico, até 3 × 10, de 1 a 5 libras, 0,5 a 2,3 quilos, da tabela de Day, 2019. Fase 3: alavanca longa, reduzindo a carga ao alongar a alavanca, e a tarefa do salão. Subir a carga pela dor de 24 horas é opinião de Day; reavaliar a cada 3 semanas é proposta nossa, porque a diretriz não dá prazo. Alta em 6 a 12 meses, com dor intermitente tolerável; graus e algoritmo pelos prints da aula de capacitação, atribuição provável. Reexaminar pescoço e nervo a cada recaída. No salão: rotação do antebraço por mais de 4 horas por dia, razão de chances de 1,85, de 1,10 a 3,10, em Bretschneider, lido no texto completo; mas é incidência em quem não tinha dor, e secador e escova são sobretudo punho e ombro. Medir quanto do dia dela é rotação: extrapolação dupla, proposta clínica."
     },
     {
       "tipo": "tabela",
@@ -1062,10 +1061,10 @@
     {
       "tipo": "referencias",
       "outras": [
-        "versão 1: conferidas só no resumo ou em print da aula de capacitação, exceto Bretschneider 2022 (texto completo); detalhes em verificacao.md.",
-        "proposta clínica da equipe: kg da paciente, MWM como janela, regra de dor acima do calendário, reavaliação a cada 3 semanas, limite no salão, recuo de fase e mobilização cervical."
+        "na versão 1, as referências foram conferidas só no resumo ou em print da aula de capacitação, exceto Bretschneider 2022 (texto completo); detalhes em verificacao.md.",
+        "são propostas clínicas da equipe: kg da paciente, MWM como janela, regra de dor acima do calendário, reavaliação a cada 3 semanas, limite no salão, recuo de fase e mobilização cervical."
       ],
-      "notas": "Estado da conferência nesta versão 1. Texto completo: só Bretschneider 2022 (Fig. 2 na p.6 e Tab. 3 na p.7). Só resumo: Smidt 2002, Coombes 2013, Bisset 2006, Coombes 2010, Karjalainen 2021, Karanasios 2021a e 2021b, Ma 2024, Lowdon 2024, Wallis 2024, Ikonen 2022, Poltawski e Watson 2011, Couppé 2022, e Bunata 2007 e Rio 2021, só nas notas do slide 12. Resumo mais print da aula de capacitação: Vuvan 2020 (s50 e s56; dose pelas tabelas redigitadas s51 a s53), Day 2019 (Tab. 1, s63 e s64), Vicenzino 2009 (Tab. 2, s38), Lucado 2019 (Fig. 2B recortada do print s81), Shahabi 2020 (s102), Waugh 2004 (Tab. 5, s40) e Lucado 2022 (graus, algoritmo e classificação de irritabilidade, s42, s123 e s124, atribuição provável). Calculados por mim, com a conta nas notas: NNT e NNH, 72% de Bisset, porcentagens das barras de Vuvan, cargas em kg, probabilidade com critério negativo e metas do PRTEE. O NNH da recidiva não foi calculado: depende do denominador. Propostas clínicas: kg da paciente, MWM como janela, regra de dor acima do calendário, reavaliação a cada 3 semanas, limite de rotação no salão, recuo de fase e mobilização cervical. A paciente e seus dados são fictícios. O que trocar quando os PDFs chegarem está em verificacao.md."
+      "notas": "Estado da conferência nesta versão 1. Texto completo: só Bretschneider 2022 (Fig. 2 na p.6 e Tab. 3 na p.7). Só resumo: Smidt 2002, Coombes 2013, Bisset 2006, Coombes 2010, Karjalainen 2021, Karanasios 2021 (exercício) e Karanasios 2021 (ondas de choque), Ma 2024, Lowdon 2024, Wallis 2024, Ikonen 2022, Poltawski e Watson 2011, Couppé 2022, e Bunata 2007 e Rio 2021, só nas notas do slide 12. Resumo mais print da aula de capacitação: Vuvan 2020 (s50 e s56; dose pelas tabelas redigitadas s51 a s53), Day 2019 (Tab. 1, s63 e s64), Vicenzino 2009 (Tab. 2, s38), Lucado 2019 (Fig. 2B recortada do print s81), Shahabi 2020 (s102), Waugh 2004 (Tab. 5, s40) e Lucado 2022 (graus, algoritmo e classificação de irritabilidade, s42, s123 e s124, atribuição provável). Calculados por mim, com a conta nas notas: NNT e NNH, 72% de Bisset, porcentagens das barras de Vuvan, cargas em kg, probabilidade com critério negativo e metas do PRTEE. O NNH da recidiva não foi calculado: depende do denominador. Propostas clínicas: kg da paciente, MWM como janela, regra de dor acima do calendário, reavaliação a cada 3 semanas, limite de rotação no salão, recuo de fase e mobilização cervical. A paciente e seus dados são fictícios. O que trocar quando os PDFs chegarem está em verificacao.md."
     }
   ]
 }
