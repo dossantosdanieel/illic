@@ -2,8 +2,8 @@
 
 Data: 2026-11-25 (atualizada no mesmo dia depois da revisão independente, seção 9, e da conferência adversarial das três
 aulas, seção 10). Deck:
-`04_aula/cotovelo-lateral-2-reabilitacao.pptx` (41 slides, 40 cronometrados, **48:50** pela soma de `tempo_s`, que já
-inclui o retorno das checagens; **45:38** estimados pelo validador; **47:21** contando todas as palavras das notas a
+`04_aula/cotovelo-lateral-2-reabilitacao.pptx` (41 slides, 40 cronometrados, **49:14** pela soma (acabamento no fim do arquivo) de `tempo_s`, que já
+inclui o retorno das checagens; **45:40** estimados pelo validador; **47:21** contando todas as palavras das notas a
 130/min + interações). Formato: `meta.formato: "expositiva"`, 5 partes, títulos em forma de pergunta.
 
 **Numeração:** nesta versão entrou o slide 35 (exemplo resolvido da parte 5) e saiu o antigo 38 ("O que eu ensinei e o
@@ -327,3 +327,5 @@ contradiz; **novo** = a capacitação não tinha. A coluna "Nesta aula" diz onde
 | s123 | Algoritmo de intervenções com graus | confirma (atribuição provável) | Espinha dorsal, dizendo o grau de cada linha | slides 14, 26, 28 |
 | s124 | Reavaliar e progredir pela irritabilidade; recuperação em 6–12 meses com dor intermitente | confirma | Coerente com o curso natural; o prazo de 3 semanas é proposta nossa; no grave, "ajustar ou encaminhar" | slides 33, 38 |
 | — | — | **novo** | Carga no trabalho: horas de rotação e esforço com força, não repetição (Bretschneider 2022, texto completo) | slide 34, q8 |
+
+- **Acabamento de 25/11/2026 (tempo e s33):** duração-alvo 48 → **49 min** (meta, notas do s1, roteiro, resumo; regra da trilha: soma arredondada ao minuto); 13 `tempo_s` abaixo do estimado do validador subiram ao estimado (+10 s nos de leitura): s1 30→32, s7 95→96, s12 75→76, s14 80→81, s15 80→82, s17 40→42, s22 55→56, s24 50→52, s31 35→37, s34 80→81, s35 70→72, s38 50→52, s39 75→80; soma 48:50 → **49:14** (folga de 0:46 até 50; roteiro com linha do tempo, partes e enquetes nos novos horários); notas do s33 deixam de misturar intensidade da dor com irritabilidade ("leve, I a III: dor leve, até 3 em 10, que não limita (a duração e a limitação levam ao IV)", conforme o print s042 da capacitação), estimado 100 s = `tempo_s` 100; validar_aula 0 erros, montar_deck, renderizar (nenhum PNG mudou; s01 e s33 abertos em tamanho cheio), conferir_pptx sem problemas, materiais sem avisos.

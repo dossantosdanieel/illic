@@ -1,7 +1,8 @@
 # Verificação — Cotovelo medial e mão (aula expositiva com checagens)
 
 Data: 2026-11-25 (versão 1 expositiva). Deck: `04_aula/cotovelo-medial-e-mao.pptx` (40 slides, 39 cronometrados,
-48:45 min; tempo estimado pelo validador 46:40; tempos refeitos na conferência adversarial de 25/11, seção 6c). `meta.formato: "expositiva"`, 4 partes.
+49:02 min; tempo estimado pelo validador 46:40; tempos refeitos na conferência adversarial de 25/11, seção 6c, e no
+acabamento, seção 6d). `meta.formato: "expositiva"`, 4 partes.
 
 Montada antes da chegada dos PDFs. **Só 1 dos 20 artigos do lote foi lido no texto completo (Fukunaga2023)**, mais
 Bretschneider2022 pela ficha da aula 1. Os números, as frases e as fontes vêm da aula de caso (`04_aula_caso/`), que
@@ -81,7 +82,8 @@ Etiquetas: `resumo` = resumo do PubMed, sem página; `p.N` = texto completo; `ca
   como proteção — slides 36, 37; q6.
 - Graus de Green como âncora (1 dor; 2 trava e corrige; 3 precisa da outra mão; 4 travado): **conhecimento geral a
   conferir** na definição de Minkhorst2025 — slide 23 (fonte "graus: a conferir em Minkhorst 2025" e notas).
-- Para a 2ª injeção depois de recidiva: **nenhum número no lote** (dito no slide 28). A inferência "a segunda deve falhar
+- Para a 2ª injeção depois de recidiva: **nenhum número no lote** (dito nas notas do slide 28; o slide pergunta se algum
+  número do lote vale para ela). A inferência "a segunda deve falhar
   mais" saiu das notas na conferência adversarial de 25/11 (seção 6c): não tem fonte.
 
 ## 4. Dados do caso fictício
@@ -114,11 +116,12 @@ aula for vendida, pedir permissão ou manter só os gráficos nativos.
 ## 6. Checagens automáticas
 
 - `validar_aula.py` (rodada atual, depois da conferência adversarial de 25/11, seção 6c): **APROVADA com 2 avisos, 0
-  erros.** Expositiva em 4 partes; **48:45** pela soma de `tempo_s`; estimado pela fala das notas + interações **46:40**.
-  17 interações em 4 formatos (16 checagens antes do bilhete); primeira aos 1:05; 17% do tempo em atividade; trecho mais
-  longo sem interação ~5 min 25 s (s3 → s8). Linha do tempo `·●●····●····●··●··●··●··●····●·●·●●···●·●●··●·●●●`.
-  Partes: 11:25, 9:20, 10:40 e 9:50. Avisos decididos: (a) soma acima de 48 min — o `tempo_s` agora segue o critério
-  da aula 2 (estimado + 10 s de retorno nos slides em que se leem respostas), com 1:15 até o teto; (b) slide 16 com 76
+  erros.** Expositiva em 4 partes; **49:02** pela soma de `tempo_s` (acabamento, seção 6d; antes 48:45); estimado pela
+  fala das notas + interações **46:40**. 17 interações em 4 formatos (16 checagens antes do bilhete); primeira aos 1:06;
+  17% do tempo em atividade; trecho mais longo sem interação ~5 min 27 s (s3 → s8). Linha do tempo
+  `·●●····●····●●·●··●··●··●····●●●·●●···●●·●··●●●●●·`. Partes: 11:28, 9:24, 10:41 e 9:57. Avisos decididos: (a) soma acima de 48 min — o `tempo_s` agora segue o critério
+  da aula 2 (estimado + 10 s de retorno nos slides em que se leem respostas; nenhum slide abaixo do estimado), com 58 s
+  até o teto; (b) slide 16 com 76
   palavras visíveis — a linha do corticoide ganhou a ressalva das duas escalas, que é o ponto da correção; a nota de
   rodapé foi encurtada para compensar.
   Rodada anterior (antes da conferência): 47:30 por `tempo_s`, 46:29 estimados, nenhum aviso.
@@ -196,6 +199,10 @@ Conferi cada um na fonte antes de mexer. Todos procedem.
 Checagens desta rodada: `validar_aula.py` (0 erros, 2 avisos decididos na seção 6), `montar_deck.py` (nenhum texto
 reduzido), render com `LANG=pt_BR.UTF-8` (abertos em tamanho cheio os PNG alterados: 12, 16, 20, 21 e 28), `conferir_pptx.py`
 (nenhum problema; 84 partes XML válidas) e `materiais.py` (nenhum aviso).
+
+## 6d. Acabamento, 2026-11-25
+
+- s28: instrução visível e pedido do chat trocaram "o número que vale para ela" por "se algum número do lote vale para ela" (a resposta das notas é que nenhum vale para a 2ª injeção; o texto antigo induzia a escolher 39,1% ou 38%); o desafio "qual dos números desta parte vale…" virou "de que pacientes vêm os números de sucesso e de recidiva desta parte?"; `tempo_s` abaixo do estimado do validador subiu para o próprio estimado, sem arredondar: s2 55→56 (mão aos 36 s), s4 60→61, s7 65→66, s11 80→82, s19 90→92, s20 115→117 (mão aos 97 s), s23 90→91, s30 25→27, s31 70→72, s35 80→81, s37 50→52 (slides de leitura de respostas já tinham estimado + 10 s); soma 48:45 → **49:02**, duração-alvo 49 min (sem mudança em meta, capa e resumo); roteiro (cabeçalho, linha do tempo, desafio do s28), `enquetes.md` regerado (horários e pedido do s28) e esta seção 6; validar (0 erros, 2 avisos de antes), montar (nenhum texto reduzido), render (só o s28 mudou, aberto em tamanho cheio), `conferir_pptx.py` (nenhum problema) e `materiais.py` (nenhum aviso).
 
 ## 7. Pendências
 

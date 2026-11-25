@@ -12,11 +12,13 @@ aplicação, checagem a cada 5 a 7 min, o caso só no fim de cada parte e sínte
 
 **Público:** fisioterapeutas da equipe ILLIC, de recém-formados a especialistas em membro superior. Aula única em
 camadas: núcleo exigente (RV, IC, NNT, OR x RR, DMCI, dose, certeza), âncora "Para começar" e desafio em cada parte.
-**Duração-alvo:** 49 min (aviso abaixo de 42 e acima de 48; teto 50). **Duração montada:** 48:45, 39 slides
+**Duração-alvo:** 49 min (aviso abaixo de 42 e acima de 48; teto 50). **Duração montada:** 49:02, 39 slides
 cronometrados + referências. Tempo estimado pelo validador (fala das notas a 130 ppm + interações): **46:40**.
 Critério de tempo da trilha (conferência de 25/11/2026, o mesmo da aula 2): `tempo_s` = estimado do validador (fala +
 interação) + 10 s nos slides em que se leem respostas ou se ouve voluntário (3, 12, 17, 26, 28, 34, 36, 38, 39),
 arredondado para cima a 5 s; nos demais, o estimado arredondado a 5 s (mapa geral do s5 com 50 s).
+Acabamento de 25/11: onde o estimado passava do `tempo_s` (s2, s4, s7, s11, s19, s20, s23, s30, s31, s35, s37), o
+`tempo_s` subiu para o próprio estimado, sem arredondar, para a soma ficar em 49:02 (49 min) e não ir a 50.
 **Perguntas clínicas:** as quatro PICO de `00_briefing.md` (1a tendinopatia medial; 1b diferencial medial; 2 dedo em
 gatilho; 3 De Quervain).
 
@@ -115,49 +117,49 @@ compartimento não têm fonte e não passam na resolução).
 |---|---|---|---|---|---|
 | 0:00 | — | — | 1 Capa | — | |
 | 0:30 | — | — | 2 Combinados (cartões) | mão na câmera 15 s | |
-| 1:25 | — | recuperar | 3 Da lateral para a medial (pergunta; antes, 2 bilhetes da aula 2) | chat em cascata 45 s | âncora: trabalho, diferencial, tratamento, réguas; desafio: um número de cada aula que não viaja |
-| 2:55 | — | conferir | 4 Só a força transfere; o resto não viaja sem aviso (tabela com OR explícito e siglas) | — | resposta ao desafio nas notas |
-| 3:55 | — | — | 5 Mapa da aula (mapa) | — | camadas ditas nas notas |
-| 4:45 | 1 | — | 6 Onde estamos 1 (faixa "Nesta parte") | — | |
-| 5:10 | 1 | explicar | 7 O que é (números: 4–5%, 1,5%/ano, 81%) | — | âncora nas notas |
-| 6:15 | 1 | explicar | 8 Os suspeitos (cartões + Zwerus) | mão na câmera 15 s (mapa sensitivo) | |
-| 7:55 | 1 | exemplo | 9 Tinel: de 30% para 36% (exemplo resolvido) | — | âncora: chance; desafio: 71% e Tinel negativo, com RV− = 0,38 ÷ 0,53 |
-| 9:45 | 1 | explicar | 10 RV+ dos 4 testes (barras) + RV− e "quem descarta" + "capacitação x hoje" | — | |
-| 11:00 | 1 | explicar | 11 Valgo em movimento (números) | — | |
-| 12:20 | 1 | checar | 12 Espessamento ausente (enquete) | enquete 40 s | |
-| 13:50 | 1 | aplicacao | 13 Sérgio (citação) | mão na câmera 15 s | |
-| 15:20 | 1 | sintese | 14 Síntese 1 | — | |
-| 16:10 | 2 | — | 15 Onde estamos 2 (faixa "Nesta parte") | — | |
-| 16:35 | 2 | explicar | 16 Quase tudo é extrapolação (tabela) | — | |
-| 18:15 | 2 | checar | 17 Até quando o corticoide ajudou? (pergunta) | chat em cascata 40 s | âncora: prazo e número; desafio: por que os dois grupos melhoraram |
-| 19:45 | 2 | explicar | 18 Um exercício não cobre a massa (barras, Fukunaga Tab. 2) | mão na câmera 15 s (checagem: qual exercício para o pronador) | desafio nas notas: 73% a Borg 5/10 |
-| 21:20 | 2 | explicar | 19 Desvio ulnar: a montagem e a dose proposta (figura Fukunaga Fig. 2 + cartão de dose) | demonstração da pronação na câmera | âncora nas notas |
-| 22:50 | 2 | aplicacao | 20 Sérgio 6 semanas depois (exemplo resolvido, réguas do PRTEE) | mão na câmera 15 s | |
-| 24:45 | 2 | sintese | 21 Síntese 2 | — | |
-| 25:30 | 3 | — | 22 Onde estamos 3 (faixa "Nesta parte") | — | |
-| 25:55 | 3 | explicar | 23 O que é e os graus de Green (etapas) | — | âncora nas notas |
-| 27:25 | 3 | explicar | 24 O grau prevê mais (barras) | — | |
-| 28:35 | 3 | explicar | 25 Cada opção tem um preço (tabela) | mão na câmera 15 s | |
-| 30:05 | 3 | checar | 26 OR de 22,8 não é 22 vezes (exemplo parcialmente resolvido) | chat em cascata 45 s | âncora: fórmula do RR; desafio: base de 80% |
-| 32:10 | 3 | aplicacao | 27 Renata (citação) | mão na câmera 15 s | |
-| 33:30 | 3 | aplicacao | 28 Revés do mês 5 (pergunta) | chat em cascata 50 s | âncora: grau; desafio: qual número da parte vale para quem já fez órtese e injeção |
-| 35:20 | 3 | sintese | 29 Síntese 3 | — | |
-| 36:10 | 4 | — | 30 Onde estamos 4 (faixa "Nesta parte") | — | |
-| 36:35 | 4 | explicar | 31 O que é (cartões) | — | âncora nas notas |
-| 37:45 | 4 | explicar | 32 Eichhoff x WHAT (comparação em colunas) | mão na câmera 15 s | |
-| 39:05 | 4 | exemplo | 33 WHAT: positivo e negativo com a incerteza (exemplo resolvido) | — | âncora nas notas; desafio do VPP no resumo do aluno |
-| 40:50 | 4 | checar | 34 "Finkelstein positivo, fechou" (enquete) | enquete 40 s | |
-| 42:15 | 4 | explicar | 35 Tratamento no puerpério (números 9/9, 0/9, 8/9; Avci + Challoumas) | — | |
-| 43:35 | 4 | aplicacao | 36 Júlia (citação) | chat em cascata 40 s | |
-| 45:10 | 4 | sintese | 37 Síntese 4 | — | |
-| 46:00 | — | recuperar | 38 Um número de cada parte, na ordem do mapa (pergunta) | chat em cascata 45 s | |
-| 47:25 | — | saida | 39 Bilhete de saída (pergunta) | chat 45 s | |
-| 48:45 | — | — | 40 Referências (apoio; notas com o estado da conferência) | — | |
+| 1:26 | — | recuperar | 3 Da lateral para a medial (pergunta; antes, 2 bilhetes da aula 2) | chat em cascata 45 s | âncora: trabalho, diferencial, tratamento, réguas; desafio: um número de cada aula que não viaja |
+| 2:56 | — | conferir | 4 Só a força transfere; o resto não viaja sem aviso (tabela com OR explícito e siglas) | — | resposta ao desafio nas notas |
+| 3:57 | — | — | 5 Mapa da aula (mapa) | — | camadas ditas nas notas |
+| 4:47 | 1 | — | 6 Onde estamos 1 (faixa "Nesta parte") | — | |
+| 5:12 | 1 | explicar | 7 O que é (números: 4–5%, 1,5%/ano, 81%) | — | âncora nas notas |
+| 6:18 | 1 | explicar | 8 Os suspeitos (cartões + Zwerus) | mão na câmera 15 s (mapa sensitivo) | |
+| 7:58 | 1 | exemplo | 9 Tinel: de 30% para 36% (exemplo resolvido) | — | âncora: chance; desafio: 71% e Tinel negativo, com RV− = 0,38 ÷ 0,53 |
+| 9:48 | 1 | explicar | 10 RV+ dos 4 testes (barras) + RV− e "quem descarta" + "capacitação x hoje" | — | |
+| 11:03 | 1 | explicar | 11 Valgo em movimento (números) | — | |
+| 12:25 | 1 | checar | 12 Espessamento ausente (enquete) | enquete 40 s | |
+| 13:55 | 1 | aplicacao | 13 Sérgio (citação) | mão na câmera 15 s | |
+| 15:25 | 1 | sintese | 14 Síntese 1 | — | |
+| 16:15 | 2 | — | 15 Onde estamos 2 (faixa "Nesta parte") | — | |
+| 16:40 | 2 | explicar | 16 Quase tudo é extrapolação (tabela) | — | |
+| 18:20 | 2 | checar | 17 Até quando o corticoide ajudou? (pergunta) | chat em cascata 40 s | âncora: prazo e número; desafio: por que os dois grupos melhoraram |
+| 19:50 | 2 | explicar | 18 Um exercício não cobre a massa (barras, Fukunaga Tab. 2) | mão na câmera 15 s (checagem: qual exercício para o pronador) | desafio nas notas: 73% a Borg 5/10 |
+| 21:25 | 2 | explicar | 19 Desvio ulnar: a montagem e a dose proposta (figura Fukunaga Fig. 2 + cartão de dose) | demonstração da pronação na câmera | âncora nas notas |
+| 22:57 | 2 | aplicacao | 20 Sérgio 6 semanas depois (exemplo resolvido, réguas do PRTEE) | mão na câmera 15 s | |
+| 24:54 | 2 | sintese | 21 Síntese 2 | — | |
+| 25:39 | 3 | — | 22 Onde estamos 3 (faixa "Nesta parte") | — | |
+| 26:04 | 3 | explicar | 23 O que é e os graus de Green (etapas) | — | âncora nas notas |
+| 27:35 | 3 | explicar | 24 O grau prevê mais (barras) | — | |
+| 28:45 | 3 | explicar | 25 Cada opção tem um preço (tabela) | mão na câmera 15 s | |
+| 30:15 | 3 | checar | 26 OR de 22,8 não é 22 vezes (exemplo parcialmente resolvido) | chat em cascata 45 s | âncora: fórmula do RR; desafio: base de 80% |
+| 32:20 | 3 | aplicacao | 27 Renata (citação) | mão na câmera 15 s | |
+| 33:40 | 3 | aplicacao | 28 Revés do mês 5 (pergunta) | chat em cascata 50 s | âncora: grau; desafio: de que pacientes vêm os números de sucesso e de recidiva da parte |
+| 35:30 | 3 | sintese | 29 Síntese 3 | — | |
+| 36:20 | 4 | — | 30 Onde estamos 4 (faixa "Nesta parte") | — | |
+| 36:47 | 4 | explicar | 31 O que é (cartões) | — | âncora nas notas |
+| 37:59 | 4 | explicar | 32 Eichhoff x WHAT (comparação em colunas) | mão na câmera 15 s | |
+| 39:19 | 4 | exemplo | 33 WHAT: positivo e negativo com a incerteza (exemplo resolvido) | — | âncora nas notas; desafio do VPP no resumo do aluno |
+| 41:04 | 4 | checar | 34 "Finkelstein positivo, fechou" (enquete) | enquete 40 s | |
+| 42:29 | 4 | explicar | 35 Tratamento no puerpério (números 9/9, 0/9, 8/9; Avci + Challoumas) | — | |
+| 43:50 | 4 | aplicacao | 36 Júlia (citação) | chat em cascata 40 s | |
+| 45:25 | 4 | sintese | 37 Síntese 4 | — | |
+| 46:17 | — | recuperar | 38 Um número de cada parte, na ordem do mapa (pergunta) | chat em cascata 45 s | |
+| 47:42 | — | saida | 39 Bilhete de saída (pergunta) | chat 45 s | |
+| 49:02 | — | — | 40 Referências (apoio; notas com o estado da conferência) | — | |
 
-Linha do tempo do validador: `·●●····●····●··●··●··●··●····●·●·●●···●·●●··●·●●●` (49 minutos; ● com interação).
+Linha do tempo do validador: `·●●····●····●●·●··●··●··●····●●●·●●···●●·●··●●●●●·` (49 minutos; ● com interação).
 16 checagens antes do bilhete, em 4 formatos (mão na câmera, chat em cascata, enquete; chat no bilhete); primeira aos
-1:05; 17% do tempo em atividade; trecho mais longo sem interação: cerca de 5 min 25 s (s3 → s8). Partes: 1 = 11:25;
-2 = 9:20; 3 = 10:40; 4 = 9:50.
+1:06; 17% do tempo em atividade; trecho mais longo sem interação: cerca de 5 min 27 s (s3 → s8). Partes: 1 = 11:28;
+2 = 9:24; 3 = 10:41; 4 = 9:57.
 
 Confira: checagem a cada 5 a 7 min, a primeira antes de 5 min; cada parte abre com "onde estamos" e fecha com síntese;
 dois exemplos resolvidos (s9, s33), um exemplo resolvido com o caso (s20) e um parcialmente resolvido (s26); salas:

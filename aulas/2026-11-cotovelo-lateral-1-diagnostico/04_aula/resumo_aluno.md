@@ -1,6 +1,6 @@
 # Dor lateral no cotovelo: diagnóstico e prognóstico
 
-*Daniel Santos · Boost Education · aula de 48 min*
+*Daniel Santos · Boost Education · aula de 49 min*
 
 ## Ao fim da aula, você deve conseguir
 

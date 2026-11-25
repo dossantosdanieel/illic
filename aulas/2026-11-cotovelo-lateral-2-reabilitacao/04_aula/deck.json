@@ -6,7 +6,7 @@
   "slug": "cotovelo-lateral-2-reabilitacao",
   "formato": "expositiva",
   "publico": "Fisioterapeutas da equipe ILLIC, de recém-formados a especialistas em membro superior",
-  "duracao_alvo_min": 48,
+  "duracao_alvo_min": 49,
   "caso_ficticio": true,
   "partes": [
    {
@@ -258,8 +258,8 @@
  "slides": [
   {
    "tipo": "capa",
-   "tempo_s": 30,
-   "notas": "Aula expositiva de 48 minutos, a segunda de três da trilha de cotovelo e mão, com checagens rápidas a cada 5 a 7 minutos. A paciente é a Renata da aula 1, fictícia. Antes de abrir a sala: deixar as três enquetes salvas no Meet (texto pronto em enquetes.md), um cronômetro visível e, se possível, um colega lendo o chat. Separar um bilhete de saída da aula 1 para ler no slide 2. Entrar 5 minutos antes e receber as pessoas pelo nome. Dizer em uma frase que esta aula substitui, para a equipe, os slides 45 a 124 da nossa aula de capacitação: o que continua valendo fica, atualizado, e o que mudou eu mostro na hora, inclusive coisas que eu mesmo ensinei de outro jeito. Lembrar o combinado da aula 1 em uma frase: câmera aberta, resposta antes da explicação seguinte, e errar na checagem é para isso que ela serve."
+   "tempo_s": 32,
+   "notas": "Aula expositiva de 49 minutos, a segunda de três da trilha de cotovelo e mão, com checagens rápidas a cada 5 a 7 minutos. A paciente é a Renata da aula 1, fictícia. Antes de abrir a sala: deixar as três enquetes salvas no Meet (texto pronto em enquetes.md), um cronômetro visível e, se possível, um colega lendo o chat. Separar um bilhete de saída da aula 1 para ler no slide 2. Entrar 5 minutos antes e receber as pessoas pelo nome. Dizer em uma frase que esta aula substitui, para a equipe, os slides 45 a 124 da nossa aula de capacitação: o que continua valendo fica, atualizado, e o que mudou eu mostro na hora, inclusive coisas que eu mesmo ensinei de outro jeito. Lembrar o combinado da aula 1 em uma frase: câmera aberta, resposta antes da explicação seguinte, e errar na checagem é para isso que ela serve."
   },
   {
    "tipo": "pergunta",
@@ -369,7 +369,7 @@
    "papel": "explicar",
    "olho": "Parte 1 · Contra o quê",
    "titulo": "Contra nada, meio ponto; contra o corticoide, o exercício vence no **ano**",
-   "tempo_s": 95,
+   "tempo_s": 96,
    "colunas": [
     "Exercício ou fisioterapia contra",
     "Quanto",
@@ -513,7 +513,7 @@
    "papel": "explicar",
    "olho": "Parte 2 · Os tipos",
    "titulo": "Quatro jeitos de carregar; nenhum ensaio do lote compara um com o **outro**",
-   "tempo_s": 75,
+   "tempo_s": 76,
    "colunas": [
     "Tipo",
     "O que se sabe",
@@ -624,7 +624,7 @@
    "papel": "explicar",
    "olho": "Parte 2 · A dose",
    "titulo": "A dose que se prescreve amanhã, com a **origem** de cada número",
-   "tempo_s": 80,
+   "tempo_s": 81,
    "colunas": [
     "Item",
     "Dose",
@@ -680,7 +680,7 @@
    "papel": "exemplo",
    "olho": "Parte 2 · Exemplo resolvido",
    "titulo": "Da % da CVM ao **quilo** na garrafa",
-   "tempo_s": 80,
+   "tempo_s": 82,
    "dado": {
     "olho": "O problema",
     "texto": "CVM de extensão do punho no dinamômetro: 10 kg. Fase 1.",
@@ -738,7 +738,7 @@
    "papel": "sintese",
    "olho": "Parte 2 · Síntese",
    "titulo": "O que levar sobre a **dose**",
-   "tempo_s": 40,
+   "tempo_s": 42,
    "pontos": [
     {
      "titulo": "Nenhum tipo venceu outro",
@@ -911,7 +911,7 @@
    "papel": "explicar",
    "olho": "Parte 3 · O que ela vai pedir depois",
    "titulo": "O PRP empata com a injeção placebo; corticoide somado ao treino não **acelera**",
-   "tempo_s": 55,
+   "tempo_s": 56,
    "itens": [
     {
      "numero": "0,16",
@@ -961,7 +961,7 @@
    "papel": "sintese",
    "olho": "Parte 3 · Síntese",
    "titulo": "O que levar sobre a **infiltração**",
-   "tempo_s": 50,
+   "tempo_s": 52,
    "pontos": [
     {
      "titulo": "Rápida no começo, cara no ano",
@@ -1187,7 +1187,7 @@
    "papel": "sintese",
    "olho": "Parte 4 · Síntese",
    "titulo": "O que levar sobre mãos e **aparelhos**",
-   "tempo_s": 35,
+   "tempo_s": 37,
    "pontos": [
     {
      "titulo": "MWM é janela curta",
@@ -1266,7 +1266,7 @@
     "Poltawski2011",
     "grave, prazo e recuo: proposta clínica"
    ],
-   "notas": "O plano pela irritabilidade. Grave, níveis VI e VII, dor em repouso: o algoritmo da diretriz, no print da capacitação, manda ajustar pelo estágio ou encaminhar; aliviar e descarregar antes de carregar é proposta nossa. Fase 1, moderada, níveis IV e V: o isométrico da parte 2. Fase 2, leve, I a III; leve é dor até 3 em 10, moderada de 4 a 6: isotônico 3 de 10, de 0,5 a 2,3 quilos, de Day. Por que a carga cai de 3,5 quilos para meio quilo? Fontes diferentes: o isométrico segura parado; o isotônico de Day move a carga pela amplitude e começa leve; opinião nossa. Fase 3, quando cumpre a meta da fase 2 de Day, 2,3 quilos 20 vezes sem compensação nem piora: alavanca longa, tarefa e pliometria. Reavaliar a cada 3 semanas é proposta, o intervalo em que a diferença mínima do PRTEE foi medida. Interação: mão na câmera, com a pergunta do selo. A resposta é para cima: dor no trabalho que dura o resto do dia e limita é nível IV, moderada.",
+   "notas": "O plano pela irritabilidade. Grave, níveis VI e VII, dor em repouso: o algoritmo da diretriz, no print da capacitação, manda ajustar pelo estágio ou encaminhar; aliviar e descarregar antes de carregar é proposta nossa. Fase 1, moderada, níveis IV e V: o isométrico da parte 2. Fase 2, leve, I a III: dor leve, até 3 em 10, que não limita (a duração e a limitação levam ao IV): isotônico 3 de 10, de 0,5 a 2,3 quilos, de Day. Por que a carga cai de 3,5 quilos para meio quilo? Fontes diferentes: o isométrico segura parado; o isotônico de Day move a carga pela amplitude e começa leve; opinião nossa. Fase 3, quando cumpre a meta da fase 2 de Day, 2,3 quilos 20 vezes sem compensação nem piora: alavanca longa, tarefa e pliometria. Reavaliar a cada 3 semanas é proposta, o intervalo em que a diferença mínima do PRTEE foi medida. Interação: mão na câmera, com a pergunta do selo. A resposta é para cima: dor no trabalho que dura o resto do dia e limita é nível IV, moderada.",
    "interacao": {
     "tipo": "mao_camera",
     "duracao_s": 20,
@@ -1281,7 +1281,7 @@
    "olho": "Parte 5 · A carga no trabalho",
    "layout": "total",
    "titulo": "No trabalho, pergunte horas de **rotação** e esforço com força, não repetições",
-   "tempo_s": 80,
+   "tempo_s": 81,
    "figura": {
     "id": "Bretschneider2022_tab3"
    },
@@ -1299,7 +1299,7 @@
    "papel": "exemplo",
    "olho": "Parte 5 · Exemplo resolvido",
    "titulo": "Da queixa à **fase** e às horas de rotação",
-   "tempo_s": 70,
+   "tempo_s": 72,
    "dado": {
     "olho": "O problema",
     "texto": "Eletricista, dor lateral há 3 meses.",
@@ -1388,7 +1388,7 @@
    "papel": "sintese",
    "olho": "Parte 5 · Síntese",
    "titulo": "O que levar sobre o **plano**",
-   "tempo_s": 50,
+   "tempo_s": 52,
    "pontos": [
     {
      "titulo": "Fase pela irritabilidade, não pelo calendário",
@@ -1413,7 +1413,7 @@
    "olho": "Fechamento · De memória",
    "titulo": "Sem voltar os slides: um número de cada parte, na **ordem do mapa**",
    "instrucao": "Uma linha no chat, com cinco números. Envie no 3.",
-   "tempo_s": 75,
+   "tempo_s": 80,
    "interacao": {
     "tipo": "chat_cascata",
     "duracao_s": 45,

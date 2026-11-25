@@ -6,7 +6,7 @@
   "slug": "cotovelo-lateral-1-diagnostico",
   "formato": "expositiva",
   "publico": "Fisioterapeutas da equipe ILLIC, de recém-formados a especialistas em membro superior",
-  "duracao_alvo_min": 48,
+  "duracao_alvo_min": 49,
   "caso_ficticio": true,
   "partes": [
    {
@@ -224,13 +224,13 @@
   {
    "tipo": "capa",
    "tempo_s": 30,
-   "notas": "Aula expositiva de 48 minutos, a primeira de três da trilha de cotovelo e mão, em cinco partes, com checagens rápidas a cada 5 a 7 minutos. A paciente que aparece no fim de cada parte, a Renata, é fictícia e volta nas aulas 2 e 3. Antes de abrir a sala: deixar as duas enquetes salvas no Meet, um cronômetro visível, a calculadora do celular à mão e, se possível, um colega lendo o chat. Entrar 5 minutos antes e receber as pessoas pelo nome. Dizer em uma frase que esta aula substitui, para a equipe, a primeira parte da nossa aula de capacitação: o que continua valendo fica, atualizado, e o que mudou eu mostro na hora, inclusive números que eu mesmo ensinei de outro jeito."
+   "notas": "Aula expositiva de 49 minutos, a primeira de três da trilha de cotovelo e mão, em cinco partes, com checagens rápidas a cada 5 a 7 minutos. A paciente que aparece no fim de cada parte, a Renata, é fictícia e volta nas aulas 2 e 3. Antes de abrir a sala: deixar as duas enquetes salvas no Meet, um cronômetro visível, a calculadora do celular à mão e, se possível, um colega lendo o chat. Entrar 5 minutos antes e receber as pessoas pelo nome. Dizer em uma frase que esta aula substitui, para a equipe, a primeira parte da nossa aula de capacitação: o que continua valendo fica, atualizado, e o que mudou eu mostro na hora, inclusive números que eu mesmo ensinei de outro jeito."
   },
   {
    "tipo": "cartoes",
    "olho": "Combinados",
    "titulo": "Como vamos trabalhar **hoje**",
-   "tempo_s": 55,
+   "tempo_s": 60,
    "interacao": {
     "tipo": "mao_camera",
     "duracao_s": 20,
@@ -261,7 +261,7 @@
    "tipo": "mapa",
    "olho": "Mapa da aula",
    "titulo": "Cinco perguntas, na ordem do **consultório**",
-   "tempo_s": 65,
+   "tempo_s": 70,
    "notas": "O organizador prévio: a turma vê o caminho inteiro antes de começar. Ler as cinco perguntas, uma frase para cada. Um, o que é e quanto é comum: o nome, a incidência e o que no trabalho aumenta o risco. Dois, por que dói, numa frase que dá para dizer ao paciente. Três, como diagnosticar: o que medir, quanto cada teste muda a chance e como classificar. Quatro, o que não é, e o que a imagem acrescenta. Cinco, o que esperar: o curso natural e a meta do PRTEE. É a ordem do raciocínio no consultório. Cada parte termina com a Renata, cabeleireira de 46 anos, e com uma síntese: é o que vale anotar. Para quem está começando: cada parte responde uma pergunta só. Para quem já domina: prestar atenção no tamanho do apoio de cada afirmação, do texto completo ao resumo e à proposta clínica."
   },
   {
@@ -307,7 +307,7 @@
    "papel": "explicar",
    "olho": "Parte 1 · Quanto é comum",
    "titulo": "3,4 por **1000** ao ano, com pico entre 40 e 49 anos",
-   "tempo_s": 100,
+   "tempo_s": 105,
    "interacao": {
     "tipo": "mao_camera",
     "duracao_s": 20,
@@ -366,7 +366,7 @@
    "papel": "explicar",
    "olho": "Parte 1 · O que aumenta o risco",
    "titulo": "Força com duração e rotação se associam; a repetição isolada ficou **inconclusiva**",
-   "tempo_s": 105,
+   "tempo_s": 110,
    "rotulo": "Razão de chances (IC 95%), exposição alta × baixa",
    "categorias": [
     "Flexo-extensão",
@@ -492,7 +492,7 @@
    "papel": "sintese",
    "olho": "Parte 1 · Síntese",
    "titulo": "O que levar sobre o que é e quanto é **comum**",
-   "tempo_s": 50,
+   "tempo_s": 55,
    "pontos": [
     {
      "titulo": "Comum na meia-idade",
@@ -732,7 +732,7 @@
    "papel": "aplicacao",
    "olho": "Parte 2 · Aplicação",
    "titulo": "Renata: “Dói até no **antebraço**”",
-   "tempo_s": 65,
+   "tempo_s": 70,
    "origem": "caso",
    "interacao": {
     "tipo": "mao_camera",
@@ -1035,7 +1035,7 @@
    "papel": "sintese",
    "olho": "Parte 3 · Síntese",
    "titulo": "O que levar sobre o **diagnóstico**",
-   "tempo_s": 50,
+   "tempo_s": 55,
    "pontos": [
     {
      "titulo": "O teste vale pela RV",
@@ -1193,7 +1193,7 @@
    "papel": "aplicacao",
    "olho": "Parte 4 · Aplicação: o laudo da Renata",
    "titulo": "O laudo descreve o tendão; não mede a **dor**",
-   "tempo_s": 85,
+   "tempo_s": 90,
    "interacao": {
     "tipo": "mao_camera",
     "duracao_s": 20,
@@ -1273,7 +1273,7 @@
    "papel": "explicar",
    "olho": "Parte 5 · O curso natural",
    "titulo": "A cada **2,5 a 3 meses**, metade dos sintomáticos melhora",
-   "tempo_s": 105,
+   "tempo_s": 110,
    "interacao": {
     "tipo": "mao_camera",
     "duracao_s": 20,
@@ -1355,7 +1355,7 @@
    "papel": "explicar",
    "olho": "Parte 5 · O que piora a previsão",
    "titulo": "Sinais de pior prognóstico existem, mas pesam **pouco**",
-   "tempo_s": 95,
+   "tempo_s": 100,
    "colunas": [
     "Sinal (coortes)",
     "Quando",

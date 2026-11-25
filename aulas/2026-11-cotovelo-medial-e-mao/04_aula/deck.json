@@ -281,11 +281,11 @@
    "tipo": "cartoes",
    "olho": "Combinados",
    "titulo": "Como vamos trabalhar **hoje**",
-   "tempo_s": 55,
+   "tempo_s": 56,
    "interacao": {
     "tipo": "mao_camera",
     "duracao_s": 15,
-    "inicio_s": 35,
+    "inicio_s": 36,
     "pedido": "Polegar para cima: atendeu dor medial no cotovelo, dedo em gatilho ou De Quervain este mês. Para baixo: não atendeu."
    },
    "itens": [
@@ -330,7 +330,7 @@
    "papel": "conferir",
    "olho": "Aulas 1 e 2 · Conferindo",
    "titulo": "Só a **força** transfere; o resto não viaja sem aviso",
-   "tempo_s": 60,
+   "tempo_s": 61,
    "colunas": [
     "Tema",
     "Lateral",
@@ -401,7 +401,7 @@
    "papel": "explicar",
    "olho": "Parte 1 · O que é",
    "titulo": "Na origem flexora-pronadora: comum no trabalho, curso **favorável**",
-   "tempo_s": 65,
+   "tempo_s": 66,
    "itens": [
     {
      "numero": "4–5%",
@@ -561,7 +561,7 @@
    "papel": "explicar",
    "olho": "Parte 1 · E o ligamento?",
    "titulo": "Valgo em movimento: o negativo talvez ajude, num estudo **minúsculo**",
-   "tempo_s": 80,
+   "tempo_s": 82,
    "itens": [
     {
      "numero": "17/17",
@@ -805,7 +805,7 @@
    "papel": "explicar",
    "olho": "Parte 2 · Para prescrever amanhã",
    "titulo": "Desvio ulnar com faixa: a montagem e a **dose** (proposta)",
-   "tempo_s": 90,
+   "tempo_s": 92,
    "figura": {
     "id": "Fukunaga2023_fig2",
     "arquivo": "figuras/Fukunaga2023_fig2_limpa.png",
@@ -863,11 +863,11 @@
    "papel": "aplicacao",
    "olho": "Parte 2 · Aplicação",
    "titulo": "Sérgio, 6 semanas depois: melhorou o que **importa**?",
-   "tempo_s": 115,
+   "tempo_s": 117,
    "interacao": {
     "tipo": "mao_camera",
     "duracao_s": 15,
-    "inicio_s": 95,
+    "inicio_s": 97,
     "pedido": "Polegar para cima: pela régua proporcional, ele já melhorou o que importa. Para baixo: ainda não."
    },
    "dado": {
@@ -944,7 +944,7 @@
    "papel": "explicar",
    "olho": "Parte 3 · O que é e como graduar",
    "titulo": "Do incômodo ao travado: os 4 graus de **Green**",
-   "tempo_s": 90,
+   "tempo_s": 91,
    "numerar": true,
    "passos": [
     {
@@ -1159,16 +1159,16 @@
    "papel": "aplicacao",
    "olho": "Parte 3 · Aplicação",
    "titulo": "Mês 5: órtese e injeção falharam, e agora ela precisa da **outra mão**",
-   "instrucao": "Órtese 6 semanas sem melhora; ela aceitou a injeção na semana 7. Uma linha no chat: o grau, a decisão e o número que vale para ela. Envie no 3.",
+   "instrucao": "Órtese 6 semanas sem melhora; ela aceitou a injeção na semana 7. Uma linha no chat: o grau, a decisão e se algum número do lote vale para ela. Envie no 3.",
    "tempo_s": 110,
    "origem": "caso",
    "interacao": {
     "tipo": "chat_cascata",
     "duracao_s": 50,
-    "pedido": "Escrever o grau, a decisão entre segunda injeção e encaminhamento e o número que vale para a Renata."
+    "pedido": "Escrever o grau, a decisão entre segunda injeção e encaminhamento e se algum número do lote vale para a Renata."
    },
    "ancora": "comece pelo grau de Green.",
-   "desafio": "qual dos números desta parte vale para quem já fez órtese e injeção?",
+   "desafio": "de que pacientes vêm os números de sucesso e de recidiva desta parte?",
    "notas": "A segunda aplicação, com a evolução do caso. Ler a situação: órtese por 6 semanas, injeção na semana 7, e no mês 5 o gatilho voltou e precisa da outra mão. Interação: chat em cascata, 50 segundos, contar 3, 2, 1. Ler duas respostas. Uma resposta possível: grau 3; o 39,1% de operados vem de dedos sem tratamento prévio, em Minkhorst; o 38 em 100 que voltam a travar, da Cochrane de Fiorini, não informa tratamento prévio no resumo; para a segunda injeção, nenhum número no lote. As duas condutas são defensáveis pelo consenso de Huisstede; se escolher injetar, combinar antes que nova trava leva à avaliação cirúrgica, proposta clínica.",
    "fonte": [
     "Minkhorst2025",
@@ -1210,7 +1210,7 @@
    "tipo": "mapa",
    "parte": 4,
    "atual": 4,
-   "tempo_s": 25,
+   "tempo_s": 27,
    "notas": "Onde estamos: parte 4 de 4. Cotovelo e dedo já foram; agora o punho. Dizer o fio da parte: o teste que todos chamamos de Finkelstein, o que o teste mais sensível vale de verdade, e o que oferecer no puerpério. A conta é a mesma da parte 1, com um cuidado novo: a incerteza de um estudo pequeno.",
    "faixa": "**Nesta parte:** o que é → Eichhoff x WHAT test → o negativo e a incerteza → puerpério → Júlia."
   },
@@ -1220,7 +1220,7 @@
    "papel": "explicar",
    "olho": "Parte 4 · O que é",
    "titulo": "Estenose do **1º compartimento** dorsal",
-   "tempo_s": 70,
+   "tempo_s": 72,
    "colunas": 3,
    "itens": [
     {
@@ -1372,7 +1372,7 @@
    "papel": "explicar",
    "olho": "Parte 4 · Tratamento no puerpério",
    "titulo": "A tala sozinha não aliviou nenhuma; quase todas melhoraram ao fim da **lactação**",
-   "tempo_s": 80,
+   "tempo_s": 81,
    "itens": [
     {
      "numero": "9/9",
@@ -1432,7 +1432,7 @@
    "papel": "sintese",
    "olho": "Parte 4 · Síntese",
    "titulo": "O que levar sobre o **De Quervain**",
-   "tempo_s": 50,
+   "tempo_s": 52,
    "pontos": [
     {
      "titulo": "Positivo não confirma",

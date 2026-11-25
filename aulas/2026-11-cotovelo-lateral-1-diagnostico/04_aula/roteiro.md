@@ -4,10 +4,10 @@
 **Trilha:** Boost Education · cotovelo e mão, aula 1 de 3 (versão expositiva 1, 25/11/2026).
 **Apresentador:** Daniel Santos.
 **Público:** fisioterapeutas da equipe ILLIC, de recém-formados a especialistas em membro superior; aula única em camadas (núcleo exigente, âncora "Para começar" e desafio em cada parte).
-**Duração-alvo:** 48 min (a mesma em `meta.duracao_alvo_min`, nas notas do s1 e no resumo do aluno). Deck: 38 slides cronometrados + 1 slide de apoio (Fig. 2 de Bretschneider, fora do tempo) + referências, **47:45** em `tempo_s`; tempo estimado pelo validador (fala das notas a 130 palavras/min + interações) 45:52. Critério de tempo da trilha: nos slides em que se leem respostas da turma (enquetes s14 e s27; chats s8, s21, s23, s35, s37 e s38), `tempo_s` = estimado da fala + interação + 10 s, arredondado para cima a 5 s. 13 interações em 4 formatos (12 checagens + bilhete de saída), primeira aos 0:30, maior trecho sem interação 6 min 25 s (17:00 a 23:25, fim da parte 2 e começo da parte 3), 16% do tempo em atividade. Sem salas. Revisão independente aplicada em 25/11/2026 (ver `verificacao.md`, seção 9).
+**Duração-alvo:** 49 min (a mesma em `meta.duracao_alvo_min`, nas notas do s1 e no resumo do aluno). Deck: 38 slides cronometrados + 1 slide de apoio (Fig. 2 de Bretschneider, fora do tempo) + referências, **48:35** em `tempo_s`; tempo estimado pelo validador (fala das notas a 130 palavras/min + interações) 45:52. Critério de tempo da trilha: nos slides em que se leem respostas da turma (enquetes s14 e s27; chats s8, s21, s23, s35, s37 e s38), `tempo_s` = estimado da fala + interação + 10 s, arredondado para cima a 5 s; nos demais, `tempo_s` = estimado arredondado para cima a 5 s (s2, s3, s6, s7, s9, s15, s24, s29, s32 e s33 subiram 5 s cada no acabamento de 25/11/2026, de 47:45 para 48:35). 13 interações em 4 formatos (12 checagens + bilhete de saída), primeira aos 0:30, maior trecho sem interação 6 min 30 s (17:25 a 23:55, fim da parte 2 e começo da parte 3), 15% do tempo em atividade. Sem salas. Revisão independente aplicada em 25/11/2026 (ver `verificacao.md`, seção 9).
 **Pergunta clínica:** em adultos com dor lateral no cotovelo, quanto valem a história, os testes e a imagem para confirmar a tendinopatia lateral e afastar diferenciais (PIRD); qual o curso natural e que fatores predizem pior evolução em 6 a 12 meses (PECO); o que explica a dor (mecanismo).
 **Linha de raciocínio (`meta.partes`):** 1. O que é e quanto é comum → 2. Por que dói → 3. Como diagnosticar → 4. O que não é, e o que a imagem acrescenta → 5. O que esperar.
-A sugestão do pedido tinha seis blocos; "diferencial" e "imagem" viraram uma parte só (a mesma pergunta: "é mesmo tendinopatia, e o laudo muda algo?"), porque o validador e o desenho pedem 3 a 5 partes e seis divisores com síntese comeriam 9 min de 48.
+A sugestão do pedido tinha seis blocos; "diferencial" e "imagem" viraram uma parte só (a mesma pergunta: "é mesmo tendinopatia, e o laudo muda algo?"), porque o validador e o desenho pedem 3 a 5 partes e seis divisores com síntese comeriam 9 min de 49.
 **Caso de aplicação:** Renata, 46 anos, cabeleireira, cotovelo direito, 4 meses (dados fixos em `04_aula_caso/roteiro.md`, "Caso para a aula 2", sem nenhuma mudança nos números). Linha do tempo da trilha: nas semanas 0 a 6 ela recebe orientação de carga no salão e acompanhamento, sem programa de exercício estruturado; o programa começa na aula 2, na semana 6 (s35, notas e contexto). No fim de cada parte ela usa o que acabou de ser explicado: trabalho (parte 1), algometria (parte 2), medida e classificação (parte 3), laudo (parte 4), reavaliação de 6 semanas com formigamento (parte 5).
 
 ## Objetivos (aplicação, análise, avaliação)
@@ -47,47 +47,47 @@ A sugestão do pedido tinha seis blocos; "diferencial" e "imagem" viraram uma pa
 |---|---|---|---|---|---|
 | 0:00 | — | — | 1 Capa (capa) | — |  |
 | 0:30 | — | — | 2 Como vamos trabalhar hoje (cartoes) | mão na câmera (20 s) |  |
-| 1:25 | — | — | 3 Cinco perguntas, na ordem do consultório (mapa) | — | notas: âncora (uma pergunta por parte) e desafio (tamanho do apoio) |
-| 2:30 | 1 | — | 4 Onde estamos (mapa, atual 1) (mapa) | — |  |
-| 3:00 | 1 | explicar | 5 Tendinopatia lateral: dor na origem dos extensores (cartoes) | — | notas: "guardar os três cartões" |
-| 4:15 | 1 | explicar | 6 3,4 por 1000 ao ano, com pico entre 40 e 49 anos (barras) | mão na câmera (20 s, aos 75 s) | revelação: 3% × 3,4 por 1000; período 2000–2012 (4,5 → 2,4 por 1000) |
-| 5:55 | 1 | explicar | 7 Força com duração e rotação se associam; a repetição isolada ficou inconclusiva (linha) | — | revelação: "sobrecarga repetitiva"; Fig. 2 inteira no apoio (s39) |
-| 7:40 | 1 | aplicacao | 8 Renata, 46 anos, cabeleireira: 6 h por dia de secador e escova. O que no trabalho dela tem evidência de risco? (pergunta) | chat em cascata (35 s) | âncora: OR acima de 1 é mais chance; veja se o intervalo passa pelo 1.; desafio: o Strain Index inclui a frequência: dá para dizer que repetir não pesa? |
-| 9:15 | 1 | sintese | 9 O que levar sobre o que é e quanto é comum (sintese) | — | risco absoluto ≈ 1 a cada 25 a 30 expostos (calc.) |
-| 10:05 | 2 | — | 10 Onde estamos (mapa, atual 2) (mapa) | — |  |
-| 10:35 | 2 | explicar | 11 Quatro peças explicam a dor lateral (etapas) | — | âncora visível: as quatro palavras |
-| 11:50 | 2 | explicar | 12 Ao estender o cotovelo, o ECRB encosta mais no capítulo (linha) | — | revelação: "na pronação e supinação"; eixo = deslocamento (0 = 90° em neutro) |
-| 13:15 | 2 | explicar | 13 Mais sensível perto do cotovelo, não longe (tabela) | — | revelação: "sensibilização"; desafio visível: causa, consequência ou marcador? |
-| 14:30 | 2 | checar | 14 Explique ao paciente (enquete) | enquete (40 s) |  |
-| 16:00 | 2 | aplicacao | 15 Renata: “Dói até no antebraço” (citacao) | mão na câmera (20 s, aos 40 s) | âncora nas notas: comparar lados e ponto longe |
-| 17:05 | 2 | sintese | 16 O que levar sobre por que dói (sintese) | — |  |
-| 17:50 | 3 | — | 17 Onde estamos (mapa, atual 3) (mapa) | — |  |
-| 18:20 | 3 | explicar | 18 O que medir na primeira consulta (cartoes) | — | desafio nas notas: regra de Vicenzino (lados certos dos cortes) |
-| 19:40 | 3 | explicar | 19 A queda da preensão ao estender é o teste que mais inclina (tabela) | — | âncora visível: S e E; conta da RV visível |
-| 21:10 | 3 | exemplo | 20 Da suspeita à probabilidade depois do teste (exemplo) | — | âncora: chance = p ÷ (1 − p); volte com chance ÷ (1 + chance). |
-| 22:40 | 3 | checar | 21 Suspeita alta e preensão negativa: quanto sobra? (exemplo) | chat em cascata (50 s, aos 45 s) | âncora: a mesma receita do exemplo anterior, agora com a RV−.; desafio: abaixo de que suspeita um negativo leva a menos de 50%? |
-| 25:05 | 3 | explicar | 22 Classifique antes de tratar: irritabilidade e distribuição (tabela) | — | critérios II, IV, VI e VII visíveis; I, III e V nas notas e no resumo (print s42) |
-| 26:50 | 3 | aplicacao | 23 Renata, primeira consulta: meça e classifique (citacao) | chat em cascata (50 s, aos 45 s) | gabarito aceita moderada (IV–V); tipo 1 com bandeira |
-| 28:50 | 3 | sintese | 24 O que levar sobre o diagnóstico (sintese) | — |  |
-| 29:40 | 4 | — | 25 Onde estamos (mapa, atual 4) (mapa) | — |  |
-| 30:10 | 4 | explicar | 26 O que faz pensar em outra coisa (tabela) | — | âncora visível: "a dor está mesmo no epicôndilo, e só nele?"; dor miofascial incluída |
-| 31:25 | 4 | checar | 27 Cozen positivo, mas a dor está mais abaixo (enquete) | enquete (40 s) |  |
-| 32:55 | 4 | explicar | 28 Metade de quem não tem dor tem esporão (barras) | — | conta da RV visível; desafio visível: duas portas; RM e Couppé aqui |
-| 34:45 | 4 | aplicacao | 29 O laudo descreve o tendão; não mede a dor (tabela) | mão na câmera (20 s, aos 60 s) | critério de imagem visível na nota |
-| 36:10 | 4 | sintese | 30 O que levar sobre o diferencial e a imagem (sintese) | — |  |
-| 36:50 | 5 | — | 31 Onde estamos (mapa, atual 5) (mapa) | — |  |
-| 37:15 | 5 | explicar | 32 A cada 2,5 a 3 meses, metade dos sintomáticos melhora (linha) | mão na câmera (20 s, aos 80 s) | revelação: "mais da metade com sintomas em 1 ano"; conta tracejada até 94 aos 12 meses |
-| 39:00 | 5 | explicar | 33 Sinais de pior prognóstico existem, mas pesam pouco (tabela) | — | revelação: tabela de Coombes saiu da patoanatomia; dado de cirurgia de Sanders como prática; fecha a água fria do s15 (queixa ≠ limiar; modelo com 9% do PRTEE) |
-| 40:35 | 5 | exemplo | 34 A meta do PRTEE da Renata, pelas duas réguas (exemplo) | — | âncora: meta = linha de base − queda.; desafio: com quem começa alto, qual régua usar, e por quê? |
-| 42:05 | 5 | aplicacao | 35 Seis semanas: “Será que piorou?” (citacao) | chat em cascata (50 s, aos 45 s) | reavaliação de 6 semanas (a de 3 não entra); semanas 0–6 com orientação de carga, sem programa de exercício |
-| 44:15 | 5 | sintese | 36 O que levar sobre o que esperar (sintese) | — |  |
-| 45:05 | — | recuperar | 37 Sem voltar os slides: uma ideia de cada parte, na ordem do mapa (pergunta) | chat em cascata (40 s) |  |
-| 46:30 | — | saida | 38 O que você vai mudar no próximo paciente com dor lateral no cotovelo? (pergunta) | chat (45 s) |  |
+| 1:30 | — | — | 3 Cinco perguntas, na ordem do consultório (mapa) | — | notas: âncora (uma pergunta por parte) e desafio (tamanho do apoio) |
+| 2:40 | 1 | — | 4 Onde estamos (mapa, atual 1) (mapa) | — |  |
+| 3:10 | 1 | explicar | 5 Tendinopatia lateral: dor na origem dos extensores (cartoes) | — | notas: "guardar os três cartões" |
+| 4:25 | 1 | explicar | 6 3,4 por 1000 ao ano, com pico entre 40 e 49 anos (barras) | mão na câmera (20 s, aos 75 s) | revelação: 3% × 3,4 por 1000; período 2000–2012 (4,5 → 2,4 por 1000) |
+| 6:10 | 1 | explicar | 7 Força com duração e rotação se associam; a repetição isolada ficou inconclusiva (linha) | — | revelação: "sobrecarga repetitiva"; Fig. 2 inteira no apoio (s39) |
+| 8:00 | 1 | aplicacao | 8 Renata, 46 anos, cabeleireira: 6 h por dia de secador e escova. O que no trabalho dela tem evidência de risco? (pergunta) | chat em cascata (35 s) | âncora: OR acima de 1 é mais chance; veja se o intervalo passa pelo 1.; desafio: o Strain Index inclui a frequência: dá para dizer que repetir não pesa? |
+| 9:35 | 1 | sintese | 9 O que levar sobre o que é e quanto é comum (sintese) | — | risco absoluto ≈ 1 a cada 25 a 30 expostos (calc.) |
+| 10:30 | 2 | — | 10 Onde estamos (mapa, atual 2) (mapa) | — |  |
+| 11:00 | 2 | explicar | 11 Quatro peças explicam a dor lateral (etapas) | — | âncora visível: as quatro palavras |
+| 12:15 | 2 | explicar | 12 Ao estender o cotovelo, o ECRB encosta mais no capítulo (linha) | — | revelação: "na pronação e supinação"; eixo = deslocamento (0 = 90° em neutro) |
+| 13:40 | 2 | explicar | 13 Mais sensível perto do cotovelo, não longe (tabela) | — | revelação: "sensibilização"; desafio visível: causa, consequência ou marcador? |
+| 14:55 | 2 | checar | 14 Explique ao paciente (enquete) | enquete (40 s) |  |
+| 16:25 | 2 | aplicacao | 15 Renata: “Dói até no antebraço” (citacao) | mão na câmera (20 s, aos 40 s) | âncora nas notas: comparar lados e ponto longe |
+| 17:35 | 2 | sintese | 16 O que levar sobre por que dói (sintese) | — |  |
+| 18:20 | 3 | — | 17 Onde estamos (mapa, atual 3) (mapa) | — |  |
+| 18:50 | 3 | explicar | 18 O que medir na primeira consulta (cartoes) | — | desafio nas notas: regra de Vicenzino (lados certos dos cortes) |
+| 20:10 | 3 | explicar | 19 A queda da preensão ao estender é o teste que mais inclina (tabela) | — | âncora visível: S e E; conta da RV visível |
+| 21:40 | 3 | exemplo | 20 Da suspeita à probabilidade depois do teste (exemplo) | — | âncora: chance = p ÷ (1 − p); volte com chance ÷ (1 + chance). |
+| 23:10 | 3 | checar | 21 Suspeita alta e preensão negativa: quanto sobra? (exemplo) | chat em cascata (50 s, aos 45 s) | âncora: a mesma receita do exemplo anterior, agora com a RV−.; desafio: abaixo de que suspeita um negativo leva a menos de 50%? |
+| 25:35 | 3 | explicar | 22 Classifique antes de tratar: irritabilidade e distribuição (tabela) | — | critérios II, IV, VI e VII visíveis; I, III e V nas notas e no resumo (print s42) |
+| 27:20 | 3 | aplicacao | 23 Renata, primeira consulta: meça e classifique (citacao) | chat em cascata (50 s, aos 45 s) | gabarito aceita moderada (IV–V); tipo 1 com bandeira |
+| 29:20 | 3 | sintese | 24 O que levar sobre o diagnóstico (sintese) | — |  |
+| 30:15 | 4 | — | 25 Onde estamos (mapa, atual 4) (mapa) | — |  |
+| 30:45 | 4 | explicar | 26 O que faz pensar em outra coisa (tabela) | — | âncora visível: "a dor está mesmo no epicôndilo, e só nele?"; dor miofascial incluída |
+| 32:00 | 4 | checar | 27 Cozen positivo, mas a dor está mais abaixo (enquete) | enquete (40 s) |  |
+| 33:30 | 4 | explicar | 28 Metade de quem não tem dor tem esporão (barras) | — | conta da RV visível; desafio visível: duas portas; RM e Couppé aqui |
+| 35:20 | 4 | aplicacao | 29 O laudo descreve o tendão; não mede a dor (tabela) | mão na câmera (20 s, aos 60 s) | critério de imagem visível na nota |
+| 36:50 | 4 | sintese | 30 O que levar sobre o diferencial e a imagem (sintese) | — |  |
+| 37:30 | 5 | — | 31 Onde estamos (mapa, atual 5) (mapa) | — |  |
+| 37:55 | 5 | explicar | 32 A cada 2,5 a 3 meses, metade dos sintomáticos melhora (linha) | mão na câmera (20 s, aos 80 s) | revelação: "mais da metade com sintomas em 1 ano"; conta tracejada até 94 aos 12 meses |
+| 39:45 | 5 | explicar | 33 Sinais de pior prognóstico existem, mas pesam pouco (tabela) | — | revelação: tabela de Coombes saiu da patoanatomia; dado de cirurgia de Sanders como prática; fecha a água fria do s15 (queixa ≠ limiar; modelo com 9% do PRTEE) |
+| 41:25 | 5 | exemplo | 34 A meta do PRTEE da Renata, pelas duas réguas (exemplo) | — | âncora: meta = linha de base − queda.; desafio: com quem começa alto, qual régua usar, e por quê? |
+| 42:55 | 5 | aplicacao | 35 Seis semanas: “Será que piorou?” (citacao) | chat em cascata (50 s, aos 45 s) | reavaliação de 6 semanas (a de 3 não entra); semanas 0–6 com orientação de carga, sem programa de exercício |
+| 45:05 | 5 | sintese | 36 O que levar sobre o que esperar (sintese) | — |  |
+| 45:55 | — | recuperar | 37 Sem voltar os slides: uma ideia de cada parte, na ordem do mapa (pergunta) | chat em cascata (40 s) |  |
+| 47:20 | — | saida | 38 O que você vai mudar no próximo paciente com dor lateral no cotovelo? (pergunta) | chat (45 s) |  |
 | — | — | — | 39 Estudo a estudo: só rotação e Strain Index ficam à direita de 1 (apoio, fora do tempo) (figura) | — |  |
 | — | — | — | 40 Referências (referencias) | — |  |
 
-Duração das partes: 1 = 7:35; 2 = 7:45; 3 = 11:50; 4 = 7:10; 5 = 8:15; abertura 2:30; fechamento 2:40.
-Linha do tempo do validador (minutos com e sem interação): `●····●·●●·····●●●······●●··●●··●●··●●·●···●●·●●●`.
+Duração das partes: 1 = 7:50; 2 = 7:50; 3 = 11:55; 4 = 7:15; 5 = 8:25; abertura 2:40; fechamento 2:40.
+Linha do tempo do validador (minutos com e sem interação): `●····●··●·····●●·●·····●●···●···●···●··●···●●●●●●`.
 Exemplo resolvido → parcialmente resolvido → aplicação sem apoio: s18 (o que medir) → s20 → s21 → s22 → s23 (probabilidade, medida e classificação); s34 → s35 (meta do PRTEE).
 
 **Enquetes no Meet:** o Meet mostra só a contagem. Nas duas enquetes, pedir um voluntário da opção menos votada para defender em 15 s, de microfone aberto. Sem enquete na conta: letra no chat em cascata (plano B em `enquetes.md`). Gravação: antes de cada enquete, do parcialmente resolvido, das aplicações em chat (s8, s23, s35) e da recuperação (s37), "quem assiste à gravação, pause e responda" (campo `interacao.gravacao`).
