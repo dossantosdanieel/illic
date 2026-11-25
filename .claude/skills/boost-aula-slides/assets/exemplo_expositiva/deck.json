@@ -1,0 +1,891 @@
+{
+ "meta": {
+  "titulo": "Liberar depois do LCA: **o que os critérios garantem**",
+  "subtitulo": "Tempo, força, salto e prontidão psicológica: o que cada critério mede e como ler o número que o sustenta",
+  "autor": "Daniel Santos",
+  "slug": "exemplo-expositiva-lca-criterios",
+  "formato": "expositiva",
+  "publico": "Fisioterapeutas da equipe, de recém-formados a especialistas em joelho",
+  "duracao_alvo_min": 46,
+  "catalogo": "../exemplo/figuras/catalogo.json",
+  "caso_ficticio": true,
+  "partes": [
+   {
+    "titulo": "Quando: o tempo mínimo",
+    "texto": "O que o tempo de cirurgia faz com o risco de nova lesão"
+   },
+   {
+    "titulo": "O que medir: força e salto",
+    "texto": "Por que a distância do hop tranquiliza e a força e a altura expõem"
+   },
+   {
+    "titulo": "Como ler o risco",
+    "texto": "Risco absoluto, diferença, intervalo de confiança e o limite de uma coorte"
+   },
+   {
+    "titulo": "A cabeça: prontidão para voltar",
+    "texto": "O que um ACL-RSI baixo diz, e o que ele não diz"
+   }
+  ],
+  "objetivos": [
+   "Decidir, com os dados de um caso, se libera um atleta para o esporte de pivô depois da reconstrução do LCA, justificando com tempo, força, salto e prontidão psicológica",
+   "Interpretar razão de risco com intervalo de confiança, risco absoluto, sensibilidade e especificidade antes de transformar um estudo em regra de conduta",
+   "Criticar o índice de simetria em distância como critério único e escolher testes que expõem o déficit do joelho operado"
+  ],
+  "propostas_clinicas": [
+   "o ponto de corte de 90% para a altura do salto unipodal",
+   "os quatro degraus de volta ao jogo e a regra de duas semanas por degrau",
+   "usar o corte de 47 no ACL-RSI como gatilho de conversa, e não de veto"
+  ],
+  "resumo": {
+   "pontos_chave": [
+    "Antes de 9 meses, cada mês de espera reduziu a taxa de nova lesão em 51% (Grindem 2016); depois disso não houve redução adicional.",
+    "Entre os que voltaram sem passar nos critérios, 38,2% tiveram nova lesão no joelho; entre os que passaram, 5,6%. A razão de risco foi 0,16, com intervalo de 0,02 a 1,20: direção forte, precisão baixa (1 evento em 18; Grindem 2016).",
+    "Aos 9 meses, 96,8% passaram no hop simples e só 53,2% na força de quadríceps a 60°/s; 11,3% passaram em todos os critérios (Welling 2018).",
+    "Atletas já liberados tinham 97% de simetria na distância do hop e só 83% e 77% na altura do salto vertical e do drop jump unipodais (Kotsifaki 2022).",
+    "ACL-RSI abaixo de 47 aos 9 meses: sensibilidade de 85% e especificidade de 45% para não voltar ao nível anterior (Faleide 2021). Serve para abrir a conversa, não para vetar."
+   ],
+   "algoritmo": [
+    "Menos de 9 meses de cirurgia? Não libera para o jogo; siga nos degraus de treino.",
+    "Quadríceps abaixo de 90% da outra perna? Não libera; a prioridade do treino é força.",
+    "Altura do salto unipodal abaixo de 90%? Não libera; a distância do hop não substitui essa medida.",
+    "ACL-RSI abaixo de 47 ou medo declarado? Converse, exponha aos poucos ao gesto temido e reavalie antes do jogo.",
+    "Tudo cumprido? Volta em degraus: treino individual, coletivo sem contato, coletivo completo e jogo com minutos controlados."
+   ],
+   "para_praticar": [
+    "Escolha um paciente de LCA e acrescente à bateria a força de quadríceps e a altura do salto unipodal.",
+    "Ao ler um estudo, procure o intervalo de confiança e o número de eventos antes de repetir a conclusão."
+   ]
+  }
+ },
+ "referencias": [
+  {
+   "id": "Grindem2016",
+   "curta": "Grindem et al. 2016",
+   "texto": "Grindem H et al. Br J Sports Med 2016;50(13):804-8",
+   "pmid": "27162233",
+   "doi": "10.1136/bjsports-2016-096031",
+   "conferido": "texto completo"
+  },
+  {
+   "id": "Welling2018",
+   "curta": "Welling et al. 2018",
+   "texto": "Welling W et al. Knee Surg Sports Traumatol Arthrosc 2018;26(12):3636-44",
+   "pmid": "29574548",
+   "doi": "10.1007/s00167-018-4916-4",
+   "conferido": "texto completo"
+  },
+  {
+   "id": "Kotsifaki2022",
+   "curta": "Kotsifaki et al. 2022",
+   "texto": "Kotsifaki A et al. Br J Sports Med 2022;56(9):490-8",
+   "pmid": "35135826",
+   "doi": "10.1136/bjsports-2021-104692",
+   "conferido": "texto completo"
+  },
+  {
+   "id": "Wellsandt2017",
+   "curta": "Wellsandt et al. 2017",
+   "texto": "Wellsandt E et al. J Orthop Sports Phys Ther 2017;47(5):334-8",
+   "pmid": "28355978",
+   "doi": "10.2519/jospt.2017.7285",
+   "conferido": "resumo"
+  },
+  {
+   "id": "Faleide2021",
+   "curta": "Faleide et al. 2021",
+   "texto": "Faleide AGH et al. Am J Sports Med 2021;49(5):1236-43",
+   "pmid": "33656938",
+   "doi": "10.1177/0363546521991924",
+   "conferido": "texto completo"
+  },
+  {
+   "id": "Cronstrom2023",
+   "curta": "Cronström et al. 2023",
+   "texto": "Cronström A et al. Sports Med 2023;53(1):91-110",
+   "pmid": "36001289",
+   "doi": "10.1007/s40279-022-01747-3",
+   "conferido": "resumo"
+  }
+ ],
+ "slides": [
+  {
+   "tipo": "capa",
+   "tempo_s": 30,
+   "notas": "Aula expositiva de 46 minutos, com checagens rápidas a cada 5 a 7 minutos. O paciente que aparece no fim de cada parte é fictício. Antes de abrir a sala: deixar as duas enquetes salvas no Meet, um cronômetro visível e, se possível, um colega lendo o chat. Entrar 5 minutos antes e receber as pessoas pelo nome. Dizer que hoje a aula segue uma linha: quatro perguntas, na ordem em que a decisão de liberar é tomada."
+  },
+  {
+   "tipo": "cartoes",
+   "olho": "Combinados",
+   "titulo": "Como vamos trabalhar **hoje**",
+   "tempo_s": 60,
+   "interacao": {
+    "tipo": "mao_camera",
+    "duracao_s": 20,
+    "pedido": "Polegar para cima: já liberou um atleta de LCA antes dos 9 meses. Para baixo: nunca liberou."
+   },
+   "itens": [
+    {
+     "titulo": "Explicação em partes",
+     "texto": "Quatro partes curtas; o mapa mostra onde estamos."
+    },
+    {
+     "titulo": "Checagem rápida",
+     "texto": "Enquete de 45 s, uma linha no chat ou mão na câmera."
+    },
+    {
+     "titulo": "Caso no fim de cada parte",
+     "texto": "A explicação aplicada a um atleta."
+    },
+    {
+     "titulo": "Bilhete de saída",
+     "texto": "Uma frase no chat antes de sair."
+    }
+   ],
+   "faixa": "**Combinado:** câmera aberta e resposta antes da explicação seguinte. Errar na checagem é o que ela serve para mostrar.",
+   "notas": "Explicar o formato em 30 segundos, sem ler os cartões. Hoje a aula é expositiva: eu explico uma ideia de cada vez, e a cada 5 a 7 minutos vocês respondem uma pergunta rápida que só dá para responder se a explicação ficou. Não é prova: é o jeito de eu saber se posso seguir. Interação: mão na câmera, de teste. Polegar para cima quem já liberou um atleta de LCA antes dos 9 meses; para baixo quem nunca liberou. Dizer dois ou três nomes em voz alta, sem julgar."
+  },
+  {
+   "tipo": "mapa",
+   "olho": "Mapa da aula",
+   "titulo": "Quatro perguntas, nesta **ordem**",
+   "tempo_s": 90,
+   "faixa": "**Ao fim:** decidir a liberação com tempo, força, salto e prontidão, e ler o número que sustenta cada critério.",
+   "notas": "O organizador prévio: a turma vê o caminho inteiro antes de começar. Ler as quatro perguntas em voz alta, uma frase para cada. Primeiro, quando: quanto tempo de cirurgia, e por quê. Segundo, o que medir: quais testes expõem o joelho e quais escondem o déficit. Terceiro, como ler o risco: a conta que transforma um estudo em frase para o atleta. Quarto, a cabeça: o que fazer com o medo de voltar. Dizer que essa é a ordem em que a decisão é tomada no consultório, e que cada parte termina com uma síntese e com o mesmo atleta, o Rafael. Para quem está começando: cada parte responde uma pergunta só. Para quem já domina: prestar atenção no tamanho do apoio de cada critério, que muda de parte para parte, do dado de coorte à proposta clínica. Avisar que cada parte termina com duas frases para levar, e que o mapa volta na abertura de cada parte para mostrar onde estamos. Pedir que anotem só as frases da síntese: o resto está no resumo do aluno."
+  },
+  {
+   "tipo": "mapa",
+   "parte": 1,
+   "atual": 1,
+   "tempo_s": 30,
+   "notas": "Onde estamos: parte 1 de 4. A pergunta desta parte é quando. Dizer em uma frase o que vem: um estudo de coorte que acompanhou atletas mês a mês e mostrou quanto o tempo de cirurgia pesa no risco de nova lesão."
+  },
+  {
+   "tipo": "numeros",
+   "parte": 1,
+   "papel": "explicar",
+   "olho": "Parte 1 · Quando",
+   "titulo": "Até o 9º mês, cada mês de espera reduz a taxa de nova lesão pela **metade**",
+   "tempo_s": 180,
+   "itens": [
+    {
+     "numero": "51%",
+     "rotulo": "a menos na taxa de nova lesão por mês de espera, até o 9º mês",
+     "destaque": true
+    },
+    {
+     "numero": "9 meses",
+     "rotulo": "depois disso, esperar mais não reduziu o risco"
+    },
+    {
+     "numero": "106",
+     "rotulo": "atletas de esportes de pivô, seguidos por 2 anos"
+    }
+   ],
+   "linhas": [
+    "**Desenho:** coorte prospectiva de Delaware-Oslo; associação, não ensaio. Não existe ensaio que sorteie o mês de voltar."
+   ],
+   "fonte": [
+    "Grindem2016"
+   ],
+   "notas": "A primeira ideia da aula: o tempo de cirurgia, sozinho, muda o risco. No estudo de Delaware-Oslo, 106 atletas noruegueses de esportes de pivô foram acompanhados por dois anos, com registro mensal de volta ao esporte e de nova lesão. A taxa de nova lesão no joelho caiu 51% a cada mês de espera até o nono mês; depois do nono, esperar mais não reduziu o risco. Explicar a palavra taxa: é o risco por unidade de tempo exposto, e por isso o estudo consegue falar em mês a mês. Dizer o desenho com todas as letras: é uma coorte, mostra associação. Ninguém vai sortear o mês em que o atleta volta, então esse é o melhor dado possível para a pergunta. Explicar o que muda na prática: um atleta que volta no sexto mês e outro que volta no nono não estão no mesmo risco, mesmo que os dois se sintam bem e passem nos mesmos testes. O tempo não substitui os testes, e os testes não substituem o tempo. Dizer também o que o estudo não mostra: ele não diz por que o risco cai, e qualquer explicação sobre maturação do enxerto é hipótese, não dado deste estudo. Não falar ainda dos critérios físicos: são a parte 2."
+  },
+  {
+   "tipo": "pergunta",
+   "parte": 1,
+   "papel": "checar",
+   "olho": "Parte 1 · Checagem",
+   "titulo": "Sem voltar o slide: até que mês esperar reduziu o risco, e **quanto por mês**?",
+   "instrucao": "Uma linha no chat: o mês e a porcentagem. Envie no 3.",
+   "tempo_s": 75,
+   "interacao": {
+    "tipo": "chat_cascata",
+    "duracao_s": 45
+   },
+   "ancora": "um número para o mês e um para a redução.",
+   "desafio": "por que a redução para depois do 9º mês?",
+   "notas": "Checagem de recuperação, não de reconhecimento: a turma escreve de memória. Interação: chat em cascata, 30 segundos para escrever, contar 3, 2, 1 e pedir que enviem juntos. Ler quatro respostas com os nomes. A resposta é até o nono mês, 51% por mês. Se mais da metade errar o mês, voltar 30 segundos ao slide anterior antes de seguir. Para quem está começando, a âncora do slide basta. Desafio para quem já domina: por que a redução para depois do nono mês? Uma resposta defensável é que, depois disso, o que ainda separa quem se machuca de quem não se machuca são os critérios funcionais, assunto da parte 2; o estudo não testa a explicação biológica."
+  },
+  {
+   "tipo": "citacao",
+   "parte": 1,
+   "papel": "aplicacao",
+   "olho": "Parte 1 · No consultório",
+   "titulo": "Rafael quer jogar a **final**",
+   "tempo_s": 90,
+   "origem": "caso",
+   "interacao": {
+    "tipo": "mao_camera",
+    "duracao_s": 20,
+    "inicio_s": 60,
+    "pedido": "Polegar para cima: só pelo tempo, a final está fora. Para baixo: o tempo não decide."
+   },
+   "rotulo": "Aplicação",
+   "fala": "“Sete meses de cirurgia e não sinto nada. A final é daqui a três semanas. Estou liberado, né?”",
+   "fala2": "Rafael, 22 anos, ala de futsal. LCA direito reconstruído com enxerto de isquiotibiais.",
+   "cartao": {
+    "olho": "O que você mediu",
+    "itens": [
+     "Hop simples: 96% da distância da outra perna",
+     "Quadríceps no dinamômetro: 84%",
+     "Sem dor e sem derrame",
+     "Ainda não treina com o time"
+    ]
+   },
+   "notas": "A aplicação da parte 1: o caso entra depois da explicação, não antes. Ler a fala do Rafael em voz alta, com a pressa de quem quer jogar. Ele tem 22 anos, é ala de futsal e está no sétimo mês; a final é em três semanas, ou seja, antes do nono mês. Dizer os quatro dados do cartão, mas avisar que hoje só o tempo entra na conta; o hop e o quadríceps são a parte 2. Interação: mão na câmera. Polegar para cima quem acha que só pelo tempo a final já está fora; para baixo quem acha que o tempo não decide. Chamar uma pessoa de cada lado pelo nome. A leitura que o dado sustenta: no sétimo mês ele ainda está no trecho em que cada mês pesa."
+  },
+  {
+   "tipo": "sintese",
+   "parte": 1,
+   "papel": "sintese",
+   "olho": "Parte 1 · Síntese",
+   "titulo": "O que levar sobre o **tempo**",
+   "tempo_s": 60,
+   "pontos": [
+    {
+     "titulo": "Até o 9º mês, cada mês conta",
+     "texto": "Taxa de nova lesão 51% menor por mês de espera; depois do 9º, sem ganho adicional."
+    },
+    {
+     "titulo": "É associação de coorte",
+     "texto": "É o melhor dado possível para a pergunta: ninguém sorteia o mês de voltar."
+    }
+   ],
+   "faixa": "**Na prática:** antes do 9º mês, o jogo não entra no plano, mesmo sem dor e com o hop bom.",
+   "fonte": [
+    "Grindem2016"
+   ],
+   "notas": "Síntese da parte 1, em duas frases. Até o nono mês, cada mês de espera reduziu a taxa de nova lesão em 51%; depois disso não houve ganho adicional. É associação de coorte, e é o melhor dado possível para a pergunta. Ligar com a próxima: o tempo é necessário, mas o Rafael do nono mês ainda pode ter um joelho que não está pronto. Como saber? Parte 2."
+  },
+  {
+   "tipo": "mapa",
+   "parte": 2,
+   "atual": 2,
+   "tempo_s": 30,
+   "notas": "Onde estamos: parte 2 de 4. A primeira parte disse quando; esta diz o que medir. Dizer o fio da parte: dois estudos mostram que o teste mais usado na clínica, o hop em distância, quase todo mundo passa, e que a força e a altura do salto mostram o que ele esconde."
+  },
+  {
+   "tipo": "figura",
+   "parte": 2,
+   "papel": "explicar",
+   "olho": "Parte 2 · Quem passa em cada teste",
+   "titulo": "Aos 9 meses quase todos passam no hop; metade falha no **quadríceps**",
+   "tempo_s": 165,
+   "figura": {
+    "id": "Welling2018_fig2"
+   },
+   "o_que_olhar": [
+    "Barras vermelhas, 9 meses: no hop simples e no triplo, 97% e 94% passam.",
+    "Quadríceps a 60°/s, o primeiro par de barras: só 53% passam.",
+    "Passar em tudo: 11% aos 9 meses (dado do texto)."
+   ],
+   "destaques": [
+    {
+     "tipo": "retangulo",
+     "x": 0.183,
+     "y": 0.33,
+     "w": 0.05,
+     "h": 0.29,
+     "texto": "2"
+    },
+    {
+     "tipo": "retangulo",
+     "x": 0.562,
+     "y": 0.105,
+     "w": 0.092,
+     "h": 0.515,
+     "texto": "1",
+     "rotulo_pos": "sup-dir"
+    }
+   ],
+   "notas": "Explicar a figura antes de interpretar. Em 62 pacientes testados aos 6 e aos 9 meses, cada par de barras é um critério: em azul, quantos passaram aos 6 meses; em vermelho, aos 9. Ler o eixo: porcentagem de pacientes que passaram. Conduzir o olhar na ordem dos números. Retângulo 1: nos hop tests, quase todos passam aos 9 meses, 96,8% no hop simples e 93,5% no triplo. Retângulo 2: na força de quadríceps a 60 graus por segundo, só 53,2%. E em todos os critérios juntos, 11,3%, um dado que está no texto e não na figura. A ideia do slide: um teste que quase todo mundo passa separa pouco quem está pronto de quem não está. Comparar com a clínica: se o hop é o único teste da bateria, ele libera quase todo mundo no nono mês, inclusive quem ainda tem o quadríceps abaixo de 90%. Para quem está começando: guardar o par de números, 96,8% no hop e 53,2% no quadríceps. Para quem já domina: perguntar a si mesmo se a própria bateria tem algum teste que pelo menos metade dos pacientes ainda reprova no nono mês."
+  },
+  {
+   "tipo": "enquete",
+   "parte": 2,
+   "papel": "checar",
+   "olho": "Parte 2 · Checagem",
+   "titulo": "O que o hop **não** garante",
+   "tempo_s": 75,
+   "interacao": {
+    "tipo": "enquete",
+    "duracao_s": 40
+   },
+   "pergunta": "Um atleta no 9º mês passa no hop simples com 96% da outra perna. O que dá para dizer da força de quadríceps dele?",
+   "opcoes": {
+    "A": "Está acima de 90%: quem passa no hop tem força.",
+    "B": "Nada: metade dos que passam no hop falha no quadríceps.",
+    "C": "Está abaixo de 90%: hop alto indica compensação.",
+    "D": "Não importa: com 9 meses o hop basta."
+   },
+   "gabarito": "B",
+   "notas": "Checagem de compreensão: a turma precisa usar a figura num atleta novo, não lembrar um número. Interação: enquete de 40 segundos no Meet, sem comentar as opções. Mostrar o resultado e pedir um voluntário da opção menos votada, que abre o microfone e defende em 15 segundos; o Meet mostra só a contagem. A resposta é a B: aos 9 meses 96,8% passaram no hop e só 53,2% no quadríceps, então o hop não informa a força. A opção C é o erro de quem ouviu a parte da compensação antes da hora: hop alto não indica força baixa, só não garante força alta."
+  },
+  {
+   "tipo": "figura",
+   "parte": 2,
+   "papel": "explicar",
+   "layout": "total",
+   "olho": "Parte 2 · Por que o hop engana",
+   "titulo": "O joelho operado trabalha menos e o **quadril compensa**",
+   "tempo_s": 150,
+   "figura": {
+    "id": "Kotsifaki2022_fig2"
+   },
+   "o_que_olhar": [
+    "Painel A, propulsão: o joelho faz 29% do trabalho no lado operado e 34% nos outros.",
+    "Na mesma coluna, o quadril sobe para 36%: o trabalho migrou.",
+    "Atletas já liberados, com 97% de simetria na distância do hop."
+   ],
+   "destaques": [
+    {
+     "tipo": "retangulo",
+     "x": 0.083,
+     "y": 0.39,
+     "w": 0.062,
+     "h": 0.215,
+     "texto": "1"
+    },
+    {
+     "tipo": "retangulo",
+     "x": 0.083,
+     "y": 0.125,
+     "w": 0.062,
+     "h": 0.26,
+     "cor": "marinho",
+     "texto": "2"
+    }
+   ],
+   "notas": "O mecanismo que explica a figura anterior. Vinte e seis atletas homens, já liberados para o esporte depois do LCA, comparados com 22 controles. Explicar a figura antes de interpretar: cada coluna soma 100% do trabalho articular no salto, dividido entre quadril, joelho e tornozelo. No painel A, salto vertical unipodal, olhar a primeira coluna: no lado operado o joelho faz 29% do trabalho, contra 34% no outro lado e nos controles, e o quadril sobe para 36%. O atleta salta, mas quem empurra é o quadril. E esses atletas tinham 97% de simetria na distância do hop. É por isso que o hop tranquiliza: o resultado sai, mesmo com o joelho trabalhando menos. Explicar a consequência clínica: o teste mede o desempenho do membro inteiro, e o membro inteiro consegue esconder um joelho que ainda não empurra. O que o fisioterapeuta quer saber na liberação é se o joelho aguenta a carga, e para isso precisa de um teste que dê menos espaço para o quadril compensar. Não confundir com causa de lesão: o estudo é transversal e mostra a distribuição do trabalho, não o risco."
+  },
+  {
+   "tipo": "barras",
+   "parte": 2,
+   "papel": "explicar",
+   "olho": "Parte 2 · O mesmo atleta, três testes",
+   "titulo": "Na distância ele parece pronto; na **altura**, não",
+   "tempo_s": 120,
+   "interacao": {
+    "tipo": "mao_camera",
+    "duracao_s": 20,
+    "inicio_s": 80,
+    "pedido": "Polegar para cima: mede altura de salto em uma perna. Para baixo: mede só distância."
+   },
+   "rotulo": "Simetria entre as pernas, em % (26 atletas já liberados)",
+   "categorias": [
+    "Hop em distância",
+    "Salto vertical unipodal",
+    "Drop jump unipodal"
+   ],
+   "series": [
+    {
+     "nome": "Simetria (%)",
+     "valores": [
+      97,
+      83,
+      77
+     ]
+    }
+   ],
+   "destaque_categorias": [
+    1,
+    2
+   ],
+   "legenda_destaque": "Abaixo de 90%",
+   "formato": "0",
+   "lateral": [
+    {
+     "estilo": "escuro",
+     "olho": "E a perna de referência?",
+     "texto": "Aos 6 meses, 57,1% atingiram 90% de simetria. Só 28,6% atingiram 90% da perna sã de antes da cirurgia.",
+     "nota": "70 atletas, força e quatro hop tests."
+    },
+    {
+     "estilo": "claro",
+     "texto": "**Leitura:** simetria alta pode ser duas pernas fracas."
+    }
+   ],
+   "fonte": [
+    "Kotsifaki2022",
+    "Wellsandt2017"
+   ],
+   "notas": "Os mesmos 26 atletas em três testes: 97% de simetria na distância do hop, 83% na altura do salto vertical unipodal e 77% na altura do drop jump unipodal. A distância esconde o que a altura mostra. O cartão à direita traz o segundo problema, de outro estudo: aos 6 meses, 57,1% atingiam 90% de simetria, mas só 28,6% atingiam 90% do que a perna sã fazia antes da cirurgia. A perna de referência também caiu, e a simetria alta pode ser duas pernas fracas. Esse segundo estudo foi conferido só no resumo. Interação: mão na câmera. Polegar para cima quem mede altura de salto em uma perna; para baixo quem mede só distância. Dizer o que viu, sem julgar."
+  },
+  {
+   "tipo": "comparacao",
+   "parte": 2,
+   "papel": "explicar",
+   "layout": "colunas",
+   "olho": "Parte 2 · Lado a lado",
+   "titulo": "Dois saltos, duas **leituras**",
+   "tempo_s": 90,
+   "faixas": [
+    {
+     "rotulo": "Hop em distância",
+     "itens": [
+      {
+       "titulo": "O que mede",
+       "texto": "Até onde o corpo vai; o quadril pode empurrar."
+      },
+      {
+       "titulo": "Atletas já liberados",
+       "texto": "97% de simetria."
+      },
+      {
+       "titulo": "Na liberação",
+       "texto": "Tranquiliza: quase todos passam."
+      }
+     ]
+    },
+    {
+     "rotulo": "Altura do salto em uma perna",
+     "destaque": true,
+     "itens": [
+      {
+       "titulo": "O que mede",
+       "texto": "Quanto o membro empurra para cima."
+      },
+      {
+       "titulo": "Os mesmos atletas",
+       "texto": "83% no vertical, 77% no drop jump."
+      },
+      {
+       "titulo": "Na liberação",
+       "texto": "Expõe o déficit do joelho.",
+       "destaque": true
+      }
+     ]
+    }
+   ],
+   "fonte": [
+    "Kotsifaki2022",
+    "Welling2018"
+   ],
+   "notas": "A comparação que fecha a explicação da parte, linha a linha. O hop em distância mede até onde o corpo vai, e o corpo pode chegar lá com o quadril empurrando; nos atletas já liberados a simetria foi de 97%, e quase todos passam aos 9 meses. A altura do salto em uma perna deixa menos espaço para compensar; nos mesmos atletas, 83% no salto vertical e 77% no drop jump. Dizer com clareza o tamanho do apoio: o estudo mostrou o déficit, não testou ponto de corte. O corte de 90% para a altura é proposta clínica nossa. Desafio para quem já domina: o que acontece com essa comparação se a perna sã também perdeu força, como no cartão do slide anterior?"
+  },
+  {
+   "tipo": "pergunta",
+   "parte": 2,
+   "papel": "aplicacao",
+   "olho": "Parte 2 · Aplicação",
+   "titulo": "O Rafael no 9º mês: hop 96%, quadríceps 84%, altura do salto 79%. **O que ainda não passa?**",
+   "instrucao": "Uma linha no chat: as medidas que não passam e o que muda no treino. Envie no 3.",
+   "tempo_s": 105,
+   "interacao": {
+    "tipo": "chat_cascata",
+    "duracao_s": 60
+   },
+   "ancora": "compare cada medida com 90%.",
+   "desafio": "sem medida de antes da lesão, como estimar a perna sã?",
+   "notas": "A aplicação da parte 2. Os números são do caso fictício: suponha que no nono mês o Rafael ainda tem hop em 96%, quadríceps em 84% e altura do salto unipodal em 79%. Interação: chat em cascata, 45 segundos para escrever, contar 3, 2, 1. Ler quatro respostas com os nomes e agrupar: quem viu as duas medidas abaixo de 90%, quem viu só uma, quem liberou pelo hop. A resposta esperada: quadríceps e altura do salto ainda não passam; o treino das próximas semanas prioriza força de quadríceps e potência vertical em uma perna. Para quem está começando, a âncora: comparar cada número com 90%. Desafio: como estimar a perna sã sem medida de antes da lesão."
+  },
+  {
+   "tipo": "sintese",
+   "parte": 2,
+   "papel": "sintese",
+   "olho": "Parte 2 · Síntese",
+   "titulo": "O que levar sobre os **testes**",
+   "tempo_s": 60,
+   "pontos": [
+    {
+     "titulo": "O hop em distância quase todos passam",
+     "texto": "Aos 9 meses, 96,8% no hop simples e 53,2% no quadríceps."
+    },
+    {
+     "titulo": "Força e altura expõem o joelho",
+     "texto": "Liberados com 97% na distância tinham 83% e 77% na altura."
+    }
+   ],
+   "faixa": "**Na prática:** a bateria de liberação mede força de quadríceps e altura do salto em uma perna.",
+   "fonte": [
+    "Welling2018",
+    "Kotsifaki2022"
+   ],
+   "notas": "Síntese da parte 2. Primeiro: o hop em distância quase todos passam aos 9 meses, 96,8%, enquanto só 53,2% passam na força de quadríceps. Segundo: atletas já liberados com 97% de simetria na distância tinham 83% e 77% na altura dos saltos unipodais. Ligar com a próxima parte: até aqui, números de quem passa e de quem não passa. Mas quanto risco o critério tira? Para isso é preciso ler o número de risco, que é a parte 3."
+  },
+  {
+   "tipo": "mapa",
+   "parte": 3,
+   "atual": 3,
+   "tempo_s": 30,
+   "notas": "Onde estamos: parte 3 de 4. As duas primeiras partes disseram quando e o que medir. Esta parte ensina a conta que transforma um estudo em frase para o atleta: risco absoluto, diferença e intervalo de confiança. É a parte mais técnica; quem já domina, use para conferir o próprio raciocínio."
+  },
+  {
+   "tipo": "numeros",
+   "parte": 3,
+   "papel": "explicar",
+   "olho": "Parte 3 · O dado",
+   "titulo": "Sem critério, quase **4 em 10** se machucam de novo",
+   "tempo_s": 120,
+   "interacao": {
+    "tipo": "mao_camera",
+    "duracao_s": 20,
+    "inicio_s": 95,
+    "pedido": "Polegar para cima: 5,6% é o risco de quem passou. Para baixo: é quanto o risco cai."
+   },
+   "itens": [
+    {
+     "numero": "38,2%",
+     "rotulo": "tiveram nova lesão no joelho ao voltar sem passar nos critérios (21 de 55)"
+    },
+    {
+     "numero": "5,6%",
+     "rotulo": "entre os que passaram em tudo (1 de 18)",
+     "destaque": true
+    },
+    {
+     "numero": "0,16",
+     "rotulo": "razão de risco, com intervalo de confiança de 0,02 a 1,20"
+    }
+   ],
+   "linhas": [
+    "**Passar:** acima de 90 em força de quadríceps, quatro hop tests e duas escalas."
+   ],
+   "fonte": [
+    "Grindem2016"
+   ],
+   "notas": "O dado que circula. No mesmo estudo de Delaware-Oslo, 38,2% dos que voltaram ao esporte de pivô sem passar nos critérios tiveram nova lesão no joelho em dois anos: 21 de 55. Entre os que passaram em tudo, 1 de 18, ou 5,6%. A razão de risco foi 0,16, com intervalo de confiança de 95% de 0,02 a 1,20. Dizer o que é passar: acima de 90 em força de quadríceps, nos quatro hop tests e nas duas escalas. Não interpretar ainda o 0,16: o próximo slide faz a conta junto, passo a passo. Interação: mão na câmera, para checar a leitura do slide antes da conta. Polegar para cima quem lê o 5,6% como o risco de quem passou; para baixo quem lê como quanto o risco cai. A resposta é para cima: 5,6% é risco, não redução. Se a sala se dividir, repetir a frase: cada porcentagem grande do slide é o risco de um grupo."
+  },
+  {
+   "tipo": "exemplo",
+   "parte": 3,
+   "papel": "exemplo",
+   "olho": "Parte 3 · Exemplo resolvido",
+   "titulo": "Do risco relativo ao **absoluto**",
+   "tempo_s": 180,
+   "dado": {
+    "olho": "Nova lesão em 2 anos",
+    "itens": [
+     "Sem passar: 21 de 55",
+     "Passando: 1 de 18",
+     "Razão de risco 0,16 (IC 0,02 a 1,20)"
+    ]
+   },
+   "passos": [
+    {
+     "titulo": "Risco em cada grupo",
+     "conta": "21 ÷ 55 = **38,2%**  ·  1 ÷ 18 = **5,6%**"
+    },
+    {
+     "titulo": "Diferença absoluta",
+     "conta": "38,2 − 5,6 = **32,6 pontos**"
+    },
+    {
+     "titulo": "Quantos para um a menos",
+     "conta": "1 ÷ 0,326 ≈ **3** (não é NNT)"
+    },
+    {
+     "titulo": "Precisão",
+     "conta": "o IC **cruza o 1**"
+    }
+   ],
+   "resposta": "**Leitura:** diferença grande; com 1 evento em 18, tamanho incerto.",
+   "fonte": [
+    "Grindem2016",
+    "contas: calc. a partir de Grindem 2016"
+   ],
+   "notas": "Exemplo resolvido: eu faço a conta inteira, a turma acompanha. Passo 1, o risco em cada grupo: 21 dividido por 55 dá 38,2%; 1 dividido por 18 dá 5,6%. Passo 2, a diferença absoluta: 38,2 menos 5,6 dá 32,6 pontos percentuais, ou seja, cerca de 33 pessoas a menos com nova lesão a cada 100. Passo 3, quantos atletas precisariam passar nos critérios para haver um a menos com nova lesão: 1 dividido por 0,326 dá 3,07, cerca de 3. Dizer com todas as letras que isso é conta a partir de uma coorte, não o número necessário para tratar de um ensaio: quem passa nos critérios é diferente de quem não passa em outras coisas também. Passo 4, a precisão: o intervalo da razão de risco vai de 0,02 a 1,20, de 98% menos a 20% mais, e cruza o 1, porque o grupo que passou teve um evento só. Leitura para o atleta: quem volta sem passar se machuca bem mais; o tamanho exato, ninguém sabe. Mostrar por que a ordem dos passos importa: quem começa pela razão de risco fala em 84% a menos e esquece que o grupo que passou tinha só 18 pessoas; quem começa pelo risco de cada grupo vê o tamanho da diferença e o tamanho da amostra ao mesmo tempo. Para quem está começando: guardar os passos 1 e 2. Desafio: quantos eventos a mais entre os 18 bastariam para mudar a conclusão?"
+  },
+  {
+   "tipo": "enquete",
+   "parte": 3,
+   "papel": "checar",
+   "olho": "Parte 3 · Checagem",
+   "titulo": "“Passar reduz a nova lesão em **84%**”",
+   "tempo_s": 75,
+   "interacao": {
+    "tipo": "enquete",
+    "duracao_s": 45
+   },
+   "pergunta": "Razão de risco 0,16; intervalo de confiança de 95% de 0,02 a 1,20; 1 nova lesão entre os 18 que passaram. O que você pode afirmar?",
+   "opcoes": {
+    "A": "Está provado: passar corta o risco em 84%.",
+    "B": "Não há efeito: o intervalo cruza o 1.",
+    "C": "A direção é de proteção grande; a estimativa é imprecisa.",
+    "D": "Nada: o estudo não é randomizado."
+   },
+   "gabarito": "C",
+   "notas": "Checagem da parte 3: a frase que circula, e a turma escolhe a leitura certa do número que acabou de calcular. Interação: enquete de 45 segundos, sem comentar as opções. Mostrar o resultado e pedir um voluntário de cada opção errada, começando pela menos votada, para defender em 15 segundos; o Meet mostra só a contagem. Passar ao próximo slide para conferir."
+  },
+  {
+   "tipo": "enquete",
+   "parte": 3,
+   "papel": "conferir",
+   "olho": "Parte 3 · Conferindo",
+   "titulo": "Direção forte, precisão **baixa**",
+   "tempo_s": 60,
+   "pergunta": "Razão de risco 0,16; intervalo de confiança de 95% de 0,02 a 1,20.",
+   "opcoes": {
+    "A": "Está provado: passar corta o risco em 84%.",
+    "B": "Não há efeito: o intervalo cruza o 1.",
+    "C": "A direção é de proteção grande; a estimativa é imprecisa.",
+    "D": "Nada: o estudo não é randomizado."
+   },
+   "revela": "C",
+   "justificativa": "**O que sustenta:** 1 nova lesão em 18 contra 21 em 55: 33 pontos de diferença. Com um evento só, o intervalo vai de 98% menos a 20% mais.",
+   "fonte": [
+    "Grindem2016"
+   ],
+   "notas": "A resposta que o estudo sustenta é a C. A diferença absoluta é grande, cerca de 33 pontos percentuais, mas o grupo que passou tinha 18 pessoas e um evento, e por isso o intervalo vai de 0,02 a 1,20. Quem votou A leu o risco relativo como certeza; quem votou B leu o intervalo que cruza o 1 como ausência de efeito, e ausência de evidência não é evidência de ausência. Quem votou D: coorte não prova causa, mas aqui não existe ensaio possível."
+  },
+  {
+   "tipo": "pergunta",
+   "parte": 3,
+   "papel": "aplicacao",
+   "olho": "Parte 3 · Aplicação",
+   "titulo": "O Rafael pergunta: “Se eu passar nos testes, qual é o **meu risco**?”",
+   "instrucao": "Responda em uma frase, como falaria com ele, com um número. Envie no 3.",
+   "tempo_s": 90,
+   "interacao": {
+    "tipo": "chat_cascata",
+    "duracao_s": 50
+   },
+   "ancora": "use os dois riscos, 38,2% e 5,6%.",
+   "desafio": "o que você diz sobre o intervalo sem assustar o atleta?",
+   "notas": "A aplicação da parte 3: transformar a conta em frase de consultório. Interação: chat em cascata, 40 segundos para escrever, contar 3, 2, 1. Ler quatro frases com os nomes. Elogiar a frase que usa risco absoluto e diz a incerteza; corrigir, sem expor ninguém, a frase que promete 84% a menos. Explicar por que essa diferença importa: o atleta ouve 84% a menos como quase nenhum risco, e a conta mostra que, mesmo passando, ele continua com risco, e que o tamanho exato é incerto. Uma frase possível: no estudo, de cada 100 que voltaram sem passar, uns 38 se machucaram de novo em dois anos; entre os que passaram, perto de 6, mas o grupo era pequeno e o número exato é incerto. Para quem está começando, a âncora: usar os dois riscos. Desafio: como dizer a incerteza sem assustar."
+  },
+  {
+   "tipo": "sintese",
+   "parte": 3,
+   "papel": "sintese",
+   "olho": "Parte 3 · Síntese",
+   "titulo": "O que levar sobre ler o **risco**",
+   "tempo_s": 60,
+   "pontos": [
+    {
+     "titulo": "Risco absoluto antes do relativo",
+     "texto": "38,2% contra 5,6%: 33 pontos, em vez de “84% a menos”."
+    },
+    {
+     "titulo": "Intervalo largo não é ausência de efeito",
+     "texto": "0,02 a 1,20 com um evento: direção forte, tamanho incerto."
+    }
+   ],
+   "faixa": "**Na prática:** fale com o atleta em pessoas a cada 100, e diga quando o número é incerto.",
+   "fonte": [
+    "Grindem2016"
+   ],
+   "notas": "Síntese da parte 3. Primeiro: diga o risco absoluto antes do relativo, 38,2% contra 5,6%, cerca de 33 pontos. Segundo: intervalo largo que cruza o 1 não é ausência de efeito; com um evento, a direção é forte e o tamanho é incerto. Ligar com a última parte: o Rafael passou nos testes físicos. Falta uma coisa, que não aparece no dinamômetro."
+  },
+  {
+   "tipo": "mapa",
+   "parte": 4,
+   "atual": 4,
+   "tempo_s": 30,
+   "notas": "Onde estamos: parte 4 de 4. Quando, o que medir e como ler o risco já foram. Agora a cabeça: a escala de prontidão psicológica, o que ela prevê e o que fazer com ela. Vamos usar a mesma conta de acurácia que se usa para qualquer teste diagnóstico."
+  },
+  {
+   "tipo": "figura",
+   "parte": 4,
+   "papel": "explicar",
+   "olho": "Parte 4 · O teste",
+   "titulo": "O ACL-RSI acende o alerta, mas dá muito **alarme falso**",
+   "tempo_s": 150,
+   "largura_figura": 4.6,
+   "figura": {
+    "id": "Faleide2021_fig2"
+   },
+   "o_que_olhar": [
+    "A curva fica pouco acima da diagonal: área de 0,69 (IC 95% 0,58 a 0,79).",
+    "No corte de 47: sensibilidade de 85%, especificidade de 45%.",
+    "De 103 seguidos por 2 anos, 42% voltaram ao nível de antes."
+   ],
+   "destaques": [
+    {
+     "tipo": "seta",
+     "de": [
+      0.8,
+      0.5
+     ],
+     "para": [
+      0.6,
+      0.245
+     ],
+     "texto": "corte 47"
+    }
+   ],
+   "lateral": [
+    {
+     "estilo": "escuro",
+     "texto": "**Leitura:** abaixo de 47, converse e trabalhe o medo. O número sozinho não veta ninguém."
+    }
+   ],
+   "fonte": [
+    "Cronstrom2023"
+   ],
+   "notas": "Explicar os eixos antes da curva: para cima, a sensibilidade; para a direita, os falsos alarmes. A diagonal é o acaso. A curva do ACL-RSI fica pouco acima dela: área de 0,69, com intervalo de 0,58 a 0,79. Em 103 atletas seguidos por dois anos, 42% voltaram ao nível de antes. No corte de 47 aos 9 meses, a sensibilidade é de 85% e a especificidade de 45%: quase todos os que não voltaram estavam abaixo do corte, mas mais da metade dos que voltaram também estava. Acrescentar de viva voz: na meta-análise de Cronström, menor prontidão psicológica dobrou a chance de ruptura do enxerto, razão de chances de 2,18, com certeza muito baixa; essa meta-análise foi conferida só no resumo."
+  },
+  {
+   "tipo": "exemplo",
+   "parte": 4,
+   "papel": "checar",
+   "olho": "Parte 4 · Exemplo parcialmente resolvido",
+   "titulo": "Quanto um ACL-RSI abaixo de 47 muda a **chance**?",
+   "tempo_s": 150,
+   "interacao": {
+    "tipo": "chat_cascata",
+    "duracao_s": 60,
+    "inicio_s": 45
+   },
+   "dado": {
+    "olho": "O dado",
+    "texto": "Corte de 47 aos 9 meses, para não voltar ao nível de antes.",
+    "itens": [
+     "Sensibilidade: 85%",
+     "Especificidade: 45%"
+    ]
+   },
+   "passos": [
+    {
+     "titulo": "Razão de verossimilhança positiva",
+     "conta": "0,85 ÷ (1 − 0,45) ≈ **1,5**"
+    },
+    {
+     "titulo": "Razão de verossimilhança negativa",
+     "lacuna": "(1 − 0,85) ÷ 0,45 = ?"
+    },
+    {
+     "titulo": "Leitura",
+     "conta": "RV+ abaixo de 2 muda **pouco** a chance"
+    }
+   ],
+   "lacunas": [
+    2
+   ],
+   "ancora": "RV− = (1 − sensibilidade) ÷ especificidade.",
+   "desafio": "RV− perto de 0,3: o que um escore alto permite dizer?",
+   "fonte": [
+    "Faleide2021",
+    "contas: calc. a partir de Faleide 2021"
+   ],
+   "notas": "Exemplo parcialmente resolvido: o primeiro passo está feito, o segundo é da turma. Passo 1: a razão de verossimilhança positiva é a sensibilidade dividida por um menos a especificidade: 0,85 dividido por 0,55 dá 1,55, cerca de 1,5. Explicar: um resultado positivo multiplica a chance pré-teste por 1,5, e razões abaixo de 2 mudam pouco a probabilidade. Interação: chat em cascata depois de explicar o passo 1. A turma calcula a razão negativa: 30 segundos, contar 3, 2, 1 e pedir que enviem o número. A resposta é 0,15 dividido por 0,45, que dá 0,33. Ler as respostas com os nomes e mostrar a conta de quem acertou. Para quem está começando, a âncora no slide dá a fórmula. Desafio: com RV negativa perto de 0,3, um escore alto reduz a chance de não voltar a cerca de um terço da chance anterior; vale dizer o que isso significa para o atleta confiante. As duas razões são conta nossa a partir da sensibilidade e da especificidade publicadas."
+  },
+  {
+   "tipo": "citacao",
+   "parte": 4,
+   "papel": "aplicacao",
+   "fundo": "escuro",
+   "olho": "Parte 4 · Aplicação",
+   "titulo": "Passou em tudo. **Quase.**",
+   "tempo_s": 75,
+   "origem": "caso",
+   "contexto": "Dois meses depois, o Rafael cumpre tempo, força e salto. Na conversa de liberação, ele diz:",
+   "fala": "“Passei em tudo, eu sei. Mas toda vez que vou girar em cima dessa perna, eu travo. Tenho medo de estourar de novo.”",
+   "cartao": {
+    "olho": "O que você sabe",
+    "itens": [
+     "9 meses de cirurgia",
+     "Quadríceps: 92% da outra perna",
+     "Altura do salto: 90%",
+     "ACL-RSI: 42 em 100"
+    ]
+   },
+   "notas": "A aplicação da parte 4 começa pelo caso. Contar que ele treinou força por oito semanas e cumpriu os três critérios físicos. Ler a fala em voz alta, devagar, e fazer uma pausa. Dizer os quatro dados do cartão; o último é o que a parte acabou de explicar: ACL-RSI 42, abaixo do corte de 47. Perguntar em voz alta, sem abrir votação: o que a razão de verossimilhança de 1,5 diz sobre o 42 dele? A resposta: é um alerta que muda pouco a chance; o medo dele é informação clínica e pede conversa e exposição, não veto."
+  },
+  {
+   "tipo": "etapas",
+   "parte": 4,
+   "papel": "aplicacao",
+   "olho": "Parte 4 · A volta",
+   "titulo": "A volta em **degraus**",
+   "tempo_s": 75,
+   "interacao": {
+    "tipo": "mao_camera",
+    "duracao_s": 20,
+    "inicio_s": 50,
+    "pedido": "Polegar para cima: põe o Rafael no degrau 2 hoje. Para baixo: deixa no degrau 1."
+   },
+   "numerar": true,
+   "passos": [
+    {
+     "titulo": "Treino individual",
+     "texto": "Corrida, mudança de direção e bola."
+    },
+    {
+     "titulo": "Coletivo sem contato",
+     "texto": "Treino do time; giro previsível."
+    },
+    {
+     "titulo": "Coletivo completo",
+     "texto": "Contato e giro reativo."
+    },
+    {
+     "titulo": "Jogo",
+     "texto": "Minutos controlados.",
+     "destaque": true
+    }
+   ],
+   "cartoes_baixo": [
+    {
+     "texto": "**Para subir:** critérios cumpridos e duas semanas no degrau sem dor, sem derrame e sem travar no giro."
+    },
+    {
+     "estilo": "escuro",
+     "texto": "**Para o Rafael:** entra hoje no degrau 2; ACL-RSI de novo em 3 ou 4 semanas."
+    }
+   ],
+   "fonte": [
+    "degraus e prazos: proposta clínica da equipe"
+   ],
+   "notas": "Uma conduta possível para o Rafael. Quatro degraus: treino individual, coletivo sem contato, coletivo completo e jogo com minutos controlados. Para subir: critérios cumpridos e duas semanas no degrau sem dor, sem derrame e sem travar no giro. O giro temido entra aos poucos, do previsível ao reativo, e o ACL-RSI é repetido a cada três ou quatro semanas. Interação: mão na câmera. Polegar para cima quem o colocaria no degrau 2 hoje, para baixo quem o deixaria no 1. Pedir a uma pessoa de cada lado que justifique em uma frase. Os degraus e os prazos são proposta clínica, não protocolo testado em ensaio."
+  },
+  {
+   "tipo": "sintese",
+   "parte": 4,
+   "papel": "sintese",
+   "olho": "Parte 4 · Síntese",
+   "titulo": "O que levar sobre a **cabeça**",
+   "tempo_s": 60,
+   "pontos": [
+    {
+     "titulo": "ACL-RSI abaixo de 47 é alerta, não veto",
+     "texto": "Sensibilidade de 85%, especificidade de 45%; RV+ de cerca de 1,5."
+    },
+    {
+     "titulo": "O medo entra no plano",
+     "texto": "Exposição em degraus e nova medida em 3 a 4 semanas (proposta clínica)."
+    }
+   ],
+   "faixa": "**Na prática:** escore abaixo de 47 abre a conversa sobre o medo; não veta o jogo sozinho.",
+   "fonte": [
+    "Faleide2021",
+    "RV: calc.; degraus: proposta clínica"
+   ],
+   "notas": "Síntese da parte 4. Primeiro: o ACL-RSI abaixo de 47 é alerta, não veto; sensibilidade de 85%, especificidade de 45%, razão de verossimilhança positiva de cerca de 1,5, uma conta nossa. Segundo: o medo entra no plano, com exposição em degraus e nova medida em três a quatro semanas, e isso é proposta clínica. Avisar que vem o fechamento: uma pergunta de memória e o bilhete de saída. Retomar o mapa em voz alta, sem voltar o slide: quando, o que medir, como ler o risco e a cabeça. As quatro partes são a ordem em que a liberação é decidida no consultório."
+  },
+  {
+   "tipo": "pergunta",
+   "papel": "recuperar",
+   "olho": "Fechamento · De memória",
+   "titulo": "Sem voltar os slides: os **quatro critérios** da liberação, com o número de cada um",
+   "instrucao": "Uma linha no chat. Envie no 3.",
+   "tempo_s": 90,
+   "interacao": {
+    "tipo": "chat_cascata",
+    "duracao_s": 50
+   },
+   "notas": "Recuperação da aula inteira, na ordem do mapa. Interação: chat em cascata, 40 segundos para escrever, sem olhar anotações. Contar até 3. Ler quatro respostas em voz alta, com os nomes, e completar na ordem das partes: tempo, 9 meses; força de quadríceps, 90% da outra perna; altura do salto em uma perna, 90%, proposta clínica; e ACL-RSI, 47 como gatilho de conversa. Dizer o que quase ninguém lembrou: é isso que o resumo do aluno reforça."
+  },
+  {
+   "tipo": "pergunta",
+   "papel": "saida",
+   "bilhete_saida": true,
+   "olho": "Antes de sair",
+   "titulo": "O que você vai **mudar** na próxima liberação de LCA?",
+   "instrucao": "Uma frase no chat. Quem enviar, está liberado.",
+   "tempo_s": 75,
+   "interacao": {
+    "tipo": "chat",
+    "duracao_s": 60
+   },
+   "notas": "Bilhete de saída. Interação: uma frase no chat, e só sai quem enviar. Ler cinco em voz alta, com os nomes. Copiar as respostas do chat antes de encerrar: servem para abrir a próxima aula e para saber o que ficou. Avisar que o resumo de uma página e o pós-teste chegam pelo grupo. Agradecer pelo nome quem mais participou."
+  },
+  {
+   "tipo": "referencias",
+   "outras": [
+    "contas de risco absoluto e de razões de verossimilhança feitas a partir dos estudos (calc.)",
+    "testes, cortes e degraus marcados como proposta clínica da equipe"
+   ]
+  }
+ ]
+}

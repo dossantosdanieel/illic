@@ -58,6 +58,9 @@ def argumentos() -> argparse.Namespace:
     ap.add_argument("--artigo", action="append", default=[],
                     help="artigo que o usuário já quer na aula: PMID, DOI ou 'Autor ano (revista)' (repita)")
     ap.add_argument("--material-base", help="aula, apostila ou slides já existentes que servem de base")
+    ap.add_argument("--formato", choices=tuple(C.FORMATOS), default=C.formato_padrao(prefs),
+                    help="formato pedagógico: expositiva (com checagens, 45 a 50 min) ou caso (guiada por caso, "
+                         f"30 a 35 min). Padrão das preferências: {C.formato_padrao(prefs)}")
     ap.add_argument("--formatos", default="enquete,chat_cascata,salas,mao_camera,chat",
                     help="interações disponíveis na plataforma, separadas por vírgula "
                          f"(nomes canônicos: {', '.join(C.INTERACOES)})")
@@ -125,8 +128,8 @@ def recuperar_anterior(pasta: Path) -> dict:
 
 def montar_briefing(a: argparse.Namespace, pasta: Path, raiz: Path, anteriores: list[dict], formatos: list[str]) -> str:
     P = C.MARCA_PREENCHER
-    prefs = C.ler_preferencias()
-    duracao = C.pref(prefs, "Duração", "30 a 35 minutos. Acima de 35 é erro.")
+    F = C.FORMATOS[a.formato]
+    origem_fmt = "preferências" if a.formato == C.formato_padrao() else "pedido"
     linhas = [f"# Briefing · {a.tema}", ""]
     linhas.append(f"**Pasta:** `{pasta.name}` · criada em {C.hoje()} por `nova_aula.py` (skill boost-education).")
     if a.trilha:
@@ -136,7 +139,10 @@ def montar_briefing(a: argparse.Namespace, pasta: Path, raiz: Path, anteriores: 
     linhas += [
         f"**Público:** {a.publico}",
         f"**Níveis:** {a.nivel}",
-        f"**Formato:** {a.plataforma}, {duracao.split('.')[0].strip()} (alvo 32 min). Nível técnico alto, aprendizagem ativa. "
+        f"**Formato pedagógico:** {F['nome']} (`{a.formato}`; vai para `\"formato\": \"{a.formato}\"` em meta do "
+        f"deck.json; escolhido por: {origem_fmt}).",
+        f"**Duração e estrutura:** {a.plataforma}, {F['duracao']}, alvo {F['alvo']} min. {F['estrutura'][0].upper()}"
+        f"{F['estrutura'][1:]}. Nível técnico alto (números com IC, DMCI, NNT/NNH, dose prescritível, certeza). "
         "Marca illic ACADEMY · BOOST Education.",
         f"**Apresentador:** {a.apresentador}.",
     ]
@@ -168,9 +174,10 @@ def montar_briefing(a: argparse.Namespace, pasta: Path, raiz: Path, anteriores: 
     linhas += [f"- {x}" for x in a.artigo] if a.artigo else ["- nenhum informado (entram como sentinelas se aparecerem)"]
     linhas += ["", "## Material de base", "", f"- {a.material_base}" if a.material_base else "- nenhum", ""]
     if anteriores:
+        antes = "do mapa da aula" if a.formato == "expositiva" else "do caso novo"
         linhas += ["## Recuperação espaçada na abertura", "",
                    "A abertura desta aula começa com 1 ou 2 perguntas de recuperação sobre a aula anterior, "
-                   "respondidas de memória (enquete ou chat em cascata), antes do caso novo. Não é revisão expositiva: "
+                   f"respondidas de memória (enquete ou chat em cascata), antes {antes}. Não é revisão expositiva: "
                    "a turma tenta lembrar, depois confere. Use as respostas mais fracas do bilhete de saída anterior.", ""]
         for an in anteriores:
             linhas.append(f"### {an['titulo']}")
@@ -287,6 +294,7 @@ def main() -> int:
             feitos.append(f"plano da trilha: {trilha} (existente; acrescente esta aula nele)")
 
     print(("SIMULAÇÃO: nada foi gravado.\n" if a.simular else "") + f"Aula: {pasta}")
+    print(f"Formato: {a.formato} ({C.FORMATOS[a.formato]['nome']}, {C.FORMATOS[a.formato]['faixa']})")
     for f in feitos:
         print(f"  · {f}")
     atual = brief.read_text(encoding="utf-8", errors="replace") if brief.exists() and not a.simular else texto

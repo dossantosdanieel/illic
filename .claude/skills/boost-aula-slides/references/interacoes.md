@@ -19,12 +19,48 @@ interação: responde quem já sabe, e o silêncio parece consenso.
 
 ## Quantas e onde
 
-- 5 a 12 interações, em pelo menos 3 formatos, a primeira antes de 3 min e nunca mais de 6 a 7 min sem
-  nenhuma (o validador confere; a razão está em `desenho-instrucional.md`, seção 5).
+- **Aula de caso:** 5 a 12 interações, em pelo menos 3 formatos, a primeira antes de 3 min e nunca mais de
+  6 a 7 min sem nenhuma (o validador confere; a razão está em `desenho-instrucional.md`, seção 5).
+- **Aula expositiva:** 6 a 10 checagens rápidas (seção seguinte) mais o bilhete de saída, em pelo menos
+  3 formatos, a primeira antes de 5 min, uma a cada 5 a 7 min e nunca mais de 8 min sem nenhuma (aviso a
+  partir de 7). Salas no máximo uma vez, e só se a tarefa valer os 5 min que ela custa.
 - Uma sala de 3 por aula, no bloco em que a decisão é mais rica. Duas salas em 32 min comem 12 min.
 - Mão na câmera é o tapa-buraco legítimo: se a linha do tempo mostrar um trecho longo de `·`, ponha uma
   no meio da figura (`"inicio_s"` faz a interação começar depois de a figura ser lida).
 - O bilhete de saída é sempre o último slide cronometrado.
+
+## Checagem rápida (aula expositiva)
+
+A checagem é uma pergunta de compreensão no meio da explicação: curta, individual, com resposta
+comprometida e feedback logo depois. Serve para a turma recuperar o que acabou de ouvir (é isso que
+fixa) e para o professor saber se pode seguir. Usa os mesmos formatos canônicos, mais curtos:
+
+| Formato | Duração | Quando | Exemplo |
+|---|---|---|---|
+| `enquete` | 30 a 45 s de voto (`"duracao_s": 40`) + 30 s de resultado | aplicar a ideia a um paciente novo, ler um número | "Um atleta passa no hop com 96%. O que dá para dizer da força de quadríceps dele?" |
+| `chat_cascata` de uma linha | 30 a 60 s | recuperar um número, completar um passo de conta, escrever a frase para o paciente | "Sem voltar o slide: até que mês esperar reduziu o risco, e quanto por mês?" |
+| `mao_camera` | 15 a 20 s, com `inicio_s` no fim da explicação | checar uma leitura de sim ou não sem sair do slide | "Polegar para cima: 5,6% é o risco de quem passou. Para baixo: é quanto o risco cai." |
+
+**Exigir recuperar, não reconhecer.** A pergunta boa só se responde se a explicação ficou: pede o
+número de memória, aplica a ideia num caso que não estava no slide ou faz o passo seguinte da conta.
+"Ficou claro?", "Concordam?" e "O risco cai com o tempo, sim ou não?" medem educação, não compreensão.
+Na enquete, os distratores são os erros que a explicação quis desfazer (`questoes.md`).
+
+**Roteiro de condução:**
+1. Termine a explicação e diga "checagem rápida": a turma reconhece o ritmo.
+2. Leia a pergunta uma vez e diga o formato da resposta ("o mês e a porcentagem", "uma letra").
+3. Silêncio no tempo da resposta (30 a 45 s). No chat, "3, 2, 1, enviem".
+4. Mostre o resultado ou leia três ou quatro respostas com os nomes (no chat e na câmera; na enquete do
+   Meet, só a contagem, então peça um voluntário da opção menos votada).
+5. Dê a resposta e o porquê em 20 a 30 s, ligando com o slide de onde ela vem.
+6. **Decida:** se mais da metade errou, volte 30 s ao slide da explicação antes de seguir; se quase todos
+   acertaram, siga e diga isso ("todo mundo pegou; vamos para a parte difícil").
+
+**Na gravação:** antes de abrir, diga "quem assiste à gravação, pause e responda antes de eu mostrar a
+resposta". A checagem continua valendo para quem assiste depois.
+
+**Preparar antes:** as enquetes de checagem também ficam salvas no Meet antes da aula (o `enquetes.md`
+lista todas). Sem enquete na conta, a letra vai no chat em cascata.
 
 ## enquete
 

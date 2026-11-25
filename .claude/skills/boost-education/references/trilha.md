@@ -1,6 +1,6 @@
 # Planejar uma trilha de várias aulas
 
-Uma trilha é uma sequência de aulas de 30 a 35 minutos sobre um mesmo território clínico (ex.: cotovelo e mão em 3
+Uma trilha é uma sequência de aulas (expositivas de 45 a 50 minutos, o padrão, ou de caso de 30 a 35) sobre um mesmo território clínico (ex.: cotovelo e mão em 3
 aulas). Cada aula continua sendo uma pasta completa do contrato; a trilha acrescenta um arquivo de plano e três
 cuidados: sequência, pré-requisitos e recuperação espaçada.
 
@@ -25,7 +25,7 @@ Esse plano é uma checagem extra: aprovado o plano, cada aula segue as quatro ch
 - Ordene do raciocínio que sustenta para o que depende dele: **diagnóstico e prognóstico antes do tratamento**,
   mecanismo junto da primeira aula que precisa dele, condições raras ou de extrapolação no fim.
 - Uma aula = uma pergunta clínica central. Se o tema pede duas decisões grandes (ex.: diagnóstico e dose de exercício),
-  são duas aulas. A aula de 30 a 35 minutos não comporta mais que três decisões da turma.
+  são duas aulas. A aula expositiva comporta 3 a 5 partes; a de caso, não mais que três decisões da turma.
 - Pré-requisito é algo que a turma precisa **saber fazer** ao entrar (ex.: "interpretar razão de verossimilhança"), não
   "ter assistido". Escreva no briefing da aula seguinte e garanta que o pós-teste da anterior mede isso.
 - Aulas de uma trilha devem ser **independentes o bastante** para quem faltou: a recuperação na abertura e o resumo do
@@ -36,7 +36,7 @@ Esse plano é uma checagem extra: aprovado o plano, cada aula segue as quatro ch
 Revisar depois de um intervalo retém mais que revisar em seguida (Cepeda et al. 2006), e tirar da memória ensina mais
 que reouvir (Roediger & Karpicke 2006); ver `boost-aula-slides/references/desenho-instrucional.md`, seção 6.
 
-Na prática, nos primeiros 3 minutos da aula N+1, antes do caso novo:
+Na prática, nos primeiros minutos da aula N+1, antes do mapa da aula (expositiva) ou do caso novo (caso):
 
 1. **Uma pergunta de recuperação, de memória**, sobre a decisão central da aula N (enquete de 1 min ou chat em
    cascata). Sem slide de revisão antes: a turma tenta lembrar, depois confere.
@@ -44,7 +44,8 @@ Na prática, nos primeiros 3 minutos da aula N+1, antes do caso novo:
    questão do pós-teste com pior acerto.
 3. Prefira **intercalar**: a pergunta usa um caso novo que exige o raciocínio da aula N, em vez de repetir a enquete.
 4. Na aula 3 de 3, recupere as aulas 1 e 2 misturadas (uma pergunta que precise das duas).
-5. Conte esse minuto no tempo da abertura: a primeira interação continua antes dos 3 minutos, e o validador gosta.
+5. Conte esse minuto no tempo da abertura: a primeira interação continua antes dos 5 minutos na expositiva (3 no
+   caso), como o validador exige.
 
 O `nova_aula.py --aula-anterior <pasta>` já copia para o briefing o bilhete de saída, os objetivos e os pontos-chave da
 aula anterior (de `04_aula/deck.json`, ou do briefing dela se o deck ainda não existir). Use como ponto de partida e

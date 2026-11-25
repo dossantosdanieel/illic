@@ -2,8 +2,15 @@
 
 O `deck.json` é a única fonte da aula: `montar_deck.py` gera o .pptx a partir dele, `validar_aula.py`
 confere o desenho pedagógico e `materiais.py` tira dele as enquetes, o pré/pós-teste e o resumo do aluno.
-O exemplo completo (aula de 32 min sobre volta ao esporte depois do LCA, com todos os tipos de slide)
-está em `assets/exemplo/deck.json`; copie-o como ponto de partida.
+Há dois exemplos completos, um por formato (`meta.formato`), sobre volta ao esporte depois do LCA:
+
+- `assets/exemplo_expositiva/deck.json`: aula **expositiva com checagens**, 45 min 30 s, em 4 partes, com
+  mapa, "onde estamos", exemplo resolvido e parcialmente resolvido, comparação em colunas e caso só como
+  aplicação no fim de cada parte. É o ponto de partida quando as preferências pedem expositiva.
+- `assets/exemplo/deck.json`: aula **guiada por caso**, 32 min, ciclo prever → ver → decidir → conferir,
+  com os outros tipos de slide (salas, revés, desfecho). Para aulas de aplicação ou discussão de casos.
+
+Copie o do formato escolhido como ponto de partida.
 
 Regras de escrita que valem para todos os campos de texto:
 
@@ -30,6 +37,8 @@ Regras de escrita que valem para todos os campos de texto:
 | Campo | Obrigatório | O que é |
 |---|---|---|
 | `titulo` | sim | Título da aula (vai para a capa e para os materiais). Aceita `**negrito**`. |
+| `formato` | não | `"expositiva"` (expositiva com checagens, 40 a 50 min) ou `"caso"` (guiada por caso, 30 a 35 min). **Sem o campo, vale `"caso"`**, para os decks antigos continuarem válidos. O validador aplica as regras do formato (ver "Regras por formato", no fim). |
+| `partes` | sim, na expositiva | As 3 a 5 partes da aula, na ordem da linha de raciocínio: strings ou `{"titulo", "texto"}` (o texto é a pergunta ou o que a parte responde, em uma linha). Alimentam os slides `mapa` e o "O caminho da aula" do resumo do aluno. |
 | `subtitulo` | não | Uma linha na capa: o que a turma vai decidir. |
 | `autor` | não | Apresentador; padrão da casa: "Daniel Santos". |
 | `slug` | sim | Nome do arquivo .pptx (`<slug>.pptx`). |
@@ -63,18 +72,19 @@ Uma entrada por artigo citado em qualquer slide.
 
 | Campo | O que é |
 |---|---|
-| `tipo` | Um dos 16 tipos abaixo. |
+| `tipo` | Um dos 18 tipos abaixo. |
 | `tempo_s` | Tempo previsto do slide em segundos, **incluindo** a interação. Obrigatório, exceto em slides de apoio. |
 | `notas` | O que falar e como conduzir, na voz de `voz-das-notas.md`. Não escreva a linha "Tempo:": o script põe `Tempo: 1 min 30 s (acumulado 12:00).` na frente. |
 | `interacao` | `{"tipo": "...", "duracao_s": 60}`. Tipos: `enquete`, `chat_cascata`, `salas`, `mao_camera`, `chat`. Opcionais: `inicio_s` (segundos depois do início do slide em que a interação começa), `pedido` (o que a turma faz, em uma frase, para o roteiro de `enquetes.md`), `tamanho` (salas de 2, 3, 4...), `rotulo` (troca o texto da pílula), `gravacao` (o que quem assiste à gravação faz nesse trecho; as salas não aparecem no vídeo do Meet) e `plano_b` (o que fazer se o formato falhar no Meet: sala que não abre, conta sem enquete). Os dois últimos são texto ou lista de frases e geram a seção "Plano B e gravação" do `enquetes.md`; o `materiais.py` avisa quando uma sala não tem os dois (ver `interacoes.md`, salas). A pílula aparece sozinha no canto superior direito. |
 | `olho` | Linha pequena em caixa alta acima do título ("Bloco 2 · A evidência"). Uma linha só, antes da pílula: se não couber, é erro de layout (a segunda linha cai em cima do título). |
 | `titulo` | Título do slide. Em slides de evidência, a **conclusão** em uma frase, não o assunto. |
 | `fonte` | Lista de `id` de referência e/ou textos livres ("degraus: proposta clínica da equipe"). Sai no rodapé, à direita. Texto livre que parece citação (Sobrenome ... 2021) precisa estar em `referencias`. |
-| `bloco` | Nome do bloco ("abertura", "tempo e critérios", "fechamento"). O validador confere o ciclo dentro de cada bloco. |
-| `papel` | `gancho`, `prever`, `evidencia`, `decidir`, `conferir`, `recuperar`, `saida`. Torna a checagem "pergunta antes da evidência" exata. |
+| `bloco` | Aula de caso: nome do bloco ("abertura", "tempo e critérios", "fechamento"). O validador confere o ciclo dentro de cada bloco. Na expositiva é opcional e não é usado. |
+| `parte` | Aula expositiva: número da parte em `meta.partes` (1, 2, ...). Abertura e fechamento ficam sem. O validador confere, por parte, o "onde estamos" no começo, a síntese no fim, a aplicação, as checagens e a âncora/desafio. |
+| `papel` | Caso: `gancho`, `prever`, `evidencia`, `decidir`, `conferir`, `recuperar`, `saida` (torna exata a checagem "pergunta antes da evidência"). Expositiva: `explicar`, `exemplo`, `checar`, `conferir`, `aplicacao` (o caso, no fim da parte; obrigatório em ao menos um slide), `sintese` (fecha a parte), `recuperar`, `saida`. |
 | `origem` | `"caso"` quando os números do slide são do paciente fictício (dispensa `fonte`). |
 | `evidencia` | `true`/`false` para forçar ou dispensar a exigência de fonte quando a detecção automática errar. |
-| `ancora`, `desafio` | Linha "Para começar:" e linha "Desafio:" (slides `pergunta` e `tarefa`). É assim que a aula atende níveis diferentes sem baixar o nível. |
+| `ancora`, `desafio` | Linha "Para começar:" e linha "Desafio:" (slides `pergunta`, `tarefa` e `exemplo`). É assim que a aula atende níveis diferentes sem baixar o nível. |
 | `apoio` | `true` tira o slide da contagem do tempo (slide de reserva). |
 
 ## Tipos de slide
@@ -769,6 +779,38 @@ Campos: `faixas` (`{"rotulo", "itens": [{"titulo", "texto", "etiqueta", "destaqu
 }
 ```
 
+**Variante colunas (`"layout": "colunas"`):** comparação lado a lado, para a aula expositiva (duas
+condições, dois testes, duas doses). Cada faixa vira uma coluna; os cartões da mesma posição ficam na
+mesma altura nas colunas, então escreva os itens na mesma ordem de atributos ("O que mede", "Nos
+estudos", "Na prática"). A faixa com `"destaque": true` (a que a aula defende) ganha cabeçalho marinho;
+as outras, cabeçalho cinza com texto marinho (sem nenhuma em destaque, todas saem marinho). Um item com
+`destaque` vira cartão marinho: use em um, no máximo dois. Campos: `faixas` (2 ou 3, cada uma com
+`rotulo`, `destaque`, `itens`), `nota` (cartão branco) e `faixa` (faixa marinho de conclusão).
+
+```json
+{
+  "tipo": "comparacao",
+  "parte": 2,
+  "papel": "explicar",
+  "layout": "colunas",
+  "olho": "Parte 2 · Lado a lado",
+  "titulo": "Dois saltos, duas **leituras**",
+  "tempo_s": 90,
+  "faixas": [
+    {"rotulo": "Hop em distância", "itens": [
+      {"titulo": "O que mede", "texto": "Até onde o corpo vai; o quadril pode empurrar."},
+      {"titulo": "Atletas já liberados", "texto": "97% de simetria."},
+      {"titulo": "Na liberação", "texto": "Tranquiliza: quase todos passam."}]},
+    {"rotulo": "Altura do salto em uma perna", "destaque": true, "itens": [
+      {"titulo": "O que mede", "texto": "Quanto o membro empurra para cima."},
+      {"titulo": "Os mesmos atletas", "texto": "83% no vertical, 77% no drop jump."},
+      {"titulo": "Na liberação", "texto": "Expõe o déficit do joelho.", "destaque": true}]}
+  ],
+  "fonte": ["Kotsifaki2022", "Welling2018"],
+  "notas": "A comparação que fecha a explicação da parte, linha a linha. …"
+}
+```
+
 ### citacao
 
 A fala do paciente em cartão (branco com borda em fundo claro; petróleo em fundo escuro), com contexto
@@ -852,6 +894,125 @@ que é proposta clínica). É slide de apoio: não entra no tempo.
   ]
 }
 ```
+
+### mapa
+
+O organizador prévio da aula expositiva e o divisor "onde estamos". As partes de `meta.partes` em
+cartões cinza de largura total, numeradas de cima para baixo (número 28 pt petróleo, título 18 pt bold,
+linha de texto 13 pt). Sem `atual` (ou `0`), é o **mapa da aula**, mostrado na abertura. Com `"atual": k`,
+abre a parte k: o cartão dela fica marinho com "AGORA" à direita, as partes já vistas ficam apagadas
+(cinza) e as que faltam, normais. Olho e título saem sozinhos ("Mapa da aula" / "O caminho de hoje";
+"Onde estamos · Parte k de n" / o título da parte); escreva `olho` e `titulo` só para trocar. Campos:
+`atual`, `faixa` (no mapa geral sai marinho, "**Ao fim:** ..."; no divisor sai branca com borda, para
+não competir com a parte em destaque), `partes` (troca `meta.partes` só neste slide, raro).
+
+Na expositiva, o validador **exige** um `mapa` sem `atual` antes da parte 1 e um `mapa` com
+`"atual": k` como primeiro slide de cada parte k. Tempo típico: 60 a 90 s no mapa geral (ler as partes
+como perguntas), 20 a 40 s no divisor.
+
+```json
+{"tipo": "mapa", "olho": "Mapa da aula", "titulo": "Quatro perguntas, nesta **ordem**", "tempo_s": 90,
+ "faixa": "**Ao fim:** decidir a liberação com tempo, força, salto e prontidão, e ler o número que sustenta cada critério.",
+ "notas": "O organizador prévio: a turma vê o caminho inteiro antes de começar. …"}
+```
+
+```json
+{"tipo": "mapa", "parte": 3, "atual": 3, "tempo_s": 30,
+ "notas": "Onde estamos: parte 3 de 4. As duas primeiras partes disseram quando e o que medir. …"}
+```
+
+### exemplo
+
+Exemplo resolvido passo a passo: o problema num cartão branco à esquerda (`dado`), os passos numerados
+à direita em cartões cinza, cada um com o nome do passo em bold e a operação com o resultado em
+marinho 16 pt (`conta`, com o resultado em `**negrito**`), e a conclusão numa faixa marinho (`resposta`).
+Passos listados em `lacunas` (números a partir de 1) saem em cartão branco com borda e "**Sua vez:**"
+seguido de `lacuna` em petróleo: é o **exemplo parcialmente resolvido**, que a turma completa (dê a ele
+uma interação, chat em cascata ou enquete, com `inicio_s` depois de explicar os passos feitos). Campos:
+`dado` (texto ou `{"olho", "texto", "itens", "nota"}`; olho padrão "O problema"), `largura_dado` (pol,
+padrão 4,2; sem `dado`, os passos ocupam a largura toda), `rotulo_passos` (padrão "Passo a passo"),
+`passos` (2 a 5: `{"titulo", "conta", "texto", "lacuna"}`), `lacunas`, `resposta`, `ancora`, `desafio`
+(cartões embaixo, como na `tarefa`).
+
+Conta feita a partir de um estudo é dado derivado: ponha a conta inteira nas notas e "contas: calc. a
+partir de Autor ano" na `fonte`. Diga no slide quando a conta não equivale ao que parece ("1 ÷ 0,326 ≈ 3
+(não é NNT)" para uma diferença de risco de coorte).
+
+```json
+{
+  "tipo": "exemplo",
+  "parte": 3,
+  "papel": "exemplo",
+  "olho": "Parte 3 · Exemplo resolvido",
+  "titulo": "Do risco relativo ao **absoluto**",
+  "tempo_s": 180,
+  "dado": {"olho": "Nova lesão em 2 anos", "itens": ["Sem passar: 21 de 55", "Passando: 1 de 18", "Razão de risco 0,16 (IC 0,02 a 1,20)"]},
+  "passos": [
+    {"titulo": "Risco em cada grupo", "conta": "21 ÷ 55 = **38,2%**  ·  1 ÷ 18 = **5,6%**"},
+    {"titulo": "Diferença absoluta", "conta": "38,2 − 5,6 = **32,6 pontos**"},
+    {"titulo": "Quantos para um a menos", "conta": "1 ÷ 0,326 ≈ **3** (não é NNT)"},
+    {"titulo": "Precisão", "conta": "o IC **cruza o 1**"}
+  ],
+  "resposta": "**Leitura:** diferença grande; com 1 evento em 18, tamanho incerto.",
+  "fonte": ["Grindem2016", "contas: calc. a partir de Grindem 2016"],
+  "notas": "Exemplo resolvido: eu faço a conta inteira, a turma acompanha. Passo 1, …"
+}
+```
+
+Parcialmente resolvido (o passo 2 fica para a turma):
+
+```json
+{
+  "tipo": "exemplo", "parte": 4, "papel": "checar",
+  "olho": "Parte 4 · Exemplo parcialmente resolvido",
+  "titulo": "Quanto um ACL-RSI abaixo de 47 muda a **chance**?",
+  "tempo_s": 150,
+  "interacao": {"tipo": "chat_cascata", "duracao_s": 60, "inicio_s": 45},
+  "dado": {"olho": "O dado", "texto": "Corte de 47 aos 9 meses, para não voltar ao nível de antes.", "itens": ["Sensibilidade: 85%", "Especificidade: 45%"]},
+  "passos": [
+    {"titulo": "Razão de verossimilhança positiva", "conta": "0,85 ÷ (1 − 0,45) ≈ **1,5**"},
+    {"titulo": "Razão de verossimilhança negativa", "lacuna": "(1 − 0,85) ÷ 0,45 = ?"},
+    {"titulo": "Leitura", "conta": "RV+ abaixo de 2 muda **pouco** a chance"}
+  ],
+  "lacunas": [2],
+  "ancora": "RV− = (1 − sensibilidade) ÷ especificidade.",
+  "desafio": "RV− perto de 0,3: o que um escore alto permite dizer?",
+  "fonte": ["Faleide2021", "contas: calc. a partir de Faleide 2021"],
+  "notas": "Exemplo parcialmente resolvido: o primeiro passo está feito, o segundo é da turma. …"
+}
+```
+
+### Receitas para a aula expositiva com os tipos que já existem
+
+- **Conceito com 2 a 4 pontos e um destaque:** `cartoes` (2 a 4 itens, `colunas` 2, com a ideia central
+  na `faixa` marinho) ou `topicos` com um cartão `lateral` de estilo `escuro`. Título = a ideia em uma frase.
+- **Sequência ou processo:** `etapas` (3 a 5 passos com seta; o último em marinho).
+- **Comparação lado a lado:** `comparacao` com `"layout": "colunas"`; atributos com muitas linhas vão para
+  `tabela`.
+- **Checagem rápida:** `enquete` com `duracao_s` de 30 a 45 (revelação no slide seguinte, `revela`),
+  `pergunta` com `chat_cascata` de uma linha, ou `mao_camera` com `inicio_s` em qualquer slide de
+  explicação (ver `interacoes.md`, "Checagem rápida").
+- **Aplicação a caso:** `citacao` (o paciente fala), `pergunta` ou `tabela`, com `"papel": "aplicacao"`, no
+  fim da parte, depois da explicação.
+- **Síntese da parte:** `sintese` com 2 ou 3 pontos e a faixa "**Na prática:** ...", `"papel": "sintese"`.
+
+## Regras por formato (o que `validar_aula.py` confere)
+
+| Regra | `caso` (padrão sem `meta.formato`) | `expositiva` |
+|---|---|---|
+| Duração (soma de `tempo_s`) | erro acima de 35 min; aviso abaixo de 28 | erro acima de 50 min; aviso abaixo de 42 e acima de 48 |
+| Tempo estimado pela fala das notas | aviso acima de 35 min | aviso acima de 50 min, e abaixo de 65% do `tempo_s` (nota que não é a explicação completa) |
+| Primeira interação | até 3 min | até 5 min |
+| Tempo sem interação | aviso acima de 6 min, erro acima de 7 | aviso a partir de 7 min, erro acima de 8 |
+| Interações | 5 ou mais, 3 formatos | 6 checagens ou mais antes do bilhete, 3 formatos |
+| Tempo em atividade | aviso abaixo de 25% | aviso abaixo de 12% |
+| Pergunta antes da figura, ciclo prever/decidir por `bloco` | exige | não exige |
+| Mapa da aula no início (`mapa` sem `atual`) | — | exige |
+| Cada parte abre com `mapa` `"atual": k` e fecha com síntese | — | exige |
+| Aplicação a caso (`"papel": "aplicacao"`) | — | exige ao menos uma; avisa a parte sem |
+| Exemplo resolvido (`exemplo` ou `"papel": "exemplo"`) | — | avisa se não houver |
+| Âncora/desafio e checagem em cada parte; parte acima de 14 min | — | avisa |
+| Bilhete de saída no último slide cronometrado; slide de referências | exige | exige |
 
 ## O que o script faz sozinho
 

@@ -1,0 +1,1547 @@
+{
+ "meta": {
+  "titulo": "Dor lateral no cotovelo: **diagnóstico e prognóstico**",
+  "subtitulo": "O que é, por que dói, quanto vale cada teste, o que o laudo não diz e o que esperar do tempo",
+  "autor": "Daniel Santos",
+  "slug": "cotovelo-lateral-1-diagnostico",
+  "formato": "expositiva",
+  "publico": "Fisioterapeutas da equipe ILLIC, de recém-formados a especialistas em membro superior",
+  "duracao_alvo_min": 47,
+  "caso_ficticio": true,
+  "partes": [
+   {
+    "titulo": "O que é e quanto é comum",
+    "texto": "Nome, incidência e o que no trabalho aumenta o risco"
+   },
+   {
+    "titulo": "Por que dói",
+    "texto": "Entese, contato com o capítulo, tendinose e processamento da dor"
+   },
+   {
+    "titulo": "Como diagnosticar",
+    "texto": "O que medir, quanto vale cada teste e como classificar"
+   },
+   {
+    "titulo": "O que não é, e o que a imagem acrescenta",
+    "texto": "Diferenciais, sinais de alerta e como explicar o laudo"
+   },
+   {
+    "titulo": "O que esperar",
+    "texto": "Curso natural, sinais de pior evolução e a meta do PRTEE"
+   }
+  ],
+  "objetivos": [
+   "Explicar ao paciente, em linguagem de consultório, por que o cotovelo dói (entese, contato do ECRB com o capítulo, tendinose e processamento da dor) e interpretar a razão de chances dos fatores de risco do trabalho com o intervalo de confiança",
+   "Calcular a probabilidade pós-teste com as razões de verossimilhança dos testes, medir preensão sem dor e PRTEE e classificar o quadro (irritabilidade e distribuição) antes de fechar o diagnóstico",
+   "Decidir quando reabrir o diagnóstico diferencial ou pedir imagem, e explicar o laudo pela frequência dos achados em quem não tem dor",
+   "Estimar o prognóstico com o curso natural e os sinais de pior evolução, e calcular a meta individual do PRTEE pela DMCI (diferença mínima clinicamente importante)"
+  ],
+  "propostas_clinicas": [
+   "pistas de cada diferencial e exame cervical e do nervo radial quando surge formigamento: nenhum estudo do lote mede a acurácia desses testes",
+   "a lista de sinais de alerta: sem fonte no lote; conferir na diretriz de 2022",
+   "usar até 79% como teto do pré-teste (111 de 533 voluntários de Vuvan 2020 não tinham a tendinopatia)",
+   "usar a RV da preensão na preensão sem dor e contra radiculopatia ou túnel radial: protocolo e espectro a conferir",
+   "acompanhar a preensão sem dor pela razão afetado/não afetado, sem DMCI publicada no lote",
+   "classificar irritabilidade e distribuição pela tabela que a aula de capacitação atribui à diretriz de 2022 (atribuição provável, a conferir no PDF)",
+   "imagem só se não melhorar no prazo ou surgir sinal atípico (notas da aula de capacitação, a conferir na diretriz)",
+   "com PRTEE inicial alto, preferir a régua proporcional da DMCI (certeza baixa)",
+   "reavaliar o PRTEE a cada 3 semanas (intervalo em que a DMCI foi medida; nenhum ensaio testou o calendário)",
+   "a frase de consultório sobre o mecanismo (“tendão alterado e sensível; a dor não mede o dano”): síntese nossa de estudos de mecanismo, não testada como intervenção"
+  ],
+  "resumo": {
+   "pontos_chave": [
+    "Incidência de 3,4 por 1000 ao ano (média de 2000 a 2012), com pico de 9 por 1000 entre 40 e 49 anos (Sanders 2015). No trabalho, rotação do antebraço por mais de 4 h/dia (OR 1,85; 1,10 a 3,10) e força com duração (Strain Index, OR 1,75; 1,11 a 2,78) se associaram à incidência, cerca de 1 caso a mais a cada 25 a 30 expostos (calc.); a repetição isolada ficou inconclusiva (OR 0,71; 0,42 a 1,20) (Bretschneider 2022).",
+    "Mecanismo: tendinose sem inflamação celular consistente; a face profunda do ECRB encosta mais no capítulo quando o cotovelo estende (cadáver, Bunata 2007); hiperalgesia local e regional, não a distância (Rio 2021). A dor não mede o dano.",
+    "Cozen: sensibilidade de 91%, especificidade não informada. Preensão positiva = queda de pelo menos 5% a 10% ao estender o cotovelo: RV+ 3,9 a 8,3 e RV− 0,19 a 0,28 (calc. de Karanasios 2022: RV+ = S ÷ (1 − E); RV− = (1 − S) ÷ E); protocolo e espectro a conferir.",
+    "Com 50% antes, a preensão positiva leva a 80% a 89%; com suspeita alta (até 79%), a negativa derruba para 42% a 51%, sem excluir (cálculo com Karanasios 2022 e Vuvan 2020).",
+    "Esporão no epicôndilo: 50% da população sem dor (RV+ ≈ 1,6, calculada); nenhum achado do ultrassom acompanhou dor, PRTEE ou duração (Krogh 2020).",
+    "Sem tratamento ativo, 89% muito melhores ou recuperados em 1 ano (189 de 213; IC 80% a 97%), com meia-vida de 2,5 a 3 meses independente do tempo de dor (Ikonen 2022). DMCI do PRTEE: 7 pontos ou 22% (um pouco melhor); 11 pontos ou 37% (muito melhor) (Poltawski 2011)."
+   ],
+   "algoritmo": [
+    "Sinal de alerta (trauma, febre, dor noturna constante, déficit progressivo, câncer, bloqueio)? Encaminhe (proposta clínica).",
+    "Dor no epicôndilo? Diga a sua suspeita em porcentagem, some história, Cozen e preensão fletido × estendido; nenhum teste fecha sozinho (Zwerus 2018).",
+    "Dor cervical, formigamento, dor mais distal, fraqueza dos dedos, estalo ou falseio? Reabra o diferencial e examine (proposta clínica).",
+    "Meça a preensão sem dor nos dois lados (razão afetado ÷ não afetado) e o PRTEE; classifique irritabilidade e distribuição (classificação da diretriz, a conferir).",
+    "Laudo na mão? Explique cada achado pela frequência em quem não tem dor. Sem sinal atípico, sem imagem agora.",
+    "Diga o prognóstico com números (cerca de 9 em 10 muito melhores em 1 ano) e escreva a meta do PRTEE pelas duas réguas; reavalie a cada 3 semanas (proposta clínica)."
+   ],
+   "para_praticar": [
+    "No próximo paciente com dor lateral, escreva a sua suspeita em porcentagem antes do exame e refaça a conta depois da preensão fletido × estendido.",
+    "Quando o paciente perguntar por que dói, use a frase da parte 2, sem “inflamação” nem “desgaste”."
+   ]
+  }
+ },
+ "referencias": [
+  {
+   "id": "Sanders2015",
+   "curta": "Sanders et al. 2015",
+   "texto": "Sanders TL Jr et al. Am J Sports Med 2015;43(5):1066-71",
+   "pmid": "25656546",
+   "doi": "10.1177/0363546514568087",
+   "conferido": "resumo (PubMed) + print da aula de capacitação s2 (Tab. 2, legível); acesso aberto (PMC4517446), PDF ainda não baixado"
+  },
+  {
+   "id": "Bretschneider2022",
+   "curta": "Bretschneider et al. 2022",
+   "texto": "Bretschneider SF et al. Am J Ind Med 2022;65(1):41-50",
+   "pmid": "34674287",
+   "doi": "10.1002/ajim.23303",
+   "conferido": "texto completo (p.6 Fig. 2; p.7 Tab. 3; p.8 Tab. 4)"
+  },
+  {
+   "id": "Lucado2022",
+   "curta": "Lucado et al. 2022",
+   "texto": "Lucado AM et al. J Orthop Sports Phys Ther 2022;52(12):CPG1-CPG111",
+   "pmid": "36453071",
+   "doi": "10.2519/jospt.2022.0302",
+   "conferido": "resumo (sem números); classificação, diferenciais, entese e vasos pela aula de capacitação (s4–s17, s42, s43), atribuição provável"
+  },
+  {
+   "id": "Jomaa2020",
+   "curta": "Jomaa et al. 2020",
+   "texto": "Jomaa G et al. BMC Musculoskelet Disord 2020;21:78",
+   "conferido": "nao conferido: citado na aula de capacitação s19"
+  },
+  {
+   "id": "Benjamin2006",
+   "curta": "Benjamin et al. 2006",
+   "texto": "Benjamin M et al. J Anat 2006;208:471-90",
+   "conferido": "nao conferido: citado na aula de capacitação s8"
+  },
+  {
+   "id": "Bunata2007",
+   "curta": "Bunata et al. 2007",
+   "texto": "Bunata RE et al. J Bone Joint Surg Am 2007;89(9):1955-63",
+   "pmid": "17768192",
+   "doi": "10.2106/JBJS.F.00727",
+   "conferido": "resumo (PubMed) + print da aula de capacitação s13 (Tab. I)"
+  },
+  {
+   "id": "Rio2021",
+   "curta": "Rio et al. 2021",
+   "texto": "Rio E et al. J Orthop Sports Phys Ther 2021;51(1):12-26",
+   "pmid": "33383996",
+   "doi": "10.2519/jospt.2021.9417",
+   "conferido": "resumo (PubMed), sem tamanhos de efeito"
+  },
+  {
+   "id": "Karanasios2022",
+   "curta": "Karanasios et al. 2022",
+   "texto": "Karanasios S et al. J Hand Ther 2022;35(4):541-51",
+   "pmid": "33814224",
+   "doi": "10.1016/j.jht.2021.02.002",
+   "conferido": "resumo (PubMed); RV e pós-teste calculados das faixas do resumo"
+  },
+  {
+   "id": "Zwerus2018",
+   "curta": "Zwerus et al. 2018",
+   "texto": "Zwerus EL et al. Br J Sports Med 2018;52(19):1253-60",
+   "pmid": "28249855",
+   "doi": "10.1136/bjsports-2016-096712",
+   "conferido": "resumo (PubMed)"
+  },
+  {
+   "id": "Vuvan2020",
+   "curta": "Vuvan et al. 2020",
+   "texto": "Vuvan V et al. Med Sci Sports Exerc 2020;52(2):287-95",
+   "pmid": "31425384",
+   "doi": "10.1249/MSS.0000000000002128",
+   "conferido": "resumo + print da aula de capacitação s50 (fluxograma); 79% calculado (422 de 533)"
+  },
+  {
+   "id": "Vicenzino2009",
+   "curta": "Vicenzino et al. 2009",
+   "texto": "Vicenzino B et al. Man Ther 2009;14(5):550-4",
+   "pmid": "18838330",
+   "doi": "10.1016/j.math.2008.08.004",
+   "conferido": "resumo + print da aula de capacitação s38 (Tab. 2); só nas notas"
+  },
+  {
+   "id": "Poltawski2011",
+   "curta": "Poltawski e Watson 2011",
+   "texto": "Poltawski L, Watson T. Hand Therapy 2011;16(3):52-7",
+   "doi": "10.1258/ht.2011.011013",
+   "conferido": "resumo (Crossref); metas da paciente calculadas"
+  },
+  {
+   "id": "Krogh2020",
+   "curta": "Krogh et al. 2020",
+   "texto": "Krogh TP et al. Am J Sports Med 2020;48(8):1873-83",
+   "pmid": "32484714",
+   "doi": "10.1177/0363546520921949",
+   "conferido": "resumo (PubMed); RV do esporão e espessura de referência calculadas"
+  },
+  {
+   "id": "Couppe2022",
+   "curta": "Couppé et al. 2022",
+   "texto": "Couppé C et al. Am J Sports Med 2022;50(10):2787-96",
+   "pmid": "35867777",
+   "doi": "10.1177/03635465221110214",
+   "conferido": "resumo (PubMed)"
+  },
+  {
+   "id": "Ikonen2022",
+   "curta": "Ikonen et al. 2022",
+   "texto": "Ikonen J et al. Clin Orthop Relat Res 2022;480(4):647-60",
+   "pmid": "34874323",
+   "doi": "10.1097/CORR.0000000000002058",
+   "conferido": "resumo (PubMed); curva de meia-vida calculada para ilustração"
+  },
+  {
+   "id": "Smidt2002",
+   "curta": "Smidt et al. 2002",
+   "texto": "Smidt N et al. Lancet 2002;359(9307):657-62",
+   "pmid": "11879861",
+   "doi": "10.1016/S0140-6736(02)07811-X",
+   "conferido": "resumo (PubMed)"
+  },
+  {
+   "id": "Smidt2006",
+   "curta": "Smidt et al. 2006",
+   "texto": "Smidt N et al. J Rheumatol 2006;33(10):2053-9",
+   "pmid": "16881095",
+   "conferido": "resumo (PubMed), sem números de efeito"
+  },
+  {
+   "id": "Waugh2004",
+   "curta": "Waugh et al. 2004",
+   "texto": "Waugh EJ et al. Arch Phys Med Rehabil 2004;85(2):308-18",
+   "pmid": "14966719",
+   "doi": "10.1016/S0003-9993(03)00480-5",
+   "conferido": "resumo + print da aula de capacitação s40 (Tab. 5)"
+  },
+  {
+   "id": "Coombes2015",
+   "curta": "Coombes et al. 2015",
+   "texto": "Coombes BK et al. Clin J Pain 2015;31(1):30-5",
+   "pmid": "24480912",
+   "doi": "10.1097/AJP.0000000000000078",
+   "conferido": "resumo + print da aula de capacitação s21 (Tab. 3)"
+  }
+ ],
+ "slides": [
+  {
+   "tipo": "capa",
+   "tempo_s": 30,
+   "notas": "Aula expositiva de 47 minutos, a primeira de três da trilha de cotovelo e mão, em cinco partes, com checagens rápidas a cada 5 a 7 minutos. A paciente que aparece no fim de cada parte, a Renata, é fictícia e volta nas aulas 2 e 3. Antes de abrir a sala: deixar as duas enquetes salvas no Meet, um cronômetro visível, a calculadora do celular à mão e, se possível, um colega lendo o chat. Entrar 5 minutos antes e receber as pessoas pelo nome. Dizer em uma frase que esta aula substitui, para a equipe, a primeira parte da nossa aula de capacitação: o que continua valendo fica, atualizado, e o que mudou eu mostro na hora, inclusive números que eu mesmo ensinei de outro jeito."
+  },
+  {
+   "tipo": "cartoes",
+   "olho": "Combinados",
+   "titulo": "Como vamos trabalhar **hoje**",
+   "tempo_s": 55,
+   "interacao": {
+    "tipo": "mao_camera",
+    "duracao_s": 20,
+    "pedido": "Polegar para cima: atendeu alguém com dor lateral no cotovelo neste mês. Para baixo: não atendeu."
+   },
+   "itens": [
+    {
+     "titulo": "Cinco partes curtas",
+     "texto": "O mapa mostra onde estamos."
+    },
+    {
+     "titulo": "Checagem rápida",
+     "texto": "Enquete de 40 s, uma linha no chat ou mão na câmera."
+    },
+    {
+     "titulo": "Caso no fim de cada parte",
+     "texto": "A Renata usa o que acabou de ser explicado."
+    },
+    {
+     "titulo": "Bilhete de saída",
+     "texto": "Uma frase no chat antes de sair."
+    }
+   ],
+   "faixa": "**Combinado:** câmera aberta e resposta antes da explicação seguinte. Errar na checagem é para isso que ela serve.",
+   "notas": "Explicar o formato em 30 segundos, sem ler os cartões. Hoje eu explico uma ideia de cada vez, e a cada 5 a 7 minutos vocês respondem uma pergunta rápida que só dá para responder se a explicação ficou. Não é prova: é o jeito de eu saber se posso seguir. Interação: mão na câmera, de teste. Polegar para cima quem atendeu alguém com dor lateral no cotovelo neste mês; para baixo quem não atendeu. Dizer dois ou três nomes em voz alta, sem julgar."
+  },
+  {
+   "tipo": "mapa",
+   "olho": "Mapa da aula",
+   "titulo": "Cinco perguntas, na ordem do **consultório**",
+   "tempo_s": 65,
+   "notas": "O organizador prévio: a turma vê o caminho inteiro antes de começar. Ler as cinco perguntas, uma frase para cada. Um, o que é e quanto é comum: o nome, a incidência e o que no trabalho aumenta o risco. Dois, por que dói, numa frase que dá para dizer ao paciente. Três, como diagnosticar: o que medir, quanto cada teste muda a chance e como classificar. Quatro, o que não é, e o que a imagem acrescenta. Cinco, o que esperar: o curso natural e a meta do PRTEE. É a ordem do raciocínio no consultório. Cada parte termina com a Renata, cabeleireira de 46 anos, e com uma síntese: é o que vale anotar. Para quem está começando: cada parte responde uma pergunta só. Para quem já domina: prestar atenção no tamanho do apoio de cada afirmação, do texto completo ao resumo e à proposta clínica."
+  },
+  {
+   "tipo": "mapa",
+   "parte": 1,
+   "atual": 1,
+   "tempo_s": 30,
+   "notas": "Onde estamos: parte 1 de 5. A pergunta desta parte é o que é e quanto é comum. Dizer o fio em uma frase: primeiro o nome, que já carrega um erro; depois a incidência, onde a nossa aula de capacitação tinha um número dez vezes maior; e por fim o que no trabalho tem evidência de aumentar o risco."
+  },
+  {
+   "tipo": "cartoes",
+   "parte": 1,
+   "papel": "explicar",
+   "olho": "Parte 1 · O que é",
+   "titulo": "Tendinopatia lateral: dor na origem dos **extensores**",
+   "tempo_s": 75,
+   "colunas": 3,
+   "itens": [
+    {
+     "titulo": "Onde dói",
+     "texto": "No epicôndilo lateral, na origem do extensor comum; o ECRB é o tendão típico."
+    },
+    {
+     "titulo": "O que provoca",
+     "texto": "Preensão e extensão do punho contra resistência, como no teste de Cozen."
+    },
+    {
+     "titulo": "O nome",
+     "texto": "“Epicondilite” sugere inflamação; o tecido mostra tendinose, sem inflamação celular consistente."
+    }
+   ],
+   "faixa": "**Diretriz de 2022:** alterações do tendão, do controle motor e do processamento da dor podem, juntas, gerar os sintomas.",
+   "fonte": [
+    "Lucado2022",
+    "Jomaa2020",
+    "Karanasios2022"
+   ],
+   "notas": "A primeira ideia da aula: o nome. Tendinopatia lateral do cotovelo é dor no epicôndilo lateral, na origem do extensor comum; o tendão típico é o do extensor radial curto do carpo, o ECRB. Isso continua igual ao que estava na nossa aula de capacitação. O que provoca a dor é carga nesse tendão: segurar com força e estender o punho contra resistência, que é o teste de Cozen, que vamos pontuar na parte 3. Agora o nome. Epicondilite termina em ite, e ite promete inflamação. A aula de capacitação já dizia, citando a revisão de Jomaa, de 2020, que faltam evidências consistentes de células inflamatórias no tendão; essa revisão eu não li, ela vem da nossa aula. O tecido mostra tendinose. Por isso a diretriz do JOSPT de 2022 fala em dor lateral no cotovelo, e o resumo diz que tendão, controle motor e processamento da dor podem, juntos, gerar os sintomas. Para quem está começando: guardar os três cartões."
+  },
+  {
+   "tipo": "barras",
+   "parte": 1,
+   "papel": "explicar",
+   "olho": "Parte 1 · Quanto é comum",
+   "titulo": "3,4 por **1000** ao ano, com pico entre 40 e 49 anos",
+   "tempo_s": 100,
+   "interacao": {
+    "tipo": "mao_camera",
+    "duracao_s": 20,
+    "inicio_s": 75,
+    "pedido": "Polegar para cima: 9 por 1000 é cerca de 1 em cada 100 por ano. Para baixo: é cerca de 1 em cada 10."
+   },
+   "rotulo": "Casos novos por 1000 pessoas ao ano, por faixa etária",
+   "categorias": [
+    "< 18",
+    "18–29",
+    "30–39",
+    "40–49",
+    "50–59",
+    "60–69",
+    "≥ 70"
+   ],
+   "series": [
+    {
+     "nome": "Incidência por 1000",
+     "valores": [
+      0.2,
+      0.9,
+      3.8,
+      9.0,
+      6.9,
+      3.4,
+      1.2
+     ]
+    }
+   ],
+   "destaque_categorias": [
+    3
+   ],
+   "legenda_destaque": "Pico: 9 por 1000",
+   "formato": "[$-416]0.0",
+   "lateral": [
+    {
+     "estilo": "escuro",
+     "olho": "Na aula de capacitação",
+     "texto": "“3% ao ano; 7% a 10% dos 40 aos 60.” A tabela diz por 1000: um erro de 10 vezes."
+    },
+    {
+     "estilo": "claro",
+     "texto": "**Recorrência em 2 anos:** 8,5% (resumo)."
+    }
+   ],
+   "nota": "Adaptado de Sanders 2015, Tab. 2 (Minnesota, EUA), lida no print da aula de capacitação, s2.",
+   "fonte": [
+    "Sanders2015"
+   ],
+   "notas": "O dado de frequência, com a correção que eu devo a vocês. O estudo populacional de Sanders, de 2015, em Minnesota, contou os casos novos de toda uma população: 3,4 por 1000 pessoas por ano, com intervalo de 3,3 a 3,5, a taxa do período de 2000 a 2012; pelo resumo, a ajustada caiu de 4,5 para 2,4 por 1000 nesses anos. Ler o eixo: casos novos por 1000 pessoas ao ano, por faixa etária. O pico fica entre 40 e 49 anos, com 9 por 1000, e nas mulheres dessa faixa chega a 10,2. Na nossa aula de capacitação, eu ensinei 3% ao ano e 7% a 10% entre 40 e 60 anos. A tabela que estava no nosso próprio slide diz por 1000: li por mil como por cento, um erro de dez vezes. Em 2 anos, a recorrência foi de 8,5%, segundo o resumo. Interação: mão na câmera. Polegar para cima quem lê 9 por 1000 como cerca de 1 em cada 100 por ano; para baixo quem lê como 1 em cada 10. A resposta é para cima."
+  },
+  {
+   "tipo": "linha",
+   "parte": 1,
+   "papel": "explicar",
+   "olho": "Parte 1 · O que aumenta o risco",
+   "titulo": "Força com duração e rotação se associam; a repetição isolada ficou **inconclusiva**",
+   "tempo_s": 105,
+   "rotulo": "Razão de chances (IC 95%), exposição alta × baixa",
+   "categorias": [
+    "Flexo-extensão",
+    "Rotação",
+    "Preensão",
+    "Strain Index",
+    "Repetição"
+   ],
+   "series": [
+    {
+     "nome": "IC acima de 1",
+     "valores": [
+      null,
+      1.85,
+      null,
+      1.75,
+      null
+     ],
+     "cor": "marinho",
+     "intervalo": [
+      null,
+      [
+       1.1,
+       3.1
+      ],
+      null,
+      [
+       1.11,
+       2.78
+      ],
+      null
+     ]
+    },
+    {
+     "nome": "IC cruza o 1",
+     "valores": [
+      1.61,
+      null,
+      0.96,
+      null,
+      0.71
+     ],
+     "cor": "cinza_grafico",
+     "intervalo": [
+      [
+       0.47,
+       5.52
+      ],
+      null,
+      [
+       0.36,
+       2.55
+      ],
+      null,
+      [
+       0.42,
+       1.2
+      ]
+     ]
+    },
+    {
+     "nome": "OR = 1: sem efeito",
+     "valores": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "cor": "texto2",
+     "tracejado": true,
+     "marcadores": false
+    }
+   ],
+   "minimo": 0,
+   "maximo": 6,
+   "formato": "0",
+   "rotulos": false,
+   "lateral": [
+    {
+     "estilo": "escuro",
+     "olho": "Associação",
+     "texto": "**Rotação** > 4 h/dia: 1,85 (1,10 a 3,10). **Força com duração** (SI): 1,75 (1,11 a 2,78)."
+    },
+    {
+     "estilo": "claro",
+     "texto": "**Repetição** > 15/min: 0,71 (0,42 a 1,20), inconclusiva."
+    },
+    {
+     "estilo": "claro",
+     "texto": "**Aula de capacitação:** “sobrecarga repetitiva”."
+    }
+   ],
+   "nota": "Adaptado de Bretschneider 2022, Tab. 3 e Fig. 2 (texto completo). Escala linear.",
+   "fonte": [
+    "Bretschneider2022"
+   ],
+   "notas": "O que no trabalho aumenta o risco: a meta-análise de Bretschneider, de 2022, lida no texto completo. Cinco fatores físicos do trabalho, cada um com duas coortes de trabalhadores que começaram sem dor. Ler o gráfico antes de interpretar: cada ponto é a razão de chances combinada de um fator, a barra é o intervalo de confiança de 95% e a linha tracejada é o 1, sem efeito. Acima de 1, mais risco; se a barra cruza o 1, inconclusivo. Em azul, os dois com a barra inteira acima de 1: girar o antebraço mais de 4 horas por dia, 1,85, de 1,10 a 3,10, e força com duração, medida pelo Strain Index, 1,75, de 1,11 a 2,78. Em cinza, os que cruzam o 1. A repetição acima de 15 por minuto deu 0,71, de 0,42 a 1,20: inconclusiva, não protetora, e o intervalo não exclui 20% a mais de risco. O Strain Index vem das mesmas duas coortes e inclui a frequência de esforços: repetir com força pesa. A aula de capacitação dizia sobrecarga repetitiva, com razões de chances de 2,6 e 5,6 de estudos isolados ou exposições somadas; fator a fator, nenhum efeito combinado passou de 2,5, e Park e van Rijn eram caso-controle. A figura original, estudo a estudo, está no slide de apoio do fim e no artigo, de acesso aberto. Isto é incidência em quem trabalha sem dor, não prognóstico de quem já tem."
+  },
+  {
+   "tipo": "pergunta",
+   "parte": 1,
+   "papel": "aplicacao",
+   "olho": "Parte 1 · Aplicação",
+   "titulo": "Renata, 46 anos, cabeleireira: 6 h por dia de secador e escova. O que no trabalho dela tem **evidência** de risco?",
+   "instrucao": "Uma linha no chat: a exposição e o número. Envie no 3.",
+   "tempo_s": 75,
+   "interacao": {
+    "tipo": "chat_cascata",
+    "duracao_s": 35,
+    "gravacao": "Quem assiste à gravação: pause e escreva a sua linha antes de eu ler as respostas."
+   },
+   "ancora": "OR acima de 1 é mais chance; veja se o intervalo passa pelo 1.",
+   "desafio": "o Strain Index inclui a frequência: dá para dizer que repetir não pesa?",
+   "fonte": [
+    "Bretschneider2022"
+   ],
+   "notas": "A aplicação da parte 1, e a primeira vez que a Renata aparece. Ela tem 46 anos, é cabeleireira autônoma, destra, e passa cerca de seis horas por dia com secador e escova: o antebraço gira e a mão segura com força o tempo todo. Interação: chat em cascata. 25 segundos para escrever, contar 3, 2, 1 e pedir que enviem juntos. Ler quatro respostas com os nomes. A resposta: rotação por mais de 4 horas, 1,85, e força com duração, 1,75; repetir, sozinho, ficou inconclusivo. Se mais da metade escrever repetição, voltar 30 segundos ao gráfico. Desafio: não dá para dizer que repetir não pesa; dá para dizer que repetir sem força não mostrou associação."
+  },
+  {
+   "tipo": "sintese",
+   "parte": 1,
+   "papel": "sintese",
+   "olho": "Parte 1 · Síntese",
+   "titulo": "O que levar sobre o que é e quanto é **comum**",
+   "tempo_s": 50,
+   "pontos": [
+    {
+     "titulo": "Comum na meia-idade",
+     "texto": "3,4 por 1000 ao ano; 9 por 1000 entre 40 e 49 anos."
+    },
+    {
+     "titulo": "Força com duração e rotação",
+     "texto": "OR 1,75 e 1,85: ≈ 1 caso a mais a cada 25 a 30 expostos (calc.). Repetição isolada inconclusiva."
+    }
+   ],
+   "faixa": "**Na prática:** pergunte quantas horas por dia o paciente gira o antebraço e faz força, não só quantas vezes repete.",
+   "fonte": [
+    "Sanders2015",
+    "Bretschneider2022",
+    "contas: calc. a partir de Bretschneider 2022"
+   ],
+   "notas": "Síntese da parte 1, em duas frases. Primeira: é comum na meia-idade, 3,4 por 1000 ao ano e 9 por 1000 entre 40 e 49 anos; não 3% ao ano. Segunda: no trabalho, o que tem evidência é força com duração e rotação, e em risco absoluto é modesto, cerca de 1 caso a mais a cada 25 a 30 expostos. A conta: risco dos não expostos 6,0% e 4,3%; convertida a razão de chances, 10,1% e 7,7% nos expostos; 1 dividido por 0,041 dá cerca de 25, e por 0,034, cerca de 30, com intervalos largos. Ligar com a próxima: se não é inflamação, o que dói? Parte 2."
+  },
+  {
+   "tipo": "mapa",
+   "parte": 2,
+   "atual": 2,
+   "tempo_s": 30,
+   "notas": "Onde estamos: parte 2 de 5. A primeira parte disse o que é e quanto é comum. Esta explica por que dói, em quatro peças, e termina com uma frase que dá para dizer ao paciente. É a parte com menos números e mais mecanismo; o mecanismo vem de anatomia, histologia e estudos de comparação, não de ensaio."
+  },
+  {
+   "tipo": "etapas",
+   "parte": 2,
+   "papel": "explicar",
+   "olho": "Parte 2 · O mecanismo",
+   "titulo": "Quatro peças explicam a dor **lateral**",
+   "tempo_s": 85,
+   "numerar": true,
+   "passos": [
+    {
+     "titulo": "Entese que divide carga",
+     "texto": "ECRB fundido a ligamentos e cápsula."
+    },
+    {
+     "titulo": "Contato com o capítulo",
+     "texto": "Ao estender, encosta no osso."
+    },
+    {
+     "titulo": "Tendinose",
+     "texto": "Colágeno desorganizado, vasos e nervos novos."
+    },
+    {
+     "titulo": "Processamento da dor",
+     "texto": "Mais sensível perto do cotovelo.",
+     "destaque": true
+    }
+   ],
+   "cartoes_baixo": [
+    {
+     "texto": "**Para começar:** as quatro palavras."
+    },
+    {
+     "texto": "**Apoio:** 1 e 3, aula de capacitação; 2, cadáver; 4, revisão."
+    },
+    {
+     "estilo": "escuro",
+     "texto": "**Em uma frase:** tendão alterado e mais sensível; a dor não mede o dano."
+    }
+   ],
+   "fonte": [
+    "Benjamin2006",
+    "Bunata2007",
+    "Rio2021",
+    "Lucado2022"
+   ],
+   "notas": "O esquema da parte: quatro peças, da anatomia ao sistema nervoso. Peça 1, a entese. As fibras do ECRB se fundem com o ligamento colateral lateral, com a cápsula e com o ligamento anular: a carga se espalha pelo conjunto, o que pode explicar a dor meio difusa. Isso vem da nossa aula de capacitação, que cita Benjamin, de 2006, e a diretriz; não conferi no texto. Peça 2, o contato com o capítulo: o próximo slide mostra o dado. Peça 3, a tendinose: colágeno desorganizado, mais vasos e nervos sensitivos, e uma zona pouco irrigada na face profunda do ECRB; de novo, da aula de capacitação. Peça 4, o processamento da dor: o sistema nervoso fica mais sensível perto do cotovelo; o slide 13 mostra o quanto. Embaixo, a âncora, o tamanho do apoio de cada peça e, no cartão escuro, a frase de consultório que a parte vai construir. Não falar ainda de tratamento: a carga é assunto da aula 2."
+  },
+  {
+   "tipo": "linha",
+   "parte": 2,
+   "papel": "explicar",
+   "olho": "Parte 2 · O contato com o capítulo",
+   "titulo": "Ao **estender** o cotovelo, o ECRB encosta mais no capítulo",
+   "tempo_s": 85,
+   "rotulo": "Deslocamento da sutura (mm; 0 = 90°, neutro)",
+   "categorias": [
+    "90°",
+    "75°",
+    "60°",
+    "45°",
+    "30°",
+    "15°",
+    "0°"
+   ],
+   "series": [
+    {
+     "nome": "Supinação",
+     "valores": [
+      1.2,
+      1.4,
+      1.8,
+      2.2,
+      2.7,
+      3.3,
+      3.6
+     ],
+     "cor": "ciano"
+    },
+    {
+     "nome": "Neutro",
+     "valores": [
+      0,
+      0.6,
+      1.3,
+      2.1,
+      2.4,
+      2.8,
+      3.4
+     ],
+     "cor": "marinho"
+    },
+    {
+     "nome": "Pronação",
+     "valores": [
+      -1.1,
+      -0.1,
+      0.7,
+      1.6,
+      2.3,
+      2.7,
+      3.2
+     ],
+     "cor": "cinza_grafico"
+    }
+   ],
+   "minimo": -2,
+   "maximo": 4,
+   "formato": "[$-416]0.0",
+   "rotulos": false,
+   "lateral": [
+    {
+     "estilo": "escuro",
+     "olho": "Na aula de capacitação",
+     "texto": "Atrito “na pronação e supinação”. O que mais aumenta o contato é estender; a rotação muda o ponto."
+    },
+    {
+     "estilo": "claro",
+     "texto": "**Vulnerabilidade, não causa:** 85 cotovelos de cadáver, sem carga nem dor."
+    }
+   ],
+   "nota": "Adaptado de Bunata 2007, Tab. I (print da aula de capacitação, s13; a conferir no PDF). Negativo: aquém da referência.",
+   "fonte": [
+    "Bunata2007"
+   ],
+   "notas": "O dado da peça 2. Bunata, em 2007, estudou 85 cotovelos de cadáver e marcou com uma sutura o ponto em que a face profunda do ECRB toca a borda do capítulo. Ler o eixo: na horizontal, o cotovelo saindo de 90 graus de flexão até a extensão completa; na vertical, quanto a sutura se deslocou por contato, em milímetros, em relação à referência, 90 graus em neutro, que vale zero; por isso a pronação começa negativa. Não é uma área de contato. Nas três rotações, o deslocamento cresce ao estender: em neutro, de zero a 3,4 milímetros; em pronação, de menos 1,1 a 3,2; em supinação, de 1,2 a 3,6. A aula de capacitação dizia que o atrito acontecia na pronação e na supinação; o que mais aumenta o contato é estender, e a rotação muda onde ele acontece. Dois limites: os valores foram lidos no print da nossa aula, a conferir no PDF; e é cadáver, sem tônus, carga ou dor. Mostra vulnerabilidade, não causa. Escolher posição de exercício com isso fica para a aula 2."
+  },
+  {
+   "tipo": "tabela",
+   "parte": 2,
+   "papel": "explicar",
+   "olho": "Parte 2 · O processamento da dor",
+   "titulo": "Mais sensível **perto** do cotovelo, não longe",
+   "tempo_s": 75,
+   "colunas": [
+    "Onde se mede",
+    "Membro superior",
+    "Evidência"
+   ],
+   "linhas": [
+    [
+     "Local, no epicôndilo",
+     "limiar de dor à pressão menor",
+     "moderada"
+    ],
+    [
+     "Regional, perto do cotovelo",
+     "limiar de dor à pressão menor",
+     "moderada"
+    ],
+    [
+     "Remoto, longe da dor",
+     "sem diferença",
+     "—"
+    ],
+    [
+     "Térmico, local",
+     "mais sensível",
+     "moderada"
+    ]
+   ],
+   "larguras": [
+    3.0,
+    3.6,
+    1.6
+   ],
+   "destaque_linhas": [
+    2
+   ],
+   "nota": "30 estudos, 18 de cotovelo, contra controles sem dor.",
+   "lateral": [
+    {
+     "estilo": "escuro",
+     "olho": "Na aula de capacitação",
+     "texto": "“Evidências preliminares de sensibilização.” Hoje: local e regional."
+    },
+    {
+     "estilo": "claro",
+     "texto": "**Desafio:** causa, consequência ou marcador?"
+    }
+   ],
+   "fonte": [
+    "Rio2021"
+   ],
+   "notas": "A peça 4, com o dado. A revisão de Rio, de 2021, juntou 30 estudos que compararam pessoas com tendinopatia e pessoas sem dor; 18 eram de cotovelo lateral. Limiar de dor à pressão é a pressão do algômetro em que a pessoa começa a sentir dor; limiar menor é sensibilidade maior. No membro superior, o limiar foi menor no local da dor e numa região próxima, com evidência moderada; longe da dor, não houve diferença; e o limiar térmico local mostrou sensibilização, também moderada. A linha em cinza corrige a nossa aula de capacitação, que falava em evidências preliminares de sensibilização, o que costuma virar sensibilização central na fala. O padrão do cotovelo é local e regional. Dor aumentada longe do cotovelo pede outra hipótese. Limites: só o resumo, sem tamanho de efeito, e não sei se o térmico foi frio ou calor. Desafio do cartão: estudo de comparação não diz se a hiperalgesia é causa, consequência ou marcador."
+  },
+  {
+   "tipo": "enquete",
+   "parte": 2,
+   "papel": "checar",
+   "olho": "Parte 2 · Checagem",
+   "titulo": "Explique ao **paciente**",
+   "tempo_s": 80,
+   "interacao": {
+    "tipo": "enquete",
+    "duracao_s": 40,
+    "gravacao": "Antes de abrir, dizer: quem assiste à gravação, pause o vídeo e escolha a sua letra antes de eu mostrar o resultado.",
+    "plano_b": "Sem enquete na conta: cada um escreve a letra no chat e envia no 3; contar as letras em voz alta."
+   },
+   "pergunta": "Um paciente pergunta: “Se não é inflamação, por que dói tanto, e até no antebraço?” Qual explicação a evidência sustenta melhor?",
+   "opcoes": {
+    "A": "É inflamação crônica: o anti-inflamatório certo resolve.",
+    "B": "O tendão está rompido; a dor mostra o tamanho do dano.",
+    "C": "O tendão mudou e a região do cotovelo ficou mais sensível; a dor não mede o dano.",
+    "D": "Sensibilização central: o corpo inteiro ficou mais sensível à dor."
+   },
+   "gabarito": "C",
+   "notas": "Checagem de compreensão da parte 2: a turma aplica as quatro peças à pergunta que todo paciente faz. Interação: enquete de 40 segundos no Meet, sem comentar as opções. Mostrar o resultado; o Meet mostra só a contagem. Pedir um voluntário da opção menos votada, que abre o microfone e defende em 15 segundos, e dizer o nome de quem se apresentar. A resposta é a C. A A é o erro do nome epicondilite; a B mistura dor com dano; a D exagera a sensibilização: longe da dor, o limiar não mudou. Se mais da metade errar, voltar 30 segundos ao esquema."
+  },
+  {
+   "tipo": "citacao",
+   "parte": 2,
+   "papel": "aplicacao",
+   "olho": "Parte 2 · Aplicação",
+   "titulo": "Renata: “Dói até no **antebraço**”",
+   "tempo_s": 65,
+   "origem": "caso",
+   "interacao": {
+    "tipo": "mao_camera",
+    "duracao_s": 20,
+    "inicio_s": 40,
+    "pedido": "Polegar para cima: o padrão dela é o esperado na tendinopatia lateral. Para baixo: pede outra hipótese."
+   },
+   "rotulo": "Primeira consulta",
+   "fala": "“Dói no cotovelo e no antebraço. E piora quando lavo cabelo com água fria.”",
+   "cartao": {
+    "olho": "O que você mediu",
+    "itens": [
+     "Algômetro: limiar menor no epicôndilo e no antebraço proximal direitos",
+     "Tibial anterior: igual dos dois lados",
+     "Limiar de dor ao frio: não medido"
+    ]
+   },
+   "notas": "A aplicação da parte 2. Ler a fala da Renata. Dizer os dados do cartão: no algômetro, o limiar de dor à pressão está menor no epicôndilo e no antebraço proximal do lado direito, comparado com o esquerdo, e igual no tibial anterior, longe da dor. Interação: mão na câmera. Polegar para cima quem acha que esse padrão é o esperado; para baixo quem acha que pede outra hipótese. A resposta é para cima: local e regional, sem remoto. Guardar a água fria: queixa não é limiar medido; volta na parte 5. Para quem está começando: compare com o outro lado e com um ponto longe."
+  },
+  {
+   "tipo": "sintese",
+   "parte": 2,
+   "papel": "sintese",
+   "olho": "Parte 2 · Síntese",
+   "titulo": "O que levar sobre por que **dói**",
+   "tempo_s": 45,
+   "pontos": [
+    {
+     "titulo": "Tendão alterado, sem inflamação consistente",
+     "texto": "Tendinose; o ECRB encosta mais no capítulo ao estender (cadáver)."
+    },
+    {
+     "titulo": "Mais sensível perto, não longe",
+     "texto": "Hiperalgesia local e regional, evidência moderada; remota, não."
+    }
+   ],
+   "faixa": "**Na prática:** explique sem “inflamação” nem “desgaste”: tendão alterado e sensível; a dor não mede o dano.",
+   "fonte": [
+    "Bunata2007",
+    "Rio2021",
+    "frase: proposta clínica"
+   ],
+   "notas": "Síntese da parte 2. Primeira: o tendão está alterado, com tendinose e sem inflamação consistente, e o ECRB encosta mais no capítulo quando o cotovelo estende, um dado de cadáver. Segunda: o sistema que sente a dor fica mais sensível perto do cotovelo, não longe. A frase da faixa é nossa, uma síntese desses estudos para usar com o paciente; ninguém testou essa frase como intervenção. Ligar com a próxima: se o mecanismo tem tantas peças, como fechar o diagnóstico na clínica, e quanto vale cada teste? Parte 3."
+  },
+  {
+   "tipo": "mapa",
+   "parte": 3,
+   "atual": 3,
+   "tempo_s": 30,
+   "notas": "Onde estamos: parte 3 de 5, a mais longa e a mais técnica. As duas primeiras disseram o que é e por que dói. Esta responde como diagnosticar, na ordem: o que medir, quanto cada teste vale, a conta que transforma o teste em probabilidade e como classificar. Quem já domina razão de verossimilhança, use para conferir o próprio raciocínio."
+  },
+  {
+   "tipo": "cartoes",
+   "parte": 3,
+   "papel": "explicar",
+   "olho": "Parte 3 · O que medir",
+   "titulo": "O que **medir** na primeira consulta",
+   "tempo_s": 80,
+   "colunas": 3,
+   "itens": [
+    {
+     "titulo": "Preensão sem dor",
+     "texto": "Força até a dor começar, cotovelo estendido, nos dois lados: razão afetado ÷ não afetado."
+    },
+    {
+     "titulo": "Fletido × estendido",
+     "texto": "Mesma mão; a queda ao estender é o teste seguinte."
+    },
+    {
+     "titulo": "PRTEE, 0 a 100",
+     "texto": "Dor (0 a 50) + função (0 a 50); quanto maior, pior."
+    }
+   ],
+   "faixa": "**Limite:** sem DMCI nem referência no lote para a preensão sem dor; a razão é proposta clínica.",
+   "fonte": [
+    "Karanasios2022",
+    "Poltawski2011",
+    "Vicenzino2009",
+    "razão: proposta clínica"
+   ],
+   "notas": "A parte começa pelo que medir, para o teste do próximo slide já ter protocolo. Primeiro, a força de preensão sem dor: no dinamômetro, a força até a dor começar, com o cotovelo estendido, nos dois lados. A medida que viaja bem entre consultas é a razão, afetado dividido por não afetado, sempre no mesmo protocolo. Segundo, a mesma medida com o cotovelo fletido a 90 graus, na mesma mão: a queda ao estender é o teste do próximo slide; não sei ainda se a revisão mediu preensão máxima ou sem dor. Terceiro, o PRTEE, de 0 a 100, metade dor e metade função; quanto maior, pior. No nosso lote não há diferença mínima nem referência para a preensão sem dor: acompanhar pela razão é proposta clínica. Desafio: a regra de Vicenzino, com idade abaixo de 49, preensão sem dor do lado afetado acima de 112 newtons e do não afetado abaixo de 336, tem todas as razões positivas com intervalo que inclui 1 e não foi validada."
+  },
+  {
+   "tipo": "tabela",
+   "parte": 3,
+   "papel": "explicar",
+   "olho": "Parte 3 · Quanto vale cada teste",
+   "titulo": "A queda da preensão ao estender é o teste que mais **inclina**",
+   "tempo_s": 95,
+   "colunas": [
+    "Teste",
+    "S",
+    "E",
+    "RV+",
+    "RV−"
+   ],
+   "linhas": [
+    [
+     "Cozen",
+     "91%",
+     "não informada",
+     "—",
+     "—"
+    ],
+    [
+     "Preensão cai ≥ 5–10% ao estender",
+     "78–83%",
+     "80–90%",
+     "3,9–8,3*",
+     "0,19–0,28*"
+    ]
+   ],
+   "larguras": [
+    2.6,
+    1.4,
+    1.5,
+    1.4,
+    1.5
+   ],
+   "destaque_linhas": [
+    1
+   ],
+   "nota": "*Calc.; protocolo e espectro a conferir; 97% dos estudos com viés incerto ou alto.",
+   "fonte": [
+    "Karanasios2022",
+    "Zwerus2018",
+    "contas: calc. a partir de Karanasios 2022"
+   ],
+   "notas": "A pergunta é quanto cada teste acrescenta à história. Para quem está começando, o cartão claro: sensibilidade, entre os que têm a doença, quantos dão positivo; especificidade, entre os que não têm, quantos dão negativo. A razão de verossimilhança diz quanto um resultado multiplica a chance que você já tinha; quanto mais longe de 1, mais muda a decisão, e uma positiva abaixo de 2 muda pouco. Na revisão de Karanasios, de 2022, 24 estudos: o Cozen tem sensibilidade de 91%, sem especificidade no resumo; sem ela não há razão de verossimilhança, e o Cozen positivo não confirma. O melhor teste clínico é a preensão: positivo quando cai pelo menos 5% a 10% do fletido para o estendido, o corte que o resumo dá; sensibilidade de 78% a 83% e especificidade de 80% a 90%. A conta do cartão escuro: 0,78 dividido por 1 menos 0,80 dá 3,9; com 0,83 e 0,90, dá 8,3. Do outro lado, 0,22 dividido por 0,80 dá 0,28; com 0,83 e 0,90, 0,19. Protocolo e espectro a conferir, como diz a nota. A aula de capacitação listava os diferenciais sem nenhum número de teste.",
+   "lateral": [
+    {
+     "estilo": "claro",
+     "texto": "**Para começar:** S = positivos entre os doentes; E = negativos entre os sadios."
+    },
+    {
+     "estilo": "escuro",
+     "olho": "A conta (calc.)",
+     "texto": "RV+ = S ÷ (1 − E) = 0,78 ÷ 0,20 = **3,9**. RV− = (1 − S) ÷ E = 0,22 ÷ 0,80 = **0,28**."
+    }
+   ]
+  },
+  {
+   "tipo": "exemplo",
+   "parte": 3,
+   "papel": "exemplo",
+   "olho": "Parte 3 · Exemplo resolvido",
+   "titulo": "Da suspeita à **probabilidade** depois do teste",
+   "tempo_s": 100,
+   "dado": {
+    "olho": "O problema",
+    "texto": "Suspeita de 50% antes do exame. Preensão positiva.",
+    "itens": [
+     "RV+ de 3,9 a 8,3 (calc.)"
+    ]
+   },
+   "passos": [
+    {
+     "titulo": "Em chance",
+     "conta": "0,50 ÷ 0,50 = **1**"
+    },
+    {
+     "titulo": "Vezes a RV+",
+     "conta": "1 × 3,9 = **3,9**  ·  1 × 8,3 = **8,3**"
+    },
+    {
+     "titulo": "De volta a %",
+     "conta": "3,9 ÷ 4,9 = **80%**  ·  8,3 ÷ 9,3 = **89%**"
+    }
+   ],
+   "resposta": "**Leitura:** 50% → 80% a 89%: inclina, não fecha.",
+   "ancora": "chance = p ÷ (1 − p); volte com chance ÷ (1 + chance).",
+   "fonte": [
+    "Karanasios2022",
+    "contas: calc. a partir de Karanasios 2022"
+   ],
+   "notas": "Exemplo resolvido: eu faço a conta inteira, a turma acompanha. O problema: antes do exame, eu estimo em 50% a chance de tendinopatia lateral; a preensão cai mais que o corte quando o paciente estende o cotovelo, ou seja, teste positivo. Passo 1, passar a probabilidade para chance, porque a razão de verossimilhança multiplica chance, não porcentagem: 0,50 dividido por 0,50 dá 1, uma chance de 1 para 1. Passo 2, multiplicar pela razão positiva: 1 vezes 3,9 dá 3,9; 1 vezes 8,3 dá 8,3. Passo 3, voltar para probabilidade, dividindo a chance por 1 mais a chance: 3,9 dividido por 4,9 dá 80%; 8,3 dividido por 9,3 dá 89%. Leitura: de 50% para 80% a 89%. O teste inclina muito, mas ainda sobra de 11% a 20% de chance de ser outra coisa. As razões são conta minha a partir das faixas do resumo, e o 50% é ilustração. Para quem está começando, a âncora tem a receita inteira. Mostrar por que a receita importa: quem pula o passo 1 e multiplica 50% por 3,9 chega a 195%, que não existe. No próximo slide a turma faz a mesma conta com um negativo."
+  },
+  {
+   "tipo": "exemplo",
+   "parte": 3,
+   "papel": "checar",
+   "olho": "Parte 3 · Exemplo parcialmente resolvido",
+   "titulo": "Suspeita alta e preensão **negativa**: quanto sobra?",
+   "tempo_s": 140,
+   "interacao": {
+    "tipo": "chat_cascata",
+    "duracao_s": 50,
+    "inicio_s": 45,
+    "pedido": "Completar os passos 2 e 3 da conta e enviar o resultado em %.",
+    "gravacao": "Quem assiste à gravação: pause, faça a conta no papel e só então siga para a resposta."
+   },
+   "dado": {
+    "olho": "O problema",
+    "texto": "Suspeita de até 79% (teto de um ensaio). Preensão negativa.",
+    "itens": [
+     "RV− de 0,19 a 0,28 (calc.); use 0,28"
+    ]
+   },
+   "passos": [
+    {
+     "titulo": "Probabilidade em chance",
+     "conta": "0,79 ÷ 0,21 ≈ **3,76**"
+    },
+    {
+     "titulo": "Multiplique pela RV−",
+     "lacuna": "3,76 × 0,28 = ?"
+    },
+    {
+     "titulo": "Volte para probabilidade",
+     "lacuna": "chance ÷ (1 + chance) = ?"
+    }
+   ],
+   "lacunas": [
+    2,
+    3
+   ],
+   "ancora": "a mesma receita do exemplo anterior, agora com a RV−.",
+   "desafio": "abaixo de que suspeita um negativo leva a menos de 50%?",
+   "fonte": [
+    "Karanasios2022",
+    "Vuvan2020",
+    "contas: calc. a partir de Karanasios 2022 e Vuvan 2020"
+   ],
+   "notas": "Exemplo parcialmente resolvido: o passo 1 está feito, os passos 2 e 3 são da turma. De onde vem o 79%: no ensaio de Vuvan, de 533 voluntários de chamada pública que se diziam com cotovelo de tenista, 111 não tinham a tendinopatia; os outros excluídos saíram por outros motivos, então no máximo 79% tinham. É um teto, e usá-lo como suspeita é proposta clínica. Passo 1: 0,79 dividido por 0,21 dá cerca de 3,76. Interação: chat em cascata depois de explicar o passo 1. 40 segundos para os passos 2 e 3, contar 3, 2, 1 e pedir a porcentagem. A resposta: 3,76 vezes 0,28 dá cerca de 1,05; 1,05 dividido por 2,05 dá cerca de 51%. Com 0,19, cairia a 42%. Ler as respostas com os nomes e mostrar a conta de quem acertou. Leitura: com suspeita alta, o negativo derruba 28 a 37 pontos e ainda deixa de 42% a 51%: não exclui. O que decide é o limiar de ação, tratar como tendinopatia ou investigar outra causa. Se mais da metade errar, refazer o passo 2 em voz alta. Desafio: o negativo leva abaixo de 50% quando a chance vezes a RV fica menor que 1, ou seja, suspeita abaixo de cerca de 78% a 84%."
+  },
+  {
+   "tipo": "tabela",
+   "parte": 3,
+   "papel": "explicar",
+   "olho": "Parte 3 · Como classificar",
+   "titulo": "Classifique antes de tratar: **irritabilidade** e distribuição",
+   "tempo_s": 90,
+   "colunas": [
+    "Classe",
+    "Critério (print s42)"
+   ],
+   "linhas": [
+    [
+     "Leve (I–III)",
+     "II: dor leve após o trabalho, dura 7 a 48 h"
+    ],
+    [
+     "Moderada (IV–V)",
+     "IV: leve a moderada na atividade, persiste > 6 h e limita"
+    ],
+    [
+     "Grave (VI–VII)",
+     "VI: forte em atividade leve, intermitente em repouso · VII: constante em repouso, tira o sono"
+    ],
+    [
+     "Distribuição",
+     "1: um lado · 2: dois lados · 3: com dor cervical associada ou neuropática"
+    ]
+   ],
+   "larguras": [
+    2.6,
+    8.2
+   ],
+   "destaque_linhas": [],
+   "nota": "Descritiva, não validada; atribuição provável à diretriz (print s42).",
+   "fonte": [
+    "Lucado2022",
+    "classificação: print da aula de capacitação s42"
+   ],
+   "notas": "Como classificar, e isso continua valendo da nossa aula de capacitação, que atribui a classificação à diretriz. Dos seis eixos, os dois que mudam a conduta. Irritabilidade, em sete níveis: leve, I a III; moderada, IV e V; grave, VI e VII. Os critérios que registramos do print: nível II, dor leve depois do trabalho, que dura de 7 a 48 horas; nível IV, dor leve a moderada na atividade, que persiste mais de 6 horas e limita; nível VI, dor moderada a intensa em atividade leve, intermitente em repouso; nível VII, dor constante em repouso, que tira o sono. I, III e V não estão no nosso registro: na dúvida, classifique pela faixa. Perguntas: quanto dói, quanto dura, já limita, dói parado, acorda? Intensidade: leve até 3 em 10, moderada de 4 a 6, intensa a partir de 7. Distribuição: tipo 1, um lado; tipo 2, os dois; tipo 3, com dor cervical ou neuropática. Na fala ficam a agudeza, até 6 semanas, até 3 meses ou crônica, e o contexto. A classificação é descritiva, não validada, e as faixas de PRTEE função da aula de capacitação se sobrepõem: ficaram fora até o PDF."
+  },
+  {
+   "tipo": "citacao",
+   "parte": 3,
+   "papel": "aplicacao",
+   "olho": "Parte 3 · Aplicação",
+   "titulo": "Renata, primeira consulta: **meça e classifique**",
+   "tempo_s": 110,
+   "origem": "caso",
+   "interacao": {
+    "tipo": "chat_cascata",
+    "duracao_s": 50,
+    "inicio_s": 45,
+    "pedido": "Uma linha: queda ao estender, razão afetado ÷ não afetado, irritabilidade e distribuição.",
+    "gravacao": "Quem assiste à gravação: pause e escreva a sua linha antes de eu ler as respostas."
+   },
+   "rotulo": "Quatro meses de dor",
+   "contexto": "No chat: queda ao estender, razão afetado ÷ não afetado, irritabilidade, distribuição.",
+   "fala": "“Depois do trabalho a dor fica até a noite, e já estou recusando cliente.”",
+   "fala2": "Dor 6/10 no trabalho, só no cotovelo direito; “pescoço duro”, sem formigamento.",
+   "cartao": {
+    "olho": "O que você mediu",
+    "itens": [
+     "Preensão sem dor, direita: 136 N fletido, 120 N estendido",
+     "Esquerda, estendido: 320 N",
+     "Cozen positivo",
+     "PRTEE 58 (dor 31, função 27)"
+    ]
+   },
+   "notas": "A aplicação da parte 3. Ler a fala dela e a linha de baixo, e os dados do cartão: preensão sem dor direita de 136 newtons fletido e 120 estendido; esquerda, estendido, 320; Cozen positivo; PRTEE 58, com 31 de dor e 27 de função. Interação: chat em cascata, uma linha com as quatro coisas, 40 segundos, contar 3, 2, 1. A resposta: queda de 136 para 120, cerca de 12%, acima do corte de 5% a 10%, positivo; razão de 120 sobre 320, cerca de 38%; irritabilidade moderada, nível IV: dói 6 em 10 no trabalho, dura mais de 6 horas e limita; quem escreveu moderada, IV a V, acertou. Distribuição tipo 1 com bandeira: pescoço duro, sem dor cervical nem formigamento, não fecha o tipo 3, mas pede exame cervical. Ler quatro respostas com os nomes. Na aula 2, a irritabilidade escolhe a dose."
+  },
+  {
+   "tipo": "sintese",
+   "parte": 3,
+   "papel": "sintese",
+   "olho": "Parte 3 · Síntese",
+   "titulo": "O que levar sobre o **diagnóstico**",
+   "tempo_s": 50,
+   "pontos": [
+    {
+     "titulo": "O teste vale pela RV",
+     "texto": "Preensão que cai ao estender: RV+ 3,9 a 8,3 (calc.); Cozen não confirma."
+    },
+    {
+     "titulo": "A suspeita muda o que o teste faz",
+     "texto": "50% → 80% a 89% com positivo; 79% → 42% a 51% com negativo."
+    },
+    {
+     "titulo": "Meça e classifique",
+     "texto": "Preensão sem dor, PRTEE, irritabilidade, distribuição."
+    }
+   ],
+   "faixa": "**Na prática:** antes de testar, diga a sua suspeita em porcentagem; depois, quanto o teste a mudou.",
+   "fonte": [
+    "Karanasios2022",
+    "Vuvan2020",
+    "contas: calc."
+   ],
+   "notas": "Síntese da parte 3, em três frases. Primeira: o teste vale pela razão de verossimilhança; a preensão que cai ao estender tem RV positiva de 3,9 a 8,3, pela conta, e o Cozen é sensível, mas sem especificidade não confirma. Segunda: a mesma preensão faz coisas diferentes conforme a suspeita; de 50% vai a 80% a 89% se positiva, e de 79% cai a 42% a 51% se negativa. Terceira: meça a preensão sem dor nos dois lados e o PRTEE, e classifique irritabilidade e distribuição. Ligar com a próxima: o teste negativo, a dor mais distal ou o formigamento mandam pensar em outra coisa. Em quê, e quando a imagem ajuda? Parte 4."
+  },
+  {
+   "tipo": "mapa",
+   "parte": 4,
+   "atual": 4,
+   "tempo_s": 30,
+   "notas": "Onde estamos: parte 4 de 5. Até aqui, o que é, por que dói e como diagnosticar. Esta parte olha para o outro lado: o que não é tendinopatia, os sinais de alerta e o que a imagem acrescenta, inclusive como explicar ao paciente o laudo que ele traz. Avisar que aqui a evidência é mais fraca e que boa parte é proposta clínica."
+  },
+  {
+   "tipo": "tabela",
+   "parte": 4,
+   "papel": "explicar",
+   "olho": "Parte 4 · O diferencial",
+   "titulo": "O que faz pensar em **outra coisa**",
+   "tempo_s": 85,
+   "colunas": [
+    "Diferencial",
+    "Pista na história e no exame"
+   ],
+   "linhas": [
+    [
+     "Radiculopatia cervical",
+     "dor cervical, parestesia, irradiação"
+    ],
+    [
+     "Túnel radial / NIP",
+     "dor mais distal; dedos fracos"
+    ],
+    [
+     "Instabilidade posterolateral",
+     "falseio; trauma ou injeções"
+    ],
+    [
+     "Plica ou condromalácia",
+     "estalo ou bloqueio"
+    ],
+    [
+     "Dor miofascial",
+     "dor ao palpar o ventre dos extensores"
+    ],
+    [
+     "Sinais de alerta",
+     "trauma, febre, dor noturna constante, déficit progressivo, câncer"
+    ]
+   ],
+   "larguras": [
+    3.4,
+    7.4
+   ],
+   "destaque_linhas": [
+    5
+   ],
+   "nota": "**Para começar:** a dor está mesmo no epicôndilo, e só nele? Pistas e alertas: proposta clínica.",
+   "fonte": [
+    "Lucado2022",
+    "pistas e alertas: proposta clínica da equipe"
+   ],
+   "notas": "O diferencial. A lista é a da nossa aula de capacitação, que segue a diretriz de 2022; o PDF da diretriz ainda não foi conferido, então a atribuição é provável. Ler linha a linha. Radiculopatia cervical: dor cervical, parestesia, dor que irradia. Túnel radial e interósseo posterior: dor mais distal ao epicôndilo e, no interósseo, fraqueza para estender os dedos. Instabilidade posterolateral: falseio, estalo, trauma ou injeções repetidas. Plica e condromalácia radiocapitular: estalo ou bloqueio. Dor miofascial, com pontos-gatilho: a dor se reproduz ao palpar o ventre dos extensores, longe do epicôndilo. Tamanho do apoio: Zwerus achou só dois estudos de acurácia para a instabilidade, e nenhum estudo do lote mede a acurácia dos testes para os outros; as pistas são proposta clínica. Sinais de alerta: trauma ou suspeita de fratura, febre, dor noturna constante sem relação com carga, déficit neurológico progressivo, câncer, bloqueio em jovem, pensando em osteocondrite do capítulo. Qualquer um encaminha; também proposta clínica, a conferir na diretriz."
+  },
+  {
+   "tipo": "enquete",
+   "parte": 4,
+   "papel": "checar",
+   "olho": "Parte 4 · Checagem",
+   "titulo": "Cozen positivo, mas a dor está **mais abaixo**",
+   "tempo_s": 75,
+   "interacao": {
+    "tipo": "enquete",
+    "duracao_s": 40,
+    "gravacao": "Antes de abrir, dizer: quem assiste à gravação, pause o vídeo e escolha a sua letra antes de eu mostrar o resultado.",
+    "plano_b": "Sem enquete na conta: cada um escreve a letra no chat e envia no 3; contar as letras em voz alta."
+   },
+   "pergunta": "Homem de 50 anos, dor lateral há 2 meses, Cozen positivo. A dor fica 4 cm abaixo do epicôndilo e há fraqueza para estender os dedos. O próximo passo mais defensável?",
+   "opcoes": {
+    "A": "Fechar tendinopatia lateral: o Cozen é positivo.",
+    "B": "Examinar o nervo radial (túnel radial e NIP) antes de fechar.",
+    "C": "Pedir ressonância para ver o tendão.",
+    "D": "Infiltrar o epicôndilo e reavaliar."
+   },
+   "gabarito": "B",
+   "notas": "Checagem da parte 4: um paciente novo, com uma pista fora do epicôndilo. Interação: enquete de 40 segundos, sem comentar as opções. Mostrar o resultado e pedir um voluntário da opção menos votada para defender em 15 segundos, de microfone aberto. A resposta é a B: dor mais distal e dedos fracos fazem pensar no nervo radial. A A ignora a pista; a C pede imagem para o que o exame responde; a D trata antes de saber o que é. O exame do nervo é proposta clínica. Se mais da metade errar, voltar 30 segundos à tabela."
+  },
+  {
+   "tipo": "barras",
+   "parte": 4,
+   "papel": "explicar",
+   "olho": "Parte 4 · A imagem",
+   "titulo": "Metade de quem não tem dor tem **esporão**",
+   "tempo_s": 110,
+   "rotulo": "Esporão no epicôndilo ao ultrassom, % dos cotovelos",
+   "categorias": [
+    "Com tendinopatia",
+    "Outro lado, sem dor",
+    "População sem dor"
+   ],
+   "series": [
+    {
+     "nome": "Esporão (%)",
+     "valores": [
+      78,
+      45,
+      50
+     ]
+    }
+   ],
+   "formato": "0\"%\"",
+   "lateral": [
+    {
+     "estilo": "escuro",
+     "olho": "Como teste",
+     "texto": "RV+ ≈ 0,78 ÷ (1 − 0,50) ≈ **1,6** (calc.): quase não muda a probabilidade."
+    },
+    {
+     "estilo": "claro",
+     "texto": "**Nenhum achado** se correlacionou com dor, PRTEE ou duração."
+    },
+    {
+     "estilo": "claro",
+     "texto": "**Desafio:** o desenho de duas portas infla ou reduz a RV?"
+    }
+   ],
+   "fonte": [
+    "Krogh2020",
+    "Karanasios2022",
+    "Couppe2022",
+    "contas: calc. a partir de Krogh 2020"
+   ],
+   "notas": "O que a imagem mostra em quem não tem dor. No estudo de Krogh, de 2020, 60 pacientes com epicondilite crônica e 264 pessoas sem dor fizeram ultrassom. Esporão no epicôndilo: 78% dos cotovelos doentes, 45% do outro cotovelo, sem dor, e 50% da população sem dor. Fazer a conta junto, no cartão escuro: tratando o esporão como teste, a sensibilidade seria 0,78 e a especificidade 0,50; 0,78 dividido por 1 menos 0,50 dá cerca de 1,6, que quase não mexe na probabilidade. O Doppler separa melhor: 3,47 numa escala de 0 a 4 nos doentes, contra 0,26 em quem não tem dor. Mas menos vaso não é melhora: no ensaio de Couppé, de 2022, o corticoide reduziu o Power Doppler em 12 semanas sem ganho clínico, e o QuickDASH em 52 semanas ficou 15 pontos pior que o placebo, num desfecho secundário. E nenhum achado do ultrassom se correlacionou com dor, PRTEE ou duração. A nota: a aula de capacitação dizia ressonância com 90% a 100%; a revisão de Karanasios dá 81% a 100%, com viés alto, e o número responde se a imagem vê o tendão, não se muda a conduta. Limite de Krogh: só o resumo, e um desenho de duas portas, doentes contra pessoas sem dor. Desafio: na clínica, com pacientes que têm outras causas de dor lateral, a razão seria menor: o espectro extremo infla o número.",
+   "nota": "RM: S e E de 81% a 100%; ultrassom: S 53% a 100%, E 42% a 90%; viés alto."
+  },
+  {
+   "tipo": "tabela",
+   "parte": 4,
+   "papel": "aplicacao",
+   "olho": "Parte 4 · Aplicação: o laudo da Renata",
+   "titulo": "O laudo descreve o tendão; não mede a **dor**",
+   "tempo_s": 85,
+   "interacao": {
+    "tipo": "mao_camera",
+    "duracao_s": 20,
+    "inicio_s": 60,
+    "pedido": "Polegar para cima: pediria a ressonância da Renata hoje. Para baixo: não pediria."
+   },
+   "colunas": [
+    "No laudo",
+    "Significa",
+    "Não significa"
+   ],
+   "linhas": [
+    [
+     "Espessamento, 5,6 mm",
+     "~0,5 mm acima da média; compare os lados",
+     "gravidade"
+    ],
+    [
+     "Doppler grau 3",
+     "típico de quem tem dor",
+     "que menos vaso seja melhora"
+    ],
+    [
+     "Entesófito",
+     "metade de quem não tem dor tem",
+     "a causa da dor"
+    ]
+   ],
+   "larguras": [
+    2.8,
+    4.6,
+    2.8
+   ],
+   "nota": "Critério da aula de capacitação: imagem se não melhorar no prazo ou surgir sinal atípico (a conferir na diretriz).",
+   "fonte": [
+    "Krogh2020",
+    "Couppe2022",
+    "critério de imagem: proposta clínica",
+    "contas: calc. a partir de Krogh 2020"
+   ],
+   "notas": "A aplicação da parte 4: a Renata traz um laudo e pergunta se não é melhor fazer a ressonância. Ler linha a linha. Espessamento de 5,6 milímetros: em Krogh, o tendão doente fica 0,40 milímetro acima da média da população, e 0,53 a 0,70 acima do outro lado; pela conta com a população, a referência fica perto de 5,1, então ela está cerca de meio milímetro acima. Compare com o outro lado e não chame de gravidade. Doppler 3: típico de quem tem dor; e, como vimos com Couppé, menos vaso não é melhora. Entesófito: metade de quem não tem dor. Interação: mão na câmera. Polegar para cima quem pediria a ressonância hoje; para baixo quem não pediria. A resposta que a evidência sustenta é para baixo, pelo critério da nota: imagem se não melhorar no prazo ou surgir sinal atípico, com radiografia primeiro nos refratários; critério da aula de capacitação, a conferir na diretriz."
+  },
+  {
+   "tipo": "sintese",
+   "parte": 4,
+   "papel": "sintese",
+   "olho": "Parte 4 · Síntese",
+   "titulo": "O que levar sobre o diferencial e a **imagem**",
+   "tempo_s": 45,
+   "pontos": [
+    {
+     "titulo": "Pista fora do epicôndilo reabre o caso",
+     "texto": "Pescoço, formigamento, dor mais distal, dedos fracos, falseio, estalo; alerta encaminha."
+    },
+    {
+     "titulo": "O laudo descreve, não explica",
+     "texto": "Esporão em 50% de quem não tem dor; o ultrassom não acompanhou a dor."
+    }
+   ],
+   "faixa": "**Na prática:** imagem se não melhorar no prazo ou surgir sinal atípico; com laudo na mão, explique pela frequência em quem não tem dor.",
+   "fonte": [
+    "Krogh2020",
+    "pistas, alertas e critério de imagem: proposta clínica"
+   ],
+   "notas": "Síntese da parte 4, em duas frases. Primeira: qualquer pista fora do epicôndilo reabre o diagnóstico, pescoço, formigamento, dor mais distal, fraqueza dos dedos, falseio ou estalo, e um sinal de alerta encaminha; as pistas são proposta clínica. Segunda: o laudo descreve o tendão, não explica a dor; esporão em metade de quem não tem dor, e nenhum achado do ultrassom acompanhou a dor. Ligar com a última parte: diagnóstico feito, a pergunta da Renata passa a ser quanto tempo vai levar. Parte 5."
+  },
+  {
+   "tipo": "mapa",
+   "parte": 5,
+   "atual": 5,
+   "tempo_s": 30,
+   "notas": "Onde estamos: parte 5 de 5. Já vimos o que é, por que dói, como diagnosticar e o que não é. Falta o que esperar: o curso natural com número, os sinais de pior evolução e a conta da meta do PRTEE. É a parte em que a nossa aula de capacitação mais mudou."
+  },
+  {
+   "tipo": "linha",
+   "parte": 5,
+   "papel": "explicar",
+   "olho": "Parte 5 · O curso natural",
+   "titulo": "A cada **2,5 a 3 meses**, metade dos sintomáticos melhora",
+   "tempo_s": 105,
+   "interacao": {
+    "tipo": "mao_camera",
+    "duracao_s": 20,
+    "inicio_s": 80,
+    "pedido": "Polegar para cima: quem tem dor há 4 meses tem a mesma chance de melhorar nos próximos 3 que quem tem há 1 mês. Para baixo: menor."
+   },
+   "rotulo": "Já melhoraram, de 100",
+   "categorias": [
+    "Início",
+    "3 meses",
+    "6 meses",
+    "9 meses",
+    "12 meses"
+   ],
+   "series": [
+    {
+     "nome": "Conta: meia-vida de 3 meses (não é dado)",
+     "valores": [
+      0,
+      50,
+      75,
+      88,
+      94
+     ],
+     "cor": "cinza_grafico",
+     "tracejado": true
+    },
+    {
+     "nome": "Observado em 1 ano: 89 (IC 80 a 97)",
+     "valores": [
+      null,
+      null,
+      null,
+      null,
+      89
+     ],
+     "cor": "alerta",
+     "intervalo": [
+      null,
+      null,
+      null,
+      null,
+      [
+       80,
+       97
+      ]
+     ]
+    }
+   ],
+   "minimo": 0,
+   "maximo": 100,
+   "formato": "0",
+   "rotulos": false,
+   "lateral": [
+    {
+     "estilo": "escuro",
+     "olho": "Observado em 1 ano",
+     "texto": "89% muito melhor ou recuperado (189 de 213; IC 80% a 97%), braços controle de ensaios."
+    },
+    {
+     "estilo": "claro",
+     "texto": "**Tempo de dor antes:** não mudou a trajetória."
+    },
+    {
+     "estilo": "claro",
+     "texto": "**Aula de capacitação:** “mais da metade segue com sintomas em 1 ano”. Qual desfecho?"
+    }
+   ],
+   "nota": "Tracejado: conta ilustrativa. Ponto vermelho com barra: único dado observado.",
+   "fonte": [
+    "Ikonen2022",
+    "Smidt2002"
+   ],
+   "notas": "O número que ancora a conversa com o paciente. A meta-análise de Ikonen, de 2022, juntou os braços controle de 24 ensaios, placebo ou nenhum tratamento ativo. Em um ano, 89% muito melhores ou recuperados, de 80% a 97%; o número vem de só 213 pessoas, daí o intervalo largo. É o ponto vermelho com a barra, o único dado observado. A melhora seguiu uma meia-vida de 2,5 a 3 meses. A linha tracejada é a minha conta com 3 meses: 50, 75, 88 e 94 de cada 100 aos 3, 6, 9 e 12 meses; o observado, 89, ficou dentro do que a conta prevê. No braço de espera de Smidt, 32% de sucesso em 6 semanas e 83% em 52. E o tempo de dor antes não mudou a trajetória. A aula de capacitação dizia mais da metade com sintomas em um ano: algum sintoma não é o mesmo que não melhorou. Interação: mão na câmera. Polegar para cima quem acha que quem tem dor há 4 meses tem a mesma chance de melhorar nos próximos 3 que quem tem há 1 mês. A resposta é para cima, com uma ressalva no próximo slide."
+  },
+  {
+   "tipo": "tabela",
+   "parte": 5,
+   "papel": "explicar",
+   "olho": "Parte 5 · O que piora a previsão",
+   "titulo": "Sinais de pior prognóstico existem, mas pesam **pouco**",
+   "tempo_s": 80,
+   "colunas": [
+    "Sinal (coortes)",
+    "Quando",
+    "Quanto"
+   ],
+   "linhas": [
+    [
+     "Sintoma de nervo",
+     "8 sem",
+     "+15 na EVA, escala a conferir (IC 4,7 a 25,5)"
+    ],
+    [
+     "Sexo feminino",
+     "8 sem",
+     "+8,9 no DASH (IC 3,3 a 14,5)"
+    ],
+    [
+     "Dor cervical",
+     "12 m",
+     "pior; sem tamanho"
+    ],
+    [
+     "Limiar ao frio",
+     "1 ano",
+     "único preditor consistente; modelo inteiro: 9%"
+    ]
+   ],
+   "larguras": [
+    3.0,
+    1.6,
+    5.6
+   ],
+   "nota": "n: 83, 83, 349 e 41; certeza baixa. Duração: pior em Smidt 2006, sem efeito em Ikonen 2022.",
+   "fonte": [
+    "Waugh2004",
+    "Smidt2006",
+    "Coombes2015",
+    "Ikonen2022",
+    "Sanders2015"
+   ],
+   "notas": "Os modificadores, com o tamanho. Waugh, 83 pacientes, 8 semanas de fisioterapia: com o mesmo escore inicial, quem relata sintomas de nervo termina com 15 pontos a mais na escala visual de dor, escala a conferir no PDF; as mulheres, 8,9 pontos a mais de DASH. Smidt, 349 pacientes: dor cervical, dor intensa e duração longa associadas a pior resultado em 12 meses, sem tamanho no resumo. A duração é a ressalva: Ikonen não viu efeito; meta-regressão por ensaio e coorte de pessoas podem as duas estar certas. Coombes, 41 pacientes: o limiar ao frio foi o único preditor consistente em um ano, e o modelo inteiro explicou 9% do PRTEE; não é o tamanho do efeito do frio. Na aula de capacitação, essa tabela estava na patoanatomia. Um dado de prática: em Sanders, cerca de 1 em 10 com sintoma aos 6 meses foi operado; mostra o que se fez, não o que a cirurgia muda. Todos com certeza baixa: mudam a velocidade, não o destino de um ano."
+  },
+  {
+   "tipo": "exemplo",
+   "parte": 5,
+   "papel": "exemplo",
+   "olho": "Parte 5 · Exemplo resolvido",
+   "titulo": "A meta do PRTEE da Renata, pelas **duas réguas**",
+   "tempo_s": 95,
+   "dado": {
+    "olho": "PRTEE inicial: 58",
+    "itens": [
+     "Um pouco melhor: 7 pontos ou 22%",
+     "Muito melhor: 11 pontos ou 37%"
+    ]
+   },
+   "passos": [
+    {
+     "titulo": "Régua absoluta",
+     "conta": "58 − 7 = **51**  ·  58 − 11 = **47**"
+    },
+    {
+     "titulo": "Proporcional, um pouco",
+     "conta": "22% × 58 ≈ 13 → **≤ 45**"
+    },
+    {
+     "titulo": "Proporcional, muito",
+     "conta": "37% × 58 ≈ 21,5 → **≤ 36**"
+    }
+   ],
+   "resposta": "**Leitura:** com escore alto, a proporcional pede mais.",
+   "ancora": "meta = linha de base − queda.",
+   "desafio": "com quem começa alto, qual régua usar, e por quê?",
+   "fonte": [
+    "Poltawski2011",
+    "contas: calc. a partir de Poltawski e Watson 2011"
+   ],
+   "notas": "Exemplo resolvido: a meta da Renata, feita junto. A diferença mínima clinicamente importante do PRTEE vem de Poltawski e Watson, de 2011, 57 pacientes, com duas réguas: um pouco melhor é 7 pontos ou 22% da linha de base; muito melhor é 11 pontos ou 37%. Passo 1, a régua absoluta: 58 menos 7 dá 51; 58 menos 11 dá 47. Passo 2, a régua proporcional para um pouco melhor: 22% de 58 dá 12,8, cerca de 13 pontos, então PRTEE de 45 ou menos. Passo 3, para muito melhor: 37% de 58 dá cerca de 21 e meio, então 36 e meio ou menos, na prática 36. Leitura: com escore inicial alto, a proporcional pede bem mais que a absoluta; em quem começa baixo, as duas quase coincidem. O resumo diz que a diferença mínima foi maior nos mais graves, por isso prefiro a proporcional em quem começa alto; é proposta clínica, com certeza baixa: 57 pacientes, intervalo de 3 semanas, intervalo de confiança desconhecido. A diferença mínima é para mudança individual. Para quem está começando, a âncora. Desafio: qual régua usar com quem começa alto, e por quê."
+  },
+  {
+   "tipo": "citacao",
+   "parte": 5,
+   "papel": "aplicacao",
+   "fundo": "escuro",
+   "olho": "Parte 5 · Aplicação",
+   "titulo": "Seis semanas: “Será que **piorou**?”",
+   "tempo_s": 110,
+   "origem": "caso",
+   "interacao": {
+    "tipo": "chat_cascata",
+    "duracao_s": 50,
+    "inicio_s": 45,
+    "pedido": "Uma linha: melhorou o suficiente, por qual régua? E o que o formigamento muda?",
+    "gravacao": "Quem assiste à gravação: pause e escreva a sua linha antes de eu ler as respostas."
+   },
+   "contexto": "Na reavaliação de seis semanas, a Renata diz:",
+   "fala2": "No chat, uma linha: melhorou o suficiente, por qual régua? E o que o formigamento muda?",
+   "fala": "“Melhorei um pouco, mas agora o antebraço formiga no fim do dia. Será que piorou?”",
+   "cartao": {
+    "olho": "O que você mediu",
+    "itens": [
+     "PRTEE: 58 → 49",
+     "Dor no trabalho: 6 → 5 de 10",
+     "Preensão sem dor: 120 → 140 N (esquerda 320)",
+     "Formigamento no dorso do antebraço"
+    ]
+   },
+   "notas": "A aplicação da parte 5, sem apoio. A Renata seguiu o plano por seis semanas e continua trabalhando; esta é a reavaliação de 6 semanas, a de 3 semanas não entra na aula. Ler a fala devagar e os dados do cartão. Interação: chat em cascata, uma linha com as duas respostas, 40 segundos, contar 3, 2, 1. Ler quatro respostas com os nomes. A resposta: caiu 9 pontos, 16%. Pela régua absoluta, passou dos 7: um pouco melhor. Pela proporcional, ainda não: precisava de cerca de 13, PRTEE de 45. Muito melhor, por nenhuma. A razão da preensão foi de 38% para 44%. O formigamento é sintoma de nervo novo: reabre o diferencial da parte 4, pede exame cervical e do nervo radial hoje, proposta clínica, e pesa no curto prazo. Déficit progressivo encaminha. A frase para ela: está no caminho, mais devagar; o formigamento pede exame, não ressonância."
+  },
+  {
+   "tipo": "sintese",
+   "parte": 5,
+   "papel": "sintese",
+   "olho": "Parte 5 · Síntese",
+   "titulo": "O que levar sobre o que **esperar**",
+   "tempo_s": 50,
+   "pontos": [
+    {
+     "titulo": "O tempo ajuda muito",
+     "texto": "89% muito melhores em 1 ano (IC 80% a 97%)."
+    },
+    {
+     "titulo": "Sinais de pior evolução pesam pouco",
+     "texto": "Nervo, sexo feminino, dor cervical: certeza baixa."
+    },
+    {
+     "titulo": "Meta pelas duas réguas",
+     "texto": "7 e 11 pontos; 22% e 37% da linha de base."
+    }
+   ],
+   "faixa": "**Na prática:** escreva a meta do PRTEE no primeiro dia e reavalie a cada 3 semanas (proposta clínica).",
+   "fonte": [
+    "Ikonen2022",
+    "Poltawski2011",
+    "Waugh2004"
+   ],
+   "notas": "Síntese da parte 5, em três frases. Primeira: o tempo ajuda muito; 89% muito melhores ou recuperados em um ano, com meia-vida de 2,5 a 3 meses. Segunda: os sinais de pior evolução existem, mas pesam pouco e têm certeza baixa. Terceira: a meta do PRTEE vai pelas duas réguas, 7 e 11 pontos, 22% e 37% da linha de base. Avisar que vem o fechamento: uma pergunta de memória e o bilhete de saída. Retomar o mapa em voz alta, sem voltar o slide: o que é, por que dói, como diagnosticar, o que não é e o que esperar."
+  },
+  {
+   "tipo": "pergunta",
+   "papel": "recuperar",
+   "olho": "Fechamento · De memória",
+   "titulo": "Sem voltar os slides: uma ideia de cada parte, na **ordem do mapa**",
+   "instrucao": "Uma linha no chat, com um número onde houver. Envie no 3.",
+   "tempo_s": 65,
+   "interacao": {
+    "tipo": "chat_cascata",
+    "duracao_s": 40,
+    "gravacao": "Quem assiste à gravação: pause e escreva as cinco ideias antes de eu completar."
+   },
+   "notas": "Recuperação da aula inteira, na ordem do mapa. Interação: chat em cascata, 30 segundos para escrever, sem olhar anotações. Contar até 3. Ler três respostas com os nomes e completar na ordem: 3,4 por 1000, força e rotação; tendão sensível, a dor não mede o dano; RV de 3,9 a 8,3 e a conta da chance; esporão em metade de quem não tem dor; 89% em um ano e a meta do PRTEE. Dizer o que quase ninguém lembrou."
+  },
+  {
+   "tipo": "pergunta",
+   "papel": "saida",
+   "bilhete_saida": true,
+   "olho": "Antes de sair",
+   "titulo": "O que você vai **mudar** no próximo paciente com dor lateral no cotovelo?",
+   "instrucao": "Uma frase no chat. Quem enviar, está liberado.",
+   "tempo_s": 60,
+   "interacao": {
+    "tipo": "chat",
+    "duracao_s": 45
+   },
+   "notas": "Bilhete de saída. Interação: uma frase no chat, e só sai quem enviar. Ler três em voz alta, com os nomes. Copiar as respostas do chat antes de encerrar: abrem a aula 2. Dizer que a Renata volta na aula 2 perguntando pela infiltração que uma cliente fez. Avisar que o resumo e o pós-teste chegam pelo grupo. Agradecer pelo nome quem mais participou."
+  },
+  {
+   "tipo": "figura",
+   "apoio": true,
+   "olho": "Apoio · Parte 1, fora do tempo",
+   "titulo": "Estudo a estudo: só rotação e Strain Index ficam à **direita de 1**",
+   "figura": {
+    "id": "Bretschneider2022_fig2"
+   },
+   "legenda": "Cada painel é um fator; o losango é o efeito combinado; à direita de 1, mais risco.",
+   "o_que_olhar": [
+    "Rotação e Strain Index: losango inteiro à direita de 1.",
+    "Repetição: o eixo deste painel está rotulado ao contrário."
+   ],
+   "notas": "Slide de apoio, fora do tempo: a Fig. 2 de Bretschneider 2022 inteira, sem marcações por cima, porque a licença CC BY-NC-ND não permite alterar a figura. Usar só se alguém pedir os estudos de cada fator. O gráfico do slide 7 redesenha os cinco efeitos combinados a partir da Tab. 3. Na repetição, o eixo está rotulado ao contrário dos outros painéis: o 0,71 fica do lado de menos risco, com o intervalo cruzando o 1."
+  },
+  {
+   "tipo": "referencias",
+   "outras": [
+    "contas de chance e razão de verossimilhança, metas do PRTEE, razão da preensão e risco absoluto do trabalho feitas a partir dos estudos (calc.)",
+    "pistas dos diferenciais, sinais de alerta, critério de imagem, pré-teste de até 79%, régua da DMCI e classificação da irritabilidade: proposta clínica da equipe"
+   ]
+  }
+ ]
+}

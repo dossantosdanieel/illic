@@ -1,0 +1,172 @@
+{
+  "questoes": [
+    {
+      "id": "q1",
+      "objetivo": 1,
+      "nivel": "avaliação",
+      "cenario": "Pedreiro de 52 anos, destro, com dor medial no cotovelo direito e formigamento no 5º dedo e na metade ulnar do 4º, inclusive no dorso da mão. Há 3 meses o formigamento vinha só ao acordar; há 3 semanas é diário, e você encontra fraqueza para afastar os dedos (1º interósseo dorsal) em relação ao outro lado. Tinel positivo; pescoço sem dor e com movimento livre (caso fictício).",
+      "pergunta": "Qual conduta é a mais defensável agora?",
+      "opcoes": {
+        "A": "Repetir Tinel e flexão-compressão na próxima sessão antes de decidir.",
+        "B": "Manter 6 semanas de orientação de posições, o conservador com algum sinal.",
+        "C": "Encaminhar para ENMG e ultrassom: o sintoma ficou diário e há fraqueza.",
+        "D": "Pedir ressonância cervical: fraqueza intrínseca indica raiz C8."
+      },
+      "gabarito": "C",
+      "comentario": "Formigamento que ficou diário, com fraqueza do 1º interósseo dorsal, já não é o caso leve. Na revisão Cochrane de Caliandro (15 ECR, 970 participantes), orientar posições teve algum sinal só no caso leve, e o quadro com fraqueza ou atrofia não foi testado no conservador: o passo seguinte é eletrofisiologia com ultrassom e avaliação médica. O mapa sensitivo (metade ulnar do 4º dedo e dorso da mão, inervado pelo ramo cutâneo dorsal, que sai antes do canal de Guyon) aponta para o nervo ulnar acima do punho; a raiz C8 tende a pegar o 4º dedo inteiro e o antebraço medial (anatomia, sem acurácia no lote). Limites: só resumo; o critério de encaminhar por piora ou sintoma diário é proposta clínica.",
+      "distratores": {
+        "A": "Repetir testes com razão de verossimilhança perto de 1 (Tinel 1,32; flexão-compressão 1,02) não acrescenta informação e atrasa o encaminhamento.",
+        "B": "Aplicar a um quadro com fraqueza o resultado de um ensaio feito no caso leve.",
+        "D": "Ignorar o mapa sensitivo: dorso da mão e metade do 4º dedo apontam para o nervo ulnar, não para a raiz. O pescoço se examina, mas a ressonância não é o primeiro passo."
+      },
+      "referencia": [
+        "Caliandro2025",
+        "Beekman2009"
+      ]
+    },
+    {
+      "id": "q2",
+      "objetivo": 1,
+      "nivel": "aplicação",
+      "cenario": "Goleiro de handebol de 22 anos com dor medial ao arremessar há 3 semanas, sem trauma. Você estima 20% de chance de lesão do ligamento colateral ulnar. O teste de estresse em valgo em movimento reproduz a dor entre 110° e 80°. No estudo original (21 operados), o teste teve sensibilidade de 17/17 e especificidade de 3/4 (caso fictício; números de O'Driscoll 2005).",
+      "pergunta": "Qual leitura do resultado é a mais correta?",
+      "opcoes": {
+        "A": "Lesão confirmada: a especificidade é de 75%.",
+        "B": "Sobe para até cerca de 50%: investigar, sem concluir.",
+        "C": "Ignorar o resultado: um estudo de 21 pessoas não informa.",
+        "D": "Quase 100%: a sensibilidade do teste é de 100%."
+      },
+      "gabarito": "B",
+      "comentario": "Pela estimativa pontual, RV+ = 1,00 ÷ (1 − 0,75) = 4. Chance pré = 20 ÷ 80 = 0,25; chance pós = 0,25 × 4 = 1,0; probabilidade de 50%. A especificidade vem de 4 pessoas (IC 95% de 19% a 99%, calculado): com o limite inferior, RV+ ≈ 1,2 e 20% vira cerca de 24%. Por isso o positivo pede investigação e encaminhamento, não diagnóstico. Limite: só resumo, espectro cirúrgico, teste avaliado pelo autor.",
+      "distratores": {
+        "A": "Ler especificidade como valor preditivo positivo.",
+        "C": "Tratar estudo pequeno como sem informação: a direção existe; a precisão é que é baixa.",
+        "D": "Confundir sensibilidade com probabilidade de doença depois de um teste positivo."
+      },
+      "referencia": [
+        "ODriscoll2005"
+      ]
+    },
+    {
+      "id": "q7",
+      "objetivo": 2,
+      "nivel": "avaliação",
+      "cenario": "Tenista amador de 47 anos com tendinopatia medial do cotovelo há 4 meses. Um colega quer prescrever o protocolo excêntrico da tendinopatia lateral “porque a evidência mostra que funciona na medial”. Uma revisão de 2026 achou 5 estudos (143 pacientes) na medial, sem meta-análise, com superioridade entre grupos em 1 ensaio e certeza baixa.",
+      "pergunta": "Qual posição é a mais defensável?",
+      "opcoes": {
+        "A": "Usar a dose como proposta extrapolada da lateral e reavaliar a cada 3 semanas.",
+        "B": "Seguir o protocolo: todos os estudos da medial mostraram melhora.",
+        "C": "Não prescrever exercício até haver ensaio bom na medial.",
+        "D": "Preferir a infiltração: é a única opção com ECR na medial."
+      },
+      "gabarito": "A",
+      "comentario": "Melhora dentro dos grupos não é efeito do tratamento (curso natural, regressão à média). Na medial não há estimativa de efeito do exercício; o único ECR de corticoide mostrou alívio só em 6 semanas, igual em 3 meses e 1 ano. A conduta de nível alto é dizer de onde vem a dose (lateral e mecanismo), chamá-la de proposta clínica e medir a resposta individual (dor em 24 horas, PRTEE adaptada, preensão sem dor).",
+      "distratores": {
+        "B": "Ler melhora dentro do grupo como efeito do tratamento.",
+        "C": "Confundir ausência de evidência com evidência de ausência e deixar o paciente sem carga.",
+        "D": "Escolher pelo desenho e ignorar o resultado: o ECR mostrou benefício só em 6 semanas."
+      },
+      "referencia": [
+        "See2026",
+        "Stahl1997c"
+      ]
+    },
+    {
+      "id": "q3",
+      "objetivo": 3,
+      "nivel": "aplicação",
+      "cenario": "Homem de 55 anos, sem diabetes, com dedo anelar em gatilho que ele corrige sozinho (grau 2 de Green) há 2 meses. Ele vai decidir entre injeção de corticoide e cirurgia aberta e pergunta: “Qual a chance de voltar a travar?” (caso fictício).",
+      "pergunta": "Qual resposta os dados sustentam melhor para 6 a 12 meses?",
+      "opcoes": {
+        "A": "Cerca de 4 em 10 após injeção; menos de 1 em 10 após cirurgia.",
+        "B": "A mesma nas duas: o intervalo da resolução cruza o 1.",
+        "C": "A injeção resolve 3 vezes mais, então trava menos.",
+        "D": "A cirurgia reduz a recidiva em 83 pontos percentuais."
+      },
+      "gabarito": "A",
+      "comentario": "Na revisão Cochrane de Fiorini (2 ensaios, 270 participantes), a recidiva em 6 a 12 meses foi de 385 por 1000 após injeção e 65 por 1000 após cirurgia aberta (IC 35 a 127 por 1000; RR 0,17; IC 0,09 a 0,33; certeza baixa): redução relativa de 83%, diferença absoluta de cerca de 3 em 10 (29% no resumo, com intervalo de 60% a menos a 3% a mais). Esse intervalo da diferença absoluta não fecha com o do RR, que exclui o 1: talvez efeitos aleatórios na escala absoluta, com riscos de base diferentes nos 2 ensaios; confiro no texto completo. A cirurgia doeu mais na primeira semana (678 x 184 por 1000 com dor na palma). Diga a ordem de grandeza, não um número exato.",
+      "distratores": {
+        "B": "Misturar desfechos: o RR que cruza 1 é o da resolução, não o da recidiva.",
+        "C": "Usar o RR 3,15 da injeção contra lidocaína (outra comparação, 4 semanas) como se fosse contra cirurgia.",
+        "D": "Ler a redução relativa (83%) como diferença absoluta: a diferença é de cerca de 30 pontos, porque o risco de base é 38,5%."
+      },
+      "referencia": [
+        "Fiorini2018",
+        "PetersVeluthamaningal2009"
+      ]
+    },
+    {
+      "id": "q4",
+      "objetivo": 3,
+      "nivel": "aplicação",
+      "cenario": "Mulher de 58 anos, sem diabetes, com dedo médio em gatilho há 4 meses que só desbloqueia com a ajuda da outra mão (grau 3 de Green). Nunca fez órtese nem injeção. Ela pergunta: “Vou ter que operar?” (caso fictício).",
+      "pergunta": "Qual resposta os dados sustentam melhor?",
+      "opcoes": {
+        "A": "Provavelmente não: a chance é a mesma do grau 2, cerca de 3 em 4.",
+        "B": "Sim: no grau 3 o conservador não funciona; encaminhar já.",
+        "C": "Cerca de 6 em 10 resolvem sem operar; combinar já quando encaminhar.",
+        "D": "Depende do tratamento: injeção com órtese noturna resolve quase todos."
+      },
+      "gabarito": "C",
+      "comentario": "No ECR de Minkhorst (122 dedos, sem tratamento prévio), o grau 3 teve sucesso conservador em torno de 60% e 39,1% operados, contra cerca de 75% e 22,4% nos graus 1 e 2 (P = 0,05), qualquer que fosse o tratamento; somar órtese noturna à injeção não mudou nada em 6 semanas. É comparação entre subgrupos: prognóstico, não efeito de tratamento. Ela está dentro do espectro do ensaio (sem tratamento prévio, sem polegar, sem grau 4). Combinar desde já o critério de encaminhamento é proposta clínica, coerente com o consenso HANDGUIDE (escolha por gravidade, duração e tratamentos prévios). Limite: só resumo; valores arredondados.",
+      "distratores": {
+        "A": "Ignorar o grau: no grau 3 o sucesso cai (~60%) e a cirurgia sobe (39,1% x 22,4%).",
+        "B": "Confundir prognóstico pior com conservador inútil: cerca de 6 em 10 resolvem sem operar.",
+        "D": "Esperar do tratamento o que o grau decide: órtese noturna somada à injeção não mudou nada em 6 semanas."
+      },
+      "referencia": [
+        "Minkhorst2025",
+        "Huisstede2014b"
+      ]
+    },
+    {
+      "id": "q5",
+      "objetivo": 4,
+      "nivel": "análise",
+      "cenario": "Mulher de 51 anos, digitadora, com dor espontânea sobre o estiloide radial há 6 semanas, sem dor na base do polegar. Você estima 40% de chance de De Quervain. O WHAT test (hiperflexão do punho com abdução do polegar contra resistência) é negativo. No estudo de referência, com 100 pacientes com dor espontânea no estiloide radial, a sensibilidade foi de 0,99 e a especificidade de 0,29 (caso fictício; números de Goubau 2014).",
+      "pergunta": "Qual leitura os números sustentam melhor?",
+      "opcoes": {
+        "A": "Continua em 40%: um teste só, de um estudo pequeno, não decide.",
+        "B": "Cerca de 28%: a especificidade de 0,29 tira só 29% da chance.",
+        "C": "Repetir com o polegar fechado na mão para confirmar a doença.",
+        "D": "Provavelmente mais baixa (2% a 12%), sem excluir: buscar outra causa e reavaliar."
+      },
+      "gabarito": "D",
+      "comentario": "Pela estimativa pontual, RV− = (1 − 0,99) ÷ 0,29 = 0,034; chance pré = 40 ÷ 60 = 0,67; chance pós = 0,023, cerca de 2%. Mas a tabela 2×2 que reproduz o resumo (92, 1, 5, 2) tem 1 falso negativo e só 7 pessoas sem a doença: com a sensibilidade no limite inferior do IC exato (94%), RV− ≈ 0,2 e a probabilidade fica perto de 12%; com a especificidade de 2 em 7 também no limite inferior (IC exato de 3,7% a 71%), RV− ≈ 1,6 e os 40% sobem para cerca de 52%: aí o negativo não informa (calculado). Por isso, provavelmente mais baixa, sem poder excluir: procurar outra causa (síndrome de intersecção, ramo sensitivo do radial) e reavaliar. Ela é parecida com a amostra (dor espontânea no estiloide radial). Limites: só resumo; 2×2 reconstruída; amostra com cerca de 93% de doentes.",
+      "distratores": {
+        "A": "Tratar a incerteza como ausência de informação: pelas estimativas, o negativo de um teste muito sensível baixa a probabilidade; a incerteza impede excluir, não apaga a direção.",
+        "B": "Aplicar a especificidade direto à probabilidade (40% × 0,71 = 28%), conta sem sentido: o negativo se lê pela RV− = (1 − sensibilidade) ÷ especificidade, que pelas estimativas dá 0,03. O que limita o negativo aqui é a imprecisão da especificidade (2 em 7), não o valor 0,29.",
+        "C": "Usar o Eichhoff (o “Finkelstein” dos livros), que dá falso positivo, para “confirmar” contra o negativo de um teste sensível."
+      },
+      "referencia": [
+        "Goubau2014",
+        "Elliott1992"
+      ]
+    },
+    {
+      "id": "q6",
+      "objetivo": 4,
+      "nivel": "avaliação",
+      "cenario": "Professora de 31 anos, 4 meses pós-parto, amamentando, com De Quervain há 6 semanas. O médico fez a injeção de corticoide e pede sua opinião sobre a órtese de polegar por 4 semanas; ela diz que a órtese atrapalha trocar e segurar o bebê. Uma meta-análise em rede (30 ECR) mostra, para injeção + órtese de 3 a 4 semanas x só injeção, diferença de 10,5 pontos no QuickDASH (0 a 100; IC 95% 6,8 a 14,1), que os autores chamam de “não clinicamente significativa” (caso fictício).",
+      "pergunta": "Qual plano é o mais defensável?",
+      "opcoes": {
+        "A": "Órtese obrigatória por 4 semanas: sem ela a injeção não funciona.",
+        "B": "Diferença real e abaixo da importante: decidir com ela e orientar a carga.",
+        "C": "Dispensar órtese e orientação: no puerpério o quadro some ao desmamar.",
+        "D": "Órtese dia e noite até desmamar: nas lactantes, a tala resolveu a dor."
+      },
+      "gabarito": "B",
+      "comentario": "O intervalo exclui o zero (diferença real) e os autores a julgam abaixo da importante. A decisão não depende do sentido da diferença, que ainda vai ser conferido no texto completo: abaixo da importante, decide-se pela preferência e pelo custo de imobilizar, que aqui é alto. Orientar a carga sempre (consenso de Huisstede). No ensaio de Avci, com 18 gestantes e lactantes, a órtese sozinha não deu alívio completo a nenhuma, e 8 de 9 resolveram ao fim da lactação. Limites: só resumos; não se sabe se a rede incluiu lactantes; a diferença mínima adotada pelos autores está pendente.",
+      "distratores": {
+        "A": "Ler “diferença real” como “obrigatória”: os próprios autores a julgam pequena.",
+        "C": "Usar o curso natural para não fazer nada: a dor de agora atrapalha os cuidados com o bebê, e a orientação de carga vale para todos.",
+        "D": "Ignorar o ensaio das lactantes: a órtese sozinha não deu alívio completo a nenhuma."
+      },
+      "referencia": [
+        "Challoumas2023",
+        "Avci2002",
+        "Huisstede2014"
+      ]
+    }
+  ]
+}

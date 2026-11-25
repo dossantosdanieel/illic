@@ -111,6 +111,10 @@ def main() -> int:
     L += [f"# Entrega · {titulo}", "",
           f"Gerado em {C.hoje()} por `relatorio_final.py` a partir dos arquivos da pasta `{pasta.name}`. "
           "Nada aqui foi digitado à mão: o que não estiver nos arquivos aparece como \"sem registro\".", ""]
+    if S.resumo.get("formato"):
+        L.append(f"**Formato:** {S.resumo['formato_nome']} (`{S.resumo['formato']}`, {S.resumo['formato_faixa']}; "
+                 f"lido de {S.resumo['formato_origem']}). Os limites de duração e de interação são os do validador "
+                 "da skill de slides para esse formato.")
     v = S.resumo.get("validacao") or {}
     if v:
         L.append(f"**Deck:** {v.get('slides')} slides · {v.get('duracao')} · validação: "

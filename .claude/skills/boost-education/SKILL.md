@@ -120,8 +120,14 @@ novo" é `fronteira`, "só evidência forte" é `so_topo`. Sem resposta, siga co
 python3 -I E/nova_aula.py --tema "Retorno ao esporte após reconstrução do LCA" --slug lca-retorno-esporte \
   --objetivo "Decidir se libera para o esporte de pivô, justificando com tempo, força, salto e prontidão psicológica" \
   --p "atletas após reconstrução do LCA" --i "cumprir critérios de retorno" --c "não cumprir" --o "segunda lesão" \
-  --artigo 27162233 [--recorte so_topo] [--uso venda] [--formatos enquete,chat_cascata,chat] [--sem-parar]
+  --artigo 27162233 [--formato caso] [--recorte so_topo] [--uso venda] [--formatos enquete,chat_cascata,chat] [--sem-parar]
 ```
+
+**Formato pedagógico** (`--formato expositiva|caso`): o padrão vem de `preferencias.md` (hoje **expositiva com
+checagens**, 45 a 50 min, linha lógica do tema em partes, caso só como aplicação). Use `caso` (30 a 35 min, guiada
+por caso) só para aula de aplicação ou discussão de casos, quando ele pedir. O formato fica no briefing
+("Formato pedagógico"), vai para `meta.formato` do deck.json e decide as regras do validador; `situacao.py` mostra o
+formato e avisa se o deck e o briefing divergirem.
 
 Cria as subpastas, o briefing (padrões lidos de `preferencias.md`) e o `00_andamento.md`. Não sobrescreve nada (o
 briefing só com `--forcar-briefing`, guardando o anterior). Campo não informado sai como "A PREENCHER" e
@@ -139,7 +145,7 @@ regulam. Neles, pare, porque depois de cada um vem trabalho longo construído em
 |---|---|---|---|
 | 1 | sentinelas testados | aprova a estratégia e cola a string no Scopus, devolvendo a exportação | triagem, leitura e aula saem da busca; e o Scopus só entra pelas mãos dele |
 | 2 | seleção exportada e PDFs abertos baixados | aprova a lista; baixa os pagos de `pendentes.md` para `02_artigos/manual/` (JOSPT com a assinatura dele) | ler o artigo errado é a maior perda do pipeline; só ele acessa os pagos. Trava o roteiro, não a leitura: enquanto ele responde, leia primeiro os âncoras e os de evidência principal que já têm PDF |
-| 3 | `roteiro.md` escrito | aprova objetivos, caso e linha do tempo | o deck é longo de montar e refazer o desenho depois custa o dobro |
+| 3 | `roteiro.md` escrito | aprova objetivos, partes (expositiva) ou caso, e linha do tempo | o deck é longo de montar e refazer o desenho depois custa o dobro |
 | 4 | deck montado, renderizado e conferido | revisa o deck | é a aula dele, gravada; só ele sabe se o caso e o tom soam reais |
 
 Apresente a checagem assim que ela aparecer em `situacao.py` e continue o que não depende dela (a Crossref enquanto ele vai ao Scopus;
@@ -183,15 +189,17 @@ o subagente de leitura e a tabela do que pode rodar junto: `references/subagente
 - **Ética na divulgação.** Aula para a equipe não é publicidade. Mas qualquer material de divulgação (post, anúncio,
   página de venda, chamada para o curso, depoimento) passa pela skill `etica-fisioterapia` (COFFITO 424/2013) antes
   de sair: sem promessa de resultado, sem sensacionalismo, sem antes e depois.
-- **Uma aula, 30 a 35 minutos.** O validador da skill de slides reprova acima de 35. Tema grande vira trilha, não
-  aula longa.
+- **Uma aula, no tempo do formato.** Expositiva: 45 a 50 min (o validador reprova acima de 50); caso: 30 a 35 min
+  (reprova acima de 35). Quem julga é o validador da skill de slides, pelo `meta.formato`; os scripts daqui não têm
+  regra fixa de duração. Tema grande vira trilha, não aula longa.
 
 ## Trilha de várias aulas
 
 Quando o pedido for um curso ou uma sequência: escreva primeiro o plano da trilha (`assets/trilha_modelo.md`) e
 aprove com o usuário. Ordem: diagnóstico e prognóstico antes do tratamento; uma pergunta clínica central por aula;
 pré-requisito escrito como algo que a turma sabe fazer. A aula N+1 abre com uma pergunta de recuperação de memória
-sobre a aula N, tirada do que a turma errou (bilhete de saída, enquete, pós-teste), antes do caso novo; o pós-teste de
+sobre a aula N, tirada do que a turma errou (bilhete de saída, enquete, pós-teste), antes do mapa da aula (ou do caso
+novo, no formato caso); o pós-teste de
 cada aula vai 7 a 14 dias depois. Aulas da mesma condição podem dividir a busca (`--compartilhar-de`). Detalhes e o
 exemplo da trilha do cotovelo: `references/trilha.md`.
 

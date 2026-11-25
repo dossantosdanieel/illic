@@ -69,7 +69,8 @@ Ordem das séries em gráfico: marinho, cinza de gráfico, ciano, petróleo, lav
 
 ### Fundos e o que vai em cada um
 
-- **Escuro (marinho)**: capa e perguntas grandes, e a fala do revés (`citacao` com `fundo: escuro`).
+- **Escuro (marinho)**: capa e perguntas grandes (inclusive as checagens de chat da expositiva), e a fala do
+  revés ou do caso (`citacao` com `fundo: escuro`).
   Pergunta na metade de baixo, com barra ciano curta 0,29 pol acima; instrução lavanda embaixo; logo
   branco no rodapé (na capa, logo branco no topo e sem rodapé).
 - **Claro (F7F9FA)**: todo o resto. Logo escuro no rodapé à esquerda; "Fonte: ..." à direita.
@@ -89,6 +90,21 @@ Ordem das séries em gráfico: marinho, cinza de gráfico, ciano, petróleo, lav
   No deck de referência os gráficos eram formas desenhadas; aqui são **gráficos nativos** (editáveis no
   PowerPoint, com os dados dentro), no mesmo visual.
 - **Etapas**: cartões com seta marinho de 1,5 pt entre eles; o último passo em marinho.
+
+Componentes da aula expositiva, feitos com as mesmas peças (não existiam no deck de referência, que era
+de caso; ver `deck-json.md`):
+
+- **Mapa da aula / "onde estamos"** (`mapa`): cartões cinza de largura total, um por parte, número 28 pt
+  bold petróleo, título 18 pt bold e uma linha 13 pt em texto 2. A parte atual em cartão marinho (número
+  ciano claro, título branco, linha lavanda) com "AGORA" em caixa alta ciano claro à direita, como um
+  olho; as partes já vistas com número e texto em cinza. Fundo claro.
+- **Exemplo resolvido** (`exemplo`): o problema em cartão branco com borda e olho; os passos em cartões
+  cinza com número 22 pt petróleo (o da lista de tarefa), nome do passo 14 pt bold e a conta 16 pt em
+  marinho; o passo em lacuna em cartão branco com borda forte e "Sua vez:" em petróleo; a resposta na
+  faixa marinho de largura total.
+- **Comparação em colunas** (`comparacao` com `layout: colunas`): cabeçalho de coluna em cartão (marinho
+  na coluna em destaque, cinza com borda e texto marinho nas outras), cartões cinza alinhados linha a
+  linha; um cartão em destaque, em marinho.
 
 ## O que pode variar
 

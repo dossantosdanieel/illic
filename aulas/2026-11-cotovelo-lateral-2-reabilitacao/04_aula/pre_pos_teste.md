@@ -1,0 +1,276 @@
+# Pré e pós-teste — Tendinopatia lateral do cotovelo: reabilitação com dose
+
+**Como usar no Google Forms.** Crie um formulário, vá em Configurações → *Transformar em teste*. Para cada questão, escolha *Múltipla escolha*, cole o enunciado no título da pergunta (ou na descrição, se for longo) e cole o bloco de opções **inteiro** no primeiro campo de opção: o Forms cria uma opção por linha. Marque a resposta certa em *Chave de resposta* e cole o comentário em *Adicionar feedback*. Ative *Ordem aleatória das opções* (as opções não têm letra por isso).
+
+**Pré-teste:** envie 1 a 3 dias antes da aula, sem nota e sem gabarito; serve para a turma chegar com a pergunta na cabeça e para você ver onde está o erro mais comum. **Pós-teste:** as mesmas questões, 7 a 14 dias depois (o intervalo mede o que ficou, não o que foi decorado na hora); libere o feedback só depois do envio.
+
+Objetivos medidos:
+1. Prescrever exercício com dose explícita (tipo, carga em % da CVM e em kg, volume, frequência e regra de dor), dizendo a origem de cada número e o efeito esperado contra nada, esperar e corticoide
+2. Aconselhar sobre a infiltração de corticoide e o PRP com os números de curto e longo prazo, a recidiva e a certeza, calculando a cada quantas injeções uma pessoa a menos fica bem em 1 ano
+3. Interpretar o que valem a MWM, a regra de predição (razões de verossimilhança com intervalo) e os recursos complementares, classificando cada um pela força da evidência
+4. Montar o plano por fases pela irritabilidade, ajustar o trabalho pelas horas de rotação e pelo esforço com força, e decidir a conduta quando a dor volta
+
+## Parte 1 — Questões (para colar)
+
+### Questão 1
+
+Enunciado:
+
+```text
+Wagner, 38 anos, mecânico, tem tendinopatia lateral do cotovelo direito há 10 semanas, com dor de 5 em 10 no trabalho que persiste horas depois (irritabilidade moderada). A contração voluntária máxima (CVM) de extensão do punho direito, no dinamômetro manual, é de 12 kg. Ele vai fazer o exercício em casa. Qual prescrição inicial é a mais defensável?
+```
+
+Opções:
+
+```text
+Isométrico de extensores do punho com 2,4 kg, 4 × 30 s, todo dia; +5% da CVM a cada 2 semanas.
+Isométrico com 4,2 kg (35% da CVM), 4 × 30 s, todo dia, para não subdosar desde o início.
+Excêntrico de punho 3 × 15, todo dia, com a carga que leve a dor até 5 de 10 na série.
+Isométrico com 2,4 kg, 4 × 30 s, só nos dias sem dor; parar se doer durante a série.
+```
+
+### Questão 2
+
+Enunciado:
+
+```text
+Um colega mostra um ensaio com 60 pacientes com tendinopatia lateral: todos fizeram treino de força pesado e lento (HSR) em casa por 12 semanas, somado a corticoide, agulhamento do tendão ou agulhamento placebo. Em 12 semanas, o DASH caiu cerca de 20 pontos e a dor 2,5 pontos, igual nos três braços. Qual leitura do resultado é a mais correta?
+```
+
+Opções:
+
+```text
+O HSR reduz cerca de 20 pontos no DASH em 12 semanas.
+Corticoide e agulhamento nada somaram; o efeito do HSR em si não foi testado.
+O HSR não funciona, porque os três braços terminaram iguais.
+O agulhamento placebo funcionou tanto quanto o real; logo, o placebo é o tratamento.
+```
+
+### Questão 3
+
+Enunciado:
+
+```text
+Paula, 52 anos, violinista, tem dor lateral no cotovelo esquerdo há 3 meses. Ela tem um concerto em 3 semanas e pede a infiltração de corticoide. Já entendeu o programa de exercício e quer fazê-lo. Qual resposta é a mais defensável?
+```
+
+Opções:
+
+```text
+Desaconselhar: em 3 semanas a injeção ainda não alivia, e a ruptura do tendão não compensa.
+Indicar e manter a fisioterapia junto, que anula a perda no ano e a recidiva.
+Explicar que alivia mais rápido, mas piora o ano e tem recidiva alta, e decidir com ela.
+Sugerir PRP no lugar: alívio parecido em 3 semanas, sem a perda de 1 ano do corticoide.
+```
+
+### Questão 4
+
+Enunciado:
+
+```text
+No ensaio fatorial de Coombes 2013, em 26 semanas, 55% dos que receberam corticoide e 85% dos que receberam injeção placebo estavam recuperados ou muito melhor. A cada quantas injeções de corticoide, aproximadamente, 1 pessoa a menos está bem em 26 semanas?
+```
+
+Opções:
+
+```text
+Cerca de 30.
+Cerca de 1,5.
+Cerca de 7.
+Cerca de 3.
+```
+
+### Questão 5
+
+Enunciado:
+
+```text
+Jorge, 56 anos, tem tendinopatia lateral há 2 meses e está na primeira consulta, antes de começar MWM e exercício. Você ainda não mediu a preensão: por enquanto, só sabe que ele não preenche o critério da idade da regra de predição de Vicenzino 2009 (idade < 49, afetado > 112 N, não afetado < 336 N). No estudo, 79% melhoraram em 3 semanas com MWM e exercício; para idade < 49, sensibilidade 0,61 e especificidade 0,77 (RV+ 2,6; IC 0,96 a 7,3). Só com a idade, qual leitura da chance de melhorar em 3 semanas é a mais correta?
+```
+
+Opções:
+
+```text
+Cerca de 21%: quem falha num critério fica com o complemento do pré-teste.
+Cerca de 66%: testar a MWM na sessão e decidir pela resposta dele.
+Cerca de 59%: com o critério negativo, a razão vira 1 ÷ 2,6.
+Cerca de 79%: a regra só informa sobre quem preenche o critério.
+```
+
+### Questão 6
+
+Enunciado:
+
+```text
+Denise, 44 anos, melhorou a preensão sem dor de 130 para 170 N logo depois de uma mobilização com movimento (MWM) de deslizamento lateral. Ela pergunta se seis sessões de MWM resolvem o problema para o ano. Qual resposta os dados sustentam melhor?
+```
+
+Opções:
+
+```text
+A MWM costuma aliviar nas primeiras semanas; no longo prazo, quem segura é a carga.
+Sim, se o ganho imediato se repetir nas sessões: ganho acima de 25% prediz a resposta.
+Não: contra placebo há 1 ensaio de 23 pessoas, então o ganho dela foi placebo.
+Sim, somando a mobilização cervical, que tem grau B para o efeito de longo prazo.
+```
+
+### Questão 7
+
+Enunciado:
+
+```text
+Ricardo, 41 anos, pedreiro, fez infiltração de corticoide no cotovelo direito há 10 semanas. Ficou quase sem dor por 5 semanas, parou o programa de exercícios e voltou à obra em tempo integral. Hoje a dor é de 6 em 10 no trabalho e dura o resto do dia; preensão sem dor de 150 N (era 230 N há 4 semanas); sem formigamento e com exame neurológico normal. Ele pede outra infiltração. Qual conduta é a mais defensável hoje?
+```
+
+Opções:
+
+```text
+Segunda infiltração agora e retomar o exercício quando a dor ceder, em 2 semanas.
+Retomar do ponto em que parou (isotônico 3 × 10 com 2 kg), já que ele passou da fase 1.
+Recuar à fase da irritabilidade de hoje, ajustar a obra e explicar a recidiva.
+Ultrassom do tendão antes de qualquer carga, porque a injeção pode tê-lo enfraquecido.
+```
+
+### Questão 8
+
+Enunciado:
+
+```text
+Tânia, 49 anos, monta peças numa linha de produção: aperta parafusos com chave manual cerca de 5 h por dia, girando o antebraço. Tem tendinopatia lateral há 3 meses, com irritabilidade moderada, e já faz o isométrico em casa. A empresa oferece duas mudanças: reduzir o número de peças por minuto ou passá-la, na metade do turno, para a inspeção visual. Qual ajuste do trabalho os dados sustentam melhor?
+```
+
+Opções:
+
+```text
+Reduzir as peças por minuto: a repetição é o fator que mais pesa.
+Trocar de posto na metade do turno, ficando abaixo de 4 h de rotação por dia.
+Afastá-la da linha até a dor zerar, para o tendão descansar.
+Nenhum: fatores do trabalho só importam para quem ainda não tem dor.
+```
+
+### Questão 9
+
+Enunciado:
+
+```text
+Um colega quer usar o agulhamento seco como tratamento principal de um paciente com 4 meses de dor lateral no cotovelo, porque “tem grau B na diretriz”. O paciente topa e pergunta quanto tempo vai durar o efeito. Qual posição os dados sustentam melhor?
+```
+
+Opções:
+
+```text
+Concordar: grau B garante efeito clínico que se mantém.
+Usar, se ele quiser, como adjuvante curto, com o exercício como base.
+Recusar: a meta-análise mostrou que o agulhamento não tem efeito.
+Trocar por PRP, que tem certeza moderada de benefício.
+```
+
+## Parte 2 — Gabarito comentado (professor e feedback do Forms)
+
+### Questão 1 · nível: aplicação · objetivo 1
+
+**Resposta:** Isométrico de extensores do punho com 2,4 kg, 4 × 30 s, todo dia; +5% da CVM a cada 2 semanas.
+
+A dose do isométrico do ensaio de Vuvan 2020 (pelas tabelas redigitadas da aula de capacitação, a conferir) começa em 20% da CVM (12 kg × 0,20 = 2,4 kg), 4 × 30 s nas semanas ímpares e 3 × 45 s nas pares (semana 1: 4 × 30 s), diário, subindo 5% da CVM a cada 2 semanas até 35%. A regra de progressão pela dor é opinião de especialista (Day 2019): subir quando não há dor tardia em 24 h ou quando a dor não sobe mais de 1 ponto. O isométrico sozinho, sem supervisão, teve sucesso percebido de 29% contra 26% de quem esperou: na clínica, ele vem junto de outras medidas.
+
+- *Isométrico com 4,2 kg (35% da CVM), 4 × 30 s, todo dia, para não subdosar desde o início.* — Começar no teto da faixa do ensaio (35%) num quadro moderadamente irritável: o ensaio começa em 20% e sobe pelo calendário.
+- *Excêntrico de punho 3 × 15, todo dia, com a carga que leve a dor até 5 de 10 na série.* — Usar uma dose de excêntrico que não vem de nenhum ensaio da seleção e tolerar dor alta na série, sem regra de 24 h.
+- *Isométrico com 2,4 kg, 4 × 30 s, só nos dias sem dor; parar se doer durante a série.* — Exigir dor zero e treinar só em dias sem dor: a regra de Day 2019 sobe a carga sem dor tardia em 24 h ou com dor que não sobe mais de 1 ponto, e não pede dor zero.
+
+Referência: Vuvan V et al. Med Sci Sports Exerc 2020;52(2):287-95. PMID 31425384. DOI 10.1249/MSS.0000000000002128.; Day JM et al. Int J Sports Phys Ther 2019;14(5):818-29. PMID 31598419. DOI 10.26603/ijspt20190818.
+
+### Questão 2 · nível: análise · objetivo 1
+
+**Resposta:** Corticoide e agulhamento nada somaram; o efeito do HSR em si não foi testado.
+
+Couppé 2022 (resumo): os três braços melhoraram igualmente (DASH Δ20, QuickDASH Δ21, dor Δ2,5), e em 52 semanas o QuickDASH ficou 15 pontos pior com corticoide (desfecho secundário). Como não há braço sem HSR, a melhora dentro dos grupos mistura o exercício, o curso natural (89% muito melhores ou recuperados em 1 ano nos braços controle, 189 de 213: só 213 dos 1085 participantes entram nesse número; Ikonen 2022), a regressão à média e a expectativa.
+
+- *O HSR reduz cerca de 20 pontos no DASH em 12 semanas.* — Atribuir a mudança dentro do grupo ao tratamento, sem comparador.
+- *O HSR não funciona, porque os três braços terminaram iguais.* — Confundir ausência de diferença entre braços que receberam o mesmo HSR com ausência de efeito do HSR.
+- *O agulhamento placebo funcionou tanto quanto o real; logo, o placebo é o tratamento.* — Ler a igualdade entre os braços de agulhamento como prova de efeito placebo, esquecendo o curso natural.
+
+Referência: Couppé C et al. Am J Sports Med 2022;50(10):2787-96. PMID 35867777. DOI 10.1177/03635465221110214.; Ikonen J et al. Clin Orthop Relat Res 2022;480(4):647-60. PMID 34874323. DOI 10.1097/CORR.0000000000002058.
+
+### Questão 3 · nível: avaliação · objetivo 2
+
+**Resposta:** Explicar que alivia mais rápido, mas piora o ano e tem recidiva alta, e decidir com ela.
+
+Corticoide: 92% de sucesso em 6 semanas contra 47% com fisioterapia, mas 69% contra 91% em 1 ano (Smidt 2002); recidiva de 54% contra 12% com placebo, e fazer fisioterapia não mostrou reduzir a recidiva (29% x 38%, P = 0,25, efeito principal com IC largo) (Coombes 2013). Ruptura de tendão foi rara: 1 em 991 (Coombes 2010). Com uma data importante e os números na mesa, a injeção pode ser uma escolha razoável dela; a decisão é compartilhada. PRP não superou a injeção placebo em 3 meses (0,16 ponto em 10, certeza moderada; Karjalainen 2021).
+
+- *Desaconselhar: em 3 semanas a injeção ainda não alivia, e a ruptura do tendão não compensa.* — Errar a velocidade (o alívio do corticoide aparece nas primeiras semanas: 92% em 6 semanas) e superestimar a ruptura (0,1%), ignorando o objetivo dela.
+- *Indicar e manter a fisioterapia junto, que anula a perda no ano e a recidiva.* — Achar que a fisioterapia protege: a perda no ano com o corticoide não muda, e a proteção contra a recidiva não foi demonstrada.
+- *Sugerir PRP no lugar: alívio parecido em 3 semanas, sem a perda de 1 ano do corticoide.* — Acreditar que o PRP alivia rápido: não superou a injeção placebo em 3 meses (certeza moderada).
+
+Referência: Smidt N et al. Lancet 2002;359(9307):657-62. PMID 11879861. DOI 10.1016/S0140-6736(02)07811-X.; Coombes BK et al. JAMA 2013;309(5):461-9. PMID 23385272. DOI 10.1001/jama.2013.129.; Coombes BK et al. Lancet 2010;376(9754):1751-67. PMID 20970844. DOI 10.1016/S0140-6736(10)61160-9.; Karjalainen T et al. Cochrane Database Syst Rev 2021;9:CD010951. PMID 34590307. DOI 10.1002/14651858.CD010951.pub2.
+
+### Questão 4 · nível: análise · objetivo 2
+
+**Resposta:** Cerca de 3.
+
+Diferença absoluta: 85% − 55% = 30 pontos; NNH = 1 ÷ 0,30 ≈ 3,3, ou seja, cerca de 1 a cada 3 injeções (cálculo com as proporções do resumo; sem intervalo, porque os n por célula estão no texto completo). O resumo traz um risco relativo (0,79) que não fecha com as proporções: por isso a conta usa as proporções.
+
+- *Cerca de 30.* — Confundir pontos percentuais com o número necessário (30 pontos não são 30 pessoas).
+- *Cerca de 1,5.* — Dividir as proporções (85 ÷ 55) em vez de usar a diferença absoluta.
+- *Cerca de 7.* — Usar a diferença de 1 ano (96% − 83% = 13 pontos, NNH ≈ 8) em vez da de 26 semanas.
+
+Referência: Coombes BK et al. JAMA 2013;309(5):461-9. PMID 23385272. DOI 10.1001/jama.2013.129.
+
+### Questão 5 · nível: análise · objetivo 3
+
+**Resposta:** Cerca de 66%: testar a MWM na sessão e decidir pela resposta dele.
+
+RV− da idade = (1 − 0,61) ÷ 0,77 ≈ 0,51. Chance antes do teste: 0,79 ÷ 0,21 = 3,76; depois: 3,76 × 0,51 ≈ 1,9; probabilidade ≈ 66% (cálculo com a Tab. 2 de Vicenzino 2009, print da aula de capacitação). A conta usa só a idade porque é o único dado disponível; a regra não informa como combinar critérios, e o resumo dá 100% com os três positivos, de poucos pacientes. Todas as RV+ da regra têm intervalo que inclui 1, a regra é de derivação, sem validação, e não predisse no braço espera. Testar a resposta na sessão (preensão sem dor antes e depois) é proposta clínica.
+
+- *Cerca de 21%: quem falha num critério fica com o complemento do pré-teste.* — Tratar a regra como binária e usar 1 − 0,79: a probabilidade depois do teste vem da RV−, não do complemento do pré-teste.
+- *Cerca de 59%: com o critério negativo, a razão vira 1 ÷ 2,6.* — Inverter a RV+ (1 ÷ 2,6 ≈ 0,38) no lugar de calcular a RV− = (1 − sensibilidade) ÷ especificidade ≈ 0,51.
+- *Cerca de 79%: a regra só informa sobre quem preenche o critério.* — Tratar o critério negativo como neutro: a RV− da idade (≈ 0,51) baixa a chance de 79% para cerca de 66%; ainda assim, a maioria melhora, e a preensão, quando medida, pode mudar a conta.
+
+Referência: Vicenzino B et al. Man Ther 2009;14(5):550-4. PMID 18838330. DOI 10.1016/j.math.2008.08.004.
+
+### Questão 6 · nível: aplicação · objetivo 3
+
+**Resposta:** A MWM costuma aliviar nas primeiras semanas; no longo prazo, quem segura é a carga.
+
+Lucado 2019: efeito combinado pequeno a moderado da MWM na dor, com todos os prazos somados (0,43; 0,15 a 0,71; métrica a conferir); nos prints por prazo, o efeito aparece no curto prazo, e de 3 a 12 meses os intervalos cruzam o zero. Bisset 2006: fisioterapia com MWM e exercício ganhou da espera em 6 semanas e empatou em 52. Wallis 2024: os efeitos de terapia manual e exercício não se mantiveram depois do tratamento. Usar a MWM como janela para carregar é proposta clínica.
+
+- *Sim, se o ganho imediato se repetir nas sessões: ganho acima de 25% prediz a resposta.* — O ganho imediato acima de 25% teve especificidade de 0,5 e RV+ de 1,5 com IC que inclui 1 (Vicenzino 2009), e o efeito não se sustenta em 3 a 12 meses.
+- *Não: contra placebo há 1 ensaio de 23 pessoas, então o ganho dela foi placebo.* — Confundir evidência escassa contra placebo com ausência de efeito; o curto prazo tem efeito pequeno a moderado.
+- *Sim, somando a mobilização cervical, que tem grau B para o efeito de longo prazo.* — Mobilização regional tem grau C na diretriz, e nenhum estudo da seleção mostra efeito de longo prazo.
+
+Referência: Lucado AM et al. J Hand Ther 2019;32(2):262-76. PMID 29705077. DOI 10.1016/j.jht.2018.01.010.; Bisset L et al. BMJ 2006;333(7575):939. PMID 17012266. DOI 10.1136/bmj.38961.584653.AE.; Wallis JA et al. Cochrane Database Syst Rev 2024;5:CD013042. PMID 38802121. DOI 10.1002/14651858.CD013042.pub2.
+
+### Questão 7 · nível: avaliação · objetivo 4
+
+**Resposta:** Recuar à fase da irritabilidade de hoje, ajustar a obra e explicar a recidiva.
+
+A dor que volta depois de uma injeção que funcionou é o padrão do ensaio de Coombes 2013: recidiva em 1 ano de 54% com corticoide contra 12% com placebo (resumo); mesmo assim, 83% estavam recuperados ou muito melhores em 1 ano. A diretriz manda progredir e regredir pelo estágio de irritabilidade reavaliado, não pelo calendário nem pela fase anterior (Lucado 2022, print do algoritmo, atribuição provável); recuar de fase sem parar é proposta clínica. Ruptura de tendão foi 1 em 991 que receberam corticoide (Coombes 2010): a imagem não muda a conduta de hoje. Nenhum estudo da seleção testou uma segunda injeção.
+
+- *Segunda infiltração agora e retomar o exercício quando a dor ceder, em 2 semanas.* — Repetir o que piorou o ano e adiar a carga: a primeira injeção já trouxe recidiva de 54% x 12%, e nenhum estudo da seleção testou a segunda.
+- *Retomar do ponto em que parou (isotônico 3 × 10 com 2 kg), já que ele passou da fase 1.* — Progredir pela fase anterior e não pela irritabilidade de hoje: dor que dura o resto do dia pede recuar de fase.
+- *Ultrassom do tendão antes de qualquer carga, porque a injeção pode tê-lo enfraquecido.* — Superestimar a ruptura (0,1%) e pedir um exame que não muda a conduta, atrasando a carga.
+
+Referência: Coombes BK et al. JAMA 2013;309(5):461-9. PMID 23385272. DOI 10.1001/jama.2013.129.; Coombes BK et al. Lancet 2010;376(9754):1751-67. PMID 20970844. DOI 10.1016/S0140-6736(10)61160-9.; Lucado AM et al. J Orthop Sports Phys Ther 2022;52(12):CPG1-CPG111. PMID 36453071. DOI 10.2519/jospt.2022.0302.
+
+### Questão 8 · nível: avaliação · objetivo 4
+
+**Resposta:** Trocar de posto na metade do turno, ficando abaixo de 4 h de rotação por dia.
+
+Na meta-análise de coortes de Bretschneider 2022 (texto completo, p.6 Fig. 2 e p.7 Tab. 3), rodar o antebraço mais de 4 h por dia se associou à incidência de epicondilite lateral (OR 1,85; IC 95% 1,10 a 3,10), assim como o esforço com força e duração (Strain Index alto, OR 1,75; 1,11 a 2,78); a repetição isolada, mais de 15 esforços por minuto, ficou inconclusiva (OR 0,71; 0,42 a 1,20). São coortes de trabalhadores sem dor no início: usar o dado para ajustar o trabalho de quem já tem dor é extrapolação, e o limite de 4 h é proposta clínica. Afastar até zerar a dor contraria a lógica de carga dosada da diretriz (descarregar o que irrita, sem repouso total).
+
+- *Reduzir as peças por minuto: a repetição é o fator que mais pesa.* — Tratar a repetição isolada como o fator principal: o OR da repetitividade foi 0,71, com intervalo de 0,42 a 1,20.
+- *Afastá-la da linha até a dor zerar, para o tendão descansar.* — Confundir descarregar com repouso total: a lógica da diretriz é reduzir o que irrita e devolver a carga aos poucos.
+- *Nenhum: fatores do trabalho só importam para quem ainda não tem dor.* — Descartar a única evidência de exposição que existe; o correto é usá-la dizendo que é extrapolação.
+
+Referência: Bretschneider SF et al. Am J Ind Med 2022;65(1):41-50. PMID 34674287. DOI 10.1002/ajim.23303.; Lucado AM et al. J Orthop Sports Phys Ther 2022;52(12):CPG1-CPG111. PMID 36453071. DOI 10.2519/jospt.2022.0302.
+
+### Questão 9 · nível: avaliação · objetivo 3
+
+**Resposta:** Usar, se ele quiser, como adjuvante curto, com o exercício como base.
+
+Na meta-análise de Ma 2024 (17 ECR, resumo), o agulhamento seco reduziu a dor em 0,95 ponto em 10 (IC 95% −1,88 a −0,02) só em menos de 1 semana, com comparadores misturados; incapacidade (DMP −1,32; −2,23 a −0,40) e preensão (DMP 0,45; 0,02 a 0,88) também melhoraram com 1 semana ou mais; certeza baixa pelo julgamento da ficha. Grau B na diretriz (print da aula de capacitação, atribuição provável) é força de recomendação, não tamanho nem duração de efeito. O PRP empatou com a injeção placebo em 3 meses (0,16 em 10, certeza moderada; Karjalainen 2021). Usar o agulhamento como adjuvante para abrir uma janela de exercício é proposta clínica.
+
+- *Concordar: grau B garante efeito clínico que se mantém.* — Ler grau de recomendação como tamanho e duração do efeito.
+- *Recusar: a meta-análise mostrou que o agulhamento não tem efeito.* — Ler um efeito pequeno e curto como ausência de efeito.
+- *Trocar por PRP, que tem certeza moderada de benefício.* — Inverter a certeza do PRP: é certeza moderada de que ele não supera o placebo.
+
+Referência: Ma X et al. Arch Phys Med Rehabil 2024;105(11):2184-97. PMID 38484834. DOI 10.1016/j.apmr.2024.02.713.; Lucado AM et al. J Orthop Sports Phys Ther 2022;52(12):CPG1-CPG111. PMID 36453071. DOI 10.2519/jospt.2022.0302.; Karjalainen T et al. Cochrane Database Syst Rev 2021;9:CD010951. PMID 34590307. DOI 10.1002/14651858.CD010951.pub2.

@@ -72,7 +72,53 @@ INTERACOES = {
 }
 
 TIPOS = ["capa", "pergunta", "enquete", "tarefa", "topicos", "cartoes", "figura", "tabela",
-         "numeros", "barras", "linha", "etapas", "comparacao", "citacao", "sintese", "referencias"]
+         "numeros", "barras", "linha", "etapas", "comparacao", "citacao", "sintese", "referencias",
+         "mapa", "exemplo"]
+
+# --------------------------------------------------------------------------
+# Formatos pedagogicos (meta.formato no deck.json; sem o campo, "caso")
+# --------------------------------------------------------------------------
+# Os limites que o validador aplica a cada formato. O porque esta em
+# references/desenho-instrucional.md (secoes 2 e 11).
+FORMATO_PADRAO_DECK = "caso"     # deck sem meta.formato: decks antigos continuam valendo como caso
+FORMATOS = {
+    "caso": {
+        "nome": "guiada por caso",
+        "duracao_min_s": 28 * 60, "duracao_aviso_max_s": None, "duracao_max_s": 35 * 60,
+        "faixa": "30 a 35 min", "alvo_min": 32,
+        "primeira_interacao_max_s": 180,
+        "sem_interacao_aviso_s": 6 * 60, "sem_interacao_erro_s": 7 * 60, "aviso_inclusivo": False,
+        "min_interacoes": 5, "min_formatos": 3, "parte_ativa_minima": 0.25,
+        "slides_max": 26, "slides_min": 10, "figuras_max": 6, "objetivos_max": 4,
+    },
+    "expositiva": {
+        "nome": "expositiva com checagens",
+        "duracao_min_s": 42 * 60, "duracao_aviso_max_s": 48 * 60, "duracao_max_s": 50 * 60,
+        "faixa": "40 a 50 min (alvo 45 a 48)", "alvo_min": 46,
+        "primeira_interacao_max_s": 300,
+        "sem_interacao_aviso_s": 7 * 60, "sem_interacao_erro_s": 8 * 60, "aviso_inclusivo": True,
+        "min_interacoes": 6, "min_formatos": 3, "parte_ativa_minima": 0.12,
+        "slides_max": 40, "slides_min": 15, "figuras_max": 8, "objetivos_max": 4,
+    },
+}
+
+
+def formato_do_deck(deck: dict) -> str:
+    """'expositiva' ou 'caso' (meta.formato; sem o campo, 'caso'). Valor desconhecido volta como está,
+    para o validador reprovar."""
+    f = str(((deck or {}).get("meta") or {}).get("formato") or FORMATO_PADRAO_DECK).strip().lower()
+    return f
+
+
+def partes_da_aula(deck: dict) -> list[dict]:
+    """meta.partes normalizado: [{'titulo', 'texto'}]. Aceita strings ou objetos."""
+    out = []
+    for p in como_lista(((deck or {}).get("meta") or {}).get("partes")):
+        if isinstance(p, dict):
+            out.append({"titulo": str(p.get("titulo") or ""), "texto": str(p.get("texto") or p.get("pergunta") or "")})
+        elif p is not None:
+            out.append({"titulo": str(p), "texto": ""})
+    return out
 
 
 def tempo_extenso(seg: int) -> str:

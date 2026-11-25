@@ -131,9 +131,42 @@ O slide de referências leva a declaração honesta (o script gera a partir de `
 > Delphi (...) não foi conferido no texto completo. Os degraus do supino e a regra de retomada depois de
 > pausa são propostas clínicas. A paciente e seus dados são fictícios."
 
+## A voz das notas na aula expositiva
+
+Na expositiva a nota é **a explicação completa**: quem dá a aula lê a nota e sabe o que dizer, em que
+ordem, com que números e com que palavras para o limite da evidência. Não é tópico de lembrete. As
+regras 1 a 9 continuam valendo; muda o que vem no meio.
+
+1. **Primeira frase, o papel do slide na linha da aula.** "A primeira ideia da aula: o tempo de cirurgia,
+   sozinho, muda o risco." "O mecanismo que explica a figura anterior." "Exemplo resolvido: eu faço a conta
+   inteira, a turma acompanha."
+2. **A explicação na ordem do raciocínio.** O que é, como se mede ou se lê, o número com unidade e
+   origem, o que ele significa para o paciente e o que ele não mostra. "Explicar a palavra taxa: é o risco
+   por unidade de tempo exposto, e por isso o estudo consegue falar em mês a mês."
+3. **Na figura, os eixos antes da conclusão**, e o olhar conduzido na ordem dos destaques.
+4. **No exemplo resolvido, cada passo falado com a conta**: "Passo 2, a diferença absoluta: 38,2 menos 5,6
+   dá 32,6 pontos percentuais." A conta feita a partir do estudo é dita como conta nossa.
+5. **O que o dado não mostra, dito na hora.** "Dizer o que o estudo não mostra: ele não diz por que o
+   risco cai." "Conta a partir de uma coorte, não o número necessário para tratar de um ensaio."
+6. **Âncora e desafio da parte**, cada um numa frase: "Para quem está começando: ..." e "Desafio para
+   quem já domina: ...".
+7. **Transições entre partes.** O slide `mapa` de cada parte tem uma nota curta que fecha a parte
+   anterior em uma frase e abre a próxima com a pergunta dela: "Onde estamos: parte 3 de 4. As duas
+   primeiras partes disseram quando e o que medir. Esta parte ensina a conta que transforma um estudo em
+   frase para o atleta." A síntese de cada parte termina ligando com a seguinte: "Ligar com a próxima: o
+   tempo é necessário, mas ... Como saber? Parte 2."
+8. **Na checagem, o que fazer com o resultado**: a resposta, o porquê em uma frase e a regra de voltar
+   ("Se mais da metade errar o mês, voltar 30 segundos ao slide anterior antes de seguir").
+
+Tamanho: 120 a 250 palavras nos slides de explicação e de exemplo, 40 a 80 nos divisores "onde estamos",
+80 a 150 nas checagens. O validador estima a fala das notas a ~130 palavras por minuto e avisa quando,
+somadas às interações, elas cobrem menos de 65% do tempo previsto: na expositiva isso quer dizer nota de
+lembrete, e o tempo do slide não se sustenta.
+
 ## Tamanho e forma
 
-- 50 a 150 palavras por slide; slides de interação longa (salas) podem chegar a 180.
+- Aula de caso: 50 a 150 palavras por slide; slides de interação longa (salas) podem chegar a 180.
+  Aula expositiva: ver a seção anterior.
 - Texto corrido, sem tópicos, sem negrito (as notas são lidas no modo apresentador).
 - Português do Brasil, frases curtas, sem jargão de palco ("pessoal", "galera", "bora").
 - Sem "como vimos" ou "é importante ressaltar": se é importante, diga o quê.

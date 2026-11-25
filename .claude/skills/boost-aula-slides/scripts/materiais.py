@@ -408,6 +408,14 @@ def gerar_resumo(deck: dict, avisos: list[str]) -> str:
         for o in M.como_lista(meta["objetivos"]):
             out.append(f"- {limpo(o)}")
         out.append("")
+    partes = M.partes_da_aula(deck)
+    if partes and M.formato_do_deck(deck) == "expositiva":
+        out.append("## O caminho da aula")
+        out.append("")
+        for i, pa in enumerate(partes, 1):
+            txt = limpo(pa["titulo"]) + (f": {limpo(pa['texto'])}" if pa.get("texto") else "")
+            out.append(f"{i}. {txt}")
+        out.append("")
     pontos = M.como_lista(res.get("pontos_chave"))
     if not pontos:
         for s in slides:

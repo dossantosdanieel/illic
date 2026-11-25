@@ -1,6 +1,16 @@
-# Desenho instrucional da aula Boost (30 a 35 minutos, online)
+# Desenho instrucional da aula Boost (online, dois formatos)
 
-Este arquivo diz **como** desenhar a aula e **por quê**. Cada princípio vem com a base científica; a lista
+A aula Boost tem dois formatos (`meta.formato` no deck.json):
+
+- **Expositiva com checagens** (`"expositiva"`, 40 a 50 min, alvo 45 a 48): a aula segue a linha lógica
+  do tema, com mapa, "onde estamos", exemplos resolvidos e perguntas rápidas de checagem a cada 5 a 7
+  min; o caso entra só como aplicação no fim de cada parte. É o padrão atual do Daniel (preferências de
+  25/11/2026): dá base e uma linha de raciocínio que a equipe consegue seguir. **Seção 11.**
+- **Guiada por caso** (`"caso"`, 30 a 35 min, alvo 32): o caso atravessa a aula e a turma decide antes de
+  ver a evidência (prever → ver → decidir → conferir). Para aulas de aplicação ou discussão de casos,
+  quando a turma já tem a base. **Seções 2 a 9.**
+
+Os princípios das seções 1, 3, 4, 6, 7 e 8 valem para os dois. Este arquivo diz **como** desenhar a aula e **por quê**. Cada princípio vem com a base científica; a lista
 completa está no fim. Onde a evidência é fraca ou vem de outro contexto (sala presencial, graduação,
 ensino de ciências), isso está dito: o professor decide sabendo o tamanho do apoio.
 
@@ -21,7 +31,7 @@ Formato do objetivo: verbo + objeto + condição + critério. Exemplo bom: "Deci
 caso, se libera um atleta para o esporte de pivô depois do LCA, justificando com tempo, força, salto e
 prontidão psicológica." Exemplo ruim: "Conhecer os critérios de retorno ao esporte."
 
-## 2. Orçamento de tempo
+## 2. Orçamento de tempo (formato caso; o da expositiva está na seção 11)
 
 O teto é 35 minutos e o validador reprova acima disso. O alvo é 32: sobra margem para atraso de entrada,
 problema de áudio e uma pergunta boa da turma. Quando a aula estourar, **corte conteúdo, nunca a
@@ -249,6 +259,108 @@ confira:
 - [ ] Pelo menos uma decisão que contraria ou refina um hábito do clínico experiente (seção 8).
 - [ ] Todo número com comparador e intervalo; ao menos uma conversão para a escala do paciente.
 
+## 11. Aula expositiva de nível alto (formato `expositiva`)
+
+Expositiva não quer dizer rasa nem passiva. É a explicação feita na ordem em que o raciocínio se
+constrói, com a turma recuperando o que ouviu a cada poucos minutos. Para quem ainda não tem o esquema
+do tema, a instrução explícita e guiada ensina mais que a descoberta (Kirschner et al. 2006; Rosenshine
+2012); o que a torna boa é a estrutura visível e a checagem frequente, não o volume de conteúdo.
+
+### Quando escolher cada formato
+
+| Situação | Formato |
+|---|---|
+| Tema novo para parte da equipe; a aula precisa dar base (o que é, por que acontece, como diagnosticar, o que esperar, como tratar) | **expositiva** |
+| Primeira aula de uma trilha, ou aula de diagnóstico e de fundamentos de tratamento | **expositiva** |
+| A turma já tem a base e o objetivo é treinar decisão num caso que evolui | **caso** |
+| Aula de aplicação ou de discussão de casos, depois de uma ou mais expositivas | **caso** |
+| Dúvida | as preferências mandam (hoje: expositiva) |
+
+O formato vai no `00_briefing.md` (`nova_aula.py --formato`) e em `meta.formato`. Sem o campo, o
+validador aplica as regras do caso.
+
+### A estrutura
+
+| Trecho | Tempo | O que acontece |
+|---|---|---|
+| Abertura | 3 a 4 min | Capa (30 s), combinados com mão na câmera de teste (1 min), **mapa da aula** (1 min 30 s). A primeira interação vem antes de 5 min. |
+| Parte 1 a 4 (3 a 5 partes) | 8 a 12 min cada | "Onde estamos" (mapa com a parte em destaque, 20 a 40 s) → explicação, uma ideia por slide → exemplo resolvido → checagem → aplicação ao caso → síntese da parte. |
+| Fechamento | 3 min | Recuperação de memória da aula inteira, na ordem do mapa (chat em cascata) e bilhete de saída. |
+
+As partes seguem a linha lógica do tema, como perguntas: **o que é → por que acontece → como
+diagnosticar → o que esperar → como tratar** (ou um recorte dela). O título de cada parte é a pergunta
+que ela responde. Uma parte acima de 12 a 14 min é duas partes.
+
+Consequências práticas: 25 a 35 slides cronometrados; 6 a 10 checagens, curtas (30 a 60 s); 3 a 6
+figuras; o validador confere duração (erro acima de 50 min), primeira checagem até 5 min, no máximo
+8 min sem interação (aviso a partir de 7) e a estrutura das partes.
+
+### Os princípios, com a base
+
+- **Organizador prévio.** O mapa da aula na abertura mostra as partes e como elas se ligam, antes do
+  conteúdo. Dar à turma a estrutura de antemão ajuda a encaixar o que vem (Ausubel 1960; meta-análise
+  com efeito pequeno e consistente: Luiten et al. 1980). Na aula: slide `mapa` sem `atual`, lido como
+  quatro perguntas, com a faixa "Ao fim: ...".
+- **Segmentação e sinalização.** Conteúdo em partes curtas, com início e fim marcados, alivia a memória
+  de trabalho (efeito de segmentação: Rey et al. 2019; Mayer 2021), e a marca de onde se está orienta a
+  atenção (sinalização: Schneider et al. 2018). Na aula: o `mapa` com `"atual": k` abre cada parte ("onde
+  estamos"), o olho de cada slide diz "Parte k · ...", e a nota diz a transição em voz alta.
+- **Uma ideia por slide.** O título afirma a ideia; o corpo mostra a evidência (figura, número, gráfico,
+  2 a 4 pontos); a explicação está na fala (seção 3). Slide expositivo que lista cinco ideias vira leitura.
+- **Exemplo resolvido → parcialmente resolvido → aplicação.** Para quem está aprendendo, estudar a
+  solução feita ensina mais que resolver sozinho (Atkinson et al. 2000; Sweller et al. 2019); a transição
+  boa é retirar passos aos poucos (Renkl et al. 2002). Na aula: um `exemplo` com todos os passos (o
+  professor faz a conta em voz alta), depois um `exemplo` com `lacunas` (a turma faz o passo que falta, no
+  chat), depois a aplicação ao caso, sem apoio. O pós-teste traz o mesmo raciocínio num caso novo.
+- **Checagem que exige recuperar, não reconhecer.** Perguntas intercaladas reduzem a divagação e
+  melhoram a retenção em aulas gravadas (Szpunar et al. 2013), e gerar a resposta aprende mais que
+  reconhecê-la entre opções (Kang et al. 2007; McDaniel et al. 2007), desde que haja feedback logo depois
+  (Butler & Roediger 2008). Na prática: "Sem voltar o slide: até que mês esperar reduziu o risco, e
+  quanto?" (chat de uma linha) e não "O risco cai com o tempo? Sim/Não". Na enquete, a pergunta aplica a
+  ideia a um paciente novo, e os distratores são os erros que a explicação quis desfazer. "Ficou claro?"
+  não é checagem (ver `interacoes.md`, "Checagem rápida").
+- **Usar a checagem para decidir.** Se mais da metade erra, volte 30 s ao slide anterior antes de seguir
+  (avaliação formativa: Black & Wiliam 1998). Diga isso na nota da checagem.
+- **Síntese por parte.** Duas ou três frases com o número, mais "Na prática: ...", no fim de cada parte
+  (slide `sintese`, `"papel": "sintese"`). A síntese é o que a turma anota; a recuperação final percorre as
+  sínteses na ordem do mapa.
+- **O caso como aplicação.** O paciente aparece no fim de cada parte para usar o que acabou de ser
+  explicado (`"papel": "aplicacao"`), e evolui de uma parte para a outra. Não abre a aula com uma decisão
+  sem base: foi esse o motivo da mudança de formato (a equipe tinha dificuldade de seguir a linha de
+  raciocínio quando o caso guiava a aula).
+
+### Nível alto para especialistas sem perder o iniciante
+
+A expositiva corre dois riscos: virar revisão do que os experientes já sabem, ou correr para quem
+está começando. O que funciona (seções 7 e 8, adaptadas):
+
+- **O núcleo é exigente**: cada parte tem o número que sustenta a ideia, com unidade, comparador,
+  intervalo, DMCI, NNT/NNH ou RV quando couber, a dose prescritível e a certeza da evidência. Expositiva
+  com "estudos mostram que funciona" está reprovada pela seção 8.
+- **Âncora por parte** ("Para começar: ..."): a fórmula, o critério de comparação, o termo definido.
+  Vai no slide (`ancora` em `pergunta`, `tarefa` e `exemplo`) e na nota.
+- **Desafio por parte** ("Desafio: ..."): transferência ou limite do estudo ("quantos eventos a mais
+  mudariam a conclusão?", "o que muda se a perna sã também perdeu força?"). O especialista trabalha no
+  desafio enquanto o iniciante trabalha na âncora; a pergunta da checagem é a mesma para todos.
+- **O tamanho do apoio muda de parte para parte e é dito**: dado de ensaio, associação de coorte, conta
+  nossa a partir do estudo ("calc."), proposta clínica. Para o experiente, essa gradação é o conteúdo
+  novo da aula.
+- **O que contraria o hábito** (seção 8) entra na explicação, não como pegadinha: "o teste que todos
+  usam quase todo mundo passa".
+- O efeito de reversão da expertise (Kalyuga et al. 2003) é a razão de o exemplo resolvido ser curto e
+  de o parcialmente resolvido vir logo: quem já domina não precisa de todos os passos.
+
+### Checklist da expositiva
+
+- [ ] `meta.formato: "expositiva"` e `meta.partes` com 3 a 5 partes na ordem da linha de raciocínio.
+- [ ] Mapa da aula na abertura; "onde estamos" (`mapa` com `atual`) abrindo cada parte.
+- [ ] Cada parte: explicação com uma ideia por slide → exemplo → checagem → aplicação → síntese.
+- [ ] Pelo menos um exemplo resolvido e um parcialmente resolvido na aula.
+- [ ] 6 ou mais checagens que exigem recuperar, a cada 5 a 7 min; primeira antes de 5 min.
+- [ ] Âncora e desafio em cada parte; todo número com fonte, comparador e intervalo.
+- [ ] Salas no máximo uma vez, só se a tarefa valer os 5 min.
+- [ ] Recuperação final na ordem do mapa e bilhete de saída; soma de 42 a 48 min, teto de 50.
+
 ## Referências
 
 - Adesope OO, Trevisan DA, Sundararajan N. Rethinking the use of tests: a meta-analysis of practice testing. Rev Educ Res. 2017;87(3):659-701.
@@ -258,6 +370,7 @@ confira:
 - Altman DG, Bland JM. Absence of evidence is not evidence of absence. BMJ. 1995;311:485. PMID 7647644.
 - Anderson LW, Krathwohl DR (eds). A taxonomy for learning, teaching, and assessing. Longman; 2001.
 - Atkinson RK, Derry SJ, Renkl A, Wortham D. Learning from examples: instructional principles from the worked examples research. Rev Educ Res. 2000;70(2):181-214.
+- Ausubel DP. The use of advance organizers in the learning and retention of meaningful verbal material. J Educ Psychol. 1960;51(5):267-72.
 - Bailenson JN. Nonverbal overload: a theoretical argument for the causes of Zoom fatigue. Technol Mind Behav. 2021;2(1).
 - Biggs J. Enhancing teaching through constructive alignment. High Educ. 1996;32:347-64.
 - Bjork EL, Bjork RA. Making things hard on yourself, but in a good way: creating desirable difficulties to enhance learning. In: Psychology and the real world. Worth; 2011. p. 56-64.
@@ -278,11 +391,17 @@ confira:
 - Hattie J, Timperley H. The power of feedback. Rev Educ Res. 2007;77(1):81-112.
 - Jaeschke R, Singer J, Guyatt GH. Measurement of health status: ascertaining the minimal clinically important difference. Control Clin Trials. 1989;10(4):407-15. PMID 2691207.
 - Kalyuga S, Ayres P, Chandler P, Sweller J. The expertise reversal effect. Educ Psychol. 2003;38(1):23-31.
+- Kang SHK, McDermott KB, Roediger HL. Test format and corrective feedback modify the effect of testing on long-term retention. Eur J Cogn Psychol. 2007;19(4-5):528-58.
+- Kirschner PA, Sweller J, Clark RE. Why minimal guidance during instruction does not work. Educ Psychol. 2006;41(2):75-86.
 - Kornell N, Hays MJ, Bjork RA. Unsuccessful retrieval attempts enhance subsequent learning. J Exp Psychol Learn Mem Cogn. 2009;35(4):989-98. PMID 19586265.
+- Luiten J, Ames W, Ackerson G. A meta-analysis of the effects of advance organizers on learning and retention. Am Educ Res J. 1980;17(2):211-8.
 - Mayer RE. Multimedia learning. 3rd ed. Cambridge University Press; 2021.
+- McDaniel MA, Anderson JL, Derbish MH, Morrisette N. Testing the testing effect in the classroom. Eur J Cogn Psychol. 2007;19(4-5):494-513.
 - Renkl A, Atkinson RK, Maier UH, Staley R. From example study to problem solving: smooth transitions help learning. J Exp Educ. 2002;70(4):293-315.
 - Rey GD. A review of research and a meta-analysis of the seductive detail effect. Educ Res Rev. 2012;7(3):216-37.
+- Rey GD, Beege M, Nebel S, Wirzberger M, Schmitt TH, Schneider S. A meta-analysis of the segmenting effect. Educ Psychol Rev. 2019;31:389-419.
 - Richland LE, Kornell N, Kao LS. The pretesting effect: do unsuccessful retrieval attempts enhance learning? J Exp Psychol Appl. 2009;15(3):243-57. PMID 19751074.
+- Rosenshine B. Principles of instruction: research-based strategies that all teachers should know. Am Educ. 2012;36(1):12-9.
 - Roediger HL, Karpicke JD. Test-enhanced learning: taking memory tests improves long-term retention. Psychol Sci. 2006;17(3):249-55. PMID 16507066.
 - Rohrer D, Taylor K. The shuffling of mathematics problems improves learning. Instr Sci. 2007;35:481-98.
 - Rowland CA. The effect of testing versus restudy on retention: a meta-analytic review of the testing effect. Psychol Bull. 2014;140(6):1432-63. PMID 25150680.
@@ -297,5 +416,6 @@ confira:
 
 As que têm PMID foram conferidas no PubMed (título, revista, ano, volume e páginas) em novembro de 2026.
 As demais (livros, capítulos e revistas de educação fora do PubMed) foram citadas de memória
-bibliográfica. Em nenhum caso o texto completo foi relido para escrever este guia: os achados descritos
+bibliográfica, inclusive as acrescentadas com a seção 11 em 25/11/2026 (Ausubel, Luiten, Kang, Kirschner,
+McDaniel, Rey 2019, Rosenshine), que não foram conferidas em base nenhuma. Em nenhum caso o texto completo foi relido para escrever este guia: os achados descritos
 são os principais de cada trabalho. Antes de citar um número específico em aula, confira no original.

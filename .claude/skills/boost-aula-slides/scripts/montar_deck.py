@@ -450,20 +450,7 @@ class Construtor:
         if s.get("entrega"):
             y += self.cartao(sl, M.ME, y, M.LC, [par(f"**Entrega:** {s['entrega']}", pt, "branco", ls=pt * 1.4)],
                              fill="marinho", ins=(0.2, 0.14, 0.15, 0.13))
-        extras = []
-        if s.get("ancora"):
-            extras.append(f"**Para começar:** {s['ancora']}")
-        if s.get("desafio"):
-            extras.append(f"**Desafio:** {s['desafio']}")
-        if extras:
-            y += 0.16
-            wc = (M.LC - M.ESPACO_COLUNAS * (len(extras) - 1)) / len(extras)
-            pars = [[par(e, self.pt_r(13, r), "texto", ls=self.pt_r(13, r) * 1.35)] for e in extras]
-            hmax = max(self.h_cartao(wc, p, (0.2, 0.14, 0.12, 0.13)) for p in pars)
-            for j, p in enumerate(pars):
-                self.cartao(sl, M.ME + j * (wc + M.ESPACO_COLUNAS), y, wc, p, fill="branco", borda="borda",
-                            ins=(0.2, 0.14, 0.12, 0.13), h=hmax)
-            y += hmax
+        y = self._ancora_desafio(sl, s, r, y)
         return M.Y_LIMITE - y
 
     def t_topicos(self, sl, s, r):
@@ -1131,6 +1118,8 @@ class Construtor:
     def t_comparacao(self, sl, s, r):
         y = self.cabecalho(sl, s, r=r)
         faixas = M.como_lista(s.get("faixas"))
+        if (s.get("layout") or "").lower() == "colunas":
+            return self._comparacao_colunas(sl, s, r, y, faixas)
         for fi, fx in enumerate(faixas):
             itens = M.como_lista(fx.get("itens"))
             n = max(1, len(itens))
@@ -1230,6 +1219,216 @@ class Construtor:
             pt = self.pt_r(14, r, 12)
             y += self.cartao(sl, M.ME, y, M.LC, [par(s["faixa"], pt, "fundo", ls=pt * 1.4)], fill="marinho")
         return M.Y_LIMITE - y
+
+    def _comparacao_colunas(self, sl, s, r, y, faixas):
+        """Comparação lado a lado: cada faixa vira uma coluna; os cartões da mesma posição ficam na mesma
+        altura nas colunas, para o olho comparar linha a linha. A coluna com "destaque" (a que a aula
+        defende) tem o cabeçalho marinho; as outras, cinza com texto marinho."""
+        nf = max(1, len(faixas))
+        vao = 0.3
+        wc = (M.LC - vao * (nf - 1)) / nf
+        pt_h = self.pt_r(16, r, 13)
+        pt_t, pt_x = self.pt_r(14, r, 12), self.pt_r(13, r, 11)
+        ins_h = (0.22, 0.13, 0.15, 0.13)
+        ins = (0.2, 0.13, 0.14, 0.13)
+        # cabeçalhos
+        algum_dest = any(fx.get("destaque") for fx in faixas)
+        heads = []
+        for fx in faixas:
+            esc = bool(fx.get("destaque")) or not algum_dest
+            heads.append(([par(fx.get("rotulo") or "", pt_h, "branco" if esc else "marinho", ls=pt_h * 1.25, neg=True)],
+                          esc))
+        hh = max([self.h_cartao(wc, h[0], ins_h) for h in heads] or [0.5])
+        for j, (h, esc) in enumerate(heads):
+            self.cartao(sl, M.ME + j * (wc + vao), y, wc, h, fill="marinho" if esc else "cartao",
+                        borda=None if esc else "borda_forte", ins=ins_h, h=hh)
+        y += hh + 0.12
+        # linhas alinhadas
+        colunas = [M.como_lista(fx.get("itens")) for fx in faixas]
+        nlin = max([len(c) for c in colunas] or [0])
+        for i in range(nlin):
+            blocos = []
+            for c in colunas:
+                it = c[i] if i < len(c) else None
+                if it is None:
+                    blocos.append(None)
+                    continue
+                if isinstance(it, str):
+                    it = {"texto": it}
+                dest = bool(it.get("destaque"))
+                pars = []
+                if it.get("titulo"):
+                    pars.append(par(it["titulo"], pt_t, "branco" if dest else "texto", ls=pt_t * 1.3, neg=True))
+                if it.get("texto"):
+                    pars.append(par(it["texto"], pt_x, "branco" if dest else "texto", ls=pt_x * 1.35,
+                                    antes=1.5 if pars else 0))
+                if it.get("etiqueta"):
+                    pars.append(par(it["etiqueta"], 12, "ciano_claro" if dest else "texto2", ls=15.6, neg=True, antes=4))
+                blocos.append((pars, dest))
+            hl = max([self.h_cartao(wc, b[0], ins) for b in blocos if b] or [0.5])
+            for j, b in enumerate(blocos):
+                if not b:
+                    continue
+                pars, dest = b
+                self.cartao(sl, M.ME + j * (wc + vao), y, wc, pars, fill="marinho" if dest else "cartao",
+                            ins=ins, h=hl)
+            y += hl + 0.1
+        y -= 0.1
+        if s.get("nota"):
+            y += 0.17
+            pt = self.pt_r(14, r, 12)
+            y += self.cartao(sl, M.ME, y, M.LC, [par(s["nota"], pt, "texto", ls=pt * 1.4)], fill="branco", borda="borda")
+        if s.get("faixa"):
+            y += 0.17
+            pt = self.pt_r(14, r, 12)
+            y += self.cartao(sl, M.ME, y, M.LC, [par(s["faixa"], pt, "fundo", ls=pt * 1.4)], fill="marinho")
+        return M.Y_LIMITE - y
+
+    # ---- mapa da aula ("onde estamos")
+    def partes_mapa(self, s) -> list[dict]:
+        proprias = M.como_lista(s.get("partes"))
+        if proprias:
+            return M.partes_da_aula({"meta": {"partes": proprias}})
+        return M.partes_da_aula(self.deck)
+
+    def t_mapa(self, sl, s, r):
+        """Organizador prévio: as partes da aula numeradas, de cima para baixo. Com "atual": k, a parte k fica
+        em marinho com "AGORA", as anteriores ficam apagadas, e o slide serve de divisor "onde estamos"."""
+        partes = self.partes_mapa(s)
+        n = len(partes)
+        try:
+            atual = int(s.get("atual") or 0)
+        except (TypeError, ValueError):
+            atual = 0
+        sp = dict(s)
+        if not sp.get("olho"):
+            sp["olho"] = f"Onde estamos · Parte {atual} de {n}" if 0 < atual <= n else "Mapa da aula"
+        if not sp.get("titulo"):
+            sp["titulo"] = partes[atual - 1]["titulo"] if 0 < atual <= n else "O caminho de **hoje**"
+        y = self.cabecalho(sl, sp, r=r)
+        if not partes:
+            self.aviso("mapa sem partes: escreva meta.partes (ou 'partes' no slide).", "erro")
+            return M.Y_LIMITE - y
+        pt_t = self.pt_r(18, r, 14)
+        pt_x = self.pt_r(13, r, 11)
+        tag = "AGORA"
+        w_tag = self.med.largura(tag, 12, True, 1.5) + 0.3
+        x_t = M.ME + 0.95
+        w_t = M.LC - 0.95 - w_tag - 0.25
+        gap = 0.12 if n <= 4 else 0.1
+        h_min = 0.6 if n <= 4 else 0.52
+        for k, p in enumerate(partes, 1):
+            cur, passada = k == atual, 0 < k < atual
+            if cur:
+                fill, c_num, c_tit, c_txt = "marinho", "ciano_claro", "branco", "lavanda"
+            elif passada:
+                fill, c_num, c_tit, c_txt = "cartao", "cinza_grafico", "texto2", "texto2"
+            else:
+                fill, c_num, c_tit, c_txt = "cartao", "petroleo", "texto", "texto2"
+            pars = [par(p["titulo"], pt_t, c_tit, ls=pt_t * 1.2, neg=True)]
+            if p.get("texto"):
+                pars.append(par(p["texto"], pt_x, c_txt, ls=pt_x * 1.35, antes=2))
+            ht = self.h_pars(pars, w_t)
+            hc = max(h_min, ht + 0.3)
+            self.caixa(sl, M.ME, y, M.LC, hc, fill=fill, forma="cartao", nome=f"Parte {k}")
+            self.caixa(sl, M.ME + 0.28, y + (hc - 0.45) / 2, 0.55, 0.45,
+                       [par(str(k), 28, c_num, ls=32.2, neg=True)])
+            self.caixa(sl, x_t, y + (hc - ht) / 2, w_t, ht, pars)
+            if cur:
+                self.caixa(sl, M.MD - w_tag - 0.2, y + (hc - 0.228) / 2, w_tag, 0.228,
+                           [par(tag, 12, "ciano_claro", ls=14.4, neg=True, alin="r", spc=1.5)], nome="Agora")
+            y += hc + gap
+        y -= gap
+        if s.get("faixa"):
+            y += 0.19
+            pt = self.pt_r(14, r, 12)
+            if atual:
+                y += self.cartao(sl, M.ME, y, M.LC, [par(s["faixa"], pt, "texto", ls=pt * 1.4)], fill="branco",
+                                 borda="borda")
+            else:
+                y += self.cartao(sl, M.ME, y, M.LC, [par(s["faixa"], pt, "fundo", ls=pt * 1.4)], fill="marinho")
+        return M.Y_LIMITE - y
+
+    # ---- exemplo resolvido passo a passo
+    def t_exemplo(self, sl, s, r):
+        """O problema à esquerda (cartão branco), os passos numerados à direita, cada um com a operação e o
+        resultado, e a resposta numa faixa marinho. Passos em "lacunas" ficam em branco para a turma completar
+        (exemplo parcialmente resolvido)."""
+        y0 = self.cabecalho(sl, s, r=r)
+        passos = [p if isinstance(p, dict) else {"conta": str(p)} for p in M.como_lista(s.get("passos"))]
+        lacunas = {int(k) for k in M.como_lista(s.get("lacunas")) if isinstance(k, int) and not isinstance(k, bool)}
+        dado = s.get("dado")
+        if isinstance(dado, str):
+            dado = {"texto": dado}
+        pt = self.pt_r(14, r, 12)
+        y_fim = y0
+        if dado:
+            wl = float(s.get("largura_dado") or 4.2)
+            pars = [olho_par(dado.get("olho") or "O problema")]
+            if dado.get("texto"):
+                pars.append(par(dado["texto"], pt, "texto", ls=pt * 1.4, antes=6))
+            for it in M.como_lista(dado.get("itens")):
+                pars.append(par(it, pt, "texto", ls=pt * 1.4, antes=6))
+            if dado.get("nota"):
+                pars.append(par(dado["nota"], 12, "texto2", ls=15.6, antes=8))
+            hd = self.cartao(sl, M.ME, y0, wl, pars, fill="branco", borda="borda", ins=(0.25, 0.2, 0.2, 0.2))
+            y_fim = y0 + hd
+            xr = M.ME + wl + 0.3
+        else:
+            xr = M.ME
+        wr = M.MD - xr
+        y = y0
+        self.caixa(sl, xr, y, wr, 0.228, [olho_par(s.get("rotulo_passos") or "Passo a passo")])
+        y += 0.228 + 0.1
+        pt_t = self.pt_r(14, r, 12)
+        pt_c = self.pt_r(16, r, 13)
+        pt_x = self.pt_r(12, r, 11)
+        wt = wr - 0.72 - 0.18
+        for i, p in enumerate(passos, 1):
+            lac = i in lacunas
+            pars = []
+            if p.get("titulo"):
+                pars.append(par(p["titulo"], pt_t, "texto", ls=pt_t * 1.25, neg=True))
+            if lac:
+                pedido = p.get("lacuna") or "complete este passo."
+                pars.append(par(f"**Sua vez:** {pedido}", pt_c, "petroleo", ls=pt_c * 1.3, antes=2 if pars else 0))
+            else:
+                if p.get("conta"):
+                    pars.append(par(p["conta"], pt_c, "marinho", ls=pt_c * 1.3, antes=2 if pars else 0))
+                if p.get("texto"):
+                    pars.append(par(p["texto"], pt_x, "texto2", ls=pt_x * 1.35, antes=2 if pars else 0))
+            ht = self.h_pars(pars, wt)
+            hc = max(0.52, ht + 0.22)
+            self.caixa(sl, xr, y, wr, hc, fill="branco" if lac else "cartao", borda="borda_forte" if lac else None,
+                       forma="cartao", nome=f"Passo {i}" + (" (lacuna)" if lac else ""))
+            self.caixa(sl, xr + 0.2, y + 0.09, 0.42, 0.38, [par(str(i), 22, "petroleo", ls=25.3, neg=True)])
+            self.caixa(sl, xr + 0.72, y + (hc - ht) / 2, wt, ht, pars)
+            y += hc + 0.09
+        y -= 0.09
+        y = max(y, y_fim)
+        if s.get("resposta"):
+            y += 0.19
+            y += self.cartao(sl, M.ME, y, M.LC, [par(s["resposta"], pt, "fundo", ls=pt * 1.4)], fill="marinho")
+        y = self._ancora_desafio(sl, s, r, y)
+        return M.Y_LIMITE - y
+
+    def _ancora_desafio(self, sl, s, r, y):
+        """Cartões "Para começar:" e "Desafio:" lado a lado, embaixo (tarefa e exemplo)."""
+        extras = []
+        if s.get("ancora"):
+            extras.append(f"**Para começar:** {s['ancora']}")
+        if s.get("desafio"):
+            extras.append(f"**Desafio:** {s['desafio']}")
+        if not extras:
+            return y
+        y += 0.16
+        wc = (M.LC - M.ESPACO_COLUNAS * (len(extras) - 1)) / len(extras)
+        pars = [[par(e, self.pt_r(13, r), "texto", ls=self.pt_r(13, r) * 1.35)] for e in extras]
+        hmax = max(self.h_cartao(wc, p, (0.2, 0.14, 0.12, 0.13)) for p in pars)
+        for j, p in enumerate(pars):
+            self.cartao(sl, M.ME + j * (wc + M.ESPACO_COLUNAS), y, wc, p, fill="branco", borda="borda",
+                        ins=(0.2, 0.14, 0.12, 0.13), h=hmax)
+        return y + hmax
 
     # ---- referencias (pagina sozinho)
     def linhas_referencias(self) -> list[str]:

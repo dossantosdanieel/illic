@@ -531,6 +531,18 @@ def analisar(pasta: Path, validar: bool = True) -> Situacao:
     aula4 = pasta / "04_aula"
     rot = aula4 / "roteiro.md"
     deck_arq = aula4 / "deck.json"
+    # Formato pedagógico: o do deck.json manda (é o que o validador aplica); sem deck, o do briefing; sem
+    # briefing que diga, o das preferências. Não há regra fixa de duração aqui: quem julga é o validador.
+    fmt_brief = C.formato_do_briefing(pasta)
+    fmt_deck = C.formato_do_deck(C.ler_json(deck_arq)) if deck_arq.exists() else None
+    formato = fmt_deck or fmt_brief or C.formato_padrao()
+    if formato not in C.FORMATOS:
+        formato = "caso"
+    FMT = C.FORMATOS[formato]
+    S.resumo["formato"] = formato
+    S.resumo["formato_nome"] = FMT["nome"]
+    S.resumo["formato_faixa"] = FMT["faixa"]
+    S.resumo["formato_origem"] = "deck.json" if fmt_deck else ("briefing" if fmt_brief else "preferências")
     if ok_chaves or aprovadas:
         if cat_arq.exists():
             if not aprovadas:
@@ -574,31 +586,38 @@ def analisar(pasta: Path, validar: bool = True) -> Situacao:
         elif not sem_parar:
             add(5.1, "checagem3", "Checagem 3 sem roteiro para aprovar", "aviso",
                 f"{C.cmd_proprio('situacao.py')} {A} --marcar 3 --nota \"linha do tempo aprovada junto com o deck\"",
-                detalhe="mostre os objetivos, o caso e a linha do tempo do deck junto com a checagem 4")
+                detalhe="mostre os objetivos, " + ("as partes" if formato == "expositiva" else "o caso")
+                        + " e a linha do tempo do deck junto com a checagem 4")
     elif tem_leitura or rot.exists():
         if not rot.exists():
             add(5.0, "roteiro", "Escrever 04_aula/roteiro.md com a linha do tempo", "fazer",
-                detalhe="boost-aula-slides, passos 1 a 3 (objetivos, caso, 3 blocos, tempos); modelo em assets/roteiro_modelo.md")
+                detalhe=f"boost-aula-slides, passos 1 a 3, formato {formato} ({FMT['roteiro']})")
         else:
             abertos = len(PLACEHOLDER.findall(rot.read_text(encoding="utf-8", errors="replace")))
             add(5.0, "roteiro", "Roteiro escrito" + (f" ({abertos} campo(s) do modelo abertos)" if abertos else ""),
                 "aviso" if abertos else "ok")
-            checagem(3, 5.1, 6.0, "objetivos, caso, linha do tempo (início, bloco, slide, interação) e as figuras "
-                                  "escolhidas; pergunte se o tempo e as decisões estão certos")
+            checagem(3, 5.1, 6.0, FMT["checagem3"])
 
     # ---------------------------------------------------------------- 6 deck e materiais
     sl = lambda s: C.cmd_irma("slides", s)  # noqa: E731
     if rot.exists() or deck_arq.exists():
         if not deck_arq.exists():
             add(6.0, "deck", "Escrever deck.json e questoes.json", "fazer",
-                detalhe="copie boost-aula-slides/assets/exemplo/deck.json e reescreva (passo 4 da skill de slides)")
+                detalhe=f"formato {formato}: copie boost-aula-slides/{FMT['exemplo']} e reescreva, com "
+                        f"\"formato\": \"{formato}\" em meta (passo 4 da skill de slides)")
         else:
             deck = C.ler_json(deck_arq, {})
             if isinstance(deck, dict) and "__erro__" in deck:
                 add(6.0, "deck", "deck.json não abre", "fazer", detalhe=deck["__erro__"])
                 deck = {}
             else:
-                add(6.0, "deck", "deck.json escrito", "ok")
+                add(6.0, "deck", f"deck.json escrito (formato {fmt_deck}"
+                    + ("" if (deck.get("meta") or {}).get("formato") else ", sem meta.formato") + ")", "ok")
+                if fmt_brief and fmt_deck and fmt_brief != fmt_deck:
+                    sem = not (deck.get("meta") or {}).get("formato")
+                    add(6.01, "formato", f"O briefing pede aula {fmt_brief}, mas o deck.json é validado como {fmt_deck}",
+                        "aviso", detalhe=("o deck não tem meta.formato e por isso vale \"caso\"; " if sem else "")
+                        + f"acerte \"formato\": \"{fmt_brief}\" em meta ou registre a mudança no briefing")
             slug = str(((deck or {}).get("meta") or {}).get("slug") or "")
             pptx = aula4 / f"{slug}.pptx" if slug else next(iter(sorted(aula4.glob("*.pptx"))), aula4 / "aula.pptx")
             S.resumo["pptx"] = str(pptx)
@@ -614,7 +633,8 @@ def analisar(pasta: Path, validar: bool = True) -> Situacao:
                         add(6.1, "validar", f"Validação pedagógica com {len(erros)} erro(s)", "fazer",
                             f"{sl('validar_aula.py')} {deck_arq}", detalhe="; ".join(erros[:4]))
                     else:
-                        add(6.1, "validar", f"Validação sem erros ({dur}, {n} slides, {len(avisos)} aviso(s))", "ok")
+                        add(6.1, "validar", f"Validação sem erros ({dur}, formato {formato}: {FMT['faixa']}; {n} slides, "
+                                              f"{len(avisos)} aviso(s))", "ok")
             if mais_velho(pptx, deck_arq, cat_arq):
                 add(6.2, "montar", "Montar o .pptx", "fazer", f"{sl('montar_deck.py')} {deck_arq}")
             else:
@@ -728,6 +748,9 @@ def imprimir(S: Situacao) -> None:
     print(f"Tema: {S.tema}")
     ch = " · ".join(f"{n} {'feita' if v else 'aberta'}" for n, v in S.checagens.items())
     print(f"Modo: {S.modo} · Checagens: {ch}")
+    if S.resumo.get("formato"):
+        print(f"Formato: {S.resumo['formato']} ({S.resumo['formato_nome']}, {S.resumo['formato_faixa']}; "
+              f"de {S.resumo['formato_origem']})")
     for g, alvo in S.compartilhado.items():
         print(f"Compartilhado: {g} -> {alvo}")
     print()

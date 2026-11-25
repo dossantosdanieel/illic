@@ -74,12 +74,16 @@ deck é trabalho longo (deck.json, render, ajuste slide a slide); refazer o dese
 
 **O que mostrar** (de `roteiro.md`):
 
-1. Os 2 ou 3 objetivos e o caso em uma linha (paciente, objetivo dele, revés previsto).
-2. A linha do tempo condensada: início, bloco, slide, interação. Marque onde ficam as figuras e as salas.
+1. O formato (expositiva ou caso) e os 2 a 4 objetivos. Expositiva: as partes da linha de raciocínio, em ordem, e o
+   caso de aplicação em uma linha. Caso: o paciente em uma linha (objetivo dele, revés previsto).
+2. A linha do tempo condensada: início, parte ou bloco, slide, checagem ou interação. Marque onde ficam as figuras,
+   os exemplos resolvidos e as salas (se houver).
 3. O dado que contraria ou refina um hábito comum, em uma frase: é o que faz a aula valer para os especialistas.
 4. O que ficou de fora (vai para o resumo do aluno) e as propostas clínicas sem ensaio que as teste.
 
-**O que pedir.** "O caso e as três decisões fazem sentido para a equipe? Mudo algum tempo ou alguma figura?"
+**O que pedir.** Expositiva: "A ordem das partes é a linha de raciocínio que você quer? O nível de cada parte está
+certo? Mudo algum tempo ou alguma figura?" Caso: "O caso e as três decisões fazem sentido para a equipe? Mudo algum
+tempo ou alguma figura?"
 
 ## 4. Revisão do deck
 
