@@ -30,14 +30,14 @@
         "Tendinopatia medial: excêntrico com 5 estudos e certeza baixa (See 2026); corticoide melhor só em 6 semanas (Stahl 1997), como na lateral (92% x 47% em 6 semanas; 69% x 91% em 1 ano, Smidt 2002). DMCI do PRTEE e dose do isométrico vêm da lateral: na medial, extrapolação. Força no trabalho pesa (OR 1,95); repetição sem associação numa amostra em que todos repetiam (Descatha 2003); na lateral, a repetição isolada ficou inconclusiva (OR 0,71; 0,42 a 1,20) e a força com duração, que inclui a frequência, pesou (Bretschneider 2022).",
         "Desvio ulnar com faixa recruta o flexor ulnar do carpo (40% da CVM); pronação, o flexor superficial e o pronador redondo (64% e 73%) (Fukunaga 2023, Tab. 2).",
         "Gatilho, sem tratamento prévio: graus 1–2 com ~75% de sucesso conservador, grau 3 com ~60% e 39,1% operados (Minkhorst 2025). Recidiva em 6–12 meses: 385 por 1000 após injeção, 65 após cirurgia aberta (Fiorini 2018). Depois de recidiva, não há número para a 2ª injeção.",
-        "De Quervain: WHAT RV+ 1,4: positivo quase não informa. Negativo: RV− 0,03 pela estimativa pontual, ~0,2 com a sensibilidade no limite do IC (Goubau 2014; calc.). No puerpério, órtese sozinha 0 de 9 com alívio completo; 8 de 9 resolveram ao fim da lactação (Avci 2002)."
+        "De Quervain: WHAT RV+ 1,4: positivo quase não informa. Negativo, a partir de 70%: 7% pela estimativa pontual e 32% com a sensibilidade no limite do IC; com a especificidade (2 em 7 não doentes, IC 4% a 71%) também no limite, 79%: o negativo talvez ajude, se a especificidade se confirmar (Goubau 2014; calc.). No puerpério, órtese sozinha 0 de 9 com alívio completo; 8 de 9 resolveram ao fim da lactação (Avci 2002)."
       ],
       "algoritmo": [
         "Dor medial com formigamento no 5º dedo? Mapeie a sensibilidade e examine pescoço e desfiladeiro; Tinel não decide; piora, sintoma diário ou fraqueza: ENMG + ultrassom.",
         "Arremessador? Valgo em movimento negativo baixa a suspeita de lesão do ligamento colateral ulnar (LCU), num estudo de 21 operados; positivo, investigar.",
         "Tendinopatia medial? Menos força no trabalho, carga com dois exercícios, subir sem dor tardia em 24 h (regra da aula 2) e reavaliar a cada 3 semanas (proposta clínica).",
         "Gatilho? Gradue; graus 1–2: órtese ou injeção, pela preferência; grau 3 ou recidiva: combinar o critério de avaliação cirúrgica.",
-        "De Quervain? WHAT negativo pesa contra, se o paciente parece o do estudo; no puerpério, orientar e proteger."
+        "De Quervain? WHAT positivo não confirma; negativo talvez pese contra, se o paciente parece o do estudo, mas a especificidade vem de 2 em 7: procure outra causa e reavalie; no puerpério, orientar e proteger."
       ],
       "para_praticar": [
         "No próximo Tinel positivo, anote a probabilidade antes e depois do teste.",
@@ -473,7 +473,7 @@
       "bloco": "caso A · cotovelo medial",
       "papel": "evidencia",
       "olho": "Caso A · E o ligamento?",
-      "titulo": "Valgo em movimento: o negativo ajuda, num estudo **minúsculo**",
+      "titulo": "Valgo em movimento: o negativo talvez ajude, num estudo **minúsculo**",
       "tempo_s": 60,
       "itens": [
         {
@@ -602,7 +602,7 @@
       "papel": "evidencia",
       "olho": "Caso A · Mecanismo para escolher o exercício",
       "titulo": "Um exercício não cobre a massa **flexora-pronadora**",
-      "tempo_s": 45,
+      "tempo_s": 60,
       "rotulo": "EMG em % da CVM (média), Borg 5/10, 10 homens saudáveis",
       "categorias": [
         "Flexor ulnar do carpo",
@@ -645,14 +645,20 @@
       "fonte": [
         "Fukunaga2023"
       ],
-      "notas": "O único texto completo do caso A, usado como mecanismo. Ler o eixo: atividade em porcentagem da contração voluntária máxima. No desvio ulnar com faixa, o flexor ulnar do carpo chegou a 40,3%; na pronação com faixa, o flexor superficial a 63,9 e o pronador redondo a 73,0. Tabela 2, página 5. São 10 homens saudáveis: diz qual músculo cada exercício pega, não se trata a tendinopatia. Desafio: 73% da máxima com esforço 5 de 10 é carga altíssima ou medida frágil? As duas: normalização por teste manual e sinal de músculo vizinho."
+      "notas": "O único texto completo do caso A, usado como mecanismo. Interação: mão na câmera, 15 segundos, logo que o slide abre: quem já prescreve pronação com faixa na medial? Contar o que se vê, sem julgar. Ler o eixo: atividade em porcentagem da contração voluntária máxima. No desvio ulnar com faixa, o flexor ulnar do carpo chegou a 40,3%; na pronação com faixa, o flexor superficial a 63,9 e o pronador redondo a 73,0. Tabela 2, página 5. São 10 homens saudáveis: diz qual músculo cada exercício pega, não se trata a tendinopatia. Desafio: 73% da máxima com esforço 5 de 10 é carga altíssima ou medida frágil? As duas: normalização por teste manual e sinal de músculo vizinho.",
+      "interacao": {
+        "tipo": "mao_camera",
+        "duracao_s": 15,
+        "inicio_s": 0,
+        "pedido": "Polegar para cima: você já prescreve pronação com faixa para a tendinopatia medial. Para baixo: não prescreve."
+      }
     },
     {
       "tipo": "figura",
       "bloco": "caso A · cotovelo medial",
       "papel": "decidir",
       "olho": "Caso A · Para prescrever amanhã",
-      "titulo": "Desvio ulnar com faixa: o exercício que mais pegou o **flexor ulnar**",
+      "titulo": "No desvio ulnar, o **flexor ulnar** foi o músculo mais ativo",
       "tempo_s": 65,
       "figura": {
         "id": "Fukunaga2023_fig2",
@@ -687,7 +693,7 @@
           "cor": "alerta"
         }
       ],
-      "notas": "Da evidência para a prescrição do Sérgio. Mostrar a montagem do estudo de Fukunaga, figura 2: cotovelos estendidos, palmas para baixo, faixa enrolada nas mãos. Demonstrar na câmera, junto, a pronação sentado com a faixa presa sob o pé, que pegou pronador e flexor superficial; a figura dela no artigo tem resolução baixa demais. A dose no paciente é proposta clínica, vinda da lateral, na aula 2: isométrico na fase irritável e isotônico de 3 séries de 10; subir quando não há dor tardia em 24 horas ou a dor não sobe mais de 1 ponto, regra de opinião de Day, 2019, extrapolada para a medial. Medir dor em 24 horas, PRTEE e preensão sem dor a cada 3 semanas, como na aula 2, proposta clínica. No trabalho, reduzir força, não só repetição.",
+      "notas": "Da evidência para a prescrição do Sérgio. Mostrar a montagem do estudo de Fukunaga, figura 2: cotovelos estendidos, palmas para baixo, faixa enrolada nas mãos. No desvio ulnar, o flexor ulnar superou os outros dois; entre exercícios, ninguém testou. Demonstrar na câmera, junto, a pronação sentado com a faixa presa sob o pé, que pegou pronador e flexor superficial; a figura dela no artigo tem resolução baixa demais. A dose no paciente é proposta clínica, vinda da lateral, na aula 2: isométrico na fase irritável e isotônico de 3 séries de 10; subir quando não há dor tardia em 24 horas ou a dor não sobe mais de 1 ponto, regra de opinião de Day, 2019, extrapolada para a medial. Medir dor em 24 horas, PRTEE e preensão sem dor a cada 3 semanas, como na aula 2, proposta clínica. No trabalho, reduzir força, não só repetição.",
       "fonte": [
         "Day2019"
       ]
@@ -818,7 +824,7 @@
         ],
         [
           "Cirurgia aberta",
-          "Recidiva: ~6 em 100 (x ~38 após injeção)",
+          "Recidiva: ~6 a 7 em 100 (IC 4 a 13; x ~38 após injeção)",
           "Dor na palma na 1ª semana: 68 em 100 (x 18 após injeção)"
         ]
       ],
@@ -828,8 +834,8 @@
         "Fiorini2018",
         "Minkhorst2025"
       ],
-      "notas": "A primeira decisão do caso B. Órtese: no estudo de Patel, sem grupo controle, órtese da metacarpofalângica em 10 a 15 graus por cerca de 6 semanas resolveu 28 de 40 dedos e 5 de 10 polegares; das 17 falhas, 15 resolveram depois com injeção. Travamento marcado, mais de 6 meses e vários dedos predisseram falha das duas. Injeção: Cochrane de Peters-Veluthamaningal, 2 ensaios, 63 pessoas, contra lidocaína: risco relativo de 3,15 em 4 semanas, NNT 3. Recidiva e dor na palma, na revisão de Fiorini. Interação: mão na câmera aos 55 segundos. A sustentada é para baixo: a recidiva do cotovelo é outra doença e outra evidência. Depois do polegar, 10 segundos, sem reler: quanto era a recidiva no cotovelo? 54%, contra 12% com placebo; no dedo, 385 por 1000. Mesmo assim, órtese primeiro é defensável: grau 2, menos de 6 meses, um dedo, e em Minkhorst os graus 1 e 2 foram parecidos com órtese, injeção ou as duas.",
-      "nota": "Mais de 6 meses, vários dedos, travamento marcado: falha maior na órtese e na injeção."
+      "notas": "A primeira decisão do caso B. Órtese: no estudo de Patel, sem grupo controle, órtese da metacarpofalângica em 10 a 15 graus por cerca de 6 semanas resolveu 28 de 40 dedos e 5 de 10 polegares; das 17 falhas, 15 resolveram depois com injeção. Travamento marcado, mais de 6 meses e vários dedos predisseram falha das duas. Injeção: Cochrane de Peters-Veluthamaningal, 2 ensaios, 63 pessoas, contra lidocaína: risco relativo de 3,15 em 4 semanas, NNT 3. Recidiva e dor na palma, na revisão de Fiorini: 65 por 1000 após a cirurgia aberta, de 35 a 127. Interação: mão na câmera aos 55 segundos. A sustentada é para baixo: a recidiva do cotovelo é outra doença e outra evidência. Depois do polegar, 10 segundos, sem reler: quanto era a recidiva no cotovelo? 54%, contra 12% com placebo; no dedo, 385 por 1000. Mesmo assim, órtese primeiro é defensável: grau 2, menos de 6 meses, um dedo, e em Minkhorst os graus 1 e 2 foram parecidos com órtese, injeção ou as duas.",
+      "nota": "Falha maior nas duas: mais de 6 meses, vários dedos, travamento marcado."
     },
     {
       "tipo": "tarefa",
@@ -877,7 +883,7 @@
       "itens": [
         "**Grau:** 3; 39,1% dos grau 3 acabaram operados.",
         "**2ª injeção:** ~38 em 100 travam após a 1ª; após recidiva, sem número.",
-        "**Encaminhar:** ~6 em 100 travam após cirurgia aberta; 1ª semana dói mais.",
+        "**Encaminhar:** ~6–7 em 100 travam após a cirurgia; 1ª semana dói mais.",
         "**Com ela:** se travar de novo, avaliação cirúrgica (proposta clínica)."
       ],
       "lateral": [
@@ -945,8 +951,8 @@
       "bloco": "caso C · De Quervain",
       "papel": "evidencia",
       "olho": "Caso C · A evidência",
-      "titulo": "WHAT positivo quase não informa; o negativo **ajuda**, com 1 falso negativo",
-      "tempo_s": 65,
+      "titulo": "WHAT positivo não informa; o negativo talvez ajude, num estudo com 7 **não doentes**",
+      "tempo_s": 75,
       "itens": [
         {
           "numero": "1,4",
@@ -954,16 +960,16 @@
         },
         {
           "numero": "7–32%",
-          "rotulo": "após WHAT negativo (pré 70%), pontual a pessimista",
+          "rotulo": "após negativo (pré 70%): pontual e com a sensibilidade no limite",
           "destaque": true
         },
         {
-          "numero": "~93%",
-          "rotulo": "da amostra tinha a doença: especificidade de ~2 em 7"
+          "numero": "~79%",
+          "rotulo": "após negativo com a especificidade (2 em 7) também no limite"
         }
       ],
       "linhas": [
-        "**Quem:** 100 pacientes com dor espontânea no estiloide radial; ultrassom como referência.",
+        "**Quem:** 100 pacientes com dor espontânea no estiloide radial; ~93 doentes; ultrassom como referência.",
         "**Nome certo:** polegar fechado + desvio ulnar é o Eichhoff, chamado de Finkelstein nos livros."
       ],
       "fonte": [
@@ -971,7 +977,7 @@
         "Elliott1992",
         "RV, pós-teste e 2×2: calc. do resumo"
       ],
-      "notas": "Conferir a enquete: a B. No estudo de Goubau, sensibilidade de 0,99 e especificidade de 0,29: razão positiva de 1,4, calculada por nós; de 70% para 76%. O negativo, pela estimativa pontual: razão de 0,03, e 70% vira 7%. Mas a única tabela de inteiros que reproduz o resumo é 92, 1, 5 e 2: um falso negativo, 93 de 100 doentes, e a especificidade vem de 2 em 7. Com a sensibilidade no limite inferior do intervalo, 94%, a razão negativa vai a 0,2 e os 70% ficam em 32%. Então o negativo pesa contra, se o paciente parece o do estudo: dor espontânea no estiloide radial. Reconstrução nossa, a conferir no PDF. O teste do polegar fechado é o de Eichhoff, segundo Elliott e Goubau; a aula de capacitação não tinha número de teste no De Quervain."
+      "notas": "Conferir a enquete: a B. No estudo de Goubau, sensibilidade de 0,99 e especificidade de 0,29: razão positiva de 1,4, calculada por nós; de 70% para 76%. O negativo, pela estimativa pontual: razão de 0,03, e 70% vira 7%. Mas a única tabela de inteiros que reproduz o resumo é 92, 1, 5 e 2: 93 doentes, um falso negativo, especificidade de 2 em 7. Com a sensibilidade no limite inferior do intervalo, 94%, a razão negativa vai a 0,2 e os 70% ficam em 32%. E 2 em 7 tem intervalo de 4% a 71%: com as duas medidas no limite, como fizemos no valgo, a razão negativa vai a 1,6 e os 70% sobem para 79%; aí o negativo não informa. Então o negativo talvez ajude, se a especificidade se confirmar e o paciente parecer o do estudo. Reconstrução nossa, a conferir no PDF. O polegar fechado é o Eichhoff, segundo Elliott e Goubau; a capacitação não tinha esse número."
     },
     {
       "tipo": "enquete",
@@ -1088,7 +1094,7 @@
         "duracao_s": 40,
         "pedido": "Escrever, sem voltar os slides, o teste que descarta melhor do que confirma e o que quase não muda a probabilidade."
       },
-      "notas": "Recuperação antes da síntese. Interação: chat em cascata, 40 segundos de silêncio, contar 3, 2, 1 e pedir que enviem juntos. Ler três ou quatro em voz alta, com os nomes. Respostas sustentadas: descartam melhor, o WHAT test e o valgo em movimento, os dois com a ressalva dita em voz alta: estudos pequenos, de espectro estreito, em que o negativo pesa contra mas não zera; quase não mexe, a flexão-compressão, e o Tinel logo atrás."
+      "notas": "Recuperação antes da síntese. Interação: chat em cascata, 40 segundos de silêncio, contar 3, 2, 1 e pedir que enviem juntos. Ler três ou quatro em voz alta, com os nomes. Respostas sustentadas: descartam melhor, pelas estimativas, o WHAT e o valgo em movimento, com a ressalva em voz alta: podem descartar, se a especificidade se confirmar, porque ela vem de 7 e de 4 não doentes; quase não mexe, a flexão-compressão, e o Tinel logo atrás."
     },
     {
       "tipo": "sintese",
@@ -1100,7 +1106,7 @@
       "pontos": [
         {
           "titulo": "RV perto de 1 não decide",
-          "texto": "Tinel RV+ 1,3. Teste sensível negativo pesa contra em paciente como o do estudo."
+          "texto": "Tinel RV+ 1,3. Teste sensível negativo só descarta se a especificidade se confirmar."
         },
         {
           "titulo": "Gradue o gatilho antes de prometer",
@@ -1119,7 +1125,7 @@
         "Minkhorst2025",
         "Fiorini2018"
       ],
-      "notas": "Comparar com o chat. Três pontos, cada um com o número que o sustenta. Primeiro: razão perto de 1 não muda a decisão; o teste sensível vale pelo negativo, se o paciente parece o do estudo. Segundo: o grau do gatilho prevê o resultado, a injeção cobra com recidiva, e depois de recidiva não temos número. Terceiro: quando não há ensaio, diga de onde vem a conduta e meça a resposta a cada 3 semanas, como na aula 2, chamando de proposta clínica o que é proposta clínica. Ler a faixa: o que mudou desde a aula de capacitação; o ensaio de corticoide é de 1997. Para segunda-feira: no próximo Tinel positivo, anotar a probabilidade antes e depois."
+      "notas": "Comparar com o chat. Três pontos, cada um com o número que o sustenta. Primeiro: razão perto de 1 não muda a decisão; o teste sensível pode valer pelo negativo, se a especificidade se confirmar e o paciente parecer o do estudo. Segundo: o grau do gatilho prevê o resultado, a injeção cobra com recidiva, e depois de recidiva não temos número. Terceiro: quando não há ensaio, diga de onde vem a conduta e meça a resposta a cada 3 semanas, como na aula 2, chamando de proposta clínica o que é proposta clínica. Ler a faixa: o que mudou desde a aula de capacitação; o ensaio de corticoide é de 1997. Para segunda-feira: no próximo Tinel positivo, anotar a probabilidade antes e depois."
     },
     {
       "tipo": "pergunta",
@@ -1141,7 +1147,8 @@
       "tipo": "referencias",
       "outras": [
         "RV, probabilidades pós-teste, IC exatos, NNT e conversão OR → RR: calculados por nós a partir dos resumos"
-      ]
+      ],
+      "notas": "Estado da conferência nesta versão 1. Texto completo: Fukunaga 2023 (dose nas p.2–3, Tab. 2 na p.5, Fig. 2 na p.3) e Bretschneider 2022, pela ficha da aula 1 (Fig. 2 na p.6, Tab. 3 na p.7). Só resumo: Beekman 2009, O'Driscoll 2005, Zwerus 2018, Caliandro 2025, Descatha 2003, See 2026, Stahl e Kaufman 1997, Arevalo 2023, Minkhorst 2025, Patel e Bassini 1992, Peters-Veluthamaningal 2009, Fiorini 2018, Chiang 2026, Huisstede 2014 (os dois consensos), Goubau 2014, Elliott 1992, Avci 2002 (contagem 9 x 9 inferida) e Challoumas 2023. Números trazidos das aulas 1 e 2, com a mesma base de lá: Smidt 2002, Coombes 2013, Vuvan 2020 e Day 2019 (resumo mais prints da aula de capacitação), Poltawski e Watson 2011 e Ikonen 2022. Calculados por nós, com a conta nas notas de cada slide: razões de verossimilhança, probabilidades pós-teste, IC exatos, a 2×2 reconstruída de Goubau, NNT, a diferença do grau 3 e a conversão de OR em RR com base hipotética. Propostas clínicas: dose e progressão dos exercícios na medial, PRTEE adaptada e preensão sem dor como medidas, mapa sensitivo, critério para ENMG e ultrassom, o combinado antes da 2ª injeção e a conduta no puerpério. Os três pacientes e seus dados são fictícios. Quando os PDFs chegarem, a lista do que trocar está em verificacao.md, seção 8."
     }
   ]
 }

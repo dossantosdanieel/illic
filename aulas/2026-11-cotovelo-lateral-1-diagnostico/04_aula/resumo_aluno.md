@@ -13,7 +13,7 @@
 1. Cozen: sensibilidade de 91%, especificidade não informada. Queda de 5% a 10% da preensão ao estender o cotovelo: RV+ de 3,9 a 8,3 e RV− de 0,19 a 0,28 (calculadas; Karanasios 2022); protocolo e espectro a conferir.
 2. Com suspeita alta (até 79%), a preensão positiva quase não acrescenta (94%–97%) e a negativa derruba para 42%–51%, sem excluir: decide o limiar de ação (cálculo com Karanasios 2022 e Vuvan 2020).
 3. Esporão no epicôndilo: 50% da população sem dor (RV+ ≈ 1,6, calculada); nenhum achado do ultrassom acompanhou dor, PRTEE ou duração (Krogh 2020).
-4. Sem tratamento ativo, 89% muito melhores ou recuperados em 1 ano (IC 80% a 97%); meia-vida de 2,5 a 3 meses, independente do tempo de dor (Ikonen 2022).
+4. Sem tratamento ativo, 89% muito melhores ou recuperados em 1 ano (189 de 213 com esse desfecho; IC 80% a 97%); meia-vida de 2,5 a 3 meses, independente do tempo de dor (Ikonen 2022).
 5. DMCI do PRTEE: 7 pontos ou 22% ('um pouco melhor'); 11 pontos ou 37% ('muito melhor') (Poltawski 2011; n = 57). Sintomas de nervo, sexo feminino, dor cervical e limiar de dor ao frio medido em laboratório (não a queixa) pioram a previsão, com certeza baixa (Waugh 2004; Smidt 2006; Coombes 2015).
 6. Trabalho: rotação > 4 h/dia (OR 1,85) e força com duração (OR 1,75) se associaram à incidência; repetição isolada, inconclusiva (OR 0,71; 0,42 a 1,20) (Bretschneider 2022).
 
@@ -25,7 +25,7 @@
 4. Classifique a irritabilidade (quanto dói, quanto dura depois, quanto limita): na Renata, moderada; ela guia a dose na aula 2 (classificação da diretriz, a conferir).
 5. Laudo na mão? Explique cada achado pela frequência em quem não tem dor.
 6. Sem sinal atípico? Sem imagem agora; peça se não melhorar no prazo ou surgir algo novo.
-7. Escreva a meta do PRTEE pelas duas réguas (7 pontos e 22%; 11 pontos e 37%) e reavalie em 4 a 6 semanas.
+7. Escreva a meta do PRTEE pelas duas réguas (7 pontos e 22%; 11 pontos e 37%) e reavalie a cada 3 semanas (proposta clínica, a mesma das aulas 2 e 3; a DMCI foi medida nesse intervalo).
 
 ## Para praticar nesta semana
 
@@ -42,6 +42,7 @@
 - Classificar a irritabilidade pela tabela que a aula de capacitação atribui à diretriz de 2022 (atribuição provável, a conferir no PDF).
 - Acompanhar a preensão sem dor pela razão afetado/não afetado, sem DMCI publicada no lote.
 - Imagem só se não melhorar no prazo ou surgir sinal atípico (notas da aula de capacitação, a conferir na diretriz).
+- Reavaliar o PRTEE a cada 3 semanas (intervalo em que a DMCI foi medida; nenhum ensaio testou o calendário).
 
 ## Referências
 

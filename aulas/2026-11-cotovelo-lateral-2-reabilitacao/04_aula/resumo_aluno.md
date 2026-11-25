@@ -10,17 +10,17 @@
 
 ## Pontos-chave
 
-1. Corticoide: 92% de sucesso em 6 semanas contra 47% com fisioterapia; em 1 ano, 69% contra 91% (Smidt 2002). Recidiva em 1 ano de 54% contra 12% com placebo (Coombes 2013; denominador a conferir): de cada 2 que melhoram com a injeção, cerca de 1 volta a doer. Em 1 ano, 1 a menos recuperado a cada 8 injeções (calc.).
+1. Corticoide: 92% de sucesso em 6 semanas contra 47% com fisioterapia; em 1 ano, 69% contra 91% (Smidt 2002). Recidiva em 1 ano de 54% contra 12% com placebo (Coombes 2013; denominador a conferir): como a recidiva só conta quem melhorou, mais da metade dos que melhoram com a injeção volta a doer (calc.). É o único 54% do lote: a recorrência da doença na população foi de 8,5% em 2 anos (Sanders 2015). Em 1 ano, 1 a menos recuperado a cada 8 injeções (calc.).
 2. Fazer fisioterapia não mostrou reduzir a recidiva (29% x 38%, P = 0,25; efeito principal, IC largo) (Coombes 2013).
 3. Exercício e terapia manual contra nada: dor 0,53 ponto menor em 10 (0,14 a 0,92), sem se manter; eventos adversos leves, 313 x 85 por 1000, impreciso (Wallis 2024). Contra o corticoide, o exercício vence em quase tudo, menos a dor no curto prazo (Karanasios 2021, exercício).
-4. Isométrico diário em casa, sozinho: PRTEE melhor, mas sucesso percebido de 29% contra 26%, e 3 de 21 pioraram (Vuvan 2020). Dose (tabela redigitada, a conferir): 20% a 35% da CVM, 4 × 30 s ou 3 × 45 s, todo dia; subir sem dor tardia de 24 h ou com dor que não sobe mais de 1 ponto é opinião (Day 2019).
-5. MWM: efeito pequeno a moderado no curto prazo; em 3 a 12 meses o intervalo cruza o zero (Lucado 2019). A regra de predição vale para o início do tratamento e não demonstrou separar quem responde (RV+ 2,1 a 2,6, IC incluem 1) (Vicenzino 2009).
+4. Isométrico diário em casa, sozinho: PRTEE melhor, mas sucesso percebido de 29% contra 26%, e 3 de 21 pioraram (Vuvan 2020). Dose (tabela redigitada, a conferir): 20% a 35% da CVM, 4 × 30 s nas semanas ímpares e 3 × 45 s nas pares (semana 1: 4 × 30 s), todo dia; subir sem dor tardia de 24 h ou com dor que não sobe mais de 1 ponto é opinião (Day 2019).
+5. MWM: efeito pequeno a moderado no curto prazo; em 3 a 12 meses o intervalo cruza o zero (Lucado 2019). A regra de predição vale para o início do tratamento e não demonstrou separar quem responde (RV+ 2,1 a 2,6, IC incluem 1); o resumo dá 100% com os três critérios, de poucos pacientes, num modelo não validado: leia como chance alta, não certeza (Vicenzino 2009).
 6. PRP = injeção placebo em 3 meses (0,16 em 10; moderada); ondas de choque sem benefício clínico (Karjalainen 2021; Karanasios 2021, ondas de choque). Na rede de Lowdon 2024, nada foi estatisticamente melhor que controle até 6 semanas (rede esparsa).
 7. Fora desta versão, sem estudo conferido no lote: excêntrico e HSR contra o isométrico (nenhuma comparação direta), fita rígida de descarga (grau B na diretriz, sem estudo na seleção), kinesio, TENS, laser e crioterapia.
 
 ## Algoritmo de decisão
 
-1. Pediu infiltração? Diga os dois números: rápida em 6 semanas, pior no ano e com recidiva de cerca de metade; decida junto.
+1. Pediu infiltração? Diga os dois números: rápida em 6 semanas, pior no ano e com recidiva em mais da metade de quem melhora; decida junto.
 2. Irritabilidade moderada ou alta (dor no trabalho que dura mais de 6 h e limita; diretriz, atribuição provável)? Fase 1: isométrico de extensores do punho, 20% a 35% da CVM, todo dia; converta a carga em kg.
 3. Sem dor tardia em 24 h ou a dor não subiu mais de 1 ponto (Day 2019, opinião)? Suba a carga; senão, mantenha ou recue, mesmo que o calendário do ensaio mande subir (proposta clínica).
 4. Preensão sem dor subiu na hora com a MWM? Use como janela para carregar; não negue a quem falha na regra.
@@ -60,6 +60,7 @@
 - Ma X et al. Arch Phys Med Rehabil 2024;105(11):2184-97. PMID 38484834. DOI 10.1016/j.apmr.2024.02.713.
 - Poltawski L, Watson T. Hand Therapy 2011;16(3):52-7. DOI 10.1258/ht.2011.011013.
 - Rio E et al. J Orthop Sports Phys Ther 2021;51(1):12-26. PMID 33383996. DOI 10.2519/jospt.2021.9417.
+- Sanders TL Jr et al. Am J Sports Med 2015;43(5):1066-71. PMID 25656546. DOI 10.1177/0363546514568087.
 - Shahabi S et al. Prosthet Orthot Int 2020;44(5):341-54. PMID 32635812. DOI 10.1177/0309364620930618.
 - Smidt N et al. Lancet 2002;359(9307):657-62. PMID 11879861. DOI 10.1016/S0140-6736(02)07811-X.
 - Vicenzino B et al. Man Ther 2009;14(5):550-4. PMID 18838330. DOI 10.1016/j.math.2008.08.004.

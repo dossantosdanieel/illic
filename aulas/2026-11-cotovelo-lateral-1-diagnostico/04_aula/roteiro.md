@@ -25,15 +25,15 @@ Decisões construídas (4): o diferencial e quanto vale cada teste (bloco 1); o 
 | Karanasios2022 | revisão sistemática de acurácia (24 estudos, 1370 participantes) | Cozen S 91% (E não informada); preensão fletido × estendido S 78–83%, E 80–90%; RV+ 3,9–8,3 e RV− 0,19–0,28 (calc.); RM S/E 81–100%; US S 53–100%, E 42–90%; 97% risco incerto/alto | tabelas nativas (s6, s13) | só resumo |
 | Zwerus2018 | revisão sistemática do exame físico do cotovelo | nenhum teste confirma/exclui sozinho; 9 de 10 estudos com viés alto/incerto | — | só resumo |
 | Vuvan2020 | ECR (fluxograma) | 111 de 533 voluntários não tinham LET → pré-teste **até** 79% (teto; calc.: 422/533; 382 saíram por outros motivos) | tabela nativa (s8) | resumo + print aula base s50 |
-| Krogh2020 | transversal, duas portas (60 × 264) | esporão 78% / 45% / 50%; Doppler 3,47 / 0,13 / 0,26; +0,40 a 0,70 mm; sem correlação com dor, PRTEE, duração; RV+ ≈ 1,6 (calc.) | barras nativas (s11) | só resumo |
+| Krogh2020 | transversal, duas portas (60 × 264) | esporão 78% / 45% / 50%; Doppler 3,47 / 0,13 / 0,26; +0,40 mm sobre a população e +0,53 a 0,70 sobre o outro lado; sem correlação com dor, PRTEE, duração; RV+ ≈ 1,6 (calc.) | barras nativas (s11) | só resumo |
 | Couppe2022 | ECR de 3 braços | corticoide reduz Power Doppler (Δ −2251 pixels) sem ganho; QuickDASH +15 pior em 52 sem (secundário) | — | só resumo |
-| Ikonen2022 | meta-análise de braços controle (24 ECRs) | 89% (IC 80–97%) muito melhor/recuperado em 1 ano; meia-vida 2,5–3 meses; duração prévia sem efeito | linha nativa (conta de meia-vida, s15) | só resumo |
+| Ikonen2022 | meta-análise de braços controle (24 ECRs, 1085 controles) | 89% (189 de 213; IC 80–97%) muito melhor/recuperado em 1 ano; meia-vida 2,5–3 meses; duração prévia sem efeito | linha nativa (conta de meia-vida, s15) | só resumo |
 | Smidt2002 | ECR (corticoide × fisio × espera) | espera: 32% em 6 sem, 83% em 52 sem | — (fala, s15) | só resumo |
 | Smidt2006 | coorte prognóstica (349) | duração longa, dor cervical e dor intensa → pior em 12 meses (sem tamanho) | — | só resumo |
 | Waugh2004 | coorte prognóstica (83), 8 semanas | nervo +15,08 na EVA de dor (4,67–25,50; escala a conferir); feminino +8,92 DASH (3,32–14,52) | tabela nativa (s16) | resumo + print aula base s40 |
 | Coombes2015 | coorte prognóstica (41), 1 ano | limiar de dor ao frio único preditor consistente; modelo explica 9% do PRTEE | tabela nativa (s16) | resumo + print aula base s21 |
 | Poltawski2011 | estudo de DMCI (57) | PRTEE: 22% (7 pontos) "um pouco melhor"; 37% (11 pontos) "muito melhor" | tabela nativa (s18, s19) | só resumo |
-| Bretschneider2022 | revisão sistemática com meta-análise (coortes) | rotação OR 1,85 (1,10–3,10); SI OR 1,75 (1,11–2,78); repetição 0,71 (0,42–1,20); nenhum OR > 2,5 | **Bretschneider2022_fig2** (s21) | **texto completo** (p.6 Fig. 2; p.7 Tab. 3; p.8 Tab. 4) |
+| Bretschneider2022 | revisão sistemática com meta-análise (coortes) | rotação OR 1,85 (1,10–3,10); SI OR 1,75 (1,11–2,78); repetição 0,71 (0,42–1,20); nenhum OR combinado > 2,5 (isolado: Descatha 2,67 na rotação) | **Bretschneider2022_fig2** (s21) | **texto completo** (p.6 Fig. 2; p.7 Tab. 3; p.8 Tab. 4) |
 | Sanders2015 | coorte populacional | 3,4 por 1000/ano (3,3–3,5); 40–49 anos 9,0/1000; recorrência em 2 anos 8,5% | — (tabela s22) | resumo + print aula base s2 (Tab. 2) |
 | Bunata2007 | anatômico em cadáver (85 cotovelos) | o ECRB atrita no capítulo à medida que o cotovelo estende (vulnerabilidade, não causa) | — (só nas notas do s13) | só resumo |
 | Rio2021 | revisão sistemática com meta-análise (30 estudos, 18 de cotovelo lateral) | hiperalgesia local e regional (evidência moderada), não remota, no membro superior | — (só nas notas do s13) | só resumo |
@@ -73,7 +73,7 @@ Decisões construídas (4): o diferencial e quanto vale cada teste (bloco 1); o 
 
 Linha do tempo do validador: `●·●●●·●●··●●●●·●●···●●●●···●··●●●●` (minutos com e sem interação); 12 interações em 5 formatos, primeira aos 0:30, 32% do tempo em atividade, maior trecho sem interação de cerca de 3 min 20 s (slides 15 a 17).
 
-Tempo estimado pelo validador (segunda rodada): fala das notas a 130 palavras/min, sem rubricas, mais as interações declaradas = **32:06** (entre 30 e 35); somando cerca de 2 min de voluntários das enquetes e da frase do slide 19, fica perto de 34 min, dentro do teto. Conta do tempo real (primeira revisão, 24/11/2026): notas com 2.810 palavras (incluindo rubricas e o pré-aula da capa) ≈ 21,6 min a 130 palavras/min, cerca de 18,4 min descontando 15% de rubricas; mais 11,0 min de interação declarada e cerca de 2,5 min de debates por nome e logística das salas, já embutidos nos tempos dos slides 4, 5, 12, 14 e 18. Estimativa: 33 a 35 min. Cortes feitos: enquetes de 60 para 45–50 s; 2 pessoas no slide 4 (eram 4) e 1 nos slides 5, 12 e 14; 30 s de silêncio e uma conta só no slide 7; tarefa das salas com 2 itens (a frase foi para o slide 19); mão na câmera do slide 16 retirada (a resposta está na tabela); bilhete de saída com 3 leituras.
+Tempo estimado pelo validador (conferência final, 25/11/2026): fala das notas a 130 palavras/min, sem rubricas, mais as interações declaradas = **32:43** (entre 30 e 35; era 32:06 antes das ressalvas da conferência final); somando cerca de 2 min de voluntários das enquetes e da frase do slide 19, fica perto de 34 min 45 s, junto do teto: se o tempo apertar, a fala do slide 16 é a primeira a encurtar. Conta do tempo real (primeira revisão, 24/11/2026): notas com 2.810 palavras (incluindo rubricas e o pré-aula da capa) ≈ 21,6 min a 130 palavras/min, cerca de 18,4 min descontando 15% de rubricas; mais 11,0 min de interação declarada e cerca de 2,5 min de debates por nome e logística das salas, já embutidos nos tempos dos slides 4, 5, 12, 14 e 18. Estimativa: 33 a 35 min. Cortes feitos: enquetes de 60 para 45–50 s; 2 pessoas no slide 4 (eram 4) e 1 nos slides 5, 12 e 14; 30 s de silêncio e uma conta só no slide 7; tarefa das salas com 2 itens (a frase foi para o slide 19); mão na câmera do slide 16 retirada (a resposta está na tabela); bilhete de saída com 3 leituras.
 
 **Salas e gravação:** as salas do Meet não são gravadas. O slide 18 traz "Na gravação: pause e faça em 4 min"; o trecho sai na edição. O porta-voz escreve num bloco de notas e cola no chat principal ao voltar (o chat da sala não volta). Plano B sem salas: chat em cascata com a conta, 2 min. Tudo isso está nos campos `interacao.gravacao` e `interacao.plano_b` do slide 18 e sai sozinho na seção "Plano B e gravação" de `enquetes.md`.
 
@@ -86,8 +86,8 @@ Ditas sem humilhar a aula base: a fala é "eu ensinei assim, seguindo a diretriz
 - Slide 6: a lista de diferenciais não tinha nenhum número de acurácia; agora tem Cozen e preensão, com o limite.
 - Slide 13: "RM com sensibilidade de 90% a 100%" responde se a RM vê o tendão, não se muda a conduta; faixas de 81% a 100% com viés alto.
 - Slide 15: "mais da metade segue com sintomas em 1 ano" × 89% muito melhores: desfechos diferentes.
-- Slide 16: a tabela de Coombes 2015 (frio) estava no bloco de patoanatomia; é estudo prognóstico e explica 9% do PRTEE.
-- Slide 21: "sobrecarga repetitiva" → repetição isolada inconclusiva (IC 0,42 a 1,20 não exclui aumento); força com duração (Strain Index, que inclui a frequência) e rotação, sim; mesmas 2 coortes.
+- Slide 16: a tabela de Coombes 2015 (frio) estava no bloco de patoanatomia; é estudo prognóstico, e o modelo final com o frio explicou 9% do PRTEE.
+- Slide 21: "sobrecarga repetitiva" → repetição isolada inconclusiva (IC 0,42 a 1,20 não exclui aumento); força com duração (Strain Index, que inclui a frequência) e rotação, sim; repetição e Strain Index vêm das mesmas 2 coortes (Fan & Bao e Garg); a rotação, de Descatha e Fan & Silverstein.
 - Slide 22: incidência de 3% ao ano era 3,4 por 1000 (a própria tabela no slide 2 da aula base dizia "per 1000"); "recorrência de até 54%": a conferir; o slide diz só que o único 54% do lote responde a outra pergunta e que a resposta vem na aula 2 (o número do corticoide é a revelação da aula 2); nas notas, a recorrência de 8,5% em 2 anos de Sanders 2015. O slide tem coluna de veredito (corrige / matiza / a conferir) para não contradizer o slide 15.
 
 ## O que fica de fora (e vai para o resumo ou para a aula 2)
@@ -109,6 +109,7 @@ Ditas sem humilhar a aula base: a fala é "eu ensinei assim, seguindo a diretriz
 - Com PRTEE inicial alto, preferir a régua proporcional da DMCI (slide 19; o resumo de Poltawski diz que a DMCI foi maior nos mais graves; certeza baixa).
 - Acompanhar a preensão sem dor pela razão afetado/não afetado no mesmo protocolo, sem DMCI publicada (slide 19, notas: 38% → 44%).
 - Classificar a irritabilidade pela tabela que a aula de capacitação atribui à diretriz (slide 3, notas; atribuição provável, a conferir no PDF de Lucado 2022).
+- Reavaliar o PRTEE a cada 3 semanas, como nas aulas 2 e 3 (algoritmo do resumo; notas do slide 17): intervalo em que a DMCI de Poltawski foi medida; nenhum ensaio testou o calendário. A reavaliação de 6 semanas do revés é a primeira completa.
 - Imagem só se não melhorar no prazo ou surgir sinal atípico (slides 12 e 13; critério das notas da aula base, atribuição provável à diretriz, a conferir).
 
 ---

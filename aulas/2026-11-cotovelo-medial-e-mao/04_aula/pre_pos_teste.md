@@ -91,10 +91,10 @@ Mulher de 51 anos, digitadora, com dor espontânea sobre o estiloide radial há 
 Opções:
 
 ```text
-Continua 40%: um teste só não decide.
-Cerca de 28%: a especificidade baixa muda pouco.
-Repetir com o polegar fechado na mão para confirmar.
-Baixa, de 2% a 12% conforme a incerteza: procurar outra causa.
+Continua em 40%: um teste só, de um estudo pequeno, não decide.
+Cerca de 28%: a especificidade de 0,29 tira só 29% da chance.
+Repetir com o polegar fechado na mão para confirmar a doença.
+Provavelmente mais baixa (2% a 12%), sem excluir: buscar outra causa e reavaliar.
 ```
 
 ### Questão 6
@@ -161,7 +161,7 @@ Referência: O'Driscoll SW et al. Am J Sports Med 2005;33(2):231-9. PMID 1570160
 
 **Resposta:** Cerca de 4 em 10 após injeção; menos de 1 em 10 após cirurgia.
 
-Na revisão Cochrane de Fiorini (2 ensaios, 270 participantes), a recidiva em 6 a 12 meses foi de 385 por 1000 após injeção e 65 por 1000 após cirurgia aberta (RR 0,17; IC 0,09 a 0,33; certeza baixa): redução relativa de 83%, diferença absoluta de cerca de 3 em 10 (29% no resumo, com intervalo de 60% a menos a 3% a mais). A cirurgia doeu mais na primeira semana (678 x 184 por 1000 com dor na palma). Diga a ordem de grandeza, não um número exato.
+Na revisão Cochrane de Fiorini (2 ensaios, 270 participantes), a recidiva em 6 a 12 meses foi de 385 por 1000 após injeção e 65 por 1000 após cirurgia aberta (IC 35 a 127 por 1000; RR 0,17; IC 0,09 a 0,33; certeza baixa): redução relativa de 83%, diferença absoluta de cerca de 3 em 10 (29% no resumo, com intervalo de 60% a menos a 3% a mais). Esse intervalo da diferença absoluta não fecha com o do RR, que exclui o 1: talvez efeitos aleatórios na escala absoluta, com riscos de base diferentes nos 2 ensaios; confiro no texto completo. A cirurgia doeu mais na primeira semana (678 x 184 por 1000 com dor na palma). Diga a ordem de grandeza, não um número exato.
 
 - *A mesma nas duas: o intervalo da resolução cruza o 1.* — Misturar desfechos: o RR que cruza 1 é o da resolução, não o da recidiva.
 - *A injeção resolve 3 vezes mais, então trava menos.* — Usar o RR 3,15 da injeção contra lidocaína (outra comparação, 4 semanas) como se fosse contra cirurgia.
@@ -183,13 +183,13 @@ Referência: Minkhorst K et al. Arch Phys Med Rehabil 2025;106(12):1798-806. PMI
 
 ### Questão 5 · nível: análise · objetivo 3
 
-**Resposta:** Baixa, de 2% a 12% conforme a incerteza: procurar outra causa.
+**Resposta:** Provavelmente mais baixa (2% a 12%), sem excluir: buscar outra causa e reavaliar.
 
-Pela estimativa pontual, RV− = (1 − 0,99) ÷ 0,29 = 0,034; chance pré = 40 ÷ 60 = 0,67; chance pós = 0,023, cerca de 2%. Mas a tabela 2×2 que reproduz o resumo (92, 1, 5, 2) tem 1 falso negativo: com a sensibilidade no limite inferior do IC exato (94%), RV− ≈ 0,2 e a probabilidade fica perto de 12% (calculado). Ela é parecida com a amostra (dor espontânea no estiloide radial), então o negativo pesa contra: procurar outra causa (síndrome de intersecção, ramo sensitivo do radial). Limites: só resumo; 2×2 reconstruída; amostra com cerca de 93% de doentes.
+Pela estimativa pontual, RV− = (1 − 0,99) ÷ 0,29 = 0,034; chance pré = 40 ÷ 60 = 0,67; chance pós = 0,023, cerca de 2%. Mas a tabela 2×2 que reproduz o resumo (92, 1, 5, 2) tem 1 falso negativo e só 7 pessoas sem a doença: com a sensibilidade no limite inferior do IC exato (94%), RV− ≈ 0,2 e a probabilidade fica perto de 12%; com a especificidade de 2 em 7 também no limite inferior (IC exato de 3,7% a 71%), RV− ≈ 1,6 e os 40% sobem para cerca de 52%: aí o negativo não informa (calculado). Por isso, provavelmente mais baixa, sem poder excluir: procurar outra causa (síndrome de intersecção, ramo sensitivo do radial) e reavaliar. Ela é parecida com a amostra (dor espontânea no estiloide radial). Limites: só resumo; 2×2 reconstruída; amostra com cerca de 93% de doentes.
 
-- *Continua 40%: um teste só não decide.* — Ignorar a razão de verossimilhança: o negativo de um teste muito sensível pesa contra.
-- *Cerca de 28%: a especificidade baixa muda pouco.* — Usar a especificidade para ler um resultado negativo: no negativo, quem manda é a sensibilidade.
-- *Repetir com o polegar fechado na mão para confirmar.* — Usar o Eichhoff (o “Finkelstein” dos livros), que dá falso positivo, para “confirmar” contra o negativo de um teste sensível.
+- *Continua em 40%: um teste só, de um estudo pequeno, não decide.* — Tratar a incerteza como ausência de informação: pelas estimativas, o negativo de um teste muito sensível baixa a probabilidade; a incerteza impede excluir, não apaga a direção.
+- *Cerca de 28%: a especificidade de 0,29 tira só 29% da chance.* — Aplicar a especificidade direto à probabilidade (40% × 0,71 = 28%), conta sem sentido: o negativo se lê pela RV− = (1 − sensibilidade) ÷ especificidade, que pelas estimativas dá 0,03. O que limita o negativo aqui é a imprecisão da especificidade (2 em 7), não o valor 0,29.
+- *Repetir com o polegar fechado na mão para confirmar a doença.* — Usar o Eichhoff (o “Finkelstein” dos livros), que dá falso positivo, para “confirmar” contra o negativo de um teste sensível.
 
 Referência: Goubau JF et al. J Hand Surg Eur Vol 2014;39(3):286-92. PMID 23340762. DOI 10.1177/1753193412475043.; Elliott BG. J Hand Surg Br 1992;17(4):481-2. PMID 1402284. DOI 10.1016/s0266-7681(05)80280-3.
 

@@ -16,7 +16,7 @@ Objetivos medidos:
 Enunciado:
 
 ```text
-Carlos, 38 anos, mecânico, tem tendinopatia lateral do cotovelo direito há 10 semanas, com dor de 5 em 10 no trabalho que persiste horas depois (irritabilidade moderada). A contração voluntária máxima (CVM) de extensão do punho direito, no dinamômetro manual, é de 12 kg. Ele vai fazer o exercício em casa. Qual prescrição inicial é a mais defensável?
+Wagner, 38 anos, mecânico, tem tendinopatia lateral do cotovelo direito há 10 semanas, com dor de 5 em 10 no trabalho que persiste horas depois (irritabilidade moderada). A contração voluntária máxima (CVM) de extensão do punho direito, no dinamômetro manual, é de 12 kg. Ele vai fazer o exercício em casa. Qual prescrição inicial é a mais defensável?
 ```
 
 Opções:
@@ -84,7 +84,7 @@ Cerca de 3.
 Enunciado:
 
 ```text
-Jorge, 56 anos, tem tendinopatia lateral há 2 meses e está na primeira consulta, antes de começar MWM e exercício. Preensão sem dor de 150 N no lado afetado e 300 N no outro. Pela regra de predição de Vicenzino 2009 (idade < 49, afetado > 112 N, não afetado < 336 N), ele só falha no critério da idade. No estudo, 79% melhoraram em 3 semanas com MWM e exercício; para idade < 49, sensibilidade 0,61 e especificidade 0,77 (RV+ 2,6; IC 0,96 a 7,3). Qual leitura é a mais correta?
+Jorge, 56 anos, tem tendinopatia lateral há 2 meses e está na primeira consulta, antes de começar MWM e exercício. Você ainda não mediu a preensão: por enquanto, só sabe que ele não preenche o critério da idade da regra de predição de Vicenzino 2009 (idade < 49, afetado > 112 N, não afetado < 336 N). No estudo, 79% melhoraram em 3 semanas com MWM e exercício; para idade < 49, sensibilidade 0,61 e especificidade 0,77 (RV+ 2,6; IC 0,96 a 7,3). Só com a idade, qual leitura da chance de melhorar em 3 semanas é a mais correta?
 ```
 
 Opções:
@@ -93,7 +93,7 @@ Opções:
 Cerca de 21%: quem falha num critério fica com o complemento do pré-teste.
 Cerca de 66%: testar a MWM na sessão e decidir pela resposta dele.
 Cerca de 59%: com o critério negativo, a razão vira 1 ÷ 2,6.
-Cerca de 90%: os outros dois critérios dão pós-teste de 89% e 90%.
+Cerca de 79%: a regra só informa sobre quem preenche o critério.
 ```
 
 ### Questão 6
@@ -101,7 +101,7 @@ Cerca de 90%: os outros dois critérios dão pós-teste de 89% e 90%.
 Enunciado:
 
 ```text
-Lúcia, 44 anos, melhorou a preensão sem dor de 130 para 170 N logo depois de uma mobilização com movimento (MWM) de deslizamento lateral. Ela pergunta se seis sessões de MWM resolvem o problema para o ano. Qual resposta os dados sustentam melhor?
+Denise, 44 anos, melhorou a preensão sem dor de 130 para 170 N logo depois de uma mobilização com movimento (MWM) de deslizamento lateral. Ela pergunta se seis sessões de MWM resolvem o problema para o ano. Qual resposta os dados sustentam melhor?
 ```
 
 Opções:
@@ -118,7 +118,7 @@ Sim, somando a mobilização cervical, que tem grau B para o efeito de longo pra
 Enunciado:
 
 ```text
-Marcos, 41 anos, pedreiro, fez infiltração de corticoide no cotovelo direito há 10 semanas. Ficou quase sem dor por 5 semanas, parou o programa de exercícios e voltou à obra em tempo integral. Hoje a dor é de 6 em 10 no trabalho e dura o resto do dia; preensão sem dor de 150 N (era 230 N há 4 semanas); sem formigamento e com exame neurológico normal. Ele pede outra infiltração. Qual conduta é a mais defensável hoje?
+Ricardo, 41 anos, pedreiro, fez infiltração de corticoide no cotovelo direito há 10 semanas. Ficou quase sem dor por 5 semanas, parou o programa de exercícios e voltou à obra em tempo integral. Hoje a dor é de 6 em 10 no trabalho e dura o resto do dia; preensão sem dor de 150 N (era 230 N há 4 semanas); sem formigamento e com exame neurológico normal. Ele pede outra infiltração. Qual conduta é a mais defensável hoje?
 ```
 
 Opções:
@@ -136,7 +136,7 @@ Ultrassom do tendão antes de qualquer carga, porque a injeção pode tê-lo enf
 
 **Resposta:** Isométrico de extensores do punho com 2,4 kg, 4 × 30 s, todo dia; +5% da CVM a cada 2 semanas.
 
-A dose do isométrico do ensaio de Vuvan 2020 (pelas tabelas redigitadas da aula de capacitação, a conferir) começa em 20% da CVM (12 kg × 0,20 = 2,4 kg), 4 × 30 s ou 3 × 45 s, diário, subindo 5% da CVM a cada 2 semanas até 35%. A regra de progressão pela dor é opinião de especialista (Day 2019): subir quando não há dor tardia em 24 h ou quando a dor não sobe mais de 1 ponto. O isométrico sozinho, sem supervisão, teve sucesso percebido de 29% contra 26% de quem esperou: na clínica, ele vem junto de outras medidas.
+A dose do isométrico do ensaio de Vuvan 2020 (pelas tabelas redigitadas da aula de capacitação, a conferir) começa em 20% da CVM (12 kg × 0,20 = 2,4 kg), 4 × 30 s nas semanas ímpares e 3 × 45 s nas pares (semana 1: 4 × 30 s), diário, subindo 5% da CVM a cada 2 semanas até 35%. A regra de progressão pela dor é opinião de especialista (Day 2019): subir quando não há dor tardia em 24 h ou quando a dor não sobe mais de 1 ponto. O isométrico sozinho, sem supervisão, teve sucesso percebido de 29% contra 26% de quem esperou: na clínica, ele vem junto de outras medidas.
 
 - *Isométrico com 4,2 kg (35% da CVM), 4 × 30 s, todo dia, para não subdosar desde o início.* — Começar no teto da faixa do ensaio (35%) num quadro moderadamente irritável: o ensaio começa em 20% e sobe pelo calendário.
 - *Excêntrico de punho 3 × 15, todo dia, com a carga que leve a dor até 5 de 10 na série.* — Usar uma dose de excêntrico que não vem de nenhum ensaio da seleção e tolerar dor alta na série, sem regra de 24 h.
@@ -148,7 +148,7 @@ Referência: Vuvan V et al. Med Sci Sports Exerc 2020;52(2):287-95. PMID 3142538
 
 **Resposta:** Corticoide e agulhamento nada somaram; o efeito do HSR em si não foi testado.
 
-Couppé 2022 (resumo): os três braços melhoraram igualmente (DASH Δ20, QuickDASH Δ21, dor Δ2,5), e em 52 semanas o QuickDASH ficou 15 pontos pior com corticoide (desfecho secundário). Como não há braço sem HSR, a melhora dentro dos grupos mistura o exercício, o curso natural (89% muito melhores em 1 ano nos braços controle de ensaios, Ikonen 2022), a regressão à média e a expectativa.
+Couppé 2022 (resumo): os três braços melhoraram igualmente (DASH Δ20, QuickDASH Δ21, dor Δ2,5), e em 52 semanas o QuickDASH ficou 15 pontos pior com corticoide (desfecho secundário). Como não há braço sem HSR, a melhora dentro dos grupos mistura o exercício, o curso natural (89% muito melhores ou recuperados em 1 ano nos braços controle, 189 de 213: só 213 dos 1085 participantes entram nesse número; Ikonen 2022), a regressão à média e a expectativa.
 
 - *O HSR reduz cerca de 20 pontos no DASH em 12 semanas.* — Atribuir a mudança dentro do grupo ao tratamento, sem comparador.
 - *O HSR não funciona, porque os três braços terminaram iguais.* — Confundir ausência de diferença entre braços que receberam o mesmo HSR com ausência de efeito do HSR.
@@ -184,11 +184,11 @@ Referência: Coombes BK et al. JAMA 2013;309(5):461-9. PMID 23385272. DOI 10.100
 
 **Resposta:** Cerca de 66%: testar a MWM na sessão e decidir pela resposta dele.
 
-RV− da idade = (1 − 0,61) ÷ 0,77 ≈ 0,51. Chance antes do teste: 0,79 ÷ 0,21 = 3,76; depois: 3,76 × 0,51 ≈ 1,9; probabilidade ≈ 66% (cálculo com a Tab. 2 de Vicenzino 2009, print da aula de capacitação). Todas as RV+ da regra têm intervalo que inclui 1, a regra é de derivação, sem validação, e não predisse no braço espera. Testar a resposta na sessão (preensão sem dor antes e depois) é proposta clínica.
+RV− da idade = (1 − 0,61) ÷ 0,77 ≈ 0,51. Chance antes do teste: 0,79 ÷ 0,21 = 3,76; depois: 3,76 × 0,51 ≈ 1,9; probabilidade ≈ 66% (cálculo com a Tab. 2 de Vicenzino 2009, print da aula de capacitação). A conta usa só a idade porque é o único dado disponível; a regra não informa como combinar critérios, e o resumo dá 100% com os três positivos, de poucos pacientes. Todas as RV+ da regra têm intervalo que inclui 1, a regra é de derivação, sem validação, e não predisse no braço espera. Testar a resposta na sessão (preensão sem dor antes e depois) é proposta clínica.
 
 - *Cerca de 21%: quem falha num critério fica com o complemento do pré-teste.* — Tratar a regra como binária e usar 1 − 0,79: a probabilidade depois do teste vem da RV−, não do complemento do pré-teste.
 - *Cerca de 59%: com o critério negativo, a razão vira 1 ÷ 2,6.* — Inverter a RV+ (1 ÷ 2,6 ≈ 0,38) no lugar de calcular a RV− = (1 − sensibilidade) ÷ especificidade ≈ 0,51.
-- *Cerca de 90%: os outros dois critérios dão pós-teste de 89% e 90%.* — Ignorar o critério que falhou e somar critérios como se fossem independentes; o pós-teste da Tab. 2 é de cada critério isolado.
+- *Cerca de 79%: a regra só informa sobre quem preenche o critério.* — Tratar o critério negativo como neutro: a RV− da idade (≈ 0,51) baixa a chance de 79% para cerca de 66%; ainda assim, a maioria melhora, e a preensão, quando medida, pode mudar a conta.
 
 Referência: Vicenzino B et al. Man Ther 2009;14(5):550-4. PMID 18838330. DOI 10.1016/j.math.2008.08.004.
 

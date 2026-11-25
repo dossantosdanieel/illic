@@ -17,7 +17,7 @@
 4. Tendinopatia medial: excêntrico com 5 estudos e certeza baixa (See 2026); corticoide melhor só em 6 semanas (Stahl 1997), como na lateral (92% x 47% em 6 semanas; 69% x 91% em 1 ano, Smidt 2002). DMCI do PRTEE e dose do isométrico vêm da lateral: na medial, extrapolação. Força no trabalho pesa (OR 1,95); repetição sem associação numa amostra em que todos repetiam (Descatha 2003); na lateral, a repetição isolada ficou inconclusiva (OR 0,71; 0,42 a 1,20) e a força com duração, que inclui a frequência, pesou (Bretschneider 2022).
 5. Desvio ulnar com faixa recruta o flexor ulnar do carpo (40% da CVM); pronação, o flexor superficial e o pronador redondo (64% e 73%) (Fukunaga 2023, Tab. 2).
 6. Gatilho, sem tratamento prévio: graus 1–2 com ~75% de sucesso conservador, grau 3 com ~60% e 39,1% operados (Minkhorst 2025). Recidiva em 6–12 meses: 385 por 1000 após injeção, 65 após cirurgia aberta (Fiorini 2018). Depois de recidiva, não há número para a 2ª injeção.
-7. De Quervain: WHAT RV+ 1,4: positivo quase não informa. Negativo: RV− 0,03 pela estimativa pontual, ~0,2 com a sensibilidade no limite do IC (Goubau 2014; calc.). No puerpério, órtese sozinha 0 de 9 com alívio completo; 8 de 9 resolveram ao fim da lactação (Avci 2002).
+7. De Quervain: WHAT RV+ 1,4: positivo quase não informa. Negativo, a partir de 70%: 7% pela estimativa pontual e 32% com a sensibilidade no limite do IC; com a especificidade (2 em 7 não doentes, IC 4% a 71%) também no limite, 79%: o negativo talvez ajude, se a especificidade se confirmar (Goubau 2014; calc.). No puerpério, órtese sozinha 0 de 9 com alívio completo; 8 de 9 resolveram ao fim da lactação (Avci 2002).
 
 ## Algoritmo de decisão
 
@@ -25,7 +25,7 @@
 2. Arremessador? Valgo em movimento negativo baixa a suspeita de lesão do ligamento colateral ulnar (LCU), num estudo de 21 operados; positivo, investigar.
 3. Tendinopatia medial? Menos força no trabalho, carga com dois exercícios, subir sem dor tardia em 24 h (regra da aula 2) e reavaliar a cada 3 semanas (proposta clínica).
 4. Gatilho? Gradue; graus 1–2: órtese ou injeção, pela preferência; grau 3 ou recidiva: combinar o critério de avaliação cirúrgica.
-5. De Quervain? WHAT negativo pesa contra, se o paciente parece o do estudo; no puerpério, orientar e proteger.
+5. De Quervain? WHAT positivo não confirma; negativo talvez pese contra, se o paciente parece o do estudo, mas a especificidade vem de 2 em 7: procure outra causa e reavalie; no puerpério, orientar e proteger.
 
 ## Para praticar nesta semana
 

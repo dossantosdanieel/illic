@@ -1,14 +1,14 @@
 # Roteiro — Cotovelo medial e mão: três decisões
 
 **Aula 3 da trilha cotovelo e mão** (Boost Education · illic ACADEMY). Apresentador: Daniel Santos. Google Meet, gravada
-para a equipe. Versão 1, revisada em 24/11/2026 depois da revisão independente e de novo em 25/11/2026 (revisão completa e auditoria de coerência da trilha): quase toda a evidência vem de resumos; a
+para a equipe. Versão 1, revisada em 24/11/2026 depois da revisão independente, de novo em 25/11/2026 (revisão completa e auditoria de coerência da trilha) e depois da conferência final adversarial (25/11/2026; ver `verificacao.md`, seção 11): quase toda a evidência vem de resumos; a
 passada de conferência no texto completo está em `verificacao.md`, seção 8 ("Trocar ou conferir quando o PDF chegar").
 
 **Público:** fisioterapeutas da equipe ILLIC, de recém-formados a especialistas em membro superior. Aula única em
 camadas: núcleo exigente (todo mundo vota e calcula), âncora "Para começar" e desafio por bloco.
-**Duração-alvo:** 32 min (teto 35). **Duração montada:** 34:00, 28 slides cronometrados + referências. Tempo
-estimado pelo validador (fala das notas a 130 ppm + duração das interações): **32:55**; somando 15 s de justificativa
-oral por enquete, ~34 min. Nenhum slide passa do seu `tempo_s` por mais de 15 s.
+**Duração-alvo:** 32 min (teto 35). **Duração montada:** 34:25, 28 slides cronometrados + referências. Tempo
+estimado pelo validador (fala das notas a 130 ppm + duração das interações): **33:40**; somando 15 s de justificativa
+oral por enquete, ~35 min: no teto, sem folga para improviso. Só a enquete 15 passa do seu `tempo_s` por mais de 15 s.
 **Perguntas clínicas:** as quatro PICO de `00_briefing.md` (1a tendinopatia medial; 1b diferencial medial; 2 dedo em
 gatilho; 3 De Quervain).
 **Caso:** três pessoas fictícias da mesma família, uma decisão central por pessoa, e a mesma pergunta costurando as três
@@ -56,8 +56,8 @@ e sobre a recidiva no cotovelo x no dedo (slide 17).
 
 **Onde o hábito do especialista é contrariado:** Tinel e flexão-compressão como "sinais de neuropatia ulnar" (RV+ 1,32
 e 1,02); "Finkelstein positivo confirma De Quervain" (é o Eichhoff, e o WHAT positivo tem RV+ 1,4); "teste sensível
-negativo descarta" (WHAT e valgo em movimento: o negativo pesa contra, mas com 1 falso negativo e 4 a 7 não doentes a
-incerteza é grande); "OR 22,8 = 22 vezes mais sucesso"; "a tala resolve a puérpera" (0 de 9 com alívio completo); "os
+negativo descarta" (WHAT e valgo em movimento: o negativo baixa a suspeita pelas estimativas, mas a especificidade vem de
+7 e de 4 não doentes; com as duas medidas no limite do IC, nenhum dos dois informa); "OR 22,8 = 22 vezes mais sucesso"; "a tala resolve a puérpera" (0 de 9 com alívio completo); "os
 números do ensaio valem para a minha paciente" (Minkhorst excluiu tratamento prévio); "na medial faço o excêntrico
 porque funciona" (5 estudos, certeza baixa); "a infiltração acelera o retorno" (só 6 semanas); "repetição causa"
 (força pesa; repetição sem contraste numa amostra em que todos repetiam).
@@ -81,10 +81,10 @@ porque funciona" (5 estudos, certeza baixa); "a infiltração acelera o retorno"
 | Minkhorst2025 | ECR 3 braços, 122 dedos, **sem tratamento prévio** | graus 1–2 ~75%, grau 3 ~60%; operados 39,1% x 22,4% | barras nativas (s16) | resumo |
 | Patel1992 | comparativo | órtese 70% dos dedos, 50% dos polegares; 15/17 falhas resolvidas com injeção | tabela (s17) | resumo |
 | PetersVeluthamaningal2009 | RS Cochrane, 2 ECR | RR 3,15 (1,34–7,40), NNT 3 em 4 semanas | tabela (s17) | resumo |
-| Fiorini2018 | RS Cochrane | recidiva 385 x 65 por 1000 (após a 1ª injeção); dor na palma 678 x 184 por 1000 | tabela (s17), tópicos (s19) | resumo |
+| Fiorini2018 | RS Cochrane | recidiva 385 x 65 por 1000 (IC 35 a 127; ~6 a 7 em 100; após a 1ª injeção); dor na palma 678 x 184 por 1000 | tabela (s17), tópicos (s19) | resumo |
 | Chiang2026 | NMA, 27 ECR | percutânea x injeção OR 22,8 → RR ~1,6 com base de 60% | cartão (s19) | resumo; conversão calc. com base hipotética |
 | Huisstede2014b / Huisstede2014 | consenso Delphi | opções por gravidade, duração e tratamentos prévios; orientação sempre | notas (s19, s24) | resumo |
-| Goubau2014 | acurácia, 100 pacientes com dor espontânea no estiloide radial | WHAT S 0,99, E 0,29 → RV+ 1,4; RV− 0,03 pontual, ~0,2 com S no limite do IC (92/93); 70% → 76% / 7% a 32%; prevalência ~93% | números (s22) | resumo; calc. |
+| Goubau2014 | acurácia, 100 pacientes com dor espontânea no estiloide radial | WHAT S 0,99, E 0,29 → RV+ 1,4; RV− 0,03 pontual, ~0,2 com S no limite do IC (92/93), ~1,6 com S e E (2/7, IC 3,7–71%) no limite; 70% → 76% / 7% a 32% / ~79%; prevalência ~93% | números (s22) | resumo; calc. |
 | Elliott1992 | nota histórica | "Finkelstein" dos livros = Eichhoff | linha no s22 | resumo |
 | Avci2002 | ECR, 18 gestantes/lactantes | injeção 9/9, órtese 0/9, 8/9 resolução ao fim da lactação | barras nativas (s24) | resumo; contagem inferida |
 | Challoumas2023 | NMA, 30 ECR | órtese após injeção: 10,5 pontos de QuickDASH (6,8–14,1), "não clinicamente significativo"; sentido a conferir | cartão (s24) | resumo |
@@ -107,27 +107,27 @@ ilegível no 16:9). Reserva da aula base: vazia (`reserva_aula_base.json` = `[]`
 | 8:25 | caso A | decidir | 9 A decisão do Sérgio (enquete) | enquete 1 min | desafio: o que faria encaminhar amanhã |
 | 9:55 | caso A | conferir | 10 Revelação (enquete revela D) | — | |
 | 10:45 | caso A | evidência | 11 Na medial, quase tudo é extrapolação (tabela; ECR de corticoide de 1997) | pergunta oral de 10 s: a injeção na lateral em 6 semanas e 1 ano | |
-| 11:45 | caso A | evidência | 12 Um exercício não cobre a massa (barras, Fukunaga Tab. 2) | — | desafio: 73% a Borg 5/10 |
-| 12:30 | caso A | decidir | 13 Desvio ulnar com faixa (figura Fukunaga Fig. 2; regra de dor da aula 2) | demonstração da pronação na câmera | |
-| 13:35 | caso B | gancho | 14 Renata (citação; semana 26 do cotovelo, dedo há 3 meses) | — | âncora: graus de Green |
-| 14:20 | caso B | prever | 15 O grau muda a chance de resolver sem cirurgia? (enquete com os graus 1–2 e 3) | enquete 1 min | desafio: grau ou escolha do tratamento? |
-| 15:50 | caso B | evidência | 16 O grau prevê mais (barras; "sem tratamento prévio") | — | |
-| 16:40 | caso B | decidir | 17 Cada opção tem um preço (tabela com métrica e comparador por linha) | mão na câmera 15 s; depois, recuperação oral 54% x 385/1000 | |
-| 18:10 | caso B | decidir | 18 Revés: Decidam com a Renata (tarefa; mês 5 após a consulta do dedo) | salas de 3, 3 min (gravação e plano B em enquetes.md) | âncora: comece pelo grau; desafio: que número vale para a 2ª injeção? |
-| 22:45 | caso B | conferir | 19 Grau 3 após recidiva: números de quem nunca foi tratado (tópicos) | — | cartão: OR 22,8 → RR 1,6 |
-| 23:45 | caso C | gancho | 20 Júlia (citação) | — | |
-| 24:20 | caso C | prever | 21 Teste positivo confirma? (enquete) | enquete 1 min | desafio nas notas: calcular RV+ |
-| 25:55 | caso C | evidência | 22 WHAT: positivo não informa; negativo ajuda, com 1 falso negativo (números) | — | |
-| 27:00 | caso C | decidir | 23 O que oferecer à Júlia? (enquete) | enquete 1 min | |
-| 28:25 | caso C | conferir | 24 A tala sozinha não aliviou nenhuma (barras em dois grupos) | — | |
-| 29:35 | fechamento | — | 25 Desfecho dos três (cartões; DMCI da lateral extrapolada) | — | |
-| 30:30 | fechamento | recuperar | 26 Sem voltar os slides (pergunta) | chat em cascata 40 s | |
-| 31:50 | fechamento | conferir | 27 Três coisas para levar (síntese + faixa "desde a capacitação") | — | |
-| 32:45 | fechamento | saída | 28 Bilhete de saída (pergunta; respostas vão para o relatório da trilha e o pós-teste) | chat 45 s | |
-| 34:00 | — | — | 29 Referências (apoio) | — | |
+| 11:45 | caso A | evidência | 12 Um exercício não cobre a massa (barras, Fukunaga Tab. 2) | mão na câmera 15 s: já prescreve pronação com faixa? | desafio: 73% a Borg 5/10 |
+| 12:45 | caso A | decidir | 13 No desvio ulnar, o flexor ulnar foi o mais ativo (figura Fukunaga Fig. 2; regra de dor da aula 2) | demonstração da pronação na câmera | |
+| 13:50 | caso B | gancho | 14 Renata (citação; semana 26 do cotovelo, dedo há 3 meses) | — | âncora: graus de Green |
+| 14:35 | caso B | prever | 15 O grau muda a chance de resolver sem cirurgia? (enquete com os graus 1–2 e 3) | enquete 1 min | desafio: grau ou escolha do tratamento? |
+| 16:05 | caso B | evidência | 16 O grau prevê mais (barras; "sem tratamento prévio") | — | |
+| 16:55 | caso B | decidir | 17 Cada opção tem um preço (tabela com métrica e comparador por linha; cirurgia aberta ~6 a 7 em 100, IC 4 a 13) | mão na câmera 15 s; depois, recuperação oral 54% x 385/1000 | |
+| 18:25 | caso B | decidir | 18 Revés: Decidam com a Renata (tarefa; mês 5 após a consulta do dedo) | salas de 3, 3 min (gravação e plano B em enquetes.md) | âncora: comece pelo grau; desafio: que número vale para a 2ª injeção? |
+| 23:00 | caso B | conferir | 19 Grau 3 após recidiva: números de quem nunca foi tratado (tópicos) | — | cartão: OR 22,8 → RR 1,6 |
+| 24:00 | caso C | gancho | 20 Júlia (citação) | — | |
+| 24:35 | caso C | prever | 21 Teste positivo confirma? (enquete) | enquete 1 min | desafio nas notas: calcular RV+ |
+| 26:10 | caso C | evidência | 22 WHAT positivo não informa; o negativo talvez ajude, num estudo com 7 não doentes (números: 1,4; 7–32%; ~79%) | — | |
+| 27:25 | caso C | decidir | 23 O que oferecer à Júlia? (enquete) | enquete 1 min | |
+| 28:50 | caso C | conferir | 24 A tala sozinha não aliviou nenhuma (barras em dois grupos) | — | |
+| 30:00 | fechamento | — | 25 Desfecho dos três (cartões; DMCI da lateral extrapolada) | — | |
+| 30:55 | fechamento | recuperar | 26 Sem voltar os slides (pergunta) | chat em cascata 40 s | |
+| 32:15 | fechamento | conferir | 27 Três coisas para levar (síntese + faixa "desde a capacitação") | — | |
+| 33:10 | fechamento | saída | 28 Bilhete de saída (pergunta; respostas vão para o relatório da trilha e o pós-teste) | chat 45 s | |
+| 34:25 | — | — | 29 Referências (apoio; notas com o estado da conferência) | — | |
 
-Linha do tempo do validador: `●●··●●··●●····●●·●●●●●··●●·●··●●●●` (34 minutos; ● com interação). 11 interações em 5
-formatos, primeira aos 0:35, 31% do tempo em atividade.
+Linha do tempo do validador: `●●··●●··●●·●··●●·●●●●●··●●·●●·●●·●·` (35 minutos; ● com interação). 12 interações em 5
+formatos, primeira aos 0:35, 32% do tempo em atividade; o trecho mais longo sem interação caiu de 4 para 2 minutos.
 
 **Condução no Meet:** durante a aula o Meet mostra só a contagem da enquete, não quem votou em quê; em todas as enquetes,
 perguntar "quem votou na opção menos votada e topa defender?" (microfone aberto, 15 s). Sem enquete na conta: a letra no

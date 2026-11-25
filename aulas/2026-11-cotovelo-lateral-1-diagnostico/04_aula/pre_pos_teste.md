@@ -201,7 +201,7 @@ Referência: Krogh TP et al. Am J Sports Med 2020;48(8):1873-83. PMID 32484714. 
 
 **Resposta:** A chance de melhorar parece não depender do tempo de dor.
 
-Na meta-análise dos braços controle de 24 ensaios (Ikonen 2022, resumo), a melhora seguiu uma meia-vida de 2,5 a 3 meses, 89% estavam muito melhores ou recuperados em 1 ano (IC 95% 80% a 97%), e o tempo de sintoma antes da inclusão não mudou a trajetória. Há uma ressalva: na coorte de Smidt 2006 (resumo), duração longa se associou a mais dor em 12 meses. A meta-regressão compara médias de ensaios e a coorte compara pessoas; as duas leituras podem conviver. Por isso a resposta é 'parece', não 'nunca'.
+Na meta-análise dos braços controle de 24 ensaios (Ikonen 2022, resumo), a melhora seguiu uma meia-vida de 2,5 a 3 meses, 89% estavam muito melhores ou recuperados em 1 ano (189 de 213 participantes com esse desfecho, não os 24 ensaios inteiros; IC 95% 80% a 97%), e o tempo de sintoma antes da inclusão não mudou a trajetória. Há uma ressalva: na coorte de Smidt 2006 (resumo), duração longa se associou a mais dor em 12 meses. A meta-regressão compara médias de ensaios e a coorte compara pessoas; as duas leituras podem conviver. Por isso a resposta é 'parece', não 'nunca'.
 
 - *Depois de 6 meses o curso é ruim: a maioria não melhora mais.* — Aplicar a ideia de 'cronificou' sem número; o curso observado é favorável mesmo em quem já tem meses de dor.
 - *Depois de 6 meses, só melhora com injeção ou cirurgia.* — Transformar a duração em indicação de procedimento, sem dado que sustente.

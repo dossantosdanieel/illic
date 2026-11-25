@@ -20,14 +20,15 @@
       "com PRTEE inicial alto, preferir a régua proporcional da DMCI (certeza baixa)",
       "classificar a irritabilidade pela tabela que a aula de capacitação atribui à diretriz de 2022 (atribuição provável, a conferir no PDF)",
       "acompanhar a preensão sem dor pela razão afetado/não afetado, sem DMCI publicada no lote",
-      "imagem só se não melhorar no prazo ou surgir sinal atípico (notas da aula de capacitação, a conferir na diretriz)"
+      "imagem só se não melhorar no prazo ou surgir sinal atípico (notas da aula de capacitação, a conferir na diretriz)",
+      "reavaliar o PRTEE a cada 3 semanas (intervalo em que a DMCI foi medida; nenhum ensaio testou o calendário)"
     ],
     "resumo": {
       "pontos_chave": [
         "Cozen: sensibilidade de 91%, especificidade não informada. Queda de 5% a 10% da preensão ao estender o cotovelo: RV+ de 3,9 a 8,3 e RV− de 0,19 a 0,28 (calculadas; Karanasios 2022); protocolo e espectro a conferir.",
         "Com suspeita alta (até 79%), a preensão positiva quase não acrescenta (94%–97%) e a negativa derruba para 42%–51%, sem excluir: decide o limiar de ação (cálculo com Karanasios 2022 e Vuvan 2020).",
         "Esporão no epicôndilo: 50% da população sem dor (RV+ ≈ 1,6, calculada); nenhum achado do ultrassom acompanhou dor, PRTEE ou duração (Krogh 2020).",
-        "Sem tratamento ativo, 89% muito melhores ou recuperados em 1 ano (IC 80% a 97%); meia-vida de 2,5 a 3 meses, independente do tempo de dor (Ikonen 2022).",
+        "Sem tratamento ativo, 89% muito melhores ou recuperados em 1 ano (189 de 213 com esse desfecho; IC 80% a 97%); meia-vida de 2,5 a 3 meses, independente do tempo de dor (Ikonen 2022).",
         "DMCI do PRTEE: 7 pontos ou 22% ('um pouco melhor'); 11 pontos ou 37% ('muito melhor') (Poltawski 2011; n = 57). Sintomas de nervo, sexo feminino, dor cervical e limiar de dor ao frio medido em laboratório (não a queixa) pioram a previsão, com certeza baixa (Waugh 2004; Smidt 2006; Coombes 2015).",
         "Trabalho: rotação > 4 h/dia (OR 1,85) e força com duração (OR 1,75) se associaram à incidência; repetição isolada, inconclusiva (OR 0,71; 0,42 a 1,20) (Bretschneider 2022)."
       ],
@@ -38,7 +39,7 @@
         "Classifique a irritabilidade (quanto dói, quanto dura depois, quanto limita): na Renata, moderada; ela guia a dose na aula 2 (classificação da diretriz, a conferir).",
         "Laudo na mão? Explique cada achado pela frequência em quem não tem dor.",
         "Sem sinal atípico? Sem imagem agora; peça se não melhorar no prazo ou surgir algo novo.",
-        "Escreva a meta do PRTEE pelas duas réguas (7 pontos e 22%; 11 pontos e 37%) e reavalie em 4 a 6 semanas."
+        "Escreva a meta do PRTEE pelas duas réguas (7 pontos e 22%; 11 pontos e 37%) e reavalie a cada 3 semanas (proposta clínica, a mesma das aulas 2 e 3; a DMCI foi medida nesse intervalo)."
       ],
       "para_praticar": [
         "No próximo paciente com dor lateral, meça a preensão sem dor nos dois lados e com o cotovelo fletido e estendido, e aplique o PRTEE.",
@@ -565,7 +566,7 @@
         "Bunata2007",
         "Rio2021"
       ],
-      "notas": "Conferir o voto: a resposta que a evidência sustenta é a B. Linha a linha. Espessamento: em Krogh, o tendão doente tem 0,40 a 0,70 milímetro a mais; pela conta, a referência fica perto de 5,1. Compare com o outro lado e não chame de gravidade. Doppler 3: típico de quem tem dor. Mas menos vaso não é melhora: no ensaio de Couppé, o corticoide reduziu o Power Doppler em 12 semanas sem ganho clínico, e o QuickDASH em 52 semanas ficou 15 pontos pior que o placebo, num desfecho secundário. Entesófito: metade de quem não tem dor. Por que a imagem não mede a dor: no cadáver, o extensor radial curto atrita no capítulo quando o cotovelo estende, vulnerabilidade, não causa provada, segundo Bunata; e a revisão de Rio achou hiperalgesia local e regional, não a distância: parte da dor está no processamento, que nenhum laudo mostra. Só resumo; volta na aula 2. Ressonância: faixas de 81% a 100% com viés alto. A aula de capacitação dizia 90% a 100%; o número responde se a RM vê o tendão, não se muda a conduta da Renata hoje. Imagem entra se não houver melhora no prazo ou surgir sinal novo: critério das notas da aula de capacitação, a conferir na diretriz."
+      "notas": "Conferir o voto: a resposta que a evidência sustenta é a B. Linha a linha. Espessamento: em Krogh, o tendão doente fica 0,40 milímetro acima da média da população, e 0,53 a 0,70 acima do outro lado; pela conta com a população, a referência fica perto de 5,1. Compare com o outro lado e não chame de gravidade. Doppler 3: típico de quem tem dor. Mas menos vaso não é melhora: no ensaio de Couppé, o corticoide reduziu o Power Doppler em 12 semanas sem ganho clínico, e o QuickDASH em 52 semanas ficou 15 pontos pior que o placebo, num desfecho secundário. Entesófito: metade de quem não tem dor. Por que a imagem não mede a dor: no cadáver, o extensor radial curto atrita no capítulo quando o cotovelo estende, vulnerabilidade, não causa provada, segundo Bunata; e a revisão de Rio achou hiperalgesia local e regional, não a distância: parte da dor está no processamento, que nenhum laudo mostra. Só resumo; volta na aula 2. Ressonância: faixas de 81% a 100% com viés alto. A aula de capacitação dizia 90% a 100%; o número responde se a RM vê o tendão, não se muda a conduta da Renata hoje. Imagem entra se não houver melhora no prazo ou surgir sinal novo: critério das notas da aula de capacitação, a conferir na diretriz."
     },
     {
       "tipo": "enquete",
@@ -645,7 +646,7 @@
         {
           "estilo": "escuro",
           "olho": "Observado em 1 ano",
-          "texto": "89% muito melhor ou recuperado (IC 80% a 97%), braços controle de 24 ensaios."
+          "texto": "89% muito melhor ou recuperado em 1 ano (189 de 213; IC 80% a 97%), braços controle de ensaios."
         },
         {
           "estilo": "claro",
@@ -660,7 +661,7 @@
         "Ikonen2022",
         "Smidt2002"
       ],
-      "notas": "Conferir o voto: a resposta é a D. Na meta-análise de Ikonen, com os braços controle de 24 ensaios, 89% estavam muito melhores ou recuperados em um ano, intervalo de 80% a 97%: é o ponto vermelho, com a barra do intervalo, o único dado observado no gráfico. A linha cinza tracejada é a minha conta com meia-vida de 3 meses, para mostrar o conceito: a cada três meses, metade dos que ainda têm sintoma melhora. Triangular: no braço de espera de Smidt, 32% de sucesso em 6 semanas e 83% em 52. O tempo de dor antes da inclusão não mudou a trajetória. A frase da aula de capacitação: as duas podem ser verdade, porque algum sintoma não é o mesmo que não melhorou. Perguntar quem votou A ou B e topa dizer, em 15 segundos, o que muda no que diria à Renata.",
+      "notas": "Conferir o voto: a resposta é a D. Na meta-análise de Ikonen, 89% estavam muito melhores ou recuperados em um ano, intervalo de 80% a 97%. A revisão reúne os braços controle de 24 ensaios, mas o número de 1 ano vem de só 213 pessoas: daí o intervalo largo. É o ponto vermelho, com a barra do intervalo, o único dado observado no gráfico. A linha cinza tracejada é a minha conta com meia-vida de 3 meses, para mostrar o conceito: a cada três meses, metade dos que ainda têm sintoma melhora. Triangular: no braço de espera de Smidt, 32% de sucesso em 6 semanas e 83% em 52. O tempo de dor antes da inclusão não mudou a trajetória. A frase da aula de capacitação: as duas podem ser verdade, porque algum sintoma não é o mesmo que não melhorou. Perguntar quem votou A ou B e topa dizer, em 15 segundos, o que muda no que diria à Renata.",
       "nota": "Tracejado: conta ilustrativa. Ponto vermelho com barra: único dado observado.",
       "rotulos": false
     },
@@ -699,7 +700,7 @@
         [
           "Frio (limiar medido)",
           "1 ano",
-          "explica 9% do PRTEE",
+          "o modelo com o frio explicou 9% do PRTEE",
           "não medido"
         ]
       ],
@@ -716,7 +717,7 @@
         "Coombes2015",
         "Ikonen2022"
       ],
-      "notas": "Os modificadores, com o tamanho. Em Waugh, 83 pacientes depois de 8 semanas de fisioterapia: com o mesmo escore inicial, quem relata sintomas de nervo termina com 15 pontos a mais na escala visual de dor; a escala parece ser de 0 a 100, mas no print o eixo vai até 50, então confiro no PDF; e as mulheres com 8,9 pontos a mais de DASH; resumo e tabela reproduzida na aula de capacitação. Em Smidt, 349 pacientes da atenção primária: dor cervical junto, dor intensa e duração longa associadas a pior resultado em 12 meses, sem tamanho no resumo. A duração é a controvérsia: Ikonen não viu efeito; uma meta-regressão por ensaio e uma coorte individual podem as duas estar certas. Coombes: o limiar de dor ao frio foi o único preditor consistente em um ano, mas explicou 9% do PRTEE, e foi medido com equipamento: a queixa da Renata com água fria não é esse teste. Na aula de capacitação, essa tabela estava na patoanatomia; o lugar dela é aqui."
+      "notas": "Os modificadores, com o tamanho. Em Waugh, 83 pacientes depois de 8 semanas de fisioterapia: com o mesmo escore inicial, quem relata sintomas de nervo termina com 15 pontos a mais na escala visual de dor; a escala, 0 a 100 ou até 50 como no print, confiro no PDF; e as mulheres com 8,9 pontos a mais de DASH; resumo e tabela reproduzida na aula de capacitação. Em Smidt, 349 pacientes da atenção primária: dor cervical junto, dor intensa e duração longa associadas a pior resultado em 12 meses, sem tamanho no resumo. A duração é a controvérsia: Ikonen não viu efeito; uma meta-regressão por ensaio e uma coorte individual podem as duas estar certas. Coombes: o limiar de dor ao frio foi o único preditor consistente em um ano, mas o modelo final, com ele, explicou 9% do PRTEE, e foi medido com equipamento: a queixa da Renata com água fria não é esse teste. Na aula de capacitação, essa tabela estava na patoanatomia; o lugar dela é aqui."
     },
     {
       "tipo": "citacao",
@@ -737,7 +738,7 @@
           "Formigamento no dorso do antebraço"
         ]
       },
-      "notas": "O revés. Contar que a Renata seguiu o plano por seis semanas e continua trabalhando. Ler a fala em voz alta, devagar, e fazer uma pausa. Dizer os quatro dados do cartão: PRTEE de 58 para 49, dor no trabalho de 6 para 5, preensão sem dor de 120 para 140 newtons do lado direito, e um sintoma novo, formigamento no dorso do antebraço no fim do dia. Não interpretar: as salas fazem isso agora."
+      "notas": "O revés. Contar que a Renata seguiu o plano por seis semanas e continua trabalhando. Ler a fala em voz alta, devagar, e fazer uma pausa. Dizer os quatro dados do cartão: PRTEE de 58 para 49, dor no trabalho de 6 para 5, preensão sem dor de 120 para 140 newtons do lado direito, e um sintoma novo, formigamento no dorso do antebraço no fim do dia. Seis semanas é a primeira reavaliação completa; o PRTEE pode ser medido a cada 3 semanas. Não interpretar: as salas fazem isso agora."
     },
     {
       "tipo": "tarefa",
@@ -789,7 +790,7 @@
         ],
         [
           "Muito melhor?",
-          "11 pontos (≤ 47) ou 37% × 58 ≈ 21 (≤ 36): ainda não."
+          "11 pontos (≤ 47) ou 37% × 58 ≈ 21,5 (≤ 36,5; na prática, 36): ainda não."
         ],
         [
           "Formigamento",
@@ -813,7 +814,7 @@
         "Waugh2004",
         "exame: proposta clínica da equipe"
       ],
-      "notas": "Uma resposta possível, para comparar com as salas. Pela régua absoluta, 7 pontos, a queda de 9 já é melhora mínima: quem usou os 7 pontos diria que sim. Pela proporcional, 22% de 58 dá cerca de 13 pontos, meta de 45 ou menos; ela caiu 16%: ainda não. Muito melhor pede 11 pontos ou 37%, cerca de 21, PRTEE de 36 ou menos. Qual régua? Com quem começa alto, a proporcional é a mais exigente, e o resumo diz que a DMCI foi maior nos mais graves; mas a certeza é baixa: 57 pacientes, intervalo de 3 semanas, intervalo de confiança desconhecido. O formigamento reabre radiculopatia e túnel radial; déficit motor ou sensitivo progressivo encaminha. O exame é proposta clínica. O sintoma de nervo muda a velocidade esperada, não o destino de um ano. Agora a frase para ela, da última linha: pedir a uma pessoa que diga a sua. A preensão sem dor, cotovelo estendido, subiu de 120 para 140 newtons: a razão afetado sobre não afetado foi de 38% para 44%, pela conta 120 e 140 sobre 320, sem diferença mínima publicada no lote; é proposta clínica acompanhar por ela."
+      "notas": "Uma resposta possível, para comparar com as salas. Pela régua absoluta, 7 pontos, a queda de 9 já é melhora mínima: quem usou os 7 pontos diria que sim. Pela proporcional, 22% de 58 dá cerca de 13 pontos, meta de 45 ou menos; ela caiu 16%: ainda não. Muito melhor pede 11 pontos ou 37%, cerca de 21 e meio: PRTEE de 36 e meio ou menos, na prática 36. Qual régua? Com quem começa alto, a proporcional é a mais exigente, e o resumo diz que a DMCI foi maior nos mais graves; mas a certeza é baixa: 57 pacientes, intervalo de 3 semanas, intervalo de confiança desconhecido. O formigamento reabre radiculopatia e túnel radial; déficit motor ou sensitivo progressivo encaminha. O exame é proposta clínica. O sintoma de nervo muda a velocidade esperada, não o destino de um ano. Agora a frase para ela, da última linha: pedir a uma pessoa que diga a sua. A preensão sem dor, cotovelo estendido, subiu de 120 para 140 newtons: a razão afetado sobre não afetado foi de 38% para 44%, pela conta 120 e 140 sobre 320, sem diferença mínima publicada no lote; é proposta clínica acompanhar por ela."
     },
     {
       "tipo": "pergunta",
@@ -876,45 +877,45 @@
         },
         {
           "tipo": "rotulo",
-          "x": 0.105,
+          "x": 0.081,
           "y": 0.01,
           "texto": "Punho",
           "cor": "marinho"
         },
         {
           "tipo": "rotulo",
-          "x": 0.105,
+          "x": 0.067,
           "y": 0.211,
           "texto": "Rotação",
           "cor": "marinho"
         },
         {
           "tipo": "rotulo",
-          "x": 0.105,
+          "x": 0.056,
           "y": 0.415,
           "texto": "Preensão",
           "cor": "marinho"
         },
         {
           "tipo": "rotulo",
-          "x": 0.105,
+          "x": 0.033,
           "y": 0.62,
           "texto": "Repetição",
           "cor": "marinho"
         },
         {
           "tipo": "rotulo",
-          "x": 0.105,
+          "x": 0.045,
           "y": 0.815,
           "texto": "Força (SI)",
           "cor": "marinho"
         }
       ],
-      "notas": "Conferir os palpites. Meta-análise de Bretschneider, 2022, lida no texto completo: cinco fatores, cada um com duas coortes. Cada painel é um fator, com o nome na etiqueta azul; à direita de 1 é mais risco. A letra é pequena: os números estão no cartão. Na ordem da figura: 1, girar o antebraço mais de 4 horas por dia, razão de chances de 1,85, de 1,10 a 3,10. 2, repetição acima de 15 por minuto, 0,71, de 0,42 a 1,20: inconclusivo, não protetor, e não exclui aumento de 20%; nesse painel o eixo está rotulado ao contrário. 3, força com duração, o Strain Index, 1,75, de 1,11 a 2,78. O Strain Index e a repetição vêm das mesmas duas coortes, e o índice inclui a frequência de esforços: repetir com força pesa. Pela minha conta, com o risco bruto dos não expostos, 6,0% (26 de 432) e 4,3% (31 de 717): cerca de 1 caso a mais a cada 25 expostos à força com duração, intervalo de 11 a 162, e a cada 30 à rotação, de 13 a 243, em um ano ou mais. Dizer os intervalos: são enormes. Desafio: os autores dão certeza alta ao Strain Index, com AMSTAR 2 criticamente baixa e duas coortes; eu daria moderada a baixa. Quem escreveu girar no chat, citar o nome.",
+      "notas": "Conferir os palpites. Meta-análise de Bretschneider, 2022, lida no texto completo: cinco fatores, cada um com duas coortes. Cada painel é um fator, com o nome na etiqueta azul; à direita de 1 é mais risco. A letra é pequena: os números estão no cartão. Na ordem da figura: 1, girar o antebraço mais de 4 horas por dia, razão de chances de 1,85, de 1,10 a 3,10. 2, repetição acima de 15 por minuto, 0,71, de 0,42 a 1,20: inconclusivo, não protetor, e não exclui aumento de 20%; nesse painel o eixo está rotulado ao contrário. 3, força com duração, o Strain Index, 1,75, de 1,11 a 2,78. O Strain Index e a repetição vêm das mesmas duas coortes, e o índice inclui a frequência de esforços: repetir com força pesa. Pela minha conta, com o risco bruto dos não expostos, 6,0% (26 de 432) e 4,3% (31 de 717): cerca de 1 caso a mais a cada 25 expostos à força com duração, intervalo de 11 a 162, e a cada 30 à rotação, de 13 a 243, em um ano ou mais. Dizer os intervalos: são enormes. Nenhum OR combinado passou de 2,5; um estudo isolado, Descatha, chegou a 2,67 na rotação. Desafio: os autores dão certeza alta ao Strain Index, com AMSTAR 2 criticamente baixa e duas coortes; eu daria moderada a baixa. Quem escreveu girar no chat, citar o nome.",
       "lateral": [
         {
           "estilo": "escuro",
-          "texto": "**Leitura:** nenhum OR passou de 2,5. É incidência em quem trabalha sem dor, não prognóstico."
+          "texto": "**Leitura:** nenhum OR combinado passou de 2,5. É incidência em quem trabalha sem dor, não prognóstico."
         },
         {
           "estilo": "claro",
@@ -966,7 +967,7 @@
         "Bretschneider2022",
         "Ikonen2022"
       ],
-      "notas": "As revelações reunidas, sem drama: quem escreveu a aula de capacitação fui eu, seguindo a diretriz. Primeira linha, corrige: a tabela de Sanders que estava no nosso próprio slide diz por mil; 3,4 por mil ao ano, 9 por mil entre 40 e 49 anos. Li por mil como por cento, um erro de dez vezes. Segunda, matiza: a repetição isolada ficou inconclusiva; força com duração e rotação se associaram, nas mesmas duas coortes. Terceira, matiza: o desfecho é diferente, algum sintoma contra muito melhor. Quarta, a conferir: no resumo de Sanders, a recorrência em 2 anos foi de 8,5%. O único 54% do nosso lote responde a outra pergunta, e essa resposta fica para a aula 2; não adiantar o número. Perguntar: quem já repetiu um desses números para um paciente? Eu repeti.",
+      "notas": "As revelações reunidas, sem drama: quem escreveu a aula de capacitação fui eu, seguindo a diretriz. Primeira linha, corrige: a tabela de Sanders que estava no nosso próprio slide diz por mil; 3,4 por mil ao ano, 9 por mil entre 40 e 49 anos. Li por mil como por cento, um erro de dez vezes. Segunda, matiza: a repetição isolada ficou inconclusiva; força com duração e rotação se associaram; a repetição isolada e o Strain Index vêm das mesmas duas coortes, e o índice inclui a frequência. Terceira, matiza: o desfecho é diferente, algum sintoma contra muito melhor. Quarta, a conferir: no resumo de Sanders, a recorrência em 2 anos foi de 8,5%. O único 54% do nosso lote responde a outra pergunta, e essa resposta fica para a aula 2; não adiantar o número. Perguntar: quem já repetiu um desses números para um paciente? Eu repeti.",
       "destaque_linhas": [
         0
       ]

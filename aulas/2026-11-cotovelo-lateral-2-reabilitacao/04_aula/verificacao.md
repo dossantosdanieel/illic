@@ -1,7 +1,7 @@
 # Verificação — Tendinopatia lateral do cotovelo: reabilitação com dose
 
-Data: 2026-11-24 (revisada no mesmo dia depois da revisão independente; segunda rodada em 2026-11-25, com a revisão completa e a coerência da trilha, seções 9 e 10). Deck: `04_aula/cotovelo-lateral-2-reabilitacao.pptx`
-(25 slides, 24 cronometrados, 33:25 min pela soma de `tempo_s`; 34:31 estimados pela fala das notas + interações). Versão 1: montada com 1 artigo lido no texto completo (Bretschneider 2022) e o
+Data: 2026-11-24 (revisada no mesmo dia depois da revisão independente; segunda rodada em 2026-11-25, com a revisão completa e a coerência da trilha, seções 9 e 10; terceira rodada em 2026-11-25, com a conferência final adversarial, seção 11). Deck: `04_aula/cotovelo-lateral-2-reabilitacao.pptx`
+(25 slides, 24 cronometrados, 33:25 min pela soma de `tempo_s`; 33:10 estimados pela fala das notas + interações, eram 34:31). Versão 1: montada com 1 artigo lido no texto completo (Bretschneider 2022) e o
 resto em resumo ou em print da aula de capacitação. Quando os PDFs pendentes chegarem (`02_artigos/pendentes.md`), faça a
 passada da seção 8.
 
@@ -24,18 +24,19 @@ Só este. Todo o resto da aula é resumo, print ou cálculo (seção 2).
 
 | Afirmação | Slide | Artigo | Origem e por quê |
 |---|---|---|---|
-| 89% muito melhores ou recuperados em 1 ano (braços controle) | 3 | Ikonen2022 | resumo; PDF aberto (PMC), download automático falhou (pendente item 4) |
+| 89% muito melhores ou recuperados em 1 ano (braços controle; IC 80% a 97%) | 3; q2 | Ikonen2022 | resumo: 89% = 189 de 213; só 213 dos 1085 participantes dos 24 ECR têm esse desfecho de 1 ano (ficha, Amostra); o comentário da q2 agora diz isso; PDF aberto (PMC), download automático falhou (pendente item 4) |
 | Metas PRTEE pelas duas réguas da DMCI, iguais às da aula 1: proporcional ≤ 45 e ≤ 36; absoluta ≤ 51 e ≤ 47 | 2, 3, 23 (notas) | Poltawski2011 | resumo (22% e 37%; 7 e 11 pontos); **calc.**: 58 × 0,78 = 45,2 → ≤ 45; 58 × 0,63 = 36,5 → ≤ 36; 58 − 7 = 51; 58 − 11 = 47 |
 | Sucesso 92/47/32% em 6 sem; 69/91/83% em 52 sem | 5, 7, 22 | Smidt2002 | resumo; Lancet, institucional (item 13) |
 | 1 a menos bem em 1 ano a cada 5 que trocam fisioterapia por injeção | 5 | Smidt2002 | **calc.**: 90,6% − 69,4% = 21,2 pontos → 1/0,212 ≈ 4,7 (percentuais com n inferidos: 58/64 e 43/62) |
-| 45 pontos em 6 semanas, ~1 sucesso a mais a cada 2–3 injeções (só na fala) | 5, notas | Smidt2002 | **calc.**: 91,9% − 46,9% = 45 → 1/0,45 ≈ 2,2 |
-| DMP 1,44 (4 sem), −0,40 (26 sem), −0,31 (52 sem) (só na fala) | 5, notas | Coombes2010 | resumo |
+| ~1 sucesso a mais a cada 2–3 injeções em 6 semanas (só na fala) | 5, notas | Smidt2002 | **calc.**: 91,9% − 46,9% = 45 → 1/0,45 ≈ 2,2 |
+| Espera 83% em 1 ano × corticoide 69%: "comparação não relatada no resumo" (cartão claro) | 5 | Smidt2002 | resumo: só a diferença fisioterapia × corticoide é relatada como significativa (ficha, Resultado). O cartão dizia "à frente do corticoide" (corrigido na seção 11). As DMP de Coombes 2010 (1,44, −0,40, −0,31) saíram das notas do slide 5 (corte de tempo) |
 | Ruptura de tendão 1 em 991 (0,1%) (fala e pós-teste) | 18, notas; q3, q7 | Coombes2010 | resumo |
 | Recidiva 54% × 12%; 83% × 96% em 1 ano | 6, 7, 20, 22 | Coombes2013 | resumo; JAMA institucional (item 22). RR do resumo não usados (incoerentes com as proporções) |
 | Efeito principal da fisioterapia na recidiva: 29% × 38%, P = 0,25, RR 1,31 (IC 99% 0,73 a 2,35) — "não mostrou proteção", não "não protegeu"; 4 sem: 68% × 71% (fala) | 6, 7; q3 | Coombes2013 | resumo (efeito principal nos dois braços de injeção; o braço corticoide + fisioterapia isolado só no TC) |
 | 1 a menos recuperado em 1 ano a cada 8 injeções | 6 | Coombes2013 | **calc.**: 1/0,13 = 7,7 (sem IC: n por célula no TC) |
-| "De cada 2 que melhoram com a injeção, cerca de 1 volta a doer" (fala e resumo) | 6, 7 (notas) | Coombes2013 | resumo (recidiva = bem em 4 ou 8 sem e não depois); **frase condicionada ao denominador**, que só está no TC. O NNH "1 recidiva a mais a cada 3 injeções" **foi retirado** do deck, das notas e do resumo |
+| "Mais da metade dos que melhoram com a injeção volta a doer" (fala, resumo e algoritmo) | 6, 7 (notas) | Coombes2013 | resumo (recidiva = bem em 4 ou 8 sem e não depois) + **calc. lógico**: quem recidiva é subconjunto de quem melhorou; se o denominador forem os que melhoraram, são 54%; se forem todos os randomizados, a fração entre os que melhoraram é ainda maior. Vale para qualquer denominador; a frase anterior ("de cada 2, cerca de 1") dependia dele. O NNH "1 recidiva a mais a cada 3 injeções" **foi retirado** do deck, das notas e do resumo |
 | 47 de 65 sucessos com injeção regrediram (72%) | 6 | Bisset2006b | resumo; **calc.** 47/65 |
+| Recorrência da doença na população: 8,5% em 2 anos; o único 54% do lote é a recidiva de Coombes (fecha o "até 54% em 2 anos" do slide 22 da aula 1) | 6 (notas e rodapé); resumo do aluno, ponto 1 | Sanders2015 | resumo (PubMed, em `01_busca/registros.json` da aula 1: "The recurrence rate within 2 years was 8.5%"); se a ref. 134 da diretriz é o ensaio de Coombes, só no PDF da diretriz |
 | Fisioterapia com MWM > espera em 6 sem, = em 52 (fala) | 16, notas; q6 | Bisset2006b | resumo |
 | Corticoide + HSR: não acelerou; QuickDASH 15 pior em 52 sem (fala) | 7, notas; q2 | Couppe2022 | resumo; desfecho secundário |
 | PRP: dor 0,16 em 10 (0,60 melhor a 0,29 pior), certeza moderada | 8 | Karjalainen2021 | resumo; PMC (item 10) |
@@ -48,7 +49,7 @@ Só este. Todo o resto da aula é resumo, print ou cálculo (seção 2).
 | Sucesso 29% × 26%; dif. 2,3 (−24,5 a 29,1); PRTEE DMP −0,92 (−1,58 a −0,26); preensão −0,33 (−0,97 a 0,30) | 9, 10 | Vuvan2020 | resumo |
 | Barras em 4 categorias: isométrico 29/57/0/14 (n 21); espera 26/37/37/0 (n 19); 3 de 21 pioraram com o exercício | 10 | Vuvan2020 | **print s56** (manuscrito aceito; olhado de novo nesta revisão: exercício 1 recuperado, 5 muito melhor, 12 melhor, 3 pior; espera 5 muito melhor, 7 melhor, 7 sem mudança) + **calc.**: 6/21, 12/21, 0/21, 3/21; 5/19, 7/19, 7/19, 0/19 |
 | 40 de 533 voluntários | 10 | Vuvan2020 | print s50 (fluxograma) |
-| Dose: 20% → 35% da CVM (+5% a cada 2 sem pelo calendário), 4 × 30 s / 3 × 45 s, diário, sem falha, cotovelo 90°, pronado | 12, 13, 19, 22 | Vuvan2020 | **redigitado s51–s53** (não é print do artigo) — conferir cada valor no PDF |
+| Dose: 20% → 35% da CVM (+5% a cada 2 sem pelo calendário), 4 × 30 s nas semanas ímpares e 3 × 45 s nas pares (semana 1: 4 × 30 s), diário, sem falha, cotovelo 90°, pronado | 12, 13, 19, 22; q1 | Vuvan2020 | **redigitado s51–s53** (não é print do artigo; ficha, Intervenção: "semanas ímpares 4 repetições de 30 s, semanas pares 3 repetições de 45 s") — conferir cada valor no PDF |
 | Dor −0,53 em 10 (−0,92 a −0,14) × mínimo; não se manteve | 11, 22 | Wallis2024 | resumo; PMC (item 8) |
 | Eventos adversos (dor, hematoma, gastrointestinais), leves e transitórios: 313 × 85/1000; RR 3,69 (0,98 a 13,97); certeza incerta | 11 (nota) | Wallis2024 | resumo. Antes estava como "dor depois da sessão", o que ia além da fonte |
 | Exercício × corticoide melhor exceto dor no curto prazo (baixa); × espera muito baixa | 11 | Karanasios2021 | resumo |
@@ -56,14 +57,16 @@ Só este. Todo o resto da aula é resumo, print ou cálculo (seção 2).
 | 3 × 10, 1–5 lb (0,5–2,3 kg); subir sem dor tardia em 24 h **ou** dor que não sobe mais de 1 nível | 13, 19; q1 | Day2019 | **print s63–s64** (Tab. 1: "no longer experiencing 24-hour post onset muscle soreness **or** their pain does not increase > 1 level"); **calc.** lb × 0,4536. A versão anterior trazia "e" (corrigido) |
 | Tab. 2: RV+ 2,6 (0,96–7,3), 2,3 (0,82–6,4), 2,1 (0,76–6,0), 1,5 (0,78–2,9); pós-teste 85–91%; E 0,5; ~13 não respondedores | 15 | Vicenzino2009 | **print s38** (figura do slide); ~13 = **calc.** da ficha (21% de 64) |
 | A regra prediz resposta nas 3 primeiras semanas a partir do início do tratamento: a pergunta do slide 14 usa a linha de base da aula 1 (46 anos, 120 N, 320 N) | 14 | Vicenzino2009 | resumo ("identify initial responders") |
+| Renata com os três critérios: "o resumo diz 100%, de poucos pacientes, modelo não validado, cada critério com IC que inclui 1: alta, não certeza" (responde a pergunta do slide 14) | 15 (notas); resumo do aluno, ponto 5; comentário da q5 | Vicenzino2009 | resumo ("Probability of improvement rose from 79 to 100% if all three were positive"); quantos tinham os três, só no TC |
+| Título do slide 15: "os critérios da regra" (eram "quatro critérios"); o ganho com a MWM > 25% é a 4ª linha da tabela, não critério da regra | 15 | Vicenzino2009 | resumo (regra final: idade, preensão afetada e não afetada) + print s38 |
 | ~70% com o critério "> 112 N" negativo (fala, desafio) | 15, notas | Vicenzino2009 | **calc.**: RV− = 0,47/0,77 = 0,61; chance 3,76 × 0,61 = 2,29 → 70% |
 | Irritabilidade da Renata: moderada (nível IV) — cartão do slide 3; critérios nas notas do slide 12 (moderada = dor leve a moderada no trabalho que dura > 6 h e limita; grave = dor em repouso que tira o sono); níveis I–III leve, IV–V moderada no cartão do slide 19 | 3, 12 (notas), 19 | Lucado2022 | **print s42** (provável Tab. 8, classificação de MacDermid e Silbernagel), atribuição provável; a Renata (5–6/10 no salão, > 6 h, recusa clientes, dorme bem) é dado do caso fixado no roteiro da aula 1 |
 | Mecanismo (só se perguntarem): estender o cotovelo aumenta o contato do ECRB com o capítulo, em cadáver (vulnerabilidade, não causa); algometria local e regional como padrão esperado, hiperalgesia a distância pediria outra hipótese | 12 (notas) | Bunata2007, Rio2021 | resumo; a conferir. Pedido do plano da trilha (mecanismo e sensibilização) que a aula 1 mandou para a aula 2 |
-| "Este 79% (Vicenzino, melhora em 3 semanas) não é o 79% da aula 1 (teto do diagnóstico em Vuvan)" | 15, 22 (notas) | Vicenzino2009 | coerência da trilha: coincidência dita em voz alta |
+| "Este 79% (Vicenzino, melhora em 3 semanas) não é o 79% da aula 1 (teto do diagnóstico em Vuvan)" | 15 (notas; saiu do 22 no corte de tempo) | Vicenzino2009 | coerência da trilha: coincidência dita em voz alta |
 | Corticoide em 1 ano: 69% (Smidt) × 83% (Coombes), definições de sucesso diferentes | 5, 6, 18 (notas) | Smidt2002, Coombes2013 | resumo; a amarração está nas notas do slide 18 |
-| ~66% com o critério da idade negativo (pós-teste) | q5 | Vicenzino2009 | **calc.**: RV− = 0,39/0,77 = 0,51; 3,76 × 0,51 = 1,9 → 66% |
-| MWM 0,43 (0,15 a 0,71) curto prazo (métrica a conferir: talvez dentro do grupo); IC cruzam zero em 26 semanas; painel A: 4 de 5 IC acima de zero, um estudo contado 2 vezes | 16 | Lucado2019 | resumo + **print s81** (painel B recortado; painel A só resumido, leitura no olho) |
-| Sintomas de nervo: +15,08 de dor e +7,32 de DASH em 8 semanas (fala) | 18, notas | Waugh2004 | resumo + print s40 (Tab. 5); escala da dor no TC |
+| ~66% com o critério da idade negativo (pós-teste) | q5 | Vicenzino2009 | **calc.**: RV− = 0,39/0,77 = 0,51; 3,76 × 0,51 = 1,9 → 66%. O cenário agora dá **só** a idade (preensão ainda não medida): a regra não informa como combinar critérios, e a versão anterior descartava dois critérios positivos |
+| MWM 0,43 (0,15 a 0,71) curto prazo (métrica a conferir: talvez dentro do grupo; por isso o título diz "a dor cai", não "a MWM ajuda"); IC cruzam zero em 26 semanas; painel A: 4 de 5 IC acima de zero, um estudo contado 2 vezes | 16 | Lucado2019 | resumo + **print s81** (painel B recortado; painel A só resumido, leitura no olho) |
+| Sintomas de nervo: uns 15 pontos de dor a mais em 8 semanas (fala) | 18, notas e rodapé | Waugh2004 | resumo + print s40 (Tab. 5: +15,08 de dor e +7,32 de DASH); escala da dor no TC. Agora no rodapé do slide 18 (o validador avisava referência sem fonte) |
 | Exercício grau B; 20–40% CVM grau F; regionais grau C; reavaliar pela irritabilidade (sem prazo); alta em 6–12 meses com dor intermitente tolerável | 16, 19, 20; q7 | Lucado2022 | **print s123/s124**, atribuição provável, sem página |
 
 ## 3. Proposta clínica (sem ensaio que teste)
@@ -105,7 +108,7 @@ Só este. Todo o resto da aula é resumo, print ou cálculo (seção 2).
   interno (aula gravada para a equipe); se a aula for vendida, refazer como tabela nativa (Tab. 2) e gráfico de
   losangos nativo (Fig. 2B), ou pedir permissão ao editor.
 
-## 6. Checagens automáticas (segunda rodada, 2026-11-25)
+## 6. Checagens automáticas (segunda rodada, 2026-11-25; a terceira rodada está na seção 11)
 
 - `validar_aula.py` (via `montar_deck.py`): **APROVADA com avisos**, 0 erros. 33:25 pela soma de `tempo_s`;
   **tempo estimado** pelo aviso novo da skill (fala das notas a ~130 palavras/min + interações): **34:31**, dentro de
@@ -139,7 +142,7 @@ Só este. Todo o resto da aula é resumo, print ou cálculo (seção 2).
 - A dose do isométrico (slides 12, 13, 19) vem de tabela redigitada pela aula de capacitação: é o número mais "de
   segunda mão" da aula e o primeiro a conferir quando o PDF de Vuvan 2020 chegar.
 - Desafio do slide 8 (ondas de choque, −1,21) é oral; não projetar o número antes de ver o limiar dos autores.
-- Ensaiar o tempo: 33:25 previstos e 34:31 estimados pela fala, perto do teto de 35. Cortes de reserva se atrasar:
+- Ensaiar o tempo: 33:25 previstos e 33:10 estimados pela fala (eram 34:31), com cerca de 2 min de folga até o teto de 35. Cortes de reserva se atrasar:
   slide 11 (números no resumo) e ler só um bilhete da aula 1 no slide 3.
 - Separar dois bilhetes de saída da aula 1 antes da aula (slide 3) e copiar os desta aula no slide 24 (abrem a aula 3).
 
@@ -147,7 +150,7 @@ Só este. Todo o resto da aula é resumo, print ou cálculo (seção 2).
 
 | Slide | PDF pendente (item em `pendentes.md`) | O que conferir | Figura que entra |
 |---|---|---|---|
-| 6, 7, 20, 22; resumo ponto 1; q4 | Coombes2013 (22) | **Denominador da recidiva** (todos os randomizados ou só quem melhorou em 4 ou 8 semanas). **NNH da recidiva: refazer quando houver o denominador** (hoje fora do deck) e decidir se a frase "de cada 2 que melhoram, cerca de 1 volta a doer" fica; recidiva no braço corticoide + fisioterapia isolado (para dizer se "não mostrou proteção" vira "não protegeu" ou o contrário); RR corretos (resumo incoerente); braço placebo sem fisioterapia; dose do corticoide e da fisioterapia; eventos adversos; IC das diferenças | Gráfico de sucesso em 4, 8, 26 e 52 semanas por grupo, redesenhado "Adaptado de" |
+| 6, 7, 20, 22; resumo ponto 1; q4 | Coombes2013 (22) | **Denominador da recidiva** (todos os randomizados ou só quem melhorou em 4 ou 8 semanas). **NNH da recidiva: refazer quando houver o denominador** (hoje fora do deck) (a frase de consultório já é "mais da metade dos que melhoram volta a doer", que vale para qualquer denominador; com o denominador, dizer o número exato); recidiva no braço corticoide + fisioterapia isolado (para dizer se "não mostrou proteção" vira "não protegeu" ou o contrário); RR corretos (resumo incoerente); braço placebo sem fisioterapia; dose do corticoide e da fisioterapia; eventos adversos; IC das diferenças | Gráfico de sucesso em 4, 8, 26 e 52 semanas por grupo, redesenhado "Adaptado de" |
 | 12, 13, 19, 22 | Vuvan2020 (23) | Tabela de dose real (substituir a redigitada s51–s53): % da CVM por semana, 4 × 30 s / 3 × 45 s, pausa, frequência, posição; como a CVM foi medida e convertida em água; regra de dor; adesão | Tabela de dose do artigo, se a licença permitir; senão manter a tabela nativa |
 | 9, 10 | Vuvan2020 (23) | As 4 categorias da percepção global (21 no gráfico × 20 analisados no fluxograma), em especial os 3 que pioraram com exercício e os 7 sem mudança na espera; eventos adversos; DP para converter DMP em pontos de PRTEE e newtons | Figura de percepção global da versão publicada (sem marca d'água) no lugar das barras "Adaptado de" |
 | 5, 7, 22 | Smidt2002 (13) | n por braço (os percentuais usam n inferidos), definição de sucesso, conteúdo da fisioterapia de 2002, taxa de recidiva; refazer o NNH de 1 em 5 com IC | Gráfico de sucesso ao longo do tempo, se existir (licença reservada: redesenhar "Adaptado de") |
@@ -216,6 +219,57 @@ Só este. Todo o resto da aula é resumo, print ou cálculo (seção 2).
 | Bilhetes de saída não usados | Notas do slide 1 (separar dois) e do slide 3 (ler dois e perguntar quem já mudou algo); slide 24 diz que abrem a aula 3 | Aula 3, slides 3 e 28; aula 1, slide 1 |
 | Mecanismo e sensibilização; bandagem, TENS, laser, crioterapia | Duas frases nas notas do slide 12 (Bunata 2007, Rio 2021, a conferir); resumo do aluno, ponto 7: fora desta versão | Atualizar `aulas/trilha-cotovelo-e-mao.md` (plano ainda promete esses recursos na aula 2) |
 | Termos e siglas | DMCI nos slides 2 e 3 e nas notas; rótulos "Karanasios 2021 (exercício)" e "(ondas de choque)" nos rodapés, no resumo, nas notas das referências e neste arquivo; "Bisset2006b" só aparece como id interno (o visível é "Bisset et al. 2006") | DMCI e LCU nas aulas 1 e 3 |
+
+## 11. Conferência final adversarial (terceira rodada, 2026-11-25)
+
+Achados da conferência final que tocam a aula 2, conferidos nas fichas e no mapa antes de aplicar.
+
+| Achado | Procede? | O que foi feito |
+|---|---|---|
+| s14 pergunta a chance com os 3 critérios e o s15 não responde; título falava em "quatro critérios" | sim (ficha Vicenzino2009: "79 to 100% if all three were positive"; regra = 3 critérios) | Título do s15: "Os critérios da regra têm razão de verossimilhança com intervalo que inclui 1"; item 3 de `o_que_olhar`: "Ganho com a MWM acima de 25% (não entrou na regra)"; notas do s15 com a resposta ("o resumo diz 100%, de poucos pacientes... alta, não certeza"); resumo do aluno, ponto 5 |
+| Pós-teste q5 usa só a RV− da idade e descarta dois critérios positivos | sim | Cenário reescrito: Jorge ainda não mediu a preensão, só se sabe a idade; gabarito B (66%) mantido; opção D trocada por "79%: a regra só informa sobre quem preenche o critério" (erro real: tratar o negativo como neutro); comentário explica que a regra não informa a combinação |
+| q2 da aula 2 repete "braços controle de ensaios" para o 89% de Ikonen | sim (ficha Ikonen2022: 189 de 213) | Comentário da q2: "189 de 213: só 213 dos 1085 participantes entram nesse número" (a 1ª redação, "subconjunto de 189 de 213 participantes", trocava evento por denominador; corrigida na checagem independente, seção 12). O cartão e as notas do s15 e a q5 da aula 1 são da outra agente |
+| 54% da aula 1 não fechado | sim (mapa, linha 238; verificação da aula 1, linhas 148, 192 e 211; resumo de Sanders 2015 nos registros da busca) | Notas do s6 abrem fechando a pergunta: o único 54% do lote é a recidiva de 1 ano após corticoide (× 12%); a recorrência populacional foi de 8,5% em 2 anos (Sanders); a ref. 134 da diretriz fica a conferir no PDF. Sanders2015 entrou nas referências e no rodapé do s6, e no ponto 1 do resumo. Não virou 5ª linha do s20 (93 palavras visíveis; o tempo precisava descer) |
+| Reavaliação: 4 a 6 semanas na aula 1 × a cada 3 semanas nas aulas 2 e 3 | procede, mas a correção é na aula 1 | Nada a mudar aqui: a aula 2 já diz "a cada 3 semanas (proposta clínica)" no s19, nas propostas, no algoritmo e nas referências. Unificar no resumo da aula 1 (outra agente) |
+| s13 "4 × 30 s ou 3 × 45 s" sugere escolha livre | sim (ficha Vuvan2020, Intervenção: ímpares 4 × 30 s, pares 3 × 45 s) | Linha Volume: "4 × 30 s; nas semanas pares, 3 × 45 s; todo dia" (a coluna é a semana 1); notas do s13 ("a semana 1 da Renata é 4 de 30"); resumo, ponto 4; comentário da q1 |
+| s7: "de cada 2 que melhoram, cerca de 1 volta a doer" sem condição | sim | Trocado por "mais da metade dos que melhoram volta a doer", que vale para qualquer denominador (quem recidiva é subconjunto de quem melhorou; ver seção 2). Mesma troca nas notas do s6, no resumo (ponto 1) e no algoritmo (item 1) |
+| s16: título "A MWM ajuda" com métrica talvez dentro do grupo | sim | Título: "Com a MWM, a dor cai no curto prazo; aos 6 meses, o intervalo cruza o zero" (descreve a mudança sem afirmar efeito contra controle; a legenda segue dizendo "métrica a conferir") |
+| Tempo estimado 34:31 a 29 s do teto; Waugh2004 sem fonte | sim | Fala cortada das notas dos slides 3, 5 (parágrafo de Coombes 2010), 6, 7, 8, 10, 11, 13, 15, 16, 17, 18, 19 e 22; nenhuma interação mexida: **33:10** estimados (33:25 de `tempo_s`). O s19 estima 82 s para 75. Waugh2004 e Coombes2010 no rodapé do s18 (Coombes2010 saiu do rodapé do s5, cujas notas não o citam mais) |
+| s5: "E a espera: 83% em 1 ano, à frente do corticoide" | sim (ficha Smidt2002: só fisioterapia × corticoide significativa) | Cartão: "E a espera: 83% em 1 ano (corticoide, 69%; comparação não relatada no resumo)"; notas dizem o mesmo |
+| Nomes repetidos entre os pós-testes (Carlos, Lúcia, Marcos) | sim | Aula 2: Carlos → Wagner (q1), Lúcia → Denise (q6), Marcos → Ricardo (q7); nenhum dos três aparece nas aulas 1 e 3 |
+
+Checagens desta rodada:
+
+- `validar_aula.py` (via `montar_deck.py`): **APROVADA com avisos, 0 erros**. 33:25 por `tempo_s`; **33:10 estimados**.
+  Avisos que ficam: palavras visíveis acima de 70 nos slides 3, 6, 8, 11, 12, 13 (96), 16 (74), 19, 20, 22 e 23, decididos
+  como na seção 6; figuras dos slides 15 e 16 de baixa resolução e com direitos reservados. O aviso "Waugh2004 sem
+  fonte" sumiu.
+- Render (`LANG=pt_BR.UTF-8`): olhados em tamanho cheio os slides alterados 5, 6, 13, 15, 16, 18 e 25 e as três folhas de
+  contato. Títulos novos do 15 e do 16 em duas linhas, sem encostar na figura; linha Volume do 13 em uma linha; rodapés
+  do 6 e do 18 em uma linha. Nenhum texto reduzido ou fora da caixa.
+- `conferir_pptx.py`: nenhum problema (24 notas com tempo acumulado, 2 gráficos nativos, 53 partes validadas no XSD).
+- `materiais.py`: nenhum aviso; `pre_pos_teste.md` e `resumo_aluno.md` regenerados com os nomes, a q5 e o resumo novos.
+
+## 12. Checagem independente da correção da seção 11 (2026-11-25)
+
+Cada achado da seção 11 conferido de novo no deck.json, nas notas, no questoes.json, no resumo e nos PNG, com as contas
+refeitas. Contas que conferem: RV− da idade (1 − 0,61) ÷ 0,77 = 0,51 → 3,76 × 0,51 = 1,9 → 66%; opção C 1 ÷ 2,6 → 59%;
+critério de 112 N negativo (1 − 0,53) ÷ 0,77 = 0,61 → ~70% (notas do s15); 20% e 35% de 8 kg = 1,6 e 2,8 kg (s13) e de
+12 kg = 2,4 e 4,2 kg (q1); 90,6 − 69,4 = 21 pontos → 1 a cada 5 (s5); 96 − 83 = 13 → 1 a cada 8 (s6); 140 → 185 N = +32%
+(s16); ímpares 4 × 30 s e pares 3 × 45 s (ficha Vuvan2020); 8,5% em 2 anos no resumo de Sanders 2015 (registros da aula 1);
+"mais da metade dos que melhoram" vale para qualquer denominador (≥ 54%).
+
+| Achado | O que estava errado na correção | O que foi feito |
+|---|---|---|
+| q2 (Ikonen) | "num subconjunto de 189 de 213 participantes" trocava evento por denominador: 89% = 189 ÷ 213; o subconjunto é de 213 dos 1085 | Comentário da q2: "189 de 213: só 213 dos 1085 participantes entram nesse número"; mesma correção no roteiro (tabela de fontes) e nas seções 2 e 11 |
+| s15 (notas) | A frase "Este 79% é de Vicenzino, não o da aula 1" tinha ficado depois da resposta dos 100%, longe do 79% a que se refere | Frase movida para logo depois do retângulo 2; nenhuma palavra a mais |
+| Sanders2015 (referência e notas do slide 25) | Diziam "só nas notas do slide 6", mas Sanders entrou também no rodapé do s6 e no ponto 1 do resumo | Texto atualizado nos dois lugares |
+| Seção 8, linha do Coombes 2013 | Pendência ainda mandava "decidir se a frase 'de cada 2 que melhoram…' fica", frase que já saiu | Atualizada para a frase atual |
+
+Sem regressão nos demais itens: títulos dos s15 e s16, cartão do s5, linha Volume do s13, notas dos s6 e s7, rodapé do s18,
+q5, nomes Wagner, Denise e Ricardo (ausentes das aulas 1 e 3; Carlos, Lúcia e Marcos ausentes da aula 2), resumo e
+algoritmo batem entre slide, nota, resumo e pós-teste. Observação sem mudança (anterior à correção): as notas dos s14 e s21
+dizem "chat em cascata, 25 segundos" (tempo de escrever) para interações de 40 s e 35 s no deck.
 
 ---
 

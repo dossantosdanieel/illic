@@ -24,8 +24,8 @@ slides 1 a 44 da aula base (`_base-capacitacao-cotovelo/inventario_LET.md` e os 
 
 ## 0. Em poucas linhas: o que esta aula pode dizer hoje
 
-1. Sem tratamento ativo, quase todos melhoram em 1 ano: 89% "muito melhor ou recuperado" (IC 80% a 97%) nos braços
-   controle de 24 ECRs (Ikonen2022, resumo), 83% de sucesso na espera em 52 semanas (Smidt2002, resumo).
+1. Sem tratamento ativo, quase todos melhoram em 1 ano: 89% "muito melhor ou recuperado" (189 de 213; IC 80% a 97%) nos braços
+   controle de ensaios (a revisão reúne 24 ECRs, mas o desfecho de 1 ano vem de 213 pessoas; Ikonen2022, resumo), 83% de sucesso na espera em 52 semanas (Smidt2002, resumo).
 2. A chance de melhorar não cai com o tempo de dor (meia-vida de 2,5 a 3 meses, independente da duração prévia;
    Ikonen2022, resumo). Isso convive com Smidt2006 (duração longa associada a mais dor em 12 meses): é a melhor
    controvérsia da aula.
@@ -41,7 +41,7 @@ slides 1 a 44 da aula base (`_base-capacitacao-cotovelo/inventario_LET.md` e os 
    certeza baixa.
 7. Correção dura na aula base: a incidência anual é de 3,4 **por 1000** (0,34%), não 3% (print s002, Tab. 2 de Sanders 2015).
 8. O risco ocupacional está na força com duração e na rotação do antebraço, não na repetição isolada (Bretschneider2022,
-   p.6 Fig. 2; p.7 Tab. 3), e é moderado (nenhum OR acima de 2,5).
+   p.6 Fig. 2; p.7 Tab. 3), e é moderado (nenhum OR combinado acima de 2,5; isolado, Descatha chegou a 2,67 na rotação).
 
 ---
 

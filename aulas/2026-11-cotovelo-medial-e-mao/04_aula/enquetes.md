@@ -47,7 +47,7 @@ D) Tratar a tendinopatia, orientar posições para o nervo e reavaliar.
 - **Revelação:** slide 10.
 - **Aberta por:** 1 min. Feche e mostre o resultado. O Meet não mostra ao vivo quem votou em quê: peça um voluntário de cada opção, começando pela menos votada ("quem votou B, abre o microfone ou levanta a mão na câmera e defende em 15 segundos"), e chame pelo nome quem se apresentar. Se ninguém vier, dê voz à opção: "o que faria alguém votar B?".
 
-## Enquete 3 · slide 15 · aos 14:20
+## Enquete 3 · slide 15 · aos 14:35
 
 *No slide:* O grau muda a chance de resolver sem cirurgia?
 
@@ -69,7 +69,7 @@ D) Graus 1–2: ~75%; grau 3: ~75%.
 - **Gabarito (só professor):** B) Graus 1–2: ~75%; grau 3: ~60%.
 - **Aberta por:** 1 min. Feche e mostre o resultado. O Meet não mostra ao vivo quem votou em quê: peça um voluntário de cada opção, começando pela menos votada ("quem votou B, abre o microfone ou levanta a mão na câmera e defende em 15 segundos"), e chame pelo nome quem se apresentar. Se ninguém vier, dê voz à opção: "o que faria alguém votar B?".
 
-## Enquete 4 · slide 21 · aos 24:20
+## Enquete 4 · slide 21 · aos 24:35
 
 *No slide:* Teste positivo confirma?
 
@@ -91,7 +91,7 @@ D) Cerca de 99%: sensibilidade de 0,99 confirma.
 - **Gabarito (só professor):** B) Cerca de 76%: sobe pouco.
 - **Aberta por:** 1 min. Feche e mostre o resultado. O Meet não mostra ao vivo quem votou em quê: peça um voluntário de cada opção, começando pela menos votada ("quem votou B, abre o microfone ou levanta a mão na câmera e defende em 15 segundos"), e chame pelo nome quem se apresentar. Se ninguém vier, dê voz à opção: "o que faria alguém votar B?".
 
-## Enquete 5 · slide 23 · aos 27:00
+## Enquete 5 · slide 23 · aos 27:25
 
 *No slide:* O que oferecer à Júlia?
 
@@ -121,13 +121,14 @@ D) Injeção já e tala por 4 semanas: é o topo do ranking.
 | 1:05 | 3 | CHAT EM CASCATA · 45 S | Escrever em uma linha uma coisa que se transfere da tendinopatia lateral para a medial e uma que não se transfere. |
 | 4:50 | 6 | ENQUETE · 1 MIN | Antes do exame, você dava 30% de chance de neuropatia ulnar no cotovelo. O Tinel deu positivo. E agora? |
 | 8:25 | 9 | ENQUETE · 1 MIN | Tinel positivo, formigamento ao acordar, sem espessamento, força intrínseca normal, valgo em movimento negativo. O que fazer agora? |
-| 14:20 | 15 | ENQUETE · 1 MIN | Dedo em gatilho sem tratamento prévio; órtese, injeção ou as duas. Em cerca de 2 anos, quantos resolvem sem cirurgia nos graus 1–2 e no grau 3? |
-| 17:35 | 17 | MÃO NA CÂMERA | Polegar para cima: a injeção que falhou no cotovelo é argumento contra injetar o dedo. Para baixo: não é. |
-| 18:10 | 18 | SALAS DE 3 · 3 MIN | Em salas de 3, decidir entre segunda injeção e encaminhamento para cirurgia, com o número que vale para ela e a frase para a paciente. |
-| 24:20 | 21 | ENQUETE · 1 MIN | Pré-teste de 70% para De Quervain. WHAT positivo (sensibilidade 0,99; especificidade 0,29). E agora? |
-| 27:00 | 23 | ENQUETE · 1 MIN | Quadro e palpação compatíveis com De Quervain, 7 semanas pós-parto, amamentando. Qual plano os dados sustentam melhor? |
-| 30:30 | 26 | CHAT EM CASCATA · 40 S | Escrever, sem voltar os slides, o teste que descarta melhor do que confirma e o que quase não muda a probabilidade. |
-| 32:45 | 28 | CHAT · 45 S | Uma frase sobre o que vai mudar no próximo paciente com dor medial, dedo em gatilho ou De Quervain. |
+| 11:45 | 12 | MÃO NA CÂMERA | Polegar para cima: você já prescreve pronação com faixa para a tendinopatia medial. Para baixo: não prescreve. |
+| 14:35 | 15 | ENQUETE · 1 MIN | Dedo em gatilho sem tratamento prévio; órtese, injeção ou as duas. Em cerca de 2 anos, quantos resolvem sem cirurgia nos graus 1–2 e no grau 3? |
+| 17:50 | 17 | MÃO NA CÂMERA | Polegar para cima: a injeção que falhou no cotovelo é argumento contra injetar o dedo. Para baixo: não é. |
+| 18:25 | 18 | SALAS DE 3 · 3 MIN | Em salas de 3, decidir entre segunda injeção e encaminhamento para cirurgia, com o número que vale para ela e a frase para a paciente. |
+| 24:35 | 21 | ENQUETE · 1 MIN | Pré-teste de 70% para De Quervain. WHAT positivo (sensibilidade 0,99; especificidade 0,29). E agora? |
+| 27:25 | 23 | ENQUETE · 1 MIN | Quadro e palpação compatíveis com De Quervain, 7 semanas pós-parto, amamentando. Qual plano os dados sustentam melhor? |
+| 30:55 | 26 | CHAT EM CASCATA · 40 S | Escrever, sem voltar os slides, o teste que descarta melhor do que confirma e o que quase não muda a probabilidade. |
+| 33:10 | 28 | CHAT · 45 S | Uma frase sobre o que vai mudar no próximo paciente com dor medial, dedo em gatilho ou De Quervain. |
 
 ## Plano B e gravação
 
@@ -141,21 +142,21 @@ Gerado de `interacao.plano_b` e `interacao.gravacao` no deck.json: corrija lá, 
 
 - **Plano B:** Sem enquete na conta: a letra no chat em cascata, todos enviam no 3; contar as letras em voz alta.
 
-### Slide 15 · ENQUETE · 1 MIN · aos 14:20
+### Slide 15 · ENQUETE · 1 MIN · aos 14:35
 
 - **Plano B:** Sem enquete na conta: a letra no chat em cascata, todos enviam no 3; contar as letras em voz alta.
 
-### Slide 18 · SALAS DE 3 · 3 MIN · aos 18:10
+### Slide 18 · SALAS DE 3 · 3 MIN · aos 18:25
 
 - **A gravação do Meet registra só a sala principal:** o que acontece nas salas não fica no vídeo. Antes de abrir as salas, dizer em voz alta: "quem assiste à gravação, pause o vídeo e decida em 3 minutos"; a faixa de entrega do slide traz a mesma instrução. Na edição, cortar o trecho de sala principal vazia (cerca de 3 minutos); na volta, ler em voz alta três entregas, para que entrem na gravação.
 - **Na volta, leia as entregas em voz alta:** assim elas entram na gravação. O chat da sala pode não voltar para a sala principal; peça ao porta-voz que escreva a entrega num bloco de notas e cole no chat principal ao voltar.
 - **Plano B:** Sem salas temáticas na conta: chat em cascata com a mesma entrega (decisão, número e frase para a Renata), 2 minutos, todos enviam no 3; ler duas entregas diferentes em voz alta. O bloco encolhe de cerca de 5 para 3 minutos; usar a sobra para o desafio da 2ª injeção no slide 19.
 
-### Slide 21 · ENQUETE · 1 MIN · aos 24:20
+### Slide 21 · ENQUETE · 1 MIN · aos 24:35
 
 - **Plano B:** Sem enquete na conta: a letra no chat em cascata, todos enviam no 3; contar as letras em voz alta.
 
-### Slide 23 · ENQUETE · 1 MIN · aos 27:00
+### Slide 23 · ENQUETE · 1 MIN · aos 27:25
 
 - **Plano B:** Sem enquete na conta: a letra no chat em cascata, todos enviam no 3; contar as letras em voz alta.
 

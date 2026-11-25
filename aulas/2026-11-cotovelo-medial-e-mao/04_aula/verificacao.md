@@ -1,8 +1,8 @@
 # Verificação — Cotovelo medial e mão: três decisões
 
-Data: 2026-11-25 (versão 1, segunda rodada de correção: revisão independente completa e auditoria de coerência da
-trilha, seção 10). Deck: `04_aula/cotovelo-medial-e-mao.pptx` (29 slides, 28 cronometrados, 34:00 min; tempo
-estimado pelo validador 32:55, ver seção 6). Montada antes da chegada dos PDFs.
+Data: 2026-11-25 (versão 1, terceira rodada de correção: conferência final adversarial da trilha, seção 11; antes,
+revisão independente completa e auditoria de coerência, seção 10). Deck: `04_aula/cotovelo-medial-e-mao.pptx` (29
+slides, 28 cronometrados, 34:25 min; tempo estimado pelo validador 33:40, ver seção 6). Montada antes da chegada dos PDFs.
 **Só 1 dos 20 artigos foi lido no texto completo (Fukunaga2023)**, mais Bretschneider2022 pela ficha da aula 1; os
 outros estão em "só resumo" (PubMed) e todos os números deles precisam passar pela conferência da seção 8 antes da aula
 ao vivo. Etiquetas: `resumo` = resumo do PubMed, sem página; `p.N` = texto completo; `calc.` = conta nossa (fórmula ao
@@ -14,6 +14,7 @@ lado); `caso` = dado fictício.
 |---|---|---|---|
 | FUC 40,3; FSD 19,5; PR 21,5 (% CVM, desvio ulnar) e FUC 27,4; FSD 63,9; PR 73,0 (pronação) | 12 | Fukunaga2023 | p.5, Tab. 2 (números conferidos também no recorte `03_figuras/Fukunaga2023/tab2.png`) |
 | Desvio padrão de 12 a 32 pontos (11,7 a 32,1) | 12 | Fukunaga2023 | p.5, Tab. 2 |
+| Título do 13: "no desvio ulnar, o flexor ulnar foi o músculo mais ativo" (FUC > FSD, p = 0,009; FUC > PR, p = 0,022, dentro do exercício); a diferença entre exercícios no mesmo músculo (40,3 x 27,4) **não foi testada**, por isso o título não compara exercícios | 13 | Fukunaga2023 | p.4; p.5, nota da Tab. 2 |
 | Borg CR10 5/10; 3 s concêntrico + 3 s excêntrico; faixa sem folga; 10 homens saudáveis | 12, 13 | Fukunaga2023 | p.2–3 (métodos) |
 | Montagem do desvio ulnar (cotovelos estendidos, palmas para baixo, faixa enrolada) | 13 | Fukunaga2023 | p.3, Fig. 2 |
 | Lateral: força com duração (Strain Index alto) OR 1,75 (1,11 a 2,78); rotação OR 1,85; repetição OR 0,71 (0,42 a 1,20) | 4 | Bretschneider2022 | p.6, Fig. 2; p.7, Tab. 3 (texto completo, pela ficha da aula 1) |
@@ -36,12 +37,12 @@ lado); `caso` = dado fictício.
 | Diferença 16,7 p.p.; "1 cirurgia a mais a cada 6 dedos" | 16 | Minkhorst2025 | **calc.**: 39,1 − 22,4 = 16,7; 1/0,167 = 6,0 (subgrupos não randomizados) |
 | Órtese da MCF 10°–15°, ~6 semanas: 70% dos dedos (28/40), 50% dos polegares (5/10); 15 de 17 falhas resolvidas com injeção; falha com > 6 meses e vários dedos | 14 (notas), 17 | Patel1992 | PDF pago (Elsevier) |
 | RR 3,15 (1,34 a 7,40); NNT 3 em 4 semanas | 17 | PetersVeluthamaningal2009 | PDF gratuito (PMC), bloqueado; NNT dos autores |
-| Recidiva 385 x 65 por 1000 (6–12 meses, após a **1ª** injeção como tratamento); RR 0,17; diferença absoluta 29% (60% a menos a 3% a mais); dor na palma 678 x 184 por 1000 (1 semana) | 17, 18, 19, 27; q3 | Fiorini2018 | PDF gratuito (PMC), bloqueado; "~38 em 100" e "~6 em 100" são arredondamentos |
+| Recidiva 385 x 65 por 1000 (IC 35 a 127; 6–12 meses, após a **1ª** injeção como tratamento); RR 0,17 (0,09 a 0,33); diferença absoluta 29% (60% a menos a 3% a mais, intervalo que não fecha com o do RR: dito no comentário da q3); dor na palma 678 x 184 por 1000 (1 semana) | 17, 18, 19, 27; q3 | Fiorini2018 | PDF gratuito (PMC), bloqueado; "~38 em 100" e "~6 a 7 em 100 (IC 4 a 13)" são arredondamentos de 385, 65, 35 e 127 por 1000 |
 | Percutânea x injeção OR 22,8 (7,69 a 67,72) | 19 | Chiang2026 | PDF pago (Elsevier) |
 | "~97%, RR 1,6, não 22" | 19 | Chiang2026 | **calc.**: base hipotética de 60% → chance 1,5 × 22,82 = 34,2 → 97,2%; RR = 0,972/0,6 = 1,62 |
 | Opções adequadas conforme gravidade, duração e tratamentos prévios (notas) | 19; q4 | Huisstede2014b | PDF pago (OUP); consenso Delphi |
 | WHAT S 0,99, E 0,29; 100 pacientes com dor espontânea no estiloide radial; US como referência | 21, 22; q5 | Goubau2014 | PDF pago (SAGE) |
-| RV+ 1,4; RV− 0,03 (pontual) e ~0,20 (pessimista); 70% → 76% com positivo; 70% → **7% a 32%** com negativo; q5: 40% → 2% a 12%; prevalência ~93%, especificidade ~2 em 7, 1 falso negativo | 22, 27; q5 | Goubau2014 | **calc.**: 2×2 reconstruída (VP 92, FN 1, FP 5, VN 2) é a única de inteiros que reproduz os 4 valores do resumo; IC exato da sensibilidade 92/93 = 94,2% a 99,97% → RV− pessimista = (1 − 0,942)/0,29 = 0,20; pré-testes de 70% e 40% ilustrativos |
+| RV+ 1,4; RV− 0,03 (pontual), ~0,20 (só a sensibilidade no limite) e ~1,6 (sensibilidade e especificidade no limite); 70% → 76% com positivo; 70% → **7% a 32%** com negativo e **~79%** com as duas medidas no limite; q5: 40% → 2% a 12% e ~52% com as duas no limite; prevalência ~93%, especificidade ~2 em 7, 1 falso negativo | 22, 26 (notas), 27; q5; resumo | Goubau2014 | **calc.**: 2×2 reconstruída (VP 92, FN 1, FP 5, VN 2) é a única de inteiros que reproduz os 4 valores do resumo; IC exato (Clopper-Pearson) da sensibilidade 92/93 = 94,2% a 99,97% → RV− = (1 − 0,942)/0,29 = 0,20; IC exato da especificidade 2/7 = 3,7% a 71,0% → RV− = (1 − 0,942)/0,037 = 1,59; chance 2,33 × 1,59 = 3,71 → 78,8%; chance 0,67 × 1,59 = 1,06 → 51,5%; pré-testes de 70% e 40% ilustrativos |
 | Teste do polegar fechado = Eichhoff, "chamado de Finkelstein"; falso positivo | 22; q5 | Elliott1992; Goubau2014 | PDFs pagos; descrição exata das manobras ainda não lida |
 | Injeção 9/9 alívio completo (1 recidiva); órtese 0/9; 8/9 resolveram ao fim da lactação | 24, 25; q6 | Avci2002 | PDF pago; contagem 9 x 9 inferida do resumo (18 pacientes) |
 | Órtese de 3–4 semanas após injeção: 10,5 pontos de QuickDASH (6,8 a 14,1); "não clinicamente significativo"; certeza moderada | 24; q6 | Challoumas2023 | PDF gratuito (PMC), bloqueado; **sentido da diferença e DMCI dos autores não conferidos** (o slide e a q6 não afirmam o sentido) |
@@ -109,24 +110,29 @@ gráficos nativos.
 
 ## 6. Checagens automáticas
 
-- `validar_aula.py`: **APROVADA com avisos, 0 erros** — 34:00 pela soma de `tempo_s`; tempo estimado pelo validador
-  (fala das notas a 130 ppm + interações) **32:55**, dentro de 30–35 min; com 15 s de justificativa oral por enquete,
-  ~34 min. 11 interações em 5 formatos; primeira aos 0:35; 31% do tempo em atividade. Linha do tempo
-  `●●··●●··●●····●●·●●●●●··●●·●··●●●●`. Avisos de pé, decididos: (a) slides 4 (94), 5 (87), 11 (73), 17 (94), 18 (91),
-  19 (71), 25 (78) e 27 (76) palavras visíveis: o 4 é a tabela de conferência das aulas 1 e 2 (pedida pela auditoria),
-  o 5 traz o exame com PRTEE e preensão, o 17 traz métrica e comparador por linha, o 18 traz a instrução de gravação;
-  nenhum passa de 100 e nada foi reduzido; (b) 28 slides cronometrados (> 26): três casos pedem três aberturas e três
-  conferências.
+Rodadas de novo em 25/11/2026, depois da conferência final adversarial (seção 11).
+
+- `validar_aula.py`: **APROVADA com avisos, 0 erros** — 34:25 pela soma de `tempo_s`; tempo estimado pelo validador
+  (fala das notas a 130 ppm + interações) **33:40**, dentro de 30–35 min; com 15 s de justificativa oral por enquete,
+  ~35 min, no teto: não acrescentar fala. 12 interações em 5 formatos; primeira aos 0:35; 32% do tempo em atividade.
+  Linha do tempo `●●··●●··●●·●··●●·●●●●●··●●·●●·●●·●·`; o trecho mais longo sem interação caiu de 4 para 2 minutos.
+  Só a enquete 15 passa do seu `tempo_s` por mais de 15 s (108 x 90 s). Avisos de pé, decididos: (a) slides 4 (94),
+  5 (87), 11 (73), 17 (97), 18 (91), 19 (72), 22 (76), 25 (78) e 27 (75) palavras visíveis: o 4 é a tabela de
+  conferência das aulas 1 e 2, o 5 traz o exame com PRTEE e preensão, o 17 traz métrica, comparador e agora o IC da
+  cirurgia aberta, o 18 traz a instrução de gravação, o 22 traz a terceira estimativa do WHAT pedida pela conferência;
+  nenhum passa de 100 e nada foi reduzido; (b) 28 slides cronometrados (> 26): ver a seção 11, achado 5.
 - `montar_deck.py`: 0 erros de layout; nenhum texto reduzido ou fora da caixa.
-- Render: `renderizar.py` rodado com `LANG=pt_BR.UTF-8` (o LibreOffice passa a usar vírgula decimal, como o PowerPoint em
-  português): rótulos dos gráficos 1,02 / 1,32 / 1,60 / 2,15 (s7), 40,3 / 63,9 / 73,0 (s12), 22,4 / 39,1 (s16, formato
-  "General"). Olhados as 3 folhas e, em tamanho cheio, os slides 4, 5, 13, 15, 16, 17, 18, 24 e 25. Corrigido no olho:
-  rodapé do slide 13 repetia Fukunaga; opções da enquete 15 sem justificativa só na correta (pista) viraram só números.
+- Render: `renderizar.py` com `LANG=pt_BR.UTF-8`. O ambiente desta rodada não tinha o locale pt_BR instalado (o
+  LibreOffice voltou a pôr ponto decimal: 40.3, 1.32); o locale foi gerado com `localedef` numa pasta temporária e
+  passado em `LOCPATH`, e a vírgula voltou (1,02 / 1,32 / 1,60 / 2,15 no s7; 40,3 / 63,9 / 73,0 no s12; 22,4 / 39,1 no
+  s16). Olhados as 3 folhas de contato e, em tamanho cheio, os slides alterados 12, 13, 17, 19, 22, 27 e 29, além do
+  7. Corrigido no olho: o título do 13 quebrava com "ativo" sozinho na segunda linha (encurtado); a linha "Encaminhar"
+  do 19 quebrava com "mais." sozinho e depois ficava encostada no cartão (encurtada para "~6–7 em 100 ... após a
+  cirurgia").
 - `conferir_pptx.py`: nenhum problema; 28 notas com "Tempo: ... (acumulado M:SS)" corretas; 4 gráficos nativos com
   planilha; 63 partes XML validadas contra o XSD ISO/IEC 29500.
-- `materiais.py`: nenhum aviso. `enquetes.md` gerado inteiro pelo script (a condução de enquete da skill corrigida e a
-  seção "Plano B e gravação" vêm dos campos `interacao.plano_b` e `interacao.gravacao`; nada editado à mão). Resumo do
-  aluno abaixo de 900 palavras de texto corrido, com 27 referências.
+- `materiais.py`: nenhum aviso. `enquetes.md` (agora com a mão na câmera do slide 12), `pre_pos_teste.md` (q3 e q5
+  novas) e `resumo_aluno.md` (ponto-chave 7 e algoritmo 5) regenerados pelo script; nada editado à mão.
 
 ## 7. Pendências
 
@@ -160,7 +166,7 @@ Por slide e por questão do pós-teste: qual PDF pendente, o que conferir e que 
 | 15, 16, q4 | Minkhorst2025 (gratuito, editor) | definição de sucesso e dos graus de Green; valores exatos por grau (não "~75%", "~60%"); braço só órtese; diabetes por estrato; 108 x 104 incluídos | CONSORT ou figura de resultado por grau (cc-by segundo o registro) |
 | 17, q3 | Patel1992 (Elsevier); PetersVeluthamaningal2009 (gratuito, PMC12671840); Fiorini2018 (gratuito, PMC6491286) | randomização e falhas 7 x 8 (Patel); taxas por grupo para diferença absoluta e IC do NNT (Peters-Veluthamaningal); riscos de base por ensaio, definição de recidiva e se algum ensaio incluiu injeção prévia (Fiorini) | forest plot de recidiva de Fiorini (Cochrane; conferir licença) ou 100 bonecos nativos 38 x 6 |
 | 18, 19 | Fiorini2018; Chiang2026 (Elsevier); Minkhorst2025; Huisstede2014b (OUP) | **taxa de sucesso ou recidiva da 2ª injeção depois de recidiva** (Fiorini, Chiang ou estudos citados por eles); se houver, trocar o "sem número" do slide 19 pelo número com a fonte; **taxa real de sucesso do corticoide na rede de Chiang** (trocar a base hipotética de 60% e refazer OR → RR); escala de gravidade e critério cirúrgico do consenso | gráfico nativo OR x RR conforme a taxa de base |
-| 21, 22, q5 | Goubau2014 (SAGE); Elliott1992 (Elsevier, 2 páginas) | **tabela 2×2 real** (confirmar 1 falso negativo, prevalência ~93% e especificidade ~2/7) e refazer o "7–32%" e a faixa "2% a 12%" da q5; IC; critério de positivo e de inclusão (dor espontânea no estiloide radial, quem tinha rizartrose); **números do Eichhoff**; manobras de Finkelstein e Eichhoff; carta de Vastamäki 2015 (PMID 25538075) e resposta (PMID 25688398) | figura do WHAT test do artigo (se a licença permitir) ou foto própria lado a lado com o Eichhoff |
+| 21, 22, 26, 27, q5 | Goubau2014 (SAGE); Elliott1992 (Elsevier, 2 páginas) | **tabela 2×2 real** (confirmar 1 falso negativo, prevalência ~93% e especificidade ~2/7) e refazer o "7–32%", o "~79%" e o título do 22, a ressalva dos slides 26 e 27 e a faixa "2% a 12%" (e os ~52%) da q5; IC; critério de positivo e de inclusão (dor espontânea no estiloide radial, quem tinha rizartrose); **números do Eichhoff**; manobras de Finkelstein e Eichhoff; carta de Vastamäki 2015 (PMID 25538075) e resposta (PMID 25688398) | figura do WHAT test do artigo (se a licença permitir) ou foto própria lado a lado com o Eichhoff |
 | 23, 24, q6 | Avci2002 (Elsevier); Challoumas2023 (gratuito, PMC10611995); Huisstede2014 (OUP) | contagem por grupo e punho bilateral, fármaco, dose, segurança na lactação (Avci); **DMCI adotada e sentido da DM** (se a DMCI for menor que 14,1, mudar o texto "abaixo da importante" do slide 24 e o gabarito B da q6), curto x médio prazo, se a rede incluiu lactantes (Challoumas); testes aceitos e gestação (Huisstede) | forest plot de Challoumas (cc-by segundo o registro) com a faixa da DMCI |
 | — (fora da aula) | Descatha2003 (gratuito) | **o "até 84%" do s141 da aula base**: se aparecer no texto, decidir se entra, com número e denominador | — |
 
@@ -201,6 +207,43 @@ A primeira rodada recebeu a revisão cortada no 11º achado. Conferidos os 21 ac
   critério de 1 ponto (Day 2019); repetição "inconclusiva" com IC; bilhetes da aula 2 lidos na abertura e bilhetes da
   aula 3 para o relatório da trilha; recuperação oral nos slides 11 e 17; DMCI e LCU por extenso.
 
+## 11. Conferência final adversarial (25/11/2026)
+
+Achados da conferência final que tocam a aula 3, conferidos nas fichas e no mapa antes de mudar:
+
+1. **WHAT negativo (importante) — procede, aplicado.** Pela ficha de Goubau, a especificidade vem de 2 em 7
+   (2×2 reconstruída); IC exato de 3,7% a 71% (calc.). Com a sensibilidade e a especificidade no limite, como o
+   slide 8 faz com o valgo, RV− ≈ 1,6 e 70% → ~79% (40% → ~52% na q5): o negativo deixa de informar. Mudou: título
+   do 22 ("o negativo talvez ajude, num estudo com 7 não doentes"), terceiro número do 22 (~79%, no lugar da
+   prevalência, que foi para a linha "Quem"), notas do 22, 26 e 27, ponto 1 da síntese ("só descarta se a
+   especificidade se confirmar"), ponto-chave 7 e algoritmo 5 do resumo, opção D, comentário e distrator A da q5.
+2. **Reavaliação 4–6 x 3 semanas (menor; aula 1 com 2 e 3) — procede, nada a mudar na aula 3.** A aula 3 já diz "a
+   cada 3 semanas" (slide 13, síntese, algoritmo 3, q7), que é a saída proposta; a troca é no item 7 do resumo da
+   aula 1.
+3. **Título do 13 (menor) — procede, aplicado.** A ficha de Fukunaga (l. 67) diz que a diferença entre exercícios
+   (40,3 x 27,4) não foi testada; o teste relatado é dentro do exercício. Novo título: "No desvio ulnar, o flexor
+   ulnar foi o músculo mais ativo", com a frase nas notas. O título do 12 já não comparava exercícios.
+4. **Cirurgia aberta "~6 em 100" e q3 (menor) — procede, aplicado.** 65 por 1000 com IC 35 a 127 (ficha de Fiorini,
+   l. 60): "~6 a 7 em 100 (IC 4 a 13)" no 17, "~6–7 em 100" no 19, IC nas notas do 17; no comentário da q3, o IC
+   por 1000 e a frase de que o IC da diferença absoluta não fecha com o do RR, a conferir no texto completo.
+5. **28 slides, 4 minutos sem interação, notas do 29 (menor) — procede em parte.** Aplicado: mão na câmera no 12
+   ("já prescreve pronação com faixa?"; o trecho sem interação caiu de 4 para 2 minutos) e notas do slide de
+   referências com o estado da conferência, no formato das aulas 1 e 2. **Não aplicado: a fusão de slides.** Fundir
+   o 10 com o 11 tira a revelação da decisão do Sérgio (o "conferir" do ciclo, que a skill exige) ou a tabela do que
+   é ensaio, mecanismo e extrapolação (objetivo 4, q7); fundir o 25 com a síntese tira o desfecho do fechamento. E uma
+   fusão deixaria 27 slides, ainda acima do limite do aviso (26). A média é de 74 s por slide.
+
+Checagem independente depois da correção (25/11/2026), com as contas refeitas (RV+ 1,39; RV− 0,034 → 7%; S no
+limite 94% → RV− 0,20 → 32%; S 94% e E 3,7% → RV− 1,59 → 79%, e 40% → 52%; IC exato de 2/7 = 3,7% a 71%; 65 por
+1000 = 3,5 a 12,7 em 100), duas regressões corrigidas:
+- **Título do 8:** dizia "o negativo ajuda", e o 22 passou a dizer "talvez ajude" para a mesma situação (com as duas
+  medidas no limite, o valgo fica em 15% → 15%). Agora: "Valgo em movimento: o negativo talvez ajude, num estudo
+  minúsculo", coerente com o 22, o 26 e o 27.
+- **q5, distrator B:** o comentário dizia "no negativo, quem manda é a sensibilidade", o que contradiz o novo
+  gabarito (a especificidade de 2 em 7 no limite leva a RV− a 1,6). A opção B passou a "Cerca de 28%: a
+  especificidade de 0,29 tira só 29% da chance" e o comentário explica que 40% × 0,71 não é conta de pós-teste e
+  que o limite do negativo é a imprecisão da especificidade, não o valor 0,29.
+
 ## Apêndice. O que mudou desde a aula de capacitação
 
 Veredito slide a slide (aula base, slides 125–161), resumido de `00_mapa_evidencias.md`, seção 2. Na aula 3, as
@@ -225,6 +268,6 @@ mudanças que mudam conduta aparecem ao longo dos casos (slides 4, 7, 8, 11, 16�
 | s148–s153, s156 | Clínica, polias e exame do gatilho | confirma; acrescenta graduação | Green 1–4 prevê o resultado (Minkhorst), em quem nunca foi tratado | 14–16 |
 | s154 | Etiologia por atividade repetitiva | sem fonte no lote | Não afirmado | — |
 | (ausente) | Nenhum tratamento do gatilho | acrescenta | Órtese, injeção, cirurgia com números (Patel, Peters-Veluthamaningal, Fiorini, Minkhorst, Chiang, Huisstede); depois de recidiva, sem número | 16–19 |
-| s158 | Dor radial que piora com polegar e desvios | matiza | Provocar dor descarta melhor do que confirma (WHAT RV+ 1,4; negativo 7% a 32% a partir de 70%) | 21, 22 |
+| s158 | Dor radial que piora com polegar e desvios | matiza | Provocar dor não confirma (WHAT RV+ 1,4); o negativo talvez descarte (7% a 32% a partir de 70%; ~79% com a especificidade de 2 em 7 no limite) | 21, 22 |
 | s159–s161 | Anatomia do 1º compartimento | confirma | Mantido nas notas; ilustração s160 sem fonte não usada | — |
 | (ausente) | Nada de teste, tratamento ou puerpério no De Quervain | acrescenta | "Finkelstein" = Eichhoff; WHAT; injeção 9/9 x órtese 0/9 no puerpério; órtese após injeção muda ~10 pontos de QuickDASH (sentido a conferir) | 22–24 |

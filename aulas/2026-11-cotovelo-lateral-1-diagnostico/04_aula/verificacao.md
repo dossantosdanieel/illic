@@ -1,6 +1,6 @@
 # Verificação — Dor lateral no cotovelo: diagnóstico e prognóstico
 
-Data: 2026-11-24. Deck: `04_aula/cotovelo-lateral-1-diagnostico.pptx` (27 slides, 26 cronometrados, 33:55 min; tempo estimado pela fala das notas + interações: 32:06; revisão independente aplicada em 24/11/2026, seções 9 e 10).
+Data: 2026-11-24. Deck: `04_aula/cotovelo-lateral-1-diagnostico.pptx` (27 slides, 26 cronometrados, 33:55 min; tempo estimado pela fala das notas + interações: 32:43; revisão independente aplicada em 24/11/2026, seções 9 e 10; conferência final adversarial aplicada em 25/11/2026, seção 11).
 Versão 1: montada com 1 artigo lido no texto completo (Bretschneider 2022) e o resto em resumo ou em print da aula
 de capacitação. Quando os PDFs pendentes chegarem (`02_artigos/pendentes.md`), faça a passada da seção 8.
 
@@ -15,7 +15,7 @@ minha, com a conta escrita ao lado; **caso** = dado fictício.
 | Rotação do antebraço > 4 h/dia: OR 1,85 (1,10 a 3,10); I² 14% | 21, 22 | Bretschneider2022 | p.6 Fig. 2 (painel 2); p.7 Tab. 3 (definição); p.8 Tab. 4 |
 | Strain Index alto: OR 1,75 (1,11 a 2,78); I² 0% | 21, 22 | Bretschneider2022 | p.6 Fig. 2 (painel 5); p.7 Tab. 3; p.8 Tab. 4 |
 | Repetição > 15/min: OR 0,71 (0,42 a 1,20); eixo rotulado ao contrário | 21, 22 | Bretschneider2022 | p.6 Fig. 2 (painel 4) |
-| Nenhum OR > 2,5 | 21 (cartão "Leitura") | Bretschneider2022 | p.8 Tab. 4, coluna "Effect size OR > 2.5" |
+| Nenhum OR **combinado** > 2,5 (isolados: Descatha 2,67 na rotação e 3,12 no punho; o 2,67 está nas notas) | 21 (cartão "Leitura" e notas) | Bretschneider2022 | p.8 Tab. 4, coluna "Effect size OR > 2.5"; isolados na p.6 Fig. 2 |
 | ~1 caso a mais a cada 25 (SI) e 30 (rotação) expostos, com IC (notas, com a conta) | 21, notas | Bretschneider2022 | **calc.** a partir da p.6 Fig. 2: SI p0 = 26/432, OR 1,75 → NNH ≈ 25 (IC 11 a 162); rotação p0 = 31/717, OR 1,85 → NNH ≈ 30 (IC 13 a 243) |
 
 ## 2. Veio só do resumo (ou de print da aula de capacitação)
@@ -34,10 +34,10 @@ minha, com a conta escrita ao lado; **caso** = dado fictício.
 | Esporão 78% / 45% / 50% | 10, 11, 13, 24 | Krogh2020 | resumo; PDF pago (SAGE, pendente item 17) |
 | RV+ do esporão ≈ 1,6 | 11 | Krogh2020 | **calc.**: 0,78/0,50 (por braço, caso-controle) |
 | Doppler 3,47 × 0,26 (0,13 contralateral, nas notas) | 11, 13 | Krogh2020 | resumo |
-| Espessamento +0,40 a +0,70 mm; referência ≈ 5,1 mm; "cerca de 0,5 mm acima" na Renata | 13 | Krogh2020 | resumo; **calc.** 0,40/0,079 = 5,1 mm; 5,6 − 5,1 = 0,5 mm (caso) |
+| Espessamento +0,40 mm sobre a média da população (+0,53 e +0,70 sobre o outro lado, conforme a técnica); referência ≈ 5,1 mm (só da comparação com a população); "cerca de 0,5 mm acima" na Renata | 13 | Krogh2020 | resumo; **calc.** 0,40/0,079 = 5,1 mm; 5,6 − 5,1 = 0,5 mm (caso) |
 | Nenhuma correlação do US com dor, incapacidade, PRTEE ou duração | 11, 13, 24 | Krogh2020 | resumo |
 | Corticoide: −2251 pixels de Power Doppler em 12 sem; QuickDASH +15 pior em 52 sem | 13 (notas) | Couppe2022 | resumo; secundário entre vários |
-| 89% muito melhor/recuperado em 1 ano (IC 80% a 97%); meia-vida 2,5–3 meses; duração prévia sem efeito | 14, 15, 22, 24 | Ikonen2022 | resumo; PDF gratuito no PMC (pendente item 4) |
+| 89% muito melhor/recuperado em 1 ano (189 de 213; IC 80% a 97%): a revisão reúne 24 ECRs e 1085 controles, mas esse desfecho vem de 213; meia-vida 2,5–3 meses; duração prévia sem efeito | 14, 15, 22, 24 | Ikonen2022 | resumo; PDF gratuito no PMC (pendente item 4) |
 | Curva 0, 50, 75, 88 de 100 (tracejada) e ponto observado 89 com barra de 80 a 97 em 12 meses | 15 | Ikonen2022 | **calc.** ilustrativa: fração não melhorada = 0,5^(t/3), em linha tracejada sem rótulos; o único dado observado é o ponto de 12 meses com barra de erro (IC do resumo) |
 | Razão afetado/não afetado da preensão sem dor: 38% → 44% | 3, 19 (notas) | — | **calc.** (caso): 120/320 = 37,5%; 140/320 = 43,8%; sem DMCI no lote (mapa 2.6) |
 | ECRB atrita no capítulo à medida que o cotovelo estende (vulnerabilidade, não causa) | 13 (notas) | Bunata2007 | resumo (85 cotovelos de cadáver) |
@@ -48,9 +48,9 @@ minha, com a conta escrita ao lado; **caso** = dado fictício.
 | Espera: 32% em 6 sem; 83% em 52 sem | 15 (notas) | Smidt2002 | resumo |
 | Dor cervical, dor intensa e duração longa → pior em 12 meses | 16 | Smidt2006 | resumo (sem tamanho) |
 | Sintomas de nervo +15,08 na EVA de dor (4,67 a 25,50); sexo feminino +8,92 no DASH (3,32 a 14,52) | 16, q7 | Waugh2004 | resumo + print s40 (Tab. 5); **escala da EVA a conferir** (o eixo do print vai até 50): o slide diz "EVA" sem "0–100" e a nota diz "escala a conferir" |
-| Limiar ao frio único preditor consistente; modelo explica 9% do PRTEE em 1 ano | 16 | Coombes2015 | resumo + print s21 (Tab. 3) |
+| Limiar ao frio único preditor consistente; o modelo final (com o frio) explicou 9% do PRTEE em 1 ano; o coeficiente do frio só no texto completo | 16 | Coombes2015 | resumo + print s21 (Tab. 3) |
 | PRTEE: 22% (7 pontos) e 37% (11 pontos); DMCI maior nos mais graves; n = 57, intervalo de 3 semanas | 18, 19, 24 | Poltawski2011 | resumo (Crossref); manuscrito aberto no repositório (pendente item 6); IC da DMCI desconhecido |
-| Metas da Renata pelas duas réguas: absoluta 7 (≤ 51) e 11 (≤ 47); proporcional ≈ 13 (≤ 45) e ≈ 21 (≤ 36); queda de 9 = 16% → passa a absoluta de 7, não a proporcional de 22% | 18, 19 | Poltawski2011 | **calc.**: 0,22 × 58 = 12,8; 0,37 × 58 = 21,46 → 58 − 21,46 = 36,5, então ≤ 36 (com 37 a queda seria 21/58 = 36,2%, abaixo de 37%); 9/58 = 15,5% |
+| Metas da Renata pelas duas réguas: absoluta 7 (≤ 51) e 11 (≤ 47); proporcional ≈ 13 (≤ 45) e ≈ 21,5 (≤ 36,5; na prática, 36, como nas aulas 2 e 3); queda de 9 = 16% → passa a absoluta de 7, não a proporcional de 22% | 18, 19 | Poltawski2011 | **calc.**: 0,22 × 58 = 12,8; 0,37 × 58 = 21,46 → 58 − 21,46 = 36,5, então ≤ 36 (com 37 a queda seria 21/58 = 36,2%, abaixo de 37%); 9/58 = 15,5% |
 | Quedas de pontos: a 50%, positivo +30 a +39 e negativo −28 a −34; a 79%, positivo +15 a +18 e negativo −28 a −37 | 8 (cartão e notas) | — | **calc.** a partir das linhas acima (93,6 − 79,2 = 14,4; 96,9 − 79,2 = 17,7; 79,2 − 51,3 = 27,9; 79,2 − 41,7 = 37,5; arredondado sobre 79) |
 | Pré-teste abaixo do qual o negativo leva a < 50%: cerca de 78% a 84% | 8 (notas, desafio) | — | **calc.**: chance × RV− < 1 → chance < 1/0,28 = 3,57 (78,1%) ou < 1/0,19 = 5,26 (84,0%) |
 | q1: 30% → 63% a 78% (queda de 12%) ; q2: 80% → 43% a 53% | pós-teste | Karanasios2022 | **calc.**: 0,43 × 3,9 = 1,67 (63%); × 8,3 = 3,56 (78%); 4 × 0,19 = 0,76 (43%); × 0,28 = 1,12 (53%) |
@@ -69,6 +69,7 @@ minha, com a conta escrita ao lado; **caso** = dado fictício.
 - Com PRTEE inicial alto, preferir a régua proporcional da DMCI — slide 19 (notas), apoiado só na frase do resumo de Poltawski de que a DMCI foi maior nos mais graves.
 - Acompanhar a preensão sem dor pela razão afetado/não afetado (38% → 44%), sem DMCI publicada no lote — slide 19, notas.
 - Classificar a irritabilidade pela tabela da aula de capacitação atribuída à diretriz (nível IV, moderada, na Renata) — slide 3, notas; algoritmo do resumo. Atribuição provável, a conferir no PDF de Lucado 2022.
+- Reavaliar o PRTEE a cada 3 semanas (algoritmo do resumo, item 7; propostas do resumo; notas do slide 17), igual às aulas 2 e 3: é o intervalo em que a DMCI de Poltawski foi medida (resumo); nenhum ensaio testou o calendário. A reavaliação de 6 semanas do revés é a primeira completa.
 - Imagem só se não melhorar no prazo ou surgir sinal atípico — slides 12 e 13 (critério das notas da aula base s44, atribuição provável à diretriz; o ACR 2022, Expert2022, só em resumo e sem recomendação).
 
 ## 4. Dados do caso fictício
@@ -197,6 +198,32 @@ A primeira correção recebeu a revisão cortada no achado do s21. Conferi achad
 | Auditoria: mecanismo e sensibilização sem aula | sim (aula 1) | duas frases nas notas do s13; o resto do mecanismo fica fora da v1 (roteiro, "O que fica de fora") |
 | Skill: plano B e gravação em campo; tempo estimado entre 30 e 35 | sim | `interacao.gravacao` e `interacao.plano_b` no s18; estimado 32:06 (s3 de 60 para 75 s, s13 de 80 para 90 s, s25 de 35 para 25 s) |
 
+## 11. Conferência final adversarial (25/11/2026)
+
+Achados da aula 1 na conferência final das três aulas (`conferencia_final.json`). Cada um foi conferido na ficha antes
+de mudar.
+
+| Achado | Procede? | O que mudou |
+|---|---|---|
+| s15 e q5: 89% atribuído aos "braços controle de 24 ensaios" (importante) | sim: ficha de Ikonen, linhas 25, 26 e 45 (24 ECRs e 1085 controles; o desfecho de 1 ano vem de 189 de 213) | cartão escuro do s15 "89% muito melhor ou recuperado em 1 ano (189 de 213; IC 80% a 97%), braços controle de ensaios"; notas do s15 ("a revisão reúne 24 ensaios, mas o número de 1 ano vem de só 213 pessoas: daí o intervalo largo"); comentário da q5 (`questoes.json` e `pre_pos_teste.md`); ponto 4 do resumo; roteiro; mapa, seção 0, item 1 |
+| s22 (notas): "força com duração e rotação ... nas mesmas duas coortes" (importante) | sim: ficha de Bretschneider, p.6 Fig. 2 e linha 94 (rotação = Descatha + Fan & Silverstein; SI e repetição = Fan & Bao + Garg) | notas: "a repetição isolada e o Strain Index vêm das mesmas duas coortes, e o índice inclui a frequência"; roteiro (revelações) e apêndice desta verificação. Ressalva: Fan & Bao e Fan & Silverstein são a mesma coorte analisada duas vezes (ficha, linha 19), então rotação e SI não são independentes por inteiro; por isso a fala não diz "outras duas coortes" |
+| Reavaliação em 4 a 6 semanas (aula 1) × a cada 3 semanas (aulas 2 e 3) (menor) | sim | algoritmo, item 7: "reavalie a cada 3 semanas (proposta clínica, a mesma das aulas 2 e 3; a DMCI foi medida nesse intervalo)"; proposta nova em `meta.propostas_clinicas` e no resumo; notas do s17: "seis semanas é a primeira reavaliação completa; o PRTEE pode ser medido a cada 3 semanas". O revés continua na semana 6. As aulas 2 e 3 já dizem 3 semanas: nada a pedir |
+| s16: "explica 9% do PRTEE" atribui ao frio a variância do modelo (menor) | sim: ficha de Coombes 2015, linhas 46 e 78 (modelos finais; coeficientes só no texto completo) | célula "o modelo com o frio explicou 9% do PRTEE"; notas "o modelo final, com ele, explicou 9%"; roteiro e seção 2 |
+| s19: "37% × 58 ≈ 21 (≤ 36)" incoerente (menor) | sim (58 − 21 = 37; 58 − 21,46 = 36,5) | "37% × 58 ≈ 21,5 (≤ 36,5; na prática, 36)"; notas "cerca de 21 e meio: PRTEE de 36 e meio ou menos, na prática 36" |
+| s21: "nenhum OR passou de 2,5" e etiquetas sobre o cabeçalho (menor) | sim: Fig. 2, Descatha 2,67 (rotação) e 3,12 (punho) | cartão "nenhum OR combinado passou de 2,5"; notas com o 2,67 de Descatha; etiquetas medidas no PNG da figura e deslocadas para a esquerda (x de 0,105 para 0,033 a 0,081), com a borda direita antes da coluna "Exposed/Events" de cada painel; a altura já estava no vão entre painéis. Conferido no render em tamanho cheio: só "Study or Subgroup" fica coberto |
+| s13 (notas): "0,40 a 0,70 mm a mais" mistura comparadores (menor) | sim: ficha de Krogh, linha 42 | "0,40 milímetro acima da média da população, e 0,53 a 0,70 acima do outro lado; pela conta com a população, a referência fica perto de 5,1"; roteiro e seção 2 |
+| Nomes repetidos entre os pós-testes (Carlos, Lúcia, Marcos) (menor, aulas 1 e 2) | sim | a ação pedida é renomear os casos da **aula 2**; a aula 1 ficou como está, para não trocar os nomes dos dois lados ao mesmo tempo |
+
+Fora desta pasta (relatado ao orquestrador): a q2 do pós-teste da aula 2 repete "braços controle de ensaios" para o 89%
+e precisa do mesmo "(189 de 213)"; os nomes dos casos da aula 2.
+
+Checagens depois das mudanças: `validar_aula.py` APROVADA com avisos, 0 erros; 33:55 em `tempo_s`; tempo estimado
+32:43 (era 32:06: as ressalvas acrescentaram fala; tirei 2 frases nas notas dos s16 e s17); 12 interações em 5 formatos;
+linha do tempo igual. Avisos: os mesmos 11 de palavras visíveis (s21 com 74). `montar_deck.py`: nenhum texto reduzido.
+Render olhado em tamanho cheio nos slides 15, 16, 19 e 21 e nas três folhas: nada encavalado; o cartão do s15 ficou com 3
+linhas. `conferir_pptx.py`: nenhum problema (26 notas, 2 gráficos nativos, 57 partes XSD). `materiais.py`: nenhum aviso;
+resumo com 875 palavras de texto corrido.
+
 ---
 
 ## Apêndice. O que mudou desde a aula de capacitação
@@ -212,7 +239,7 @@ nova). Na coluna "Nesta aula", onde a mudança aparece no deck.
 | s3 | 29% em trabalhadores manuais | matiza | "Até 29%" em ocupações de alta demanda (teto, não prevalência típica) | não usado |
 | s3 | Hereditariedade de 40% (citação de Walker 2004) | corrige (citação) | Referência provavelmente trocada; não projetar | não usado |
 | s9, s11, s14 | Abrasão do ECRB "durante pronação e supinação" | matiza | O que mais aumenta o contato é estender o cotovelo; vulnerabilidade, não causa (Bunata 2007, print s13) | slide 13 (notas, duas frases) |
-| s18 | Sobrecarga repetitiva aumenta o risco | matiza | Repetição isolada OR 0,71 (0,42–1,20), inconclusiva, não protetora; força com duração (SI, que inclui a frequência) OR 1,75 e rotação OR 1,85, nas mesmas 2 coortes (Bretschneider 2022, TC) | slides 20–22 (s22: "matiza") |
+| s18 | Sobrecarga repetitiva aumenta o risco | matiza | Repetição isolada OR 0,71 (0,42–1,20), inconclusiva, não protetora; força com duração (SI, que inclui a frequência) OR 1,75 e rotação OR 1,85; repetição e SI vêm das mesmas 2 coortes (Fan & Bao, Garg), a rotação de Descatha e Fan & Silverstein (Bretschneider 2022, TC) | slides 20–22 (s22: "matiza") |
 | s19–s20 | Sem inflamação consistente; mediadores | confirma (indireto) | Corticoide reduz Doppler sem ganho clínico (Couppé 2022); PRP sem efeito (Karjalainen 2021) | slide 13 (notas) |
 | s21 | Tab. 3 de Coombes 2015 no bloco de patoanatomia | matiza (reposiciona) | É prognóstico: frio único preditor consistente, 9% do PRTEE explicado, n = 41 | slide 16 |
 | s22 | "Evidências preliminares de sensibilização" (Plinsinga 2015) | matiza (atualiza) | Hiperalgesia local e regional moderada; sem remota no membro superior (Rio 2021, resumo) | slide 13 (notas); caso (algometria) |
